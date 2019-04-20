@@ -68,35 +68,44 @@ FOOTER
 
 footer {
 
-    // display: flex;
-    // flex-direction: column;
-    // justify-content: center;
-    margin: 0 auto;
+    @mixin icons-and-bgs {
+        margin: 0 2rem;
+        height: 4rem;
+        width: 4rem;
+    }
 
+    // The <p> element to make the line:
     p {
         border-bottom: .125rem solid $fifty-percent-gray; 
         margin: 0 auto;
         width: 90%;
     }
 
-    div {
+    section {
         display: flex;
         justify-content: center;
+        margin: 2rem auto 0;
 
         img {
-            max-height: 4rem;
-            max-width: 4rem;
+            @include icons-and-bgs;
             z-index: 10;
         }
 
-        .bg-effect {
-            background: red;
-            min-height: 4rem;
-            min-width: 4rem;
+        div {
+            @include icons-and-bgs;
+            background: $huetown-yellow;
+            border-radius: 1rem;
+        }
+
+        // The div for the second icon:
+        div:nth-child(2) {
+            border-radius: 50%;
         }
     }
 
-    .bg-effect-container {
+    // The section containing the background divs:
+    section:last-of-type {
+        margin: 0 auto;
         position: relative;
         bottom: 4rem;
     }
