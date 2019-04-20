@@ -68,18 +68,23 @@ footer section {
   justify-content: center;
   margin: 2rem auto 0;
 }
-footer section img {
-  margin: 0 2rem;
+footer section a {
   height: 4rem;
   width: 4rem;
+  margin: 0 2rem;
   z-index: 10;
 }
-footer section div {
-  margin: 0 2rem;
+footer section a img {
   height: 4rem;
   width: 4rem;
+}
+footer section div {
+  height: 4rem;
+  width: 4rem;
+  margin: 0 2rem;
   background: #eedf8a;
   border-radius: 1rem;
+  min-width: 4rem;
 }
 footer section div:nth-child(2) {
   border-radius: 50%;

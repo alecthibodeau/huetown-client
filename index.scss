@@ -68,10 +68,13 @@ FOOTER
 
 footer {
 
-    @mixin icons-and-bgs {
-        margin: 0 2rem;
+    @mixin icon-dimensions {
         height: 4rem;
         width: 4rem;
+    }
+
+    @mixin icons-and-bgs {
+        margin: 0 2rem;
     }
 
     // The <p> element to make the line:
@@ -86,15 +89,22 @@ footer {
         justify-content: center;
         margin: 2rem auto 0;
 
-        img {
+        a {
+            @include icon-dimensions;
             @include icons-and-bgs;
             z-index: 10;
+
+            img {
+                @include icon-dimensions;
+            }
         }
 
         div {
+            @include icon-dimensions;
             @include icons-and-bgs;
             background: $huetown-yellow;
             border-radius: 1rem;
+            min-width: 4rem; // Needed to keep div as square at narrow viewport widths.
         }
 
         // The div for the second icon:
