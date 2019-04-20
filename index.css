@@ -49,7 +49,7 @@ nav div {
 nav div:hover {
   color: #000;
 }
-nav div .cart-image {
+nav div .cart-icon {
   position: relative;
   top: 0.125rem;
   max-height: 1.6rem;
