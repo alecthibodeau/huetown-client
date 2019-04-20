@@ -105,6 +105,7 @@ footer {
             background: $huetown-yellow;
             border-radius: 1rem;
             min-width: 4rem; // Needed to keep div as square at narrow viewport widths.
+            visibility: hidden;
         }
 
         // The div for the second icon:

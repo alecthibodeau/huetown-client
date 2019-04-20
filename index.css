@@ -85,6 +85,7 @@ footer section div {
   background: #eedf8a;
   border-radius: 1rem;
   min-width: 4rem;
+  visibility: hidden;
 }
 footer section div:nth-child(2) {
   border-radius: 50%;
