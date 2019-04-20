@@ -20,7 +20,7 @@ body {
 HEADER
 ************/
 header {
-  margin: 0.5rem 0;
+  margin: 0.5rem auto;
 }
 
 img[alt="Huetown Script Logo"] {
@@ -58,10 +58,31 @@ nav div .cart-image {
 /************
 FOOTER
 ************/
+footer {
+  margin: 0 auto;
+}
 footer p {
   border-bottom: 0.125rem solid #7f7f7f;
   margin: 0 auto;
   width: 90%;
+}
+footer div {
+  display: flex;
+  justify-content: center;
+}
+footer div img {
+  max-height: 4rem;
+  max-width: 4rem;
+  z-index: 10;
+}
+footer div .bg-effect {
+  background: red;
+  min-height: 4rem;
+  min-width: 4rem;
+}
+footer .bg-effect-container {
+  position: relative;
+  bottom: 4rem;
 }
 
 /************************************

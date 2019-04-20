@@ -24,7 +24,7 @@ HEADER
 ************/
 
 header {
-    margin: .5rem 0;
+    margin: .5rem auto;
 }
 
 img[alt="Huetown Script Logo"] {
@@ -67,11 +67,38 @@ FOOTER
 ************/
 
 footer {
-    
+
+    // display: flex;
+    // flex-direction: column;
+    // justify-content: center;
+    margin: 0 auto;
+
     p {
         border-bottom: .125rem solid $fifty-percent-gray; 
         margin: 0 auto;
         width: 90%;
+    }
+
+    div {
+        display: flex;
+        justify-content: center;
+
+        img {
+            max-height: 4rem;
+            max-width: 4rem;
+            z-index: 10;
+        }
+
+        .bg-effect {
+            background: red;
+            min-height: 4rem;
+            min-width: 4rem;
+        }
+    }
+
+    .bg-effect-container {
+        position: relative;
+        bottom: 4rem;
     }
 }
 
