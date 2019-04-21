@@ -1,0 +1,14 @@
+{
+  "name": "huetown-package",
+  "version": "1.0.0",
+  "description": "huetown",
+  "scripts": {
+    "lite": "lite-server --port 10001",
+    "start": "npm run lite"
+  },
+  "author": "Alec Thibodeau",
+  "license": "copyright Alec Thibodeau",
+  "devDependencies": {
+    "lite-server": "^1.3.4"
+  }
+}
