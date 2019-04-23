@@ -13,10 +13,10 @@ html {
 }
 
 body {
-    background: $white;
-    height: 100%;
-    margin: 0 auto;
-    width: 100%;
+  background: $white;
+  height: 100%;
+  margin: 0 auto;
+  width: 100%;
 }
 
 /************
@@ -24,42 +24,42 @@ HEADER
 ************/
 
 header {
-    margin: .5rem auto;
+  margin: 0.5rem auto;
 }
 
 img[alt="Huetown Script Logo"] {
-    display: block;
-    height: auto;
-    margin: 0 auto;
-    width: 40rem;
+  display: block;
+  height: auto;
+  margin: 0 auto;
+  width: 40rem;
 }
 
 nav {
-    display: flex;
-    justify-content: center;
-    margin: 2rem auto;
+  display: flex;
+  justify-content: center;
+  margin: 2rem auto;
 
-    & div {
-        color: $fifty-percent-gray;
-        cursor: pointer;
-        font-family: 'Raleway';
-        font-size: 2rem;
-        font-weight: 300;
-        letter-spacing: .3125rem;
-        margin: 0 1.25rem;
-        text-align: center;
-        text-transform: uppercase;
+  & div {
+    color: $fifty-percent-gray;
+    cursor: pointer;
+    font-family: 'Raleway', sans-serif;
+    font-size: 2rem;
+    font-weight: 300;
+    letter-spacing: 0.3125rem;
+    margin: 0 1.25rem;
+    text-align: center;
+    text-transform: uppercase;
 
-        &:hover {
-            color: $black;   
-        }
-
-        .cart-icon {
-            position: relative;
-            top: .125rem;
-            max-height: 1.6rem;
-        }
+    &:hover {
+      color: $black;
     }
+
+    .cart-icon {
+      position: relative;
+      top: 0.125rem;
+      max-height: 1.6rem;
+    }
+  }
 }
 
 /************
@@ -67,59 +67,57 @@ FOOTER
 ************/
 
 footer {
+  border-top: 0.125rem solid $fifty-percent-gray;
+  margin: 0 auto;
+  width: 90%;
 
-    @mixin icon-dimensions {
-        height: 4rem;
-        width: 4rem;
+  @mixin icon-dimensions {
+    height: 4rem;
+    width: 4rem;
+  }
+
+  @mixin icons-and-bgs {
+    margin: 0 2rem;
+  }
+
+  section {
+    display: flex;
+    justify-content: center;
+    margin: 2rem auto 0;
+
+    a {
+      @include icon-dimensions;
+      @include icons-and-bgs;
+
+      z-index: 10;
+
+      img {
+        @include icon-dimensions;
+      }
     }
 
-    @mixin icons-and-bgs {
-        margin: 0 2rem;
+    [class^="icon-bg"] {
+      @include icon-dimensions;
+      @include icons-and-bgs;
+
+      background: $huetown-yellow;
+      border-radius: 1rem;
+      min-width: 4rem; // Needed to keep div as square at narrow viewport widths.
+      visibility: hidden;
     }
 
-    // The <p> element to make the line:
-    p {
-        border-bottom: .125rem solid $fifty-percent-gray; 
-        margin: 0 auto;
-        width: 90%;
+    // The div for the second icon:
+    div:nth-child(2) {
+      border-radius: 50%;
     }
+  }
 
-    section {
-        display: flex;
-        justify-content: center;
-        margin: 2rem auto 0;
-
-        a {
-            @include icon-dimensions;
-            @include icons-and-bgs;
-            z-index: 10;
-
-            img {
-                @include icon-dimensions;
-            }
-        }
-
-        div {
-            @include icon-dimensions;
-            @include icons-and-bgs;
-            background: $huetown-yellow;
-            border-radius: 1rem;
-            min-width: 4rem; // Needed to keep div as square at narrow viewport widths.
-            visibility: hidden;
-        }
-
-        // The div for the second icon:
-        div:nth-child(2) {
-            border-radius: 50%;
-        }
-    }
-
-    // The section containing the background divs:
-    section:last-of-type {
-        margin: 0 auto;
-        position: relative;
-        bottom: 4rem;
-    }
+  // The section containing the background divs:
+  section:last-of-type {
+    margin: 0 auto;
+    position: relative;
+    bottom: 4rem;
+  }
 }
 
 /************************************
@@ -127,8 +125,7 @@ BREAKPOINT 500px
 ************************************/
 
 @media only screen and (max-width: 500px) {
-
-    img[alt="Huetown Script Logo"] {
-        width: 80%; 
-    }
+  img[alt="Huetown Script Logo"] {
+    width: 80%;
+  }
 }

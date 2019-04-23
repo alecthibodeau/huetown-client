@@ -38,7 +38,7 @@ nav {
 nav div {
   color: #7f7f7f;
   cursor: pointer;
-  font-family: "Raleway";
+  font-family: "Raleway", sans-serif;
   font-size: 2rem;
   font-weight: 300;
   letter-spacing: 0.3125rem;
@@ -58,8 +58,8 @@ nav div .cart-icon {
 /************
 FOOTER
 ************/
-footer p {
-  border-bottom: 0.125rem solid #7f7f7f;
+footer {
+  border-top: 0.125rem solid #7f7f7f;
   margin: 0 auto;
   width: 90%;
 }
@@ -78,7 +78,7 @@ footer section a img {
   height: 4rem;
   width: 4rem;
 }
-footer section div {
+footer section [class^=icon-bg] {
   height: 4rem;
   width: 4rem;
   margin: 0 2rem;
