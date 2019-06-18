@@ -1,6 +1,6 @@
 'use strict'
 
-let aboutElements = `
+let aboutPage = `
     <div class="about-page">
     <div class="about-top">
         <img src="public/images/huetown_h_logo.jpg" />
@@ -57,5 +57,5 @@ let aboutElements = `
 `;
 
 export default {
-  aboutElements
+  aboutPage
 }

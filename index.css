@@ -35,7 +35,7 @@ nav {
   justify-content: center;
   margin: 2rem auto;
 }
-nav div {
+nav a {
   color: #7f7f7f;
   cursor: pointer;
   font-family: "Raleway", sans-serif;
@@ -44,12 +44,14 @@ nav div {
   letter-spacing: 0.3125rem;
   margin: 0 1.25rem;
   text-align: center;
+  text-decoration: none;
   text-transform: uppercase;
 }
-nav div:hover {
+nav a:hover {
   color: #000;
 }
-nav div .cart-icon {
+nav .cart-icon {
+  margin: 0 1.25rem;
   position: relative;
   top: 0.125rem;
   max-height: 1.6rem;
