@@ -11,6 +11,7 @@ HTML & BODY
 
 html {
   font-size: 62.5%;
+  margin: 0 auto;
 }
 
 body {
@@ -37,7 +38,7 @@ img[alt="Huetown Script Logo"] {
 
 nav {
   display: flex;
-  justify-content: center;
+  justify-content: space-around;
   margin: 2rem auto;
 
   a {
@@ -47,7 +48,7 @@ nav {
     font-size: 1.75rem;
     font-weight: 400;
     letter-spacing: 0.3125rem;
-    margin: 0 1.25rem;
+    // margin: 0 1.25rem;
     text-align: center;
     text-decoration: none;
     text-transform: uppercase;
@@ -59,7 +60,7 @@ nav {
   }
 
   .cart-icon {
-    margin: 0 1.25rem;
+    // margin: 0 1.25rem;
     position: relative;
     top: 0.125rem;
     max-height: 1.6rem;

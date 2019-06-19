@@ -27,9 +27,9 @@ $(() => {
 
   // Hover over any footer icon to make the colored element behind it visible
   $('.footer-icon').hover(function () {
-    $('.icon-bg-' + this.getAttribute('data-icon')).css('visibility','visible')
+    $('.icon-bg-' + this.getAttribute('title').toLowerCase()).css('visibility','visible')
     }, function () {
-    $('.icon-bg-' + this.getAttribute('data-icon')).css('visibility','hidden')
+    $('.icon-bg-' + this.getAttribute('title').toLowerCase()).css('visibility','hidden')
   });
 
   // Set variable for main element
@@ -55,8 +55,8 @@ $(() => {
     let currentPageTitle = $(this).attr('title');
     console.log('%c NAV ELEMENT CLICKED! ', 'font-size: 20px; background: #00ff00; color: #000000');
     console.log(`currentPagePath is ${currentPagePath}`);
-    // Update page title based on 
-    if (currentPageTitle === "Home") {
+    // Update document's page title based on title of clicked nav element 
+    if (currentPageTitle === "Huetown Home") {
       document.title = "Huetown"
       } else {
       document.title = currentPageTitle + " | Huetown"
