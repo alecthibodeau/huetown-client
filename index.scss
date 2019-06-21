@@ -7,8 +7,8 @@ HTML & BODY
 ************/
 
 // 16px is the typical default browser font-size.
-// So, 62.5% of 16px = 10px = 1rem.
-
+// Setting the font-size to 62.5% means setting it to 10px.
+// So 1rem = 10px.
 html {
   font-size: 62.5%;
   margin: 0 auto;
@@ -38,7 +38,7 @@ img[alt="Huetown Script Logo"] {
 
 nav {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-around; // This might need to be changed
   margin: 2rem auto;
 
   a {
@@ -123,6 +123,14 @@ footer {
     position: relative;
     bottom: 4rem;
   }
+}
+
+/************
+MAIN
+************/
+
+main {
+  font-family: 'Raleway', sans-serif;
 }
 
 /************

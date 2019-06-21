@@ -83,7 +83,7 @@ footer section [class^=icon-bg] {
   height: 4rem;
   width: 4rem;
   margin: 0 2rem;
-  background: #eedf8a;
+  background: #edde95;
   border-radius: 1rem;
   min-width: 4rem;
   visibility: hidden;
@@ -95,6 +95,13 @@ footer section:last-of-type {
   margin: 0 auto;
   position: relative;
   bottom: 4rem;
+}
+
+/************
+MAIN
+************/
+main {
+  font-family: "Raleway", sans-serif;
 }
 
 /************

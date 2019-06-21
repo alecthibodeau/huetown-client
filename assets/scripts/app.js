@@ -1,19 +1,6 @@
 'use strict'
 
-import about from './about.js';
-
-const homePage = "homePage";
-const lunarCalendarsPage = "lunarCalendarsPage";
-const postcardsPage = "postcardsPage";
-const printsPage = "printsPage";
-
-const routes = {
-  '/': homePage,
-  '/lunar-calendars': lunarCalendarsPage,
-  '/postcards': postcardsPage,
-  '/prints': printsPage,
-  '/about': about.aboutPage,
-};
+import routes from './routes.js';
 
 $(() => {
   console.log('document ready');
@@ -37,14 +24,14 @@ $(() => {
 
   // Display correct content when user navigates back in browsing history
   window.onpopstate = () => {
-    mainDiv.innerHTML = routes[window.location.pathname];
+    mainDiv.innerHTML = routes.routes[window.location.pathname];
     console.log(`back route is ${window.location.pathname}`);
   };
 
   // Add current page’s url (url origin + url pathname) to user’s navigation history
   let onNavElementClick = (pathName) => {
     window.history.pushState({}, pathName, window.location.origin + pathName);
-    mainDiv.innerHTML = routes[pathName];
+    mainDiv.innerHTML = routes.routes[pathName];
     console.log(`pathName is ${pathName}`);
   };
 
@@ -65,9 +52,6 @@ $(() => {
     onNavElementClick(currentPagePath);
     }
   );
-
-  // Change content of main element based on current route
-  // mainDiv.innerHTML = routes[window.location.pathname];
 });
   
 console.log('app.js runs');
