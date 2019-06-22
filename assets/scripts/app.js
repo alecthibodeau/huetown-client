@@ -10,23 +10,30 @@ $(() => {
   // Set variable for main element
   let mainDiv = document.getElementById('main');
 
-  // Update document title
-  const updateDocumentTitle = (currentPageTitle) => {
-    if (currentPageTitle === "Huetown Home") {
-      document.title = "Huetown"
-    } else {
-      document.title = currentPageTitle + " | Huetown"
-    }
-  }
-
   // Test function
   function gadLoggin() {
     console.log('%c GAD BUTTON CLICKED! ', 'font-size: 20px; background: #0000ff; color: #000000');
   }
 
+  // Change content of main element based on current route  
+  const onClickLink = function (event) {
+    event.preventDefault();
+    updateDocumentTitle($(this).attr('title'));
+    updateUrl($(this).attr('href'));
+  };
+
   // Add event handlers
   const addEventHandlers = () => {
     $('.gad-button').click(gadLoggin);
+
+    // alternative
+    // $('.item-element').click(function () {
+    //   event.preventDefault();
+    //   updateDocumentTitle($(this).attr('title'));
+    //   updateUrl($(this).attr('href'));
+    //   }
+    // );
+    $('.item-element').click(onClickLink);
   }
 
   // Change content of main element based on current route
@@ -45,7 +52,16 @@ $(() => {
     addEventHandlers();
   };
 
-  // Add current page’s url (url origin + url pathname) to user’s navigation history
+  // Update document title
+  const updateDocumentTitle = (currentPageTitle) => {
+    if (currentPageTitle === "Huetown Home") {
+      document.title = "Huetown"
+    } else {
+      document.title = currentPageTitle + " | Huetown"
+    }
+  }
+
+  // Add current page’s URL (URL origin + URL pathname) to user’s navigation history
   const updateUrl = (pathName) => {
     window.history.pushState({}, pathName, window.location.origin + pathName);
     // handlers only load after this line
@@ -55,13 +71,15 @@ $(() => {
     addEventHandlers();
   };
 
-  // Change content of main element based on current route
-  $('.nav-element').click(function () {
-    event.preventDefault();
-    updateDocumentTitle($(this).attr('title'));
-    updateUrl($(this).attr('href'));
-    }
-  );
+  // Change content of main element based on current route  
+  // const onClickLink = function (event) {
+  //   event.preventDefault();
+  //   updateDocumentTitle($(this).attr('title'));
+  //   updateUrl($(this).attr('href'));
+  // };
+
+  $('.nav-element').click(onClickLink);
+
 });
   
 console.log('app.js runs');
