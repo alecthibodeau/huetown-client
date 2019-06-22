@@ -111,6 +111,24 @@ PAGES
   display: flex;
 }
 
+.postcards-page .row {
+  display: flex;
+  justify-content: space-around;
+}
+.postcards-page .row .col {
+  text-align: center;
+}
+.postcards-page .row .col a {
+  display: block;
+  height: 200px;
+  width: 300px;
+}
+.postcards-page .row .col a img {
+  border: 1px solid black;
+  max-height: 200px;
+  max-width: 300px;
+}
+
 /************************************
 BREAKPOINT 500px
 ************************************/
