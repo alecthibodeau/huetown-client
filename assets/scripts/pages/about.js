@@ -1,11 +1,15 @@
 'use strict'
 
+let loggin = () => {
+  console.log('%c BUTTON CLICKED! ', 'font-size: 20px; background: #0000ff; color: #000000');
+};
+
 let aboutPage = `
   <div class="about-page">
     <div class="about-top">
       <img src="public/images/huetown_h_logo.jpg" />
       <p>
-        Huetown is the web shop for artist Alec Thibodeau (me!). 
+        <button id="test"  class="gad-button"><span>Huetown</span></button> is the web shop for artist Alec Thibodeau (me!). 
         I make lunar calendars, prints, postcards and more. An artist's bio 
         and images of my past work can be found at my portfolio site: 
         <a href="https://alecthibodeau.com/about.html" target="_blank">alecthibodeau.com</a>. 
@@ -54,6 +58,13 @@ let aboutPage = `
       </p>
     </div>
   </div>
+
+  <button type="button" class="btn btn-primary" onclick="AddRecord();">Create</button>
+<script>
+    function AddRecord(){
+      alert('Add it!');
+    }
+</script>
 `;
 
 export default {

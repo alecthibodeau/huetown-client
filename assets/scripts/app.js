@@ -1,55 +1,65 @@
 'use strict'
 
 import routes from './routes.js';
+import ui from './ui.js';
 
 $(() => {
   console.log('document ready');
-
-  // Hover over the shopping cart image to change it 
-  $('.cart-icon').hover(function () {
-    $(this).attr('src','public/images/nav_view_cart_fill.svg')
-    }, function () {
-    $(this).attr('src','public/images/nav_view_cart_lines.svg')
-  });
-
-  // Hover over any footer icon to make the colored element behind it visible
-  $('.footer-icon').hover(function () {
-    $('.icon-bg-' + this.getAttribute('title').toLowerCase()).css('visibility','visible')
-    }, function () {
-    $('.icon-bg-' + this.getAttribute('title').toLowerCase()).css('visibility','hidden')
-  });
+  ui.addUiHandlers();
 
   // Set variable for main element
   let mainDiv = document.getElementById('main');
 
+  // Update document title
+  const updateDocumentTitle = (currentPageTitle) => {
+    if (currentPageTitle === "Huetown Home") {
+      document.title = "Huetown"
+    } else {
+      document.title = currentPageTitle + " | Huetown"
+    }
+  }
+
+  // Test function
+  function gadLoggin() {
+    console.log('%c GAD BUTTON CLICKED! ', 'font-size: 20px; background: #0000ff; color: #000000');
+  }
+
+  // Add event handlers
+  const addEventHandlers = () => {
+    $('.gad-button').click(gadLoggin);
+  }
+
+  // Change content of main element based on current route
+  // Run function to add event handlers
+  const setHtml = () => {
+    mainDiv.innerHTML = routes.routes[window.location.pathname];
+    addEventHandlers();
+  }
+
+  // Run setHtml on page load, which loads HTML and adds event handlers
+  setHtml();
+
   // Display correct content when user navigates back in browsing history
   window.onpopstate = () => {
     mainDiv.innerHTML = routes.routes[window.location.pathname];
-    console.log(`back route is ${window.location.pathname}`);
+    addEventHandlers();
   };
 
   // Add current page’s url (url origin + url pathname) to user’s navigation history
-  let onNavElementClick = (pathName) => {
+  const updateUrl = (pathName) => {
     window.history.pushState({}, pathName, window.location.origin + pathName);
+    // handlers only load after this line
     mainDiv.innerHTML = routes.routes[pathName];
-    console.log(`pathName is ${pathName}`);
+    // alternative
+    // mainDiv.innerHTML = routes.routes[window.location.pathname];
+    addEventHandlers();
   };
 
   // Change content of main element based on current route
   $('.nav-element').click(function () {
     event.preventDefault();
-    let currentPagePath = $(this).attr('href');
-    let currentPageTitle = $(this).attr('title');
-    console.log('%c NAV ELEMENT CLICKED! ', 'font-size: 20px; background: #00ff00; color: #000000');
-    console.log(`currentPagePath is ${currentPagePath}`);
-    // Update document's page title based on title of clicked nav element 
-    if (currentPageTitle === "Huetown Home") {
-      document.title = "Huetown"
-      } else {
-      document.title = currentPageTitle + " | Huetown"
-      }
-    console.log(`document.title is ${document.title}`);
-    onNavElementClick(currentPagePath);
+    updateDocumentTitle($(this).attr('title'));
+    updateUrl($(this).attr('href'));
     }
   );
 });

@@ -1,17 +1,20 @@
 import about from './pages/about.js';
 import postcards from './pages/postcards.js';
+import prints from './pages/prints.js';
 
 const homePage = "homePage";
 const lunarCalendarsPage = "lunarCalendarsPage";
 // const postcardsPage = "postcardsPage";
-const printsPage = "printsPage";
+// const printsPage = "printsPage";
+const assetsPage = "assetsPage";
 
 const routes = {
     '/': homePage,
     '/lunar-calendars': lunarCalendarsPage,
     '/postcards': postcards.postcardsPage,
-    '/prints': printsPage,
-    '/about': about.aboutPage
+    '/prints': prints.printsPage,
+    '/about': about.aboutPage,
+    '/assets': assetsPage
   };
   
   export default {
