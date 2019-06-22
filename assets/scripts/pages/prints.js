@@ -6,4 +6,4 @@ let printsPage = `
 
 export default {
   printsPage
-}
+};

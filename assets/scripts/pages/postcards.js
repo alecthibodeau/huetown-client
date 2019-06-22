@@ -35,4 +35,4 @@ let postcardsPage = `
 
 export default {
   postcardsPage
-}
+};

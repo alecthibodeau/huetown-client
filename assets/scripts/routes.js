@@ -1,3 +1,5 @@
+'use strict'
+
 import about from './pages/about.js';
 import postcards from './pages/postcards.js';
 import prints from './pages/prints.js';
@@ -8,7 +10,7 @@ const lunarCalendarsPage = "lunarCalendarsPage";
 // const printsPage = "printsPage";
 const assetsPage = "assetsPage";
 
-const routes = {
+const routesDictionary = {
     '/': homePage,
     '/lunar-calendars': lunarCalendarsPage,
     '/postcards': postcards.postcardsPage,
@@ -18,5 +20,5 @@ const routes = {
   };
   
   export default {
-    routes
+    routesDictionary
   };

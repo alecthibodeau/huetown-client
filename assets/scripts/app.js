@@ -5,9 +5,11 @@ import ui from './ui.js';
 
 $(() => {
   console.log('document ready');
+
+  // Add handlers for header and footer
   ui.addUiHandlers();
 
-  // Set variable for main element
+  // Set variable for main element, which is where custom HTML loads
   let mainDiv = document.getElementById('main');
 
   // Test function
@@ -15,41 +17,33 @@ $(() => {
     console.log('%c GAD BUTTON CLICKED! ', 'font-size: 20px; background: #0000ff; color: #000000');
   }
 
-  // Change content of main element based on current route  
+  // Update document title and navigation history on anchor element click
   const onClickLink = function (event) {
     event.preventDefault();
     updateDocumentTitle($(this).attr('title'));
-    updateUrl($(this).attr('href'));
+    addUrlToHistory($(this).attr('href'));
   };
 
   // Add event handlers
   const addEventHandlers = () => {
     $('.gad-button').click(gadLoggin);
-
-    // alternative
-    // $('.item-element').click(function () {
-    //   event.preventDefault();
-    //   updateDocumentTitle($(this).attr('title'));
-    //   updateUrl($(this).attr('href'));
-    //   }
-    // );
+    // Run onClickLink for anchor elements not in index.html
     $('.item-element').click(onClickLink);
-  }
+  };
 
-  // Change content of main element based on current route
-  // Run function to add event handlers
+  // Set HTML based on current route and add event handlers
+  // Note: Event handlers for elements not in index.html need to be re-added after each HTML change
   const setHtml = () => {
-    mainDiv.innerHTML = routes.routes[window.location.pathname];
+    mainDiv.innerHTML = routes.routesDictionary[window.location.pathname];
     addEventHandlers();
-  }
+  };
 
-  // Run setHtml on page load, which loads HTML and adds event handlers
+  // Run setHtml on page load
   setHtml();
 
   // Display correct content when user navigates back in browsing history
   window.onpopstate = () => {
-    mainDiv.innerHTML = routes.routes[window.location.pathname];
-    addEventHandlers();
+    setHtml();
   };
 
   // Update document title
@@ -59,25 +53,16 @@ $(() => {
     } else {
       document.title = currentPageTitle + " | Huetown"
     }
-  }
-
-  // Add current page’s URL (URL origin + URL pathname) to user’s navigation history
-  const updateUrl = (pathName) => {
-    window.history.pushState({}, pathName, window.location.origin + pathName);
-    // handlers only load after this line
-    mainDiv.innerHTML = routes.routes[pathName];
-    // alternative
-    // mainDiv.innerHTML = routes.routes[window.location.pathname];
-    addEventHandlers();
   };
 
-  // Change content of main element based on current route  
-  // const onClickLink = function (event) {
-  //   event.preventDefault();
-  //   updateDocumentTitle($(this).attr('title'));
-  //   updateUrl($(this).attr('href'));
-  // };
+  // Add current page’s URL (URL origin + URL pathname) to user’s navigation history
+  const addUrlToHistory = (currentPathName) => {
+    window.history.pushState({}, currentPathName, window.location.origin + currentPathName);
+    setHtml();
+  };
 
+  // Run onClickLink for anchor elements in index.html
+  // This runs by default on page load, while non-index.html elements need to be added through event handlers
   $('.nav-element').click(onClickLink);
 
 });
