@@ -58,13 +58,6 @@ let aboutPage = `
       </p>
     </div>
   </div>
-
-  <button type="button" class="btn btn-primary" onclick="AddRecord();">Create</button>
-<script>
-    function AddRecord(){
-      alert('Add it!');
-    }
-</script>
 `;
 
 export default {

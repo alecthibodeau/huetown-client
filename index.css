@@ -71,6 +71,40 @@ nav .cart-icon {
 }
 
 /************
+MAIN
+************/
+main {
+  font-family: "Raleway", sans-serif;
+  margin: 0 auto;
+  width: 90%;
+}
+
+/************
+PAGES
+************/
+.about-page .about-top {
+  display: flex;
+}
+
+.postcards-page .row {
+  display: flex;
+  justify-content: space-around;
+}
+.postcards-page .row .col {
+  text-align: center;
+}
+.postcards-page .row .col a {
+  display: block;
+  height: 200px;
+  width: 300px;
+}
+.postcards-page .row .col a img {
+  border: 1px solid black;
+  max-height: 200px;
+  max-width: 300px;
+}
+
+/************
 FOOTER
 ************/
 footer {
@@ -109,38 +143,6 @@ footer section:last-of-type [class^=icon-bg] {
 }
 footer section:last-of-type [class^=icon-bg]:nth-child(2) {
   border-radius: 50%;
-}
-
-/************
-MAIN
-************/
-main {
-  font-family: "Raleway", sans-serif;
-}
-
-/************
-PAGES
-************/
-.about-page .about-top {
-  display: flex;
-}
-
-.postcards-page .row {
-  display: flex;
-  justify-content: space-around;
-}
-.postcards-page .row .col {
-  text-align: center;
-}
-.postcards-page .row .col a {
-  display: block;
-  height: 200px;
-  width: 300px;
-}
-.postcards-page .row .col a img {
-  border: 1px solid black;
-  max-height: 200px;
-  max-width: 300px;
 }
 
 /************************************

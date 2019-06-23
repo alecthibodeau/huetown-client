@@ -3,14 +3,13 @@
 import routes from './routes.js';
 import ui from './ui.js';
 
-$(() => {
+// When the DOM is fully loaded
+document.addEventListener('DOMContentLoaded', function () {
+  
   console.log('document ready');
 
   // Add handlers for header and footer
   ui.addUiHandlers();
-
-  // Set variable for main element, which is where custom HTML loads
-  let mainDiv = document.getElementById('main');
 
   // Test function
   function gadLoggin() {
@@ -18,23 +17,32 @@ $(() => {
   }
 
   // Update document title and navigation history on anchor element click
+  // Run setHTML, which sets the HTML content and also adds (or re-adds) event handlers
   const onClickLink = function (event) {
     event.preventDefault();
-    updateDocumentTitle($(this).attr('title'));
-    addUrlToHistory($(this).attr('href'));
+    updateDocumentTitle(this.getAttribute('title'));
+    addUrlToHistory(this.getAttribute('href'));
+    setHtml();
   };
 
-  // Add event handlers
+  // Custom three-parameter function for adding an event handler to a class of elements
+  // Doing this requires looping through the class's array and adding to each
+  const classNameEventHandler = (nameOfClass, eventString, functionToRun) => {
+    for (let i = 0; i < document.getElementsByClassName(nameOfClass).length; i++) {
+      document.getElementsByClassName(nameOfClass)[i].addEventListener(eventString, functionToRun);
+    }
+  };
+
+  // Add event handlers for elements not in index.html
   const addEventHandlers = () => {
-    $('.gad-button').click(gadLoggin);
-    // Run onClickLink for anchor elements not in index.html
-    $('.item-element').click(onClickLink);
+    classNameEventHandler('gad-button', 'click', gadLoggin);
+    classNameEventHandler('item-element', 'click', onClickLink);
   };
 
-  // Set HTML based on current route and add event handlers
-  // Note: Event handlers for elements not in index.html need to be re-added after each HTML change
+  // Set HTML based on current route, and add event handlers
+  // Event handlers for elements not in index.html need to be added after each HTML change
   const setHtml = () => {
-    mainDiv.innerHTML = routes.routesDictionary[window.location.pathname];
+    document.getElementById('main').innerHTML = routes.routesDictionary[window.location.pathname];
     addEventHandlers();
   };
 
@@ -48,22 +56,22 @@ $(() => {
 
   // Update document title
   const updateDocumentTitle = (currentPageTitle) => {
-    if (currentPageTitle === "Huetown Home") {
-      document.title = "Huetown"
+    if (currentPageTitle === 'Huetown Home') {
+      document.title = 'Huetown'
     } else {
-      document.title = currentPageTitle + " | Huetown"
+      document.title = currentPageTitle + ' | Huetown'
     }
   };
 
   // Add current page’s URL (URL origin + URL pathname) to user’s navigation history
   const addUrlToHistory = (currentPathName) => {
     window.history.pushState({}, currentPathName, window.location.origin + currentPathName);
-    setHtml();
   };
 
   // Run onClickLink for anchor elements in index.html
-  // This runs by default on page load, while non-index.html elements need to be added through event handlers
-  $('.nav-element').click(onClickLink);
+  // This event handler runs by default on page load
+  // While event handlers for elements not in index.html need to be added after each HTML change
+  classNameEventHandler('nav-element', 'click', onClickLink);
 
 });
   
