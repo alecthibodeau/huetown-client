@@ -109,47 +109,63 @@ PAGES
 FOOTER
 ************/
 
+$icon-height: 4rem;
+$icon-width: 4rem;
+
+@mixin icon-dimensions {
+  height: $icon-height;
+  width: $icon-height;
+}
+
 footer {
   border-top: 2px solid $fifty-percent-gray;
   display: flex;
   justify-content: center;
   width: 90%;
 
-  @mixin icon-dimensions {
-    height: 4rem;
-    width: 4rem;
-  }
-
   section {
-
-    margin: 2rem;
+    margin: 2rem 4rem;
 
     a {
+      @include icon-dimensions;
+
       display: block;
-      position: relative;
-      z-index: 10;
       
       img {
         @include icon-dimensions;
         
         display: block;
+        position: relative;
+        z-index: 10;
+      }
+
+      // Show background div on parent anchor's hover
+      &:hover div {
+        visibility: visible;
+      }
+
+      // The dimenions are a percentage (of the parent anchor) to keep from bleeding
+      // The positions are (100 - dimension)/2 for centering
+      div {
+        background: $huetown-yellow;
+        border-radius: 1rem;
+        height: 93%;
+        left: 3.5%;
+        position: relative;
+        bottom: calc(#{$icon-height} - 3.5%); // Interpolation
+        visibility: hidden;
+        width: 93%;
       }
     } 
 
-    [class^="icon-bg"] {
-      @include icon-dimensions;
-
-      background: $huetown-yellow;
-      border-radius: 1rem;
-      position: relative;
-      bottom: 4rem;
-      min-width: 4rem; // Needed to keep div as square at narrow viewport widths.
-      visibility: hidden;
-    }
-
-    // The second sections's background div, which is a circle:
+    // Make the second anchor's background div a circle
     &:nth-of-type(2) div {
       border-radius: 50%;
+    }
+
+    // Make the third anchor's background's border-radius
+    &:nth-of-type(3) div {
+      border-radius: .5rem;
     }
   }
 }
