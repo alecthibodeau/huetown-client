@@ -41,23 +41,38 @@ nav {
   display: flex;
   justify-content: space-around; // This might need to be changed
   margin: 2rem auto;
+  // min-height: 3.5rem;
 
   a {
-    color: $fifty-percent-gray;
+    color: $very-dark-gray;
     cursor: pointer;
     font-family: 'Raleway', sans-serif;
     font-size: 1.75rem;
     font-weight: 400;
     letter-spacing: 0.3125rem;
-    // margin: 0 1.25rem;
     text-align: center;
     text-decoration: none;
     text-transform: uppercase;
+    transition: 0.3s;
 
     &:hover {
-      color: $black;
+      color: $huetown-red;
     }
 
+    &::after {
+      border-bottom: 3px solid $white;
+      content: "";
+      display: block;
+      position: relative;
+      top: 0.5rem;
+      transition: 0.5s;
+      width: 100%;
+    }
+
+    &:hover::after {
+      border-bottom: 3px solid $huetown-green;
+      top: 0.25rem;
+    }
   }
 
   .cart-icon {
@@ -73,7 +88,7 @@ FOOTER
 ************/
 
 footer {
-  border-top: 0.125rem solid $fifty-percent-gray;
+  border-top: 2px solid $fifty-percent-gray;
   margin: 0 auto;
   width: 90%;
 
@@ -86,6 +101,7 @@ footer {
     margin: 0 2rem;
   }
 
+  // Both sections for icons and bgs:
   section {
     display: flex;
     justify-content: center;
@@ -102,28 +118,29 @@ footer {
       }
     }
 
-    [class^="icon-bg"] {
-      @include icon-dimensions;
-      @include icons-and-bgs;
-
-      background: $huetown-yellow;
-      border-radius: 1rem;
-      min-width: 4rem; // Needed to keep div as square at narrow viewport widths.
-      visibility: hidden;
+    // The section containing the background divs:
+    &:last-of-type {
+      margin: 0 auto;
+      position: relative;
+      bottom: 4rem;
+  
+      // The icon-bg divs
+      [class^="icon-bg"] {
+        @include icon-dimensions;
+        @include icons-and-bgs;
+      
+        background: $huetown-yellow;
+        border-radius: 1rem;
+        min-width: 4rem; // Needed to keep div as square at narrow viewport widths.
+        visibility: hidden;
+  
+        // The div for the second icon, which is a circle:
+        &:nth-child(2) {
+          border-radius: 50%;
+        }
+      }
     }
-
-    // The div for the second icon:
-    div:nth-child(2) {
-      border-radius: 50%;
-    }
-  }
-
-  // The section containing the background divs:
-  section:last-of-type {
-    margin: 0 auto;
-    position: relative;
-    bottom: 4rem;
-  }
+  } 
 }
 
 /************

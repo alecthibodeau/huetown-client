@@ -1,22 +1,25 @@
 'use strict'
 
-import about from './pages/about.js';
-import postcards from './pages/postcards.js';
+// nav pages
+import home from './pages/home.js';
+import lunarCalendars from './pages/lunar-calendars.js';
 import prints from './pages/prints.js';
+import postcards from './pages/postcards.js';
+import about from './pages/about.js';
 
-const homePage = "homePage";
-const lunarCalendarsPage = "lunarCalendarsPage";
-// const postcardsPage = "postcardsPage";
-// const printsPage = "printsPage";
-const assetsPage = "assetsPage";
+// item pages
+import assets from './pages/items/assets.js';
+
+// const homePage = "homePage";
+// const lunarCalendarsPage = "lunarCalendarsPage";
 
 const routesDictionary = {
-    '/': homePage,
-    '/lunar-calendars': lunarCalendarsPage,
+    '/': home.homePage,
+    '/lunar-calendars': lunarCalendars.lunarCalendarsPage,
     '/postcards': postcards.postcardsPage,
     '/prints': prints.printsPage,
     '/about': about.aboutPage,
-    '/assets': assetsPage
+    '/assets': assets.assetsPage
   };
   
   export default {

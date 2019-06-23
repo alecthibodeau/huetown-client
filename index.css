@@ -37,7 +37,7 @@ nav {
   margin: 2rem auto;
 }
 nav a {
-  color: #7f7f7f;
+  color: #333;
   cursor: pointer;
   font-family: "Raleway", sans-serif;
   font-size: 1.75rem;
@@ -46,9 +46,23 @@ nav a {
   text-align: center;
   text-decoration: none;
   text-transform: uppercase;
+  transition: 0.3s;
 }
 nav a:hover {
-  color: #000;
+  color: #e78460;
+}
+nav a::after {
+  border-bottom: 3px solid #fff;
+  content: "";
+  display: block;
+  position: relative;
+  top: 0.5rem;
+  transition: 0.5s;
+  width: 100%;
+}
+nav a:hover::after {
+  border-bottom: 3px solid #6abbb6;
+  top: 0.25rem;
 }
 nav .cart-icon {
   position: relative;
@@ -60,7 +74,7 @@ nav .cart-icon {
 FOOTER
 ************/
 footer {
-  border-top: 0.125rem solid #7f7f7f;
+  border-top: 2px solid #7f7f7f;
   margin: 0 auto;
   width: 90%;
 }
@@ -79,7 +93,12 @@ footer section a img {
   height: 4rem;
   width: 4rem;
 }
-footer section [class^=icon-bg] {
+footer section:last-of-type {
+  margin: 0 auto;
+  position: relative;
+  bottom: 4rem;
+}
+footer section:last-of-type [class^=icon-bg] {
   height: 4rem;
   width: 4rem;
   margin: 0 2rem;
@@ -88,13 +107,8 @@ footer section [class^=icon-bg] {
   min-width: 4rem;
   visibility: hidden;
 }
-footer section div:nth-child(2) {
+footer section:last-of-type [class^=icon-bg]:nth-child(2) {
   border-radius: 50%;
-}
-footer section:last-of-type {
-  margin: 0 auto;
-  position: relative;
-  bottom: 4rem;
 }
 
 /************
