@@ -46,7 +46,7 @@ nav a {
   text-align: center;
   text-decoration: none;
   text-transform: uppercase;
-  transition: 0.3s;
+  transition: all 0.3s linear;
 }
 nav a:hover {
   color: #e78460;
@@ -109,39 +109,34 @@ FOOTER
 ************/
 footer {
   border-top: 2px solid #7f7f7f;
-  margin: 0 auto;
+  display: flex;
+  justify-content: center;
   width: 90%;
 }
 footer section {
-  display: flex;
-  justify-content: center;
-  margin: 2rem auto 0;
+  margin: 2rem;
 }
 footer section a {
-  height: 4rem;
-  width: 4rem;
-  margin: 0 2rem;
+  display: block;
+  position: relative;
   z-index: 10;
 }
 footer section a img {
   height: 4rem;
   width: 4rem;
+  display: block;
 }
-footer section:last-of-type {
-  margin: 0 auto;
-  position: relative;
-  bottom: 4rem;
-}
-footer section:last-of-type [class^=icon-bg] {
+footer section [class^=icon-bg] {
   height: 4rem;
   width: 4rem;
-  margin: 0 2rem;
   background: #edde95;
   border-radius: 1rem;
+  position: relative;
+  bottom: 4rem;
   min-width: 4rem;
   visibility: hidden;
 }
-footer section:last-of-type [class^=icon-bg]:nth-child(2) {
+footer section:nth-of-type(2) div {
   border-radius: 50%;
 }
 

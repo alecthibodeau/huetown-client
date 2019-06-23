@@ -41,7 +41,6 @@ nav {
   display: flex;
   justify-content: space-around; // This might need to be changed
   margin: 2rem auto;
-  // min-height: 3.5rem;
 
   a {
     color: $very-dark-gray;
@@ -50,10 +49,11 @@ nav {
     font-size: 1.75rem;
     font-weight: 400;
     letter-spacing: 0.3125rem;
+    // margin: 0 1.25rem;
     text-align: center;
     text-decoration: none;
     text-transform: uppercase;
-    transition: 0.3s;
+    transition: all 0.3s linear;
 
     &:hover {
       color: $huetown-red;
@@ -111,7 +111,8 @@ FOOTER
 
 footer {
   border-top: 2px solid $fifty-percent-gray;
-  margin: 0 auto;
+  display: flex;
+  justify-content: center;
   width: 90%;
 
   @mixin icon-dimensions {
@@ -119,50 +120,38 @@ footer {
     width: 4rem;
   }
 
-  @mixin icons-and-bgs {
-    margin: 0 2rem;
-  }
-
-  // Both sections for icons and bgs:
   section {
-    display: flex;
-    justify-content: center;
-    margin: 2rem auto 0;
+
+    margin: 2rem;
 
     a {
-      @include icon-dimensions;
-      @include icons-and-bgs;
-
+      display: block;
+      position: relative;
       z-index: 10;
-
+      
       img {
         @include icon-dimensions;
+        
+        display: block;
       }
-    }
+    } 
 
-    // The section containing the background divs:
-    &:last-of-type {
-      margin: 0 auto;
+    [class^="icon-bg"] {
+      @include icon-dimensions;
+
+      background: $huetown-yellow;
+      border-radius: 1rem;
       position: relative;
       bottom: 4rem;
-  
-      // The icon-bg divs
-      [class^="icon-bg"] {
-        @include icon-dimensions;
-        @include icons-and-bgs;
-      
-        background: $huetown-yellow;
-        border-radius: 1rem;
-        min-width: 4rem; // Needed to keep div as square at narrow viewport widths.
-        visibility: hidden;
-  
-        // The div for the second icon, which is a circle:
-        &:nth-child(2) {
-          border-radius: 50%;
-        }
-      }
+      min-width: 4rem; // Needed to keep div as square at narrow viewport widths.
+      visibility: hidden;
     }
-  } 
+
+    // The second sections's background div, which is a circle:
+    &:nth-of-type(2) div {
+      border-radius: 50%;
+    }
+  }
 }
 
 /************************************
