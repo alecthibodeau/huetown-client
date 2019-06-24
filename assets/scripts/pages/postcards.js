@@ -4,7 +4,7 @@ let postcardsPage = `
   <div class="postcards-page">
     <div class="row">
       <div class="col">
-        <a title="Assets" class="item-element" href="/assets">
+        <a data-title="Assets" class="item-element" href="/assets">
           <img src="public/images/items/postcard_assets.png" />
         </a>
         <p>Assets</p>

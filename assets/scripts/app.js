@@ -7,9 +7,6 @@ document.addEventListener('DOMContentLoaded', function () {
   
   console.log('document ready');
 
-  // Add handlers for header and footer
-  // ui.addUiHandlers();
-
   // Test function
   function gadLoggin() {
     console.log('%c GAD BUTTON CLICKED! ', 'font-size: 20px; background: #0000ff; color: #000000');
@@ -19,7 +16,7 @@ document.addEventListener('DOMContentLoaded', function () {
   // Run setHTML, which sets the HTML content and also adds (or re-adds) event handlers
   const onClickLink = function (event) {
     event.preventDefault();
-    updateDocumentTitle(this.getAttribute('title'));
+    updateDocumentTitle(this.getAttribute('data-title'));
     addUrlToHistory(this.getAttribute('href'));
     setHtml();
   };
@@ -66,6 +63,8 @@ document.addEventListener('DOMContentLoaded', function () {
   const addUrlToHistory = (currentPathName) => {
     window.history.pushState({}, currentPathName, window.location.origin + currentPathName);
   };
+
+  // Possibly run addUrlToHistory on page load
 
   // Run onClickLink for anchor elements in index.html
   // This event handler runs by default on page load

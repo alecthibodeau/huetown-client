@@ -5,7 +5,7 @@ let itemPostcardPage = `
     <div class="row">
 
       <div class="col">
-        <a title="Assets" class="item-element" href="/assets">
+        <a href="/">
           <img src="public/images/items/postcard_assets.png" />
         </a>
       </div>
@@ -42,11 +42,3 @@ let itemPostcardPage = `
 export default {
   itemPostcardPage
 };
-
-// <input type="image" src="images/main/button_add_to_cart_true.gif"
-//   name="submit" alt="PayPal - The safer, easier way to pay online!" 
-//   style="margin-bottom:-16px;"
-//   width="146" height="40"
-//   onMouseOver="this.src='images/main/button_add_to_cart_over.gif';"
-//   onMouseOut="this.src='images/main/button_add_to_cart_true.gif';"
-//   onClick="this.src='images/main/button_add_to_cart_true.gif';">
