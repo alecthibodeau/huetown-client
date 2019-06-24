@@ -1,7 +1,6 @@
 'use strict'
 
 import routes from './routes.js';
-import ui from './ui.js';
 
 // When the DOM is fully loaded
 document.addEventListener('DOMContentLoaded', function () {
@@ -9,7 +8,7 @@ document.addEventListener('DOMContentLoaded', function () {
   console.log('document ready');
 
   // Add handlers for header and footer
-  ui.addUiHandlers();
+  // ui.addUiHandlers();
 
   // Test function
   function gadLoggin() {

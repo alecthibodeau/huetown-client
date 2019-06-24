@@ -8,7 +8,7 @@ import postcards from './pages/postcards.js';
 import about from './pages/about.js';
 
 // item pages
-import assets from './pages/items/assets.js';
+import postcard from './pages/items/item-postcard.js';
 
 // const homePage = "homePage";
 // const lunarCalendarsPage = "lunarCalendarsPage";
@@ -19,7 +19,7 @@ const routesDictionary = {
     '/postcards': postcards.postcardsPage,
     '/prints': prints.printsPage,
     '/about': about.aboutPage,
-    '/assets': assets.assetsPage
+    '/assets': postcard.itemPostcardPage
   };
   
   export default {

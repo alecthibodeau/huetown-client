@@ -29,58 +29,56 @@ HEADER
 
 header {
   margin: 0.5rem auto;
-}
-
-img[alt="Huetown Script Logo"] {
-  display: block;
-  height: auto;
-  margin: 0 auto;
-  width: 40rem;
-}
-
-nav {
-  display: flex;
-  justify-content: space-around; // This might need to be changed
-  margin: 2rem auto;
 
   a {
-    color: $very-dark-gray;
-    cursor: pointer;
-    font-family: 'Raleway', sans-serif;
-    font-size: 1.75rem;
-    font-weight: 400;
-    letter-spacing: 0.3125rem;
-    // margin: 0 1.25rem;
-    text-align: center;
-    text-decoration: none;
-    text-transform: uppercase;
-    transition: all 0.3s linear;
-
-    &:hover {
-      color: $huetown-red;
-    }
-
-    &::after {
-      border-bottom: 3px solid $white;
-      content: "";
+    img[alt="Huetown Script Logo"] {
       display: block;
-      position: relative;
-      top: 0.5rem;
-      transition: 0.5s;
-      width: 100%;
-    }
-
-    &:hover::after {
-      border-bottom: 3px solid $huetown-green;
-      top: 0.25rem;
+      height: auto;
+      margin: 0 auto;
+      width: 40rem;
     }
   }
 
-  .cart-icon {
-    // margin: 0 1.25rem;
-    position: relative;
-    top: 0.125rem;
-    max-height: 1.6rem;
+  nav {
+    display: flex;
+    justify-content: space-around; // This might need to be changed
+    margin: 2rem auto;
+  
+    a,
+    form, // form is needed for the underline effect to work
+    form [value="view cart"] {
+      border: none;
+      color: $very-dark-gray;
+      cursor: pointer;
+      font-family: 'Raleway', sans-serif;
+      font-size: 1.75rem;
+      font-weight: 400;
+      letter-spacing: 0.3125rem;
+      padding: 0; // Overrides default value in form
+      text-align: center;
+      text-decoration: none;
+      text-transform: uppercase;
+      transition: all 0.3s linear;
+  
+      &:hover {
+        color: $huetown-red;
+      }
+  
+      &::after {
+        border-bottom: 3px solid transparent;
+        content: "";
+        display: block;
+        position: relative;
+        top: 0.5rem;
+        transition: 0.5s;
+        width: 100%;
+      }
+  
+      &:hover::after {
+        border-bottom: 3px solid $huetown-green;
+        top: 0.25rem;
+      }
+    }
   }
 }
 
@@ -154,7 +152,7 @@ footer {
       // The dimenions are a percentage (of the parent anchor) to keep from bleeding
       // The positions are (100 - dimension)/2 for centering
       div {
-        background: $white;
+        background: transparent;
         border-radius: 1rem;
         height: 93%;
         left: 3.5%;
@@ -181,7 +179,17 @@ BREAKPOINT 500px
 ************************************/
 
 @media only screen and (max-width: 500px) {
-  img[alt="Huetown Script Logo"] {
-    width: 80%;
+
+  header {
+
+    a {
+      img[alt="Huetown Script Logo"] {
+        width: 80%;
+      }
+    }
+
+    nav {
+      flex-direction: column;
+    }
   }
 }
