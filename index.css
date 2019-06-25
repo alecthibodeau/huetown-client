@@ -111,7 +111,7 @@ PAGES
   display: flex;
 }
 .item-page .row .col form [name=quantity] {
-  border: 2px solid #7f7f7f;
+  border: 0.1rem solid #7f7f7f;
   font-size: 1.25rem;
   height: 3.8rem;
   padding: 0;
