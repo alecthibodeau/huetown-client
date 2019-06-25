@@ -1,7 +1,7 @@
 'use strict'
 
-let itemPostcardPage = `
-  <div class="item-postcard-page">
+let itemPage = `
+  <div class="item-page">
     <div class="row">
 
       <div class="col">
@@ -25,14 +25,16 @@ let itemPostcardPage = `
         <p>
           $1 
         </p>
-        <div>
-          <form target="paypal" action="https://www.paypal.com/cgi-bin/webscr" method="post">
-            <input type="hidden" name="cmd" value="_s-xclick">
-            <input type="hidden" name="hosted_button_id" value="4CL74PH4FSSQ6">
-            <input type="submit" value="add to cart" alt="PayPal - The safer, easier way to pay online!">
-            <img alt="" border="0" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1">
-          </form>
-        </div>
+        <p>
+          QTY 
+        </p>
+        <form target="paypal" action="https://www.paypal.com/cgi-bin/webscr" method="post">
+          <input type="hidden" name="cmd" value="_s-xclick">
+          <input type="hidden" name="hosted_button_id" value="4CL74PH4FSSQ6">
+          <input type="text" name="quantity" value="1">
+          <input type="submit" value="add to cart" alt="Add To Cart">
+          <img alt="" border="0" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1">
+        </form>
       </div>
 
     </div>
@@ -40,5 +42,5 @@ let itemPostcardPage = `
 `;
 
 export default {
-  itemPostcardPage
+  itemPage
 };
