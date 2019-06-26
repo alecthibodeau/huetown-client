@@ -15,27 +15,23 @@ html body {
   margin: 0 auto;
   width: 100%;
 }
-
-/************
-HEADER
-************/
-header {
+html body header {
   margin: 0.5rem auto;
 }
-header a img[alt="Huetown Script Logo"] {
+html body header a img[alt="Huetown Script Logo"] {
   display: block;
   height: auto;
   margin: 0 auto;
   width: 40rem;
 }
-header nav {
+html body header nav {
   display: flex;
   justify-content: space-around;
   margin: 2rem auto;
 }
-header nav a,
-header nav form,
-header nav form [value="view cart"] {
+html body header nav a,
+html body header nav form,
+html body header nav form [value="view cart"] {
   border: none;
   color: #333;
   cursor: pointer;
@@ -49,9 +45,9 @@ header nav form [value="view cart"] {
   text-transform: uppercase;
   transition: all 0.3s linear;
 }
-header nav a::after,
-header nav form::after,
-header nav form [value="view cart"]::after {
+html body header nav a::after,
+html body header nav form::after,
+html body header nav form [value="view cart"]::after {
   border-bottom: 3px solid transparent;
   content: "";
   display: block;
@@ -60,20 +56,57 @@ header nav form [value="view cart"]::after {
   transition: 0.5s;
   width: 100%;
 }
-header nav a:hover::after,
-header nav form:hover::after,
-header nav form [value="view cart"]:hover::after {
+html body header nav a:hover::after,
+html body header nav form:hover::after,
+html body header nav form [value="view cart"]:hover::after {
   border-bottom: 3px solid #6abbb6;
   top: 0.25rem;
 }
-
-/************
-MAIN
-************/
-main {
+html body main {
   font-family: "Raleway", sans-serif;
   margin: 0 auto;
   width: 90%;
+}
+html body footer {
+  border-top: 2px solid #7f7f7f;
+  display: flex;
+  justify-content: center;
+  margin: 1rem auto;
+  width: 90%;
+}
+html body footer section {
+  margin: 2rem 4rem;
+}
+html body footer section a {
+  height: 4rem;
+  width: 4rem;
+  display: block;
+}
+html body footer section a img {
+  height: 4rem;
+  width: 4rem;
+  display: block;
+  position: relative;
+  z-index: 10;
+}
+html body footer section a:hover div {
+  background: #edde95;
+  transition: all 0.3s linear;
+}
+html body footer section a div {
+  background: transparent;
+  border-radius: 1rem;
+  height: 93%;
+  left: 3.5%;
+  position: relative;
+  bottom: calc(4rem - 3.5%);
+  width: 93%;
+}
+html body footer section:nth-of-type(2) div {
+  border-radius: 50%;
+}
+html body footer section:nth-of-type(3) div {
+  border-radius: 0.5rem;
 }
 
 /************
@@ -127,51 +160,6 @@ PAGES
 }
 .item-page .row .col form [value="add to cart"]:hover {
   background: #6abbb6;
-}
-
-/************
-FOOTER
-************/
-footer {
-  border-top: 2px solid #7f7f7f;
-  display: flex;
-  justify-content: center;
-  margin: 1rem auto;
-  width: 90%;
-}
-footer section {
-  margin: 2rem 4rem;
-}
-footer section a {
-  height: 4rem;
-  width: 4rem;
-  display: block;
-}
-footer section a img {
-  height: 4rem;
-  width: 4rem;
-  display: block;
-  position: relative;
-  z-index: 10;
-}
-footer section a:hover div {
-  background: #edde95;
-  transition: all 0.3s linear;
-}
-footer section a div {
-  background: transparent;
-  border-radius: 1rem;
-  height: 93%;
-  left: 3.5%;
-  position: relative;
-  bottom: calc(4rem - 3.5%);
-  width: 93%;
-}
-footer section:nth-of-type(2) div {
-  border-radius: 50%;
-}
-footer section:nth-of-type(3) div {
-  border-radius: 0.5rem;
 }
 
 /************************************
