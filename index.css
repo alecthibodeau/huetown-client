@@ -50,11 +50,6 @@ header nav form [value="view cart"] {
   text-transform: uppercase;
   transition: all 0.3s linear;
 }
-header nav a:hover,
-header nav form:hover,
-header nav form [value="view cart"]:hover {
-  color: #e78460;
-}
 header nav a::after,
 header nav form::after,
 header nav form [value="view cart"]::after {

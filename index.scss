@@ -59,10 +59,12 @@ header {
       text-decoration: none;
       text-transform: uppercase;
       transition: all 0.3s linear;
-  
-      &:hover {
-        color: $huetown-red;
-      }
+
+      // Disabling text color change for now
+      // Because it doesn't work on hover for the View Cart line
+      // &:hover {
+      //   color: $huetown-red;
+      // }
   
       &::after {
         border-bottom: 3px solid transparent;
@@ -167,7 +169,7 @@ footer {
       border-radius: 50%;
     }
 
-    // Make the third anchor's background's border-radius
+    // Modify the third anchor's background's border-radius
     &:nth-of-type(3) div {
       border-radius: .5rem;
     }
