@@ -1,4 +1,6 @@
 @import "assets/styles/_variables";
+@import "assets/styles/header";
+@import "assets/styles/footer";
 @import "assets/styles/about-content";
 @import "assets/styles/postcards-content";
 @import "assets/styles/items/item-page-styles";
@@ -14,74 +16,22 @@ HTML & BODY
 html {
   font-size: 62.5%;
   margin: 0 auto;
+
+  body {
+    background: $white;
+    height: 100%;
+    margin: 0 auto;
+    width: 100%;
+  }
 }
 
-body {
-  background: $white;
-  height: 100%;
-  margin: 0 auto;
-  width: 100%;
-}
 
 /************
 HEADER
 ************/
 
 header {
-  margin: 0.5rem auto;
-
-  a {
-    img[alt="Huetown Script Logo"] {
-      display: block;
-      height: auto;
-      margin: 0 auto;
-      width: 40rem;
-    }
-  }
-
-  nav {
-    display: flex;
-    justify-content: space-around; // This might need to be changed
-    margin: 2rem auto;
-  
-    a,
-    form, // form is needed for the underline effect to work
-    form [value="view cart"] {
-      border: none;
-      color: $eighty-percent-gray;
-      cursor: pointer;
-      font-family: 'Raleway', sans-serif;
-      font-size: 1.75rem;
-      font-weight: 400;
-      letter-spacing: 0.3125rem;
-      padding: 0; // Overrides default value in form
-      text-align: center;
-      text-decoration: none;
-      text-transform: uppercase;
-      transition: all 0.3s linear;
-
-      // Disabling text color change for now
-      // Because it doesn't work on hover for the View Cart line
-      // &:hover {
-      //   color: $huetown-red;
-      // }
-  
-      &::after {
-        border-bottom: 3px solid transparent;
-        content: "";
-        display: block;
-        position: relative;
-        top: 0.5rem;
-        transition: 0.5s;
-        width: 100%;
-      }
-  
-      &:hover::after {
-        border-bottom: 3px solid $huetown-green;
-        top: 0.25rem;
-      }
-    }
-  }
+  @include header-content
 }
 
 /************
@@ -98,12 +48,12 @@ main {
 PAGES
 ************/
 
-.about-page {
-  @include about-content
-}
-
 .postcards-page {
   @include postcards-content
+}
+
+.about-page {
+  @include about-content
 }
 
 .item-page {
@@ -114,66 +64,8 @@ PAGES
 FOOTER
 ************/
 
-$icon-height: 4rem;
-$icon-width: 4rem;
-
-@mixin icon-dimensions {
-  height: $icon-height;
-  width: $icon-height;
-}
-
 footer {
-  border-top: 2px solid $fifty-percent-gray;
-  display: flex;
-  justify-content: center;
-  margin: 1rem auto;
-  width: 90%;
-
-  section {
-    margin: 2rem 4rem;
-
-    a {
-      @include icon-dimensions;
-
-      display: block;
-      
-      img {
-        @include icon-dimensions;
-        
-        display: block;
-        position: relative;
-        z-index: 10;
-      }
-
-      // Show background div on parent anchor's hover
-      &:hover div {
-        background: $huetown-yellow;
-        transition: all 0.3s linear;
-      }
-
-      // The dimenions are a percentage (of the parent anchor) to keep from bleeding
-      // The positions are (100 - dimension)/2 for centering
-      div {
-        background: transparent;
-        border-radius: 1rem;
-        height: 93%;
-        left: 3.5%;
-        position: relative;
-        bottom: calc(#{$icon-height} - 3.5%); // Interpolation
-        width: 93%;
-      }
-    } 
-
-    // Make the second anchor's background div a circle
-    &:nth-of-type(2) div {
-      border-radius: 50%;
-    }
-
-    // Modify the third anchor's background's border-radius
-    &:nth-of-type(3) div {
-      border-radius: .5rem;
-    }
-  }
+  @include footer-content
 }
 
 /************************************

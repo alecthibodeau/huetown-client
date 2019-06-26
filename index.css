@@ -9,8 +9,7 @@ html {
   font-size: 62.5%;
   margin: 0 auto;
 }
-
-body {
+html body {
   background: #fff;
   height: 100%;
   margin: 0 auto;
@@ -80,10 +79,6 @@ main {
 /************
 PAGES
 ************/
-.about-page .about-top {
-  display: flex;
-}
-
 .postcards-page .row {
   display: flex;
   justify-content: space-around;
@@ -100,6 +95,10 @@ PAGES
   border: 1px solid black;
   max-height: 200px;
   max-width: 300px;
+}
+
+.about-page .about-top {
+  display: flex;
 }
 
 .item-page .row {
