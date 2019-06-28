@@ -14,7 +14,7 @@ import item from './pages/items/item-page.js';
 // const lunarCalendarsPage = "lunarCalendarsPage";
 
 const routesDictionary = {
-    '/': home.homePage,
+    '/huetown-client/': home.homePage,
     '/lunar-calendars': lunarCalendars.lunarCalendarsPage,
     '/postcards': postcards.postcardsPage,
     '/prints': prints.printsPage,
