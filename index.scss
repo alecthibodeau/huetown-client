@@ -1,4 +1,9 @@
 @import "assets/styles/_variables";
+@import "assets/styles/header";
+@import "assets/styles/footer";
+@import "assets/styles/about-content";
+@import "assets/styles/postcards-content";
+@import "assets/styles/items/item-page-styles";
 @import url('https://fonts.googleapis.com/css?family=Varela+Round|Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i|Noto+Sans:400,400i,700,700i|Alegreya+Sans:100,100i,300,300i,400,400i,500,500i,700,700i,800,800i,900,900i|Raleway:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i');
 
 /************
@@ -6,118 +11,48 @@ HTML & BODY
 ************/
 
 // 16px is the typical default browser font-size.
-// So, 62.5% of 16px = 10px = 1rem.
-
+// Setting the font-size to 62.5% means setting it to 10px.
+// So 1rem = 10px.
 html {
   font-size: 62.5%;
-}
-
-body {
-  background: $white;
-  height: 100%;
   margin: 0 auto;
-  width: 100%;
-}
 
-/************
-HEADER
-************/
-
-header {
-  margin: 0.5rem auto;
-}
-
-img[alt="Huetown Script Logo"] {
-  display: block;
-  height: auto;
-  margin: 0 auto;
-  width: 40rem;
-}
-
-nav {
-  display: flex;
-  justify-content: center;
-  margin: 2rem auto;
-
-  & div {
-    color: $fifty-percent-gray;
-    cursor: pointer;
-    font-family: 'Raleway', sans-serif;
-    font-size: 2rem;
-    font-weight: 300;
-    letter-spacing: 0.3125rem;
-    margin: 0 1.25rem;
-    text-align: center;
-    text-transform: uppercase;
-
-    &:hover {
-      color: $black;
-    }
-
-    .cart-icon {
-      position: relative;
-      top: 0.125rem;
-      max-height: 1.6rem;
-    }
-  }
-}
-
-/************
-FOOTER
-************/
-
-footer {
-  border-top: 0.125rem solid $fifty-percent-gray;
-  margin: 0 auto;
-  width: 90%;
-
-  @mixin icon-dimensions {
-    height: 4rem;
-    width: 4rem;
-  }
-
-  @mixin icons-and-bgs {
-    margin: 0 2rem;
-  }
-
-  section {
-    display: flex;
-    justify-content: center;
-    margin: 2rem auto 0;
-
-    a {
-      @include icon-dimensions;
-      @include icons-and-bgs;
-
-      z-index: 10;
-
-      img {
-        @include icon-dimensions;
-      }
-    }
-
-    [class^="icon-bg"] {
-      @include icon-dimensions;
-      @include icons-and-bgs;
-
-      background: $huetown-yellow;
-      border-radius: 1rem;
-      min-width: 4rem; // Needed to keep div as square at narrow viewport widths.
-      visibility: hidden;
-    }
-
-    // The div for the second icon:
-    div:nth-child(2) {
-      border-radius: 50%;
-    }
-  }
-
-  // The section containing the background divs:
-  section:last-of-type {
+  body {
+    background: $white;
+    height: 100%;
     margin: 0 auto;
-    position: relative;
-    bottom: 4rem;
+    width: 100%;
+
+    header {
+      @include header-content
+    }
+
+    main {
+      font-family: 'Raleway', sans-serif;
+      margin: 0 auto;
+      width: 90%;
+    }
+
+    footer {
+      @include footer-content
+    }
   }
+}
+
+/************
+PAGES
+************/
+
+.postcards-page {
+  @include postcards-content
+}
+
+.about-page {
+  @include about-content
+}
+
+.item-page {
+  @include item-page-content
 }
 
 /************************************
@@ -125,7 +60,17 @@ BREAKPOINT 500px
 ************************************/
 
 @media only screen and (max-width: 500px) {
-  img[alt="Huetown Script Logo"] {
-    width: 80%;
+
+  header {
+
+    a {
+      img[alt="Huetown Script Logo"] {
+        width: 80%;
+      }
+    }
+
+    nav {
+      flex-direction: column;
+    }
   }
 }

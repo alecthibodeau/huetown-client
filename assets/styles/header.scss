@@ -1,0 +1,56 @@
+@mixin header-content {
+    margin: 0.5rem auto;
+  
+    a {
+      img[alt="Huetown Script Logo"] {
+        display: block;
+        height: auto;
+        margin: 0 auto;
+        width: 40rem;
+      }
+    }
+  
+    nav {
+      display: flex;
+      justify-content: space-around; // This might need to be changed
+      margin: 2rem auto;
+    
+      a,
+      form, // form is needed for the underline effect to work
+      form [value="view cart"] {
+        border: none;
+        color: $eighty-percent-gray;
+        cursor: pointer;
+        font-family: 'Raleway', sans-serif;
+        font-size: 1.75rem;
+        font-weight: 400;
+        letter-spacing: 0.3125rem;
+        padding: 0; // Overrides default value in form
+        text-align: center;
+        text-decoration: none;
+        text-transform: uppercase;
+        transition: all 0.3s linear;
+  
+        // Disabling text color change for now
+        // Because it doesn't work on hover for the View Cart line
+        // &:hover {
+        //   color: $huetown-red;
+        // }
+    
+        &::after {
+          border-bottom: 3px solid transparent;
+          content: "";
+          display: block;
+          position: relative;
+          top: 0.5rem;
+          transition: 0.5s;
+          width: 100%;
+        }
+    
+        &:hover::after {
+          border-bottom: 3px solid $huetown-green;
+          top: 0.25rem;
+        }
+      }
+    }
+  }

@@ -1,0 +1,22 @@
+@mixin postcards-content {
+    .row {
+      display: flex;
+      justify-content: space-around;
+
+      .col {
+        text-align: center;
+
+        a {
+          display: block;
+          height: 200px;
+          width: 300px;
+
+          img {
+            border: 1px solid black;
+            max-height: 200px;
+            max-width: 300px;
+          }
+        }
+      }
+    }
+  }
