@@ -43,7 +43,10 @@ document.addEventListener('DOMContentLoaded', function () {
   };
 
   // Run setHtml on page load
-  setHtml();
+  // setHtml();
+
+  // Run addEventHandlers on page load
+  addEventHandlers();
 
   // Display correct content when user navigates back in browsing history
   window.onpopstate = () => {
