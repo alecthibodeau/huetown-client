@@ -38,7 +38,12 @@ document.addEventListener('DOMContentLoaded', function () {
   // Set HTML based on current route, and add event handlers
   // Event handlers for elements not in index.html need to be added after each HTML change
   const setHtml = () => {
-    document.getElementById('main').innerHTML = routes.routesDictionary[window.location.pathname];
+    let mainDiv = document.getElementById('main')
+    if (routes.routesDictionary[window.location.pathname]) {
+    mainDiv.innerHTML = routes.routesDictionary[window.location.pathname];
+    } else {
+    mainDiv.innerHTML = routes.routesDictionary['/'];
+    }
     addEventHandlers();
   };
 
