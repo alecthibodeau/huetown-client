@@ -7,31 +7,26 @@ let itemPage = `
     <div class="row">
 
       <div class="col">
-        <img src="public/images/items/postcard_assets.png" />
+        <img class="item-image-front" src="" />
       </div>
 
       <div class="col">
         <p>
-          <span class="item-name"></span> 
-          <span class="item-category">postcard</span>
+          <span class="item-name">
+          </span> 
+          <span class="item-category">
+          </span>
         </p>
-        <p class="item-info-one">
-          6 x 4 inches; mellow, satin finish
-        </p>
-        <p class="item-info-two">
-          Full-color front / single-color back 
-        </p>
-        <p class="item-info-three">
-          Caption on the back: “Assets (detail) by Alec Thibodeau, 2012, screen print on paper, 24 x 18 inches”
-        <p class="item-price">
-          $1 
-        </p>
+        <p class="item-info-one"></p>
+        <p class="item-info-two"></p>
+        <p class="item-info-three"></p>
+        <p class="item-price"></p>
         <p>
           QTY 
         </p>
         <form target="paypal" action="https://www.paypal.com/cgi-bin/webscr" method="post">
           <input type="hidden" name="cmd" value="_s-xclick">
-          <input type="hidden" name="hosted_button_id" value="4CL74PH4FSSQ6" class="item-id">
+          <input class="item-id" type="hidden" name="hosted_button_id" value="">
           <input type="text" name="quantity" value="1">
           <input type="submit" value="add to cart" alt="Add To Cart">
           <img alt="" border="0" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1">
@@ -44,6 +39,24 @@ let itemPage = `
 
 let itemIndex = null;
 
+let elementsToFill = [
+  ['item-name', 'itemName'],
+  ['item-category', 'itemCategory'],
+  ['item-info-one', 'itemInfoOne'],
+  ['item-info-two', 'itemInfoTwo'],
+  ['item-info-three', 'itemInfoThree'],
+  ['item-price', 'itemPrice']
+]
+
+let srcsToSet = [
+  ['item-image-front', 'itemImageFront']
+]
+
+let valuesToSet = [
+  ['item-id', 'itemId']
+]
+
+// Find the index of the current route within the array of items
 const findIndex = function (array, key, value) {
   for (let i = 0; i < array.length; i++) {
     if (array[i][key] === value) {
@@ -51,14 +64,38 @@ const findIndex = function (array, key, value) {
     }
     return -1;
   }
+};
+
+const identifyElements = function (element) {
+  // Get the class's name from the 1st index of each sub-array
+  let className = element[0];
+  // Get the property's name from the 2nd index of each sub-array
+  let keyName = element[1];  
+  // Find the element by searching for the 1st (and only) instance of its class name
+  let elementToChange = document.getElementsByClassName(className)[0];
+  // Return the target element and the key name
+  // The key name is not only the 2nd index of each sub-array
+  // It also corresponds to a property in the items list
+  return [elementToChange, keyName]
 }
 
-const itemLoad =  function (currentRoute) {
+const itemLoad = function (currentRoute) {
   findIndex(items.itemsList, 'itemRoute', currentRoute);
+  let currentItem = items.itemsList[itemIndex]
+  // Use the two values returned as an array from identifyElements
   if (itemIndex !== null && itemIndex !== -1) {
-    console.log(`Cachalot cart is ${items.itemsList[1].itemId}`)
-    console.log(`Current cart is ${items.itemsList[itemIndex].itemId}`)
-    document.getElementsByClassName('item-name')[0].innerHTML = items.itemsList[itemIndex].itemName
+    // Use '.innerHTML' to fill each element
+    elementsToFill.forEach(function (element) {
+      identifyElements(element)[0].innerHTML = currentItem[identifyElements(element)[1]];
+    });
+    // Use '.src' to set each image's source
+    srcsToSet.forEach(function (element) {
+      identifyElements(element)[0].src = currentItem[identifyElements(element)[1]];
+    });
+    // Use '.value' to set each input's value
+    valuesToSet.forEach(function (element) {
+      identifyElements(element)[0].value = currentItem[identifyElements(element)[1]];
+    });
   }
 }
 
