@@ -88,15 +88,21 @@ const itemLoad = function (currentRoute) {
   if (itemIndex !== null && itemIndex !== -1) {
     // Use '.innerHTML' to fill each element
     htmlToFill.forEach(function (element) {
-      identifyElements(element)[0].innerHTML = currentItem[identifyElements(element)[1]];
+      if (identifyElements(element)[0]) {
+        identifyElements(element)[0].innerHTML = currentItem[identifyElements(element)[1]];
+      }
     });
     // Use '.src' to set each image's source
     srcsToSet.forEach(function (element) {
-      identifyElements(element)[0].src = currentItem[identifyElements(element)[1]];
+      if (identifyElements(element)[0]) {
+        identifyElements(element)[0].src = currentItem[identifyElements(element)[1]];
+      }
     });
     // Use '.value' to set each input's value
     valuesToSet.forEach(function (element) {
-      identifyElements(element)[0].value = currentItem[identifyElements(element)[1]];
+      if (identifyElements(element)[0]) {
+        identifyElements(element)[0].value = currentItem[identifyElements(element)[1]];
+      }
     });
   }
 }
