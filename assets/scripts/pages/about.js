@@ -1,9 +1,5 @@
 'use strict'
 
-let loggin = () => {
-  console.log('%c BUTTON CLICKED! ', 'font-size: 20px; background: #0000ff; color: #000000');
-};
-
 let aboutPage = `
   <div class="about-page">
     <div class="about-top">

@@ -20,7 +20,7 @@ let itemPage = `
         <p class="item-info-one"></p>
         <p class="item-info-two"></p>
         <p class="item-info-three"></p>
-        <p class="item-price"></p>
+        <p>$<span class="item-price"></span></p>
         <p>
           QTY 
         </p>
@@ -39,7 +39,7 @@ let itemPage = `
 
 let itemIndex = null;
 
-let elementsToFill = [
+let htmlToFill = [
   ['item-name', 'itemName'],
   ['item-category', 'itemCategory'],
   ['item-info-one', 'itemInfoOne'],
@@ -56,16 +56,18 @@ let valuesToSet = [
   ['item-id', 'itemId']
 ]
 
-// Find the index of the current route within the array of items
+// Find the index of the current route within the array of items at items-list.js
 const findIndex = function (array, key, value) {
   for (let i = 0; i < array.length; i++) {
     if (array[i][key] === value) {
       return itemIndex = i;
     }
-    return -1;
   }
+  // Return -1 when no value is found, following the construct of Array.prototype.indexOf()
+  return -1;
 };
 
+// Use the arrays above to identify elements to change for each item
 const identifyElements = function (element) {
   // Get the class's name from the 1st index of each sub-array
   let className = element[0];
@@ -75,7 +77,7 @@ const identifyElements = function (element) {
   let elementToChange = document.getElementsByClassName(className)[0];
   // Return the target element and the key name
   // The key name is not only the 2nd index of each sub-array
-  // It also corresponds to a property in the items list
+  // It also corresponds to a property within the array of items at items-list.js
   return [elementToChange, keyName]
 }
 
@@ -85,7 +87,7 @@ const itemLoad = function (currentRoute) {
   // Use the two values returned as an array from identifyElements
   if (itemIndex !== null && itemIndex !== -1) {
     // Use '.innerHTML' to fill each element
-    elementsToFill.forEach(function (element) {
+    htmlToFill.forEach(function (element) {
       identifyElements(element)[0].innerHTML = currentItem[identifyElements(element)[1]];
     });
     // Use '.src' to set each image's source

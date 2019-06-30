@@ -16,7 +16,10 @@ const routesDictionary = {
     '/postcards': postcards.postcardsPage,
     '/prints': prints.printsPage,
     '/about': about.aboutPage,
-    '/assets': item.itemPage
+    '/assets': item.itemPage,
+    '/cachalot': item.itemPage,
+    '/flannery_oconnor': item.itemPage,
+    '/herman_melville': item.itemPage
   };
   
   export default {
