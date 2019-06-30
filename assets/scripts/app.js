@@ -1,6 +1,7 @@
 'use strict'
 
 import routes from './routes.js';
+import items from './pages/items/item-page.js';
 
 // When the DOM is fully loaded
 document.addEventListener('DOMContentLoaded', function () {
@@ -38,20 +39,19 @@ document.addEventListener('DOMContentLoaded', function () {
   // Set HTML based on current route, and add event handlers
   // Event handlers for elements not in index.html need to be added after each HTML change
   const setHtml = () => {
-    let mainDiv = document.getElementById('main')
-    if (routes.routesDictionary[window.location.pathname]) {
-    mainDiv.innerHTML = routes.routesDictionary[window.location.pathname];
+    let mainDiv = document.getElementById('main');
+    let currentRoute = window.location.pathname;
+    if (routes.routesDictionary[currentRoute]) {
+      mainDiv.innerHTML = routes.routesDictionary[currentRoute];
     } else {
-    mainDiv.innerHTML = routes.routesDictionary['/'];
+      mainDiv.innerHTML = routes.routesDictionary['/'];
     }
     addEventHandlers();
+    items.itemLoad(currentRoute);
   };
 
   // Run setHtml on page load
   setHtml();
-
-  // Run addEventHandlers on page load
-  // addEventHandlers();
 
   // Display correct content when user navigates back in browsing history
   window.onpopstate = () => {
@@ -71,8 +71,6 @@ document.addEventListener('DOMContentLoaded', function () {
   const addUrlToHistory = (currentPathName) => {
     window.history.pushState({}, currentPathName, window.location.origin + currentPathName);
   };
-
-  // Possibly run addUrlToHistory on page load
 
   // Run onClickLink for anchor elements in index.html
   // This event handler runs by default on page load
