@@ -44,8 +44,6 @@ document.addEventListener('DOMContentLoaded', function () {
     if (routes.routesDictionary[currentRoute]) {
       mainDiv.innerHTML = routes.routesDictionary[currentRoute];
     } else {
-      console.log('no route')
-      debugger
       mainDiv.innerHTML = routes.routesDictionary['/'];
     }
     addEventHandlers();
