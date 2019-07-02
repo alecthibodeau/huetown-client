@@ -2,6 +2,7 @@
 
 import routes from './routes.js';
 import items from './pages/items/item-page.js';
+import body from './pages/body-page.js';
 
 // When the DOM is fully loaded
 document.addEventListener('DOMContentLoaded', function () {
@@ -39,6 +40,7 @@ document.addEventListener('DOMContentLoaded', function () {
   // Set HTML based on current route, and add event handlers
   // Event handlers for elements not in index.html need to be added after each HTML change
   const setHtml = () => {
+    document.getElementById('body').innerHTML = body.bodyPage;
     let mainDiv = document.getElementById('main');
     let currentRoute = window.location.pathname;
     if (routes.routesDictionary[currentRoute]) {
