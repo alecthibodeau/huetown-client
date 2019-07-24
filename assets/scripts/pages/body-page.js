@@ -9,7 +9,7 @@ let bodyPage = `
     <a data-title="Lunar Calendars" class="nav-element" href="/lunar-calendars">lunar calendars</a>
     <a data-title="Prints" class="nav-element" href="/prints">prints</a>
     <a data-title="Postcards" class="nav-element" href="/postcards">postcards</a>
-    <a data-title="About" class="nav-element" href="/about">about</a>
+    <a data-title="About" class="nav-element" href="about.html">about</a>
     <!-- Option: Use target="_self" to open in same tab instead -->
     <form target="paypal" action="https://www.paypal.com/cgi-bin/webscr" method="post">
       <input type="hidden" name="cmd" value="_s-xclick">
