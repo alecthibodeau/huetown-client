@@ -8,6 +8,7 @@ const postcardUniversals = {
 
 const itemsList = [
   { 
+    itemPageValue: 'postcardAssets',
     itemRoute: '/assets',
     itemName: 'Assets',
     itemCategory: 'postcard',

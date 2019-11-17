@@ -83,7 +83,9 @@ const identifyElements = function (element) {
 
 const itemLoad = function (currentRoute) {
   console.log('itemLoad()');
-  findIndex(items.itemsList, 'itemRoute', currentRoute);
+  console.log(currentRoute);
+  // findIndex(items.itemsList, 'itemRoute', currentRoute);
+  findIndex(items.itemsList, 'itemPageValue', currentRoute);
   let currentItem = items.itemsList[itemIndex]
   // Use the two values returned as an array from identifyElements
   if (itemIndex !== null && itemIndex !== -1) {

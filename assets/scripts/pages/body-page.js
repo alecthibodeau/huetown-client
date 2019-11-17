@@ -7,7 +7,7 @@ let bodyPage = `
       <img class="huetown-logo-gray" src="public/images/huetown_script_logo_fifty_percent_gray.png" alt="Huetown Script Logo">
       <img class="huetown-logo-white" src="public/images/huetown_script_logo_white.png" alt="Huetown Script Logo">
     </a>
-    <button class="burger-button" id="burger-button">
+    <button id="burgerButton" class="burger-button">
       <div class="burger-bars">
        <div></div>
        <div></div>
@@ -15,11 +15,11 @@ let bodyPage = `
       </div>
     </button>
   </div>
-  <nav>
-    <a data-title="Lunar Calendars" class="nav-element" href="/lunar-calendars">lunar calendars</a>
-    <a data-title="Prints" class="nav-element" href="/prints">prints</a>
-    <a data-title="Postcards" class="nav-element" href="/postcards">postcards</a>
-    <a data-title="About" class="nav-element" href="/about">about</a>
+  <nav id="nav">
+    <a data-title="Lunar Calendars" class="nav-element" href="lunar_calendars.html">lunar calendars</a>
+    <a data-title="Prints" class="nav-element" href="prints.html">prints</a>
+    <a data-title="Postcards" class="nav-element" href="postcards.html">postcards</a>
+    <a data-title="About" class="nav-element" href="about.html">about</a>
     <!-- Option: Use target="_self" to open in same tab instead -->
     <form target="paypal" action="https://www.paypal.com/cgi-bin/webscr" method="post">
       <input type="hidden" name="cmd" value="_s-xclick">
@@ -28,7 +28,7 @@ let bodyPage = `
     </form>
   </nav>
 </header>
-<main id="main">Hard-coded content.</main>
+<main id="main">Welcome to Huetown.</main>
 <footer>
   <section>
     <a data-title="Instagram" href="https://www.instagram.com/huetown" target="_blank">

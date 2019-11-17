@@ -63,6 +63,11 @@ html body header a .huetown-logo-white {
     width: 175px;
   }
 }
+@media only screen and (max-width: 250px) {
+  html body header a .huetown-logo-white {
+    width: 80%;
+  }
+}
 html body header button.burger-button {
   display: none;
   cursor: pointer;
@@ -161,7 +166,7 @@ html body header nav form {
     border-bottom: 3px solid #6abbb6;
   }
 }
-html body header nav form [value="view cart"] {
+html body header nav form input[value="view cart"] {
   background-color: transparent;
   padding: 0;
   border: none;
@@ -177,7 +182,7 @@ html body header nav form [value="view cart"] {
   cursor: pointer;
 }
 @media only screen and (min-width: 651px) {
-  html body header nav form [value="view cart"]::after {
+  html body header nav form input[value="view cart"]::after {
     width: 100%;
     display: block;
     position: relative;
@@ -186,20 +191,17 @@ html body header nav form [value="view cart"] {
     content: "";
     transition: 0.5s;
   }
-  html body header nav form [value="view cart"]:hover::after {
+  html body header nav form input[value="view cart"]:hover::after {
     top: 0.25rem;
     border-bottom: 3px solid #6abbb6;
   }
 }
 @media only screen and (max-width: 650px) {
-  html body header nav form [value="view cart"] {
+  html body header nav form input[value="view cart"] {
     width: 100%;
     padding: 1rem 0;
     border-bottom: 1px solid #7f7f7f;
   }
-}
-html body header nav form [value="view cart"] input {
-  background: none;
 }
 @media only screen and (max-width: 650px) {
   html body header nav {
@@ -208,7 +210,6 @@ html body header nav form [value="view cart"] input {
   }
   html body header nav.open-drawer {
     display: flex;
-    padding: 10px 0 15px;
     margin: 0 auto;
     background: rgba(255, 255, 255, 0.9);
   }
@@ -282,17 +283,22 @@ PAGES
 ************/
 .postcards-page .content-container {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
 }
-.postcards-page .content-container .content-block {
+@media only screen and (max-width: 650px) {
+  .postcards-page .content-container {
+    flex-direction: column;
+  }
+}
+.postcards-page .content-block {
   text-align: center;
 }
-.postcards-page .content-container .content-block a {
+.postcards-page .content-block a {
   display: block;
   width: 300px;
   height: 200px;
 }
-.postcards-page .content-container .content-block a img {
+.postcards-page .content-block a img {
   max-width: 300px;
   max-height: 200px;
   border: 1px solid black;

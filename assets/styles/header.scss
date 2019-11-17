@@ -93,6 +93,10 @@
       @media only screen and (max-width: 450px) {
         width: 175px;
       }
+
+      @media only screen and (max-width: 250px) {
+        width: 80%;
+      }
     }
   }
 
@@ -135,18 +139,16 @@
       @include nav-responsive-text;
     }
 
-    form { // form is needed for the underline effect to work
-      @include nav-text;
-    }
+    // Both the form and the form's input are specified for the underline effect to work
+    form {
 
-    form [value="view cart"] {      
-      background-color: transparent;
-      
       @include nav-text;
-      @include nav-responsive-text;
 
-      input {
-        background: none;
+      input[value="view cart"] {      
+        background-color: transparent;
+        
+        @include nav-text;
+        @include nav-responsive-text;
       }
     }
 
@@ -156,7 +158,6 @@
 
       &.open-drawer {
         display: flex;
-        padding: 10px 0 15px;
         margin: 0 auto;
         background: $white-film;
       }
