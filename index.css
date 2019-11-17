@@ -37,7 +37,7 @@ html body header .nav-top {
     flex-direction: row;
     align-items: flex-end;
     padding: 10px 18px 14px;
-    background: #333;
+    background: #404040;
   }
 }
 html body header a .huetown-logo-gray {
@@ -115,6 +115,16 @@ html body header nav a {
   color: #333;
   cursor: pointer;
 }
+@media only screen and (max-width: 700px) {
+  html body header nav a {
+    letter-spacing: 0.3vw;
+  }
+}
+@media only screen and (max-width: 650px) {
+  html body header nav a {
+    letter-spacing: 0.3125rem;
+  }
+}
 @media only screen and (min-width: 651px) {
   html body header nav a::after {
     width: 100%;
@@ -151,6 +161,16 @@ html body header nav form {
   color: #333;
   cursor: pointer;
 }
+@media only screen and (max-width: 700px) {
+  html body header nav form {
+    letter-spacing: 0.3vw;
+  }
+}
+@media only screen and (max-width: 650px) {
+  html body header nav form {
+    letter-spacing: 0.3125rem;
+  }
+}
 @media only screen and (min-width: 651px) {
   html body header nav form::after {
     width: 100%;
@@ -180,6 +200,16 @@ html body header nav form input[value="view cart"] {
   transition: all 0.3s linear;
   color: #333;
   cursor: pointer;
+}
+@media only screen and (max-width: 700px) {
+  html body header nav form input[value="view cart"] {
+    letter-spacing: 0.3vw;
+  }
+}
+@media only screen and (max-width: 650px) {
+  html body header nav form input[value="view cart"] {
+    letter-spacing: 0.3125rem;
+  }
 }
 @media only screen and (min-width: 651px) {
   html body header nav form input[value="view cart"]::after {
@@ -366,11 +396,15 @@ PAGES
   }
 }
 .item-page .item-info-block {
-  margin-left: 15px;
+  display: flex;
+  flex-direction: column;
+  padding-left: 15px;
 }
 @media only screen and (max-width: 850px) {
   .item-page .item-info-block {
     max-width: 600px;
+    flex-direction: column-reverse;
+    padding-left: 0;
   }
 }
 @media only screen and (max-width: 650px) {
@@ -384,11 +418,12 @@ PAGES
   }
 }
 .item-page .item-name {
-  font-size: 1.6rem;
-  font-weight: 600;
+  font-size: 2rem;
+  font-weight: 700;
+  margin-right: 5px;
 }
 .item-page .item-category {
-  font-size: 1.6rem;
+  font-size: 2rem;
 }
 .item-page .item-info-one,
 .item-page .item-info-two,
@@ -403,18 +438,43 @@ PAGES
     margin: 5px 0;
   }
 }
+@media only screen and (max-width: 850px) {
+  .item-page .item-info-text {
+    margin: 5px 0 0 5px;
+  }
+}
+.item-page .payment-info {
+  display: flex;
+  flex-direction: column;
+}
+@media only screen and (max-width: 850px) {
+  .item-page .payment-info {
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    margin: 5px 0;
+  }
+}
 .item-page .item-price-container {
-  margin: 15px 0;
-  font-size: 1.6rem;
+  position: relative;
+  margin: 10px 0;
+  font-size: 2rem;
   font-weight: 600;
-  color: #358d65;
+}
+@media only screen and (max-width: 850px) {
+  .item-page .item-price-container {
+    margin: 0 10px 0 0;
+    top: 6px;
+  }
 }
 .item-page .qty-label {
+  font-size: 1.2rem;
   font-weight: 600;
+  color: #333;
 }
 .item-page .qty-label span {
   position: relative;
-  left: 5px;
+  left: 8px;
 }
 .item-page .ital {
   font-style: italic;
@@ -424,7 +484,7 @@ PAGES
   height: 3.8rem;
   padding: 0;
   border: 0.1rem solid #7f7f7f;
-  margin-right: 5px;
+  margin: 0 5px 5px 0;
   font-size: 1.25rem;
   text-align: center;
 }
@@ -440,7 +500,6 @@ PAGES
   cursor: pointer;
   width: 16rem;
   min-height: 4rem;
-  margin-top: 5px;
 }
 .item-page form input[value="add to cart"]:hover {
   background: #6abbb6;

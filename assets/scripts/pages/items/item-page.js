@@ -11,26 +11,35 @@ let itemPage = `
       </div>
 
       <div class="content-block item-info-block">
-        <div>
-          <span class="item-name"></span> 
-          <span class="item-category"></span>
+        
+        <div class="item-info-text">
+          <div>
+            <span class="item-name"></span>
+            <span class="item-category"></span>
+          </div>
+          <div class="item-info-one"></div>
+          <div class="item-info-two"></div>
+          <div class="item-info-three"></div>
         </div>
-        <div class="item-info-one"></div>
-        <div class="item-info-two"></div>
-        <div class="item-info-three"></div>
-        <div class="item-price-container">$<span class="item-price"></span></div>
-        <div class="qty-label">
-          <span>
-            QTY
-          </span> 
+
+        <div class="payment-info">
+          <div class="item-price-container">$<span class="item-price"></span></div>
+          <div class="form-container">
+            <div class="qty-label">
+              <span>
+                QTY
+              </span> 
+            </div>
+            <form target="paypal" action="https://www.paypal.com/cgi-bin/webscr" method="post">
+              <input type="hidden" name="cmd" value="_s-xclick">
+              <input class="item-id" type="hidden" name="hosted_button_id" value="">
+              <input type="text" name="quantity" value="1">
+              <input type="submit" value="add to cart" alt="Add To Cart">
+              <img alt="" border="0" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1">
+            </form>
+          </div>
         </div>
-        <form target="paypal" action="https://www.paypal.com/cgi-bin/webscr" method="post">
-          <input type="hidden" name="cmd" value="_s-xclick">
-          <input class="item-id" type="hidden" name="hosted_button_id" value="">
-          <input type="text" name="quantity" value="1">
-          <input type="submit" value="add to cart" alt="Add To Cart">
-          <img alt="" border="0" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1">
-        </form>
+        
       </div>
     </div>
   </div>
@@ -47,7 +56,7 @@ const itemLoad = function (currentPage) {
     ['.item-price', page.itemPrice]
   ]
   if (currentPage) {
-    // Use '.innerHTML' to fill each item element by class name
+    // Use '.innerHTML' to fill each item's DOM element by class name
     htmlToFill.forEach(function (element) {
       document.querySelector(element[0]).innerHTML = element[1];
     });

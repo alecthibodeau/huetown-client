@@ -19,6 +19,15 @@
   //   color: $huetown-red;
   // }
 
+  @media only screen and (max-width: 700px) {
+    letter-spacing: .3vw;
+  }
+
+  @media only screen and (max-width: 650px) {
+    letter-spacing: 0.3125rem;
+  }
+
+  // Only show the underside bar effect at larger widths
   @media only screen and (min-width: 651px) {
 
     &::after { // The bar underneath when it's hidden
@@ -67,7 +76,7 @@
       flex-direction: row;
       align-items: flex-end;
       padding: 10px 18px 14px;
-      background: $eighty-percent-gray;
+      background: $seventy-five-percent-gray;
     }
   }
 
