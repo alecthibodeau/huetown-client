@@ -1,6 +1,6 @@
 'use strict'
 
-import items from './items-list.js';
+import pages from '../../pages.js';
 
 let itemPage = `
   <div class="item-page">
@@ -10,20 +10,20 @@ let itemPage = `
         <img class="item-image-front" src="" />
       </div>
 
-      <div class="content-block">
-        <p>
-          <span class="item-name">
+      <div class="content-block item-info-block">
+        <div>
+          <span class="item-name"></span> 
+          <span class="item-category"></span>
+        </div>
+        <div class="item-info-one"></div>
+        <div class="item-info-two"></div>
+        <div class="item-info-three"></div>
+        <div class="item-price-container">$<span class="item-price"></span></div>
+        <div class="qty-label">
+          <span>
+            QTY
           </span> 
-          <span class="item-category">
-          </span>
-        </p>
-        <p class="item-info-one"></p>
-        <p class="item-info-two"></p>
-        <p class="item-info-three"></p>
-        <p>$<span class="item-price"></span></p>
-        <p>
-          QTY 
-        </p>
+        </div>
         <form target="paypal" action="https://www.paypal.com/cgi-bin/webscr" method="post">
           <input type="hidden" name="cmd" value="_s-xclick">
           <input class="item-id" type="hidden" name="hosted_button_id" value="">
@@ -32,81 +32,29 @@ let itemPage = `
           <img alt="" border="0" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1">
         </form>
       </div>
-
     </div>
   </div>
 `;
 
-let itemIndex = null;
-
-let htmlToFill = [
-  ['item-name', 'itemName'],
-  ['item-category', 'itemCategory'],
-  ['item-info-one', 'itemInfoOne'],
-  ['item-info-two', 'itemInfoTwo'],
-  ['item-info-three', 'itemInfoThree'],
-  ['item-price', 'itemPrice']
-]
-
-let srcsToSet = [
-  ['item-image-front', 'itemImageFront']
-]
-
-let valuesToSet = [
-  ['item-id', 'itemId']
-]
-
-// Find the index of the current route within the array of items at items-list.js
-const findIndex = function (array, key, value) {
-  for (let i = 0; i < array.length; i++) {
-    if (array[i][key] === value) {
-      return itemIndex = i;
-    }
-  }
-  // Return -1 when no value is found, following the construct of Array.prototype.indexOf()
-  return -1;
-};
-
-// Use the arrays above to identify elements to change for each item
-const identifyElements = function (element) {
-  // Get the class's name from the 1st index of each sub-array
-  let className = element[0];
-  // Get the property's name from the 2nd index of each sub-array
-  let keyName = element[1];  
-  // Find the element by searching for the 1st (and only) instance of its class name
-  let elementToChange = document.getElementsByClassName(className)[0];
-  // Return the target element and the key name
-  // The key name is not only the 2nd index of each sub-array
-  // It also corresponds to a property within the array of items at items-list.js
-  return [elementToChange, keyName]
-}
-
-const itemLoad = function (currentRoute) {
-  console.log('itemLoad()');
-  console.log(currentRoute);
-  // findIndex(items.itemsList, 'itemRoute', currentRoute);
-  findIndex(items.itemsList, 'itemPageValue', currentRoute);
-  let currentItem = items.itemsList[itemIndex]
-  // Use the two values returned as an array from identifyElements
-  if (itemIndex !== null && itemIndex !== -1) {
-    // Use '.innerHTML' to fill each element
+const itemLoad = function (currentPage) {
+  let page = pages.pagesDictionary[currentPage]
+  let htmlToFill = [
+    ['.item-name', page.itemName],
+    ['.item-category', page.itemCategory],
+    ['.item-info-one', page.itemInfoOne],
+    ['.item-info-two', page.itemInfoTwo],
+    ['.item-info-three', page.itemInfoThree],
+    ['.item-price', page.itemPrice]
+  ]
+  if (currentPage) {
+    // Use '.innerHTML' to fill each item element by class name
     htmlToFill.forEach(function (element) {
-      if (identifyElements(element)[0]) {
-        identifyElements(element)[0].innerHTML = currentItem[identifyElements(element)[1]];
-      }
+      document.querySelector(element[0]).innerHTML = element[1];
     });
     // Use '.src' to set each image's source
-    srcsToSet.forEach(function (element) {
-      if (identifyElements(element)[0]) {
-        identifyElements(element)[0].src = currentItem[identifyElements(element)[1]];
-      }
-    });
+    document.querySelector('.item-image-front').src = page.itemImageFront;
     // Use '.value' to set each input's value
-    valuesToSet.forEach(function (element) {
-      if (identifyElements(element)[0]) {
-        identifyElements(element)[0].value = currentItem[identifyElements(element)[1]];
-      }
-    });
+    document.querySelector('.item-id').value = page.itemId;
   }
 }
 

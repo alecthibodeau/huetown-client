@@ -1,37 +1,132 @@
+// Sub-mixins need to be outside the primary mixin
+@mixin button-styles {
+  border: none;
+  border-radius: 1rem;
+  background: $sixty-percent-gray;
+  color: $white;
+  font-family: 'Raleway', sans-serif;
+  font-size: 1.4rem;
+  letter-spacing: 0.3125rem;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+
+// This is the selector for item-page
 @mixin item-page-content {
+  margin-bottom: 20px;
+
   .content-container {
     display: flex;
 
-    .content-block {
+    @media only screen and (max-width: 850px) {
+      flex-direction: column;
+      align-items: center;
+    }
+  }
 
-      form {
-        [name="quantity"] {
-          width: 4rem;
-          height: 3.8rem;
-          padding: 0;
-          border: .1rem solid $fifty-percent-gray;
-          font-size: 1.25rem;
-          text-align: center;
-        }
+  img.item-image-front {
 
-        [value="add to cart"] {
-          width: 14.6rem;
-          min-height: 4rem;
-          border: none;
-          border-radius: 1rem;
-          background: $sixty-percent-gray;
-          color: $white;
-          font-family: 'Raleway', sans-serif;
-          font-size: 1.4rem;
-          letter-spacing: 0.3125rem;
-          text-transform: uppercase;
-          cursor: pointer;
-          
-          &:hover {
-            background: $huetown-green;
-          }
-        }
+    border: 1px solid $eighty-percent-gray;
+
+    @media only screen and (max-width: 650px) {
+      width: 550px;
+    }
+
+    @media only screen and (max-width: 600px) {
+      width: 90vw;
+    }
+  }
+
+  .item-info-block {
+    margin-left: 15px;
+
+    @media only screen and (max-width: 850px) {
+      max-width: 600px;
+    }
+
+    @media only screen and (max-width: 650px) {
+      width: 550px;
+    }
+
+    @media only screen and (max-width: 600px) {
+      width: 90vw;
+    }
+  }
+
+  .item-name {
+    font-size: 1.6rem;
+    font-weight: 600;
+  }
+
+  .item-category {
+    font-size: 1.6rem;
+  }
+
+  .item-info-one,
+  .item-info-two,
+  .item-info-three {
+    margin: 15px 0;
+    font-size: 1.3rem;
+
+    @media only screen and (max-width: 850px) {
+      margin: 5px 0;
+    }
+  }
+
+  .item-price-container {
+    margin: 15px 0;
+    font-size: 1.6rem;
+    font-weight: 600;
+    color: $stem-green;
+  }
+
+  .qty-label {
+    font-weight: 600;
+
+    span {
+      position: relative;
+      left: 5px;
+    }
+  }
+
+  .ital {
+    font-style: italic;
+  }
+
+  form {
+    input[name="quantity"] {
+      width: 4rem;
+      height: 3.8rem;
+      padding: 0;
+      border: .1rem solid $fifty-percent-gray;
+      margin-right: 5px;
+      font-size: 1.25rem;
+      text-align: center;
+    }
+
+    input[value="add to cart"] {
+      @include button-styles;
+
+      width: 16rem;
+      min-height: 4rem;
+      margin-top: 5px;
+      
+      &:hover {
+        background: $huetown-green;
       }
     }
+
+    // input[value="checkout"] { 
+    //   @include button-styles;
+
+    //   width: 19rem;
+    //   min-height: 3rem;
+
+    //   margin: 10px;
+
+    //   &:hover {
+    //     background: $orange-muted;
+    //   }
+    // }
   }
 }

@@ -1,5 +1,47 @@
 @mixin about-content {
+
   .about-top {
     display: flex;
+    justify-content: flex-start; 
+  
+    p {
+      margin: 0 25px;
+
+      @media only screen and (max-width: 650px) {
+        margin: 0;
+      }
+
+      span.bold {
+        font-weight: 600;
+      }
+    }
+  }
+
+  .huetown-h-logo,
+  .self-portrait {
+
+    @media only screen and (max-width: 650px) {
+      display: none;
+    }
+  }
+
+  .text-link {
+    text-decoration: none;
+  
+    &:link,
+    &:visited,
+    &:hover,
+    &:active {
+      color: $orange-muted;
+    }
+  }
+
+  .about-states {
+    text-transform: uppercase;
+  }
+
+  .section-title {
+    font-weight: 600;
+    text-transform: uppercase;
   }
 }
