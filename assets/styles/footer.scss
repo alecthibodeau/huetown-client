@@ -1,55 +1,54 @@
-// Variables need to be outside the main mixin
-$icon-height: 4rem;
+// Variables need to be outside the primary mixin
 $icon-width: 4rem;
+$icon-height: 4rem;
 
-// Sub-mixins need to be outside the main mixin
+// Sub-mixins need to be outside the primary mixin
 @mixin icon-dimensions {
-  height: $icon-height;
   width: $icon-height;
+  height: $icon-height;
 }
 
-// The main mixin
+// The primary mixin for the footer selector
 @mixin footer-content {
-
-  border-top: 2px solid $fifty-percent-gray;
+  width: 90%;
   display: flex;
   justify-content: center;
+  border-top: 2px solid $fifty-percent-gray;
   margin: 1rem auto;
-  width: 90%;
 
   section {
     margin: 2rem 4rem;
 
     a {
-    @include icon-dimensions;
+      @include icon-dimensions;
 
-    display: block;
-    
-    img {
+      display: block;
+      
+      img {
         @include icon-dimensions;
         
         display: block;
         position: relative;
         z-index: 10;
-    }
+      }
 
-    // Show background div on parent anchor's hover
-    &:hover div {
+      // Show background div on parent anchor's hover
+      &:hover div {
         background: $huetown-yellow;
         transition: all 0.3s linear;
-    }
+      }
 
-    // The dimenions are a percentage (of the parent anchor) to keep from bleeding
-    // The positions are (100 - dimension)/2 for centering
-    div {
-        background: transparent;
-        border-radius: 1rem;
+      // The dimenions are a percentage (of the parent anchor) to keep from bleeding
+      // The positions are (100 - dimension)/2 for centering
+      div {
+        width: 93%;
         height: 93%;
-        left: 3.5%;
         position: relative;
         bottom: calc(#{$icon-height} - 3.5%); // Interpolation
-        width: 93%;
-    }
+        left: 3.5%;
+        border-radius: 1rem;
+        background: transparent;
+      }
     } 
 
     // Make the second anchor's background div a circle
@@ -61,5 +60,14 @@ $icon-width: 4rem;
     &:nth-of-type(3) div {
     border-radius: .5rem;
     }
+
+    @media only screen and (max-width: 650px) {
+      margin: 1rem 2rem;
+    }
+  }
+
+  @media only screen and (max-width: 650px) {
+    position: relative;
+    top: 70px;
   }
 }

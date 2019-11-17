@@ -1,32 +1,32 @@
 @mixin item-page-content {
-  .row {
+  .content-container {
     display: flex;
 
-    .col {
+    .content-block {
 
       form {
         [name="quantity"] {
-          border: .1rem solid $fifty-percent-gray;
-          font-size: 1.25rem;
+          width: 4rem;
           height: 3.8rem;
           padding: 0;
+          border: .1rem solid $fifty-percent-gray;
+          font-size: 1.25rem;
           text-align: center;
-          width: 4rem;
         }
 
         [value="add to cart"] {
-          background: $sixty-percent-gray;
+          width: 14.6rem;
+          min-height: 4rem;
           border: none;
           border-radius: 1rem;
+          background: $sixty-percent-gray;
           color: $white;
-          cursor: pointer;
           font-family: 'Raleway', sans-serif;
           font-size: 1.4rem;
           letter-spacing: 0.3125rem;
-          min-height: 4rem;
           text-transform: uppercase;
-          width: 14.6rem;
-
+          cursor: pointer;
+          
           &:hover {
             background: $huetown-green;
           }

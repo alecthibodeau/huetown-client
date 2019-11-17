@@ -2,9 +2,19 @@
 
 let bodyPage = `
 <header>
-  <a data-title="Huetown Home" class="nav-element" href="/">
-    <img src="public/images/huetown_script_logo_fifty_percent_gray.png" alt="Huetown Script Logo">
-  </a>    
+  <div class="nav-top">
+    <a data-title="Huetown Home" class="nav-element" href="/">
+      <img class="huetown-logo-gray" src="public/images/huetown_script_logo_fifty_percent_gray.png" alt="Huetown Script Logo">
+      <img class="huetown-logo-white" src="public/images/huetown_script_logo_white.png" alt="Huetown Script Logo">
+    </a>
+    <button class="burger-button" id="burger-button">
+      <div class="burger-bars">
+       <div></div>
+       <div></div>
+       <div></div>
+      </div>
+    </button>
+  </div>
   <nav>
     <a data-title="Lunar Calendars" class="nav-element" href="/lunar-calendars">lunar calendars</a>
     <a data-title="Prints" class="nav-element" href="/prints">prints</a>

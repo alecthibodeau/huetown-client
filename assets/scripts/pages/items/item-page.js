@@ -4,13 +4,13 @@ import items from './items-list.js';
 
 let itemPage = `
   <div class="item-page">
-    <div class="row">
+    <div class="content-container">
 
-      <div class="col">
+      <div class="content-block">
         <img class="item-image-front" src="" />
       </div>
 
-      <div class="col">
+      <div class="content-block">
         <p>
           <span class="item-name">
           </span> 
@@ -82,6 +82,7 @@ const identifyElements = function (element) {
 }
 
 const itemLoad = function (currentRoute) {
+  console.log('itemLoad()');
   findIndex(items.itemsList, 'itemRoute', currentRoute);
   let currentItem = items.itemsList[itemIndex]
   // Use the two values returned as an array from identifyElements

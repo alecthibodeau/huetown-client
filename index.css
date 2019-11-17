@@ -6,85 +6,242 @@ COLOR VARIABLES
 HTML & BODY
 ************/
 html {
-  font-size: 62.5%;
   margin: 0 auto;
+  font-size: 62.5%;
 }
 html body {
-  background: #fff;
+  width: 100%;
+  max-width: 1200px;
   height: 100%;
   margin: 0 auto;
-  width: 100%;
+  background: #fff;
 }
 html body header {
-  margin: 0.5rem auto;
+  margin: 0.5rem 2rem;
 }
-html body header a img[alt="Huetown Script Logo"] {
+@media only screen and (max-width: 650px) {
+  html body header {
+    width: 100%;
+    position: fixed;
+    margin: 0;
+    z-index: 100;
+  }
+}
+html body header .nav-top {
+  display: flex;
+  justify-content: center;
+}
+@media only screen and (max-width: 650px) {
+  html body header .nav-top {
+    justify-content: space-between;
+    flex-direction: row;
+    align-items: flex-end;
+    padding: 10px 18px 14px;
+    background: #333;
+  }
+}
+html body header a .huetown-logo-gray {
   display: block;
-  height: auto;
-  margin: 0 auto;
-  width: 40rem;
+  width: 300px;
+}
+@media only screen and (max-width: 650px) {
+  html body header a .huetown-logo-gray {
+    display: none;
+  }
+}
+html body header a .huetown-logo-white {
+  display: none;
+}
+@media only screen and (max-width: 650px) {
+  html body header a .huetown-logo-white {
+    display: block;
+    width: 232px;
+  }
+}
+@media only screen and (max-width: 450px) {
+  html body header a .huetown-logo-white {
+    width: 175px;
+  }
+}
+html body header button.burger-button {
+  display: none;
+  cursor: pointer;
+  padding: 0;
+  border: none;
+  background-color: transparent;
+}
+html body header button.burger-button .burger-bars {
+  height: 25px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+html body header button.burger-button .burger-bars div {
+  width: 25px;
+  height: 4px;
+  background: #7f7f7f;
+}
+@media only screen and (max-width: 650px) {
+  html body header button.burger-button .burger-bars div {
+    background: #fff;
+  }
+}
+@media only screen and (max-width: 650px) {
+  html body header button.burger-button {
+    display: block;
+  }
 }
 html body header nav {
   display: flex;
   justify-content: space-around;
   margin: 2rem auto;
 }
-html body header nav a,
-html body header nav form,
-html body header nav form [value="view cart"] {
+html body header nav a {
+  padding: 0;
   border: none;
-  color: #333;
-  cursor: pointer;
   font-family: "Raleway", sans-serif;
-  font-size: 1.75rem;
+  font-size: 1.5rem;
   font-weight: 400;
   letter-spacing: 0.3125rem;
-  padding: 0;
   text-align: center;
   text-decoration: none;
   text-transform: uppercase;
   transition: all 0.3s linear;
+  color: #333;
+  cursor: pointer;
 }
-html body header nav a::after,
-html body header nav form::after,
-html body header nav form [value="view cart"]::after {
-  border-bottom: 3px solid transparent;
-  content: "";
-  display: block;
-  position: relative;
-  top: 0.5rem;
-  transition: 0.5s;
-  width: 100%;
+@media only screen and (min-width: 651px) {
+  html body header nav a::after {
+    width: 100%;
+    display: block;
+    position: relative;
+    top: 0.5rem;
+    border-bottom: 3px solid transparent;
+    content: "";
+    transition: 0.5s;
+  }
+  html body header nav a:hover::after {
+    top: 0.25rem;
+    border-bottom: 3px solid #6abbb6;
+  }
 }
-html body header nav a:hover::after,
-html body header nav form:hover::after,
-html body header nav form [value="view cart"]:hover::after {
-  border-bottom: 3px solid #6abbb6;
-  top: 0.25rem;
+@media only screen and (max-width: 650px) {
+  html body header nav a {
+    width: 100%;
+    padding: 1rem 0;
+    border-bottom: 1px solid #7f7f7f;
+  }
+}
+html body header nav form {
+  padding: 0;
+  border: none;
+  font-family: "Raleway", sans-serif;
+  font-size: 1.5rem;
+  font-weight: 400;
+  letter-spacing: 0.3125rem;
+  text-align: center;
+  text-decoration: none;
+  text-transform: uppercase;
+  transition: all 0.3s linear;
+  color: #333;
+  cursor: pointer;
+}
+@media only screen and (min-width: 651px) {
+  html body header nav form::after {
+    width: 100%;
+    display: block;
+    position: relative;
+    top: 0.5rem;
+    border-bottom: 3px solid transparent;
+    content: "";
+    transition: 0.5s;
+  }
+  html body header nav form:hover::after {
+    top: 0.25rem;
+    border-bottom: 3px solid #6abbb6;
+  }
+}
+html body header nav form [value="view cart"] {
+  background-color: transparent;
+  padding: 0;
+  border: none;
+  font-family: "Raleway", sans-serif;
+  font-size: 1.5rem;
+  font-weight: 400;
+  letter-spacing: 0.3125rem;
+  text-align: center;
+  text-decoration: none;
+  text-transform: uppercase;
+  transition: all 0.3s linear;
+  color: #333;
+  cursor: pointer;
+}
+@media only screen and (min-width: 651px) {
+  html body header nav form [value="view cart"]::after {
+    width: 100%;
+    display: block;
+    position: relative;
+    top: 0.5rem;
+    border-bottom: 3px solid transparent;
+    content: "";
+    transition: 0.5s;
+  }
+  html body header nav form [value="view cart"]:hover::after {
+    top: 0.25rem;
+    border-bottom: 3px solid #6abbb6;
+  }
+}
+@media only screen and (max-width: 650px) {
+  html body header nav form [value="view cart"] {
+    width: 100%;
+    padding: 1rem 0;
+    border-bottom: 1px solid #7f7f7f;
+  }
+}
+html body header nav form [value="view cart"] input {
+  background: none;
+}
+@media only screen and (max-width: 650px) {
+  html body header nav {
+    display: none;
+    flex-direction: column;
+  }
+  html body header nav.open-drawer {
+    display: flex;
+    padding: 10px 0 15px;
+    margin: 0 auto;
+    background: rgba(255, 255, 255, 0.9);
+  }
 }
 html body main {
-  font-family: "Raleway", sans-serif;
-  margin: 0 auto;
   width: 90%;
+  margin: 0 auto;
+  font-family: "Raleway", sans-serif;
+}
+@media only screen and (max-width: 650px) {
+  html body main {
+    position: relative;
+    top: 70px;
+  }
 }
 html body footer {
-  border-top: 2px solid #7f7f7f;
+  width: 90%;
   display: flex;
   justify-content: center;
+  border-top: 2px solid #7f7f7f;
   margin: 1rem auto;
-  width: 90%;
 }
 html body footer section {
   margin: 2rem 4rem;
 }
 html body footer section a {
-  height: 4rem;
   width: 4rem;
+  height: 4rem;
   display: block;
 }
 html body footer section a img {
-  height: 4rem;
   width: 4rem;
+  height: 4rem;
   display: block;
   position: relative;
   z-index: 10;
@@ -94,13 +251,13 @@ html body footer section a:hover div {
   transition: all 0.3s linear;
 }
 html body footer section a div {
-  background: transparent;
-  border-radius: 1rem;
+  width: 93%;
   height: 93%;
-  left: 3.5%;
   position: relative;
   bottom: calc(4rem - 3.5%);
-  width: 93%;
+  left: 3.5%;
+  border-radius: 1rem;
+  background: transparent;
 }
 html body footer section:nth-of-type(2) div {
   border-radius: 50%;
@@ -108,70 +265,69 @@ html body footer section:nth-of-type(2) div {
 html body footer section:nth-of-type(3) div {
   border-radius: 0.5rem;
 }
+@media only screen and (max-width: 650px) {
+  html body footer section {
+    margin: 1rem 2rem;
+  }
+}
+@media only screen and (max-width: 650px) {
+  html body footer {
+    position: relative;
+    top: 70px;
+  }
+}
 
 /************
 PAGES
 ************/
-.postcards-page .row {
+.postcards-page .content-container {
   display: flex;
   justify-content: space-around;
 }
-.postcards-page .row .col {
+.postcards-page .content-container .content-block {
   text-align: center;
 }
-.postcards-page .row .col a {
+.postcards-page .content-container .content-block a {
   display: block;
-  height: 200px;
   width: 300px;
+  height: 200px;
 }
-.postcards-page .row .col a img {
-  border: 1px solid black;
-  max-height: 200px;
+.postcards-page .content-container .content-block a img {
   max-width: 300px;
+  max-height: 200px;
+  border: 1px solid black;
 }
 
 .about-page .about-top {
   display: flex;
 }
 
-.item-page .row {
+.item-page .content-container {
   display: flex;
 }
-.item-page .row .col form [name=quantity] {
-  border: 0.1rem solid #7f7f7f;
-  font-size: 1.25rem;
+.item-page .content-container .content-block form [name=quantity] {
+  width: 4rem;
   height: 3.8rem;
   padding: 0;
+  border: 0.1rem solid #7f7f7f;
+  font-size: 1.25rem;
   text-align: center;
-  width: 4rem;
 }
-.item-page .row .col form [value="add to cart"] {
-  background: #666;
+.item-page .content-container .content-block form [value="add to cart"] {
+  width: 14.6rem;
+  min-height: 4rem;
   border: none;
   border-radius: 1rem;
+  background: #666;
   color: #fff;
-  cursor: pointer;
   font-family: "Raleway", sans-serif;
   font-size: 1.4rem;
   letter-spacing: 0.3125rem;
-  min-height: 4rem;
   text-transform: uppercase;
-  width: 14.6rem;
+  cursor: pointer;
 }
-.item-page .row .col form [value="add to cart"]:hover {
+.item-page .content-container .content-block form [value="add to cart"]:hover {
   background: #6abbb6;
-}
-
-/************************************
-BREAKPOINT 500px
-************************************/
-@media only screen and (max-width: 500px) {
-  header a img[alt="Huetown Script Logo"] {
-    width: 80%;
-  }
-  header nav {
-    flex-direction: column;
-  }
 }
 
 /*# sourceMappingURL=index.css.map */

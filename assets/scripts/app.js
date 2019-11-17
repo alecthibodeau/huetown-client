@@ -4,10 +4,34 @@ import routes from './routes.js';
 import items from './pages/items/item-page.js';
 import body from './pages/body-page.js';
 
+let isNavDrawerHidden = true;
+
 // When the DOM is fully loaded
 document.addEventListener('DOMContentLoaded', function () {
-  
+    
   console.log('document ready');
+
+  // Set the nav drawer to be opened or closed
+  function drawerSet(move) {
+    let drawer = document.getElementsByTagName('nav')[0]
+    move === 'open' ? drawer.classList.add('open-drawer') : drawer.classList.remove('open-drawer');
+  }
+
+  // Check the nav drawer's boolean
+  function drawerCheck() {
+    isNavDrawerHidden ? drawerSet('open') : drawerSet('close');
+    isNavDrawerHidden = !isNavDrawerHidden;
+  }
+
+  // Hide the nav drawer permanently if user resizes window to wider than 650px
+  function hideDrawer() {
+    let windowSize = Math.max(document.documentElement.clientWidth, window.innerWidth || 0);
+    // console.log(`Window size is ${windowSize}`);
+    if (windowSize > 650 && !isNavDrawerHidden) {
+      isNavDrawerHidden = true;
+      drawerSet('close');
+    }
+  }
 
   // Test function
   function gadLoggin() {
@@ -35,17 +59,22 @@ document.addEventListener('DOMContentLoaded', function () {
   const addEventHandlers = () => {
     classNameEventHandler('gad-button', 'click', gadLoggin);
     classNameEventHandler('item-element', 'click', onClickLink);
+    classNameEventHandler('burger-button', 'click', drawerCheck);
   };
 
   // Set HTML based on current route, and add event handlers
   // Event handlers for elements not in index.html need to be added after each HTML change
   const setHtml = () => {
+    window.addEventListener('resize', hideDrawer);
     document.getElementById('body').innerHTML = body.bodyPage;
     let mainDiv = document.getElementById('main');
     let currentRoute = window.location.pathname;
+    console.log(`currentRoute is ${currentRoute}`);
     if (routes.routesDictionary[currentRoute]) {
+      console.log('a');
       mainDiv.innerHTML = routes.routesDictionary[currentRoute];
     } else {
+      console.log('b');
       mainDiv.innerHTML = routes.routesDictionary['/'];
     }
     addEventHandlers();
