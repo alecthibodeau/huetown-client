@@ -2,7 +2,8 @@
 
   .about-top {
     display: flex;
-    justify-content: flex-start; 
+    justify-content: flex-start;
+    align-items: flex-start;
   
     p {
       margin: 0 25px;
@@ -19,6 +20,11 @@
 
   .huetown-h-logo,
   .self-portrait {
+
+    @media only screen and (max-width: 700px) {
+      width: 10vw;
+      height: 10vw;
+    }
 
     @media only screen and (max-width: 650px) {
       display: none;

@@ -338,6 +338,7 @@ PAGES
 .about-page .about-top {
   display: flex;
   justify-content: flex-start;
+  align-items: flex-start;
 }
 .about-page .about-top p {
   margin: 0 25px;
@@ -349,6 +350,13 @@ PAGES
 }
 .about-page .about-top p span.bold {
   font-weight: 600;
+}
+@media only screen and (max-width: 700px) {
+  .about-page .huetown-h-logo,
+.about-page .self-portrait {
+    width: 10vw;
+    height: 10vw;
+  }
 }
 @media only screen and (max-width: 650px) {
   .about-page .huetown-h-logo,
@@ -381,6 +389,13 @@ PAGES
     flex-direction: column;
     align-items: center;
   }
+}
+.item-page .container-two {
+  border-top: 1px solid #333;
+  margin-top: 20px;
+}
+.item-page .container-two.shown {
+  display: block;
 }
 .item-page img.item-image-front {
   border: 1px solid #333;

@@ -24,6 +24,16 @@
     }
   }
 
+  .container-two {
+    // display: none;
+    border-top: 1px solid $eighty-percent-gray;
+    margin-top: 20px;
+
+    &.shown {
+      display: block;
+    }
+  }
+
   img.item-image-front {
 
     border: 1px solid $eighty-percent-gray;
@@ -151,6 +161,7 @@
       }
     }
 
+    // OPTIONAL CHECKOUT BUTTON
     // input[value="checkout"] { 
     //   @include button-styles;
 
