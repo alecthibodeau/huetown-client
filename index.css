@@ -1,71 +1,260 @@
 /************************************
 COLOR VARIABLES
 ************************************/
-@import url("https://fonts.googleapis.com/css?family=Varela+Round|Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i|Noto+Sans:400,400i,700,700i|Alegreya+Sans:100,100i,300,300i,400,400i,500,500i,700,700i,800,800i,900,900i|Raleway:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i");
+@import url("https://fonts.googleapis.com/css?family=Raleway:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i|Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i");
 /************
 HTML & BODY
 ************/
 html {
-  font-size: 62.5%;
   margin: 0 auto;
+  font-size: 62.5%;
 }
 html body {
-  background: #fff;
+  width: 100%;
+  max-width: 1200px;
   height: 100%;
   margin: 0 auto;
-  width: 100%;
+  background: #fff;
 }
 html body header {
-  margin: 0.5rem auto;
+  margin: 0.5rem 2rem;
 }
-html body header a img[alt="Huetown Script Logo"] {
+@media only screen and (max-width: 650px) {
+  html body header {
+    width: 100%;
+    position: fixed;
+    margin: 0;
+    z-index: 100;
+  }
+}
+html body header .nav-top {
+  display: flex;
+  justify-content: center;
+}
+@media only screen and (max-width: 650px) {
+  html body header .nav-top {
+    justify-content: space-between;
+    flex-direction: row;
+    align-items: flex-end;
+    padding: 10px 18px 14px;
+    background: #404040;
+  }
+}
+html body header a .huetown-logo-gray {
   display: block;
-  height: auto;
-  margin: 0 auto;
-  width: 40rem;
+  width: 300px;
+}
+@media only screen and (max-width: 650px) {
+  html body header a .huetown-logo-gray {
+    display: none;
+  }
+}
+html body header a .huetown-logo-white {
+  display: none;
+}
+@media only screen and (max-width: 650px) {
+  html body header a .huetown-logo-white {
+    display: block;
+    width: 232px;
+  }
+}
+@media only screen and (max-width: 450px) {
+  html body header a .huetown-logo-white {
+    width: 175px;
+  }
+}
+@media only screen and (max-width: 250px) {
+  html body header a .huetown-logo-white {
+    width: 80%;
+  }
+}
+html body header button.burger-button {
+  display: none;
+  cursor: pointer;
+  padding: 0;
+  border: none;
+  background-color: transparent;
+}
+html body header button.burger-button .burger-bars {
+  height: 25px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+html body header button.burger-button .burger-bars div {
+  width: 25px;
+  height: 4px;
+  background: #7f7f7f;
+}
+@media only screen and (max-width: 650px) {
+  html body header button.burger-button .burger-bars div {
+    background: #fff;
+  }
+}
+@media only screen and (max-width: 650px) {
+  html body header button.burger-button {
+    display: block;
+  }
 }
 html body header nav {
   display: flex;
   justify-content: space-around;
   margin: 2rem auto;
 }
-html body header nav a,
-html body header nav form,
-html body header nav form [value="view cart"] {
+html body header nav a {
+  padding: 0;
   border: none;
-  color: #333;
-  cursor: pointer;
   font-family: "Raleway", sans-serif;
-  font-size: 1.75rem;
+  font-size: 1.6rem;
   font-weight: 400;
   letter-spacing: 0.3125rem;
-  padding: 0;
   text-align: center;
   text-decoration: none;
   text-transform: uppercase;
   transition: all 0.3s linear;
+  color: #333;
+  cursor: pointer;
 }
-html body header nav a::after,
-html body header nav form::after,
-html body header nav form [value="view cart"]::after {
-  border-bottom: 3px solid transparent;
-  content: "";
-  display: block;
-  position: relative;
-  top: 0.5rem;
-  transition: 0.5s;
-  width: 100%;
+@media only screen and (max-width: 750px) {
+  html body header nav a {
+    letter-spacing: 0.3vw;
+  }
 }
-html body header nav a:hover::after,
-html body header nav form:hover::after,
-html body header nav form [value="view cart"]:hover::after {
-  border-bottom: 3px solid #6abbb6;
-  top: 0.25rem;
+@media only screen and (max-width: 650px) {
+  html body header nav a {
+    letter-spacing: 0.3125rem;
+  }
+}
+@media only screen and (min-width: 651px) {
+  html body header nav a::after {
+    width: 100%;
+    display: block;
+    position: relative;
+    top: 0.5rem;
+    border-bottom: 3px solid transparent;
+    content: "";
+    transition: 0.5s;
+  }
+  html body header nav a:hover::after {
+    top: 0.25rem;
+    border-bottom: 3px solid #6abbb6;
+  }
+}
+@media only screen and (max-width: 650px) {
+  html body header nav a {
+    width: 100%;
+    padding: 1rem 0;
+    border-bottom: 1px solid #7f7f7f;
+  }
+}
+html body header nav form {
+  padding: 0;
+  border: none;
+  font-family: "Raleway", sans-serif;
+  font-size: 1.6rem;
+  font-weight: 400;
+  letter-spacing: 0.3125rem;
+  text-align: center;
+  text-decoration: none;
+  text-transform: uppercase;
+  transition: all 0.3s linear;
+  color: #333;
+  cursor: pointer;
+}
+@media only screen and (max-width: 750px) {
+  html body header nav form {
+    letter-spacing: 0.3vw;
+  }
+}
+@media only screen and (max-width: 650px) {
+  html body header nav form {
+    letter-spacing: 0.3125rem;
+  }
+}
+@media only screen and (min-width: 651px) {
+  html body header nav form::after {
+    width: 100%;
+    display: block;
+    position: relative;
+    top: 0.5rem;
+    border-bottom: 3px solid transparent;
+    content: "";
+    transition: 0.5s;
+  }
+  html body header nav form:hover::after {
+    top: 0.25rem;
+    border-bottom: 3px solid #6abbb6;
+  }
+}
+html body header nav form input[value="view cart"] {
+  background-color: transparent;
+  padding: 0;
+  border: none;
+  font-family: "Raleway", sans-serif;
+  font-size: 1.6rem;
+  font-weight: 400;
+  letter-spacing: 0.3125rem;
+  text-align: center;
+  text-decoration: none;
+  text-transform: uppercase;
+  transition: all 0.3s linear;
+  color: #333;
+  cursor: pointer;
+}
+@media only screen and (max-width: 750px) {
+  html body header nav form input[value="view cart"] {
+    letter-spacing: 0.3vw;
+  }
+}
+@media only screen and (max-width: 650px) {
+  html body header nav form input[value="view cart"] {
+    letter-spacing: 0.3125rem;
+  }
+}
+@media only screen and (min-width: 651px) {
+  html body header nav form input[value="view cart"]::after {
+    width: 100%;
+    display: block;
+    position: relative;
+    top: 0.5rem;
+    border-bottom: 3px solid transparent;
+    content: "";
+    transition: 0.5s;
+  }
+  html body header nav form input[value="view cart"]:hover::after {
+    top: 0.25rem;
+    border-bottom: 3px solid #6abbb6;
+  }
+}
+@media only screen and (max-width: 650px) {
+  html body header nav form input[value="view cart"] {
+    width: 100%;
+    padding: 1rem 0;
+    border-bottom: 1px solid #7f7f7f;
+  }
+}
+@media only screen and (max-width: 650px) {
+  html body header nav {
+    display: none;
+    flex-direction: column;
+  }
+  html body header nav.open-drawer {
+    display: flex;
+    margin: 0 auto;
+    background: rgba(255, 255, 255, 0.9);
+  }
 }
 html body main {
-  font-family: "Raleway", sans-serif;
-  margin: 0 auto;
   width: 90%;
+  margin: 0 auto;
+  font-family: "Open Sans", sans-serif;
+  font-size: 1.4rem;
+}
+@media only screen and (max-width: 650px) {
+  html body main {
+    position: relative;
+    top: 75px;
+  }
 }
 html body footer {
   width: 90%;
@@ -123,66 +312,504 @@ html body footer section:nth-of-type(3) div {
 /************
 PAGES
 ************/
-.postcards-page .row {
+.home-page {
+  display: flex;
+  justify-content: center;
+}
+@media only screen and (max-width: 800px) {
+  .home-page img {
+    width: 80vw;
+    margin: 20px auto 40px;
+  }
+}
+
+.lunar-calendars-page {
+  max-width: 700px;
+  margin: 0 auto;
+}
+.lunar-calendars-page .content-container {
   display: flex;
   justify-content: space-around;
 }
-.postcards-page .row .col {
+.lunar-calendars-page .content-block {
   text-align: center;
 }
-.postcards-page .row .col a {
+.lunar-calendars-page .content-block a {
   display: block;
-  height: 200px;
-  width: 300px;
 }
-.postcards-page .row .col a img {
-  border: 1px solid black;
-  max-height: 200px;
+.lunar-calendars-page .content-block a.lunar-calendars {
+  width: 300px;
+  height: 186px;
+}
+.lunar-calendars-page .content-block a.lunar-calendars img {
   max-width: 300px;
+  max-height: 186px;
+}
+.lunar-calendars-page .content-block a.prints {
+  width: 320px;
+  height: 320px;
+}
+.lunar-calendars-page .content-block a.prints img {
+  max-width: 320px;
+  max-height: 320px;
+}
+.lunar-calendars-page .content-block .content-item-name {
+  margin: 5px 0 10px;
+}
+.lunar-calendars-page .content-block a.postcards {
+  width: 300px;
+  height: 200px;
+}
+.lunar-calendars-page .content-block a.postcards img {
+  max-width: 300px;
+  max-height: 200px;
+  border: 1px solid #333;
+}
+@media only screen and (max-width: 700px) {
+  .lunar-calendars-page .content-container {
+    flex-direction: column;
+    align-items: center;
+  }
+  .lunar-calendars-page .content-block a.lunar-calendars {
+    width: 90vw;
+    height: 56vw;
+  }
+  .lunar-calendars-page .content-block a.lunar-calendars img {
+    max-width: 90vw;
+    max-height: 56vw;
+  }
+  .lunar-calendars-page .content-block a.postcards {
+    width: 390px;
+    height: 230px;
+  }
+  .lunar-calendars-page .content-block a.postcards img {
+    max-width: 390px;
+    max-height: 230px;
+  }
+}
+@media only screen and (max-width: 400px) {
+  .lunar-calendars-page .content-block a.prints {
+    width: 85vw;
+    height: 85vw;
+  }
+  .lunar-calendars-page .content-block a.prints img {
+    max-width: unset;
+    max-height: unset;
+    width: 85vw;
+    height: 85vw;
+  }
+  .lunar-calendars-page .content-block a.postcards {
+    width: 90vw;
+    height: 60vw;
+  }
+  .lunar-calendars-page .content-block a.postcards img {
+    max-width: unset;
+    max-height: unset;
+    width: 90vw;
+    height: 60vw;
+  }
+}
+
+.prints-page {
+  max-width: 700px;
+  margin: 0 auto;
+}
+.prints-page .content-container {
+  display: flex;
+  justify-content: space-around;
+}
+.prints-page .content-block {
+  text-align: center;
+}
+.prints-page .content-block a {
+  display: block;
+}
+.prints-page .content-block a.lunar-calendars {
+  width: 300px;
+  height: 186px;
+}
+.prints-page .content-block a.lunar-calendars img {
+  max-width: 300px;
+  max-height: 186px;
+}
+.prints-page .content-block a.prints {
+  width: 320px;
+  height: 320px;
+}
+.prints-page .content-block a.prints img {
+  max-width: 320px;
+  max-height: 320px;
+}
+.prints-page .content-block .content-item-name {
+  margin: 5px 0 10px;
+}
+.prints-page .content-block a.postcards {
+  width: 300px;
+  height: 200px;
+}
+.prints-page .content-block a.postcards img {
+  max-width: 300px;
+  max-height: 200px;
+  border: 1px solid #333;
+}
+@media only screen and (max-width: 700px) {
+  .prints-page .content-container {
+    flex-direction: column;
+    align-items: center;
+  }
+  .prints-page .content-block a.lunar-calendars {
+    width: 90vw;
+    height: 56vw;
+  }
+  .prints-page .content-block a.lunar-calendars img {
+    max-width: 90vw;
+    max-height: 56vw;
+  }
+  .prints-page .content-block a.postcards {
+    width: 390px;
+    height: 230px;
+  }
+  .prints-page .content-block a.postcards img {
+    max-width: 390px;
+    max-height: 230px;
+  }
+}
+@media only screen and (max-width: 400px) {
+  .prints-page .content-block a.prints {
+    width: 85vw;
+    height: 85vw;
+  }
+  .prints-page .content-block a.prints img {
+    max-width: unset;
+    max-height: unset;
+    width: 85vw;
+    height: 85vw;
+  }
+  .prints-page .content-block a.postcards {
+    width: 90vw;
+    height: 60vw;
+  }
+  .prints-page .content-block a.postcards img {
+    max-width: unset;
+    max-height: unset;
+    width: 90vw;
+    height: 60vw;
+  }
+}
+
+.postcards-page {
+  max-width: 700px;
+  margin: 0 auto;
+}
+.postcards-page .content-container {
+  display: flex;
+  justify-content: space-around;
+}
+.postcards-page .content-block {
+  text-align: center;
+}
+.postcards-page .content-block a {
+  display: block;
+}
+.postcards-page .content-block a.lunar-calendars {
+  width: 300px;
+  height: 186px;
+}
+.postcards-page .content-block a.lunar-calendars img {
+  max-width: 300px;
+  max-height: 186px;
+}
+.postcards-page .content-block a.prints {
+  width: 320px;
+  height: 320px;
+}
+.postcards-page .content-block a.prints img {
+  max-width: 320px;
+  max-height: 320px;
+}
+.postcards-page .content-block .content-item-name {
+  margin: 5px 0 10px;
+}
+.postcards-page .content-block a.postcards {
+  width: 300px;
+  height: 200px;
+}
+.postcards-page .content-block a.postcards img {
+  max-width: 300px;
+  max-height: 200px;
+  border: 1px solid #333;
+}
+@media only screen and (max-width: 700px) {
+  .postcards-page .content-container {
+    flex-direction: column;
+    align-items: center;
+  }
+  .postcards-page .content-block a.lunar-calendars {
+    width: 90vw;
+    height: 56vw;
+  }
+  .postcards-page .content-block a.lunar-calendars img {
+    max-width: 90vw;
+    max-height: 56vw;
+  }
+  .postcards-page .content-block a.postcards {
+    width: 390px;
+    height: 230px;
+  }
+  .postcards-page .content-block a.postcards img {
+    max-width: 390px;
+    max-height: 230px;
+  }
+}
+@media only screen and (max-width: 400px) {
+  .postcards-page .content-block a.prints {
+    width: 85vw;
+    height: 85vw;
+  }
+  .postcards-page .content-block a.prints img {
+    max-width: unset;
+    max-height: unset;
+    width: 85vw;
+    height: 85vw;
+  }
+  .postcards-page .content-block a.postcards {
+    width: 90vw;
+    height: 60vw;
+  }
+  .postcards-page .content-block a.postcards img {
+    max-width: unset;
+    max-height: unset;
+    width: 90vw;
+    height: 60vw;
+  }
 }
 
 .about-page .about-top {
   display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+.about-page .about-top p {
+  margin: 0 25px;
+}
+@media only screen and (max-width: 650px) {
+  .about-page .about-top p {
+    margin: 0;
+  }
+}
+.about-page .about-top p span.bold {
+  font-weight: 600;
+}
+@media only screen and (max-width: 700px) {
+  .about-page .huetown-h-logo,
+.about-page .self-portrait {
+    width: 10vw;
+    height: 10vw;
+  }
+}
+@media only screen and (max-width: 650px) {
+  .about-page .huetown-h-logo,
+.about-page .self-portrait {
+    display: none;
+  }
+}
+.about-page .text-link {
+  text-decoration: none;
+}
+.about-page .text-link:link, .about-page .text-link:visited, .about-page .text-link:hover, .about-page .text-link:active {
+  color: #ff9600;
+}
+.about-page .about-states {
+  text-transform: uppercase;
+}
+.about-page .section-title {
+  font-weight: 600;
+  text-transform: uppercase;
 }
 
-.item-page .row {
+.item-page {
+  margin-bottom: 20px;
+}
+.item-page .content-container {
   display: flex;
 }
-.item-page .row .col form [name=quantity] {
-  border: 0.1rem solid #7f7f7f;
-  font-size: 1.25rem;
+@media only screen and (max-width: 1050px) {
+  .item-page .content-container.lunar-calendar {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+@media only screen and (max-width: 750px) {
+  .item-page .content-container.lunar-calendar .item-image-front {
+    width: 90vw;
+    height: auto;
+  }
+}
+@media only screen and (max-width: 850px) {
+  .item-page .content-container {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+.item-page .container-two {
+  display: none;
+  border-top: 1px solid #333;
+  margin-top: 20px;
+}
+.item-page .container-two.shown {
+  display: block;
+}
+.item-page img.item-image-front.postcard {
+  border: 1px solid #333;
+}
+@media only screen and (max-width: 650px) {
+  .item-page img.item-image-front.postcard {
+    width: 550px;
+  }
+}
+@media only screen and (max-width: 600px) {
+  .item-page img.item-image-front.postcard {
+    width: 90vw;
+  }
+}
+@media only screen and (max-width: 500px) {
+  .item-page img.item-image-front.print {
+    width: 80vw;
+  }
+}
+.item-page .item-info-block {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  padding-left: 15px;
+}
+@media only screen and (max-width: 1050px) {
+  .item-page .item-info-block.lunar-calendar {
+    max-width: 600px;
+    flex-direction: column-reverse;
+    padding-left: 0;
+  }
+}
+@media only screen and (max-width: 850px) {
+  .item-page .item-info-block {
+    max-width: 600px;
+    flex-direction: column-reverse;
+    padding-left: 0;
+  }
+}
+@media only screen and (max-width: 650px) {
+  .item-page .item-info-block.postcard {
+    width: 550px;
+  }
+}
+@media only screen and (max-width: 600px) {
+  .item-page .item-info-block.postcard {
+    width: 90vw;
+  }
+}
+.item-page .item-name {
+  font-size: 2rem;
+  font-weight: 700;
+  margin-right: 5px;
+}
+.item-page .item-name span.normal {
+  font-weight: 400;
+}
+.item-page .item-subname {
+  font-size: 2rem;
+}
+.item-page .item-info-one,
+.item-page .item-info-two,
+.item-page .item-info-three {
+  margin: 10px 0 12px;
+  font-size: 1.3rem;
+}
+@media only screen and (max-width: 850px) {
+  .item-page .item-info-one,
+.item-page .item-info-two,
+.item-page .item-info-three {
+    margin: 5px 0;
+  }
+}
+@media only screen and (max-width: 850px) {
+  .item-page .item-info-text {
+    margin: 5px 0 0 5px;
+  }
+}
+.item-page .payment-info {
+  display: flex;
+  flex-direction: column;
+}
+@media only screen and (max-width: 1050px) {
+  .item-page .payment-info.lunar-calendar {
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    margin: 5px 0;
+  }
+}
+@media only screen and (max-width: 850px) {
+  .item-page .payment-info {
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    margin: 5px 0;
+  }
+}
+.item-page .item-price-container {
+  position: relative;
+  margin: 10px 0;
+  font-size: 2rem;
+  font-weight: 600;
+}
+@media only screen and (max-width: 1050px) {
+  .item-page .item-price-container.lunar-calendar {
+    margin: 0 10px 0 0;
+    top: 6px;
+  }
+}
+@media only screen and (max-width: 850px) {
+  .item-page .item-price-container {
+    margin: 0 10px 0 0;
+    top: 6px;
+  }
+}
+.item-page .qty-label {
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: #333;
+}
+.item-page .qty-label span {
+  position: relative;
+  left: 8px;
+}
+.item-page .ital {
+  font-style: italic;
+}
+.item-page form input[name=quantity] {
+  width: 4rem;
   height: 3.8rem;
   padding: 0;
+  border: 0.1rem solid #7f7f7f;
+  margin: 0 5px 5px 0;
+  font-size: 1.25rem;
   text-align: center;
-  width: 4rem;
 }
-.item-page .row .col form [value="add to cart"] {
-  background: #666;
+.item-page form input[value="add to cart"] {
   border: none;
   border-radius: 1rem;
+  background: #666;
   color: #fff;
-  cursor: pointer;
   font-family: "Raleway", sans-serif;
   font-size: 1.4rem;
   letter-spacing: 0.3125rem;
-  min-height: 4rem;
   text-transform: uppercase;
-  width: 14.6rem;
+  cursor: pointer;
+  width: 16rem;
+  min-height: 4rem;
 }
-.item-page .row .col form [value="add to cart"]:hover {
+.item-page form input[value="add to cart"]:hover {
   background: #6abbb6;
-}
-
-/************************************
-BREAKPOINT 500px
-************************************/
-@media only screen and (max-width: 500px) {
-  header a img[alt="Huetown Script Logo"] {
-    width: 80%;
-  }
-  header nav {
-    flex-direction: column;
-  }
 }
 
 /*# sourceMappingURL=index.css.map */
