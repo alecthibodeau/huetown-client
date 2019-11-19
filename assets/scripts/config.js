@@ -6,6 +6,7 @@ import lunarCalendars from './pages/lunar-calendars.js';
 import prints from './pages/prints.js';
 import postcards from './pages/postcards.js';
 import about from './pages/about.js';
+import veganly from './pages/veganly.js';
 
 // item page
 import item from './pages/item-page.js';
@@ -16,8 +17,8 @@ const itemInfoUniversals = {
   lunarCalendarInfoTwo: 'Printed by DWRI Letterpress',
   lunarCalendarInfoThree: 'Hand numbered and signed by the artist in a limited edition of prints',
   lunarCalendarInfoFour: 'Ships rolled and triple-packaged: archival wrapper, inner protective tube and outer shipping container',
-  postcardInfoOne: '6 x 4 inches; mellow, satin finish',
-  postcardInfoTwo: 'Full-color front / single-color back',
+  postcardInfoOne: '6 x 4 inches; mellow, satin finish<br>Full-color front / single-color back',
+  postcardInfoTwo: '',
   postcardPrice: 1,
   printPrice: 15
 }
@@ -38,11 +39,14 @@ const pagesInfo = {
   'about': {
     mainContent: about.aboutPage
   },
+  'veganly': {
+    mainContent: veganly.veganlyPage
+  },
   'lunarCalendarTwenty': {
     mainContent: item.itemPage,
     itemName: 'The Instruments Agree',
     itemCategory: '2020 lunar calendar by Alec Thibodeau',
-    itemImageFront: 'thibodeau_lunar_calendar_2020_photo_01.jpg',
+    itemImageFront: 'thibodeau_lunar_calendar_2020_main.jpg',
     itemInfoOne: itemInfoUniversals.lunarCalendarInfoOne,
     itemInfoTwo: itemInfoUniversals.lunarCalendarInfoTwo,
     itemInfoThree: 'Hand numbered and signed by the artist in a limited edition of 500 prints',
@@ -55,7 +59,7 @@ const pagesInfo = {
     mainContent: item.itemPage,
     itemName: 'Orchard Quest',
     itemCategory: '2019 lunar calendar by Alec Thibodeau',
-    itemImageFront: 'thibodeau_lunar_calendar_2019_photo_01.jpg',
+    itemImageFront: 'thibodeau_lunar_calendar_2019_main.jpg',
     itemInfoOne: itemInfoUniversals.lunarCalendarInfoOne,
     itemInfoTwo: itemInfoUniversals.lunarCalendarInfoTwo,
     itemInfoThree: 'Hand numbered and signed by the artist in a limited edition of 500 prints',
@@ -67,7 +71,7 @@ const pagesInfo = {
     mainContent: item.itemPage,
     itemName: 'Shimmery Circuit',
     itemCategory: '2018 lunar calendar by Alec Thibodeau',
-    itemImageFront: 'thibodeau_lunar_calendar_2018_photo_01.jpg',
+    itemImageFront: 'thibodeau_lunar_calendar_2018_main.jpg',
     itemInfoOne: itemInfoUniversals.lunarCalendarInfoOne,
     itemInfoTwo: itemInfoUniversals.lunarCalendarInfoTwo,
     itemInfoThree: 'Hand numbered and signed by the artist in a limited edition of 1000 prints',
@@ -79,7 +83,7 @@ const pagesInfo = {
     mainContent: item.itemPage,
     itemName: 'I Still See the X',
     itemCategory: '2017 lunar calendar by Alec Thibodeau',
-    itemImageFront: 'thibodeau_lunar_calendar_2017_photo_01.jpg',
+    itemImageFront: 'thibodeau_lunar_calendar_2017_main.jpg',
     itemInfoOne: itemInfoUniversals.lunarCalendarInfoOne,
     itemInfoTwo: itemInfoUniversals.lunarCalendarInfoTwo,
     itemInfoThree: 'Hand numbered and signed by the artist in a limited edition of 1000 prints',
@@ -166,9 +170,9 @@ const pagesInfo = {
   },
   'printFunktionslust': {
     mainContent: item.itemPage,
-    itemName: 'Funktionslust for All of Us',
-    itemCategory: 'by Alec Thibodeau',
-    itemImageFront: 'public/images/items/print_funktionslust.png',
+    itemName: 'Funktionslust for All of Us<br><span class="normal">by Alec Thibodeau</span>',
+    itemCategory: '',
+    itemImageFront: 'public/images/items/print_funktionslust_01.jpg',
     itemInfoOne: '5.75 x 5.75 inches<br>Screen print',
     itemInfoTwo: 'Printed by the artist',
     itemInfoThree: 'From a limited edition of 50 prints<br>Hand numbered and signed by the artist',
@@ -178,9 +182,9 @@ const pagesInfo = {
   },
   'printStentorian': {
     mainContent: item.itemPage,
-    itemName: 'Stentorian',
-    itemCategory: 'by Alec Thibodeau',
-    itemImageFront: 'public/images/items/print_stentorian.png',
+    itemName: 'Stentorian<br><span class="normal">by Alec Thibodeau</span>',
+    itemCategory: '',
+    itemImageFront: 'public/images/items/print_stentorian_01.jpg',
     itemInfoOne: '5.5 x 5.5 inches<br>Letterpress print',
     itemInfoTwo: 'Printed by DWRI Letterpress',
     itemInfoThree: 'From a limited edition of 250 prints<br>Hand numbered and signed by the artist',

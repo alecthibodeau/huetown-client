@@ -2,8 +2,8 @@
 @import "assets/styles/header";
 @import "assets/styles/footer";
 @import "assets/styles/about-content";
-@import "assets/styles/postcards-content";
-@import "assets/styles/items/item-page-styles";
+@import "assets/styles/collection-content";
+@import "assets/styles/item-page-styles";
 @import url('https://fonts.googleapis.com/css?family=Varela+Round|Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i|Noto+Sans:400,400i,700,700i|Alegreya+Sans:100,100i,300,300i,400,400i,500,500i,700,700i,800,800i,900,900i|Raleway:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i|Source+Sans+Pro:200,200i,300,300i,400,400i,600,600i,700,700i,900,900i|Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i');
 
 /************
@@ -53,8 +53,12 @@ html {
 PAGES
 ************/
 
+.prints-page {
+  @include collection-content
+}
+
 .postcards-page {
-  @include postcards-content
+  @include collection-content
 }
 
 .about-page {

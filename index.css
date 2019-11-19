@@ -312,14 +312,64 @@ html body footer section:nth-of-type(3) div {
 /************
 PAGES
 ************/
-.postcards-page .content-container {
+.prints-page {
+  max-width: 700px;
+  margin: 0 auto;
+}
+.prints-page .content-container {
   display: flex;
   justify-content: space-around;
 }
-@media only screen and (max-width: 650px) {
-  .postcards-page .content-container {
+.prints-page .content-block {
+  text-align: center;
+}
+.prints-page .content-block a {
+  display: block;
+  width: 300px;
+  height: 200px;
+}
+.prints-page .content-block a img {
+  max-width: 300px;
+  max-height: 200px;
+  border: 1px solid black;
+}
+.prints-page .content-block .content-item-name {
+  margin: 5px 0 10px;
+}
+@media only screen and (max-width: 700px) {
+  .prints-page .content-container {
     flex-direction: column;
+    align-items: center;
   }
+  .prints-page .content-block a {
+    width: 390px;
+    height: 230px;
+  }
+  .prints-page .content-block a img {
+    max-width: 390px;
+    max-height: 230px;
+  }
+}
+@media only screen and (max-width: 400px) {
+  .prints-page .content-block a {
+    width: 90vw;
+    height: 60vw;
+  }
+  .prints-page .content-block a img {
+    max-width: unset;
+    max-height: unset;
+    width: 90vw;
+    height: 60vw;
+  }
+}
+
+.postcards-page {
+  max-width: 700px;
+  margin: 0 auto;
+}
+.postcards-page .content-container {
+  display: flex;
+  justify-content: space-around;
 }
 .postcards-page .content-block {
   text-align: center;
@@ -333,6 +383,35 @@ PAGES
   max-width: 300px;
   max-height: 200px;
   border: 1px solid black;
+}
+.postcards-page .content-block .content-item-name {
+  margin: 5px 0 10px;
+}
+@media only screen and (max-width: 700px) {
+  .postcards-page .content-container {
+    flex-direction: column;
+    align-items: center;
+  }
+  .postcards-page .content-block a {
+    width: 390px;
+    height: 230px;
+  }
+  .postcards-page .content-block a img {
+    max-width: 390px;
+    max-height: 230px;
+  }
+}
+@media only screen and (max-width: 400px) {
+  .postcards-page .content-block a {
+    width: 90vw;
+    height: 60vw;
+  }
+  .postcards-page .content-block a img {
+    max-width: unset;
+    max-height: unset;
+    width: 90vw;
+    height: 60vw;
+  }
 }
 
 .about-page .about-top {
@@ -414,6 +493,7 @@ PAGES
 .item-page .item-info-block {
   display: flex;
   flex-direction: column;
+  justify-content: space-around;
   padding-left: 15px;
 }
 @media only screen and (max-width: 850px) {
@@ -438,13 +518,16 @@ PAGES
   font-weight: 700;
   margin-right: 5px;
 }
+.item-page .item-name span.normal {
+  font-weight: 400;
+}
 .item-page .item-category {
   font-size: 2rem;
 }
 .item-page .item-info-one,
 .item-page .item-info-two,
 .item-page .item-info-three {
-  margin: 15px 0;
+  margin: 10px 0 12px;
   font-size: 1.3rem;
 }
 @media only screen and (max-width: 850px) {

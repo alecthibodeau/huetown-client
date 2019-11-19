@@ -7,27 +7,27 @@ let postcardsPage = `
         <a data-title="Assets" class="item-element" href="postcard_assets.html">
           <img src="/public/images/items/postcard_assets.png" />
         </a>
-        <p>Assets</p>
+        <div class="content-item-name">Assets</div>
       </div>
       <div class="content-block">
-        <a data-title="Cachalot" class="item-element" href="postcard_cachalot.html">
-          <img src="public/images/items/postcard_assets.png" />
+        <a data-title="Great White Shark" class="item-element" href="postcard_great_white_shark.html">
+          <img src="public/images/items/postcard_great_white_shark.png" />
         </a>
-        <p>Cachalot</p>
+        <div class="content-item-name">Great White Shark</div>
       </div>
     </div>
     <div class="content-container">
       <div class="content-block">
-        <a data-title="Flannery O'Connor" class="item-element" href="postcard_flannery_oconnor.html">
-          <img src="public/images/items/postcard_assets.png" />
+        <a data-title="Hippopotamus" class="item-element" href="postcard_hippopotamus.html">
+          <img src="public/images/items/postcard_hippopotamus.png" />
         </a>
-        <p>Flannery O'Connor</p>
+        <div class="content-item-name">Hippopotamus</div>
       </div>
       <div class="content-block">
-        <a data-title="Herman Melville" class="item-element" href="postcard_herman_melville.html">
-          <img src="public/images/items/postcard_assets.png" />
+        <a data-title="Rhode Island Whale" class="item-element" href="postcard_rhode_island_whale.html">
+          <img src="public/images/items/postcard_rhode_island_whale.png" />
         </a>
-        <p>Herman Melville</p>
+        <div class="content-item-name">Rhode Island Whale</div>
       </div>
     </div>
   </div>

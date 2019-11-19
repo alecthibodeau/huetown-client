@@ -78,6 +78,7 @@ const itemLoad = function (currentPage) {
     });
     // Use '.src' to set the main image's source
     document.querySelector('.item-image-front').src = page.itemImageFront;
+    document.querySelector('.item-image-front').classList.add('foobar')
     // Use '.value' to set the form input's cart value
     document.querySelector('.item-id').value = page.itemId;
   }
