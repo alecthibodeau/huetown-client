@@ -1,10 +1,10 @@
 @import "assets/styles/_variables";
 @import "assets/styles/header";
 @import "assets/styles/footer";
-@import "assets/styles/about-content";
-@import "assets/styles/collection-content";
-@import "assets/styles/item-page-styles";
-@import url('https://fonts.googleapis.com/css?family=Varela+Round|Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i|Noto+Sans:400,400i,700,700i|Alegreya+Sans:100,100i,300,300i,400,400i,500,500i,700,700i,800,800i,900,900i|Raleway:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i|Source+Sans+Pro:200,200i,300,300i,400,400i,600,600i,700,700i,900,900i|Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i');
+@import "assets/styles/about";
+@import "assets/styles/collection";
+@import "assets/styles/item";
+@import url('https://fonts.googleapis.com/css?family=Raleway:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i|Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i');
 
 /************
 HTML & BODY
@@ -31,9 +31,6 @@ html {
     main {
       width: 90%;
       margin: 0 auto;
-      // font-family: 'Alegreya', sans-serif;
-      // font-family: 'Raleway', sans-serif;
-      // font-family: 'Source Sans Pro', sans-serif;
       font-family: 'Open Sans', sans-serif;
       font-size: 1.4rem;
 
@@ -52,6 +49,23 @@ html {
 /************
 PAGES
 ************/
+
+
+.home-page {
+  display: flex;
+  justify-content: center;
+  margin: 20px auto 40px;
+  
+  @media only screen and (max-width: 800px) {
+    img {
+      width: 80vw;
+    }
+  }
+}
+
+// .lunar-calendars-page {
+//   @include collection-content
+// }
 
 .prints-page {
   @include collection-content

@@ -16,7 +16,7 @@ let itemPage = `
         <div class="item-info-text">
           <div>
             <span class="item-name"></span>
-            <span class="item-category"></span>
+            <span class="item-subname"></span>
           </div>
           <div class="item-info-one"></div>
           <div class="item-info-two"></div>
@@ -57,7 +57,7 @@ const itemLoad = function (currentPage) {
   let page = config.pagesInfo[currentPage]
   let htmlToFill = [
     ['.item-name', page.itemName],
-    ['.item-category', page.itemCategory],
+    ['.item-subname', page.itemSubname],
     ['.item-info-one', page.itemInfoOne],
     ['.item-info-two', page.itemInfoTwo],
     ['.item-info-three', page.itemInfoThree],
@@ -76,9 +76,9 @@ const itemLoad = function (currentPage) {
         document.querySelector(element[0]).innerHTML = element[1];
       }
     });
-    // Use '.src' to set the main image's source
+    // Use '.src' and '.classList' to set the main image's source and add an item-specific class
     document.querySelector('.item-image-front').src = page.itemImageFront;
-    document.querySelector('.item-image-front').classList.add('foobar')
+    document.querySelector('.item-image-front').classList.add(page.itemCategory)
     // Use '.value' to set the form input's cart value
     document.querySelector('.item-id').value = page.itemId;
   }

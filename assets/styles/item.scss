@@ -38,12 +38,21 @@
 
     border: 1px solid $eighty-percent-gray;
 
-    @media only screen and (max-width: 650px) {
-      width: 550px;
+    &.postcard {
+
+      @media only screen and (max-width: 650px) {
+        width: 550px;
+      }
+  
+      @media only screen and (max-width: 600px) {
+        width: 90vw;
+      }
     }
 
-    @media only screen and (max-width: 600px) {
-      width: 90vw;
+    &.print {
+      @media only screen and (max-width: 500px) {
+        width: 80vw;
+      }
     }
   }
 
@@ -60,12 +69,15 @@
       // flex-direction: column; // OPTIONAL SETTING
     }
 
-    @media only screen and (max-width: 650px) {
-      width: 550px;
-    }
+    &.postcard {
 
-    @media only screen and (max-width: 600px) {
-      width: 90vw;
+      @media only screen and (max-width: 650px) {
+        width: 550px;
+      }
+  
+      @media only screen and (max-width: 600px) {
+        width: 90vw;
+      }
     }
   }
 
@@ -79,7 +91,7 @@
     }
   }
 
-  .item-category {
+  .item-subname {
     font-size: 2rem;
   }
 

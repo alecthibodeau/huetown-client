@@ -40,7 +40,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
   /* PAGE CONTENT LOAD */
 
-  // Set HTML based on current page value, then add event handlers
+  // Set HTML content and add classes (based on current page value), then add event handlers
   const setHtml = () => {
 
     // Get page value
@@ -60,6 +60,18 @@ document.addEventListener('DOMContentLoaded', function () {
       items.itemLoad(pageValue);
     }
 
+    // Add page-specific class to links for images in collections page
+    let links = document.querySelectorAll('.collection-link');
+    for (let i = 0; i < links.length; i++) {
+      links[i].classList.add(pageValue);
+    }
+
+    // Add page-specific class to images in collection
+    // let divs = document.querySelectorAll('.collection-image');
+    // for (let i = 0; i < divs.length; i++) {
+    //   divs[i].classList.add(pageValue);
+    // }
+    
     addEventHandlers();
   };
 

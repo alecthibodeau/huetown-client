@@ -1,7 +1,9 @@
 'use strict'
 
 let homePage = `
-  <div>home page works!</div>
+  <div class="home-page">
+    <img src="public/images/items/2020_soon.png" />
+  </div>
 `;
 
 export default {
