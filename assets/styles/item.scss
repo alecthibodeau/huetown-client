@@ -11,6 +11,9 @@
   cursor: pointer;
 }
 
+// NOTE: This page needs to be updated to deal with lunar-calendar selectors,
+// which are being added in app.js if the item page is for a lunar calendar
+
 // This is the selector for item-page
 @mixin item-page-content {
   margin-bottom: 20px;
@@ -18,13 +21,27 @@
   .content-container {
     display: flex;
 
+    &.lunar-calendar {
+      @media only screen and (max-width: 1050px) {
+        flex-direction: column;
+        align-items: center;
+      }
+
+      @media only screen and (max-width: 750px) {
+        .item-image-front {
+          width: 90vw;
+          height: auto;
+        }
+      }
+    }
+
     @media only screen and (max-width: 850px) {
       flex-direction: column;
       align-items: center;
     }
   }
 
-  .container-two {
+  .container-two { // The container for the extra content
     display: none;
     border-top: 1px solid $eighty-percent-gray;
     margin-top: 20px;
@@ -36,9 +53,9 @@
 
   img.item-image-front {
 
-    border: 1px solid $eighty-percent-gray;
-
     &.postcard {
+
+      border: 1px solid $eighty-percent-gray;
 
       @media only screen and (max-width: 650px) {
         width: 550px;
@@ -61,6 +78,16 @@
     flex-direction: column;
     justify-content: space-around;
     padding-left: 15px;
+
+    &.lunar-calendar {
+
+      @media only screen and (max-width: 1050px) {
+        max-width: 600px;
+        flex-direction: column-reverse;
+        padding-left: 0;
+        // flex-direction: column; // OPTIONAL SETTING
+      }
+    }
 
     @media only screen and (max-width: 850px) {
       max-width: 600px;
@@ -116,6 +143,16 @@
     display: flex;
     flex-direction: column;
 
+    &.lunar-calendar {
+
+      @media only screen and (max-width: 1050px) {
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        margin: 5px 0;
+      }
+    }
+
     @media only screen and (max-width: 850px) {
       flex-direction: row;
       align-items: center;
@@ -133,6 +170,13 @@
     margin: 10px 0;
     font-size: 2rem;
     font-weight: 600;
+
+    &.lunar-calendar {
+      @media only screen and (max-width: 1050px) {
+        margin: 0 10px 0 0 ;
+        top: 6px;
+      }
+    }
 
     @media only screen and (max-width: 850px) {
       margin: 0 10px 0 0 ;

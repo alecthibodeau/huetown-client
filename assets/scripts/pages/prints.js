@@ -1,7 +1,7 @@
 'use strict'
 
 let printsPage = `
-  <div class="prints-page">
+  <div class="collection-page prints-page">
     <div class="content-container">
       <div class="content-block">
         <a data-title="Stentorian" class="collection-link" href="print_stentorian.html">

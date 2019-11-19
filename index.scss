@@ -50,22 +50,21 @@ html {
 PAGES
 ************/
 
-
 .home-page {
   display: flex;
   justify-content: center;
-  margin: 20px auto 40px;
   
   @media only screen and (max-width: 800px) {
     img {
       width: 80vw;
+      margin: 20px auto 40px;
     }
   }
 }
 
-// .lunar-calendars-page {
-//   @include collection-content
-// }
+.lunar-calendars-page {
+  @include collection-content
+}
 
 .prints-page {
   @include collection-content

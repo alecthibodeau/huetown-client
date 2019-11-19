@@ -1,3 +1,9 @@
+// Sub-mixins need to be outside the primary mixin
+@mixin collection-image-border {
+  border: 1px solid $eighty-percent-gray;
+}
+
+// This is the selector for collection-page
 @mixin collection-content {
 
   max-width: 700px;
@@ -13,19 +19,15 @@
 
     a {
       display: block;
-
-      img {
-        border: 1px solid $eighty-percent-gray;
-      }
     }
 
-    a.postcards {
+    a.lunar-calendars {
       width: 300px;
-      height: 200px;
+      height: 186px;
 
       img {
         max-width: 300px;
-        max-height: 200px;
+        max-height: 186px;
       }
     }
 
@@ -42,6 +44,18 @@
     .content-item-name {
       margin: 5px 0 10px;
     }
+
+    a.postcards {
+      width: 300px;
+      height: 200px;
+
+      img {
+        max-width: 300px;
+        max-height: 200px;
+
+        @include collection-image-border
+      }
+    }
   }
 
   ///* MEDIA QUERIES *///
@@ -54,6 +68,16 @@
     }
 
     .content-block {
+
+      a.lunar-calendars {
+        width: 90vw;
+        height: 56vw;
+  
+        img {
+          max-width: 90vw;
+          max-height: 56vw;
+        }
+      }
   
       a.postcards {
         width: 390px;
@@ -71,6 +95,18 @@
 
     .content-block {
   
+      a.prints {
+        width: 85vw;
+        height: 85vw;
+  
+        img {
+          max-width: unset;
+          max-height: unset;
+          width: 85vw;
+          height: 85vw;
+        }
+      }
+
       a.postcards {
         width: 90vw;
         height: 60vw;

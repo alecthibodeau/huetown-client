@@ -1,7 +1,7 @@
 'use strict'
 
 let postcardsPage = `
-  <div class="postcards-page">
+  <div class="collection-page postcards-page">
     <div class="content-container">
       <div class="content-block postcards">
         <a data-title="Assets" class="collection-link" href="postcard_assets.html">
