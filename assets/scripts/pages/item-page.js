@@ -1,6 +1,6 @@
 'use strict'
 
-import pages from '../../pages.js';
+import config from '../config.js';
 
 let itemPage = `
   <div class="item-page">
@@ -46,13 +46,15 @@ let itemPage = `
     </div>
 
     <div class="container-two">
+      <div class="item-more">
+      </div>
     </div>
 
   </div>
 `;
 
 const itemLoad = function (currentPage) {
-  let page = pages.pagesDictionary[currentPage]
+  let page = config.pagesInfo[currentPage]
   let htmlToFill = [
     ['.item-name', page.itemName],
     ['.item-category', page.itemCategory],
@@ -60,12 +62,17 @@ const itemLoad = function (currentPage) {
     ['.item-info-two', page.itemInfoTwo],
     ['.item-info-three', page.itemInfoThree],
     ['.item-info-four', page.itemInfoFour],
-    ['.item-price', page.itemPrice]
+    ['.item-price', page.itemPrice],
+    ['.item-more', page.itemInfoMore]
   ]
   if (currentPage) {
     // Use '.innerHTML' to fill each item's DOM element by class name with the item's info -- if that info exists
     htmlToFill.forEach(function (element) {
       if (element[1]) {
+        // Show container for more info if the info is there
+        if (element[1] === page.itemInfoMore) {
+          document.querySelector('.container-two').classList.add('shown');
+        }
         document.querySelector(element[0]).innerHTML = element[1];
       }
     });

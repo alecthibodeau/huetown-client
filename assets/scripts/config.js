@@ -8,7 +8,7 @@ import postcards from './pages/postcards.js';
 import about from './pages/about.js';
 
 // item page
-import item from './pages/items/item-page.js';
+import item from './pages/item-page.js';
 
 const itemInfoUniversals = {
   lunarCalendarPrice: 40,
@@ -22,7 +22,7 @@ const itemInfoUniversals = {
   printPrice: 15
 }
 
-const pagesDictionary = {
+const pagesInfo = {
   'home': {
     mainContent: home.homePage
   },
@@ -47,6 +47,7 @@ const pagesDictionary = {
     itemInfoTwo: itemInfoUniversals.lunarCalendarInfoTwo,
     itemInfoThree: 'Hand numbered and signed by the artist in a limited edition of 500 prints',
     itemInfoFour: itemInfoUniversals.lunarCalendarInfoFour,
+    itemInfoMore: '',
     itemPrice: itemInfoUniversals.lunarCalendarPrice,
     itemId: 'TGVEUGQD58AX2'
   },
@@ -190,5 +191,5 @@ const pagesDictionary = {
 };
 
 export default {
-  pagesDictionary
+  pagesInfo
 };

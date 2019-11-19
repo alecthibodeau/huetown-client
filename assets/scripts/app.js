@@ -1,7 +1,7 @@
 'use strict'
 
-import pages from './pages.js';
-import items from './pages/items/item-page.js';
+import config from './config.js';
+import items from './pages/item-page.js';
 import body from './pages/body-page.js';
 
 let isNavDrawerOpen = false;
@@ -46,7 +46,7 @@ document.addEventListener('DOMContentLoaded', function () {
     // Get page value
     let bodyDiv = document.getElementById('body')
     let pageValue = bodyDiv.getAttribute('page-value');
-    let page = pages.pagesDictionary[pageValue]
+    let page = config.pagesInfo[pageValue]
 
     // Load body content, which must happen before getting main div
     bodyDiv.innerHTML = body.bodyPage;

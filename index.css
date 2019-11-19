@@ -115,7 +115,7 @@ html body header nav a {
   color: #333;
   cursor: pointer;
 }
-@media only screen and (max-width: 700px) {
+@media only screen and (max-width: 750px) {
   html body header nav a {
     letter-spacing: 0.3vw;
   }
@@ -161,7 +161,7 @@ html body header nav form {
   color: #333;
   cursor: pointer;
 }
-@media only screen and (max-width: 700px) {
+@media only screen and (max-width: 750px) {
   html body header nav form {
     letter-spacing: 0.3vw;
   }
@@ -201,7 +201,7 @@ html body header nav form input[value="view cart"] {
   color: #333;
   cursor: pointer;
 }
-@media only screen and (max-width: 700px) {
+@media only screen and (max-width: 750px) {
   html body header nav form input[value="view cart"] {
     letter-spacing: 0.3vw;
   }
@@ -391,6 +391,7 @@ PAGES
   }
 }
 .item-page .container-two {
+  display: none;
   border-top: 1px solid #333;
   margin-top: 20px;
 }
