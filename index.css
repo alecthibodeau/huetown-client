@@ -68,23 +68,23 @@ html body main {
   width: 90%;
 }
 html body footer {
-  border-top: 2px solid #7f7f7f;
+  width: 90%;
   display: flex;
   justify-content: center;
+  border-top: 2px solid #7f7f7f;
   margin: 1rem auto;
-  width: 90%;
 }
 html body footer section {
   margin: 2rem 4rem;
 }
 html body footer section a {
-  height: 4rem;
   width: 4rem;
+  height: 4rem;
   display: block;
 }
 html body footer section a img {
-  height: 4rem;
   width: 4rem;
+  height: 4rem;
   display: block;
   position: relative;
   z-index: 10;
@@ -94,19 +94,30 @@ html body footer section a:hover div {
   transition: all 0.3s linear;
 }
 html body footer section a div {
-  background: transparent;
-  border-radius: 1rem;
+  width: 93%;
   height: 93%;
-  left: 3.5%;
   position: relative;
   bottom: calc(4rem - 3.5%);
-  width: 93%;
+  left: 3.5%;
+  border-radius: 1rem;
+  background: transparent;
 }
 html body footer section:nth-of-type(2) div {
   border-radius: 50%;
 }
 html body footer section:nth-of-type(3) div {
   border-radius: 0.5rem;
+}
+@media only screen and (max-width: 650px) {
+  html body footer section {
+    margin: 1rem 2rem;
+  }
+}
+@media only screen and (max-width: 650px) {
+  html body footer {
+    position: relative;
+    top: 75px;
+  }
 }
 
 /************
