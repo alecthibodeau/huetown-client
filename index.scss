@@ -56,7 +56,8 @@ PAGES
   
   @media only screen and (max-width: 800px) {
     img {
-      width: 80vw;
+      max-width: 90vw;
+      max-height: 56vw;
       margin: 20px auto 40px;
     }
   }
