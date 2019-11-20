@@ -28,7 +28,7 @@ let bodyPage = `
     </form>
   </nav>
 </header>
-<main id="main">Welcome to Huetown.</main>
+<main id="main" class="main-element">Welcome to Huetown.</main>
 <footer>
   <section>
     <a data-title="Instagram" href="https://www.instagram.com/huetown" target="_blank">

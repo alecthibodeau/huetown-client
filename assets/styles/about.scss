@@ -11,7 +11,7 @@
 
       @media only screen and (max-width: 650px) {
         margin: 0;
-        bottom: 3px;
+        bottom: 5px;
       }
 
       span.bold {
@@ -30,8 +30,8 @@
       @media only screen and (max-width: 650px) {
   
         &.huetown-h-logo {
-          float: left;
           margin: 0 15px 5px 0;
+          float: left;
         }
   
         &.self-portrait {
