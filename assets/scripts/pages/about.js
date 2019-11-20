@@ -4,13 +4,13 @@ let aboutPage = `
   <div class="about-page">
     <div class="about-top">
       <img class="huetown-h-logo" src="public/images/huetown_h_logo.jpg" />
-      <p>
+      <div>
         <span class="bold">Huetown</span> is the web shop for artist Alec Thibodeau (me!). 
         I make lunar calendars, prints, postcards and more. An artist's bio 
         and images of my past work can be found at my portfolio site: 
         <a class="text-link" href="https://alecthibodeau.com/about.html" target="_blank">alecthibodeau.com</a>. 
         All items here are printed in the USA.
-      </p>
+      </div>
       <img class="self-portrait" src="public/images/thibodeau_self-portrait_square.jpg" />
     </div>
     <div>
@@ -25,18 +25,11 @@ let aboutPage = `
       </p>
       <p>
         <span class="section-title ">Shipping</span>: 
-        Regardless of item quantity all orders ship for a 
-        flat shipping & handling charge in sturdy packaging 
-        via USPS Priority Mail from Providence, Rhode Island, USA. 
-        Flat rates are $8.00 for domestic shipments within the USA, 
-        $23.00 for shipments to Canada and Mexico or $29.00 for 
-        shipments to any other country. Packages generally ship 
-        within a couple business days of an order being placed, 
-        with domestic shipments usually arriving a few days after that. 
-        Once shipping is underway you'll receive a confirmation email 
-        directly from PayPal, which includes tracking information. Please allow 
-        approximately one week for domestic delivery and 2-3 weeks for 
-        international delivery.
+        Regardless of item quantity all orders ship for a flat charge in sturdy packaging via USPS Priority Mail from Providence, Rhode Island, USA. 
+        Flat rates are $8.00 for domestic shipments within the USA, $23.00 for delivery to Canada or Mexico or $29.00 for delivery to any other country. 
+        Packages generally ship within a couple business days of an order being placed, with domestic deliveries usually arriving a few days after that. 
+        Once shipping is underway you'll receive a confirmation email directly from PayPal, which includes tracking information. 
+        Please allow approximately one week for domestic delivery and 2-3 weeks for international delivery.
       </p>
       <p>
         <span class="section-title ">Follow</span>: 
@@ -53,7 +46,7 @@ let aboutPage = `
         </a> &bull; 
         <span class="about-states">Georgia</span>: 
         <a class="text-link" href="http://flanneryoconnorhome.org" target="_blank">
-          Flannery O’Connor Childhood Home
+          Flannery O'Connor Childhood Home
         </a> &bull; 
         <span class="about-states">Massachusetts</span>: 
         <a class="text-link" href="http://provincetownlibrary.org" target="_blank">

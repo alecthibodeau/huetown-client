@@ -51,8 +51,10 @@
 
   @media only screen and (max-width: 650px) {
     width: 100%;
-    padding: 1rem 0;
-    border-bottom: 1px solid $fifty-percent-gray;
+    padding: 1.5rem 0;
+    border-bottom: 1.5px solid $fifty-percent-gray;
+    font-size: 1.8rem;
+    font-weight: 500;
   }
 }
 

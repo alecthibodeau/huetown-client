@@ -143,8 +143,10 @@ html body header nav a {
 @media only screen and (max-width: 650px) {
   html body header nav a {
     width: 100%;
-    padding: 1rem 0;
-    border-bottom: 1px solid #7f7f7f;
+    padding: 1.5rem 0;
+    border-bottom: 1.5px solid #7f7f7f;
+    font-size: 1.8rem;
+    font-weight: 500;
   }
 }
 html body header nav form {
@@ -229,8 +231,10 @@ html body header nav form input[value="view cart"] {
 @media only screen and (max-width: 650px) {
   html body header nav form input[value="view cart"] {
     width: 100%;
-    padding: 1rem 0;
-    border-bottom: 1px solid #7f7f7f;
+    padding: 1.5rem 0;
+    border-bottom: 1.5px solid #7f7f7f;
+    font-size: 1.8rem;
+    font-weight: 500;
   }
 }
 @media only screen and (max-width: 650px) {
@@ -245,6 +249,7 @@ html body header nav form input[value="view cart"] {
   }
 }
 html body main {
+  position: relative;
   width: 90%;
   margin: 0 auto;
   font-family: "Open Sans", sans-serif;
@@ -252,7 +257,11 @@ html body main {
 }
 @media only screen and (max-width: 650px) {
   html body main {
-    position: relative;
+    top: 85px;
+  }
+}
+@media only screen and (max-width: 450px) {
+  html body main {
     top: 75px;
   }
 }
@@ -590,28 +599,40 @@ PAGES
   justify-content: flex-start;
   align-items: flex-start;
 }
-.about-page .about-top p {
+.about-page .about-top div {
   margin: 0 25px;
+  position: relative;
 }
 @media only screen and (max-width: 650px) {
-  .about-page .about-top p {
+  .about-page .about-top div {
     margin: 0;
+    bottom: 5px;
   }
 }
-.about-page .about-top p span.bold {
+.about-page .about-top div span.bold {
   font-weight: 600;
 }
 @media only screen and (max-width: 700px) {
-  .about-page .huetown-h-logo,
-.about-page .self-portrait {
-    width: 10vw;
-    height: 10vw;
+  .about-page .about-top .huetown-h-logo,
+.about-page .about-top .self-portrait {
+    width: 11vw;
+    height: 11vw;
   }
 }
 @media only screen and (max-width: 650px) {
-  .about-page .huetown-h-logo,
-.about-page .self-portrait {
+  .about-page .about-top .huetown-h-logo.huetown-h-logo,
+.about-page .about-top .self-portrait.huetown-h-logo {
+    margin: 0 15px 5px 0;
+    float: left;
+  }
+  .about-page .about-top .huetown-h-logo.self-portrait,
+.about-page .about-top .self-portrait.self-portrait {
     display: none;
+  }
+}
+@media only screen and (max-width: 650px) {
+  .about-page .about-top {
+    display: block;
   }
 }
 .about-page .text-link {
@@ -798,7 +819,7 @@ PAGES
 }
 .item-page form input[value="add to cart"] {
   border: none;
-  border-radius: 1rem;
+  border-radius: 10px;
   background: #666;
   color: #fff;
   font-family: "Raleway", sans-serif;

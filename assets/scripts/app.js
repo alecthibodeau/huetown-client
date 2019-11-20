@@ -5,6 +5,7 @@ import items from './pages/item-page.js';
 import body from './pages/body-page.js';
 
 let isNavDrawerOpen = false;
+let windowSize = Math.max(document.documentElement.clientWidth, window.innerWidth || 0);
 
 // When the DOM is fully loaded
 document.addEventListener('DOMContentLoaded', function () {
@@ -13,15 +14,21 @@ document.addEventListener('DOMContentLoaded', function () {
 
   ///* NAV MENU DRAWER FUNCTIONALITY *///
 
-  // 2) Hide an open nav drawer permanently if user resizes window up to 650px
-  function drawerHide() {
-    let windowSize = Math.max(document.documentElement.clientWidth, window.innerWidth || 0);
+  // 3) Hide an open nav drawer permanently if user resizes window up to 650px
+  function drawerHideOnEnlarge() {
     if (windowSize > 650 && isNavDrawerOpen) {
       drawerCheck();
     }
   };
 
-  // 1) Check the nav drawer's boolean and then open/close
+  // 2) Hide an open nav drawer if user clicks outside it
+  function drawerHideOnMainClick() {
+    if (windowSize < 651 && isNavDrawerOpen) {
+      drawerCheck();
+    }
+  };
+
+  // 1) Check the nav drawer's boolean and then open/close the drawer
   function drawerCheck() {
     let nav = document.getElementById('nav');
     !isNavDrawerOpen ? nav.classList.add('open-drawer') : nav.classList.remove('open-drawer');
@@ -32,10 +39,12 @@ document.addEventListener('DOMContentLoaded', function () {
 
   // Add event handlers for elements not in index.html
   const addEventHandlers = () => {
-    // Hide nav drawer when the user enlarges the window
-    window.addEventListener('resize', drawerHide);
     // Enable hamburger button
     document.getElementById('burgerButton').addEventListener('click', drawerCheck);
+    // Hide nav drawer when the user enlarges the window
+    window.addEventListener('resize', drawerHideOnEnlarge);
+    // Hide nav drawer when the user clicks outside the nav
+    document.querySelector('.main-element').addEventListener('click', drawerHideOnMainClick);
   };
 
   ///* PAGE CONTENT LOAD *///

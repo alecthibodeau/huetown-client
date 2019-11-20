@@ -1,7 +1,7 @@
 // Sub-mixins need to be outside the primary mixin
 @mixin button-styles {
   border: none;
-  border-radius: 1rem;
+  border-radius: 10px;
   background: $sixty-percent-gray;
   color: $white;
   font-family: 'Raleway', sans-serif;

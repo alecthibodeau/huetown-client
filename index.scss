@@ -29,13 +29,17 @@ html {
     }
 
     main {
+      position: relative;
       width: 90%;
       margin: 0 auto;
       font-family: 'Open Sans', sans-serif;
       font-size: 1.4rem;
 
       @media only screen and (max-width: 650px) {
-        position: relative;
+        top: 85px;
+      }
+
+      @media only screen and (max-width: 450px) {
         top: 75px;
       }
     }
