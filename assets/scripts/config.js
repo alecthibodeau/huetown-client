@@ -127,7 +127,7 @@ const pagesInfo = {
     itemImageFront: 'public/images/items/postcard_flannery_oconnor.png',
     itemInfoOne: itemInfoUniversals.postcardInfoOne,
     itemInfoTwo: itemInfoUniversals.postcardInfoTwo,
-    itemInfoThree: `Caption on the back: "Flannery O’Connor (1925–1964) wrote <span class="ital">Wise Blood</span> and was an accomplished cartoonist."`,
+    itemInfoThree: `Caption on the back: "Flannery O'Connor (1925–1964) wrote <span class="ital">Wise Blood</span> and was an accomplished cartoonist."`,
     itemPrice: itemInfoUniversals.postcardPrice,
     itemId: '25LJT9358P2PS'
   },

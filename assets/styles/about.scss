@@ -5,29 +5,43 @@
     justify-content: flex-start;
     align-items: flex-start;
   
-    p {
+    div {
       margin: 0 25px;
+      position: relative;
 
       @media only screen and (max-width: 650px) {
         margin: 0;
+        bottom: 3px;
       }
 
       span.bold {
         font-weight: 600;
       }
     }
-  }
 
-  .huetown-h-logo,
-  .self-portrait {
-
-    @media only screen and (max-width: 700px) {
-      width: 10vw;
-      height: 10vw;
+    .huetown-h-logo,
+    .self-portrait {
+  
+      @media only screen and (max-width: 700px) {
+        width: 11vw;
+        height: 11vw;
+      }
+  
+      @media only screen and (max-width: 650px) {
+  
+        &.huetown-h-logo {
+          float: left;
+          margin: 0 15px 5px 0;
+        }
+  
+        &.self-portrait {
+          display: none;
+        }
+      }
     }
 
     @media only screen and (max-width: 650px) {
-      display: none;
+      display: block;
     }
   }
 
