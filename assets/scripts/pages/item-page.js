@@ -8,12 +8,14 @@ let itemPage = `
     <div class="content-container container-one">
 
       <div class="content-block">
-        <img class="item-image-front" src="" />
+        <a class="feature-image-link" href="">
+          <img class="item-image-front" src="" />
+        </a>
       </div>
 
       <div class="content-block item-info-block">
         
-        <div class="item-info-text">
+        <div class="item-info-text" id="orderItem">
           <div>
             <span class="item-name"></span>
             <span class="item-subname"></span>
@@ -45,8 +47,12 @@ let itemPage = `
       </div>
     </div>
 
-    <div class="container-two">
-      <div class="item-more">
+    <div class="content-container container-two">
+      <div class="photo-pair item-more-photo-pair-one"></div>
+      <div class="photo-pair item-more-photo-pair-two"></div>
+      <div class="photo-pair item-more-photo-pair-three"></div>
+      <div class="photo-pair item-more-photo-pair-four"></div>
+      <div class="item-more-info"></div>
       </div>
     </div>
 
@@ -63,14 +69,18 @@ const itemLoad = function (currentPage) {
     ['.item-info-three', page.itemInfoThree],
     ['.item-info-four', page.itemInfoFour],
     ['.item-price', page.itemPrice],
-    ['.item-more', page.itemInfoMore]
+    ['.item-more-photo-pair-one', page.itemMorePhotoPairOne],
+    ['.item-more-photo-pair-two', page.itemMorePhotoPairTwo],
+    ['.item-more-photo-pair-three', page.itemMorePhotoPairThree],
+    ['.item-more-photo-pair-four', page.itemMorePhotoPairFour],
+    ['.item-more-info', page.itemMoreInfo] // Paragraphs with text
   ]
   if (currentPage) {
     // Use '.innerHTML' to fill each item's DOM element by class name with the item's info -- if that info exists
     htmlToFill.forEach(function (element) {
       if (element[1]) {
         // Show container for more info if the info is there
-        if (element[1] === page.itemInfoMore) {
+        if (element[1] === page.itemMoreInfo) {
           document.querySelector('.container-two').classList.add('shown');
         }
         document.querySelector(element[0]).innerHTML = element[1];

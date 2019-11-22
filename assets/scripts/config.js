@@ -67,7 +67,89 @@ const pagesInfo = {
     itemInfoThree: 'Hand numbered and signed by the artist in a limited edition of 500 prints',
     itemInfoFour: itemInfoUniversals.lunarCalendarInfoFour,
     itemPrice: itemInfoUniversals.lunarCalendarPrice,
-    itemId: 'T45GH9BL83VQ4'
+    itemId: 'T45GH9BL83VQ4',
+    itemMorePhotoPairOne: `
+      <img src="public/images/items/thibodeau_lunar_calendar_2019_photo_01.jpg" />
+      <img src="public/images/items/thibodeau_lunar_calendar_2019_photo_02.jpg" />
+    `,
+    itemMorePhotoPairTwo: `
+    <img src="public/images/items/thibodeau_lunar_calendar_2019_photo_03.jpg" />
+    <img src="public/images/items/thibodeau_lunar_calendar_2019_photo_04.jpg" />
+    `,
+    itemMorePhotoPairThree: `
+    <img src="public/images/items/thibodeau_lunar_calendar_2019_photo_05.jpg" />
+    <img src="public/images/items/thibodeau_lunar_calendar_2019_photo_06.jpg" />
+    `,
+    itemMorePhotoPairFour: `
+    <img src="public/images/items/thibodeau_lunar_calendar_2019_photo_07.jpg" />
+    <img src="public/images/items/thibodeau_lunar_calendar_2019_photo_08.jpg" />
+    `,
+    itemMoreInfo: `
+      <div id="itemMoreInfoText">
+        <div>
+          <span class="ital">Orchard Quest</span> is a letterpress-printed lunar calendar designed and drawn by Alec Thibodeau (me!), 
+          chronicling all phases of the moon for 2019. 
+          From a limited edition of 500 prints <span class="ital">Orchard Quest</span> continues my ongoing lunar calendar series, 
+          which features ornate border drawings in a landscape format. 
+          As with each of my previous lunar calendars, this one measures 19" x 11.75" (a golden rectangle) and is expertly printed by Dan Wood 
+          and his team at <a class="text-link" href="http://www.dwriletterpress.net" target="_blank">DWRI&nbsp;Letterpress</a>.
+        </div>
+        <div>
+          The 2019 lunar calendar comprises new drawings and year-specific lunar phase information. Each calendar is printed on French Paper Company's acid-free 269gsm Pop-Tone Tangy Orange 100# cover paper, blind-debossed with my name and the print shop's name &mdash; and hand numbered and signed by me. Each calendar also comes with an accompanying information sheet and protective tube.
+        </div>
+        <div>
+          The calendar's lunar phase information is calibrated for any place in the Eastern Time Zone and is accurate to within a day for any place in the Northern Hemisphere. The calendar is designed, drawn and printed in Providence, Rhode Island, which is identified as a representative location within the artwork.
+        </div>
+        <div>
+          Custom moon illustrations portray all principal lunar phases (New Moon, First Quarter Moon, Full Moon and Third Quarter Moon) plus all intermediate crescent and gibbous phases. For months with less than 31 days, drawings of clouds occupy the extra spaces. 
+          <a class="text-link" href="#orderItem">ORDER&nbsp;NOW</a>
+        </div>
+        <div class="lunar-phases">
+          <img src="public/images/items/thibodeau_lunar_calendar_phases.jpg" />
+        </div>
+
+        <div class="previous">
+          <div class="previous-title">
+            previous alec thibodeau lunar calendars
+          </div>
+          <div class="previous-links">
+            <div>
+              <div>
+                <a href="http://alecthibodeau.com/print_lunar_calendar_pineal_grigio.html" target="_blank">
+                  <img src="public/images/items/thibodeau_lunar_calendar_2011.jpg" />
+                </a>
+              </div>
+              <div>2011 Lunar Calendar</div>
+            </div>
+            <div>
+              <div>
+                <a href="http://alecthibodeau.com/print_lunar_calendar_probably_the_earths_core.html" target="_blank">
+                  <img src="public/images/items/thibodeau_lunar_calendar_2010.jpg" />
+                </a>
+              </div>
+              <div>2010 Lunar Calendar</div>
+            </div>
+            <div>
+              <div>
+                <a href="http://alecthibodeau.com/print_lunar_calendar_goes_to_show_you.html" target="_blank">
+                  <img src="public/images/items/thibodeau_lunar_calendar_2009.jpg" />
+                </a>
+              </div>
+              <div>2009 Lunar Calendar</div>
+            </div>
+            <div>
+              <div>
+                <a href="http://alecthibodeau.com/print_lunar_calendar_good_librations.html" target="_blank">
+                  <img src="public/images/items/thibodeau_lunar_calendar_2008.jpg" />
+                </a>
+              </div>
+              <div>2008 Lunar Calendar</div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    `
   },
   'lunarCalendarEighteen': {
     mainContent: item.itemPage,

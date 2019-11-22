@@ -3,7 +3,7 @@
 let aboutPage = `
   <div class="about-page">
     <div class="about-top">
-      <img class="huetown-h-logo" src="public/images/huetown_h_logo.jpg" />
+      <img class="self-portrait" src="public/images/thibodeau_self-portrait_square.jpg" />
       <div>
         <span class="bold">Huetown</span> is the web shop for artist Alec Thibodeau (me!). 
         I make lunar calendars, prints, postcards and more. An artist's bio 
@@ -11,7 +11,7 @@ let aboutPage = `
         <a class="text-link" href="https://alecthibodeau.com/about.html" target="_blank">alecthibodeau.com</a>. 
         All items here are printed in the USA.
       </div>
-      <img class="self-portrait" src="public/images/thibodeau_self-portrait_square.jpg" />
+      <img class="huetown-h-logo" src="public/images/huetown_h_logo.jpg" />
     </div>
     <div>
       <p>

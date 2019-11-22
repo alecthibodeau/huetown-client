@@ -620,13 +620,13 @@ PAGES
   }
 }
 @media only screen and (max-width: 650px) {
-  .about-page .about-top .huetown-h-logo.huetown-h-logo,
-.about-page .about-top .self-portrait.huetown-h-logo {
+  .about-page .about-top .huetown-h-logo.self-portrait,
+.about-page .about-top .self-portrait.self-portrait {
     margin: 0 15px 5px 0;
     float: left;
   }
-  .about-page .about-top .huetown-h-logo.self-portrait,
-.about-page .about-top .self-portrait.self-portrait {
+  .about-page .about-top .huetown-h-logo.huetown-h-logo,
+.about-page .about-top .self-portrait.huetown-h-logo {
     display: none;
   }
 }
@@ -639,7 +639,7 @@ PAGES
   text-decoration: none;
 }
 .about-page .text-link:link, .about-page .text-link:visited, .about-page .text-link:hover, .about-page .text-link:active {
-  color: #ff9600;
+  color: #e78460;
 }
 .about-page .about-states {
   text-transform: uppercase;
@@ -680,6 +680,57 @@ PAGES
 }
 .item-page .container-two.shown {
   display: block;
+}
+.item-page .container-two .photo-pair {
+  display: flex;
+  justify-content: center;
+}
+.item-page .container-two .photo-pair img {
+  margin: 10px 5px 0;
+}
+@media only screen and (max-width: 550px) {
+  .item-page .container-two .photo-pair img {
+    width: 80vw;
+  }
+}
+@media only screen and (max-width: 1050px) {
+  .item-page .container-two .photo-pair {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+.item-page .container-two .item-more-info .text-link {
+  text-decoration: none;
+}
+.item-page .container-two .item-more-info .text-link:link, .item-page .container-two .item-more-info .text-link:visited, .item-page .container-two .item-more-info .text-link:hover, .item-page .container-two .item-more-info .text-link:active {
+  color: #e78460;
+}
+.item-page .container-two .item-more-info div {
+  margin: 15px auto 0;
+}
+.item-page .container-two .item-more-info div.lunar-phases {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.item-page .container-two .item-more-info div.previous {
+  margin: 0 auto;
+}
+.item-page .container-two .item-more-info div.previous div {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+  margin: 0 auto;
+  text-align: center;
+}
+.item-page .container-two .item-more-info div.previous div.previous-links div {
+  flex-direction: column;
+}
+.item-page .container-two .item-more-info div.previous div.previous-title {
+  text-transform: uppercase;
+  color: #7f7f7f;
+  font-weight: 700;
 }
 .item-page img.item-image-front.postcard {
   border: 1px solid #333;
