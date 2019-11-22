@@ -89,6 +89,8 @@ document.addEventListener('DOMContentLoaded', function () {
         });
         // Add href link for lunar calendar page to jump down to more info
         document.querySelector('.feature-image-link').href = '#itemMoreInfoText';
+        // Add class to show previous lunar calendars
+        document.querySelector('.container-three').classList.add('shown');
       };
     };
 

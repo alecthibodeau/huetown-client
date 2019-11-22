@@ -713,24 +713,50 @@ PAGES
   flex-direction: column;
   align-items: center;
 }
-.item-page .container-two .item-more-info div.previous {
+.item-page .container-three {
+  display: none;
+}
+.item-page .container-three a.current-calendar {
+  max-width: 200px;
+}
+.item-page .container-three a.current-calendar img {
+  max-width: 200px;
+}
+.item-page .container-three.shown {
+  display: block;
+}
+.item-page .container-three .current,
+.item-page .container-three .previous {
   margin: 0 auto;
 }
-.item-page .container-two .item-more-info div.previous div {
+.item-page .container-three .current.previous,
+.item-page .container-three .previous.previous {
+  margin-top: 10px;
+}
+.item-page .container-three .current div,
+.item-page .container-three .previous div {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-around;
+  justify-content: center;
   align-items: center;
   margin: 0 auto;
   text-align: center;
 }
-.item-page .container-two .item-more-info div.previous div.previous-links div {
-  flex-direction: column;
-}
-.item-page .container-two .item-more-info div.previous div.previous-title {
+.item-page .container-three .current div.title,
+.item-page .container-three .previous div.title {
+  margin: 0 auto 10px;
   text-transform: uppercase;
   color: #7f7f7f;
   font-weight: 700;
+}
+.item-page .container-three .current div.lunar-calendar-links div,
+.item-page .container-three .previous div.lunar-calendar-links div {
+  flex-direction: column;
+  margin: 0 5px;
+}
+.item-page .container-three .current div.lunar-calendar-links div .text,
+.item-page .container-three .previous div.lunar-calendar-links div .text {
+  margin-bottom: 10px;
 }
 .item-page img.item-image-front.postcard {
   border: 1px solid #333;

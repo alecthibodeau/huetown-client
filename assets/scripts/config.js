@@ -107,47 +107,6 @@ const pagesInfo = {
         <div class="lunar-phases">
           <img src="public/images/items/thibodeau_lunar_calendar_phases.jpg" />
         </div>
-
-        <div class="previous">
-          <div class="previous-title">
-            previous alec thibodeau lunar calendars
-          </div>
-          <div class="previous-links">
-            <div>
-              <div>
-                <a href="http://alecthibodeau.com/print_lunar_calendar_pineal_grigio.html" target="_blank">
-                  <img src="public/images/items/thibodeau_lunar_calendar_2011.jpg" />
-                </a>
-              </div>
-              <div>2011 Lunar Calendar</div>
-            </div>
-            <div>
-              <div>
-                <a href="http://alecthibodeau.com/print_lunar_calendar_probably_the_earths_core.html" target="_blank">
-                  <img src="public/images/items/thibodeau_lunar_calendar_2010.jpg" />
-                </a>
-              </div>
-              <div>2010 Lunar Calendar</div>
-            </div>
-            <div>
-              <div>
-                <a href="http://alecthibodeau.com/print_lunar_calendar_goes_to_show_you.html" target="_blank">
-                  <img src="public/images/items/thibodeau_lunar_calendar_2009.jpg" />
-                </a>
-              </div>
-              <div>2009 Lunar Calendar</div>
-            </div>
-            <div>
-              <div>
-                <a href="http://alecthibodeau.com/print_lunar_calendar_good_librations.html" target="_blank">
-                  <img src="public/images/items/thibodeau_lunar_calendar_2008.jpg" />
-                </a>
-              </div>
-              <div>2008 Lunar Calendar</div>
-            </div>
-          </div>
-        </div>
-
       </div>
     `
   },
