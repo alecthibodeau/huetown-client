@@ -2,6 +2,33 @@
 COLOR VARIABLES
 ************************************/
 @import url("https://fonts.googleapis.com/css?family=Raleway:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i|Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i");
+@media only screen and (max-width: 700px) and (max-width: 700px) {
+  .huetown-h-logo,
+.self-portrait {
+    width: 11vw;
+    height: 11vw;
+  }
+}
+@media only screen and (max-width: 650px) {
+  .about-top {
+    display: block !important;
+  }
+  .about-top div {
+    margin: 0 !important;
+    bottom: 5px;
+  }
+  .about-top .huetown-h-logo.self-portrait,
+.about-top .self-portrait.self-portrait {
+    min-width: 75px;
+    min-height: 75px;
+    margin: 0 15px 5px 0;
+    float: left;
+  }
+  .about-top .huetown-h-logo.huetown-h-logo,
+.about-top .self-portrait.huetown-h-logo {
+    display: none;
+  }
+}
 /************
 HTML & BODY
 ************/
@@ -334,12 +361,15 @@ PAGES
 }
 
 .lunar-calendars-page {
-  max-width: 700px;
+  max-width: 735px;
   margin: 0 auto;
 }
 .lunar-calendars-page .content-container {
   display: flex;
   justify-content: space-around;
+}
+.lunar-calendars-page .content-container.lunar-calendar {
+  justify-content: space-between;
 }
 .lunar-calendars-page .content-block {
   text-align: center;
@@ -348,16 +378,17 @@ PAGES
   display: block;
 }
 .lunar-calendars-page .content-block a.lunar-calendars {
-  width: 300px;
-  height: 186px;
+  width: 350px;
+  height: 216px;
 }
 .lunar-calendars-page .content-block a.lunar-calendars img {
-  max-width: 300px;
-  max-height: 186px;
+  max-width: 350px;
+  max-height: 216px;
 }
 .lunar-calendars-page .content-block a.prints {
   width: 320px;
   height: 320px;
+  margin: 0 10px;
 }
 .lunar-calendars-page .content-block a.prints img {
   max-width: 320px;
@@ -375,8 +406,8 @@ PAGES
   max-height: 200px;
   border: 1px solid #333;
 }
-@media only screen and (max-width: 700px) {
-  .lunar-calendars-page .content-container {
+@media only screen and (max-width: 810px) {
+  .lunar-calendars-page .content-container.lunar-calendar {
     flex-direction: column;
     align-items: center;
   }
@@ -387,6 +418,20 @@ PAGES
   .lunar-calendars-page .content-block a.lunar-calendars img {
     max-width: 90vw;
     max-height: 56vw;
+  }
+}
+@media only screen and (max-width: 700px) {
+  .lunar-calendars-page .content-container {
+    flex-direction: column;
+    align-items: center;
+  }
+  .lunar-calendars-page .content-block a.lunar-calendars {
+    width: 80vw;
+    height: 49vw;
+  }
+  .lunar-calendars-page .content-block a.lunar-calendars img {
+    max-width: 80vw;
+    max-height: 49vw;
   }
   .lunar-calendars-page .content-block a.postcards {
     width: 390px;
@@ -418,15 +463,28 @@ PAGES
     width: 90vw;
     height: 60vw;
   }
+  .lunar-calendars-page .content-block a.lunar-calendars {
+    width: 90vw;
+    height: 56vw;
+  }
+  .lunar-calendars-page .content-block a.lunar-calendars img {
+    max-width: unset;
+    max-height: unset;
+    width: 90vw;
+    height: 56vw;
+  }
 }
 
 .prints-page {
-  max-width: 700px;
+  max-width: 735px;
   margin: 0 auto;
 }
 .prints-page .content-container {
   display: flex;
   justify-content: space-around;
+}
+.prints-page .content-container.lunar-calendar {
+  justify-content: space-between;
 }
 .prints-page .content-block {
   text-align: center;
@@ -435,16 +493,17 @@ PAGES
   display: block;
 }
 .prints-page .content-block a.lunar-calendars {
-  width: 300px;
-  height: 186px;
+  width: 350px;
+  height: 216px;
 }
 .prints-page .content-block a.lunar-calendars img {
-  max-width: 300px;
-  max-height: 186px;
+  max-width: 350px;
+  max-height: 216px;
 }
 .prints-page .content-block a.prints {
   width: 320px;
   height: 320px;
+  margin: 0 10px;
 }
 .prints-page .content-block a.prints img {
   max-width: 320px;
@@ -462,8 +521,8 @@ PAGES
   max-height: 200px;
   border: 1px solid #333;
 }
-@media only screen and (max-width: 700px) {
-  .prints-page .content-container {
+@media only screen and (max-width: 810px) {
+  .prints-page .content-container.lunar-calendar {
     flex-direction: column;
     align-items: center;
   }
@@ -474,6 +533,20 @@ PAGES
   .prints-page .content-block a.lunar-calendars img {
     max-width: 90vw;
     max-height: 56vw;
+  }
+}
+@media only screen and (max-width: 700px) {
+  .prints-page .content-container {
+    flex-direction: column;
+    align-items: center;
+  }
+  .prints-page .content-block a.lunar-calendars {
+    width: 80vw;
+    height: 49vw;
+  }
+  .prints-page .content-block a.lunar-calendars img {
+    max-width: 80vw;
+    max-height: 49vw;
   }
   .prints-page .content-block a.postcards {
     width: 390px;
@@ -505,15 +578,28 @@ PAGES
     width: 90vw;
     height: 60vw;
   }
+  .prints-page .content-block a.lunar-calendars {
+    width: 90vw;
+    height: 56vw;
+  }
+  .prints-page .content-block a.lunar-calendars img {
+    max-width: unset;
+    max-height: unset;
+    width: 90vw;
+    height: 56vw;
+  }
 }
 
 .postcards-page {
-  max-width: 700px;
+  max-width: 735px;
   margin: 0 auto;
 }
 .postcards-page .content-container {
   display: flex;
   justify-content: space-around;
+}
+.postcards-page .content-container.lunar-calendar {
+  justify-content: space-between;
 }
 .postcards-page .content-block {
   text-align: center;
@@ -522,16 +608,17 @@ PAGES
   display: block;
 }
 .postcards-page .content-block a.lunar-calendars {
-  width: 300px;
-  height: 186px;
+  width: 350px;
+  height: 216px;
 }
 .postcards-page .content-block a.lunar-calendars img {
-  max-width: 300px;
-  max-height: 186px;
+  max-width: 350px;
+  max-height: 216px;
 }
 .postcards-page .content-block a.prints {
   width: 320px;
   height: 320px;
+  margin: 0 10px;
 }
 .postcards-page .content-block a.prints img {
   max-width: 320px;
@@ -549,8 +636,8 @@ PAGES
   max-height: 200px;
   border: 1px solid #333;
 }
-@media only screen and (max-width: 700px) {
-  .postcards-page .content-container {
+@media only screen and (max-width: 810px) {
+  .postcards-page .content-container.lunar-calendar {
     flex-direction: column;
     align-items: center;
   }
@@ -561,6 +648,20 @@ PAGES
   .postcards-page .content-block a.lunar-calendars img {
     max-width: 90vw;
     max-height: 56vw;
+  }
+}
+@media only screen and (max-width: 700px) {
+  .postcards-page .content-container {
+    flex-direction: column;
+    align-items: center;
+  }
+  .postcards-page .content-block a.lunar-calendars {
+    width: 80vw;
+    height: 49vw;
+  }
+  .postcards-page .content-block a.lunar-calendars img {
+    max-width: 80vw;
+    max-height: 49vw;
   }
   .postcards-page .content-block a.postcards {
     width: 390px;
@@ -592,6 +693,16 @@ PAGES
     width: 90vw;
     height: 60vw;
   }
+  .postcards-page .content-block a.lunar-calendars {
+    width: 90vw;
+    height: 56vw;
+  }
+  .postcards-page .content-block a.lunar-calendars img {
+    max-width: unset;
+    max-height: unset;
+    width: 90vw;
+    height: 56vw;
+  }
 }
 
 .about-page .about-top {
@@ -603,43 +714,14 @@ PAGES
   margin: 0 25px;
   position: relative;
 }
-@media only screen and (max-width: 650px) {
-  .about-page .about-top div {
-    margin: 0;
-    bottom: 5px;
-  }
-}
 .about-page .about-top div span.bold {
   font-weight: 600;
-}
-@media only screen and (max-width: 700px) {
-  .about-page .about-top .huetown-h-logo,
-.about-page .about-top .self-portrait {
-    width: 11vw;
-    height: 11vw;
-  }
-}
-@media only screen and (max-width: 650px) {
-  .about-page .about-top .huetown-h-logo.huetown-h-logo,
-.about-page .about-top .self-portrait.huetown-h-logo {
-    margin: 0 15px 5px 0;
-    float: left;
-  }
-  .about-page .about-top .huetown-h-logo.self-portrait,
-.about-page .about-top .self-portrait.self-portrait {
-    display: none;
-  }
-}
-@media only screen and (max-width: 650px) {
-  .about-page .about-top {
-    display: block;
-  }
 }
 .about-page .text-link {
   text-decoration: none;
 }
 .about-page .text-link:link, .about-page .text-link:visited, .about-page .text-link:hover, .about-page .text-link:active {
-  color: #ff9600;
+  color: #e78460;
 }
 .about-page .about-states {
   text-transform: uppercase;
@@ -651,6 +733,12 @@ PAGES
 
 .item-page {
   margin-bottom: 20px;
+}
+.item-page .text-link {
+  text-decoration: none;
+}
+.item-page .text-link:link, .item-page .text-link:visited, .item-page .text-link:hover, .item-page .text-link:active {
+  color: #e78460;
 }
 .item-page .content-container {
   display: flex;
@@ -680,6 +768,92 @@ PAGES
 }
 .item-page .container-two.shown {
   display: block;
+}
+.item-page .container-two .photo-pair {
+  display: flex;
+  justify-content: center;
+}
+.item-page .container-two .photo-pair img {
+  margin: 10px 5px 0;
+}
+@media only screen and (max-width: 550px) {
+  .item-page .container-two .photo-pair img {
+    width: 80vw;
+  }
+}
+@media only screen and (max-width: 1050px) {
+  .item-page .container-two .photo-pair {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+.item-page .container-two .item-more-info {
+  padding-top: 15px;
+}
+.item-page .container-two .item-more-info div:not(:first-of-type) {
+  margin: 15px auto 0;
+}
+.item-page .container-two .item-more-info div:not(:first-of-type).lunar-phases, .item-page .container-two .item-more-info div:not(:first-of-type).protective-tube {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.item-page .container-two .item-more-info div:not(:first-of-type).lunar-phases.protective-tube, .item-page .container-two .item-more-info div:not(:first-of-type).protective-tube.protective-tube {
+  margin: 5px auto 35px;
+}
+.item-page .container-two .item-more-info div:not(:first-of-type).lunar-phases.protective-tube .tube-text, .item-page .container-two .item-more-info div:not(:first-of-type).protective-tube.protective-tube .tube-text {
+  margin-bottom: 5px;
+}
+@media only screen and (max-width: 500px) {
+  .item-page .container-two .item-more-info div:not(:first-of-type).lunar-phases.protective-tube img, .item-page .container-two .item-more-info div:not(:first-of-type).protective-tube.protective-tube img {
+    width: 220px;
+    height: auto;
+  }
+}
+.item-page .container-three {
+  display: none;
+}
+.item-page .container-three a.current-calendar {
+  max-width: 200px;
+}
+.item-page .container-three a.current-calendar img {
+  max-width: 200px;
+}
+.item-page .container-three.shown {
+  display: block;
+}
+.item-page .container-three .current,
+.item-page .container-three .previous {
+  margin: 0 auto;
+}
+.item-page .container-three .current.previous,
+.item-page .container-three .previous.previous {
+  margin-top: 10px;
+}
+.item-page .container-three .current div,
+.item-page .container-three .previous div {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+  text-align: center;
+}
+.item-page .container-three .current div.title,
+.item-page .container-three .previous div.title {
+  margin: 0 auto 10px;
+  text-transform: uppercase;
+  color: #7f7f7f;
+  font-weight: 700;
+}
+.item-page .container-three .current div.lunar-calendar-links div,
+.item-page .container-three .previous div.lunar-calendar-links div {
+  flex-direction: column;
+  margin: 0 5px;
+}
+.item-page .container-three .current div.lunar-calendar-links div .text,
+.item-page .container-three .previous div.lunar-calendar-links div .text {
+  margin-bottom: 10px;
 }
 .item-page img.item-image-front.postcard {
   border: 1px solid #333;
@@ -831,7 +1005,7 @@ PAGES
   min-height: 4rem;
 }
 .item-page form input[value="add to cart"]:hover {
-  background: #6abbb6;
+  background: #ff9600;
 }
 
 /*# sourceMappingURL=index.css.map */

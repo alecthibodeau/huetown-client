@@ -10,7 +10,7 @@ let windowSize = Math.max(document.documentElement.clientWidth, window.innerWidt
 // When the DOM is fully loaded
 document.addEventListener('DOMContentLoaded', function () {
     
-  console.log('document ready');
+  // console.log('document ready');
 
   ///* NAV MENU DRAWER FUNCTIONALITY *///
 
@@ -67,25 +67,48 @@ document.addEventListener('DOMContentLoaded', function () {
     // Load item content if the page has an item name
     if (page.itemName) {
       items.itemLoad(pageValue);
+
+      // Add a 'lunar-calendar' class name to relevant item page selectors
+      // These are to designate lunar calendar-specific breakpoints in item.scss
+      // NOTE:
+        // 'lunar-calendar' singular
+        // starts with -- (pageValue.startsWith('lunarCalendar')
+        // Currently attempting to abstract this for all item categories here does not work
+      // Meaning: Adding pageValue to other items pages breaks the responsiveness
+      // This can be refactored, perhaps by initially setting these in item-page.js (and moving itemTags there)
+      // -- BUT while also needing to refactor CSS
+      let itemTags = [
+        '.container-one',
+        '.item-info-block',
+        '.payment-info',
+        '.item-price-container'
+      ]
+      if (pageValue.startsWith('lunarCalendar')) {
+        itemTags.forEach(function (tag) {
+          document.querySelector(tag).classList.add('lunar-calendar');
+        });
+        // Add href link for lunar calendar page to jump down to more info
+        document.querySelector('.feature-image-link').href = '#itemDetails';
+        // Add class to show previous lunar calendars
+        document.querySelector('.container-three').classList.add('shown');
+      };
     };
 
-    // Add category-specific class to image links on collections page
+    // Add category-specific class to image links on any collections page
+    // These are mostly for lunar calendar-specific breakpoints in item.scss
+    // NOTE:
+      // 'lunar-calendars' plural
+      // equals -- (pageValue === 'lunarCalendars')
+    // This should be refactored to only run on a collections page load
+      // Perhaps with an 'if' statement for a list of pageValues here OR in a new js file
     document.querySelectorAll('.collection-link').forEach(function (a) {
-      // temporary solution to convert this one camelCase instance to dash-case
+    // NOTE: temporary solution to convert this one camelCase instance to dash-case
+        // The other categories are single words
       if (pageValue === 'lunarCalendars') {
         pageValue = 'lunar-calendars';
       }
       a.classList.add(pageValue);
     });
-
-    // Another temporary solution to add a class name to relevant item page selectors
-    // These are for the item.scss file breakpoints, which should be updated for cleaner code
-    if (pageValue.startsWith('lunarCalendar')) {
-      document.querySelector('.container-one').classList.add('lunar-calendar');
-      document.querySelector('.item-info-block').classList.add('lunar-calendar');
-      document.querySelector('.payment-info').classList.add('lunar-calendar');
-      document.querySelector('.item-price-container').classList.add('lunar-calendar');
-    };
     
     addEventHandlers();
   };
@@ -94,4 +117,4 @@ document.addEventListener('DOMContentLoaded', function () {
   setHtml();
 });
   
-console.log('app.js runs');
+// console.log('app.js runs');
