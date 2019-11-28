@@ -973,6 +973,7 @@ PAGES
   position: relative;
   margin: 10px 0;
   font-size: 2rem;
+  font-weight: 600;
 }
 @media only screen and (max-width: 1050px) {
   .item-page .item-price-container.lunar-calendar {

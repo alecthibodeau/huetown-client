@@ -11,10 +11,7 @@
   cursor: pointer;
 }
 
-// NOTE: This page needs to be updated to deal with lunar-calendar selectors,
-// which are being added in app.js if the item page is for a lunar calendar
-
-// This is the selector for .item-page
+// Selector for .item-page
 @mixin item-page-content {
   margin-bottom: 20px;
 
@@ -56,7 +53,7 @@
     }
   }
 
-  .container-two { // The container for the extra content
+  .container-two {
     display: none;
     border-top: 1px solid $eighty-percent-gray;
     margin-top: 20px;
@@ -301,7 +298,7 @@
     position: relative;
     margin: 10px 0;
     font-size: 2rem;
-    // font-weight: 600;
+    font-weight: 600;
 
     &.lunar-calendar {
       @media only screen and (max-width: 1050px) {

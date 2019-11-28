@@ -39,7 +39,7 @@ let aboutPage = `
       <p>
         <span class="section-title ">Places</span>:
         Select Huetown items are 
-        available at these fine locations in the USA &mdash;
+        available at these fine locations in the USA&hellip;
         <span class="about-states">Colorado</span>: 
         <a class="text-link" href="http://ladyfingersletterpress.com" target="_blank">
           Ladyfingers Letterpress
