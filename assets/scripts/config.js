@@ -25,7 +25,7 @@ const itemInfoUniversals = {
       </div>
       <div class="info-block">
         Custom moon illustrations portray all principal lunar phases (New Moon, First Quarter Moon, Full Moon and Third Quarter Moon) plus all intermediate crescent and gibbous phases. For months with less than 31 days, drawings of clouds occupy the extra spaces. 
-        <a class="text-link" href="#huetownHeaderLogo">ORDER&nbsp;NOW</a>
+        <a class="text-link" href="#orderItem">ORDER&nbsp;NOW</a>
       </div>
       <div class="lunar-phases">
         <div class="phase-info">
