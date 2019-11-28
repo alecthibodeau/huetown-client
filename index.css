@@ -755,6 +755,9 @@ PAGES
     height: auto;
   }
 }
+.item-page .content-container.print {
+  justify-content: center;
+}
 @media only screen and (max-width: 850px) {
   .item-page .content-container {
     flex-direction: column;
@@ -790,22 +793,36 @@ PAGES
 .item-page .container-two .item-more-info {
   padding-top: 15px;
 }
-.item-page .container-two .item-more-info div:not(:first-of-type) {
+.item-page .container-two .item-more-info .info-block:not(:first-of-type) {
   margin: 15px auto 0;
 }
-.item-page .container-two .item-more-info div:not(:first-of-type).lunar-phases, .item-page .container-two .item-more-info div:not(:first-of-type).protective-tube {
+.item-page .container-two .item-more-info .lunar-phases {
+  display: flex;
+  justify-content: center;
+  width: 250px;
+  margin: 25px auto;
+}
+.item-page .container-two .item-more-info .phase-info {
   display: flex;
   flex-direction: column;
   align-items: center;
+  margin: 0 5px;
 }
-.item-page .container-two .item-more-info div:not(:first-of-type).lunar-phases.protective-tube, .item-page .container-two .item-more-info div:not(:first-of-type).protective-tube.protective-tube {
+.item-page .container-two .item-more-info .phase-text {
+  font-size: 1.2rem;
+  text-align: center;
+}
+.item-page .container-two .item-more-info .protective-tube {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   margin: 5px auto 35px;
 }
-.item-page .container-two .item-more-info div:not(:first-of-type).lunar-phases.protective-tube .tube-text, .item-page .container-two .item-more-info div:not(:first-of-type).protective-tube.protective-tube .tube-text {
+.item-page .container-two .item-more-info .protective-tube .tube-text {
   margin-bottom: 5px;
 }
 @media only screen and (max-width: 500px) {
-  .item-page .container-two .item-more-info div:not(:first-of-type).lunar-phases.protective-tube img, .item-page .container-two .item-more-info div:not(:first-of-type).protective-tube.protective-tube img {
+  .item-page .container-two .item-more-info .protective-tube img {
     width: 220px;
     height: auto;
   }
@@ -956,7 +973,6 @@ PAGES
   position: relative;
   margin: 10px 0;
   font-size: 2rem;
-  font-weight: 600;
 }
 @media only screen and (max-width: 1050px) {
   .item-page .item-price-container.lunar-calendar {
