@@ -16,7 +16,7 @@ const itemInfoUniversals = {
   lunarCalendarInfoOne: '19 x 11.75 inches<br>Letterpress print<br>Printed by DWRI Letterpress',
   lunarCalendarInfoTwo: '',
   lunarCalendarInfoThree: 'Hand numbered and signed by the artist in a limited edition of prints',
-  lunarCalendarInfoFour: 'Ships rolled and triple-packaged: archival wrapping, <a class="text-link" href="#itemDetails">eco-friendly protective tube</a> and outer shipping container',
+  lunarCalendarInfoFour: 'Ships rolled and triple-packaged: archival wrapping, <a class="text-link" href="#tube">eco-friendly protective tube</a> and outer shipping container',
   lunarCalendarBottomBlocks: `
       Each calendar ships with an accompanying information sheet, archival wrapping and an eco-friendly fiberboard protective tube: reusable, recycled and recyclable, with crimped ends and no plastic caps.
       </div>
@@ -25,7 +25,7 @@ const itemInfoUniversals = {
       </div>
       <div class="info-block">
         Custom moon illustrations portray all principal lunar phases (New Moon, First Quarter Moon, Full Moon and Third Quarter Moon) plus all intermediate crescent and gibbous phases. For months with less than 31 days, drawings of clouds occupy the extra spaces. 
-        <a class="text-link" href="#orderItem">ORDER&nbsp;NOW</a>
+        <a class="text-link" href="#mainImage">ORDER&nbsp;NOW</a>
       </div>
       <div class="lunar-phases">
         <div class="phase-info">
@@ -45,7 +45,7 @@ const itemInfoUniversals = {
           <div class="phase-text">Third<br>Quarter<br>Moon</div>
         </div>     
       </div>
-      <div class="protective-tube">
+      <div class="protective-tube" id="tube">
         <div class="tube-text">eco-friendly protective tube:</div>
         <img src="public/images/items/protective_tube.png" />
       </div>

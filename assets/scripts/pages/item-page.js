@@ -101,7 +101,7 @@ let itemPage = `
 
       <div class="content-block feature-image-block">
         <a class="feature-image-link" href="#orderItem">
-          <img class="item-image-front" src="" />
+          <img class="item-image-front" id="mainImage" src="" />
         </a>
       </div>
 
