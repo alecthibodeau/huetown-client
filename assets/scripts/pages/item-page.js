@@ -2,6 +2,95 @@
 
 import config from '../config.js';
 
+let containerTwo = `
+  <div class="photo-pair item-more-photo-pair-one"></div>
+  <div class="photo-pair item-more-photo-pair-two"></div>
+  <div class="photo-pair item-more-photo-pair-three"></div>
+  <div class="photo-pair item-more-photo-pair-four"></div>
+  <div class="item-more-info" id="itemDetails"></div>
+`;
+
+let containerThree = `
+  <div class="current">
+  <div class="title">
+    available alec thibodeau lunar&nbsp;calendars
+  </div>
+  <div class="lunar-calendar-links">
+    <div>
+      <div>
+        <a class="current-calendar" href="/">
+          <img src="public/images/items/thibodeau_lunar_calendar_2020_main.png" />
+        </a>
+      </div>
+      <div class="text">2020 Lunar Calendar</div>
+    </div>
+    <div>
+      <div>
+        <a class="current-calendar" href="lunar_calendar_2019.html">
+          <img src="public/images/items/thibodeau_lunar_calendar_2019_main.jpg" />
+        </a>
+      </div>
+      <div class="text">2019 Lunar Calendar</div>
+    </div>
+    <div>
+      <div>
+        <a class="current-calendar" href="lunar_calendar_2018.html">
+          <img src="public/images/items/thibodeau_lunar_calendar_2018_main.jpg" />
+        </a>
+      </div>
+      <div class="text">2018 Lunar Calendar</div>
+    </div>
+    <div>
+      <div>
+        <a class="current-calendar" href="lunar_calendar_2017.html">
+          <img src="public/images/items/thibodeau_lunar_calendar_2017_main.jpg" />
+        </a>
+      </div>
+    <div class="text">2017 Lunar Calendar</div>
+  </div>
+  </div>
+
+  <div class="previous">
+  <div class="title">
+    previous alec thibodeau lunar&nbsp;calendars
+  </div>
+  <div class="lunar-calendar-links">
+    <div>
+      <div>
+        <a href="http://alecthibodeau.com/print_lunar_calendar_pineal_grigio.html" target="_blank">
+          <img src="public/images/items/thibodeau_lunar_calendar_2011.jpg" />
+        </a>
+      </div>
+      <div class="text">2011 Lunar Calendar</div>
+    </div>
+    <div>
+      <div>
+        <a href="http://alecthibodeau.com/print_lunar_calendar_probably_the_earths_core.html" target="_blank">
+          <img src="public/images/items/thibodeau_lunar_calendar_2010.jpg" />
+        </a>
+      </div>
+      <div class="text">2010 Lunar Calendar</div>
+    </div>
+    <div>
+      <div>
+        <a href="http://alecthibodeau.com/print_lunar_calendar_goes_to_show_you.html" target="_blank">
+          <img src="public/images/items/thibodeau_lunar_calendar_2009.jpg" />
+        </a>
+      </div>
+      <div class="text">2009 Lunar Calendar</div>
+    </div>
+    <div>
+      <div>
+        <a href="http://alecthibodeau.com/print_lunar_calendar_good_librations.html" target="_blank">
+          <img src="public/images/items/thibodeau_lunar_calendar_2008.jpg" />
+        </a>
+      </div>
+      <div class="text">2008 Lunar Calendar</div>
+    </div>
+  </div>
+  </div>
+`;
+
 let itemPage = `
   <div class="item-page">
 
@@ -47,97 +136,9 @@ let itemPage = `
       </div>
     </div>
 
-    <div class="content-container container-two">
-      <div class="photo-pair item-more-photo-pair-one"></div>
-      <div class="photo-pair item-more-photo-pair-two"></div>
-      <div class="photo-pair item-more-photo-pair-three"></div>
-      <div class="photo-pair item-more-photo-pair-four"></div>
-      <div class="item-more-info" id="itemDetails"></div>
-    </div>
+    <div class="content-container container-two"></div>
+    <div class="content-container container-three"></div>
 
-    <div class="content-container container-three">
-
-      <div class="current">
-        <div class="title">
-          available alec thibodeau lunar&nbsp;calendars
-        </div>
-        <div class="lunar-calendar-links">
-          <div>
-            <div>
-              <a class="current-calendar" href="/">
-                <img src="public/images/items/thibodeau_lunar_calendar_2020_main.png" />
-              </a>
-            </div>
-            <div class="text">2020 Lunar Calendar</div>
-          </div>
-          <div>
-            <div>
-              <a class="current-calendar" href="lunar_calendar_2019.html">
-                <img src="public/images/items/thibodeau_lunar_calendar_2019_main.jpg" />
-              </a>
-            </div>
-            <div class="text">2019 Lunar Calendar</div>
-          </div>
-          <div>
-            <div>
-              <a class="current-calendar" href="lunar_calendar_2018.html">
-                <img src="public/images/items/thibodeau_lunar_calendar_2018_main.jpg" />
-              </a>
-            </div>
-            <div class="text">2018 Lunar Calendar</div>
-          </div>
-          <div>
-            <div>
-              <a class="current-calendar" href="lunar_calendar_2017.html">
-                <img src="public/images/items/thibodeau_lunar_calendar_2017_main.jpg" />
-              </a>
-            </div>
-          <div class="text">2017 Lunar Calendar</div>
-        </div>
-      </div>
-      
-      <div class="previous">
-        <div class="title">
-          previous alec thibodeau lunar&nbsp;calendars
-        </div>
-        <div class="lunar-calendar-links">
-          <div>
-            <div>
-              <a href="http://alecthibodeau.com/print_lunar_calendar_pineal_grigio.html" target="_blank">
-                <img src="public/images/items/thibodeau_lunar_calendar_2011.jpg" />
-              </a>
-            </div>
-            <div class="text">2011 Lunar Calendar</div>
-          </div>
-          <div>
-            <div>
-              <a href="http://alecthibodeau.com/print_lunar_calendar_probably_the_earths_core.html" target="_blank">
-                <img src="public/images/items/thibodeau_lunar_calendar_2010.jpg" />
-              </a>
-            </div>
-            <div class="text">2010 Lunar Calendar</div>
-          </div>
-          <div>
-            <div>
-              <a href="http://alecthibodeau.com/print_lunar_calendar_goes_to_show_you.html" target="_blank">
-                <img src="public/images/items/thibodeau_lunar_calendar_2009.jpg" />
-              </a>
-            </div>
-            <div class="text">2009 Lunar Calendar</div>
-          </div>
-          <div>
-            <div>
-              <a href="http://alecthibodeau.com/print_lunar_calendar_good_librations.html" target="_blank">
-                <img src="public/images/items/thibodeau_lunar_calendar_2008.jpg" />
-              </a>
-            </div>
-            <div class="text">2008 Lunar Calendar</div>
-          </div>
-        </div>
-      </div>
-
-
-    </div>
   </div>
 `;
 
@@ -158,13 +159,14 @@ const itemLoad = function (currentPage) {
     ['.item-more-info', page.itemMoreInfo] // Paragraphs with text
   ]
   if (currentPage) {
+    // Show container for more info if the info is there, load the basic elements
+    if (page.itemMoreInfo) {
+      document.querySelector('.container-two').classList.add('shown');
+      document.querySelector('.container-two').innerHTML = containerTwo;
+    }
     // Use '.innerHTML' to fill each item's DOM element by class name with the item's info -- if that info exists
     htmlToFill.forEach(function (element) {
       if (element[1]) {
-        // Show container for more info if the info is there
-        if (element[1] === page.itemMoreInfo) {
-          document.querySelector('.container-two').classList.add('shown');
-        }
         document.querySelector(element[0]).innerHTML = element[1];
       }
     });
@@ -178,5 +180,7 @@ const itemLoad = function (currentPage) {
 
 export default {
   itemPage,
-  itemLoad
+  itemLoad,
+  containerTwo,
+  containerThree
 };

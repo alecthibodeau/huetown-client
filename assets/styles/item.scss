@@ -46,6 +46,10 @@
       }
     }
 
+    &.print {
+      justify-content: center;
+    }
+
     @media only screen and (max-width: 850px) {
       flex-direction: column;
       align-items: center;
@@ -82,29 +86,44 @@
     .item-more-info {
       padding-top: 15px;
 
-      div:not(:first-of-type) {
+      .info-block:not(:first-of-type) {
         margin: 15px auto 0;
+      }
 
-        &.lunar-phases,
-        &.protective-tube {
-          display: flex;
-          flex-direction: column;
-          align-items: center;
+      .lunar-phases {
+        display: flex;
+        justify-content: center;
+        width: 250px;
+        margin: 25px auto;
+      }
 
-          &.protective-tube {
-            margin: 5px auto 35px;;
+      .phase-info {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: 0 5px;
+      }
 
-            .tube-text {
-              margin-bottom: 5px;
-            }
+      .phase-text {
+        font-size: 1.2rem;
+        text-align: center;
+      }
+        
+      .protective-tube {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: 5px auto 35px;;
 
-            @media only screen and (max-width: 500px) {
+        .tube-text {
+          margin-bottom: 5px;
+        }
 
-              img {
-                width: 220px;
-                height: auto;
-              }
-            }
+        @media only screen and (max-width: 500px) {
+
+          img {
+            width: 220px;
+            height: auto;
           }
         }
       }
@@ -282,7 +301,7 @@
     position: relative;
     margin: 10px 0;
     font-size: 2rem;
-    font-weight: 600;
+    // font-weight: 600;
 
     &.lunar-calendar {
       @media only screen and (max-width: 1050px) {
