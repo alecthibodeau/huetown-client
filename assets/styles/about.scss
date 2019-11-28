@@ -9,39 +9,9 @@
       margin: 0 25px;
       position: relative;
 
-      @media only screen and (max-width: 650px) {
-        margin: 0;
-        bottom: 5px;
-      }
-
       span.bold {
         font-weight: 600;
       }
-    }
-
-    .huetown-h-logo,
-    .self-portrait {
-  
-      @media only screen and (max-width: 700px) {
-        width: 11vw;
-        height: 11vw;
-      }
-  
-      @media only screen and (max-width: 650px) {
-  
-        &.self-portrait {
-          margin: 0 15px 5px 0;
-          float: left;
-        }
-  
-        &.huetown-h-logo {
-          display: none;
-        }
-      }
-    }
-
-    @media only screen and (max-width: 650px) {
-      display: block;
     }
   }
 
@@ -63,5 +33,46 @@
   .section-title {
     font-weight: 600;
     text-transform: uppercase;
+  }
+}
+
+///* MEDIA QUERIES *///
+
+@media only screen and (max-width: 700px) {
+
+  .huetown-h-logo,
+  .self-portrait {
+
+    @media only screen and (max-width: 700px) {
+      width: 11vw;
+      height: 11vw;
+    }
+  }
+}
+
+@media only screen and (max-width: 650px) {
+  
+  .about-top {
+    display: block !important;
+
+    div {
+      margin: 0 !important;
+      bottom: 5px;
+    }
+
+    .huetown-h-logo,
+    .self-portrait {
+  
+      &.self-portrait {
+        min-width: 75px;
+        min-height: 75px;
+        margin: 0 15px 5px 0;
+        float: left;
+      }
+    
+      &.huetown-h-logo {
+        display: none;
+      }
+    }
   }
 }

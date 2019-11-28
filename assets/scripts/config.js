@@ -13,10 +13,29 @@ import item from './pages/item-page.js';
 
 const itemInfoUniversals = {
   lunarCalendarPrice: 40,
-  lunarCalendarInfoOne: '19 x 11.75 inches<br>Letterpress print',
-  lunarCalendarInfoTwo: 'Printed by DWRI Letterpress',
+  lunarCalendarInfoOne: '19 x 11.75 inches<br>Letterpress print<br>Printed by DWRI Letterpress',
+  lunarCalendarInfoTwo: '',
   lunarCalendarInfoThree: 'Hand numbered and signed by the artist in a limited edition of prints',
-  lunarCalendarInfoFour: 'Ships rolled and triple-packaged: archival wrapper, inner protective tube and outer shipping container',
+  lunarCalendarInfoFour: 'Ships rolled and triple-packaged: archival wrapping, <a class="text-link" href="#itemDetails">eco-friendly protective tube</a> and outer shipping container',
+  lunarCalendarBottomBlock: `
+      Each calendar ships with an accompanying information sheet, archival wrapping and an eco-friendly fiberboard protective tube: reusable, recycled and recyclable, with crimped ends and no plastic caps.
+      </div>
+      <div>
+        The calendar's lunar phase information is calibrated for any place in the Eastern Time Zone and is accurate to within a day for any place in the Northern Hemisphere. The calendar is designed, drawn and printed in Providence, Rhode Island, which is identified as a representative location within the artwork.
+      </div>
+      <div>
+        Custom moon illustrations portray all principal lunar phases (New Moon, First Quarter Moon, Full Moon and Third Quarter Moon) plus all intermediate crescent and gibbous phases. For months with less than 31 days, drawings of clouds occupy the extra spaces. 
+        <a class="text-link" href="#huetownHeaderLogo">ORDER&nbsp;NOW</a>
+      </div>
+      <div class="lunar-phases">
+        <img src="public/images/items/thibodeau_lunar_calendar_phases.jpg" />
+      </div>
+      <div class="protective-tube">
+        <div class="tube-text">eco-friendly protective tube:</div>
+        <img src="public/images/items/protective_tube.png" />
+      </div>
+    </div>
+  `,
   postcardInfoOne: '6 x 4 inches; mellow, satin finish<br>Full-color front / single-color back',
   postcardInfoTwo: '',
   postcardPrice: 1,
@@ -42,24 +61,51 @@ const pagesInfo = {
   'veganly': {
     mainContent: veganly.veganlyPage
   },
-  // 'lunarCalendarTwenty': {
-  //   mainContent: item.itemPage,
-  //   itemCategory: 'lunar-calendar',
-  //   itemName: 'The Instruments Agree',
-  //   itemSubname: '2020 lunar calendar by Alec Thibodeau',
-  //   itemImageFront: '',
-  //   itemInfoOne: itemInfoUniversals.lunarCalendarInfoOne,
-  //   itemInfoTwo: itemInfoUniversals.lunarCalendarInfoTwo,
-  //   itemInfoThree: 'Hand numbered and signed by the artist in a limited edition of 500 prints',
-  //   itemInfoFour: itemInfoUniversals.lunarCalendarInfoFour,
-  //   itemInfoMore: '',
-  //   itemPrice: itemInfoUniversals.lunarCalendarPrice,
-  //   itemId: 'TGVEUGQD58AX2'
-  // },
+  'lunarCalendarTwenty': {
+    mainContent: item.itemPage,
+    itemCategory: 'lunar-calendar',
+    itemName: 'The Instruments Agree<br><span class="normal">2020 lunar calendar<br>by Alec Thibodeau</span>',
+    itemSubname: '',
+    itemImageFront: 'public/images/items/thibodeau_lunar_calendar_2020_main.png',
+    itemInfoOne: itemInfoUniversals.lunarCalendarInfoOne,
+    itemInfoTwo: itemInfoUniversals.lunarCalendarInfoTwo,
+    itemInfoThree: 'Hand numbered and signed by the artist in a limited edition of 500 prints',
+    itemInfoFour: itemInfoUniversals.lunarCalendarInfoFour,
+    itemInfoMore: '',
+    itemPrice: itemInfoUniversals.lunarCalendarPrice,
+    itemId: 'TGVEUGQD58AX2',
+    itemMorePhotoPairOne: `
+      <img src="public/images/items/thibodeau_lunar_calendar_2020_photo_01.png" />
+      <img src="public/images/items/thibodeau_lunar_calendar_2020_photo_02.png" />
+    `,
+    itemMorePhotoPairTwo: `
+      <img src="public/images/items/thibodeau_lunar_calendar_2020_photo_03.png" />
+      <img src="public/images/items/thibodeau_lunar_calendar_2020_photo_04.png" />
+    `,
+    itemMorePhotoPairThree: `
+      <img src="public/images/items/thibodeau_lunar_calendar_2020_photo_05.png" />
+      <img src="public/images/items/thibodeau_lunar_calendar_2020_photo_06.png" />
+    `,
+    itemMoreInfo: `
+      <div>
+        <div>
+          <span class="ital">The Instruments Agree</span> is a letterpress-printed lunar calendar designed and drawn by Alec Thibodeau (me!), 
+          chronicling all phases of the moon for 2020. 
+          From a limited edition of 500 prints <span class="ital">The Instruments Agree</span> continues my ongoing lunar calendar series, 
+          which features ornate border drawings in a landscape format. 
+          As with each of my previous lunar calendars, this one measures 19" x 11.75" (a golden rectangle) and is expertly printed by Dan Wood 
+          and his team at <a class="text-link" href="http://www.dwriletterpress.net" target="_blank">DWRI&nbsp;Letterpress</a>.
+        </div>
+        <div>
+          The 2020 lunar calendar comprises new drawings and year-specific lunar phase information. 
+          Each calendar is printed on Mohawk Fine Papers' acid-free 300gsm Keaykolour Caribbean Blue 111# cover paper, blind-debossed with my name and the print shop's name &mdash; and hand numbered and signed by me. 
+          ${itemInfoUniversals.lunarCalendarBottomBlock}
+    `
+  },
   'lunarCalendarNineteen': {
     mainContent: item.itemPage,
     itemCategory: 'lunar-calendar',
-    itemName: 'Orchard Quest<br><span class="normal">2019 lunar calendar by Alec Thibodeau</span>',
+    itemName: 'Orchard Quest<br><span class="normal">2019 lunar calendar<br>by Alec Thibodeau</span>',
     itemSubname: '',
     itemImageFront: 'public/images/items/thibodeau_lunar_calendar_2019_main.jpg',
     itemInfoOne: itemInfoUniversals.lunarCalendarInfoOne,
@@ -73,19 +119,19 @@ const pagesInfo = {
       <img src="public/images/items/thibodeau_lunar_calendar_2019_photo_02.jpg" />
     `,
     itemMorePhotoPairTwo: `
-    <img src="public/images/items/thibodeau_lunar_calendar_2019_photo_03.jpg" />
-    <img src="public/images/items/thibodeau_lunar_calendar_2019_photo_04.jpg" />
+      <img src="public/images/items/thibodeau_lunar_calendar_2019_photo_03.jpg" />
+      <img src="public/images/items/thibodeau_lunar_calendar_2019_photo_04.jpg" />
     `,
     itemMorePhotoPairThree: `
-    <img src="public/images/items/thibodeau_lunar_calendar_2019_photo_05.jpg" />
-    <img src="public/images/items/thibodeau_lunar_calendar_2019_photo_06.jpg" />
+      <img src="public/images/items/thibodeau_lunar_calendar_2019_photo_05.jpg" />
+      <img src="public/images/items/thibodeau_lunar_calendar_2019_photo_06.jpg" />
     `,
     itemMorePhotoPairFour: `
-    <img src="public/images/items/thibodeau_lunar_calendar_2019_photo_07.jpg" />
-    <img src="public/images/items/thibodeau_lunar_calendar_2019_photo_08.jpg" />
+      <img src="public/images/items/thibodeau_lunar_calendar_2019_photo_07.jpg" />
+      <img src="public/images/items/thibodeau_lunar_calendar_2019_photo_08.jpg" />
     `,
     itemMoreInfo: `
-      <div id="itemMoreInfoText">
+      <div>
         <div>
           <span class="ital">Orchard Quest</span> is a letterpress-printed lunar calendar designed and drawn by Alec Thibodeau (me!), 
           chronicling all phases of the moon for 2019. 
@@ -95,25 +141,15 @@ const pagesInfo = {
           and his team at <a class="text-link" href="http://www.dwriletterpress.net" target="_blank">DWRI&nbsp;Letterpress</a>.
         </div>
         <div>
-          The 2019 lunar calendar comprises new drawings and year-specific lunar phase information. Each calendar is printed on French Paper Company's acid-free 269gsm Pop-Tone Tangy Orange 100# cover paper, blind-debossed with my name and the print shop's name &mdash; and hand numbered and signed by me. Each calendar also comes with an accompanying information sheet and protective tube.
-        </div>
-        <div>
-          The calendar's lunar phase information is calibrated for any place in the Eastern Time Zone and is accurate to within a day for any place in the Northern Hemisphere. The calendar is designed, drawn and printed in Providence, Rhode Island, which is identified as a representative location within the artwork.
-        </div>
-        <div>
-          Custom moon illustrations portray all principal lunar phases (New Moon, First Quarter Moon, Full Moon and Third Quarter Moon) plus all intermediate crescent and gibbous phases. For months with less than 31 days, drawings of clouds occupy the extra spaces. 
-          <a class="text-link" href="#orderItem">ORDER&nbsp;NOW</a>
-        </div>
-        <div class="lunar-phases">
-          <img src="public/images/items/thibodeau_lunar_calendar_phases.jpg" />
-        </div>
-      </div>
+          The 2019 lunar calendar comprises new drawings and year-specific lunar phase information. 
+          Each calendar is printed on French Paper Company's acid-free 269gsm Pop-Tone Tangy Orange 100# cover paper, blind-debossed with my name and the print shop's name &mdash; and hand numbered and signed by me. 
+          ${itemInfoUniversals.lunarCalendarBottomBlock}
     `
   },
   'lunarCalendarEighteen': {
     mainContent: item.itemPage,
     itemCategory: 'lunar-calendar',
-    itemName: 'Shimmery Circuit<br><span class="normal">2018 lunar calendar by Alec Thibodeau</span>',
+    itemName: 'Shimmery Circuit<br><span class="normal">2018 lunar calendar<br>by Alec Thibodeau</span>',
     itemSubname: '',
     itemImageFront: 'public/images/items/thibodeau_lunar_calendar_2018_main.jpg',
     itemInfoOne: itemInfoUniversals.lunarCalendarInfoOne,
@@ -121,12 +157,43 @@ const pagesInfo = {
     itemInfoThree: 'Hand numbered and signed by the artist in a limited edition of 1000 prints',
     itemInfoFour: itemInfoUniversals.lunarCalendarInfoFour,
     itemPrice: itemInfoUniversals.lunarCalendarPrice,
-    itemId: '4LN49ZLYQLY88'
+    itemId: '4LN49ZLYQLY88',
+    itemMorePhotoPairOne: `
+    <img src="public/images/items/thibodeau_lunar_calendar_2018_photo_01.jpg" />
+    <img src="public/images/items/thibodeau_lunar_calendar_2018_photo_02.jpg" />
+    `,
+    itemMorePhotoPairTwo: `
+      <img src="public/images/items/thibodeau_lunar_calendar_2018_photo_03.jpg" />
+      <img src="public/images/items/thibodeau_lunar_calendar_2018_photo_04.jpg" />
+    `,
+    itemMorePhotoPairThree: `
+      <img src="public/images/items/thibodeau_lunar_calendar_2018_photo_05.jpg" />
+      <img src="public/images/items/thibodeau_lunar_calendar_2018_photo_06.jpg" />
+    `,
+    itemMorePhotoPairFour: `
+      <img src="public/images/items/thibodeau_lunar_calendar_2018_photo_07.jpg" />
+      <img src="public/images/items/thibodeau_lunar_calendar_2018_photo_08.jpg" />
+    `,
+    itemMoreInfo: `
+      <div>
+        <div>
+          <span class="ital">Shimmery Circuit</span> is a letterpress-printed lunar calendar designed and drawn by Alec Thibodeau (me!), 
+          chronicling all phases of the moon for 2018. 
+          From a limited edition of 1000 prints <span class="ital">Shimmery Circuit</span> continues my ongoing lunar calendar series, 
+          which features ornate border drawings in a landscape format. 
+          As with each of my previous lunar calendars, this one measures 19" x 11.75" (a golden rectangle) and is expertly printed by Dan Wood 
+          and his team at <a class="text-link" href="http://www.dwriletterpress.net" target="_blank">DWRI&nbsp;Letterpress</a>.
+        </div>
+        <div>
+          The 2018 lunar calendar comprises new drawings and year-specific lunar phase information. 
+          Each calendar is printed on French Paper Company's acid-free 269gsm Pop-Tone Grape Jelly 100# cover paper, blind-debossed with my name and the print shop's name &mdash; and hand numbered and signed by me. 
+          ${itemInfoUniversals.lunarCalendarBottomBlock}
+    `
   },
   'lunarCalendarSeventeen': {
     mainContent: item.itemPage,
     itemCategory: 'lunar-calendar',
-    itemName: 'I Still See the X<br><span class="normal">2017 lunar calendar by Alec Thibodeau</span>',
+    itemName: 'I Still See the X<br><span class="normal">2017 lunar calendar<br>by Alec Thibodeau</span>',
     itemSubname: '',
     itemImageFront: 'public/images/items/thibodeau_lunar_calendar_2017_main.jpg',
     itemInfoOne: itemInfoUniversals.lunarCalendarInfoOne,
@@ -134,7 +201,34 @@ const pagesInfo = {
     itemInfoThree: 'Hand numbered and signed by the artist in a limited edition of 1000 prints',
     itemInfoFour: itemInfoUniversals.lunarCalendarInfoFour,
     itemPrice: itemInfoUniversals.lunarCalendarPrice,
-    itemId: 'C4RW9LGDQ8NYL'
+    itemId: 'C4RW9LGDQ8NYL',
+    itemMorePhotoPairOne: `
+      <img src="public/images/items/thibodeau_lunar_calendar_2017_photo_01.jpg" />
+      <img src="public/images/items/thibodeau_lunar_calendar_2017_photo_02.jpg" />
+    `,
+    itemMorePhotoPairTwo: `
+      <img src="public/images/items/thibodeau_lunar_calendar_2017_photo_03.jpg" />
+      <img src="public/images/items/thibodeau_lunar_calendar_2017_photo_04.jpg" />
+    `,
+    itemMorePhotoPairThree: `
+      <img src="public/images/items/thibodeau_lunar_calendar_2017_photo_05.jpg" />
+      <img src="public/images/items/thibodeau_lunar_calendar_2017_photo_06.jpg" />
+    `,
+    itemMoreInfo: `
+      <div>
+        <div>
+          <span class="ital">I Still See the X</span> is a letterpress-printed lunar calendar designed and drawn by Alec Thibodeau (me!), 
+          chronicling all phases of the moon for 2017. 
+          From a limited edition of 1000 prints <span class="ital">I Still See the X</span> continues my ongoing lunar calendar series, 
+          which features ornate border drawings in a landscape format. 
+          As with each of my previous lunar calendars, this one measures 19" x 11.75" (a golden rectangle) and is expertly printed by Dan Wood 
+          and his team at <a class="text-link" href="http://www.dwriletterpress.net" target="_blank">DWRI&nbsp;Letterpress</a>.
+        </div>
+        <div>
+          The 2017 lunar calendar comprises new drawings and year-specific lunar phase information. 
+          Each calendar is printed on French Paper Company's acid-free 269gsm Pop-Tone Razzle Berry 100# cover paper, blind-debossed with my name and the print shop's name &mdash; and hand numbered and signed by me. 
+          ${itemInfoUniversals.lunarCalendarBottomBlock}
+    `
   },
   'postcardAssets': {
     mainContent: item.itemPage,

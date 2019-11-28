@@ -52,7 +52,7 @@ let itemPage = `
       <div class="photo-pair item-more-photo-pair-two"></div>
       <div class="photo-pair item-more-photo-pair-three"></div>
       <div class="photo-pair item-more-photo-pair-four"></div>
-      <div class="item-more-info"></div>
+      <div class="item-more-info" id="itemDetails"></div>
     </div>
 
     <div class="content-container container-three">
@@ -64,15 +64,15 @@ let itemPage = `
         <div class="lunar-calendar-links">
           <div>
             <div>
-              <a class="current-calendar" href="lunar_calendar_2019.html" target="_blank">
-                <img src="public/images/items/2020_soon.png" />
+              <a class="current-calendar" href="/">
+                <img src="public/images/items/thibodeau_lunar_calendar_2020_main.png" />
               </a>
             </div>
             <div class="text">2020 Lunar Calendar</div>
           </div>
           <div>
             <div>
-              <a class="current-calendar" href="lunar_calendar_2019.html" target="_blank">
+              <a class="current-calendar" href="lunar_calendar_2019.html">
                 <img src="public/images/items/thibodeau_lunar_calendar_2019_main.jpg" />
               </a>
             </div>
@@ -80,7 +80,7 @@ let itemPage = `
           </div>
           <div>
             <div>
-              <a class="current-calendar" href="lunar_calendar_2019.html" target="_blank">
+              <a class="current-calendar" href="lunar_calendar_2018.html">
                 <img src="public/images/items/thibodeau_lunar_calendar_2018_main.jpg" />
               </a>
             </div>
@@ -88,7 +88,7 @@ let itemPage = `
           </div>
           <div>
             <div>
-              <a class="current-calendar" href="lunar_calendar_2019.html" target="_blank">
+              <a class="current-calendar" href="lunar_calendar_2017.html">
                 <img src="public/images/items/thibodeau_lunar_calendar_2017_main.jpg" />
               </a>
             </div>

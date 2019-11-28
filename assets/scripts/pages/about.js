@@ -53,7 +53,6 @@ let aboutPage = `
           Provincetown Public Library
         </a> &bull;  
         <span class="about-states">Rhode Island</span>: 
-        <a class="text-link" href="http://www.ada-books.com" target="_blank">Ada Books</a>,
         <a class="text-link" href="https://www.booksq.com" target="_blank">Books on the Square</a>,
         <a class="text-link" href="https://shop.craftlandshop.com" target="_blank">Craftland</a>,
         <a class="text-link" href="https://www.frogandtoadstore.com" target="_blank">Frog & Toad</a>,

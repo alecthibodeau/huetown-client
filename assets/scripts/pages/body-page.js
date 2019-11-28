@@ -4,7 +4,7 @@ let bodyPage = `
 <header>
   <div class="nav-top">
     <a data-title="Huetown Home" class="nav-element" href="/">
-      <img class="huetown-logo-gray" src="public/images/huetown_script_logo_fifty_percent_gray.png" alt="Huetown Script Logo">
+      <img class="huetown-logo-gray" id="huetownHeaderLogo" src="public/images/huetown_script_logo_fifty_percent_gray.png" alt="Huetown Script Logo">
       <img class="huetown-logo-white" src="public/images/huetown_script_logo_white.png" alt="Huetown Script Logo">
     </a>
     <button id="burgerButton" class="burger-button">
