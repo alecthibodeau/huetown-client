@@ -65,7 +65,7 @@ document.addEventListener('DOMContentLoaded', function () {
       items.itemLoad(pageValue);
     };
 
-    // Collection page: If a collection page then add category class to image links (for collection.scss breakpoints)
+    // Collection page: If a collection page then add a category class to image links (for collection.scss breakpoints)
     const collectionPages = [
       'lunarCalendars',
       'prints',

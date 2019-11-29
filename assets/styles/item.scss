@@ -36,7 +36,7 @@
       }
 
       @media only screen and (max-width: 750px) {
-        .item-image-front {
+        .feature-image {
           width: 90vw;
           height: auto;
         }
@@ -70,7 +70,7 @@
         margin: 10px 5px 0;
 
         @media only screen and (max-width: 550px) {
-          width: 80vw;
+          width: 90vw;
         }
       }
 
@@ -180,7 +180,7 @@
     }
   }
 
-  img.item-image-front {
+  img.feature-image {
 
     &.postcard {
 

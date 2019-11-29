@@ -8,7 +8,7 @@ let containerTwoContent = `
   <div class="photo-pair item-more-photo-pair-two"></div>
   <div class="photo-pair item-more-photo-pair-three"></div>
   <div class="photo-pair item-more-photo-pair-four"></div>
-  <div class="item-more-info" id="itemDetails"></div>
+  <div class="item-more-info"></div>
 `;
 
 // Additional lunar-calendar content
@@ -101,7 +101,7 @@ let itemPage = `
 
       <div class="content-block feature-image-block">
         <a class="feature-image-link" href="#orderItem">
-          <img class="item-image-front" id="mainImage" src="" />
+          <img class="feature-image" id="featureImage" src="" />
         </a>
       </div>
 
@@ -177,13 +177,13 @@ const itemLoad = function (currentPage) {
     }
   });
 
-  // Set the main image's source, then add an item-specific category class
-  document.querySelector('.item-image-front').src = page.itemImageFront;
-  document.querySelector('.item-image-front').classList.add(page.itemCategory)
+  // Set the main image's source, then add an item-specific category class (for item.scss breakpoints)
+  document.querySelector('.feature-image').src = page.itemImageFront;
+  document.querySelector('.feature-image').classList.add(page.itemCategory)
   // Set the form input's cart value
   document.querySelector('.item-id').value = page.itemId;
 
-  // Also: add a 'lunar-calendar' class on relevant item page selectors (for item.scss breakpoints)
+  // Also: Add custom functionality if a page is a lunar calendar item
   let itemTags = [
     '.container-one',
     '.item-info-block',
@@ -192,11 +192,12 @@ const itemLoad = function (currentPage) {
   ]
   if (currentPage.startsWith('lunarCalendar')) {
     itemTags.forEach(function (tag) {
+      // Add a 'lunar-calendar' class on relevant item page selectors (for item.scss breakpoints)
       document.querySelector(tag).classList.add('lunar-calendar');
     });
-    // Add href link for referencing item details
+    // Add an href value for referencing item details
     document.querySelector('.feature-image-link').href = '#itemDetails';
-    // Show container-three, then load it
+    // Show container-three and load it
     document.querySelector('.container-three').classList.add('shown');
     document.querySelector('.container-three').innerHTML = containerThreeContent;
   };

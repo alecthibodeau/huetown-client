@@ -16,7 +16,7 @@ const itemInfoUniversals = {
   lunarCalendarInfoOne: '19 x 11.75 inches<br>Letterpress print<br>Printed by DWRI Letterpress',
   lunarCalendarInfoTwo: '',
   lunarCalendarInfoThree: 'Hand numbered and signed by the artist in a limited edition of prints',
-  lunarCalendarInfoFour: 'Ships rolled and triple-packaged: archival wrapping, <a class="text-link" href="#tube">eco-friendly protective tube</a> and outer shipping container',
+  lunarCalendarInfoFour: 'Ships rolled and triple-packaged: archival wrapping, <a class="text-link" href="#phaseInfo">eco-friendly protective tube</a> and outer shipping container',
   lunarCalendarBottomBlocks: `
       Each calendar ships with an accompanying information sheet, archival wrapping and an eco-friendly fiberboard protective tube: reusable, recycled and recyclable, with crimped ends and no plastic caps.
       </div>
@@ -25,7 +25,7 @@ const itemInfoUniversals = {
       </div>
       <div class="info-block">
         Custom moon illustrations portray all principal lunar phases (New Moon, First Quarter Moon, Full Moon and Third Quarter Moon) plus all intermediate crescent and gibbous phases. For months with less than 31 days, drawings of clouds occupy the extra spaces. 
-        <a class="text-link" href="#mainImage">ORDER&nbsp;NOW</a>
+        <a class="text-link" href="#featureImage">ORDER&nbsp;NOW</a>
       </div>
       <div class="lunar-phases">
         <div class="phase-info">
@@ -40,7 +40,7 @@ const itemInfoUniversals = {
           <img src="public/images/items/phase_full.png" />
           <div class="phase-text">Full<br>Moon</div>
         </div>
-        <div class="phase-info">
+        <div class="phase-info" id="phaseInfo">
           <img src="public/images/items/phase_third_quarter.png" />
           <div class="phase-text">Third<br>Quarter<br>Moon</div>
         </div>     
@@ -99,7 +99,7 @@ const pagesInfo = {
     `,
     itemMorePhotoPairThree: `
       <img src="public/images/items/thibodeau_lunar_calendar_2020_photo_05.png" />
-      <img src="public/images/items/thibodeau_lunar_calendar_2020_photo_06.png" />
+      <img id="itemDetails" src="public/images/items/thibodeau_lunar_calendar_2020_photo_06.png" />
     `,
     itemMoreInfo: `
       <div>
@@ -143,7 +143,7 @@ const pagesInfo = {
     `,
     itemMorePhotoPairFour: `
       <img src="public/images/items/thibodeau_lunar_calendar_2019_photo_07.jpg" />
-      <img src="public/images/items/thibodeau_lunar_calendar_2019_photo_08.jpg" />
+      <img id="itemDetails" src="public/images/items/thibodeau_lunar_calendar_2019_photo_08.jpg" />
     `,
     itemMoreInfo: `
       <div>
@@ -187,7 +187,7 @@ const pagesInfo = {
     `,
     itemMorePhotoPairFour: `
       <img src="public/images/items/thibodeau_lunar_calendar_2018_photo_07.jpg" />
-      <img src="public/images/items/thibodeau_lunar_calendar_2018_photo_08.jpg" />
+      <img id="itemDetails" src="public/images/items/thibodeau_lunar_calendar_2018_photo_08.jpg" />
     `,
     itemMoreInfo: `
       <div>
@@ -227,7 +227,7 @@ const pagesInfo = {
     `,
     itemMorePhotoPairThree: `
       <img src="public/images/items/thibodeau_lunar_calendar_2017_photo_05.jpg" />
-      <img src="public/images/items/thibodeau_lunar_calendar_2017_photo_06.jpg" />
+      <img id="itemDetails" src="public/images/items/thibodeau_lunar_calendar_2017_photo_06.jpg" />
     `,
     itemMoreInfo: `
       <div>

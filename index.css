@@ -750,7 +750,7 @@ PAGES
   }
 }
 @media only screen and (max-width: 750px) {
-  .item-page .content-container.lunar-calendar .item-image-front {
+  .item-page .content-container.lunar-calendar .feature-image {
     width: 90vw;
     height: auto;
   }
@@ -781,7 +781,7 @@ PAGES
 }
 @media only screen and (max-width: 550px) {
   .item-page .container-two .photo-pair img {
-    width: 80vw;
+    width: 90vw;
   }
 }
 @media only screen and (max-width: 1050px) {
@@ -872,21 +872,21 @@ PAGES
 .item-page .container-three .previous div.lunar-calendar-links div .text {
   margin-bottom: 10px;
 }
-.item-page img.item-image-front.postcard {
+.item-page img.feature-image.postcard {
   border: 1px solid #333;
 }
 @media only screen and (max-width: 650px) {
-  .item-page img.item-image-front.postcard {
+  .item-page img.feature-image.postcard {
     width: 550px;
   }
 }
 @media only screen and (max-width: 600px) {
-  .item-page img.item-image-front.postcard {
+  .item-page img.feature-image.postcard {
     width: 90vw;
   }
 }
 @media only screen and (max-width: 500px) {
-  .item-page img.item-image-front.print {
+  .item-page img.feature-image.print {
     width: 80vw;
   }
 }
