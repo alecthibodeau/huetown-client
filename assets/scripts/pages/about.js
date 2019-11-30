@@ -25,8 +25,8 @@ let aboutPage = `
       </p>
       <p>
         <span class="section-title ">Shipping</span>: 
-        Regardless of item quantity all orders ship for a flat charge in sturdy packaging via USPS Priority Mail from Providence, Rhode Island, USA. 
-        Flat rates are $8.00 for domestic shipments within the USA, $23.00 for delivery to Canada or Mexico or $29.00 for delivery to any other country. 
+        Regardless of item quantity all orders ship for a flat rate in sturdy packaging via USPS Priority Mail from Providence, Rhode Island, USA. 
+        Flat rates are $7 for domestic shipments within the USA, $23 for delivery to Canada or Mexico or $29 for delivery to any other country. 
         Packages generally ship within a couple business days of an order being placed, with domestic deliveries usually arriving a few days after that. 
         Once shipping is underway you'll receive a confirmation email directly from PayPal, which includes tracking information. 
         Please allow approximately one week for domestic delivery and 2-3 weeks for international delivery.
