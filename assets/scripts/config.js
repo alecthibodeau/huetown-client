@@ -81,7 +81,7 @@ const pagesInfo = {
     itemCategory: 'lunar-calendar',
     itemName: 'The Instruments Agree<br><span class="normal">2020 lunar calendar<br>by Alec Thibodeau</span>',
     itemSubname: '',
-    itemImageFront: 'public/images/items/thibodeau_lunar_calendar_2020_main.png',
+    itemImageFront: 'public/images/items/thibodeau_lunar_calendar_2020_photo_main_1000px.jpg',
     itemInfoOne: itemInfoUniversals.lunarCalendarInfoOne,
     itemInfoTwo: itemInfoUniversals.lunarCalendarInfoTwo,
     itemInfoThree: 'Hand numbered and signed by the artist in a limited edition of 500 prints',
@@ -90,16 +90,16 @@ const pagesInfo = {
     itemPrice: itemInfoUniversals.lunarCalendarPrice,
     itemId: 'TGVEUGQD58AX2',
     itemMorePhotoPairOne: `
-      <img src="public/images/items/thibodeau_lunar_calendar_2020_photo_01.png" />
-      <img src="public/images/items/thibodeau_lunar_calendar_2020_photo_02.png" />
+      <img src="public/images/items/thibodeau_lunar_calendar_2020_photo_01_800px.jpg" />
+      <img src="public/images/items/thibodeau_lunar_calendar_2020_photo_02_800px.jpg" />
     `,
     itemMorePhotoPairTwo: `
-      <img src="public/images/items/thibodeau_lunar_calendar_2020_photo_03.png" />
-      <img src="public/images/items/thibodeau_lunar_calendar_2020_photo_04.png" />
+      <img src="public/images/items/thibodeau_lunar_calendar_2020_photo_03_800px.jpg" />
+      <img src="public/images/items/thibodeau_lunar_calendar_2020_photo_04_800px.jpg" />
     `,
     itemMorePhotoPairThree: `
-      <img src="public/images/items/thibodeau_lunar_calendar_2020_photo_05.png" />
-      <img id="itemDetails" src="public/images/items/thibodeau_lunar_calendar_2020_photo_06.png" />
+      <img src="public/images/items/thibodeau_lunar_calendar_2020_photo_05_800px.jpg" />
+      <img id="itemDetails" src="public/images/items/thibodeau_lunar_calendar_2020_photo_06_800px.jpg" />
     `,
     itemMoreInfo: `
       <div>

@@ -749,6 +749,10 @@ PAGES
     align-items: center;
   }
 }
+.item-page .content-container.lunar-calendar .feature-image {
+  width: 700px;
+  height: auto;
+}
 @media only screen and (max-width: 750px) {
   .item-page .content-container.lunar-calendar .feature-image {
     width: 90vw;
@@ -778,8 +782,15 @@ PAGES
 }
 .item-page .container-two .photo-pair img {
   margin: 10px 5px 0;
+  width: 450px;
+  height: auto;
 }
-@media only screen and (max-width: 500px) {
+@media only screen and (max-width: 1050px) {
+  .item-page .container-two .photo-pair img {
+    width: 700px;
+  }
+}
+@media only screen and (max-width: 760px) {
   .item-page .container-two .photo-pair img {
     width: 90vw;
   }

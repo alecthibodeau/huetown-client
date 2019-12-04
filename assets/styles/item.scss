@@ -35,6 +35,11 @@
         align-items: center;
       }
 
+      .feature-image {
+        width: 700px;
+        height: auto;
+      }
+
       @media only screen and (max-width: 750px) {
         .feature-image {
           width: 90vw;
@@ -68,8 +73,14 @@
 
       img {
         margin: 10px 5px 0;
+        width: 450px;
+        height: auto;
 
-        @media only screen and (max-width: 500px) {
+        @media only screen and (max-width: 1050px) {
+          width: 700px;
+        }
+
+        @media only screen and (max-width: 760px) {
           width: 90vw;
         }
       }
