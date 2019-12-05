@@ -90,16 +90,20 @@ const pagesInfo = {
     itemPrice: itemInfoUniversals.lunarCalendarPrice,
     itemId: 'TGVEUGQD58AX2',
     itemMorePhotoPairOne: `
-      <img src="public/images/items/thibodeau_lunar_calendar_2020_photo_01_800px.jpg" />
-      <img src="public/images/items/thibodeau_lunar_calendar_2020_photo_02_800px.jpg" />
+      <img src="public/images/items/thibodeau_lunar_calendar_2020_photo_01_1000px.jpg" />
+      <img src="public/images/items/thibodeau_lunar_calendar_2020_photo_02_1000px.jpg" />
     `,
     itemMorePhotoPairTwo: `
-      <img src="public/images/items/thibodeau_lunar_calendar_2020_photo_03_800px.jpg" />
-      <img src="public/images/items/thibodeau_lunar_calendar_2020_photo_04_800px.jpg" />
+      <img src="public/images/items/thibodeau_lunar_calendar_2020_photo_03_1000px.jpg" />
+      <img src="public/images/items/thibodeau_lunar_calendar_2020_photo_04_1000px.jpg" />
     `,
     itemMorePhotoPairThree: `
-      <img src="public/images/items/thibodeau_lunar_calendar_2020_photo_05_800px.jpg" />
-      <img id="itemDetails" src="public/images/items/thibodeau_lunar_calendar_2020_photo_06_800px.jpg" />
+      <img src="public/images/items/thibodeau_lunar_calendar_2020_photo_07_1000px.jpg" />
+      <img src="public/images/items/thibodeau_lunar_calendar_2020_photo_08_1000px.jpg" />
+    `,
+    itemMorePhotoPairFour: `
+    <img src="public/images/items/thibodeau_lunar_calendar_2020_photo_05_1000px.jpg" />
+    <img id="itemDetails" src="public/images/items/thibodeau_lunar_calendar_2020_photo_06_1000px.jpg" />
     `,
     itemMoreInfo: `
       <div>
