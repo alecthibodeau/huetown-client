@@ -1,11 +1,12 @@
 // Sub-mixins need to be outside the primary mixin
-@mixin button-styles {
+@mixin item-page-button-styles {
   border: none;
-  border-radius: 10px;
+  border-radius: 6px;
   background: $sixty-percent-gray;
   color: $white;
   font-family: 'Raleway', sans-serif;
   font-size: 1.4rem;
+  font-weight: 600;
   letter-spacing: 0.3125rem;
   text-transform: uppercase;
   cursor: pointer;
@@ -74,14 +75,16 @@
       img {
         margin: 10px 5px 0;
         width: 450px;
-        height: auto;
+        height: 450px;
 
         @media only screen and (max-width: 1050px) {
           width: 700px;
+          height: 700px;
         }
 
         @media only screen and (max-width: 760px) {
           width: 90vw;
+          height: 90vw;
         }
       }
 
@@ -352,7 +355,7 @@
     }
 
     input[value="add to cart"] {
-      @include button-styles;
+      @include item-page-button-styles;
 
       width: 16rem;
       min-height: 4rem;

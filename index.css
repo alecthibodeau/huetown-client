@@ -730,6 +730,23 @@ PAGES
   font-weight: 600;
   text-transform: uppercase;
 }
+.about-page .subscribe-button {
+  border: none;
+  border-radius: 6px;
+  color: #fff;
+  letter-spacing: 0.3125rem;
+  text-transform: uppercase;
+  cursor: pointer;
+  width: 16rem;
+  min-height: 4rem;
+  background: #666 !important;
+  font-family: "Raleway", sans-serif !important;
+  font-size: 1.4rem;
+  font-weight: 600 !important;
+}
+.about-page .subscribe-button:hover {
+  background: #ff9600 !important;
+}
 
 .item-page {
   margin-bottom: 20px;
@@ -783,16 +800,18 @@ PAGES
 .item-page .container-two .photo-pair img {
   margin: 10px 5px 0;
   width: 450px;
-  height: auto;
+  height: 450px;
 }
 @media only screen and (max-width: 1050px) {
   .item-page .container-two .photo-pair img {
     width: 700px;
+    height: 700px;
   }
 }
 @media only screen and (max-width: 760px) {
   .item-page .container-two .photo-pair img {
     width: 90vw;
+    height: 90vw;
   }
 }
 @media only screen and (max-width: 1050px) {
@@ -1021,11 +1040,12 @@ PAGES
 }
 .item-page form input[value="add to cart"] {
   border: none;
-  border-radius: 10px;
+  border-radius: 6px;
   background: #666;
   color: #fff;
   font-family: "Raleway", sans-serif;
   font-size: 1.4rem;
+  font-weight: 600;
   letter-spacing: 0.3125rem;
   text-transform: uppercase;
   cursor: pointer;
