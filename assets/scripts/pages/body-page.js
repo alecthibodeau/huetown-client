@@ -8,10 +8,10 @@ let bodyPage = `
       <img class="huetown-logo-white" src="public/images/huetown_script_logo_white.png" alt="Huetown Script Logo">
     </a>
     <button id="burgerButton" class="burger-button">
-      <div class="burger-bars">
-       <div></div>
-       <div></div>
-       <div></div>
+      <div class="burger-bars-container">
+       <div class="bar bar-one"></div>
+       <div class="bar bar-two"></div>
+       <div class="bar bar-three"></div>
       </div>
     </button>
   </div>

@@ -112,24 +112,45 @@
 
   button.burger-button {
     display: none;
+    position: relative;
     cursor: pointer;
     padding: 5px;
     border: none;
     background-color: transparent;
 
-    .burger-bars {
+    &.closing-x {
+      padding: 5px 2px;
+    }
+
+    div.burger-bars-container {
       height: 25px;
       display: flex;
       flex-direction: column;
       justify-content: space-between;
 
-      div {
+      div.bar {
+        position: relative;
         width: 25px;
         height: 4px;
-        background: $fifty-percent-gray;
+        background: $white;
+        transition: transform .125s;
 
-        @media only screen and (max-width: 650px) {
-          background: $white;
+        &.closing-x {
+          width: 30px;
+
+          &.bar-one {
+            top: 9px;
+            transform: rotate(45deg);
+          }
+  
+          &.bar-two {
+            display: none;
+          }
+  
+          &.bar-three {
+            bottom: 12px;
+            transform: rotate(-45deg);
+          }
         }
       }
     }

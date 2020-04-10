@@ -28,7 +28,22 @@ document.addEventListener('DOMContentLoaded', function () {
   // a) Check the nav drawer's boolean, then open/close the drawer
   function drawerCheck() {
     let nav = document.getElementById('nav');
-    !isNavDrawerOpen ? nav.classList.add('open-drawer') : nav.classList.remove('open-drawer');
+    let burgerButton = document.getElementById('burgerButton');
+
+    if (!isNavDrawerOpen) {
+      nav.classList.add('open-drawer');
+      burgerButton.classList.add('closing-x');
+      document.querySelectorAll('.bar').forEach(function (bar) {
+        bar.classList.add('closing-x');
+      });
+    } else {
+      nav.classList.remove('open-drawer');
+      burgerButton.classList.remove('closing-x');
+      document.querySelectorAll('.bar').forEach(function (bar) {
+        bar.classList.remove('closing-x');
+      });
+    }
+    
     isNavDrawerOpen = !isNavDrawerOpen;
   };
 
@@ -73,8 +88,8 @@ document.addEventListener('DOMContentLoaded', function () {
     ]
     if (collectionPages.includes(pageValue)) {
       const pageCategory = bodyDiv.getAttribute('page-category');
-      document.querySelectorAll('.collection-link').forEach(function (a) {
-        a.classList.add(pageCategory);
+      document.querySelectorAll('.collection-link').forEach(function (anchor) {
+        anchor.classList.add(pageCategory);
       });
     }
 

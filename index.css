@@ -103,26 +103,41 @@ html body header a .huetown-logo-white {
 }
 html body header button.burger-button {
   display: none;
+  position: relative;
   cursor: pointer;
   padding: 5px;
   border: none;
   background-color: transparent;
 }
-html body header button.burger-button .burger-bars {
+html body header button.burger-button.closing-x {
+  padding: 5px 2px;
+}
+html body header button.burger-button div.burger-bars-container {
   height: 25px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
 }
-html body header button.burger-button .burger-bars div {
+html body header button.burger-button div.burger-bars-container div.bar {
+  position: relative;
   width: 25px;
   height: 4px;
-  background: #7f7f7f;
+  background: #fff;
+  transition: transform 0.125s;
 }
-@media only screen and (max-width: 650px) {
-  html body header button.burger-button .burger-bars div {
-    background: #fff;
-  }
+html body header button.burger-button div.burger-bars-container div.bar.closing-x {
+  width: 30px;
+}
+html body header button.burger-button div.burger-bars-container div.bar.closing-x.bar-one {
+  top: 9px;
+  transform: rotate(45deg);
+}
+html body header button.burger-button div.burger-bars-container div.bar.closing-x.bar-two {
+  display: none;
+}
+html body header button.burger-button div.burger-bars-container div.bar.closing-x.bar-three {
+  bottom: 12px;
+  transform: rotate(-45deg);
 }
 @media only screen and (max-width: 650px) {
   html body header button.burger-button {
