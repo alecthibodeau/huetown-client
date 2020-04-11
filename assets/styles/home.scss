@@ -7,8 +7,8 @@
   
   .unbound-top {
     display: flex;
-    justify-content: space-around;
     align-items: center;
+    justify-content: space-around;
     margin-bottom: 1rem;
 
     img {
@@ -34,6 +34,21 @@
     margin-bottom: 1rem;
   }
 
+  .lunar-calendar-available {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 2rem;
+
+    img {
+      max-height: 30vw;
+    }
+  }
+
+  .available-text {
+    margin-left: 1rem;
+  }
+
   @media only screen and (max-width: 650px) {
     .unbound-top {
       flex-direction: column;
@@ -43,6 +58,14 @@
     .unbound-announcement {
       margin-left: unset;
       margin-top: 1rem;
+    }
+
+    .lunar-calendar-available {
+      flex-direction: column;
+    }
+
+    .available-text {
+      margin-left: unset;
     }
   }
 }

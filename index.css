@@ -413,8 +413,8 @@ PAGES
 }
 .home-page .unbound-top {
   display: flex;
-  justify-content: space-around;
   align-items: center;
+  justify-content: space-around;
   margin-bottom: 1rem;
 }
 .home-page .unbound-top img {
@@ -434,6 +434,18 @@ PAGES
 .home-page .unbound-description {
   margin-bottom: 1rem;
 }
+.home-page .lunar-calendar-available {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 2rem;
+}
+.home-page .lunar-calendar-available img {
+  max-height: 30vw;
+}
+.home-page .available-text {
+  margin-left: 1rem;
+}
 @media only screen and (max-width: 650px) {
   .home-page .unbound-top {
     flex-direction: column;
@@ -442,6 +454,12 @@ PAGES
   .home-page .unbound-announcement {
     margin-left: unset;
     margin-top: 1rem;
+  }
+  .home-page .lunar-calendar-available {
+    flex-direction: column;
+  }
+  .home-page .available-text {
+    margin-left: unset;
   }
 }
 

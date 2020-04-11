@@ -27,7 +27,21 @@ let homePage = `
           in the Providence community.
         </div>
         <div>
-          <img src="public/images/home/ff001_2020_square.png" />
+          <img src="public/images/home/ff001_2020_800px.png" />
+        </div>
+        <div class="bold ital">
+          Fold'em Funnies #1
+        </div>
+      </div>
+
+      <div class="lunar-calendar-available">
+        <div>
+          <a href="lunar_calendar_2020.html">
+            <img src="public/images/items/thibodeau_lunar_calendar_2020_photo_main_1000px.jpg" />
+          </a>
+        </div>
+        <div class="available-text">
+          <a class="text-link" href="lunar_calendar_2020.html">The 2020 Lunar Calendar is still available</a>
         </div>
       </div>
 
