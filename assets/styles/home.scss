@@ -20,7 +20,21 @@
     margin-left: 1rem;
   }
 
-  @media only screen and (max-width: 500px) {
+  .unbound-bottom {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    img {
+      max-height: 40vw;
+    }
+  }
+
+  .unbound-description {
+    margin-bottom: 1rem;
+  }
+
+  @media only screen and (max-width: 650px) {
     .unbound-top {
       flex-direction: column;
       justify-content: center;

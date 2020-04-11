@@ -423,7 +423,18 @@ PAGES
 .home-page .unbound-announcement {
   margin-left: 1rem;
 }
-@media only screen and (max-width: 500px) {
+.home-page .unbound-bottom {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.home-page .unbound-bottom img {
+  max-height: 40vw;
+}
+.home-page .unbound-description {
+  margin-bottom: 1rem;
+}
+@media only screen and (max-width: 650px) {
   .home-page .unbound-top {
     flex-direction: column;
     justify-content: center;
