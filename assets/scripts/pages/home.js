@@ -11,7 +11,7 @@ let homePage = `
           Today April 11th, 2020 I'm participating in 
           <a class="text-link" href="https://unbound.risd.edu" target="_blank">RISD Unbound</a>.
           Coinciding with this celebration of local artists I'll be donating 50% of the proceeds from every sale today at Huetown to the 
-          newly established <a class="text-link" href="https://www.artistcommunities.org/arf" target="_blank">Rhode Island Artist Relief Fund</a>.
+          <a class="text-link" href="https://www.artistcommunities.org/arf" target="_blank">Rhode Island Artist Relief Fund</a> &mdash; newly established in response to COVID-19.
           And all orders placed today will include a free copy of my <span class="bold ital">Fold'em Funnies #1</span> minicomic 
           (currently in the collection of the <a class="text-link" href="https://library.risd.edu" target="_blank">Fleet Library</a> at RISD).
         </div>
