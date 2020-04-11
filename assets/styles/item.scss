@@ -16,17 +16,6 @@
 @mixin item-page-content {
   margin-bottom: 20px;
 
-  .text-link {
-    text-decoration: none;
-  
-    &:link,
-    &:visited,
-    &:hover,
-    &:active {
-      color: $huetown-red;
-    }
-  }
-
   .content-container {
     display: flex;
 
@@ -336,10 +325,6 @@
       position: relative;
       left: 8px;
     }
-  }
-
-  .ital {
-    font-style: italic;
   }
 
   form {

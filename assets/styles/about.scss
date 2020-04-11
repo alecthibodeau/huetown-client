@@ -26,17 +26,6 @@
     }
   }
 
-  .text-link {
-    text-decoration: none;
-  
-    &:link,
-    &:visited,
-    &:hover,
-    &:active {
-      color: $huetown-red;
-    }
-  }
-
   .about-states {
     text-transform: uppercase;
   }

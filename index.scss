@@ -1,6 +1,7 @@
 @import "assets/styles/_variables";
 @import "assets/styles/header";
 @import "assets/styles/footer";
+@import "assets/styles/home";
 @import "assets/styles/about";
 @import "assets/styles/collection";
 @import "assets/styles/item";
@@ -35,6 +36,25 @@ html {
       font-family: 'Open Sans', sans-serif;
       font-size: 1.4rem;
 
+      .text-link {
+        text-decoration: none;
+      
+        &:link,
+        &:visited,
+        &:hover,
+        &:active {
+          color: $rainbow-red;
+        }
+      }
+
+      .ital {
+        font-style: italic;
+      }
+
+      .bold {
+        font-weight: 600;
+      }
+      
       @media only screen and (max-width: 650px) {
         top: 85px;
       }
@@ -55,16 +75,7 @@ PAGES
 ************/
 
 .home-page {
-  display: flex;
-  justify-content: center;
-  
-  @media only screen and (max-width: 800px) {
-    img {
-      max-width: 90vw;
-      max-height: 56vw;
-      margin: 20px auto 40px;
-    }
-  }
+  @include home-content
 }
 
 .lunar-calendars-page {

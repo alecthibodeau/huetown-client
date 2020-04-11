@@ -327,6 +327,18 @@ html body main {
   font-family: "Open Sans", sans-serif;
   font-size: 1.4rem;
 }
+html body main .text-link {
+  text-decoration: none;
+}
+html body main .text-link:link, html body main .text-link:visited, html body main .text-link:hover, html body main .text-link:active {
+  color: #f27089;
+}
+html body main .ital {
+  font-style: italic;
+}
+html body main .bold {
+  font-weight: 600;
+}
 @media only screen and (max-width: 650px) {
   html body main {
     top: 85px;
@@ -395,13 +407,30 @@ PAGES
 ************/
 .home-page {
   display: flex;
+  flex-direction: row;
   justify-content: center;
+  margin-bottom: 2rem;
 }
-@media only screen and (max-width: 800px) {
-  .home-page img {
-    max-width: 90vw;
-    max-height: 56vw;
-    margin: 20px auto 40px;
+.home-page .unbound-top {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+.home-page .unbound-top img {
+  max-height: 56vw;
+}
+.home-page .unbound-announcement {
+  margin-left: 1rem;
+}
+@media only screen and (max-width: 500px) {
+  .home-page .unbound-top {
+    flex-direction: column;
+    justify-content: center;
+  }
+  .home-page .unbound-announcement {
+    margin-left: unset;
+    margin-top: 1rem;
   }
 }
 
@@ -762,12 +791,6 @@ PAGES
 .about-page .about-top div span.bold {
   font-weight: 600;
 }
-.about-page .text-link {
-  text-decoration: none;
-}
-.about-page .text-link:link, .about-page .text-link:visited, .about-page .text-link:hover, .about-page .text-link:active {
-  color: #e78460;
-}
 .about-page .about-states {
   text-transform: uppercase;
 }
@@ -795,12 +818,6 @@ PAGES
 
 .item-page {
   margin-bottom: 20px;
-}
-.item-page .text-link {
-  text-decoration: none;
-}
-.item-page .text-link:link, .item-page .text-link:visited, .item-page .text-link:hover, .item-page .text-link:active {
-  color: #e78460;
 }
 .item-page .content-container {
   display: flex;
@@ -1070,9 +1087,6 @@ PAGES
 .item-page .qty-label span {
   position: relative;
   left: 8px;
-}
-.item-page .ital {
-  font-style: italic;
 }
 .item-page form input[name=quantity] {
   width: 4rem;

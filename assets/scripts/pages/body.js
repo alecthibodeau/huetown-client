@@ -1,6 +1,6 @@
 'use strict'
 
-let bodyPage = `
+let bodyContent = `
 <header>
   <div class="nav-top">
     <a data-title="Huetown Home" class="nav-element" href="/">
@@ -69,5 +69,5 @@ let bodyPage = `
 `;
 
 export default {
-  bodyPage
+  bodyContent
 };
