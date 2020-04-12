@@ -16,14 +16,14 @@ let homePage = `
             <a class="text-link" href="https://www.artistcommunities.org/arf" target="_blank">Rhode Island Artist Relief Fund</a> &mdash; newly established in response to COVID-19.
           </div>
           <div class="extension">
-            <span class="bold ital">Donation extension</span>: I'm continuing to donate 50% of Huetown sales proceeds from orders placed online through May 11, 2020. 
+            <span class="bold ital">Donation extension</span>: I'm continuing to donate 50% of proceeds from Huetown orders placed online now through May 11, 2020. 
           </div>
         </div>
       </div>
 
       <div class="unbound-bottom">
         <div class="unbound-description">
-          RISD Unbound is a day-long event celebrating artists’ books, zines, 
+          RISD Unbound is a day-long event celebrating artists' books, zines, 
           and experimental printed matter created by RISD students and community, 
           local artists and designers, as well as publishers, artists, designers, 
           and enthusiasts from across the region. Through exhibits and sales, 
