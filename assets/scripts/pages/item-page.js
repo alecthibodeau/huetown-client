@@ -20,7 +20,7 @@ let containerThreeContent = `
   <div class="lunar-calendar-links">
     <div>
       <div>
-        <a class="current-calendar" href="/">
+        <a class="current-calendar" href="lunar_calendar_2020.html">
           <img src="public/images/items/thibodeau_lunar_calendar_2020_main.png" />
         </a>
       </div>
