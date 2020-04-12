@@ -415,21 +415,32 @@ PAGES
   display: flex;
   align-items: center;
   justify-content: space-around;
-  margin-bottom: 1rem;
+  margin-bottom: 2rem;
 }
 .home-page .unbound-top img {
   max-height: 56vw;
+  border: 1px solid #000;
 }
 .home-page .unbound-announcement {
   margin-left: 1rem;
 }
+.home-page .unbound-announcement .extension {
+  margin-top: 1rem;
+}
 .home-page .unbound-bottom {
   display: flex;
-  flex-direction: column;
   align-items: center;
 }
+.home-page .unbound-bottom .unbound-description {
+  margin: 0 1rem 1rem 0;
+}
+.home-page .unbound-bottom .foldem-funnies {
+  text-align: center;
+}
 .home-page .unbound-bottom img {
-  max-height: 40vw;
+  display: block;
+  height: 250px;
+  margin-bottom: 0.5rem;
 }
 .home-page .unbound-description {
   margin-bottom: 1rem;
@@ -454,6 +465,15 @@ PAGES
   .home-page .unbound-announcement {
     margin-left: unset;
     margin-top: 1rem;
+  }
+  .home-page .unbound-bottom {
+    flex-direction: column;
+  }
+  .home-page .unbound-bottom .unbound-description {
+    margin: 0 0 1rem 0;
+  }
+  .home-page .unbound-bottom img {
+    max-height: 40vw;
   }
   .home-page .lunar-calendar-available {
     flex-direction: column;

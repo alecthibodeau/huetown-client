@@ -6,14 +6,18 @@ let homePage = `
     <div class="unbound">
 
       <div class="unbound-top">
-        <img src="public/images/home/unbound_logo.png" />
+        <a class="text-link" href="https://www.artistcommunities.org/arf" target="_blank">
+          <img class="artist-relief" src="public/images/home/artist_relief_fund_400px.png" />
+        </a>
         <div class="unbound-announcement">
-          On April 11th, 2020 I participated in 
-          <a class="text-link" href="https://unbound.risd.edu" target="_blank">RISD Unbound 2020</a>.
-          Coinciding with this celebration of local artists I donated 50% of that day's proceeds from every sale at Huetown to the 
-          <a class="text-link" href="https://www.artistcommunities.org/arf" target="_blank">Rhode Island Artist Relief Fund</a> &mdash; newly established in response to COVID-19.
-          All orders included a free copy of my <span class="bold ital">Fold'em Funnies #1</span> minicomic 
-          (currently in the collection of the <a class="text-link" href="https://library.risd.edu" target="_blank">Fleet Library</a> at RISD).
+          <div>
+            On April 11th, 2020 I participated in 
+            <a class="text-link" href="https://unbound.risd.edu" target="_blank">RISD Unbound 2020</a>, donating 50% of that day's proceeds from every sale at Huetown to the 
+            <a class="text-link" href="https://www.artistcommunities.org/arf" target="_blank">Rhode Island Artist Relief Fund</a> &mdash; newly established in response to COVID-19.
+          </div>
+          <div class="extension">
+            <span class="bold ital">Donation extension</span>: I'm continuing to donate 50% of Huetown sales proceeds from orders placed online through May 11, 2020. 
+          </div>
         </div>
       </div>
 
@@ -26,10 +30,8 @@ let homePage = `
           Unbound seeks to inspire conversations around cultural publishing 
           in the Providence community.
         </div>
-        <div>
+        <div class="foldem-funnies bold ital">
           <img src="public/images/home/ff001_2020_800px.png" />
-        </div>
-        <div class="bold ital">
           Fold'em Funnies #1
         </div>
       </div>
@@ -41,7 +43,7 @@ let homePage = `
           </a>
         </div>
         <div class="available-text">
-          <a class="text-link" href="lunar_calendar_2020.html">The 2020 Lunar Calendar is still available!</a>
+          <a class="text-link" href="lunar_calendar_2020.html">The 2020 Lunar Calendar is still available</a>
         </div>
       </div>
 
