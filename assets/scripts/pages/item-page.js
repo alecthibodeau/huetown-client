@@ -20,7 +20,7 @@ let containerThreeContent = `
   <div class="lunar-calendar-links">
     <div>
       <div>
-        <a class="current-calendar" href="/">
+        <a class="current-calendar" href="lunar_calendar_2020.html">
           <img src="public/images/items/thibodeau_lunar_calendar_2020_main.png" />
         </a>
       </div>
@@ -149,19 +149,19 @@ const itemLoad = function (currentPage) {
   let page = config.pagesInfo[currentPage]
   let htmlToFill = [
     // container-one content starts here
-    ['.item-name', page.itemName],
-    ['.item-subname', page.itemSubname],
-    ['.item-info-one', page.itemInfoOne],
-    ['.item-info-two', page.itemInfoTwo],
-    ['.item-info-three', page.itemInfoThree],
-    ['.item-info-four', page.itemInfoFour],
-    ['.item-price', page.itemPrice],
+    ['item-name', page.itemName],
+    ['item-subname', page.itemSubname],
+    ['item-info-one', page.itemInfoOne],
+    ['item-info-two', page.itemInfoTwo],
+    ['item-info-three', page.itemInfoThree],
+    ['item-info-four', page.itemInfoFour],
+    ['item-price', page.itemPrice],
     // container-two content starts here
-    ['.item-more-photo-pair-one', page.itemMorePhotoPairOne],
-    ['.item-more-photo-pair-two', page.itemMorePhotoPairTwo],
-    ['.item-more-photo-pair-three', page.itemMorePhotoPairThree],
-    ['.item-more-photo-pair-four', page.itemMorePhotoPairFour],
-    ['.item-more-info', page.itemMoreInfo]
+    ['item-more-photo-pair-one', page.itemMorePhotoPairOne],
+    ['item-more-photo-pair-two', page.itemMorePhotoPairTwo],
+    ['item-more-photo-pair-three', page.itemMorePhotoPairThree],
+    ['item-more-photo-pair-four', page.itemMorePhotoPairFour],
+    ['item-more-info', page.itemMoreInfo]
   ]
 
   // If the item has content for container-two then show container-two and load it
@@ -173,7 +173,7 @@ const itemLoad = function (currentPage) {
   // Fill each item's element with item-specific info if the info exists
   htmlToFill.forEach(function (element) {
     if (element[1]) {
-      document.querySelector(element[0]).innerHTML = element[1];
+      document.querySelector(`.${element[0]}`).innerHTML = element[1];
     }
   });
 
@@ -185,15 +185,15 @@ const itemLoad = function (currentPage) {
 
   // Also: Add custom functionality if a page is a lunar calendar item
   let itemTags = [
-    '.container-one',
-    '.item-info-block',
-    '.payment-info',
-    '.item-price-container'
+    'container-one',
+    'item-info-block',
+    'payment-info',
+    'item-price-container'
   ]
   if (currentPage.startsWith('lunarCalendar')) {
     itemTags.forEach(function (tag) {
       // Add a 'lunar-calendar' class on relevant item page selectors (for item.scss breakpoints)
-      document.querySelector(tag).classList.add('lunar-calendar');
+      document.querySelector(`.${tag}`).classList.add('lunar-calendar');
     });
     // Add an href value for referencing item details
     document.querySelector('.feature-image-link').href = '#itemDetails';

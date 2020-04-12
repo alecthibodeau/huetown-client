@@ -12,6 +12,10 @@ import veganly from './pages/veganly.js';
 import item from './pages/item-page.js';
 
 const itemInfoUniversals = {
+  drawingInfoOne: 'pen and ink on Bristol board',
+  // drawingInfoTwo: '',
+  // drawingInfoThree: '',
+  drawingPrice: 50,
   lunarCalendarPrice: 40,
   lunarCalendarInfoOne: '19 x 11.75 inches<br>Letterpress print<br>Printed by DWRI Letterpress',
   lunarCalendarInfoTwo: '',
@@ -75,6 +79,19 @@ const pagesInfo = {
   },
   'veganly': {
     mainContent: veganly.veganlyPage
+  },
+  'drawingButternutBear': {
+    // mainContent: item.itemPage,\
+    itemClass: 'drawing-butternut-bear',
+    itemCategory: 'drawing',
+    itemName: 'Butternut Bear',
+    itemSubname: 'original drawing',
+    itemImageFront: 'public/images/home/drawings/drawing_butternut_bear_800px.png',
+    itemInfoOne: itemInfoUniversals.drawingInfoOne,
+    itemInfoTwo: '',
+    itemInfoThree: '',
+    itemPrice: itemInfoUniversals.drawingPrice,
+    itemId: ''
   },
   'lunarCalendarTwenty': {
     mainContent: item.itemPage,

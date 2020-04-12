@@ -3,6 +3,7 @@
 import config from './config.js';
 import items from './pages/item-page.js';
 import body from './pages/body.js';
+import home from './pages/home.js';
 
 let isNavDrawerOpen = false;
 let windowSize = Math.max(document.documentElement.clientWidth, window.innerWidth || 0);
@@ -77,6 +78,11 @@ document.addEventListener('DOMContentLoaded', function () {
 
       // Load mainDiv
       mainDiv.innerHTML = page.mainContent;
+
+      // Home page: If home page then load additional home content
+      if (pageValue === 'home') {
+        home.itemLoad();
+      };
 
       // Item page: If an item page then load item content
       if (page.itemName) {
