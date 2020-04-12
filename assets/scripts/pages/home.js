@@ -16,7 +16,7 @@ let homePage = `
             <a class="text-link" href="https://www.artistcommunities.org/arf" target="_blank">Rhode Island Artist Relief Fund</a> &mdash; newly established in response to COVID-19.
           </div>
           <div class="extension">
-            <span class="bold ital">Donation extension</span>: I'm continuing to donate 50% of proceeds from Huetown orders placed online now through May 11, 2020. 
+            <span class="bold ital">Donation extension</span>: I'm continuing to donate 50% of proceeds from all Huetown orders placed online now through May 11, 2020. 
           </div>
         </div>
       </div>
