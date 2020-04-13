@@ -192,6 +192,7 @@
         display: flex;
         margin: 0 auto;
         background: $white-film;
+        backdrop-filter: blur(5px);
       }
     }
   }
