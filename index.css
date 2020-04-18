@@ -462,6 +462,7 @@ PAGES
   display: flex;
   align-items: center;
   justify-content: center;
+  margin-bottom: 4rem;
 }
 .home-page .drawing-image {
   margin-right: 1rem;
@@ -470,7 +471,7 @@ PAGES
   max-height: 200px;
   border: 1px solid #000;
 }
-.home-page .drawing-info .item-name {
+.home-page .drawing-info [class^=item-name] {
   font-size: 2rem;
   font-weight: 700;
 }

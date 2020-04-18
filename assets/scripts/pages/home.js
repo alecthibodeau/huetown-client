@@ -100,7 +100,8 @@ let homePage = `
 
 const itemLoad = function () {
   let itemsToLoad = [
-    'drawingButternutBear'
+    'drawingButternutBear',
+    'drawingHawkHeralds'
   ];
 
   // Create and customize each item
@@ -124,14 +125,16 @@ const itemLoad = function () {
     ];
 
     // Set a custom class for the item's image and add the source
-    document.querySelector('.feature-image').setAttribute('class', `feature-image feature-image-${itemProperties.itemClass}`);
-    document.querySelector(`.feature-image-${itemProperties.itemClass}`).src = itemProperties.itemImageFront;
+    const featureImage = 'feature-image';
+    const customImageClass = `${featureImage}-${itemProperties.itemClass}`;
+    document.querySelector(`.${featureImage}`).setAttribute('class', customImageClass);
+    document.querySelector(`.${customImageClass}`).src = itemProperties.itemImageFront;
 
     // Set custom classes for the item's elements and fill their HTML
     htmlToFill.forEach(function (element) {
       if (element[1]) {
         const customClass = `${element[0]}-${itemProperties.itemClass}`;
-        document.querySelector(`.${element[0]}`).setAttribute('class', `${element[0]} ${customClass}`);
+        document.querySelector(`.${element[0]}`).setAttribute('class', `${customClass}`);
         document.querySelector(`.${customClass}`).innerHTML = element[1];
       }
     });

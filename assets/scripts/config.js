@@ -94,6 +94,19 @@ const pagesInfo = {
     itemPrice: itemInfoUniversals.drawingPrice,
     itemId: ''
   },
+  'drawingHawkHeralds': {
+    itemClass: 'drawing-hawk-heralds',
+    itemCategory: 'drawing',
+    itemName: 'Hawk Heralds',
+    itemSubname: '',
+    itemImageFront: 'public/images/home/drawings/drawing_hawk_heralds_800px.png',
+    itemInfoOne: itemInfoUniversals.drawingInfoOriginalDrawing,
+    itemInfoTwo: itemInfoUniversals.drawingInfoPenAndInk,
+    itemInfoThree: itemInfoUniversals.drawingInfoThreeAndQuarterInches,
+    itemInfoFour: itemInfoUniversals.drawingInfoSignedOnBack,
+    itemPrice: itemInfoUniversals.drawingPrice,
+    itemId: ''
+  },
   'lunarCalendarTwenty': {
     mainContent: item.itemPage,
     itemCategory: 'lunar-calendar',
