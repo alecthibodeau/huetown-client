@@ -17,6 +17,11 @@ const itemInfoUniversals = {
   drawingInfoThreeAndQuarterInches: '3.25 x 3.25 inches',
   drawingInfoSignedOnBack: 'signed on the back',
   drawingPrice: 55,
+  lunarCalendarItemName: `
+    <span class="lunar-calendar-title"></span><br>
+    <span class="lunar-calendar-year normal"></span><span class="normal">lunar calendar<br>
+    by Alec Thibodeau</span>
+  `,
   lunarCalendarPrice: 40,
   lunarCalendarInfoOne: '19 x 11.75 inches<br>Letterpress print<br>Printed by DWRI Letterpress',
   lunarCalendarInfoTwo: '',
@@ -176,7 +181,7 @@ const itemsInfo = {
     itemLunarCalendarTitle: 'The Instruments Agree',
     itemLunarCalendarYear: '2020',
     itemLunarCalendarPaperInfo: 'Mohawk Fine Papers\' acid-free 300gsm Keaykolour Caribbean Blue 111# cover paper',
-    itemName: 'The Instruments Agree<br><span class="normal">2020 lunar calendar<br>by Alec Thibodeau</span>',
+    itemName: itemInfoUniversals.lunarCalendarItemName,
     itemSubname: '',
     itemImageFront: 'public/images/items/thibodeau_lunar_calendar_2020_photo_main_1000px.jpg',
     itemInfoOne: itemInfoUniversals.lunarCalendarInfoOne,
@@ -207,7 +212,10 @@ const itemsInfo = {
   'lunarCalendarNineteen': {
     mainContent: item.itemPage,
     itemCategory: 'lunar-calendar',
-    itemName: 'Orchard Quest<br><span class="normal">2019 lunar calendar<br>by Alec Thibodeau</span>',
+    itemLunarCalendarTitle: 'Orchard Quest',
+    itemLunarCalendarYear: '2019',
+    itemLunarCalendarPaperInfo: 'French Paper Company\'s acid-free 269gsm Pop-Tone Tangy Orange 100# cover paper',
+    itemName: itemInfoUniversals.lunarCalendarItemName,
     itemSubname: '',
     itemImageFront: 'public/images/items/thibodeau_lunar_calendar_2019_main.jpg',
     itemInfoOne: itemInfoUniversals.lunarCalendarInfoOne,
@@ -232,26 +240,15 @@ const itemsInfo = {
       <img src="public/images/items/thibodeau_lunar_calendar_2019_photo_07.jpg" />
       <img id="itemDetails" src="public/images/items/thibodeau_lunar_calendar_2019_photo_08.jpg" />
     `,
-    itemMoreInfo: `
-      <div>
-        <div class="info-block">
-          <span class="ital">Orchard Quest</span> is a letterpress-printed lunar calendar designed and drawn by Alec Thibodeau (me!), 
-          chronicling all phases of the moon for 2019. 
-          From a limited edition of 500 prints <span class="ital">Orchard Quest</span> continues my ongoing lunar calendar series, 
-          which features ornate border drawings in a landscape format. 
-          As with each of my previous lunar calendars, this one measures 19" x 11.75" (a golden rectangle) and is expertly printed by Dan Wood 
-          and his team at <a class="text-link" href="http://www.dwriletterpress.net" target="_blank">DWRI&nbsp;Letterpress</a>.
-        </div>
-        <div class="info-block">
-          The 2019 lunar calendar comprises new drawings and year-specific lunar phase information. 
-          Each calendar is printed on French Paper Company's acid-free 269gsm Pop-Tone Tangy Orange 100# cover paper, blind-debossed with my name and the print shop's name &mdash; and hand numbered and signed by me. 
-          ${itemInfoUniversals.lunarCalendarBottomBlocks}
-    `
+    itemMoreInfo: itemInfoUniversals.lunarCalendarBlocks
   },
   'lunarCalendarEighteen': {
     mainContent: item.itemPage,
     itemCategory: 'lunar-calendar',
-    itemName: 'Shimmery Circuit<br><span class="normal">2018 lunar calendar<br>by Alec Thibodeau</span>',
+    itemLunarCalendarTitle: 'Shimmery Circuit',
+    itemLunarCalendarYear: '2019',
+    itemLunarCalendarPaperInfo: 'French Paper Company\'s acid-free 269gsm Pop-Tone Grape Jelly 100# cover paper',
+    itemName: itemInfoUniversals.lunarCalendarItemName,
     itemSubname: '',
     itemImageFront: 'public/images/items/thibodeau_lunar_calendar_2018_main.jpg',
     itemInfoOne: itemInfoUniversals.lunarCalendarInfoOne,
@@ -276,26 +273,15 @@ const itemsInfo = {
       <img src="public/images/items/thibodeau_lunar_calendar_2018_photo_07.jpg" />
       <img id="itemDetails" src="public/images/items/thibodeau_lunar_calendar_2018_photo_08.jpg" />
     `,
-    itemMoreInfo: `
-      <div>
-        <div class="info-block">
-          <span class="ital">Shimmery Circuit</span> is a letterpress-printed lunar calendar designed and drawn by Alec Thibodeau (me!), 
-          chronicling all phases of the moon for 2018. 
-          From a limited edition of 1000 prints <span class="ital">Shimmery Circuit</span> continues my ongoing lunar calendar series, 
-          which features ornate border drawings in a landscape format. 
-          As with each of my previous lunar calendars, this one measures 19" x 11.75" (a golden rectangle) and is expertly printed by Dan Wood 
-          and his team at <a class="text-link" href="http://www.dwriletterpress.net" target="_blank">DWRI&nbsp;Letterpress</a>.
-        </div>
-        <div class="info-block">
-          The 2018 lunar calendar comprises new drawings and year-specific lunar phase information. 
-          Each calendar is printed on French Paper Company's acid-free 269gsm Pop-Tone Grape Jelly 100# cover paper, blind-debossed with my name and the print shop's name &mdash; and hand numbered and signed by me. 
-          ${itemInfoUniversals.lunarCalendarBottomBlocks}
-    `
+    itemMoreInfo: itemInfoUniversals.lunarCalendarBlocks
   },
   'lunarCalendarSeventeen': {
     mainContent: item.itemPage,
     itemCategory: 'lunar-calendar',
-    itemName: 'I Still See the X<br><span class="normal">2017 lunar calendar<br>by Alec Thibodeau</span>',
+    itemLunarCalendarTitle: 'I Still See the X',
+    itemLunarCalendarYear: '2019',
+    itemLunarCalendarPaperInfo: 'French Paper Company\'s acid-free 269gsm Pop-Tone Razzle Berry 100# cover paper',
+    itemName: itemInfoUniversals.lunarCalendarItemName,
     itemSubname: '',
     itemImageFront: 'public/images/items/thibodeau_lunar_calendar_2017_main.jpg',
     itemInfoOne: itemInfoUniversals.lunarCalendarInfoOne,
@@ -316,21 +302,7 @@ const itemsInfo = {
       <img src="public/images/items/thibodeau_lunar_calendar_2017_photo_05.jpg" />
       <img id="itemDetails" src="public/images/items/thibodeau_lunar_calendar_2017_photo_06.jpg" />
     `,
-    itemMoreInfo: `
-      <div>
-        <div class="info-block">
-          <span class="ital">I Still See the X</span> is a letterpress-printed lunar calendar designed and drawn by Alec Thibodeau (me!), 
-          chronicling all phases of the moon for 2017. 
-          From a limited edition of 1000 prints <span class="ital">I Still See the X</span> continues my ongoing lunar calendar series, 
-          which features ornate border drawings in a landscape format. 
-          As with each of my previous lunar calendars, this one measures 19" x 11.75" (a golden rectangle) and is expertly printed by Dan Wood 
-          and his team at <a class="text-link" href="http://www.dwriletterpress.net" target="_blank">DWRI&nbsp;Letterpress</a>.
-        </div>
-        <div class="info-block">
-          The 2017 lunar calendar comprises new drawings and year-specific lunar phase information. 
-          Each calendar is printed on French Paper Company's acid-free 269gsm Pop-Tone Razzle Berry 100# cover paper, blind-debossed with my name and the print shop's name &mdash; and hand numbered and signed by me. 
-          ${itemInfoUniversals.lunarCalendarBottomBlocks}
-    `
+    itemMoreInfo: itemInfoUniversals.lunarCalendarBlocks
   },
   'postcardAssets': {
     mainContent: item.itemPage,

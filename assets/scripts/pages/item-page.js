@@ -182,33 +182,10 @@ const loadInfoForClassesWithOneOrMoreInstances = (classes) => {
   });
 };
 
-const addToClassList = (selector, className) => {
-  document.querySelector(selector).classList.add(className);
-}
-
-const augmentExistingClasses = (currentPage, item) => {
-    const tagsNeedingAdditionalClasses = [
-      // Add a 'lunar-calendar' class on relevant item page selectors (for item.scss breakpoints)
-      ['container-one', item.itemCategory],
-      ['item-info-block', item.itemCategory],
-      ['payment-info', item.itemCategory],
-      ['item-price-container', item.itemCategory],
-      ['container-three', 'shown']
-    ]
-
-    if (currentPage.startsWith('lunarCalendar')) {
-      tagsNeedingAdditionalClasses.forEach(function (tag) {
-        addToClassList(`.${tag[0]}`, tag[1]);
-      });
-      const lunarCalendarAdditional = [
-        ['feature-image-link', '#itemDetails'],
-        ['container-three', containerThreeContent]
-      ]
-      loadInfoForClassesWithOneOrMoreInstances(lunarCalendarAdditional);
-    } else if (currentPage.startsWith('print')) {
-      // Also: Add class to center content on any print page (in item.scss)
-      document.querySelector('.container-one').classList.add('print');
-    };
+const augmentExistingClasses = (tags) => {
+  tags.forEach(function (tag) {
+    document.querySelector(`.${tag[0]}`).classList.add(tag[1]);
+  });
 }
 
 const itemLoad = function (currentPage) {
@@ -241,7 +218,33 @@ const itemLoad = function (currentPage) {
     showAndLoadContainer('container-two');
   }
   loadInfoForClassesWithOneOrMoreInstances(defaultClassNamesWithInfoToLoad);
-  augmentExistingClasses(currentPage, item);
+
+  if (currentPage.startsWith('lunarCalendar')) {
+
+    const tagsNeedingAdditionalClasses = [
+      // Add a 'lunar-calendar' or 'shown' class on relevant item page selectors (mainly for item.scss breakpoints)
+      ['container-one', item.itemCategory],
+      ['item-info-block', item.itemCategory],
+      ['payment-info', item.itemCategory],
+      ['item-price-container', item.itemCategory],
+      ['container-three', 'shown']
+    ]
+    augmentExistingClasses(tagsNeedingAdditionalClasses);
+
+    // Load additional content for a lunar calendar item page
+    const lunarCalendarPageAdditionalLoad = [
+      ['feature-image-link', '#itemDetails'],
+      ['container-three', containerThreeContent]
+    ]
+    loadInfoForClassesWithOneOrMoreInstances(lunarCalendarPageAdditionalLoad);
+
+  }  else if (currentPage.startsWith('print')) {
+    // Add class to center content on any print page (in item.scss)
+    const printPageAdditionalLoad = [
+      ['container-one', 'print']
+    ]
+    augmentExistingClasses(printPageAdditionalLoad);
+  };
 }
 
 export default {
