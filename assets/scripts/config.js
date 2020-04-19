@@ -62,7 +62,7 @@ const itemInfoUniversals = {
   printPrice: 15
 }
 
-const pagesInfo = {
+const itemsInfo = {
   'home': {
     mainContent: home.homePage
   },
@@ -445,5 +445,5 @@ const pagesInfo = {
 };
 
 export default {
-  pagesInfo
+  itemsInfo
 };

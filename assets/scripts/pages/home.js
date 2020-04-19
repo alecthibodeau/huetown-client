@@ -73,62 +73,64 @@ let homePage = `
   </div>
 `;
 
-const itemLoad = function () {
-  let itemsToLoad = [
-    'drawingBisonBreathes',
-    'drawingButternutBear',
-    'drawingHawkHeralds',
-    'drawingPinkMoon2020',
-    'drawingRobinReveals',
-    'drawingWormMoon2020'
-  ];
+const itemsToLoad = [
+  'drawingBisonBreathes',
+  'drawingButternutBear',
+  'drawingHawkHeralds',
+  'drawingPinkMoon2020',
+  'drawingRobinReveals',
+  'drawingWormMoon2020'
+];
 
-  // Create and customize each item
+const setCustomClassesAndAddContent = (classes, itemProperties) => {
+  classes.forEach(function (element) {
+    if (element[1]) {
+      const content = element[1];
+      const customClass = `${element[0]}-${itemProperties.itemClass}`;
+      document.querySelector(`.${element[0]}`).setAttribute('class', customClass);
+      const customElement = document.querySelector(`.${customClass}`);
+      switch (customElement.nodeName) {
+        case 'IMG':
+          customElement.src = content;
+          break;
+        case 'INPUT':
+          customElement.value = content;
+          break;
+        case 'DIV':
+        case 'SPAN':
+          customElement.innerHTML = content;
+      }
+    }
+  });
+};
+
+const loadCreatedItem = (itemElement) => {
+  itemElement.setAttribute('class', 'drawing-item');
+  itemElement.innerHTML = drawingItem;
+  document.getElementById('drawingsItems').appendChild(itemElement);
+};
+
+const itemCreate = () => {
   for (const item of itemsToLoad) {
-    let itemProperties = config.pagesInfo[item]
-    let itemElement = document.createElement('div');
-    itemElement.setAttribute('id', item);
-    itemElement.setAttribute('class', 'drawing-item');
-    document.getElementById('drawingsItems').appendChild(itemElement);
-    itemElement.innerHTML = drawingItem;
-
-    let htmlToFill = [
-      // These are the default class names
+    const itemProperties = config.itemsInfo[item]
+    const defaultClassNamesWithPropertiesToAdd = [
       ['item-name', itemProperties.itemName],
       ['item-subname', itemProperties.itemSubname],
       ['item-info-one', itemProperties.itemInfoOne],
       ['item-info-two', itemProperties.itemInfoTwo],
       ['item-info-three', itemProperties.itemInfoThree],
       ['item-info-four', itemProperties.itemInfoFour],
-      ['item-price', itemProperties.itemPrice]
+      ['item-price', itemProperties.itemPrice],
+      ['feature-image', itemProperties.itemImageFront],
+      ['item-id', itemProperties.itemId]
     ];
-
-    // Set a custom class for the item's image and add the source
-    const featureImage = 'feature-image';
-    const customImageClass = `${featureImage}-${itemProperties.itemClass}`;
-    document.querySelector(`.${featureImage}`).setAttribute('class', customImageClass);
-    document.querySelector(`.${customImageClass}`).src = itemProperties.itemImageFront;
-
-    // Set a custom class for the item's image and add the source
-    const itemId = 'item-id';
-    const customIdClass = `${itemId}-${itemProperties.itemClass}`;
-    document.querySelector(`.${itemId}`).setAttribute('class', customIdClass);
-    document.querySelector(`.${customIdClass}`).value = itemProperties.itemId;
-
-    console.log(itemProperties.itemId);
-
-    // Set custom classes for the item's elements and fill their HTML
-    htmlToFill.forEach(function (element) {
-      if (element[1]) {
-        const customClass = `${element[0]}-${itemProperties.itemClass}`;
-        document.querySelector(`.${element[0]}`).setAttribute('class', `${customClass}`);
-        document.querySelector(`.${customClass}`).innerHTML = element[1];
-      }
-    });
+    const itemElement = document.createElement('div');
+    loadCreatedItem(itemElement);
+    setCustomClassesAndAddContent (defaultClassNamesWithPropertiesToAdd, itemProperties);
   }
-}
+};
 
 export default {
   homePage,
-  itemLoad
+  itemCreate
 };

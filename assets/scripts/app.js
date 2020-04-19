@@ -67,7 +67,7 @@ document.addEventListener('DOMContentLoaded', function () {
     
     // Get page-value
     let pageValue = bodyDiv.getAttribute('page-value');
-    let page = config.pagesInfo[pageValue];
+    let page = config.itemsInfo[pageValue];
     
     // Load body content before loading mainDiv
     bodyDiv.innerHTML = body.bodyContent;
@@ -81,7 +81,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
       // Home page: If home page then load additional home content
       if (pageValue === 'home') {
-        home.itemLoad();
+        home.itemCreate();
       };
 
       // Item page: If an item page then load item content

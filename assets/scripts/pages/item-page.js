@@ -146,7 +146,7 @@ let itemPage = `
 `;
 
 const itemLoad = function (currentPage) {
-  let item = config.pagesInfo[currentPage]
+  let item = config.itemsInfo[currentPage]
   let htmlToFill = [
     // container-one content starts here
     ['item-name', item.itemName],
