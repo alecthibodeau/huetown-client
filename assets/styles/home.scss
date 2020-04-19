@@ -1,19 +1,16 @@
 // Selector for .home-page
 @mixin home-content {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
   margin-bottom: 2rem;
   
   .content-top {
     display: flex;
     align-items: center;
     justify-content: space-around;
-    margin-bottom: 2rem;
+    margin: 0 $page-gutter;
 
     .image-link {
       max-height: 56vw;
-      border: 1px solid black;
+      border: 1px solid $thirty-percent-gray;
     }
 
     img {
@@ -31,60 +28,56 @@
     }
   }
 
-  .unbound-bottom {
-    display: flex;
-    align-items: center;
-
-    .unbound-description {
-      margin: 0 1rem 1rem 0;
-    }
-
-    .foldem-funnies {
-      text-align: center;
-    }
-
-    img {
-      display: block;
-      height: 250px;
-      margin-bottom: .5rem;
-    }
-  }
-
   .drawings-section {
     display: flex;
     flex-direction: column;
     justify-content: center;
   }
 
-  .drawings-title {
-    margin: 2rem 0 1rem;
+  .drawings-title-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 6vw;
+    margin: 4rem 0 3rem;
+    background-color: $huetown-blue;
     text-align: center;
+  }
+
+  .drawings-title {
     text-transform: uppercase;
-    font-size: 2rem;;
+    font-size: 3rem;
+    color: $white;
+    letter-spacing: 0.3125rem;
+  }
+
+  .drawings-description {
+    margin: 0 $page-gutter 3rem;
   }
 
   .drawing-item {
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-bottom: 4rem;;
+    margin-bottom: 4rem;
   }
 
   .drawing-image {
-    margin-right: 1rem;
+    margin-right: 2rem;
 
     img {
-      // max-height: 500px;
-      max-height: 200px;
-      border: 1px solid $black;
+      max-height: 500px;
+      border: 1px solid $thirty-percent-gray;
     }
   }
 
   .drawing-info {
+    width: 260px;
 
-    [class^="item-name"] {
-      font-size: 2rem;
+    .item-info-text [class^="item-name"] {
+      font-size: 3rem;
       font-weight: 700;
+      color: $huetown-blue;
     }
   }
 
@@ -95,7 +88,6 @@
   }
 
   .item-price-container {
-    position: relative;
     margin: 10px 0;
     font-size: 2rem;
     font-weight: 600;
@@ -115,22 +107,28 @@
     }
   }
 
-  .lunar-calendar-available {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin-top: 2rem;
+  ///* MEDIA QUERIES *///
 
-    img {
-      max-height: 30vw;
+  @media only screen and (max-width: 850px) {
+
+    .drawing-info {
+      width: 200px;
     }
   }
 
-  .available-text {
-    margin-left: 1rem;
-  }
+  @media only screen and (max-width: 750px) {
 
-  ///* MEDIA QUERIES *///
+    .drawing-image {
+
+      img {
+        max-height: 60vw;
+      }
+    }
+
+    .drawing-info {
+      width: unset;
+    }
+  }
 
   @media only screen and (max-width: 650px) {
     .content-top {
@@ -144,16 +142,14 @@
 
     }
 
-    .unbound-bottom {    
-      flex-direction: column;
+    .drawings-title-container {
+      padding: 4vw;
+      margin: 3rem 0 2rem;
+    }
   
-      .unbound-description {
-        margin: 0 0 1rem 0;
-      }
-
-      img {
-        max-height: 40vw;
-      }
+    .drawings-title {
+      font-size: 2rem;
+      // letter-spacing: 0.3125rem;
     }
 
     .drawing-item {
@@ -164,16 +160,16 @@
       margin-right: unset;
   
       img {
-        max-height: 40vw;
+        max-height: 80vw;
       }
     }
 
-    .lunar-calendar-available {
-      flex-direction: column;
+    .item-info-text {
+      margin-top: .5rem;
     }
-
-    .available-text {
-      margin-left: unset;
+    
+    .item-price-container {
+      margin: 5px 0;
     }
   }
 }

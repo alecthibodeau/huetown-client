@@ -10,7 +10,7 @@ $icon-height: 4rem;
 
 // Primary mixin: selector for footer tag
 @mixin footer-content {
-  width: 90%;
+  width: $page-width;
   display: flex;
   justify-content: center;
   border-top: 2px solid $fifty-percent-gray;
