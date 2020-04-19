@@ -60,13 +60,14 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-bottom: 4rem;
+    margin-bottom: 5rem;
   }
 
   .drawing-image {
     margin-right: 2rem;
 
     img {
+      display: block;
       max-height: 500px;
       border: 1px solid $thirty-percent-gray;
     }
@@ -151,7 +152,6 @@
   
     .drawings-title {
       font-size: 2rem;
-      // letter-spacing: 0.3125rem;
     }
 
     .drawing-item {
@@ -166,12 +166,18 @@
       }
     }
 
-    .item-info-text {
-      margin-top: .5rem;
+    .drawing-info {
+      width: unset;
     }
     
+    .payment-info {
+      flex-direction: row;
+      justify-content: flex-start;
+      margin-top: .5rem;
+    }
+
     .item-price-container {
-      margin: 5px 0;
+      margin: .5rem 1rem .5rem 0;
     }
   }
 }

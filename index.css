@@ -461,12 +461,13 @@ PAGES
   display: flex;
   align-items: center;
   justify-content: center;
-  margin-bottom: 4rem;
+  margin-bottom: 5rem;
 }
 .home-page .drawing-image {
   margin-right: 2rem;
 }
 .home-page .drawing-image img {
+  display: block;
   max-height: 500px;
   border: 1px solid #b3b3b3;
 }
@@ -542,11 +543,16 @@ PAGES
   .home-page .drawing-image img {
     max-height: 80vw;
   }
-  .home-page .item-info-text {
+  .home-page .drawing-info {
+    width: unset;
+  }
+  .home-page .payment-info {
+    flex-direction: row;
+    justify-content: flex-start;
     margin-top: 0.5rem;
   }
   .home-page .item-price-container {
-    margin: 5px 0;
+    margin: 0.5rem 1rem 0.5rem 0;
   }
 }
 

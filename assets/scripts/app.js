@@ -71,7 +71,7 @@ const loadMainContent = (bodyDiv, pageValue, page) => {
 
 const loadBodyContent = () => {
   const bodyDiv = document.getElementById('body');
-  const pageValue = document.getElementById('body').getAttribute('page-value');
+  const pageValue = bodyDiv.getAttribute('page-value');
   const page = config.itemsInfo[pageValue];
   
   bodyDiv.innerHTML = body.bodyContent;
