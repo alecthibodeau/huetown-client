@@ -2,7 +2,6 @@
 
 import config from '../config.js';
 
-// Additional item content
 let drawingItem = `
   <div class="drawing-image">
     <img class="feature-image" src="" />
@@ -60,7 +59,7 @@ let homePage = `
       </div>
 
       <div class="drawings-description">
-        These drawings are one-of-a-kind pieces in pen and ink on Bristol board. Usually I'd be offering them through venues such as gallerys and festivals. Since everyone is at home now they're avaialble here.
+        These drawings are one-of-a-kind pieces in pen and ink on Bristol board. Usually I'd be offering them through venues such as gallerys and festivals. Since we're all at home now they're avaialble here.
       </div>
 
       <div class="drawings-section">
@@ -82,6 +81,32 @@ const itemsToLoad = [
   'drawingWormMoon2020'
 ];
 
+const itemCreate = () => {
+  for (const item of itemsToLoad) {
+    const itemProperties = config.itemsInfo[item]
+    const defaultClassNamesWithPropertiesToAdd = [
+      ['item-name', itemProperties.itemName],
+      ['item-subname', itemProperties.itemSubname],
+      ['item-info-one', itemProperties.itemInfoOne],
+      ['item-info-two', itemProperties.itemInfoTwo],
+      ['item-info-three', itemProperties.itemInfoThree],
+      ['item-info-four', itemProperties.itemInfoFour],
+      ['item-price', itemProperties.itemPrice],
+      ['feature-image', itemProperties.itemImageFront],
+      ['item-id', itemProperties.itemId]
+    ];
+    const itemElement = document.createElement('div');
+    loadCreatedItem(itemElement);
+    setCustomClassesAndAddContent (defaultClassNamesWithPropertiesToAdd, itemProperties);
+  }
+};
+
+const loadCreatedItem = (itemElement) => {
+  itemElement.setAttribute('class', 'drawing-item');
+  itemElement.innerHTML = drawingItem;
+  document.getElementById('drawingsItems').appendChild(itemElement);
+};
+
 const setCustomClassesAndAddContent = (classes, itemProperties) => {
   classes.forEach(function (element) {
     if (element[1]) {
@@ -102,32 +127,6 @@ const setCustomClassesAndAddContent = (classes, itemProperties) => {
       }
     }
   });
-};
-
-const loadCreatedItem = (itemElement) => {
-  itemElement.setAttribute('class', 'drawing-item');
-  itemElement.innerHTML = drawingItem;
-  document.getElementById('drawingsItems').appendChild(itemElement);
-};
-
-const itemCreate = () => {
-  for (const item of itemsToLoad) {
-    const itemProperties = config.itemsInfo[item]
-    const defaultClassNamesWithPropertiesToAdd = [
-      ['item-name', itemProperties.itemName],
-      ['item-subname', itemProperties.itemSubname],
-      ['item-info-one', itemProperties.itemInfoOne],
-      ['item-info-two', itemProperties.itemInfoTwo],
-      ['item-info-three', itemProperties.itemInfoThree],
-      ['item-info-four', itemProperties.itemInfoFour],
-      ['item-price', itemProperties.itemPrice],
-      ['feature-image', itemProperties.itemImageFront],
-      ['item-id', itemProperties.itemId]
-    ];
-    const itemElement = document.createElement('div');
-    loadCreatedItem(itemElement);
-    setCustomClassesAndAddContent (defaultClassNamesWithPropertiesToAdd, itemProperties);
-  }
 };
 
 export default {
