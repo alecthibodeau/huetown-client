@@ -1,4 +1,7 @@
 /************************************
+DIMENSIONS
+************************************/
+/************************************
 COLOR VARIABLES
 ************************************/
 @import url("https://fonts.googleapis.com/css?family=Raleway:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i|Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i");
@@ -38,7 +41,6 @@ html {
 }
 html body {
   width: 100%;
-  max-width: 1200px;
   height: 100%;
   margin: 0 auto;
   background: #fff;
@@ -323,7 +325,8 @@ html body header .nav-menu-icons section a img {
 }
 html body main {
   position: relative;
-  width: 90%;
+  display: flex;
+  justify-content: center;
   margin: 0 auto;
   font-family: "Open Sans", sans-serif;
   font-size: 1.4rem;
@@ -407,87 +410,146 @@ html body footer section:nth-of-type(3) div {
 PAGES
 ************/
 .home-page {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
   margin-bottom: 2rem;
 }
-.home-page .unbound-top {
+.home-page .content-top {
   display: flex;
   align-items: center;
   justify-content: space-around;
-  margin-bottom: 2rem;
+  margin: 0 5%;
 }
-.home-page .unbound-top img {
+.home-page .content-top .image-link {
+  max-height: 56vw;
+  border: 1px solid #b3b3b3;
+}
+.home-page .content-top img {
+  display: block;
   max-height: 56vw;
   border: 1px solid #000;
 }
-.home-page .unbound-announcement {
+.home-page .announcement {
   margin-left: 1rem;
 }
-.home-page .unbound-announcement .extension {
-  margin-top: 1rem;
+.home-page .announcement .sig {
+  margin-right: 1rem;
+  text-align: right;
 }
-.home-page .unbound-bottom {
+.home-page .drawings-section {
   display: flex;
-  align-items: center;
+  flex-direction: column;
+  justify-content: center;
 }
-.home-page .unbound-bottom .unbound-description {
-  margin: 0 1rem 1rem 0;
-}
-.home-page .unbound-bottom .foldem-funnies {
-  text-align: center;
-}
-.home-page .unbound-bottom img {
-  display: block;
-  height: 250px;
-  margin-bottom: 0.5rem;
-}
-.home-page .unbound-description {
-  margin-bottom: 1rem;
-}
-.home-page .lunar-calendar-available {
+.home-page .drawings-title-container {
   display: flex;
   align-items: center;
   justify-content: center;
-  margin-top: 2rem;
+  padding: 6vw;
+  margin: 4rem 0 3rem;
+  background-color: #6ecde5;
+  text-align: center;
 }
-.home-page .lunar-calendar-available img {
-  max-height: 30vw;
+.home-page .drawings-title {
+  text-transform: uppercase;
+  font-size: 3rem;
+  color: #fff;
+  letter-spacing: 0.3125rem;
 }
-.home-page .available-text {
-  margin-left: 1rem;
+.home-page .drawings-description {
+  margin: 0 5% 3rem;
+}
+.home-page .drawing-item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 4rem;
+}
+.home-page .drawing-image {
+  margin-right: 2rem;
+}
+.home-page .drawing-image img {
+  max-height: 500px;
+  border: 1px solid #b3b3b3;
+}
+.home-page .drawing-info {
+  width: 260px;
+}
+.home-page .drawing-info .item-info-text [class^=item-name] {
+  font-size: 3rem;
+  font-weight: 700;
+  color: #6ecde5;
+}
+.home-page .payment-info {
+  display: flex;
+  flex-direction: column;
+}
+.home-page .item-price-container {
+  margin: 10px 0;
+  font-size: 2rem;
+  font-weight: 600;
+}
+.home-page form input[value="add to cart"] {
+  border: none;
+  border-radius: 6px;
+  background: #666;
+  color: #fff;
+  font-family: "Raleway", sans-serif;
+  font-size: 1.4rem;
+  font-weight: 600;
+  letter-spacing: 0.3125rem;
+  text-transform: uppercase;
+  cursor: pointer;
+  width: 16rem;
+  min-height: 4rem;
+}
+.home-page form input[value="add to cart"]:hover {
+  background: #ff9600;
+}
+@media only screen and (max-width: 850px) {
+  .home-page .drawing-info {
+    width: 200px;
+  }
+}
+@media only screen and (max-width: 750px) {
+  .home-page .drawing-image img {
+    max-height: 60vw;
+  }
+  .home-page .drawing-info {
+    width: unset;
+  }
 }
 @media only screen and (max-width: 650px) {
-  .home-page .unbound-top {
+  .home-page .content-top {
     flex-direction: column;
     justify-content: center;
   }
-  .home-page .unbound-announcement {
+  .home-page .announcement {
     margin-left: unset;
     margin-top: 1rem;
   }
-  .home-page .unbound-bottom {
+  .home-page .drawings-title-container {
+    padding: 4vw;
+    margin: 3rem 0 2rem;
+  }
+  .home-page .drawings-title {
+    font-size: 2rem;
+  }
+  .home-page .drawing-item {
     flex-direction: column;
   }
-  .home-page .unbound-bottom .unbound-description {
-    margin: 0 0 1rem 0;
+  .home-page .drawing-image {
+    margin-right: unset;
   }
-  .home-page .unbound-bottom img {
-    max-height: 40vw;
+  .home-page .drawing-image img {
+    max-height: 80vw;
   }
-  .home-page .lunar-calendar-available {
-    flex-direction: column;
+  .home-page .item-info-text {
+    margin-top: 0.5rem;
   }
-  .home-page .available-text {
-    margin-left: unset;
+  .home-page .item-price-container {
+    margin: 5px 0;
   }
 }
 
-.lunar-calendars-page {
-  max-width: 735px;
-  margin: 0 auto;
-}
 .lunar-calendars-page .content-container {
   display: flex;
   justify-content: space-around;
@@ -497,6 +559,7 @@ PAGES
 }
 .lunar-calendars-page .content-block {
   text-align: center;
+  margin: 0 18px;
 }
 .lunar-calendars-page .content-block a {
   display: block;
@@ -512,7 +575,6 @@ PAGES
 .lunar-calendars-page .content-block a.prints {
   width: 320px;
   height: 320px;
-  margin: 0 10px;
 }
 .lunar-calendars-page .content-block a.prints img {
   max-width: 320px;
@@ -599,10 +661,6 @@ PAGES
   }
 }
 
-.prints-page {
-  max-width: 735px;
-  margin: 0 auto;
-}
 .prints-page .content-container {
   display: flex;
   justify-content: space-around;
@@ -612,6 +670,7 @@ PAGES
 }
 .prints-page .content-block {
   text-align: center;
+  margin: 0 18px;
 }
 .prints-page .content-block a {
   display: block;
@@ -627,7 +686,6 @@ PAGES
 .prints-page .content-block a.prints {
   width: 320px;
   height: 320px;
-  margin: 0 10px;
 }
 .prints-page .content-block a.prints img {
   max-width: 320px;
@@ -714,10 +772,6 @@ PAGES
   }
 }
 
-.postcards-page {
-  max-width: 735px;
-  margin: 0 auto;
-}
 .postcards-page .content-container {
   display: flex;
   justify-content: space-around;
@@ -727,6 +781,7 @@ PAGES
 }
 .postcards-page .content-block {
   text-align: center;
+  margin: 0 18px;
 }
 .postcards-page .content-block a {
   display: block;
@@ -742,7 +797,6 @@ PAGES
 .postcards-page .content-block a.prints {
   width: 320px;
   height: 320px;
-  margin: 0 10px;
 }
 .postcards-page .content-block a.prints img {
   max-width: 320px;
@@ -829,6 +883,9 @@ PAGES
   }
 }
 
+.about-page {
+  width: 90%;
+}
 .about-page .about-top {
   display: flex;
   justify-content: flex-start;
@@ -867,6 +924,7 @@ PAGES
 }
 
 .item-page {
+  width: 90%;
   margin-bottom: 20px;
 }
 .item-page .content-container {

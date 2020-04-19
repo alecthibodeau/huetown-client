@@ -1,99 +1,178 @@
 // Selector for .home-page
 @mixin home-content {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
   margin-bottom: 2rem;
   
-  .unbound-top {
+  .content-top {
     display: flex;
     align-items: center;
     justify-content: space-around;
-    margin-bottom: 2rem;
+    margin: 0 $page-gutter;
+
+    .image-link {
+      max-height: 56vw;
+      border: 1px solid $thirty-percent-gray;
+    }
 
     img {
+      display: block;
       max-height: 56vw;
       border: 1px solid $black;
     }
   }
 
-  .unbound-announcement {
+  .announcement {
     margin-left: 1rem;
 
-    .extension {
-      margin-top: 1rem;  
+    .sig {
+      margin-right: 1rem;
+      text-align: right;
     }
   }
 
-  .unbound-bottom {
+  .drawings-section {
     display: flex;
-    align-items: center;
-
-    .unbound-description {
-      margin: 0 1rem 1rem 0;
-    }
-
-    .foldem-funnies {
-      text-align: center;
-    }
-
-    img {
-      display: block;
-      height: 250px;
-      margin-bottom: .5rem;
-    }
+    flex-direction: column;
+    justify-content: center;
   }
 
-  .unbound-description {
-    margin-bottom: 1rem;
-  }
-
-  .lunar-calendar-available {
+  .drawings-title-container {
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-top: 2rem;
+    padding: 6vw;
+    margin: 4rem 0 3rem;
+    background-color: $huetown-blue;
+    text-align: center;
+  }
+
+  .drawings-title {
+    text-transform: uppercase;
+    font-size: 3rem;
+    color: $white;
+    letter-spacing: 0.3125rem;
+  }
+
+  .drawings-description {
+    margin: 0 $page-gutter 3rem;
+  }
+
+  .drawing-item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 4rem;
+  }
+
+  .drawing-image {
+    margin-right: 2rem;
 
     img {
-      max-height: 30vw;
+      max-height: 500px;
+      border: 1px solid $thirty-percent-gray;
     }
   }
 
-  .available-text {
-    margin-left: 1rem;
+  .drawing-info {
+    width: 260px;
+
+    .item-info-text [class^="item-name"] {
+      font-size: 3rem;
+      font-weight: 700;
+      color: $huetown-blue;
+    }
+  }
+
+  // Compare to item page
+  .payment-info {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .item-price-container {
+    margin: 10px 0;
+    font-size: 2rem;
+    font-weight: 600;
+  }
+
+  form {
+
+    input[value="add to cart"] {
+      @include item-page-button-styles;
+
+      width: 16rem;
+      min-height: 4rem;
+      
+      &:hover {
+        background: $orange-muted;
+      }
+    }
+  }
+
+  ///* MEDIA QUERIES *///
+
+  @media only screen and (max-width: 850px) {
+
+    .drawing-info {
+      width: 200px;
+    }
+  }
+
+  @media only screen and (max-width: 750px) {
+
+    .drawing-image {
+
+      img {
+        max-height: 60vw;
+      }
+    }
+
+    .drawing-info {
+      width: unset;
+    }
   }
 
   ///* MEDIA QUERIES *///
 
   @media only screen and (max-width: 650px) {
-    .unbound-top {
+    .content-top {
       flex-direction: column;
       justify-content: center;
     }
 
-    .unbound-announcement {
+    .announcement {
       margin-left: unset;
       margin-top: 1rem;
+
     }
 
-    .unbound-bottom {    
-      flex-direction: column;
+    .drawings-title-container {
+      padding: 4vw;
+      margin: 3rem 0 2rem;
+    }
   
-      .unbound-description {
-        margin: 0 0 1rem 0;
-      }
-
-      img {
-        max-height: 40vw;
-      }
+    .drawings-title {
+      font-size: 2rem;
+      // letter-spacing: 0.3125rem;
     }
 
-    .lunar-calendar-available {
+    .drawing-item {
       flex-direction: column;
     }
 
-    .available-text {
-      margin-left: unset;
+    .drawing-image {
+      margin-right: unset;
+  
+      img {
+        max-height: 80vw;
+      }
+    }
+
+    .item-info-text {
+      margin-top: .5rem;
+    }
+    
+    .item-price-container {
+      margin: 5px 0;
     }
   }
 }

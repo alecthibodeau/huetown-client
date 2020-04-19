@@ -12,6 +12,11 @@ import veganly from './pages/veganly.js';
 import item from './pages/item-page.js';
 
 const itemInfoUniversals = {
+  drawingInfoOriginalDrawing: 'original drawing',
+  drawingInfoPenAndInk: 'pen and ink on Bristol board',
+  drawingInfoThreeAndQuarterInches: '3.25 x 3.25 inches',
+  drawingInfoSignedOnBack: 'signed on the back',
+  drawingPrice: 55,
   lunarCalendarPrice: 40,
   lunarCalendarInfoOne: '19 x 11.75 inches<br>Letterpress print<br>Printed by DWRI Letterpress',
   lunarCalendarInfoTwo: '',
@@ -75,6 +80,84 @@ const pagesInfo = {
   },
   'veganly': {
     mainContent: veganly.veganlyPage
+  },
+  'drawingBisonBreathes': {
+    itemClass: 'drawing-bison-breathes',
+    itemCategory: 'drawing',
+    itemName: 'Bison Breathes',
+    itemSubname: '',
+    itemImageFront: 'public/images/home/drawings/drawing_bison_breathes_gs_500px.png',
+    itemInfoOne: itemInfoUniversals.drawingInfoOriginalDrawing,
+    itemInfoTwo: itemInfoUniversals.drawingInfoPenAndInk,
+    itemInfoThree: itemInfoUniversals.drawingInfoThreeAndQuarterInches,
+    itemInfoFour: itemInfoUniversals.drawingInfoSignedOnBack,
+    itemPrice: itemInfoUniversals.drawingPrice,
+    itemId: 'P32KQAB5THSDE'
+  },
+  'drawingButternutBear': {
+    itemClass: 'drawing-butternut-bear',
+    itemCategory: 'drawing',
+    itemName: 'Butternut Bear',
+    itemSubname: '',
+    itemImageFront: 'public/images/home/drawings/drawing_butternut_bear_gs_500px.png',
+    itemInfoOne: itemInfoUniversals.drawingInfoOriginalDrawing,
+    itemInfoTwo: itemInfoUniversals.drawingInfoPenAndInk,
+    itemInfoThree: itemInfoUniversals.drawingInfoThreeAndQuarterInches,
+    itemInfoFour: itemInfoUniversals.drawingInfoSignedOnBack,
+    itemPrice: itemInfoUniversals.drawingPrice,
+    itemId: 'ZPDMSTPEF8498'
+  },
+  'drawingHawkHeralds': {
+    itemClass: 'drawing-hawk-heralds',
+    itemCategory: 'drawing',
+    itemName: 'Hawk Heralds',
+    itemSubname: '',
+    itemImageFront: 'public/images/home/drawings/drawing_hawk_heralds_gs_500px.png',
+    itemInfoOne: itemInfoUniversals.drawingInfoOriginalDrawing,
+    itemInfoTwo: itemInfoUniversals.drawingInfoPenAndInk,
+    itemInfoThree: itemInfoUniversals.drawingInfoThreeAndQuarterInches,
+    itemInfoFour: itemInfoUniversals.drawingInfoSignedOnBack,
+    itemPrice: itemInfoUniversals.drawingPrice,
+    itemId: 'DS7X4RVHNZXJS'
+  },
+  'drawingPinkMoon2020': {
+    itemClass: 'drawing-pink-moon-2020',
+    itemCategory: 'drawing',
+    itemName: 'Pink Moon 2020',
+    itemSubname: '',
+    itemImageFront: 'public/images/home/drawings/drawing_pink_moon_2020_gs_500px.png',
+    itemInfoOne: itemInfoUniversals.drawingInfoOriginalDrawing,
+    itemInfoTwo: itemInfoUniversals.drawingInfoPenAndInk,
+    itemInfoThree: itemInfoUniversals.drawingInfoThreeAndQuarterInches,
+    itemInfoFour: itemInfoUniversals.drawingInfoSignedOnBack,
+    itemPrice: itemInfoUniversals.drawingPrice,
+    itemId: 'WXGKHV6QX86BU'
+  },
+  'drawingRobinReveals': {
+    itemClass: 'drawing-robin-reveals',
+    itemCategory: 'drawing',
+    itemName: 'Robin Reveals',
+    itemSubname: '',
+    itemImageFront: 'public/images/home/drawings/drawing_robin_reveals_gs_500px.png',
+    itemInfoOne: itemInfoUniversals.drawingInfoOriginalDrawing,
+    itemInfoTwo: itemInfoUniversals.drawingInfoPenAndInk,
+    itemInfoThree: itemInfoUniversals.drawingInfoThreeAndQuarterInches,
+    itemInfoFour: itemInfoUniversals.drawingInfoSignedOnBack,
+    itemPrice: itemInfoUniversals.drawingPrice,
+    itemId: '27MQ7DNEX9DC2'
+  },
+  'drawingWormMoon2020': {
+    itemClass: 'drawing-worm-moon-2020',
+    itemCategory: 'drawing',
+    itemName: 'Worm Moon 2020',
+    itemSubname: '',
+    itemImageFront: 'public/images/home/drawings/drawing_worm_moon_2020_gs_500px.png',
+    itemInfoOne: itemInfoUniversals.drawingInfoOriginalDrawing,
+    itemInfoTwo: itemInfoUniversals.drawingInfoPenAndInk,
+    itemInfoThree: itemInfoUniversals.drawingInfoThreeAndQuarterInches,
+    itemInfoFour: itemInfoUniversals.drawingInfoSignedOnBack,
+    itemPrice: itemInfoUniversals.drawingPrice,
+    itemId: 'CCQ8NV9K78FNQ'
   },
   'lunarCalendarTwenty': {
     mainContent: item.itemPage,
