@@ -22,8 +22,19 @@ const itemInfoUniversals = {
   lunarCalendarInfoTwo: '',
   lunarCalendarInfoThree: 'Hand numbered and signed by the artist in a limited edition of prints',
   lunarCalendarInfoFour: 'Ships rolled and triple-packaged: archival wrapping, <a class="text-link" href="#phaseInfo">eco-friendly protective tube</a> and outer shipping container',
-  lunarCalendarBottomBlocks: `
-      Each calendar ships with an accompanying information sheet, archival wrapping and an eco-friendly fiberboard protective tube: reusable, recycled and recyclable, with crimped ends and no plastic caps.
+  lunarCalendarBlocks: `
+    <div>
+      <div class="info-block">
+        <span class="lunar-calendar-title ital"></span> is a letterpress-printed lunar calendar designed and drawn by Alec Thibodeau (me!), 
+        chronicling all phases of the moon for <span class="lunar-calendar-year"></span>. 
+        From a limited edition of 500 prints <span class="lunar-calendar-title ital"></span> continues my ongoing lunar calendar series, 
+        which features ornate border drawings in a landscape format. 
+        As with each of my previous lunar calendars, this one measures 19" x 11.75" (a golden rectangle) and is expertly printed by Dan Wood 
+        and his team at <a class="text-link" href="http://www.dwriletterpress.net" target="_blank">DWRI&nbsp;Letterpress</a>.
+      </div>
+      <div class="info-block">
+        The <span class="lunar-calendar-year"></span> lunar calendar comprises new drawings and year-specific lunar phase information. 
+        Each calendar is printed on <span class="lunar-calendar-paper-info"></span>, blind-debossed with my name and the print shop's name &mdash; and hand numbered and signed by me. Each calendar ships with an accompanying information sheet, archival wrapping and an eco-friendly fiberboard protective tube: reusable, recycled and recyclable, with crimped ends and no plastic caps.
       </div>
       <div class="info-block">
         The calendar's lunar phase information is calibrated for any place in the Eastern Time Zone and is accurate to within a day for any place in the Northern Hemisphere. The calendar is designed, drawn and printed in Providence, Rhode Island, which is identified as a representative location within the artwork.
@@ -162,6 +173,9 @@ const itemsInfo = {
   'lunarCalendarTwenty': {
     mainContent: item.itemPage,
     itemCategory: 'lunar-calendar',
+    itemLunarCalendarTitle: 'The Instruments Agree',
+    itemLunarCalendarYear: '2020',
+    itemLunarCalendarPaperInfo: 'Mohawk Fine Papers\' acid-free 300gsm Keaykolour Caribbean Blue 111# cover paper',
     itemName: 'The Instruments Agree<br><span class="normal">2020 lunar calendar<br>by Alec Thibodeau</span>',
     itemSubname: '',
     itemImageFront: 'public/images/items/thibodeau_lunar_calendar_2020_photo_main_1000px.jpg',
@@ -188,21 +202,7 @@ const itemsInfo = {
     <img src="public/images/items/thibodeau_lunar_calendar_2020_photo_05_1000px.jpg" />
     <img id="itemDetails" src="public/images/items/thibodeau_lunar_calendar_2020_photo_06_1000px.jpg" />
     `,
-    itemMoreInfo: `
-      <div>
-        <div class="info-block">
-          <span class="ital">The Instruments Agree</span> is a letterpress-printed lunar calendar designed and drawn by Alec Thibodeau (me!), 
-          chronicling all phases of the moon for 2020. 
-          From a limited edition of 500 prints <span class="ital">The Instruments Agree</span> continues my ongoing lunar calendar series, 
-          which features ornate border drawings in a landscape format. 
-          As with each of my previous lunar calendars, this one measures 19" x 11.75" (a golden rectangle) and is expertly printed by Dan Wood 
-          and his team at <a class="text-link" href="http://www.dwriletterpress.net" target="_blank">DWRI&nbsp;Letterpress</a>.
-        </div>
-        <div class="info-block">
-          The 2020 lunar calendar comprises new drawings and year-specific lunar phase information. 
-          Each calendar is printed on Mohawk Fine Papers' acid-free 300gsm Keaykolour Caribbean Blue 111# cover paper, blind-debossed with my name and the print shop's name &mdash; and hand numbered and signed by me. 
-          ${itemInfoUniversals.lunarCalendarBottomBlocks}
-    `
+    itemMoreInfo: itemInfoUniversals.lunarCalendarBlocks
   },
   'lunarCalendarNineteen': {
     mainContent: item.itemPage,

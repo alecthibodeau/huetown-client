@@ -82,22 +82,22 @@ const itemsToLoad = [
 ];
 
 const itemCreate = () => {
-  for (const item of itemsToLoad) {
-    const itemProperties = config.itemsInfo[item]
-    const defaultClassNamesWithPropertiesToAdd = [
-      ['item-name', itemProperties.itemName],
-      ['item-subname', itemProperties.itemSubname],
-      ['item-info-one', itemProperties.itemInfoOne],
-      ['item-info-two', itemProperties.itemInfoTwo],
-      ['item-info-three', itemProperties.itemInfoThree],
-      ['item-info-four', itemProperties.itemInfoFour],
-      ['item-price', itemProperties.itemPrice],
-      ['feature-image', itemProperties.itemImageFront],
-      ['item-id', itemProperties.itemId]
+  for (const itemName of itemsToLoad) {
+    const item = config.itemsInfo[itemName]
+    const defaultClassNamesWithInfoToLoad = [
+      ['feature-image', item.itemImageFront],
+      ['item-name', item.itemName],
+      ['item-subname', item.itemSubname],
+      ['item-info-one', item.itemInfoOne],
+      ['item-info-two', item.itemInfoTwo],
+      ['item-info-three', item.itemInfoThree],
+      ['item-info-four', item.itemInfoFour],
+      ['item-price', item.itemPrice],
+      ['item-id', item.itemId]
     ];
     const itemElement = document.createElement('div');
     loadCreatedItem(itemElement);
-    setCustomClassesAndAddContent (defaultClassNamesWithPropertiesToAdd, itemProperties);
+    setCustomClassesAndAddContent (defaultClassNamesWithInfoToLoad, item);
   }
 };
 
