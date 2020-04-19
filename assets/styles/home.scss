@@ -19,9 +19,9 @@
       border: 1px solid $black;
     }
   }
-
+  
   .announcement {
-    margin-left: 1rem;
+    margin-left: 2rem;
 
     .sig {
       margin-right: 1rem;
@@ -138,11 +138,10 @@
       flex-direction: column;
       justify-content: center;
     }
-
+    
     .announcement {
       margin-left: unset;
       margin-top: 1rem;
-
     }
 
     .drawings-title-container {
