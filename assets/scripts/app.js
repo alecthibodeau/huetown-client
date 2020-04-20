@@ -49,7 +49,7 @@ const addClassForPageStyling = (bodyDiv, elementToAugment) => {
   document.querySelectorAll(`.${elementToAugment}`).forEach(function (anchor) {
     anchor.classList.add(pageCategory);
   });
-}
+};
 
 const loadMainContent = (bodyDiv, pageValue, page) => {
   document.getElementById('main').innerHTML = page.mainContent;
@@ -67,7 +67,7 @@ const loadMainContent = (bodyDiv, pageValue, page) => {
   if (collectionPages.includes(pageValue)) {
     addClassForPageStyling(bodyDiv, 'collection-link');
   }
-}
+};
 
 const loadBodyContent = () => {
   const bodyDiv = document.getElementById('body');

@@ -222,7 +222,7 @@ const loadLunarCalendarMore = (item) => {
     ['container-three', containerThreeContent]
   ]
   loadInfoForClassInstances(lunarCalendarPageMoreInfo);
-}
+};
 
 const itemLoad = function (currentPage) {
   const item = config.itemsInfo[currentPage];
