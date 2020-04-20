@@ -1,6 +1,7 @@
 'use strict'
 
 import config from '../config.js';
+import store from './store.js';
 
 // Additional item content
 let containerTwoContent = `
@@ -151,26 +152,17 @@ const showAndLoadContainer = (containerClass) => {
   container.innerHTML = containerTwoContent;
 };
 
-const loadInfoForClassesWithOneOrMoreInstances = (classes) => {
+const loadInfoForClassInstances = (classes) => {
   classes.forEach(function (element) {
     // Fill each item's element with item-specific info -- if it exists
     if (element[1]) {
       const content = element[1];
       const nodes = document.querySelectorAll(`.${element[0]}`);
-      for (let i = 0; i < nodes.length; i++) {
-        const customElement = nodes[i];
-        switch (customElement.nodeName) {
-          case 'IMG':
-            customElement.src = content;
-            break;
-          case 'INPUT':
-            customElement.value = content;
-            break;
-          case 'DIV':
-          case 'SPAN':
-            customElement.innerHTML = content;
-          case 'A':
-            customElement.href = content;
+      if (nodes.length === 1) {
+        store.setContent(nodes[0], content);
+      } else if (nodes.length > 1) {
+        for (let i = 0; i < nodes.length; i++) {
+          store.setContent(nodes[i], content);
         }
       }
       // Add an item-specific category class (for item.scss breakpoints) -- if it exists
@@ -186,12 +178,10 @@ const augmentExistingClasses = (tags) => {
   tags.forEach(function (tag) {
     document.querySelector(`.${tag[0]}`).classList.add(tag[1]);
   });
-}
+};
 
-const itemLoad = function (currentPage) {
-  const item = config.itemsInfo[currentPage]
-
-  const defaultClassNamesWithInfoToLoad = [
+const getItemInfo = (item) => {
+  return [
     // container-one content
     ['feature-image', item.itemImageFront, item.itemCategory],
     ['item-name', item.itemName],
@@ -212,40 +202,37 @@ const itemLoad = function (currentPage) {
     ['lunar-calendar-title', item.itemLunarCalendarTitle],
     ['lunar-calendar-year', item.itemLunarCalendarYear],
     ['lunar-calendar-paper-info', item.itemLunarCalendarPaperInfo]
+  ];
+};
+
+const loadLunarCalendarMore = (item) => {
+  const tagsNeedingAdditionalClasses = [
+    // Add a 'lunar-calendar' or 'shown' class on relevant item page selectors (mainly for item.scss breakpoints)
+    ['container-one', item.itemCategory],
+    ['item-info-block', item.itemCategory],
+    ['payment-info', item.itemCategory],
+    ['item-price-container', item.itemCategory],
+    ['container-three', 'shown']
   ]
-  
-  if (item.itemMoreInfo) {
-    showAndLoadContainer('container-two');
-  }
-  loadInfoForClassesWithOneOrMoreInstances(defaultClassNamesWithInfoToLoad);
+  augmentExistingClasses(tagsNeedingAdditionalClasses);
 
-  if (currentPage.startsWith('lunarCalendar')) {
-
-    const tagsNeedingAdditionalClasses = [
-      // Add a 'lunar-calendar' or 'shown' class on relevant item page selectors (mainly for item.scss breakpoints)
-      ['container-one', item.itemCategory],
-      ['item-info-block', item.itemCategory],
-      ['payment-info', item.itemCategory],
-      ['item-price-container', item.itemCategory],
-      ['container-three', 'shown']
-    ]
-    augmentExistingClasses(tagsNeedingAdditionalClasses);
-
-    // Load additional content for a lunar calendar item page
-    const lunarCalendarPageAdditionalLoad = [
-      ['feature-image-link', '#itemDetails'],
-      ['container-three', containerThreeContent]
-    ]
-    loadInfoForClassesWithOneOrMoreInstances(lunarCalendarPageAdditionalLoad);
-
-  }  else if (currentPage.startsWith('print')) {
-    // Add class to center content on any print page (in item.scss)
-    const printPageAdditionalLoad = [
-      ['container-one', 'print']
-    ]
-    augmentExistingClasses(printPageAdditionalLoad);
-  };
+  // Load additional content for a lunar calendar item page
+  const lunarCalendarPageMoreInfo = [
+    ['feature-image-link', '#itemDetails'],
+    ['container-three', containerThreeContent]
+  ]
+  loadInfoForClassInstances(lunarCalendarPageMoreInfo);
 }
+
+const itemLoad = function (currentPage) {
+  const item = config.itemsInfo[currentPage];
+  const classNamesAndInfo = getItemInfo(item);
+  void(item.itemMoreInfo && showAndLoadContainer('container-two'));
+  loadInfoForClassInstances(classNamesAndInfo);
+  void(currentPage.startsWith('lunarCalendar') && loadLunarCalendarMore(item));
+  // Add class to center content on any print page (in item.scss)
+  void(currentPage.startsWith('print') && augmentExistingClasses([ ['container-one', 'print'] ]));
+};
 
 export default {
   itemPage,

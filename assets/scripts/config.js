@@ -258,8 +258,8 @@ const itemsInfo = {
     itemPrice: itemInfoUniversals.lunarCalendarPrice,
     itemId: '4LN49ZLYQLY88',
     itemMorePhotoPairOne: `
-    <img src="public/images/items/thibodeau_lunar_calendar_2018_photo_01.jpg" />
-    <img src="public/images/items/thibodeau_lunar_calendar_2018_photo_02.jpg" />
+      <img src="public/images/items/thibodeau_lunar_calendar_2018_photo_01.jpg" />
+      <img src="public/images/items/thibodeau_lunar_calendar_2018_photo_02.jpg" />
     `,
     itemMorePhotoPairTwo: `
       <img src="public/images/items/thibodeau_lunar_calendar_2018_photo_03.jpg" />

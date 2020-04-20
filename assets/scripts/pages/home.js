@@ -1,6 +1,7 @@
 'use strict'
 
 import config from '../config.js';
+import store from './store.js';
 
 let drawingItem = `
   <div class="drawing-image">
@@ -81,24 +82,18 @@ const itemsToLoad = [
   'drawingWormMoon2020'
 ];
 
-const itemCreate = () => {
-  for (const itemName of itemsToLoad) {
-    const item = config.itemsInfo[itemName]
-    const defaultClassNamesWithInfoToLoad = [
-      ['feature-image', item.itemImageFront],
-      ['item-name', item.itemName],
-      ['item-subname', item.itemSubname],
-      ['item-info-one', item.itemInfoOne],
-      ['item-info-two', item.itemInfoTwo],
-      ['item-info-three', item.itemInfoThree],
-      ['item-info-four', item.itemInfoFour],
-      ['item-price', item.itemPrice],
-      ['item-id', item.itemId]
-    ];
-    const itemElement = document.createElement('div');
-    loadCreatedItem(itemElement);
-    setCustomClassesAndAddContent (defaultClassNamesWithInfoToLoad, item);
-  }
+const getItemInfo = (item) => {
+  return [
+    ['feature-image', item.itemImageFront],
+    ['item-name', item.itemName],
+    ['item-subname', item.itemSubname],
+    ['item-info-one', item.itemInfoOne],
+    ['item-info-two', item.itemInfoTwo],
+    ['item-info-three', item.itemInfoThree],
+    ['item-info-four', item.itemInfoFour],
+    ['item-price', item.itemPrice],
+    ['item-id', item.itemId]
+  ];
 };
 
 const loadCreatedItem = (itemElement) => {
@@ -107,26 +102,26 @@ const loadCreatedItem = (itemElement) => {
   document.getElementById('drawingsItems').appendChild(itemElement);
 };
 
-const setCustomClassesAndAddContent = (classes, itemProperties) => {
+const setCustomClassesAndContent = (classes, itemProperties) => {
   classes.forEach(function (element) {
     if (element[1]) {
       const content = element[1];
       const customClass = `${element[0]}-${itemProperties.itemClass}`;
       document.querySelector(`.${element[0]}`).setAttribute('class', customClass);
       const customElement = document.querySelector(`.${customClass}`);
-      switch (customElement.nodeName) {
-        case 'IMG':
-          customElement.src = content;
-          break;
-        case 'INPUT':
-          customElement.value = content;
-          break;
-        case 'DIV':
-        case 'SPAN':
-          customElement.innerHTML = content;
-      }
+      store.setContent(customElement, content);
     }
   });
+};
+
+const itemCreate = () => {
+  for (const itemName of itemsToLoad) {
+    const item = config.itemsInfo[itemName];
+    const classNamesAndInfo = getItemInfo(item);
+    const itemElement = document.createElement('div');
+    loadCreatedItem(itemElement);
+    setCustomClassesAndContent(classNamesAndInfo, item);
+  }
 };
 
 export default {

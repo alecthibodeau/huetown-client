@@ -31,11 +31,11 @@ const drawerToggle = () => {
 };
 
 const closeOpenNavDrawerOnWindowEnlarge = () => {
-  window.innerWidth > 650 && isNavDrawerOpen ? drawerToggle() : null;
+  void((window.innerWidth > 650 && isNavDrawerOpen) && drawerToggle());
 };
 
 const closeOpenNavDrawerOnOutsideClick = () => {
-  window.innerWidth < 651 && isNavDrawerOpen ? drawerToggle() : null;
+  void((window.innerWidth < 651 && isNavDrawerOpen) && drawerToggle());
 };
 
 const addEventHandlers = () => {
@@ -77,12 +77,10 @@ const loadBodyContent = () => {
   bodyDiv.innerHTML = body.bodyContent;
   
   /* 
-    Load page content from JS if it exists, 
+    Load page content if it exists in config, 
     otherwise the HTML is <main> in body.js
   */
-  if (page) {
-    loadMainContent(bodyDiv, pageValue, page);
-  }
+  void(page && loadMainContent(bodyDiv, pageValue, page));
 };
 
 document.addEventListener('DOMContentLoaded', function () {
