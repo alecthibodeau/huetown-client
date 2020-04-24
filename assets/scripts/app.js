@@ -1,11 +1,10 @@
 'use strict'
 
+import utils from './utils.js';
 import config from './config.js';
 import items from './pages/item-page.js';
 import body from './pages/body.js';
 import home from './pages/home.js';
-
-let isNavDrawerOpen = false;
 
 const collectionPages = [
   'lunarCalendars',
@@ -13,40 +12,9 @@ const collectionPages = [
   'postcards'
 ];
 
-const addOrRemoveDrawerClasses = (nav, burgerButton, action) => {
-  nav.classList[action]('open-drawer');
-  burgerButton.classList[action]('closing-x');
-  document.querySelectorAll('.bar').forEach(function (bar) {
-    bar.classList[action]('closing-x');
-  });
-};
-
-const drawerToggle = () => {
-  const nav = document.getElementById('nav');
-  const burgerButton = document.getElementById('burgerButton');
-  let action;
-  !isNavDrawerOpen ? action = 'add' : action = 'remove';
-  addOrRemoveDrawerClasses(nav, burgerButton, action);
-  isNavDrawerOpen = !isNavDrawerOpen;
-};
-
-const closeOpenNavDrawerOnWindowEnlarge = () => {
-  void((window.innerWidth > 650 && isNavDrawerOpen) && drawerToggle());
-};
-
-const closeOpenNavDrawerOnOutsideClick = () => {
-  void((window.innerWidth < 651 && isNavDrawerOpen) && drawerToggle());
-};
-
-const addEventHandlers = () => {
-  document.getElementById('burgerButton').addEventListener('click', drawerToggle);
-  window.addEventListener('resize', closeOpenNavDrawerOnWindowEnlarge);
-  document.querySelector('.main-element').addEventListener('click', closeOpenNavDrawerOnOutsideClick);
-};
-
-const addClassForPageStyling = (bodyDiv, elementToAugment) => {
+const addCategoryForPageStyling = (bodyDiv, elementToAugment) => {
   const pageCategory = bodyDiv.getAttribute('page-category');
-  document.querySelectorAll(`.${elementToAugment}`).forEach(function (anchor) {
+  document.querySelectorAll(`.${elementToAugment}`).forEach((anchor) => {
     anchor.classList.add(pageCategory);
   });
 };
@@ -65,7 +33,7 @@ const loadMainContent = (bodyDiv, pageValue, page) => {
     (for collection.scss breakpoints)
   */
   if (collectionPages.includes(pageValue)) {
-    addClassForPageStyling(bodyDiv, 'collection-link');
+    addCategoryForPageStyling(bodyDiv, 'collection-link');
   }
 };
 
@@ -80,10 +48,10 @@ const loadBodyContent = () => {
     Load page content if it exists in config, 
     otherwise the HTML is <main> in body.js
   */
-  void(page && loadMainContent(bodyDiv, pageValue, page));
+  void (page && loadMainContent(bodyDiv, pageValue, page));
 };
 
-document.addEventListener('DOMContentLoaded', function () {
+document.addEventListener('DOMContentLoaded', () => {
   loadBodyContent();
-  addEventHandlers();
+  utils.addEventHandlers();
 });

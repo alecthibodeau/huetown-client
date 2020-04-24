@@ -1,7 +1,7 @@
 'use strict'
 
 import config from '../config.js';
-import store from './store.js';
+import store from '../store.js';
 
 let drawingItem = `
   <div class="drawing-image">
