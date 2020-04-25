@@ -3,12 +3,12 @@
 let isNavDrawerOpen = false;
 
 const addOrRemoveDrawerClasses = (nav, burgerButton, action) => {
-    nav.classList[action]('open-drawer');
-    burgerButton.classList[action]('closing-x');
-    document.querySelectorAll('.bar').forEach((bar) => {
-      bar.classList[action]('closing-x');
-    });
-  };
+  nav.classList[action]('open-drawer');
+  burgerButton.classList[action]('closing-x');
+  document.querySelectorAll('.bar').forEach(function (bar) {
+    bar.classList[action]('closing-x');
+  });
+};
   
 const drawerToggle = () => {
   const nav = document.getElementById('nav');

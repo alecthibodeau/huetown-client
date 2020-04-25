@@ -14,7 +14,7 @@ const collectionPages = [
 
 const addCategoryForPageStyling = (bodyDiv, elementToAugment) => {
   const pageCategory = bodyDiv.getAttribute('page-category');
-  document.querySelectorAll(`.${elementToAugment}`).forEach((anchor) => {
+  document.querySelectorAll(`.${elementToAugment}`).forEach(function (anchor) {
     anchor.classList.add(pageCategory);
   });
 };
@@ -51,7 +51,7 @@ const loadBodyContent = () => {
   void (page && loadMainContent(bodyDiv, pageValue, page));
 };
 
-document.addEventListener('DOMContentLoaded', () => {
+document.addEventListener('DOMContentLoaded', function () {
   loadBodyContent();
   utils.addEventHandlers();
 });

@@ -1138,16 +1138,16 @@ PAGES
 .item-page .item-subname {
   font-size: 2rem;
 }
-.item-page .item-info-one,
-.item-page .item-info-two,
-.item-page .item-info-three {
+.item-page .item-info-1,
+.item-page .item-info-2,
+.item-page .item-info-3 {
   margin: 10px 0 12px;
   font-size: 1.3rem;
 }
 @media only screen and (max-width: 850px) {
-  .item-page .item-info-one,
-.item-page .item-info-two,
-.item-page .item-info-three {
+  .item-page .item-info-1,
+.item-page .item-info-2,
+.item-page .item-info-3 {
     margin: 5px 0;
   }
 }

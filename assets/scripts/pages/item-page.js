@@ -107,17 +107,8 @@ let itemPage = `
       </div>
 
       <div class="content-block item-info-block">
-        
-        <div class="item-info-text" id="orderItem">
-          <div>
-            <span class="item-name"></span>
-            <span class="item-subname"></span>
-          </div>
-          <div class="item-info-one"></div>
-          <div class="item-info-two"></div>
-          <div class="item-info-three"></div>
-          <div class="item-info-four"></div>
-        </div>
+
+        ${store.itemInfoText}
 
         <div class="payment-info">
           <div class="item-price-container">$<span class="item-price"></span></div>
@@ -127,13 +118,9 @@ let itemPage = `
                 QTY
               </span> 
             </div>
-            <form target="paypal" action="https://www.paypal.com/cgi-bin/webscr" method="post">
-              <input type="hidden" name="cmd" value="_s-xclick">
-              <input class="item-id" type="hidden" name="hosted_button_id" value="">
-              <input type="text" name="quantity" value="1">
-              <input type="submit" value="add to cart" alt="Add To Cart">
-              <img alt="" border="0" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1">
-            </form>
+
+            ${store.itemForm}
+
           </div>
         </div>
         
@@ -158,6 +145,7 @@ const loadInfoForClassInstances = (classes) => {
     if (element[1]) {
       const content = element[1];
       const nodes = document.querySelectorAll(`.${element[0]}`);
+      // conditions for single versus multiple DOM instances
       if (nodes.length === 1) {
         store.setContent(nodes[0], content);
       } else if (nodes.length > 1) {
@@ -186,10 +174,10 @@ const getItemInfo = (item) => {
     ['feature-image', item.itemImageFront, item.itemCategory],
     ['item-name', item.itemName],
     ['item-subname', item.itemSubname],
-    ['item-info-one', item.itemInfoOne],
-    ['item-info-two', item.itemInfoTwo],
-    ['item-info-three', item.itemInfoThree],
-    ['item-info-four', item.itemInfoFour],
+    ['item-info-1', item.itemInfoOne],
+    ['item-info-2', item.itemInfoTwo],
+    ['item-info-3', item.itemInfoThree],
+    ['item-info-4', item.itemInfoFour],
     ['item-price', item.itemPrice],
     ['item-id', item.itemId],
     // container-two content
@@ -227,11 +215,11 @@ const loadLunarCalendarMore = (item) => {
 const itemLoad = function (currentPage) {
   const item = config.itemsInfo[currentPage];
   const classNamesAndInfo = getItemInfo(item);
-  void(item.itemMoreInfo && showAndLoadContainer('container-two'));
+  void (item.itemMoreInfo && showAndLoadContainer('container-two'));
   loadInfoForClassInstances(classNamesAndInfo);
-  void(currentPage.startsWith('lunarCalendar') && loadLunarCalendarMore(item));
+  void (currentPage.startsWith('lunarCalendar') && loadLunarCalendarMore(item));
   // Add class to center content on any print page (in item.scss)
-  void(currentPage.startsWith('print') && augmentExistingClasses([ ['container-one', 'print'] ]));
+  void (currentPage.startsWith('print') && augmentExistingClasses([ ['container-one', 'print'] ]));
 };
 
 export default {

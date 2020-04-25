@@ -9,16 +9,7 @@ let drawingItem = `
   </div>
   <div class="drawing-info">
   
-    <div class="item-info-text" id="orderItem">
-      <div>
-        <span class="item-name"></span>
-        <span class="item-subname"></span>
-      </div>
-      <div class="item-info-one"></div>
-      <div class="item-info-two"></div>
-      <div class="item-info-three"></div>
-      <div class="item-info-four"></div>
-    </div>
+    ${store.itemInfoText}
   
     <div class="payment-info">
       <div class="item-price-container">$<span class="item-price"></span></div>
@@ -74,53 +65,76 @@ let homePage = `
 `;
 
 const itemsToLoad = [
-  'drawingBisonBreathes',
+  'drawingRobinReveals',
   'drawingButternutBear',
   'drawingHawkHeralds',
+  'drawingBisonBreathes',
   'drawingPinkMoon2020',
-  'drawingRobinReveals',
   'drawingWormMoon2020'
 ];
 
 const getItemInfo = (item) => {
   return [
-    ['feature-image', item.itemImageFront],
-    ['item-name', item.itemName],
-    ['item-subname', item.itemSubname],
-    ['item-info-one', item.itemInfoOne],
-    ['item-info-two', item.itemInfoTwo],
-    ['item-info-three', item.itemInfoThree],
-    ['item-info-four', item.itemInfoFour],
-    ['item-price', item.itemPrice],
-    ['item-id', item.itemId]
+    { 
+      className: 'feature-image',
+      configName: item.itemImageFront
+    },
+    { 
+      className: 'item-name',
+      configName: item.itemName},
+    {
+      className: 'item-subname',
+      configName: item.itemSubname},
+    { 
+      className: 'item-info-1',
+      configName: item.itemInfoOne
+    },
+    { 
+      className: 'item-info-2',
+      configName: item.itemInfoTwo
+    },
+    { 
+      className: 'item-info-3',
+      configName: item.itemInfoThree
+    },
+    { 
+      className: 'item-info-4',
+      configName: item.itemInfoFour
+    },
+    { 
+      className: 'item-price',
+      configName: item.itemPrice
+    },
+    { 
+      className: 'item-id',
+      configName: item.itemId
+    }
   ];
+};
+
+const setCustomClassesAndContent = (elements, itemProperties) => {
+  for (const element of elements) {
+    if (element.configName) {
+      const customClass = `${element.className}-${itemProperties.itemClass}`;
+      document.querySelector(`.${element.className}`).setAttribute('class', customClass);
+      const customElement = document.querySelector(`.${customClass}`);
+      store.setContent(customElement, element.configName);
+    }
+  }
 };
 
 const loadCreatedItem = (itemElement) => {
   itemElement.setAttribute('class', 'drawing-item');
-  itemElement.innerHTML = drawingItem;
+  itemElement.innerHTML = drawingItem;  
   document.getElementById('drawingsItems').appendChild(itemElement);
-};
-
-const setCustomClassesAndContent = (classes, itemProperties) => {
-  classes.forEach(function (element) {
-    if (element[1]) {
-      const content = element[1];
-      const customClass = `${element[0]}-${itemProperties.itemClass}`;
-      document.querySelector(`.${element[0]}`).setAttribute('class', customClass);
-      const customElement = document.querySelector(`.${customClass}`);
-      store.setContent(customElement, content);
-    }
-  });
 };
 
 const itemCreate = () => {
   for (const itemName of itemsToLoad) {
     const item = config.itemsInfo[itemName];
-    const classNamesAndInfo = getItemInfo(item);
     const itemElement = document.createElement('div');
     loadCreatedItem(itemElement);
-    setCustomClassesAndContent(classNamesAndInfo, item);
+    setCustomClassesAndContent(getItemInfo(item), item);
   }
 };
 
