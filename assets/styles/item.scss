@@ -177,7 +177,7 @@
           font-weight: 700;
         }
 
-        &.lunar-calendar-links {
+        &[class^="lunar-calendar-links"] {
 
           div {
             flex-direction: column;

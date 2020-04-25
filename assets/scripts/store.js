@@ -1,5 +1,7 @@
 'use strict'
 
+/* store is snippets of js code and html for importing elsewhere */
+
 const setContent = (customElement, content) => {
   switch (customElement.nodeName) {
     case 'IMG':
@@ -55,7 +57,8 @@ let containerThreeContent = `
     <div class="title">
       available alec thibodeau lunar&nbsp;calendars
     </div>
-    <div class="lunar-calendar-links">
+    <div class="lunar-calendar-links-available">
+
       <div>
         <div>
           <a class="available-calendar" href="lunar_calendar_2020.html">
@@ -64,6 +67,7 @@ let containerThreeContent = `
         </div>
         <div class="text">2020 Lunar Calendar</div>
       </div>
+
       <div>
         <div>
           <a class="available-calendar" href="lunar_calendar_2019.html">
@@ -72,6 +76,7 @@ let containerThreeContent = `
         </div>
         <div class="text">2019 Lunar Calendar</div>
       </div>
+
       <div>
         <div>
           <a class="available-calendar" href="lunar_calendar_2018.html">
@@ -80,6 +85,7 @@ let containerThreeContent = `
         </div>
         <div class="text">2018 Lunar Calendar</div>
       </div>
+
       <div>
         <div>
           <a class="available-calendar" href="lunar_calendar_2017.html">
@@ -88,13 +94,15 @@ let containerThreeContent = `
         </div>
       <div class="text">2017 Lunar Calendar</div>
     </div>
+
   </div>
 
   <div class="previous">
     <div class="title">
       previous alec thibodeau lunar&nbsp;calendars
     </div>
-    <div class="lunar-calendar-links">
+    <div class="lunar-calendar-links-previous">
+
       <div>
         <div>
           <a href="http://alecthibodeau.com/print_lunar_calendar_pineal_grigio.html" target="_blank">
@@ -103,6 +111,7 @@ let containerThreeContent = `
         </div>
         <div class="text">2011 Lunar Calendar</div>
       </div>
+
       <div>
         <div>
           <a href="http://alecthibodeau.com/print_lunar_calendar_probably_the_earths_core.html" target="_blank">
@@ -111,6 +120,7 @@ let containerThreeContent = `
         </div>
         <div class="text">2010 Lunar Calendar</div>
       </div>
+
       <div>
         <div>
           <a href="http://alecthibodeau.com/print_lunar_calendar_goes_to_show_you.html" target="_blank">
@@ -119,6 +129,7 @@ let containerThreeContent = `
         </div>
         <div class="text">2009 Lunar Calendar</div>
       </div>
+
       <div>
         <div>
           <a href="http://alecthibodeau.com/print_lunar_calendar_good_librations.html" target="_blank">
@@ -127,6 +138,7 @@ let containerThreeContent = `
         </div>
         <div class="text">2008 Lunar Calendar</div>
       </div>
+
     </div>
   </div>
 `;
@@ -209,6 +221,11 @@ const getItemInfo = (item, pageValueOrConcern) => {
     contentToLoad: item.itemLunarCalendarTitle
   };
 
+  const itemLunarCalendarEdition = { 
+    className: 'lunar-calendar-edition',
+    contentToLoad: item.itemLunarCalendarEdition
+  };
+
   const itemLunarCalendarYear = { 
     className: 'lunar-calendar-year',
     contentToLoad: item.itemLunarCalendarYear
@@ -278,6 +295,7 @@ const getItemInfo = (item, pageValueOrConcern) => {
     itemMorePhotoPairFour,
     itemMoreInfo,
     itemLunarCalendarTitle,
+    itemLunarCalendarEdition,
     itemLunarCalendarYear,
     itemLunarCalendarPaperInfo
   ];

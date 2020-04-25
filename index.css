@@ -1077,13 +1077,13 @@ PAGES
   color: #7f7f7f;
   font-weight: 700;
 }
-.item-page .container-3 .available div.lunar-calendar-links div,
-.item-page .container-3 .previous div.lunar-calendar-links div {
+.item-page .container-3 .available div[class^=lunar-calendar-links] div,
+.item-page .container-3 .previous div[class^=lunar-calendar-links] div {
   flex-direction: column;
   margin: 0 5px;
 }
-.item-page .container-3 .available div.lunar-calendar-links div .text,
-.item-page .container-3 .previous div.lunar-calendar-links div .text {
+.item-page .container-3 .available div[class^=lunar-calendar-links] div .text,
+.item-page .container-3 .previous div[class^=lunar-calendar-links] div .text {
   margin-bottom: 10px;
 }
 .item-page img.feature-image.postcard {
