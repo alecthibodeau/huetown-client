@@ -73,45 +73,6 @@ const itemsToLoad = [
   'drawingWormMoon2020'
 ];
 
-const getItemInfo = (item) => {
-  return [
-    { 
-      className: 'feature-image',
-      configName: item.itemImageFront
-    },
-    { 
-      className: 'item-name',
-      configName: item.itemName},
-    {
-      className: 'item-subname',
-      configName: item.itemSubname},
-    { 
-      className: 'item-info-1',
-      configName: item.itemInfoOne
-    },
-    { 
-      className: 'item-info-2',
-      configName: item.itemInfoTwo
-    },
-    { 
-      className: 'item-info-3',
-      configName: item.itemInfoThree
-    },
-    { 
-      className: 'item-info-4',
-      configName: item.itemInfoFour
-    },
-    { 
-      className: 'item-price',
-      configName: item.itemPrice
-    },
-    { 
-      className: 'item-id',
-      configName: item.itemId
-    }
-  ];
-};
-
 const setCustomClassesAndContent = (elements, itemProperties) => {
   for (const element of elements) {
     if (element.configName) {
@@ -129,12 +90,12 @@ const loadCreatedItem = (itemElement) => {
   document.getElementById('drawingsItems').appendChild(itemElement);
 };
 
-const itemCreate = () => {
+const itemCreate = (pageValue) => {
   for (const itemName of itemsToLoad) {
     const item = config.itemsInfo[itemName];
     const itemElement = document.createElement('div');
     loadCreatedItem(itemElement);
-    setCustomClassesAndContent(getItemInfo(item), item);
+    setCustomClassesAndContent(store.getItemInfo(pageValue, item), item);
   }
 };
 

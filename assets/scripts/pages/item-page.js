@@ -5,10 +5,10 @@ import store from '../store.js';
 
 // Additional item content
 let containerTwoContent = `
-  <div class="photo-pair item-more-photo-pair-one"></div>
-  <div class="photo-pair item-more-photo-pair-two"></div>
-  <div class="photo-pair item-more-photo-pair-three"></div>
-  <div class="photo-pair item-more-photo-pair-four"></div>
+  <div class="photo-pair item-more-photo-pair-1"></div>
+  <div class="photo-pair item-more-photo-pair-2"></div>
+  <div class="photo-pair item-more-photo-pair-3"></div>
+  <div class="photo-pair item-more-photo-pair-4"></div>
   <div class="item-more-info"></div>
 `;
 
@@ -181,10 +181,10 @@ const getItemInfo = (item) => {
     ['item-price', item.itemPrice],
     ['item-id', item.itemId],
     // container-two content
-    ['item-more-photo-pair-one', item.itemMorePhotoPairOne],
-    ['item-more-photo-pair-two', item.itemMorePhotoPairTwo],
-    ['item-more-photo-pair-three', item.itemMorePhotoPairThree],
-    ['item-more-photo-pair-four', item.itemMorePhotoPairFour],
+    ['item-more-photo-pair-1', item.itemMorePhotoPairOne],
+    ['item-more-photo-pair-2', item.itemMorePhotoPairTwo],
+    ['item-more-photo-pair-3', item.itemMorePhotoPairThree],
+    ['item-more-photo-pair-4', item.itemMorePhotoPairFour],
     ['item-more-info', item.itemMoreInfo],
     // lunar calendar info
     ['lunar-calendar-title', item.itemLunarCalendarTitle],
