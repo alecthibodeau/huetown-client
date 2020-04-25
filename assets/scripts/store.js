@@ -143,6 +143,34 @@ let containerThreeContent = `
   </div>
 `;
 
+const lunarPhases = [
+  'new',
+  'first-quarter',
+  'full',
+  'third-quarter'
+];
+
+const lunarPhaseInfo = [
+  {
+    phaseElement: 'phaseInfoDiv',
+    classPrefix: 'phase-info',
+    elementType: 'div',
+    parent: 'lunar-phases'
+  },
+  {
+    phaseElement: 'phaseImage',
+    classPrefix: 'lunar-phase-img',
+    elementType: 'img',
+    parent: 'phase-info'
+  },
+  {
+    phaseElement: 'phaseTextDiv',
+    classPrefix: 'phase-text',
+    elementType: 'div',
+    parent: 'phase-info'
+  }
+];
+
 const getItemInfo = (item, pageValueOrConcern) => {
 
   const itemFeatureImage = { 
@@ -332,6 +360,8 @@ export default {
   itemInfoText,
   itemForm,
   getItemInfo,
-  containerTwoContent
+  containerTwoContent,
+  lunarPhases,
+  lunarPhaseInfo
 };
   

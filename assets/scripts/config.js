@@ -1,6 +1,6 @@
 'use strict'
 
-/* config is primarily a catalog of info for each item, with some html */
+/* config is primarily a catalog of info for each item */
 
 /* nav pages */
 import home from './pages/home.js';
@@ -20,9 +20,11 @@ const itemsDirectory = `${imageDirectory}items/`;
 
 /* constants */
 const drawing = 'drawing';
-const lunarCalendar = 'lunar-calendar';
+const infoBlock = 'info-block';
+const lunarDashCalendar = 'lunar-calendar';
 const postcard = 'postcard';
 const print = 'print';
+const textLink = 'text-link';
 const unframed = 'unframed';
 
 const itemInfoUniversals = {
@@ -39,54 +41,36 @@ const itemInfoUniversals = {
   lunarCalendarPrice: 40,
   lunarCalendarInfoOne: '19 x 11.75 inches<br>Letterpress print<br>Printed by DWRI Letterpress',
   lunarCalendarInfoTwo: '',
-  lunarCalendarInfoThree: 'Hand numbered and signed by the artist in a limited edition of <span class="lunar-calendar-edition"></span> prints',
-  lunarCalendarInfoFour: 'Ships rolled and triple-packaged: archival wrapping, <a class="text-link" href="#phaseInfo">eco-friendly protective tube</a> and outer shipping container',
+  lunarCalendarInfoThree: `Hand numbered and signed by the artist in a limited edition of <span class="${lunarDashCalendar}-edition"></span> prints`,
+  lunarCalendarInfoFour: 'Ships rolled and triple-packaged: archival wrapping, <a class="text-link" href="#lunarPhases">eco-friendly protective tube</a> and outer shipping container',
   lunarCalendarBlocks: `
-    <div class="info-block">
-      <span class="lunar-calendar-title ital"></span> is a letterpress-printed lunar calendar designed and drawn by Alec Thibodeau (me!), 
-      chronicling all phases of the moon for <span class="lunar-calendar-year"></span>. 
-      From a limited edition of 500 prints <span class="lunar-calendar-title ital"></span> continues my ongoing lunar calendar series, 
+    <div class=${infoBlock}>
+      <span class="${lunarDashCalendar}-title ital"></span> is a letterpress-printed lunar calendar designed and drawn by Alec Thibodeau (me!), 
+      chronicling all phases of the moon for <span class="${lunarDashCalendar}-year"></span>. 
+      From a limited edition of 500 prints <span class="${lunarDashCalendar}-title ital"></span> continues my ongoing lunar calendar series, 
       which features ornate border drawings in a landscape format. 
       As with each of my previous lunar calendars, this one measures 19" x 11.75" (a golden rectangle) and is expertly printed by Dan Wood 
-      and his team at <a class="text-link" href="http://www.dwriletterpress.net" target="_blank">DWRI&nbsp;Letterpress</a>.
+      and his team at <a class=${textLink} href="http://www.dwriletterpress.net" target="_blank">DWRI&nbsp;Letterpress</a>.
     </div>
-    <div class="info-block">
-      The <span class="lunar-calendar-year"></span> lunar calendar comprises new drawings and year-specific lunar phase information. 
-      Each calendar is printed on <span class="lunar-calendar-paper-info"></span>, blind-debossed with my name and the print shop's name &mdash; and hand numbered and signed by me. Each calendar ships with an accompanying information sheet, archival wrapping and an eco-friendly fiberboard protective tube: reusable, recycled and recyclable, with crimped ends and no plastic caps.
+    <div class=${infoBlock}>
+      The <span class="${lunarDashCalendar}-year"></span> lunar calendar comprises new drawings and year-specific lunar phase information. 
+      Each calendar is printed on <span class="${lunarDashCalendar}-paper-info"></span>, blind-debossed with my name and the print shop's name &mdash; and hand numbered and signed by me. Each calendar ships with an accompanying information sheet, archival wrapping and an eco-friendly fiberboard protective tube: reusable, recycled and recyclable, with crimped ends and no plastic caps.
     </div>
-    <div class="info-block">
+    <div class=${infoBlock}>
       The calendar's lunar phase information is calibrated for any place in the Eastern Time Zone and is accurate to within a day for any place in the Northern Hemisphere. The calendar is designed, drawn and printed in Providence, Rhode Island, which is identified as a representative location within the artwork.
     </div>
-    <div class="info-block">
+    <div class=${infoBlock}>
       Custom moon illustrations portray all principal lunar phases (New Moon, First Quarter Moon, Full Moon and Third Quarter Moon) plus all intermediate crescent and gibbous phases. For months with less than 31 days, drawings of clouds occupy the extra spaces. 
-      <a class="text-link" href="#featureImage">ORDER&nbsp;NOW</a>
+      <a class=${textLink} href="#featureImage">ORDER&nbsp;NOW</a>
     </div>
-    <div class="lunar-phases">
 
-      <div class="phase-info">
-        <img src="public/images/items/phase_new.png" />
-        <div class="phase-text">New<br>Moon</div>
-      </div>
-
-      <div class="phase-info">
-        <img src="public/images/items/phase_first_quarter.png" />
-        <div class="phase-text">First<br>Quarter<br>Moon</div>
-      </div>
-
-      <div class="phase-info">
-        <img src="public/images/items/phase_full.png" />
-        <div class="phase-text">Full<br>Moon</div>
-      </div>
-
-      <div class="phase-info" id="phaseInfo">
-        <img src="public/images/items/phase_third_quarter.png" />
-        <div class="phase-text">Third<br>Quarter<br>Moon</div>
-      </div>  
-
+    <div class="lunar-phases" id="lunarPhases">
+      <!-- phases here -->
     </div>
+
     <div class="protective-tube" id="tube">
       <div class="tube-text">eco-friendly protective tube:</div>
-      <img src="public/images/items/protective_tube.png" />
+      <img src="${itemsDirectory}protective_tube.png" />
     </div>
   `,
   postcardInfoOne: '6 x 4 inches; mellow, satin finish<br>Full-color front / single-color back',
@@ -194,7 +178,7 @@ const itemsInfo = {
   },
   'lunarCalendarTwenty': {
     mainContent: item.itemPage,
-    itemCategory: lunarCalendar,
+    itemCategory: lunarDashCalendar,
     itemLunarCalendarTitle: 'The Instruments Agree',
     itemLunarCalendarYear: '2020',
     itemLunarCalendarEdition: 500,
@@ -229,7 +213,7 @@ const itemsInfo = {
   },
   'lunarCalendarNineteen': {
     mainContent: item.itemPage,
-    itemCategory: lunarCalendar,
+    itemCategory: lunarDashCalendar,
     itemLunarCalendarTitle: 'Orchard Quest',
     itemLunarCalendarYear: '2019',
     itemLunarCalendarEdition: 500,
@@ -263,7 +247,7 @@ const itemsInfo = {
   },
   'lunarCalendarEighteen': {
     mainContent: item.itemPage,
-    itemCategory: lunarCalendar,
+    itemCategory: lunarDashCalendar,
     itemLunarCalendarTitle: 'Shimmery Circuit',
     itemLunarCalendarYear: '2019',
     itemLunarCalendarEdition: 1000,
@@ -297,7 +281,7 @@ const itemsInfo = {
   },
   'lunarCalendarSeventeen': {
     mainContent: item.itemPage,
-    itemCategory: lunarCalendar,
+    itemCategory: lunarDashCalendar,
     itemLunarCalendarTitle: 'I Still See the X',
     itemLunarCalendarYear: '2019',
     itemLunarCalendarEdition: 1000,
@@ -438,5 +422,6 @@ const itemsInfo = {
 };
 
 export default {
+  itemsDirectory,
   itemsInfo
 };

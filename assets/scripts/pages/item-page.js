@@ -2,6 +2,7 @@
 
 import config from '../config.js';
 import store from '../store.js';
+import utils from '../utils.js';
 
 /* Primary item content */
 let itemPage = `
@@ -32,17 +33,18 @@ let itemPage = `
   </div>
 `;
 
-const augmentExistingClasses = (tags) => {
-  for (const tag of tags) {
-    document.querySelector(`.${tag.className}`).classList.add(tag.contentToLoad);
-  }
-};
-
 const loadLunarCalendarMore = (item) => {
   /* Add a 'lunar-calendar' or 'shown' class on relevant item page selectors (mainly for item.scss breakpoints) */
   augmentExistingClasses(store.getItemInfo(item, 'lunar-tags-needing-additional-classes'));
   /* Load additional content for a lunar calendar item page */
   loadInfoForClassInstances(store.getItemInfo(item, 'lunar-page-additional-info'));
+  utils.loadLunarPhaseInfo();
+};
+
+const augmentExistingClasses = (tags) => {
+  for (const tag of tags) {
+    document.querySelector(`.${tag.className}`).classList.add(tag.contentToLoad);
+  }
 };
 
 const showAndLoadContainer = (containerClass) => {
@@ -79,10 +81,9 @@ const itemLoad = function (currentPage) {
   loadInfoForClassInstances(store.getItemInfo(item, currentPage));
   void (currentPage.startsWith('lunarCalendar') && loadLunarCalendarMore(item));
   /* Add class to center content on any print page (in item.scss) */
-  void (
-    currentPage.startsWith('print') && 
-    augmentExistingClasses(store.getItemInfo(item, 'add-print-class'))
-  );
+  if (currentPage.startsWith('print')) {
+    augmentExistingClasses(store.getItemInfo(item, 'add-print-class'));
+  };
 };
 
 export default {

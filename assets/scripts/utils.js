@@ -1,5 +1,10 @@
 'use strict'
 
+import config from './config.js';
+import store from './store.js';
+
+/* event handlers for page load */
+
 let isNavDrawerOpen = false;
 
 const addOrRemoveDrawerClasses = (nav, burgerButton, action) => {
@@ -33,6 +38,35 @@ const addEventHandlers = () => {
   document.querySelector('.main-element').addEventListener('click', closeNavDrawerOnOutsideClick);
 };
 
+/* lunar calendar helpers for loading phase info */
+
+const createAndLoadElement = (step, element, classPrefix, elementType, parent) => {
+  const elementName = element;
+  element = document.createElement(elementType);
+  element.setAttribute('class', `${classPrefix}-${step}`);
+  document.querySelector(`.${parent}`).appendChild(element);
+  if (elementName === 'phaseImage') {
+    element.setAttribute('src', `${config.itemsDirectory}phase_${step.replace('-', '_')}.png`);
+  } else if (elementName === 'phaseTextDiv') {
+    element.innerHTML = `${step.replace('-', '<br>')}<br>Moon`;
+  }
+};
+
+const loadLunarPhaseInfo = () => {
+  for (const phase of store.lunarPhases) {
+    for (const phaseInfo of store.lunarPhaseInfo) {
+      createAndLoadElement(
+        phase,
+        phaseInfo.phaseElement,
+        phaseInfo.classPrefix,
+        phaseInfo.elementType, 
+        phaseInfo.parent === 'lunar-phases' ? phaseInfo.parent : `${phaseInfo.parent}-${phase}`
+      )
+    }
+  }
+};
+
 export default {
-  addEventHandlers
+  addEventHandlers,
+  loadLunarPhaseInfo
 };
