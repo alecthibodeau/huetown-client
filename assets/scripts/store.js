@@ -40,91 +40,223 @@ let itemForm = `
   </form>
 `;
 
-const getItemInfo = (pageValue, item) => {
+/* Additional item content */
+let containerTwoContent = `
+  <div class="photo-pair item-more-photo-pair-1"></div>
+  <div class="photo-pair item-more-photo-pair-2"></div>
+  <div class="photo-pair item-more-photo-pair-3"></div>
+  <div class="photo-pair item-more-photo-pair-4"></div>
+  <div class="item-more-info"></div>
+`;
+
+/* Additional lunar-calendar content */
+let containerThreeContent = `
+  <div class="available">
+    <div class="title">
+      available alec thibodeau lunar&nbsp;calendars
+    </div>
+    <div class="lunar-calendar-links">
+      <div>
+        <div>
+          <a class="available-calendar" href="lunar_calendar_2020.html">
+            <img src="public/images/items/thibodeau_lunar_calendar_2020_main.png" />
+          </a>
+        </div>
+        <div class="text">2020 Lunar Calendar</div>
+      </div>
+      <div>
+        <div>
+          <a class="available-calendar" href="lunar_calendar_2019.html">
+            <img src="public/images/items/thibodeau_lunar_calendar_2019_main.jpg" />
+          </a>
+        </div>
+        <div class="text">2019 Lunar Calendar</div>
+      </div>
+      <div>
+        <div>
+          <a class="available-calendar" href="lunar_calendar_2018.html">
+            <img src="public/images/items/thibodeau_lunar_calendar_2018_main.jpg" />
+          </a>
+        </div>
+        <div class="text">2018 Lunar Calendar</div>
+      </div>
+      <div>
+        <div>
+          <a class="available-calendar" href="lunar_calendar_2017.html">
+            <img src="public/images/items/thibodeau_lunar_calendar_2017_main.jpg" />
+          </a>
+        </div>
+      <div class="text">2017 Lunar Calendar</div>
+    </div>
+  </div>
+
+  <div class="previous">
+    <div class="title">
+      previous alec thibodeau lunar&nbsp;calendars
+    </div>
+    <div class="lunar-calendar-links">
+      <div>
+        <div>
+          <a href="http://alecthibodeau.com/print_lunar_calendar_pineal_grigio.html" target="_blank">
+            <img src="public/images/items/thibodeau_lunar_calendar_2011.jpg" />
+          </a>
+        </div>
+        <div class="text">2011 Lunar Calendar</div>
+      </div>
+      <div>
+        <div>
+          <a href="http://alecthibodeau.com/print_lunar_calendar_probably_the_earths_core.html" target="_blank">
+            <img src="public/images/items/thibodeau_lunar_calendar_2010.jpg" />
+          </a>
+        </div>
+        <div class="text">2010 Lunar Calendar</div>
+      </div>
+      <div>
+        <div>
+          <a href="http://alecthibodeau.com/print_lunar_calendar_goes_to_show_you.html" target="_blank">
+            <img src="public/images/items/thibodeau_lunar_calendar_2009.jpg" />
+          </a>
+        </div>
+        <div class="text">2009 Lunar Calendar</div>
+      </div>
+      <div>
+        <div>
+          <a href="http://alecthibodeau.com/print_lunar_calendar_good_librations.html" target="_blank">
+            <img src="public/images/items/thibodeau_lunar_calendar_2008.jpg" />
+          </a>
+        </div>
+        <div class="text">2008 Lunar Calendar</div>
+      </div>
+    </div>
+  </div>
+`;
+
+const getItemInfo = (item, pageValueOrConcern) => {
 
   const itemFeatureImage = { 
     className: 'feature-image',
-    configName: item.itemImageFront
+    contentToLoad: item.itemImageFront,
+    categoryName: item.itemCategory
   };
   
   const itemName = { 
     className: 'item-name',
-    configName: item.itemName
+    contentToLoad: item.itemName
   };
   
   const itemSubname = {
     className: 'item-subname',
-    configName: item.itemSubname
+    contentToLoad: item.itemSubname
   };
   
   const itemInfoOne = { 
     className: 'item-info-1',
-    configName: item.itemInfoOne
+    contentToLoad: item.itemInfoOne
   };
   
   const itemInfoTwo = { 
     className: 'item-info-2',
-    configName: item.itemInfoTwo
+    contentToLoad: item.itemInfoTwo
   };
   
   const itemInfoThree = { 
     className: 'item-info-3',
-    configName: item.itemInfoThree
+    contentToLoad: item.itemInfoThree
   };
   
   const itemInfoFour = { 
     className: 'item-info-4',
-    configName: item.itemInfoFour
+    contentToLoad: item.itemInfoFour
   };
   
   const itemPrice = { 
     className: 'item-price',
-    configName: item.itemPrice
+    contentToLoad: item.itemPrice
   };
   
   const itemId = { 
     className: 'item-id',
-    configName: item.itemId
+    contentToLoad: item.itemId
   };
 
   const itemMorePhotoPairOne = { 
     className: 'item-more-photo-pair-1',
-    configName: item.itemMorePhotoPairOne
+    contentToLoad: item.itemMorePhotoPairOne
   };
 
   const itemMorePhotoPairTwo = { 
     className: 'item-more-photo-pair-2',
-    configName: item.itemMorePhotoPairTwo
+    contentToLoad: item.itemMorePhotoPairTwo
   };
 
   const itemMorePhotoPairThree = { 
     className: 'item-more-photo-pair-3',
-    configName: item.itemMorePhotoPairThree
+    contentToLoad: item.itemMorePhotoPairThree
   };
 
   const itemMorePhotoPairFour = { 
     className: 'item-more-photo-pair-4',
-    configName: item.itemMorePhotoPairFour
+    contentToLoad: item.itemMorePhotoPairFour
   };
 
   const itemMoreInfo = { 
     className: 'item-more-info',
-    configName: item.itemMoreInfo
+    contentToLoad: item.itemMoreInfo
   };
 
   const itemLunarCalendarTitle = { 
     className: 'lunar-calendar-title',
-    configName: item.itemLunarCalendarTitle
+    contentToLoad: item.itemLunarCalendarTitle
   };
 
   const itemLunarCalendarYear = { 
     className: 'lunar-calendar-year',
-    configName: item.itemLunarCalendarYear
+    contentToLoad: item.itemLunarCalendarYear
   };
 
   const itemLunarCalendarPaperInfo = { 
     className: 'lunar-calendar-paper-info',
-    configName: item.itemLunarCalendarPaperInfo
+    contentToLoad: item.itemLunarCalendarPaperInfo
+  };
+
+  const lunarContainerOne = {
+    className: 'container-1',
+    contentToLoad: item.itemCategory
+  };
+
+  const lunarItemInfoBlock = { 
+    className: 'item-info-block',
+    contentToLoad: item.itemCategory
+  };
+
+  const lunarPaymentInfo = {
+    className: 'payment-info',
+    contentToLoad: item.itemCategory
+  };
+  
+  const lunarPriceContainer = { 
+    className: 'item-price-container',
+    contentToLoad: item.itemCategory
+  };
+
+  const lunarContainerThree = { 
+    className: 'container-3',
+    contentToLoad: 'shown'
+  }
+
+  const lunarFeatureImage = {
+    className: 'feature-image-link',
+    contentToLoad: '#itemDetails'
+  };
+
+  const lunarContainerThreeContent = { 
+    className: 'container-3',
+    contentToLoad: containerThreeContent
+  };
+
+  const containerOnePrint = { 
+    className: 'container-1',
+    contentToLoad: 'print'
   };
 
   const basicItemInfo = [
@@ -150,10 +282,30 @@ const getItemInfo = (pageValue, item) => {
     itemLunarCalendarPaperInfo
   ];
 
-  if (pageValue === 'home') {
-    return basicItemInfo;
-  } else {
-    return basicItemInfo.concat(extraItemInfo);
+  const lunarClasses = [
+    lunarContainerOne,
+    lunarItemInfoBlock,
+    lunarPaymentInfo,
+    lunarPriceContainer,
+    lunarContainerThree
+  ];
+
+  const lunarAdditionalInfo = [
+    lunarFeatureImage,
+    lunarContainerThreeContent
+  ];
+
+  switch (pageValueOrConcern) {
+    case 'home':
+      return basicItemInfo;
+    case 'lunar-tags-needing-additional-classes':
+      return lunarClasses;
+    case 'lunar-page-additional-info':
+      return lunarAdditionalInfo;
+    case 'add-print-class':
+      return [ containerOnePrint ];
+    default:
+      return basicItemInfo.concat(extraItemInfo);
   }
 };
 
@@ -161,6 +313,7 @@ export default {
   setContent,
   itemInfoText,
   itemForm,
-  getItemInfo
+  getItemInfo,
+  containerTwoContent
 };
   

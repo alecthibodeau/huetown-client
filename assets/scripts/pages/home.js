@@ -75,11 +75,11 @@ const itemsToLoad = [
 
 const setCustomClassesAndContent = (elements, itemProperties) => {
   for (const element of elements) {
-    if (element.configName) {
+    if (element.contentToLoad) {
       const customClass = `${element.className}-${itemProperties.itemClass}`;
       document.querySelector(`.${element.className}`).setAttribute('class', customClass);
       const customElement = document.querySelector(`.${customClass}`);
-      store.setContent(customElement, element.configName);
+      store.setContent(customElement, element.contentToLoad);
     }
   }
 };
@@ -95,7 +95,7 @@ const itemCreate = (pageValue) => {
     const item = config.itemsInfo[itemName];
     const itemElement = document.createElement('div');
     loadCreatedItem(itemElement);
-    setCustomClassesAndContent(store.getItemInfo(pageValue, item), item);
+    setCustomClassesAndContent(store.getItemInfo(item, pageValue), item);
   }
 };
 

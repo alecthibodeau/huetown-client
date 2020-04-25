@@ -1,4 +1,4 @@
-// Sub-mixins need to be outside the primary mixin
+/* Sub-mixins need to be outside the primary mixin */
 @mixin item-page-button-styles {
   border: none;
   border-radius: 6px;
@@ -12,7 +12,7 @@
   cursor: pointer;
 }
 
-// Selector for .item-page
+/* Selector for .item-page */
 @mixin item-page-content {
   width: $page-width;
   margin-bottom: 20px;
@@ -39,6 +39,12 @@
       }
     }
 
+    &:not(.lunar-calendar) {
+      .feature-image-link {
+        pointer-events: none;
+      }
+    }
+
     &.print {
       justify-content: center;
     }
@@ -49,7 +55,7 @@
     }
   }
 
-  .container-two {
+  .container-2 {
     display: none;
     border-top: 1px solid $eighty-percent-gray;
     margin-top: 20px;
@@ -131,10 +137,10 @@
     }
   }
 
-  .container-three {
+  .container-3 {
     display: none;
 
-    a.current-calendar {
+    a.available-calendar {
       max-width: 200px;
 
       img {
@@ -146,8 +152,10 @@
       display: block;
     }
 
-    .current,
+    .available,
     .previous {
+      display: flex;
+      flex-direction: column;
       margin: 0 auto;
 
       &.previous {
@@ -188,7 +196,7 @@
 
     &.postcard {
 
-      border: 1px solid $eighty-percent-gray;
+      border: 1px solid $sixty-percent-gray;
 
       @media only screen and (max-width: 650px) {
         width: 550px;

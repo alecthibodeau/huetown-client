@@ -3,113 +3,17 @@
 import config from '../config.js';
 import store from '../store.js';
 
-// Additional item content
-let containerTwoContent = `
-  <div class="photo-pair item-more-photo-pair-1"></div>
-  <div class="photo-pair item-more-photo-pair-2"></div>
-  <div class="photo-pair item-more-photo-pair-3"></div>
-  <div class="photo-pair item-more-photo-pair-4"></div>
-  <div class="item-more-info"></div>
-`;
-
-// Additional lunar-calendar content
-let containerThreeContent = `
-  <div class="current">
-  <div class="title">
-    available alec thibodeau lunar&nbsp;calendars
-  </div>
-  <div class="lunar-calendar-links">
-    <div>
-      <div>
-        <a class="current-calendar" href="lunar_calendar_2020.html">
-          <img src="public/images/items/thibodeau_lunar_calendar_2020_main.png" />
-        </a>
-      </div>
-      <div class="text">2020 Lunar Calendar</div>
-    </div>
-    <div>
-      <div>
-        <a class="current-calendar" href="lunar_calendar_2019.html">
-          <img src="public/images/items/thibodeau_lunar_calendar_2019_main.jpg" />
-        </a>
-      </div>
-      <div class="text">2019 Lunar Calendar</div>
-    </div>
-    <div>
-      <div>
-        <a class="current-calendar" href="lunar_calendar_2018.html">
-          <img src="public/images/items/thibodeau_lunar_calendar_2018_main.jpg" />
-        </a>
-      </div>
-      <div class="text">2018 Lunar Calendar</div>
-    </div>
-    <div>
-      <div>
-        <a class="current-calendar" href="lunar_calendar_2017.html">
-          <img src="public/images/items/thibodeau_lunar_calendar_2017_main.jpg" />
-        </a>
-      </div>
-    <div class="text">2017 Lunar Calendar</div>
-  </div>
-  </div>
-
-  <div class="previous">
-  <div class="title">
-    previous alec thibodeau lunar&nbsp;calendars
-  </div>
-  <div class="lunar-calendar-links">
-    <div>
-      <div>
-        <a href="http://alecthibodeau.com/print_lunar_calendar_pineal_grigio.html" target="_blank">
-          <img src="public/images/items/thibodeau_lunar_calendar_2011.jpg" />
-        </a>
-      </div>
-      <div class="text">2011 Lunar Calendar</div>
-    </div>
-    <div>
-      <div>
-        <a href="http://alecthibodeau.com/print_lunar_calendar_probably_the_earths_core.html" target="_blank">
-          <img src="public/images/items/thibodeau_lunar_calendar_2010.jpg" />
-        </a>
-      </div>
-      <div class="text">2010 Lunar Calendar</div>
-    </div>
-    <div>
-      <div>
-        <a href="http://alecthibodeau.com/print_lunar_calendar_goes_to_show_you.html" target="_blank">
-          <img src="public/images/items/thibodeau_lunar_calendar_2009.jpg" />
-        </a>
-      </div>
-      <div class="text">2009 Lunar Calendar</div>
-    </div>
-    <div>
-      <div>
-        <a href="http://alecthibodeau.com/print_lunar_calendar_good_librations.html" target="_blank">
-          <img src="public/images/items/thibodeau_lunar_calendar_2008.jpg" />
-        </a>
-      </div>
-      <div class="text">2008 Lunar Calendar</div>
-    </div>
-  </div>
-  </div>
-`;
-
-// Primary item content 
+/* Primary item content */
 let itemPage = `
   <div class="item-page">
-
-    <div class="content-container container-one">
-
+    <div class="content-container container-1">
       <div class="content-block feature-image-block">
         <a class="feature-image-link" href="#orderItem">
           <img class="feature-image" id="featureImage" src="" />
         </a>
       </div>
-
       <div class="content-block item-info-block">
-
         ${store.itemInfoText}
-
         <div class="payment-info">
           <div class="item-price-container">$<span class="item-price"></span></div>
           <div class="form-container">
@@ -118,108 +22,67 @@ let itemPage = `
                 QTY
               </span> 
             </div>
-
             ${store.itemForm}
-
           </div>
         </div>
-        
       </div>
     </div>
-
-    <div class="content-container container-two"></div>
-    <div class="content-container container-three"></div>
-
+    <div class="content-container container-2"></div>
+    <div class="content-container container-3"></div>
   </div>
 `;
+
+const augmentExistingClasses = (tags) => {
+  for (const tag of tags) {
+    document.querySelector(`.${tag.className}`).classList.add(tag.contentToLoad);
+  }
+};
+
+const loadLunarCalendarMore = (item) => {
+  /* Add a 'lunar-calendar' or 'shown' class on relevant item page selectors (mainly for item.scss breakpoints) */
+  augmentExistingClasses(store.getItemInfo(item, 'lunar-tags-needing-additional-classes'));
+  /* Load additional content for a lunar calendar item page */
+  loadInfoForClassInstances(store.getItemInfo(item, 'lunar-page-additional-info'));
+};
 
 const showAndLoadContainer = (containerClass) => {
   const container = document.querySelector(`.${containerClass}`)
   container.classList.add('shown');
-  container.innerHTML = containerTwoContent;
+  container.innerHTML = store.containerTwoContent;
 };
 
-const loadInfoForClassInstances = (classes) => {
-  classes.forEach(function (element) {
-    // Fill each item's element with item-specific info -- if it exists
-    if (element[1]) {
-      const content = element[1];
-      const nodes = document.querySelectorAll(`.${element[0]}`);
-      // conditions for single versus multiple DOM instances
+const loadInfoForClassInstances = (elements) => {
+  for (const element of elements) {
+    /* Fill each item's element with item-specific info -- if it exists */
+    if (element.contentToLoad) {
+      const nodes = document.querySelectorAll(`.${element.className}`);
+      /* conditions for single versus multiple DOM instances */
       if (nodes.length === 1) {
-        store.setContent(nodes[0], content);
+        store.setContent(nodes[0], element.contentToLoad);
+        /*
+          Add an item-specific category class (for item.scss) -- if it exists
+          Currently only applies to feature-image
+        */
+        void (element.categoryName && nodes[0].classList.add(element.categoryName));
       } else if (nodes.length > 1) {
         for (let i = 0; i < nodes.length; i++) {
-          store.setContent(nodes[i], content);
+          store.setContent(nodes[i], element.contentToLoad);
         }
       }
-      // Add an item-specific category class (for item.scss breakpoints) -- if it exists
-      if (element[2]) {
-        const additionalClass = element[2];
-        nodes[0].classList.add(additionalClass);
-      }
     }
-  });
-};
-
-const augmentExistingClasses = (tags) => {
-  tags.forEach(function (tag) {
-    document.querySelector(`.${tag[0]}`).classList.add(tag[1]);
-  });
-};
-
-const getItemInfo = (item) => {
-  return [
-    // container-one content
-    ['feature-image', item.itemImageFront, item.itemCategory],
-    ['item-name', item.itemName],
-    ['item-subname', item.itemSubname],
-    ['item-info-1', item.itemInfoOne],
-    ['item-info-2', item.itemInfoTwo],
-    ['item-info-3', item.itemInfoThree],
-    ['item-info-4', item.itemInfoFour],
-    ['item-price', item.itemPrice],
-    ['item-id', item.itemId],
-    // container-two content
-    ['item-more-photo-pair-1', item.itemMorePhotoPairOne],
-    ['item-more-photo-pair-2', item.itemMorePhotoPairTwo],
-    ['item-more-photo-pair-3', item.itemMorePhotoPairThree],
-    ['item-more-photo-pair-4', item.itemMorePhotoPairFour],
-    ['item-more-info', item.itemMoreInfo],
-    // lunar calendar info
-    ['lunar-calendar-title', item.itemLunarCalendarTitle],
-    ['lunar-calendar-year', item.itemLunarCalendarYear],
-    ['lunar-calendar-paper-info', item.itemLunarCalendarPaperInfo]
-  ];
-};
-
-const loadLunarCalendarMore = (item) => {
-  const tagsNeedingAdditionalClasses = [
-    // Add a 'lunar-calendar' or 'shown' class on relevant item page selectors (mainly for item.scss breakpoints)
-    ['container-one', item.itemCategory],
-    ['item-info-block', item.itemCategory],
-    ['payment-info', item.itemCategory],
-    ['item-price-container', item.itemCategory],
-    ['container-three', 'shown']
-  ]
-  augmentExistingClasses(tagsNeedingAdditionalClasses);
-
-  // Load additional content for a lunar calendar item page
-  const lunarCalendarPageMoreInfo = [
-    ['feature-image-link', '#itemDetails'],
-    ['container-three', containerThreeContent]
-  ]
-  loadInfoForClassInstances(lunarCalendarPageMoreInfo);
+  }
 };
 
 const itemLoad = function (currentPage) {
   const item = config.itemsInfo[currentPage];
-  const classNamesAndInfo = getItemInfo(item);
-  void (item.itemMoreInfo && showAndLoadContainer('container-two'));
-  loadInfoForClassInstances(classNamesAndInfo);
+  void (item.itemMoreInfo && showAndLoadContainer('container-2'));
+  loadInfoForClassInstances(store.getItemInfo(item, currentPage));
   void (currentPage.startsWith('lunarCalendar') && loadLunarCalendarMore(item));
-  // Add class to center content on any print page (in item.scss)
-  void (currentPage.startsWith('print') && augmentExistingClasses([ ['container-one', 'print'] ]));
+  /* Add class to center content on any print page (in item.scss) */
+  void (
+    currentPage.startsWith('print') && 
+    augmentExistingClasses(store.getItemInfo(item, 'add-print-class'))
+  );
 };
 
 export default {

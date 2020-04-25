@@ -1,6 +1,6 @@
 'use strict'
 
-// nav pages
+/* nav pages */
 import home from './pages/home.js';
 import lunarCalendars from './pages/lunar-calendars.js';
 import prints from './pages/prints.js';
@@ -8,7 +8,7 @@ import postcards from './pages/postcards.js';
 import about from './pages/about.js';
 import veganly from './pages/veganly.js';
 
-// item page
+/* item page */
 import item from './pages/item-page.js';
 
 const itemInfoUniversals = {
@@ -19,7 +19,7 @@ const itemInfoUniversals = {
   drawingPrice: 55,
   lunarCalendarItemName: `
     <span class="lunar-calendar-title"></span><br>
-    <span class="lunar-calendar-year normal"></span><span class="normal">lunar calendar<br>
+    <span class="lunar-calendar-year normal"></span> <span class="normal">lunar calendar<br>
     by Alec Thibodeau</span>
   `,
   lunarCalendarPrice: 40,
