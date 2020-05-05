@@ -515,7 +515,9 @@ PAGES
   justify-content: center;
   margin-top: 4rem;
 }
+.home-page .lunar-calendar-available a,
 .home-page .lunar-calendar-available img {
+  display: block;
   max-height: 30vw;
   margin-bottom: 1rem;
 }

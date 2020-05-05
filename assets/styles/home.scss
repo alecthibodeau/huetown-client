@@ -116,7 +116,9 @@
     justify-content: center;
     margin-top: 4rem;
 
+    a, 
     img {
+      display: block;
       max-height: 30vw;
       margin-bottom: 1rem;
     }
