@@ -299,6 +299,11 @@ const getItemInfo = (item, pageValueOrConcern) => {
     contentToLoad: containerThreeContent
   };
 
+  const containerOnePostcard = { 
+    className: 'container-1',
+    contentToLoad: 'postcard'
+  };
+
   const containerOnePrint = { 
     className: 'container-1',
     contentToLoad: 'print'
@@ -348,8 +353,8 @@ const getItemInfo = (item, pageValueOrConcern) => {
       return lunarClasses;
     case 'lunar-page-additional-info':
       return lunarAdditionalInfo;
-    case 'add-print-class':
-      return [ containerOnePrint ];
+    case 'add-class-for-centering-item':
+      return [ containerOnePostcard, containerOnePrint ];
     default:
       return basicItemInfo.concat(extraItemInfo);
   }

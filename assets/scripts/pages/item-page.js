@@ -80,9 +80,9 @@ const itemLoad = function (currentPage) {
   void (item.itemMoreInfo && showAndLoadContainer('container-2'));
   loadInfoForClassInstances(store.getItemInfo(item, currentPage));
   void (currentPage.startsWith('lunarCalendar') && loadLunarCalendarMore(item));
-  /* Add class to center content on any print page (in item.scss) */
-  if (currentPage.startsWith('print')) {
-    augmentExistingClasses(store.getItemInfo(item, 'add-print-class'));
+  /* Add class to center content on any postcard or print page (in item.scss) */
+  if (currentPage.startsWith('postcard') || currentPage.startsWith('print')) {
+    augmentExistingClasses(store.getItemInfo(item, 'add-class-for-centering-item'));
   };
 };
 

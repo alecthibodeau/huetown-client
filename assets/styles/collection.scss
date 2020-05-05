@@ -6,9 +6,6 @@
 // Selector for .collection-page
 @mixin collection-content {
 
-  // max-width: 735px;
-  // margin: 0 auto;
-
   .content-container {
     display: flex;
     justify-content: space-around;
@@ -126,8 +123,8 @@
         height: 85vw;
   
         img {
-          max-width: unset;
-          max-height: unset;
+          max-width: auto;
+          max-height: auto;
           width: 85vw;
           height: 85vw;
         }
@@ -138,8 +135,8 @@
         height: 60vw;
   
         img {
-          max-width: unset;
-          max-height: unset;
+          max-width: auto;
+          max-height: auto;
           width: 90vw;
           height: 60vw;
         }
@@ -150,8 +147,8 @@
         height: 56vw;
   
         img {
-          max-width: unset;
-          max-height: unset;
+          max-width: auto;
+          max-height: auto;
           width: 90vw;
           height: 56vw;
         }

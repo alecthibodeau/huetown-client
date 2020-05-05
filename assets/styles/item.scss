@@ -45,7 +45,8 @@
       }
     }
 
-    &.print {
+    &.print,
+    &.postcard {
       justify-content: center;
     }
 

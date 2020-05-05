@@ -44,19 +44,14 @@ let homePage = `
         </div>
       </div>
 
-      <div class="drawings-title-container">
-        <div class="drawings-title bold">
-          original drawings
+      <div class="lunar-calendar-available">
+        <div>
+          <a href="lunar_calendar_2020.html">
+            <img src="public/images/items/thibodeau_lunar_calendar_2020_photo_main_1000px.jpg" />
+          </a>
         </div>
-      </div>
-
-      <div class="drawings-description">
-        These drawings are one-of-a-kind pieces in pen and ink on Bristol board. Usually I'd be offering them through venues such as gallerys and festivals. Since we're all at home now they're avaialble here.
-      </div>
-
-      <div class="drawings-section">
-        <div id="drawingsItems" class="drawings-items">
-          <!-- drawings here -->
+        <div class="available-text">
+          <a class="text-link" href="lunar_calendar_2020.html">The 2020 Lunar Calendar is still available</a>
         </div>
       </div>
 
@@ -91,12 +86,13 @@ const loadCreatedItem = (itemElement) => {
 };
 
 const itemCreate = (pageValue) => {
-  for (const itemName of itemsToLoad) {
-    const item = config.itemsInfo[itemName];
-    const itemElement = document.createElement('div');
-    loadCreatedItem(itemElement);
-    setCustomClassesAndContent(store.getItemInfo(item, pageValue), item);
-  }
+  // for (const itemName of itemsToLoad) {
+  //   const item = config.itemsInfo[itemName];
+  //   const itemElement = document.createElement('div');
+  //   loadCreatedItem(itemElement);
+  //   setCustomClassesAndContent(store.getItemInfo(item, pageValue), item);
+  // }
+  return pageValue;
 };
 
 export default {
