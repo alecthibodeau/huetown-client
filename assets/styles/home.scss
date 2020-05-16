@@ -1,7 +1,7 @@
 // Selector for .home-page
 @mixin home-content {
   margin-bottom: 2rem;
-  
+
   .content-top {
     display: flex;
     align-items: center;
@@ -19,7 +19,7 @@
       border: 1px solid $black;
     }
   }
-  
+
   .announcement {
     margin-left: 2rem;
 
@@ -102,7 +102,7 @@
 
       width: 16rem;
       min-height: 4rem;
-      
+
       &:hover {
         background: $orange-muted;
       }
@@ -116,7 +116,7 @@
     justify-content: center;
     margin-top: 4rem;
 
-    a, 
+    a,
     img {
       display: block;
       max-height: 30vw;
@@ -154,7 +154,7 @@
       flex-direction: column;
       justify-content: center;
     }
-    
+
     .announcement {
       margin-left: 0;
       margin-top: 1rem;
@@ -164,7 +164,7 @@
       padding: 4vw;
       margin: 3rem 0 2rem;
     }
-  
+
     .drawings-title {
       font-size: 2rem;
     }
@@ -175,7 +175,7 @@
 
     .drawing-image {
       margin-right: 0;
-  
+
       img {
         max-height: 80vw;
       }
@@ -184,7 +184,7 @@
     .drawing-info {
       width: auto;
     }
-    
+
     .payment-info {
       flex-direction: row;
       justify-content: flex-start;
