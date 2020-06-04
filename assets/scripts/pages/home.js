@@ -34,7 +34,7 @@ let homePage = `
           <img src="public/images/home/artist_relief_fund_400px.png" />
         </a>
         <div class="announcement">
-          Through May 31st, 2020 I'm donating 50% of all sales at Huetown to the
+          Through June 30th, 2020 I'm donating 50% of all sales at Huetown to the
           <a class="text-link" href="https://www.artistcommunities.org/arf" target="_blank">Rhode Island Artist Relief Fund</a> &mdash; newly established in response to COVID-19.
           I started collecting these contributions on April 11th, 2020 with my participation in
           the Rhode Island School of Design's <a class="text-link" href="https://unbound.risd.edu" target="_blank">RISD Unbound 2020</a>. Much thanks to those who've already helped.
