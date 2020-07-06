@@ -71,17 +71,17 @@ let homePage = `
 //   document.getElementById('drawingsItems').appendChild(itemElement);
 // };
 
-// const itemCreate = (pageValue) => {
-//   for (const itemName of itemsToLoad) {
-//     const item = config.itemsInfo[itemName];
-//     const itemElement = document.createElement('div');
-//     loadCreatedItem(itemElement);
-//     setCustomClassesAndContent(store.getItemInfo(item, pageValue), item);
-//   }
-//   return pageValue;
-// };
+const itemCreate = (pageValue) => {
+  // for (const itemName of itemsToLoad) {
+  //   const item = config.itemsInfo[itemName];
+  //   const itemElement = document.createElement('div');
+  //   loadCreatedItem(itemElement);
+  //   setCustomClassesAndContent(store.getItemInfo(item, pageValue), item);
+  // }
+  return pageValue;
+};
 
 export default {
   homePage,
-  // itemCreate
+  itemCreate
 };
