@@ -16,7 +16,7 @@
     display: flex;
     justify-content: flex-start;
     align-items: flex-start;
-  
+
     div {
       margin: 0 25px;
       position: relative;
@@ -38,7 +38,7 @@
 
   .subscribe-button {
     @include about-page-button-styles;
-    
+
     // Override MailChimp button styling defaults
     width: 16rem;
     min-height: 4rem;
@@ -46,7 +46,7 @@
     font-family: 'Raleway', sans-serif !important;
     font-size: 1.4rem;
     font-weight: 600 !important;
-    
+
     &:hover {
       background: $orange-muted !important;
     }
@@ -59,16 +59,13 @@
 
   .huetown-h-logo,
   .self-portrait {
-
-    @media only screen and (max-width: 700px) {
-      width: 11vw;
-      height: 11vw;
-    }
+    width: 11vw;
+    height: 11vw;
   }
 }
 
 @media only screen and (max-width: 650px) {
-  
+
   .about-top {
     display: block !important;
 
@@ -79,14 +76,14 @@
 
     .huetown-h-logo,
     .self-portrait {
-  
+
       &.self-portrait {
         min-width: 75px;
         min-height: 75px;
         margin: 0 10px 10px 0;
         float: left;
       }
-    
+
       &.huetown-h-logo {
         display: none;
       }

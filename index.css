@@ -4,8 +4,17 @@ DIMENSIONS
 /************************************
 COLOR VARIABLES
 ************************************/
+/**
+ * Selector for for header tag
+ */
+/**
+ * Selector for footer tag
+ */
+/**
+ * Selector for .home-page
+ */
 @import url("https://fonts.googleapis.com/css?family=Raleway:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i|Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i");
-@media only screen and (max-width: 700px) and (max-width: 700px) {
+@media only screen and (max-width: 700px) {
   .huetown-h-logo,
 .self-portrait {
     width: 11vw;
@@ -150,6 +159,7 @@ html body header button.burger-button div.burger-bars-container div.bar.closing-
   }
 }
 html body header nav {
+  max-width: 1000px;
   display: flex;
   justify-content: space-around;
   margin: 2rem auto;
@@ -158,25 +168,15 @@ html body header nav a.nav-element {
   padding: 0;
   border: none;
   font-family: "Raleway", sans-serif;
-  font-size: 1.6rem;
-  font-weight: 400;
-  letter-spacing: 0.3125rem;
+  font-size: 1.75rem;
+  font-weight: 500;
+  letter-spacing: 0.25rem;
   text-align: center;
   text-decoration: none;
   text-transform: uppercase;
   transition: all 0.3s linear;
-  color: #333;
+  color: #191919;
   cursor: pointer;
-}
-@media only screen and (max-width: 750px) {
-  html body header nav a.nav-element {
-    letter-spacing: 0.3vw;
-  }
-}
-@media only screen and (max-width: 650px) {
-  html body header nav a.nav-element {
-    letter-spacing: 0.3125rem;
-  }
 }
 @media only screen and (min-width: 651px) {
   html body header nav a.nav-element::after {
@@ -198,33 +198,21 @@ html body header nav a.nav-element {
     width: 100%;
     padding: 1.5rem 0;
     border-bottom: 1.5px solid #7f7f7f;
-    font-size: 1.8rem;
-    font-weight: 500;
   }
 }
 html body header nav form {
   padding: 0;
   border: none;
   font-family: "Raleway", sans-serif;
-  font-size: 1.6rem;
-  font-weight: 400;
-  letter-spacing: 0.3125rem;
+  font-size: 1.75rem;
+  font-weight: 500;
+  letter-spacing: 0.25rem;
   text-align: center;
   text-decoration: none;
   text-transform: uppercase;
   transition: all 0.3s linear;
-  color: #333;
+  color: #191919;
   cursor: pointer;
-}
-@media only screen and (max-width: 750px) {
-  html body header nav form {
-    letter-spacing: 0.3vw;
-  }
-}
-@media only screen and (max-width: 650px) {
-  html body header nav form {
-    letter-spacing: 0.3125rem;
-  }
 }
 @media only screen and (min-width: 651px) {
   html body header nav form::after {
@@ -246,25 +234,15 @@ html body header nav form input[value="view cart"] {
   padding: 0;
   border: none;
   font-family: "Raleway", sans-serif;
-  font-size: 1.6rem;
-  font-weight: 400;
-  letter-spacing: 0.3125rem;
+  font-size: 1.75rem;
+  font-weight: 500;
+  letter-spacing: 0.25rem;
   text-align: center;
   text-decoration: none;
   text-transform: uppercase;
   transition: all 0.3s linear;
-  color: #333;
+  color: #191919;
   cursor: pointer;
-}
-@media only screen and (max-width: 750px) {
-  html body header nav form input[value="view cart"] {
-    letter-spacing: 0.3vw;
-  }
-}
-@media only screen and (max-width: 650px) {
-  html body header nav form input[value="view cart"] {
-    letter-spacing: 0.3125rem;
-  }
 }
 @media only screen and (min-width: 651px) {
   html body header nav form input[value="view cart"]::after {
@@ -286,8 +264,6 @@ html body header nav form input[value="view cart"] {
     width: 100%;
     padding: 1.5rem 0;
     border-bottom: 1.5px solid #7f7f7f;
-    font-size: 1.8rem;
-    font-weight: 500;
   }
 }
 @media only screen and (max-width: 650px) {
@@ -398,14 +374,12 @@ html body footer section:nth-of-type(3) div {
   border-radius: 0.5rem;
 }
 @media only screen and (max-width: 650px) {
-  html body footer section {
-    margin: 1rem 2rem;
-  }
-}
-@media only screen and (max-width: 650px) {
   html body footer {
     position: relative;
     top: 75px;
+  }
+  html body footer section {
+    margin: 1rem 2rem;
   }
 }
 
@@ -414,6 +388,9 @@ PAGES
 ************/
 .home-page {
   margin-bottom: 2rem;
+  /**
+   * Media Queries
+   */
 }
 .home-page .content-top {
   display: flex;
@@ -509,7 +486,8 @@ PAGES
   background: #ff9600;
 }
 .home-page .lunar-calendar-available {
-  font-size: 3rem;
+  max-width: 800px;
+  font-size: 2rem;
   padding: 0 4rem;
   margin-top: 4rem;
 }
@@ -536,6 +514,7 @@ PAGES
     margin-top: 1rem;
   }
   .home-page .lunar-calendar-available {
+    margin-top: 2rem;
     font-size: 2rem;
   }
   .home-page .drawings-title-container {
@@ -564,9 +543,6 @@ PAGES
   }
   .home-page .item-price-container {
     margin: 0.5rem 1rem 0.5rem 0;
-  }
-  .home-page .lunar-calendar-available {
-    margin-top: 2rem;
   }
 }
 

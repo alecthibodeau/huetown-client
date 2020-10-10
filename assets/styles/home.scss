@@ -1,4 +1,7 @@
-// Selector for .home-page
+/**
+ * Selector for .home-page
+ */
+
 @mixin home-content {
   margin-bottom: 2rem;
 
@@ -125,12 +128,15 @@
   // }
 
   .lunar-calendar-available {
-    font-size: 3rem;
+    max-width: 800px;
+    font-size: 2rem;
     padding: 0 4rem;
     margin-top: 4rem;
   }
 
-  ///* MEDIA QUERIES *///
+  /**
+   * Media Queries
+   */
 
   @media only screen and (max-width: 850px) {
 
@@ -153,8 +159,6 @@
     }
   }
 
-  ///* MEDIA QUERIES *///
-
   @media only screen and (max-width: 650px) {
     .content-top {
       flex-direction: column;
@@ -167,6 +171,7 @@
     }
 
     .lunar-calendar-available {
+      margin-top: 2rem;
       font-size: 2rem;
     }
 
@@ -203,10 +208,6 @@
 
     .item-price-container {
       margin: .5rem 1rem .5rem 0;
-    }
-
-    .lunar-calendar-available {
-      margin-top: 2rem;
     }
   }
 }
