@@ -109,19 +109,25 @@
     }
   }
 
-  .lunar-calendar-available {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    margin-top: 4rem;
+  // .lunar-calendar-available {
+  //   display: flex;
+  //   flex-direction: column;
+  //   align-items: center;
+  //   justify-content: center;
+  //   margin-top: 4rem;
 
-    a,
-    img {
-      display: block;
-      max-height: 30vw;
-      margin-bottom: 1rem;
-    }
+  //   a,
+  //   img {
+  //     display: block;
+  //     max-height: 30vw;
+  //     margin-bottom: 1rem;
+  //   }
+  // }
+
+  .lunar-calendar-available {
+    font-size: 3rem;
+    padding: 0 4rem;
+    margin-top: 4rem;
   }
 
   ///* MEDIA QUERIES *///
@@ -158,6 +164,10 @@
     .announcement {
       margin-left: 0;
       margin-top: 1rem;
+    }
+
+    .lunar-calendar-available {
+      font-size: 2rem;
     }
 
     .drawings-title-container {

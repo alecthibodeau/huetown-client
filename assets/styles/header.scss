@@ -55,7 +55,7 @@
 // Primary mixin: selector for header tag
 @mixin header-content {
   max-width: 1200px;
-  margin: 0.5rem auto;
+  margin: 1rem auto;
 
   @media only screen and (max-width: 650px) {
     width: 100%;

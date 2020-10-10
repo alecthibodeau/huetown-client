@@ -49,7 +49,7 @@ html body {
 }
 html body header {
   max-width: 1200px;
-  margin: 0.5rem auto;
+  margin: 1rem auto;
 }
 @media only screen and (max-width: 650px) {
   html body header {
@@ -509,17 +509,9 @@ PAGES
   background: #ff9600;
 }
 .home-page .lunar-calendar-available {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
+  font-size: 3rem;
+  padding: 0 4rem;
   margin-top: 4rem;
-}
-.home-page .lunar-calendar-available a,
-.home-page .lunar-calendar-available img {
-  display: block;
-  max-height: 30vw;
-  margin-bottom: 1rem;
 }
 @media only screen and (max-width: 850px) {
   .home-page .drawing-info {
@@ -542,6 +534,9 @@ PAGES
   .home-page .announcement {
     margin-left: 0;
     margin-top: 1rem;
+  }
+  .home-page .lunar-calendar-available {
+    font-size: 2rem;
   }
   .home-page .drawings-title-container {
     padding: 4vw;

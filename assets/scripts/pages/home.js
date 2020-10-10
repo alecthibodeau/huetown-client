@@ -26,21 +26,31 @@
 //   </div>
 // `;
 
+// let homePage = `
+// <div class="home-page">
+//   <div class="content">
+//     <div class="lunar-calendar-available">
+//       <div>
+//         <a href="lunar_calendar_2020.html">
+//           <img src="public/images/items/thibodeau_lunar_calendar_2020_photo_main_1000px.jpg" />
+//         </a>
+//       </div>
+//       <div class="available-text">
+//         <a class="text-link" href="lunar_calendar_2020.html">The 2020 Lunar Calendar is still available</a>
+//       </div>
+//     </div>
+//   </div>
+// </div>
+
 let homePage = `
+
   <div class="home-page">
     <div class="content">
-
       <div class="lunar-calendar-available">
         <div>
-          <a href="lunar_calendar_2020.html">
-            <img src="public/images/items/thibodeau_lunar_calendar_2020_photo_main_1000px.jpg" />
-          </a>
-        </div>
-        <div class="available-text">
-          <a class="text-link" href="lunar_calendar_2020.html">The 2020 Lunar Calendar is still available</a>
+          My 2021 lunar calendar is now in production! Follow <a class="text-link" href="https://www.instagram.com/huetown/" target="_blank">@huetown</a> on Instagram and join my <a class="text-link" href="about.html">email list</a> to get first word when the prints are ready. They'll be available for purchase here as shipped orders and at select brick-and-mortar retail locations.
         </div>
       </div>
-
     </div>
   </div>
 `;
