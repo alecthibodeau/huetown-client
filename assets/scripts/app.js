@@ -28,8 +28,8 @@ const loadMainContent = (bodyDiv, pageValue, page) => {
   };
 
   /*
-    If the list of collection pages includes the current page 
-    then add a category class to its image links 
+    If the list of collection pages includes the current page
+    then add a category class to its image links
     (for collection.scss breakpoints)
   */
   if (collectionPages.includes(pageValue)) {
@@ -41,11 +41,11 @@ const loadBodyContent = () => {
   const bodyDiv = document.getElementById('body');
   const pageValue = bodyDiv.getAttribute('page-value');
   const page = config.itemsInfo[pageValue];
-  
+
   bodyDiv.innerHTML = body.bodyContent;
-  
-  /* 
-    Load page content if it exists in config, 
+
+  /*
+    Load page content if it exists in config,
     otherwise the HTML is <main> in body.js
   */
   void (page && loadMainContent(bodyDiv, pageValue, page));

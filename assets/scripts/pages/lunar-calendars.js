@@ -4,7 +4,7 @@ let lunarCalendarsPage = `
   <div class="collection-page lunar-calendars-page">
     <div class="content-container lunar-calendar">
       <div class="content-block">
-        <a 
+        <a
           data-title="2020 Lunar Calendar"
           class="collection-link" href="lunar_calendar_2020.html">
           <img class="collection-image"
@@ -13,7 +13,7 @@ let lunarCalendarsPage = `
         <div class="content-item-name">2020 Lunar Calendar</div>
       </div>
       <div class="content-block">
-        <a 
+        <a
           data-title="2019 Lunar Calendar"
           class="collection-link" href="lunar_calendar_2019.html">
           <img class="collection-image"
@@ -24,7 +24,7 @@ let lunarCalendarsPage = `
     </div>
     <div class="content-container lunar-calendar">
       <div class="content-block">
-        <a 
+        <a
           data-title="2018 Lunar Calendar"
           class="collection-link" href="lunar_calendar_2018.html">
           <img class="collection-image"

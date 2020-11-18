@@ -45,22 +45,22 @@ const itemInfoUniversals = {
   lunarCalendarInfoFour: 'Ships rolled and triple-packaged: archival wrapping, <a class="text-link" href="#lunarPhases">eco-friendly protective tube</a> and outer shipping container',
   lunarCalendarBlocks: `
     <div class=${infoBlock}>
-      <span class="${lunarDashCalendar}-title ital"></span> is a letterpress-printed lunar calendar designed and drawn by Alec Thibodeau (me!), 
-      chronicling all phases of the moon for <span class="${lunarDashCalendar}-year"></span>. 
-      From a limited edition of 500 prints <span class="${lunarDashCalendar}-title ital"></span> continues my ongoing lunar calendar series, 
-      which features ornate border drawings in a landscape format. 
-      As with each of my previous lunar calendars, this one measures 19" x 11.75" (a golden rectangle) and is expertly printed by Dan Wood 
+      <span class="${lunarDashCalendar}-title ital"></span> is a letterpress-printed lunar calendar designed and drawn by Alec Thibodeau (me!),
+      chronicling all phases of the moon for <span class="${lunarDashCalendar}-year"></span>.
+      From a limited edition of 500 prints <span class="${lunarDashCalendar}-title ital"></span> continues my ongoing lunar calendar series,
+      which features ornate border drawings in a landscape format.
+      As with each of my previous lunar calendars, this one measures 19" x 11.75" (a golden rectangle) and is expertly printed by Dan Wood
       and his team at <a class=${textLink} href="http://www.dwriletterpress.net" target="_blank">DWRI&nbsp;Letterpress</a>.
     </div>
     <div class=${infoBlock}>
-      The <span class="${lunarDashCalendar}-year"></span> lunar calendar comprises new drawings and year-specific lunar phase information. 
+      The <span class="${lunarDashCalendar}-year"></span> lunar calendar comprises new drawings and year-specific lunar phase information.
       Each calendar is printed on <span class="${lunarDashCalendar}-paper-info"></span>, blind-debossed with my name and the print shop's name &mdash; and hand numbered and signed by me. Each calendar ships with an accompanying information sheet, archival wrapping and an eco-friendly fiberboard protective tube: reusable, recycled and recyclable, with crimped ends and no plastic caps.
     </div>
     <div class=${infoBlock}>
       The calendar's lunar phase information is calibrated for any place in the Eastern Time Zone and is accurate to within a day for any place in the Northern Hemisphere. The calendar is designed, drawn and printed in Providence, Rhode Island, which is identified as a representative location within the artwork.
     </div>
     <div class=${infoBlock}>
-      Custom moon illustrations portray all principal lunar phases (New Moon, First Quarter Moon, Full Moon and Third Quarter Moon) plus all intermediate crescent and gibbous phases. For months with less than 31 days, drawings of clouds occupy the extra spaces. 
+      Custom moon illustrations portray all principal lunar phases (New Moon, First Quarter Moon, Full Moon and Third Quarter Moon) plus all intermediate crescent and gibbous phases. For months with less than 31 days, drawings of clouds occupy the extra spaces.
       <a class=${textLink} href="#featureImage">ORDER&nbsp;NOW</a>
     </div>
 

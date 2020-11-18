@@ -14,7 +14,7 @@ const addOrRemoveDrawerClasses = (nav, burgerButton, action) => {
     bar.classList[action]('closing-x');
   });
 };
-  
+
 const drawerToggle = () => {
   const nav = document.getElementById('nav');
   const burgerButton = document.getElementById('burgerButton');
@@ -59,7 +59,7 @@ const loadLunarPhaseInfo = () => {
         phase,
         phaseInfo.phaseElement,
         phaseInfo.classPrefix,
-        phaseInfo.elementType, 
+        phaseInfo.elementType,
         phaseInfo.parent === 'lunar-phases' ? phaseInfo.parent : `${phaseInfo.parent}-${phase}`
       )
     }

@@ -41,7 +41,7 @@ html {
 
       .text-link {
         text-decoration: none;
-      
+
         &:link,
         &:visited,
         &:hover,
@@ -57,7 +57,7 @@ html {
       .bold {
         font-weight: 600;
       }
-      
+
       @media only screen and (max-width: 650px) {
         top: 85px;
       }

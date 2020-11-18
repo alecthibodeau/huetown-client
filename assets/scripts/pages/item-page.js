@@ -21,7 +21,7 @@ let itemPage = `
             <div class="qty-label">
               <span>
                 QTY
-              </span> 
+              </span>
             </div>
             ${store.itemForm}
           </div>
