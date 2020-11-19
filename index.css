@@ -313,14 +313,24 @@ html body main {
 html body main .text-link {
   text-decoration: none;
 }
-html body main .text-link:link, html body main .text-link:visited, html body main .text-link:hover, html body main .text-link:active {
+html body main .text-link:link, html body main .text-link:visited, html body main .text-link:active {
   color: #f27089;
+}
+html body main .text-link:hover {
+  color: #f64154;
+  text-decoration: underline;
 }
 html body main .ital {
   font-style: italic;
 }
 html body main .bold {
   font-weight: 600;
+}
+html body main .not-found {
+  text-align: center;
+}
+html body main .not-found h1 {
+  font-size: 48px;
 }
 @media only screen and (max-width: 650px) {
   html body main {
