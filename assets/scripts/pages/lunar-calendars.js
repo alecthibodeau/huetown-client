@@ -6,7 +6,7 @@ let lunarCalendarsPage = `
       <div class="content-block">
         <a
           data-title="2020 Lunar Calendar"
-          class="collection-link" href="lunar_calendar_2020.html">
+          class="collection-link" href="lunar-calendar-2020.html">
           <img class="collection-image"
             src="/public/images/items/thibodeau_lunar_calendar_2020_main.png" />
         </a>
@@ -15,7 +15,7 @@ let lunarCalendarsPage = `
       <div class="content-block">
         <a
           data-title="2019 Lunar Calendar"
-          class="collection-link" href="lunar_calendar_2019.html">
+          class="collection-link" href="lunar-calendar-2019.html">
           <img class="collection-image"
             src="public/images/items/thibodeau_lunar_calendar_2019_main.jpg" />
         </a>
@@ -26,7 +26,7 @@ let lunarCalendarsPage = `
       <div class="content-block">
         <a
           data-title="2018 Lunar Calendar"
-          class="collection-link" href="lunar_calendar_2018.html">
+          class="collection-link" href="lunar-calendar-2018.html">
           <img class="collection-image"
             src="public/images/items/thibodeau_lunar_calendar_2018_main.jpg" />
         </a>
@@ -35,7 +35,7 @@ let lunarCalendarsPage = `
       <div class="content-block">
         <a
           data-title="2017 Lunar Calendar"
-          class="collection-link" href="lunar_calendar_2017.html">
+          class="collection-link" href="lunar-calendar-2017.html">
           <img class="collection-image"
             src="public/images/items/thibodeau_lunar_calendar_2017_main.jpg" />
         </a>
