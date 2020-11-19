@@ -19,16 +19,10 @@ const drawingsDirectory = `${imageDirectory}home/drawings/`;
 const itemsDirectory = `${imageDirectory}items/`;
 
 /* constants */
-const drawing = 'drawing';
-const infoBlock = 'info-block';
 const lunarDashCalendar = 'lunar-calendar';
-const postcard = 'postcard';
-const print = 'print';
-const textLink = 'text-link';
-const unframed = 'unframed';
 
 const itemInfoUniversals = {
-  drawingInfoOriginalDrawing: `original ${drawing}`,
+  drawingInfoOriginalDrawing: `original drawing`,
   drawingInfoPenAndInk: 'pen and ink on Bristol board',
   drawingInfoThreeAndQuarterInches: '3.25 x 3.25 inches',
   drawingInfoSignedOnBack: 'signed on the back',
@@ -42,26 +36,26 @@ const itemInfoUniversals = {
   lunarCalendarInfoOne: '19 x 11.75 inches<br>Letterpress print<br>Printed by DWRI Letterpress',
   lunarCalendarInfoTwo: '',
   lunarCalendarInfoThree: `Hand numbered and signed by the artist in a limited edition of <span class="${lunarDashCalendar}-edition"></span> prints`,
-  lunarCalendarInfoFour: 'Ships rolled and triple-packaged: archival wrapping, <a class="text-link" href="#lunarPhases">eco-friendly protective tube</a> and outer shipping container',
+  lunarCalendarInfoFour: 'Ships rolled and triple-packaged: archival wrap, <a class="text-link" href="#lunarPhases">eco-friendly protective tube</a> and outer shipping container',
   lunarCalendarBlocks: `
-    <div class=${infoBlock}>
+    <div class=info-block>
       <span class="${lunarDashCalendar}-title ital"></span> is a letterpress-printed lunar calendar designed and drawn by Alec Thibodeau (me!),
       chronicling all phases of the moon for <span class="${lunarDashCalendar}-year"></span>.
-      From a limited edition of 500 prints <span class="${lunarDashCalendar}-title ital"></span> continues my ongoing lunar calendar series,
-      which features ornate border drawings in a landscape format.
-      As with each of my previous lunar calendars, this one measures 19" x 11.75" (a golden rectangle) and is expertly printed by Dan Wood
-      and his team at <a class=${textLink} href="http://www.dwriletterpress.net" target="_blank">DWRI&nbsp;Letterpress</a>.
+      From a limited edition of <span class="${lunarDashCalendar}-edition"></span> prints <span class="${lunarDashCalendar}-title ital"></span> continues Alec's ongoing lunar calendar series,
+      which features ornate illustrations framing an annual cycle of moon shapes.
+      As with each of Alec's previous lunar calendars, this piece measures 19" x 11.75" (a golden rectangle) and is expertly printed by Dan Wood
+      and his team at <a class="text-link" href="http://www.dwriletterpress.net" target="_blank">DWRI&nbsp;Letterpress</a>.
     </div>
-    <div class=${infoBlock}>
+    <div class=info-block>
       The <span class="${lunarDashCalendar}-year"></span> lunar calendar comprises new drawings and year-specific lunar phase information.
-      Each calendar is printed on <span class="${lunarDashCalendar}-paper-info"></span>, blind-debossed with my name and the print shop's name &mdash; and hand numbered and signed by me. Each calendar ships with an accompanying information sheet, archival wrapping and an eco-friendly fiberboard protective tube: reusable, recycled and recyclable, with crimped ends and no plastic caps.
+      Each calendar is printed on <span class="${lunarDashCalendar}-paper-info"></span>, blind-debossed with Alec's name and the print shop's name &mdash; and hand numbered and signed by Alec. Each calendar ships with an accompanying information sheet, archival wrap and an eco-friendly fiberboard protective tube: reusable, recycled and recyclable, with crimped ends and no plastic caps.
     </div>
-    <div class=${infoBlock}>
-      The calendar's lunar phase information is calibrated for any place in the Eastern Time Zone and is accurate to within a day for any place in the Northern Hemisphere. The calendar is designed, drawn and printed in Providence, Rhode Island, which is identified as a representative location within the artwork.
+    <div class=info-block>
+      The calendar's lunar phase chart is calibrated for any location in the Eastern Time Zone and is accurate to within a day for anywhere in the Northern Hemisphere. The chart also matches lunar cycles in the Southern Hemisphere (but with inverted shapes). The calendar is designed, drawn and printed in Providence, Rhode Island, which is identified as a representative location within the artwork.
     </div>
-    <div class=${infoBlock}>
+    <div class=info-block>
       Custom moon illustrations portray all principal lunar phases (New Moon, First Quarter Moon, Full Moon and Third Quarter Moon) plus all intermediate crescent and gibbous phases. For months with less than 31 days, drawings of clouds occupy the extra spaces.
-      <a class=${textLink} href="#featureImage">ORDER&nbsp;NOW</a>
+      <a class="text-link" href="#featureImage">PLACE AN ORDER</a>
     </div>
 
     <div class="lunar-phases" id="lunarPhases">
@@ -99,11 +93,11 @@ const itemsInfo = {
     mainContent: veganly.veganlyPage
   },
   'drawingBisonBreathes': {
-    itemClass: `${drawing}-bison-breathes`,
-    itemCategory: drawing,
+    itemClass: 'drawing-bison-breathes',
+    itemCategory: 'drawing',
     itemName: 'Bison Breathes',
     itemSubname: '',
-    itemImageFront: `${drawingsDirectory}drawing_bison_breathes_gs_500px.png`,
+    itemImageFront: `${drawingsDirectory}drawing_bison_breathes_gs_500px.png',
     itemInfoOne: itemInfoUniversals.drawingInfoOriginalDrawing,
     itemInfoTwo: itemInfoUniversals.drawingInfoPenAndInk,
     itemInfoThree: itemInfoUniversals.drawingInfoThreeAndQuarterInches,
@@ -112,8 +106,8 @@ const itemsInfo = {
     itemId: 'P32KQAB5THSDE'
   },
   'drawingButternutBear': {
-    itemClass: `${drawing}-butternut-bear`,
-    itemCategory: drawing,
+    itemClass: 'drawing-butternut-bear`,
+    itemCategory: 'drawing',
     itemName: 'Butternut Bear',
     itemSubname: '',
     itemImageFront: `${drawingsDirectory}drawing_butternut_bear_gs_500px.png`,
@@ -125,8 +119,8 @@ const itemsInfo = {
     itemId: 'ZPDMSTPEF8498'
   },
   'drawingHawkHeralds': {
-    itemClass: `${drawing}-hawk-heralds`,
-    itemCategory: drawing,
+    itemClass: 'drawing-hawk-heralds',
+    itemCategory: 'drawing',
     itemName: 'Hawk Heralds',
     itemSubname: '',
     itemImageFront: `${drawingsDirectory}drawing_hawk_heralds_gs_500px.png`,
@@ -138,8 +132,8 @@ const itemsInfo = {
     itemId: 'DS7X4RVHNZXJS'
   },
   'drawingPinkMoon2020': {
-    itemClass: `${drawing}-pink-moon-2020`,
-    itemCategory: drawing,
+    itemClass: 'drawing-pink-moon-2020',
+    itemCategory: 'drawing',
     itemName: 'Pink Moon 2020',
     itemSubname: '',
     itemImageFront: `${drawingsDirectory}drawing_pink_moon_2020_gs_500px.png`,
@@ -151,8 +145,8 @@ const itemsInfo = {
     itemId: 'WXGKHV6QX86BU'
   },
   'drawingRobinReveals': {
-    itemClass: `${drawing}-robin-reveals`,
-    itemCategory: drawing,
+    itemClass: 'drawing-robin-reveals',
+    itemCategory: 'drawing',
     itemName: 'Robin Reveals',
     itemSubname: '',
     itemImageFront: `${drawingsDirectory}drawing_robin_reveals_gs_500px.png`,
@@ -164,8 +158,8 @@ const itemsInfo = {
     itemId: '27MQ7DNEX9DC2'
   },
   'drawingWormMoon2020': {
-    itemClass: `${drawing}-worm-moon-2020`,
-    itemCategory: drawing,
+    itemClass: 'drawing-worm-moon-2020',
+    itemCategory: 'drawing',
     itemName: 'Worm Moon 2020',
     itemSubname: '',
     itemImageFront: `${drawingsDirectory}drawing_worm_moon_2020_gs_500px.png`,
@@ -311,9 +305,9 @@ const itemsInfo = {
   },
   'postcardAssets': {
     mainContent: item.itemPage,
-    itemCategory: postcard,
+    itemCategory: 'postcard',
     itemName: 'Assets',
-    itemSubname: postcard,
+    itemSubname: 'postcard',
     itemImageFront: 'public/images/items/postcard_assets.png',
     itemInfoOne: itemInfoUniversals.postcardInfoOne,
     itemInfoTwo: itemInfoUniversals.postcardInfoTwo,
@@ -323,9 +317,9 @@ const itemsInfo = {
   },
   'postcardCachalot': {
     mainContent: item.itemPage,
-    itemCategory: postcard,
+    itemCategory: 'postcard',
     itemName: 'Cachalot',
-    itemSubname: postcard,
+    itemSubname: 'postcard',
     itemImageFront: 'public/images/items/postcard_cachalot.png',
     itemInfoOne: itemInfoUniversals.postcardInfoOne,
     itemInfoTwo: itemInfoUniversals.postcardInfoTwo,
@@ -335,9 +329,9 @@ const itemsInfo = {
   },
   'postcardFlanneryOConnor': {
     mainContent: item.itemPage,
-    itemCategory: postcard,
+    itemCategory: 'postcard',
     itemName: `Flannery O'Connor`,
-    itemSubname: postcard,
+    itemSubname: 'postcard',
     itemImageFront: 'public/images/items/postcard_flannery_oconnor.png',
     itemInfoOne: itemInfoUniversals.postcardInfoOne,
     itemInfoTwo: itemInfoUniversals.postcardInfoTwo,
@@ -347,9 +341,9 @@ const itemsInfo = {
   },
   'postcardGreatWhiteShark': {
     mainContent: item.itemPage,
-    itemCategory: postcard,
+    itemCategory: 'postcard',
     itemName: 'Great White Shark',
-    itemSubname: postcard,
+    itemSubname: 'postcard',
     itemImageFront: 'public/images/items/postcard_great_white_shark.png',
     itemInfoOne: itemInfoUniversals.postcardInfoOne,
     itemInfoTwo: itemInfoUniversals.postcardInfoTwo,
@@ -359,9 +353,9 @@ const itemsInfo = {
   },
   'postcardHermanMelville': {
     mainContent: item.itemPage,
-    itemCategory: postcard,
+    itemCategory: 'postcard',
     itemName: 'Herman Melville',
-    itemSubname: postcard,
+    itemSubname: 'postcard',
     itemImageFront: 'public/images/items/postcard_herman_melville.png',
     itemInfoOne: itemInfoUniversals.postcardInfoOne,
     itemInfoTwo: itemInfoUniversals.postcardInfoTwo,
@@ -371,9 +365,9 @@ const itemsInfo = {
   },
   'postcardHippopotamus': {
     mainContent: item.itemPage,
-    itemCategory: postcard,
+    itemCategory: 'postcard',
     itemName: 'Hippopotamus',
-    itemSubname: postcard,
+    itemSubname: 'postcard',
     itemImageFront: 'public/images/items/postcard_hippopotamus.png',
     itemInfoOne: itemInfoUniversals.postcardInfoOne,
     itemInfoTwo: itemInfoUniversals.postcardInfoTwo,
@@ -383,9 +377,9 @@ const itemsInfo = {
   },
   'postcardRhodeIslandWhale': {
     mainContent: item.itemPage,
-    itemCategory: postcard,
+    itemCategory: 'postcard',
     itemName: 'Rhode Island Whale',
-    itemSubname: postcard,
+    itemSubname: 'postcard',
     itemImageFront: 'public/images/items/postcard_rhode_island_whale.png',
     itemInfoOne: itemInfoUniversals.postcardInfoOne,
     itemInfoTwo: itemInfoUniversals.postcardInfoTwo,
@@ -395,27 +389,27 @@ const itemsInfo = {
   },
   'printFunktionslust': {
     mainContent: item.itemPage,
-    itemCategory: print,
+    itemCategory: 'print',
     itemName: 'Funktionslust for All of Us<br><span class="normal">by Alec Thibodeau</span>',
     itemSubname: '',
     itemImageFront: 'public/images/items/print_funktionslust_01.jpg',
     itemInfoOne: '5.75 x 5.75 inches<br>Screen print',
     itemInfoTwo: 'Printed by the artist',
     itemInfoThree: 'From a limited edition of 50 prints<br>Hand numbered and signed by the artist',
-    itemInfoFour: unframed,
+    itemInfoFour: 'unframed',
     itemPrice: itemInfoUniversals.printPrice,
     itemId: 'VARZ4F5RHAP9Y'
   },
   'printStentorian': {
     mainContent: item.itemPage,
-    itemCategory: print,
+    itemCategory: 'print',
     itemName: 'Stentorian<br><span class="normal">by Alec Thibodeau</span>',
     itemSubname: '',
     itemImageFront: 'public/images/items/print_stentorian_01.jpg',
     itemInfoOne: '5.5 x 5.5 inches<br>Letterpress print',
     itemInfoTwo: 'Printed by DWRI Letterpress',
     itemInfoThree: 'From a limited edition of 250 prints<br>Hand numbered and signed by the artist',
-    itemInfoFour: unframed,
+    itemInfoFour: 'unframed',
     itemPrice: itemInfoUniversals.printPrice,
     itemId: 'AUN3U4NQ52J2W'
   }
