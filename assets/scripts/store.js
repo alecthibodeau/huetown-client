@@ -62,7 +62,7 @@ let containerThreeContent = `
       <div>
         <div>
           <a class="available-calendar" href="lunar-calendar-2020.html">
-            <img src="public/images/items/thibodeau_lunar-calendar-2020_main.png" />
+            <img src="public/images/items/thibodeau_lunar_calendar_2020_main.png" />
           </a>
         </div>
         <div class="text">2020 Lunar Calendar</div>
@@ -71,7 +71,7 @@ let containerThreeContent = `
       <div>
         <div>
           <a class="available-calendar" href="lunar-calendar-2019.html">
-            <img src="public/images/items/thibodeau_lunar-calendar-2019_main.jpg" />
+            <img src="public/images/items/thibodeau_lunar_calendar_2019_main.jpg" />
           </a>
         </div>
         <div class="text">2019 Lunar Calendar</div>
@@ -80,7 +80,7 @@ let containerThreeContent = `
       <div>
         <div>
           <a class="available-calendar" href="lunar-calendar-2018.html">
-            <img src="public/images/items/thibodeau_lunar-calendar-2018_main.jpg" />
+            <img src="public/images/items/thibodeau_lunar_calendar_2018_main.jpg" />
           </a>
         </div>
         <div class="text">2018 Lunar Calendar</div>
@@ -89,7 +89,7 @@ let containerThreeContent = `
       <div>
         <div>
           <a class="available-calendar" href="lunar-calendar-2017.html">
-            <img src="public/images/items/thibodeau_lunar-calendar-2017_main.jpg" />
+            <img src="public/images/items/thibodeau_lunar_calendar_2017_main.jpg" />
           </a>
         </div>
       <div class="text">2017 Lunar Calendar</div>
@@ -106,7 +106,7 @@ let containerThreeContent = `
       <div>
         <div>
           <a href="http://alecthibodeau.com/print_lunar-calendar-pineal_grigio.html" target="_blank">
-            <img src="public/images/items/thibodeau_lunar-calendar-2011.jpg" />
+            <img src="public/images/items/thibodeau_lunar_calendar_2011.jpg" />
           </a>
         </div>
         <div class="text">2011 Lunar Calendar</div>
@@ -115,7 +115,7 @@ let containerThreeContent = `
       <div>
         <div>
           <a href="http://alecthibodeau.com/print_lunar-calendar-probably_the_earths_core.html" target="_blank">
-            <img src="public/images/items/thibodeau_lunar-calendar-2010.jpg" />
+            <img src="public/images/items/thibodeau_lunar_calendar_2010.jpg" />
           </a>
         </div>
         <div class="text">2010 Lunar Calendar</div>
@@ -124,7 +124,7 @@ let containerThreeContent = `
       <div>
         <div>
           <a href="http://alecthibodeau.com/print_lunar-calendar-goes_to_show_you.html" target="_blank">
-            <img src="public/images/items/thibodeau_lunar-calendar-2009.jpg" />
+            <img src="public/images/items/thibodeau_lunar_calendar_2009.jpg" />
           </a>
         </div>
         <div class="text">2009 Lunar Calendar</div>
@@ -133,7 +133,7 @@ let containerThreeContent = `
       <div>
         <div>
           <a href="http://alecthibodeau.com/print_lunar-calendar-good_librations.html" target="_blank">
-            <img src="public/images/items/thibodeau_lunar-calendar-2008.jpg" />
+            <img src="public/images/items/thibodeau_lunar_calendar_2008.jpg" />
           </a>
         </div>
         <div class="text">2008 Lunar Calendar</div>
