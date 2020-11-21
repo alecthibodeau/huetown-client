@@ -46,7 +46,7 @@ let bodyContent = `
   </nav>
 </header>
 <main id="main" class="main-element">Welcome to Huetown.</main>
-<footer>
+<footer id="footer">
   <section>
     <a data-title="Instagram" href="https://www.instagram.com/huetown" target="_blank">
       <img src="public/images/icons/icon_instagram_fifty_percent_gray.svg" alt="Huetown at Instagram">

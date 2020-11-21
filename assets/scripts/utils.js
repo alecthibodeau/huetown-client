@@ -7,9 +7,10 @@ import store from './store.js';
 
 let isNavDrawerOpen = false;
 
-const addOrRemoveDrawerClasses = (nav, burgerButton, action) => {
-  nav.classList[action]('open-drawer');
+const addOrRemoveDrawerClasses = (nav, burgerButton, footer, action) => {
+  nav.classList[action]('nav-drawer-is-open');
   burgerButton.classList[action]('closing-x');
+  footer.classList[action]('hide-icons');
   document.querySelectorAll('.bar').forEach(function (bar) {
     bar.classList[action]('closing-x');
   });
@@ -18,9 +19,10 @@ const addOrRemoveDrawerClasses = (nav, burgerButton, action) => {
 const drawerToggle = () => {
   const nav = document.getElementById('nav');
   const burgerButton = document.getElementById('burgerButton');
+  const footer = document.getElementById('footer');
   let action;
   !isNavDrawerOpen ? action = 'add' : action = 'remove';
-  addOrRemoveDrawerClasses(nav, burgerButton, action);
+  addOrRemoveDrawerClasses(nav, burgerButton, footer, action);
   isNavDrawerOpen = !isNavDrawerOpen;
 };
 

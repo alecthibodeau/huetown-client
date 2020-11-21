@@ -12,6 +12,10 @@ $icon-size: 4rem;
   border-top: 2px solid $fifty-percent-gray;
   margin: 1rem auto;
 
+  &.hide-icons section {
+    display: none;
+  }
+
   section {
     margin: 2rem $icon-size;
 

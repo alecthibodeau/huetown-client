@@ -271,7 +271,7 @@ html body header nav form input[value="view cart"] {
     display: none;
     flex-direction: column;
   }
-  html body header nav.open-drawer {
+  html body header nav.nav-drawer-is-open {
     display: flex;
     margin: 0 auto;
     background: rgba(255, 255, 255, 0.9);
@@ -348,6 +348,9 @@ html body footer {
   justify-content: center;
   border-top: 2px solid #7f7f7f;
   margin: 1rem auto;
+}
+html body footer.hide-icons section {
+  display: none;
 }
 html body footer section {
   margin: 2rem 4rem;

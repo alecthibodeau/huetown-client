@@ -183,7 +183,7 @@
       display: none; // By default the drawer is hidden: before any burger button clicks
       flex-direction: column;
 
-      &.open-drawer {
+      &.nav-drawer-is-open {
         display: flex;
         margin: 0 auto;
         background: $white-film;
