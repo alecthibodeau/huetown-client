@@ -21,9 +21,7 @@ const addCategoryForPageStyling = (bodyDiv, elementToAugment) => {
 
 const loadMainContent = (bodyDiv, pageValue, page) => {
   document.getElementById('main').innerHTML = page.mainContent;
-  if (pageValue === 'home') {
-    home.itemCreate(pageValue);
-  } else if (page.itemName) {
+  if (page.itemName) {
     items.itemLoad(pageValue);
   };
 

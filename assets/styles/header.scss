@@ -13,6 +13,11 @@
   color: $ninety-percent-gray;
   cursor: pointer;
 
+  @media only screen and (max-width: 650px) {
+    color: $white;
+    font-weight: 600;;
+  }
+
   // Only show the underside bar effect at larger widths
   @media only screen and (min-width: 651px) {
 
@@ -39,7 +44,27 @@
   @media only screen and (max-width: 650px) {
     width: 100%;
     padding: 1.5rem 0;
-    border-bottom: 1.5px solid $fifty-percent-gray;
+
+    &.nav-element-lunar-calendar {
+      border-top: 1px solid $huetown-green;
+      border-bottom: 1px solid $huetown-red;
+    }
+
+    &.nav-element-prints {
+      border-bottom: 1px solid $huetown-yellow;
+    }
+
+    &.nav-element-postcards {
+      border-bottom: 1px solid $huetown-blue;
+    }
+
+    &.nav-element-about {
+      border-bottom: 1px solid $nav-accent-purple;
+    }
+
+    &.paypal-link {
+      border-bottom: 1px solid $orange-muted;
+    }
   }
 }
 
@@ -67,7 +92,7 @@
       flex-direction: row;
       align-items: flex-end;
       padding: 10px 12px 14px 18px;
-      background: $seventy-five-percent-gray;
+      background: $eighty-percent-gray;
     }
 
     @media only screen and (max-width: 450px) {
@@ -187,7 +212,7 @@
       &.nav-drawer-is-open {
         display: flex;
         margin: 0 auto;
-        background: $white-film;
+        background: $dark-film;
         backdrop-filter: blur(5px);
       }
     }

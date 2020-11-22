@@ -12,11 +12,6 @@ let homePage = `
   </div>
 `;
 
-const itemCreate = (pageValue) => {
-  return pageValue;
-};
-
 export default {
-  homePage,
-  itemCreate
+  homePage
 };

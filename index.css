@@ -86,7 +86,7 @@ html body header .nav-top {
     flex-direction: row;
     align-items: flex-end;
     padding: 10px 12px 14px 18px;
-    background: #404040;
+    background: #333;
   }
 }
 @media only screen and (max-width: 450px) {
@@ -186,6 +186,12 @@ html body header nav a.nav-element {
   color: #191919;
   cursor: pointer;
 }
+@media only screen and (max-width: 650px) {
+  html body header nav a.nav-element {
+    color: #fff;
+    font-weight: 600;
+  }
+}
 @media only screen and (min-width: 651px) {
   html body header nav a.nav-element::after {
     width: 100%;
@@ -205,7 +211,22 @@ html body header nav a.nav-element {
   html body header nav a.nav-element {
     width: 100%;
     padding: 1.5rem 0;
-    border-bottom: 1.5px solid #7f7f7f;
+  }
+  html body header nav a.nav-element.nav-element-lunar-calendar {
+    border-top: 1px solid #6abbb6;
+    border-bottom: 1px solid #e78460;
+  }
+  html body header nav a.nav-element.nav-element-prints {
+    border-bottom: 1px solid #edde95;
+  }
+  html body header nav a.nav-element.nav-element-postcards {
+    border-bottom: 1px solid #6ecde5;
+  }
+  html body header nav a.nav-element.nav-element-about {
+    border-bottom: 1px solid 1px solid #d052f1;
+  }
+  html body header nav a.nav-element.paypal-link {
+    border-bottom: 1px solid #ff9600;
   }
 }
 html body header nav form {
@@ -221,6 +242,12 @@ html body header nav form {
   transition: all 0.25s linear;
   color: #191919;
   cursor: pointer;
+}
+@media only screen and (max-width: 650px) {
+  html body header nav form {
+    color: #fff;
+    font-weight: 600;
+  }
 }
 @media only screen and (min-width: 651px) {
   html body header nav form::after {
@@ -252,6 +279,12 @@ html body header nav form input[value="view cart"] {
   color: #191919;
   cursor: pointer;
 }
+@media only screen and (max-width: 650px) {
+  html body header nav form input[value="view cart"] {
+    color: #fff;
+    font-weight: 600;
+  }
+}
 @media only screen and (min-width: 651px) {
   html body header nav form input[value="view cart"]::after {
     width: 100%;
@@ -271,7 +304,22 @@ html body header nav form input[value="view cart"] {
   html body header nav form input[value="view cart"] {
     width: 100%;
     padding: 1.5rem 0;
-    border-bottom: 1.5px solid #7f7f7f;
+  }
+  html body header nav form input[value="view cart"].nav-element-lunar-calendar {
+    border-top: 1px solid #6abbb6;
+    border-bottom: 1px solid #e78460;
+  }
+  html body header nav form input[value="view cart"].nav-element-prints {
+    border-bottom: 1px solid #edde95;
+  }
+  html body header nav form input[value="view cart"].nav-element-postcards {
+    border-bottom: 1px solid #6ecde5;
+  }
+  html body header nav form input[value="view cart"].nav-element-about {
+    border-bottom: 1px solid 1px solid #d052f1;
+  }
+  html body header nav form input[value="view cart"].paypal-link {
+    border-bottom: 1px solid #ff9600;
   }
 }
 @media only screen and (max-width: 650px) {
@@ -282,7 +330,7 @@ html body header nav form input[value="view cart"] {
   html body header nav.nav-drawer-is-open {
     display: flex;
     margin: 0 auto;
-    background: rgba(255, 255, 255, 0.9);
+    background: rgba(30, 30, 30, 0.9);
     backdrop-filter: blur(5px);
   }
 }
