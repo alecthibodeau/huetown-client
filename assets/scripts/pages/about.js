@@ -39,20 +39,7 @@ let aboutPage = `
       <p>
         <span class="section-title ">Places</span>:
         Select Huetown items are
-        available at these fine locations in the USA&hellip;
-        <span class="about-states">Colorado</span>:
-        <a class="text-link" href="http://ladyfingersletterpress.com" target="_blank">
-          Ladyfingers Letterpress
-        </a> &bull;
-        <span class="about-states">Georgia</span>:
-        <a class="text-link" href="http://flanneryoconnorhome.org" target="_blank">
-          Flannery O'Connor Childhood Home
-        </a> &bull;
-        <span class="about-states">Massachusetts</span>:
-        <a class="text-link" href="http://provincetownlibrary.org" target="_blank">
-          Provincetown Public Library
-        </a> &bull;
-        <span class="about-states">Rhode Island</span>:
+        available at these spots in Rhode Island&hellip;
         <a class="text-link" href="https://www.booksq.com" target="_blank">Books on the Square</a>,
         <a class="text-link" href="https://shop.craftlandshop.com" target="_blank">Craftland</a>,
         <a class="text-link" href="https://www.frogandtoadstore.com" target="_blank">Frog & Toad</a>,

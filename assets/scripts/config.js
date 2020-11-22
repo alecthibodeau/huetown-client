@@ -35,8 +35,8 @@ const itemInfoUniversals = {
   lunarCalendarPrice: 40,
   lunarCalendarInfoOne: '19 x 11.75 inches<br>Letterpress print<br>Printed by DWRI Letterpress',
   lunarCalendarInfoTwo: '',
-  lunarCalendarInfoThree: `Hand numbered and signed by the artist in a limited edition of <span class="${lunarDashCalendar}-edition"></span> prints`,
-  lunarCalendarInfoFour: 'Ships rolled and triple-packaged: archival wrap, <a class="text-link" href="#lunarPhases">eco-friendly protective tube</a> and outer shipping container',
+  lunarCalendarInfoThree: `Hand numbered and signed by the artist in a limited edition of <span class="${lunarDashCalendar}-edition"></span> prints <a class="text-link" href="#itemDetails">(more info)</a>`,
+  lunarCalendarInfoFour: 'Ships rolled and triple-packaged: archival wrap, eco-friendly protective tube and outer shipping container',
   lunarCalendarBlocks: `
     <div class=info-block>
       <span class="${lunarDashCalendar}-title ital"></span> is a letterpress-printed lunar calendar designed and drawn by Alec Thibodeau (me!),

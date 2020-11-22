@@ -13,6 +13,9 @@ COLOR VARIABLES
 /**
  * Selector for .home-page
  */
+/**
+ * Media Queries
+ */
 @import url("https://fonts.googleapis.com/css?family=Raleway:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i|Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i");
 @media only screen and (max-width: 700px) {
   .huetown-h-logo,
@@ -46,6 +49,11 @@ COLOR VARIABLES
 /************
 HTML & BODY
 ************/
+/**
+ * 16px is the typical default browser font-size.
+ * Setting the font-size to 62.5% means setting it to 10px.
+ * So 1rem = 10px.
+ */
 html {
   margin: 0 auto;
   font-size: 62.5%;
@@ -174,7 +182,7 @@ html body header nav a.nav-element {
   text-align: center;
   text-decoration: none;
   text-transform: uppercase;
-  transition: all 0.3s linear;
+  transition: all 0.25s linear;
   color: #191919;
   cursor: pointer;
 }
@@ -186,9 +194,9 @@ html body header nav a.nav-element {
     top: 0.5rem;
     border-bottom: 3px solid transparent;
     content: "";
-    transition: 0.5s;
+    transition: 0.25s;
   }
-  html body header nav a.nav-element:hover::after {
+  html body header nav a.nav-element:hover::after, html body header nav a.nav-element.current-page {
     top: 0.25rem;
     border-bottom: 3px solid #6abbb6;
   }
@@ -210,7 +218,7 @@ html body header nav form {
   text-align: center;
   text-decoration: none;
   text-transform: uppercase;
-  transition: all 0.3s linear;
+  transition: all 0.25s linear;
   color: #191919;
   cursor: pointer;
 }
@@ -222,9 +230,9 @@ html body header nav form {
     top: 0.5rem;
     border-bottom: 3px solid transparent;
     content: "";
-    transition: 0.5s;
+    transition: 0.25s;
   }
-  html body header nav form:hover::after {
+  html body header nav form:hover::after, html body header nav form.current-page {
     top: 0.25rem;
     border-bottom: 3px solid #6abbb6;
   }
@@ -240,7 +248,7 @@ html body header nav form input[value="view cart"] {
   text-align: center;
   text-decoration: none;
   text-transform: uppercase;
-  transition: all 0.3s linear;
+  transition: all 0.25s linear;
   color: #191919;
   cursor: pointer;
 }
@@ -252,9 +260,9 @@ html body header nav form input[value="view cart"] {
     top: 0.5rem;
     border-bottom: 3px solid transparent;
     content: "";
-    transition: 0.5s;
+    transition: 0.25s;
   }
-  html body header nav form input[value="view cart"]:hover::after {
+  html body header nav form input[value="view cart"]:hover::after, html body header nav form input[value="view cart"].current-page {
     top: 0.25rem;
     border-bottom: 3px solid #6abbb6;
   }
@@ -314,10 +322,11 @@ html body main .text-link {
   text-decoration: none;
 }
 html body main .text-link:link, html body main .text-link:visited, html body main .text-link:active {
-  color: #f27089;
+  color: #7073ff;
+  font-weight: 500;
 }
 html body main .text-link:hover {
-  color: #f64154;
+  color: #6abbb6;
   text-decoration: underline;
 }
 html body main .ital {
@@ -348,6 +357,9 @@ html body footer {
   justify-content: center;
   border-top: 2px solid #7f7f7f;
   margin: 1rem auto;
+  /**
+   * Media Queries
+   */
 }
 html body footer.hide-icons section {
   display: none;
@@ -359,6 +371,10 @@ html body footer section a {
   width: 4rem;
   height: 4rem;
   display: block;
+  /**
+   * The dimensions are a percentage (of the parent anchor) to keep from bleeding
+   * The positions are (100 - dimension)/2 for centering
+   */
 }
 html body footer section a img {
   width: 4rem;
@@ -405,160 +421,24 @@ PAGES
    * Media Queries
    */
 }
-.home-page .content-top {
-  display: flex;
-  align-items: center;
-  justify-content: space-around;
-  margin: 0 5%;
-}
-.home-page .content-top .image-link {
-  max-height: 56vw;
-  border: 1px solid #b3b3b3;
-}
-.home-page .content-top img {
-  display: block;
-  max-height: 56vw;
-  border: 1px solid #000;
-}
-.home-page .announcement {
-  margin-left: 2rem;
-}
-.home-page .announcement .sig {
-  margin-right: 1rem;
-  text-align: right;
-}
-.home-page .drawings-section {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-}
-.home-page .drawings-title-container {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  padding: 6vw;
-  margin: 4rem 0 3rem;
-  background-color: #6ecde5;
-  text-align: center;
-}
-.home-page .drawings-title {
-  text-transform: uppercase;
-  font-size: 3rem;
-  color: #fff;
-  letter-spacing: 0.3125rem;
-}
-.home-page .drawings-description {
-  margin: 0 5% 3rem;
-}
-.home-page .drawing-item {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  margin-bottom: 5rem;
-}
-.home-page .drawing-image {
-  margin-right: 2rem;
-}
-.home-page .drawing-image img {
-  display: block;
-  max-height: 500px;
-  border: 1px solid #b3b3b3;
-}
-.home-page .drawing-info {
-  width: 260px;
-}
-.home-page .drawing-info .item-info-text [class^=item-name] {
-  font-size: 3rem;
-  font-weight: 700;
-  color: #6ecde5;
-}
-.home-page .payment-info {
-  display: flex;
-  flex-direction: column;
-}
-.home-page .item-price-container {
-  margin: 10px 0;
-  font-size: 2rem;
-  font-weight: 600;
-}
-.home-page form input[value="add to cart"] {
-  border: none;
-  border-radius: 6px;
-  background: #666;
-  color: #fff;
-  font-family: "Raleway", sans-serif;
-  font-size: 1.4rem;
-  font-weight: 600;
-  letter-spacing: 0.3125rem;
-  text-transform: uppercase;
-  cursor: pointer;
-  width: 16rem;
-  min-height: 4rem;
-}
-.home-page form input[value="add to cart"]:hover {
-  background: #ff9600;
-}
-.home-page .lunar-calendar-available {
+.home-page .home-page-content {
   max-width: 800px;
   font-size: 2rem;
   padding: 0 4rem;
   margin-top: 4rem;
 }
-@media only screen and (max-width: 850px) {
-  .home-page .drawing-info {
-    width: 200px;
-  }
-}
-@media only screen and (max-width: 750px) {
-  .home-page .drawing-image img {
-    max-height: 60vw;
-  }
-  .home-page .drawing-info {
-    width: auto;
-  }
-}
 @media only screen and (max-width: 650px) {
-  .home-page .content-top {
-    flex-direction: column;
-    justify-content: center;
-  }
-  .home-page .announcement {
-    margin-left: 0;
-    margin-top: 1rem;
-  }
-  .home-page .lunar-calendar-available {
+  .home-page .home-page-content {
     margin-top: 2rem;
     font-size: 2rem;
   }
-  .home-page .drawings-title-container {
-    padding: 4vw;
-    margin: 3rem 0 2rem;
-  }
-  .home-page .drawings-title {
-    font-size: 2rem;
-  }
-  .home-page .drawing-item {
-    flex-direction: column;
-  }
-  .home-page .drawing-image {
-    margin-right: 0;
-  }
-  .home-page .drawing-image img {
-    max-height: 80vw;
-  }
-  .home-page .drawing-info {
-    width: auto;
-  }
-  .home-page .payment-info {
-    flex-direction: row;
-    justify-content: flex-start;
-    margin-top: 0.5rem;
-  }
-  .home-page .item-price-container {
-    margin: 0.5rem 1rem 0.5rem 0;
-  }
 }
 
+.lunar-calendars-page {
+  /**
+   * Media Queries
+   */
+}
 .lunar-calendars-page .content-container {
   display: flex;
   justify-content: space-around;
@@ -670,6 +550,11 @@ PAGES
   }
 }
 
+.prints-page {
+  /**
+   * Media Queries
+   */
+}
 .prints-page .content-container {
   display: flex;
   justify-content: space-around;
@@ -781,6 +666,11 @@ PAGES
   }
 }
 
+.postcards-page {
+  /**
+   * Media Queries
+   */
+}
 .postcards-page .content-container {
   display: flex;
   justify-content: space-around;

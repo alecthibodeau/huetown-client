@@ -38,8 +38,10 @@ $icon-size: 4rem;
         transition: all 0.3s linear;
       }
 
-      // The dimensions are a percentage (of the parent anchor) to keep from bleeding
-      // The positions are (100 - dimension)/2 for centering
+      /**
+       * The dimensions are a percentage (of the parent anchor) to keep from bleeding
+       * The positions are (100 - dimension)/2 for centering
+       */
       div {
         width: 93%;
         height: 93%;
@@ -61,6 +63,10 @@ $icon-size: 4rem;
     border-radius: .5rem;
     }
   }
+
+  /**
+   * Media Queries
+   */
 
   @media only screen and (max-width: 650px) {
     position: relative;

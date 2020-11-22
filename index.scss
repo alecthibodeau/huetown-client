@@ -11,9 +11,11 @@
 HTML & BODY
 ************/
 
-// 16px is the typical default browser font-size.
-// Setting the font-size to 62.5% means setting it to 10px.
-// So 1rem = 10px.
+/**
+ * 16px is the typical default browser font-size.
+ * Setting the font-size to 62.5% means setting it to 10px.
+ * So 1rem = 10px.
+ */
 html {
   margin: 0 auto;
   font-size: 62.5%;
@@ -45,11 +47,12 @@ html {
         &:link,
         &:visited,
         &:active {
-          color: $rainbow-red;
+          color: $blue-muted;
+          font-weight: 500;
         }
 
         &:hover {
-          color: $red-muted;
+          color: $huetown-green;
           text-decoration: underline;
         }
       }
