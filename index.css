@@ -214,16 +214,16 @@ html body header nav a.nav-element {
   }
   html body header nav a.nav-element.nav-element-lunar-calendar {
     border-top: 1px solid #6abbb6;
-    border-bottom: 1px solid #e78460;
+    border-bottom: 1px solid #edde95;
   }
   html body header nav a.nav-element.nav-element-prints {
-    border-bottom: 1px solid #edde95;
+    border-bottom: 1px solid #c651e5;
   }
   html body header nav a.nav-element.nav-element-postcards {
     border-bottom: 1px solid #6ecde5;
   }
   html body header nav a.nav-element.nav-element-about {
-    border-bottom: 1px solid 1px solid #d052f1;
+    border-bottom: 1px solid #f64154;
   }
   html body header nav a.nav-element.paypal-link {
     border-bottom: 1px solid #ff9600;
@@ -307,16 +307,16 @@ html body header nav form input[value="view cart"] {
   }
   html body header nav form input[value="view cart"].nav-element-lunar-calendar {
     border-top: 1px solid #6abbb6;
-    border-bottom: 1px solid #e78460;
+    border-bottom: 1px solid #edde95;
   }
   html body header nav form input[value="view cart"].nav-element-prints {
-    border-bottom: 1px solid #edde95;
+    border-bottom: 1px solid #c651e5;
   }
   html body header nav form input[value="view cart"].nav-element-postcards {
     border-bottom: 1px solid #6ecde5;
   }
   html body header nav form input[value="view cart"].nav-element-about {
-    border-bottom: 1px solid 1px solid #d052f1;
+    border-bottom: 1px solid #f64154;
   }
   html body header nav form input[value="view cart"].paypal-link {
     border-bottom: 1px solid #ff9600;

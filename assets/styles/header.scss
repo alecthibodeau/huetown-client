@@ -47,11 +47,11 @@
 
     &.nav-element-lunar-calendar {
       border-top: 1px solid $huetown-green;
-      border-bottom: 1px solid $huetown-red;
+      border-bottom: 1px solid $huetown-yellow;
     }
 
     &.nav-element-prints {
-      border-bottom: 1px solid $huetown-yellow;
+      border-bottom: 1px solid $nav-accent-purple;
     }
 
     &.nav-element-postcards {
@@ -59,7 +59,7 @@
     }
 
     &.nav-element-about {
-      border-bottom: 1px solid $nav-accent-purple;
+      border-bottom: 1px solid $red-muted;
     }
 
     &.paypal-link {
