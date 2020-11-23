@@ -202,7 +202,7 @@ html body header nav a.nav-element {
     content: "";
     transition: 0.25s;
   }
-  html body header nav a.nav-element:hover::after, html body header nav a.nav-element.current-page {
+  html body header nav a.nav-element:hover::after {
     top: 0.25rem;
     border-bottom: 3px solid #6abbb6;
   }
@@ -259,7 +259,7 @@ html body header nav form {
     content: "";
     transition: 0.25s;
   }
-  html body header nav form:hover::after, html body header nav form.current-page {
+  html body header nav form:hover::after {
     top: 0.25rem;
     border-bottom: 3px solid #6abbb6;
   }
@@ -295,7 +295,7 @@ html body header nav form input[value="view cart"] {
     content: "";
     transition: 0.25s;
   }
-  html body header nav form input[value="view cart"]:hover::after, html body header nav form input[value="view cart"].current-page {
+  html body header nav form input[value="view cart"]:hover::after {
     top: 0.25rem;
     border-bottom: 3px solid #6abbb6;
   }
@@ -370,7 +370,7 @@ html body main .text-link {
   text-decoration: none;
 }
 html body main .text-link:link, html body main .text-link:visited, html body main .text-link:active {
-  color: #7073ff;
+  color: #e98d00;
   font-weight: 500;
 }
 html body main .text-link:hover {

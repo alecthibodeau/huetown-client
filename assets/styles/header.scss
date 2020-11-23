@@ -31,8 +31,7 @@
       transition: 0.25s;
     }
 
-    &:hover::after,
-    &.current-page { // The bar underneath when it's shown
+    &:hover::after { // The bar underneath when it's shown
       top: 0.25rem;
       border-bottom: 3px solid $huetown-green;
     }
