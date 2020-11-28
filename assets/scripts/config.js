@@ -73,6 +73,13 @@ const itemInfoUniversals = {
   printPrice: 15
 }
 
+const lunarCalendarBlocksPreorder = `
+  <div>
+    Preorder
+  </div>
+  ${itemInfoUniversals.lunarCalendarBlocks}
+`
+
 const itemsInfo = {
   'home': {
     mainContent: home.homePage
@@ -169,6 +176,41 @@ const itemsInfo = {
     itemInfoFour: itemInfoUniversals.drawingInfoSignedOnBack,
     itemPrice: itemInfoUniversals.drawingPrice,
     itemId: 'CCQ8NV9K78FNQ'
+  },
+  'lunarCalendarTwentyOnePreorder': {
+    mainContent: item.itemPage,
+    itemCategory: lunarDashCalendar,
+    itemLunarCalendarTitle: 'Casting Levels',
+    itemLunarCalendarYear: '2021',
+    itemLunarCalendarEdition: 500,
+    itemLunarCalendarPaperInfo: 'Mohawk Fine Papers\' acid-free 300gsm Keaykolour Kiwi 111# cover paper',
+    itemName: itemInfoUniversals.lunarCalendarItemName,
+    itemSubname: '',
+    itemImageFront: `${itemsDirectory}1200_embed_only.jpg`,
+    itemInfoOne: itemInfoUniversals.lunarCalendarInfoOne,
+    itemInfoTwo: itemInfoUniversals.lunarCalendarInfoTwo,
+    itemInfoThree: itemInfoUniversals.lunarCalendarInfoThree,
+    itemInfoFour: itemInfoUniversals.lunarCalendarInfoFour,
+    itemInfoMore: '',
+    itemPrice: itemInfoUniversals.lunarCalendarPrice,
+    itemId: '3GFXE9GETBW98',
+    // itemMorePhotoPairOne: `
+    //   <img src="public/images/items/thibodeau_lunar_calendar_2021_photo_01_1000px.jpg" />
+    //   <img src="public/images/items/thibodeau_lunar_calendar_2021_photo_02_1000px.jpg" />
+    // `,
+    // itemMorePhotoPairTwo: `
+    //   <img src="public/images/items/thibodeau_lunar_calendar_2021_photo_03_1000px.jpg" />
+    //   <img src="public/images/items/thibodeau_lunar_calendar_2021_photo_04_1000px.jpg" />
+    // `,
+    // itemMorePhotoPairThree: `
+    //   <img src="public/images/items/thibodeau_lunar_calendar_2021_photo_07_1000px.jpg" />
+    //   <img src="public/images/items/thibodeau_lunar_calendar_2021_photo_08_1000px.jpg" />
+    // `,
+    // itemMorePhotoPairFour: `
+    // <img src="public/images/items/thibodeau_lunar_calendar_2021_photo_05_1000px.jpg" />
+    // <img id="itemDetails" src="public/images/items/thibodeau_lunar_calendar_2021_photo_06_1000px.jpg" />
+    // `,
+    itemMoreInfo: lunarCalendarBlocksPreorder
   },
   'lunarCalendarTwenty': {
     mainContent: item.itemPage,

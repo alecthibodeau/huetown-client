@@ -2,6 +2,19 @@
 
 let lunarCalendarsPage = `
   <div class="collection-page lunar-calendars-page">
+
+    <div class="content-container lunar-calendar preorder">
+      <div class="content-block">
+        <a
+          data-title="2020 Lunar Calendar"
+          class="collection-link" href="/">
+          <img class="collection-image"
+            src="/public/images/items/1200_embed_only.jpg" />
+        </a>
+        <div class="content-item-name">PREORDER: 2021 Lunar Calendar</div>
+      </div>
+    </div>
+
     <div class="content-container lunar-calendar">
       <div class="content-block">
         <a
@@ -22,6 +35,7 @@ let lunarCalendarsPage = `
         <div class="content-item-name">2019 Lunar Calendar</div>
       </div>
     </div>
+
     <div class="content-container lunar-calendar">
       <div class="content-block">
         <a
@@ -42,6 +56,7 @@ let lunarCalendarsPage = `
         <div class="content-item-name">2017 Lunar Calendar</div>
       </div>
     </div>
+
   </div>
 `;
 

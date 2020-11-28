@@ -491,7 +491,7 @@ PAGES
   display: flex;
   justify-content: space-around;
 }
-.lunar-calendars-page .content-container.lunar-calendar {
+.lunar-calendars-page .content-container.lunar-calendar:not(.preorder) {
   justify-content: space-between;
 }
 .lunar-calendars-page .content-block {
@@ -500,10 +500,6 @@ PAGES
 }
 .lunar-calendars-page .content-block a {
   display: block;
-}
-.lunar-calendars-page .content-block a.lunar-calendars {
-  width: 350px;
-  height: 216px;
 }
 .lunar-calendars-page .content-block a.lunar-calendars img {
   max-width: 350px;
@@ -534,10 +530,6 @@ PAGES
     flex-direction: column;
     align-items: center;
   }
-  .lunar-calendars-page .content-block a.lunar-calendars {
-    width: 90vw;
-    height: 56vw;
-  }
   .lunar-calendars-page .content-block a.lunar-calendars img {
     max-width: 90vw;
     max-height: 56vw;
@@ -547,10 +539,6 @@ PAGES
   .lunar-calendars-page .content-container {
     flex-direction: column;
     align-items: center;
-  }
-  .lunar-calendars-page .content-block a.lunar-calendars {
-    width: 80vw;
-    height: 49vw;
   }
   .lunar-calendars-page .content-block a.lunar-calendars img {
     max-width: 80vw;
@@ -586,10 +574,6 @@ PAGES
     width: 90vw;
     height: 60vw;
   }
-  .lunar-calendars-page .content-block a.lunar-calendars {
-    width: 90vw;
-    height: 56vw;
-  }
   .lunar-calendars-page .content-block a.lunar-calendars img {
     max-width: auto;
     max-height: auto;
@@ -607,7 +591,7 @@ PAGES
   display: flex;
   justify-content: space-around;
 }
-.prints-page .content-container.lunar-calendar {
+.prints-page .content-container.lunar-calendar:not(.preorder) {
   justify-content: space-between;
 }
 .prints-page .content-block {
@@ -616,10 +600,6 @@ PAGES
 }
 .prints-page .content-block a {
   display: block;
-}
-.prints-page .content-block a.lunar-calendars {
-  width: 350px;
-  height: 216px;
 }
 .prints-page .content-block a.lunar-calendars img {
   max-width: 350px;
@@ -650,10 +630,6 @@ PAGES
     flex-direction: column;
     align-items: center;
   }
-  .prints-page .content-block a.lunar-calendars {
-    width: 90vw;
-    height: 56vw;
-  }
   .prints-page .content-block a.lunar-calendars img {
     max-width: 90vw;
     max-height: 56vw;
@@ -663,10 +639,6 @@ PAGES
   .prints-page .content-container {
     flex-direction: column;
     align-items: center;
-  }
-  .prints-page .content-block a.lunar-calendars {
-    width: 80vw;
-    height: 49vw;
   }
   .prints-page .content-block a.lunar-calendars img {
     max-width: 80vw;
@@ -702,10 +674,6 @@ PAGES
     width: 90vw;
     height: 60vw;
   }
-  .prints-page .content-block a.lunar-calendars {
-    width: 90vw;
-    height: 56vw;
-  }
   .prints-page .content-block a.lunar-calendars img {
     max-width: auto;
     max-height: auto;
@@ -723,7 +691,7 @@ PAGES
   display: flex;
   justify-content: space-around;
 }
-.postcards-page .content-container.lunar-calendar {
+.postcards-page .content-container.lunar-calendar:not(.preorder) {
   justify-content: space-between;
 }
 .postcards-page .content-block {
@@ -732,10 +700,6 @@ PAGES
 }
 .postcards-page .content-block a {
   display: block;
-}
-.postcards-page .content-block a.lunar-calendars {
-  width: 350px;
-  height: 216px;
 }
 .postcards-page .content-block a.lunar-calendars img {
   max-width: 350px;
@@ -766,10 +730,6 @@ PAGES
     flex-direction: column;
     align-items: center;
   }
-  .postcards-page .content-block a.lunar-calendars {
-    width: 90vw;
-    height: 56vw;
-  }
   .postcards-page .content-block a.lunar-calendars img {
     max-width: 90vw;
     max-height: 56vw;
@@ -779,10 +739,6 @@ PAGES
   .postcards-page .content-container {
     flex-direction: column;
     align-items: center;
-  }
-  .postcards-page .content-block a.lunar-calendars {
-    width: 80vw;
-    height: 49vw;
   }
   .postcards-page .content-block a.lunar-calendars img {
     max-width: 80vw;
@@ -817,10 +773,6 @@ PAGES
     max-height: auto;
     width: 90vw;
     height: 60vw;
-  }
-  .postcards-page .content-block a.lunar-calendars {
-    width: 90vw;
-    height: 56vw;
   }
   .postcards-page .content-block a.lunar-calendars img {
     max-width: auto;

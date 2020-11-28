@@ -10,7 +10,7 @@
     display: flex;
     justify-content: space-around;
 
-    &.lunar-calendar {
+    &.lunar-calendar:not(.preorder) {
       justify-content: space-between;
     }
   }
@@ -24,8 +24,8 @@
     }
 
     a.lunar-calendars {
-      width: 350px;
-      height: 216px;
+      // width: 350px;
+      // height: 216px;
 
       img {
         max-width: 350px;
@@ -74,8 +74,8 @@
     .content-block {
 
       a.lunar-calendars {
-        width: 90vw;
-        height: 56vw;
+        // width: 90vw;
+        // height: 56vw;
 
         img {
           max-width: 90vw;
@@ -95,8 +95,8 @@
     .content-block {
 
       a.lunar-calendars {
-        width: 80vw;
-        height: 49vw;
+        // width: 80vw;
+        // height: 49vw;
 
         img {
           max-width: 80vw;
@@ -145,8 +145,8 @@
       }
 
       a.lunar-calendars {
-        width: 90vw;
-        height: 56vw;
+        // width: 90vw;
+        // height: 56vw;
 
         img {
           max-width: auto;
