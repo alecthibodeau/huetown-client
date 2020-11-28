@@ -826,6 +826,22 @@ PAGES
   width: 90%;
   margin-bottom: 20px;
 }
+.item-page .note {
+  font-weight: 700;
+}
+.item-page .orca-lumina {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 10px 0;
+}
+.item-page .orca-lumina img {
+  width: 300px;
+  height: 300px;
+}
+.item-page .orca-lumina span:first-of-type {
+  font-style: italic;
+}
 .item-page .content-container {
   display: flex;
 }
@@ -1024,6 +1040,14 @@ PAGES
   .item-page .item-info-block.postcard {
     width: 90vw;
   }
+}
+.item-page .item-preorder {
+  display: none;
+}
+.item-page .item-preorder.visible {
+  display: block;
+  font-size: 2rem;
+  font-weight: 700;
 }
 .item-page .item-name {
   font-size: 2rem;

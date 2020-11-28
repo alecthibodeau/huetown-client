@@ -15,11 +15,12 @@ import item from './pages/item-page.js';
 
 /* routes */
 const imageDirectory = 'public/images/';
-const drawingsDirectory = `${imageDirectory}home/drawings/`;
+// const drawingsDirectory = `${imageDirectory}home/drawings/`;
 const itemsDirectory = `${imageDirectory}items/`;
 
 /* constants */
-const lunarDashCalendar = 'lunar-calendar';
+const lunarCalendarLocationProvidence = 'The calendar is designed, drawn and printed in Providence, Rhode Island, which is identified as a representative location within the artwork.';
+const lunarCalendarLocationNewYork = 'New York City is identified as a representative location within the artwork.';
 
 const itemInfoUniversals = {
   drawingInfoOriginalDrawing: `original drawing`,
@@ -35,27 +36,27 @@ const itemInfoUniversals = {
   lunarCalendarPrice: 40,
   lunarCalendarInfoOne: '19 x 11.75 inches<br>Letterpress print<br>Printed by DWRI Letterpress',
   lunarCalendarInfoTwo: '',
-  lunarCalendarInfoThree: `Hand numbered and signed by the artist in a limited edition of <span class="${lunarDashCalendar}-edition"></span> prints <a class="text-link" href="#itemDetails">(more info)</a>`,
+  lunarCalendarInfoThree: `Hand numbered and signed by the artist in a limited edition of <span class="lunar-calendar-edition"></span> prints <a class="text-link" href="#itemDetails">(more info)</a>`,
   lunarCalendarInfoFour: 'Ships rolled and triple-packaged: archival wrap, eco-friendly protective tube and outer shipping container',
   lunarCalendarBlocks: `
     <div class=info-block>
-      <span class="${lunarDashCalendar}-title ital"></span> is a letterpress-printed lunar calendar designed and drawn by Alec Thibodeau (me!),
-      chronicling all phases of the moon for <span class="${lunarDashCalendar}-year"></span>.
-      From a limited edition of <span class="${lunarDashCalendar}-edition"></span> prints <span class="${lunarDashCalendar}-title ital"></span> continues Alec's ongoing lunar calendar series,
+      <span class="lunar-calendar-title ital"></span> is a letterpress-printed lunar calendar designed and drawn by Alec Thibodeau (me!),
+      chronicling all phases of the moon for <span class="lunar-calendar-year"></span>.
+      From a limited edition of <span class="lunar-calendar-edition"></span> prints <span class="lunar-calendar-title ital"></span> continues Alec's ongoing lunar calendar series,
       which features ornate illustrations framing an annual cycle of moon shapes.
       As with each of Alec's previous lunar calendars, this piece measures 19" x 11.75" (a golden rectangle) and is expertly printed by Dan Wood
       and his team at <a class="text-link" href="http://www.dwriletterpress.net" target="_blank">DWRI&nbsp;Letterpress</a>.
     </div>
     <div class=info-block>
-      The <span class="${lunarDashCalendar}-year"></span> lunar calendar comprises new drawings and year-specific lunar phase information.
-      Each calendar is printed on <span class="${lunarDashCalendar}-paper-info"></span>, blind-debossed with Alec's name and the print shop's name &mdash; and hand numbered and signed by Alec. Each calendar ships with an accompanying information sheet, archival wrap and an eco-friendly fiberboard protective tube: reusable, recycled and recyclable, with crimped ends and no plastic caps.
+      The <span class="lunar-calendar-year"></span> lunar calendar comprises new drawings and year-specific lunar phase information.
+      Each calendar is printed on <span class="lunar-calendar-paper-info"></span>, blind-debossed with Alec's name and the print shop's name &mdash; and hand numbered and signed by Alec. Each calendar ships in archival wrap with an accompanying information sheet inside an eco-friendly fiberboard protective tube (reusable, recycled, recyclable) with crimped ends.
     </div>
     <div class=info-block>
-      The calendar's lunar phase chart is calibrated for any location in the Eastern Time Zone and is accurate to within a day for anywhere in the Northern Hemisphere. The chart also matches lunar cycles in the Southern Hemisphere (but with inverted shapes). The calendar is designed, drawn and printed in Providence, Rhode Island, which is identified as a representative location within the artwork.
+      The calendar's lunar phase chart is calibrated for any location in the Eastern Time Zone and is accurate to within a day for anywhere in the Northern Hemisphere. The chart also matches lunar cycles in the Southern Hemisphere (but with inverted shapes). <span class="lunar-calendar-location"></span>
     </div>
     <div class=info-block>
       Custom moon illustrations portray all principal lunar phases (New Moon, First Quarter Moon, Full Moon and Third Quarter Moon) plus all intermediate crescent and gibbous phases. For months with less than 31 days, drawings of clouds occupy the extra spaces.
-      <a class="text-link" href="#featureImage">PLACE AN ORDER</a>
+      <a class="text-link" href="#featureImage">ORDER</a>
     </div>
 
     <div class="lunar-phases" id="lunarPhases">
@@ -74,8 +75,21 @@ const itemInfoUniversals = {
 }
 
 const lunarCalendarBlocksPreorder = `
+  <div id="itemDetails">
+    <span class="note">2021 Lunar Calendar Preorder:</span>
+    Okay, my lunar calendar for 2021 is now in production at the print shop &mdash; with Dan making the letterpress magic happen for another limited edition.
+    Each lunar calendar preordered between now and December 4, 2020 will include a new <span class="ital">Orca Lumina</span> mini print (2.5 x 2.5 inches): drawn, screen printed and initialed by me.
+    All preorders will ship the <span class="note">second week of December 2020</span> (domestic shipping in the USA is a flat $7 rate to any address, regardless of item quantity).
+    <span class="note">Note: The above lunar calendar image is a digital-color simulation of what the final piece's inks and paper will look like.</span> There may be some slight variations between the colors here and in the print.
+  </div>
+  <div class="orca-lumina">
+    <img src="${itemsDirectory}orca_lumina.jpg" />
+    <div>
+      <span>Orca Lumina</span> <span>mini-print</span>
+    </div>
+  </div>
   <div>
-    Preorder
+    Here's more info on the ultimate piece&hellip;
   </div>
   ${itemInfoUniversals.lunarCalendarBlocks}
 `
@@ -99,100 +113,23 @@ const itemsInfo = {
   'veganly': {
     mainContent: veganly.veganlyPage
   },
-  'drawingBisonBreathes': {
-    itemClass: 'drawing-bison-breathes',
-    itemCategory: 'drawing',
-    itemName: 'Bison Breathes',
-    itemSubname: '',
-    itemImageFront: `${drawingsDirectory}drawing_bison_breathes_gs_500px.png',
-    itemInfoOne: itemInfoUniversals.drawingInfoOriginalDrawing,
-    itemInfoTwo: itemInfoUniversals.drawingInfoPenAndInk,
-    itemInfoThree: itemInfoUniversals.drawingInfoThreeAndQuarterInches,
-    itemInfoFour: itemInfoUniversals.drawingInfoSignedOnBack,
-    itemPrice: itemInfoUniversals.drawingPrice,
-    itemId: 'P32KQAB5THSDE'
-  },
-  'drawingButternutBear': {
-    itemClass: 'drawing-butternut-bear`,
-    itemCategory: 'drawing',
-    itemName: 'Butternut Bear',
-    itemSubname: '',
-    itemImageFront: `${drawingsDirectory}drawing_butternut_bear_gs_500px.png`,
-    itemInfoOne: itemInfoUniversals.drawingInfoOriginalDrawing,
-    itemInfoTwo: itemInfoUniversals.drawingInfoPenAndInk,
-    itemInfoThree: itemInfoUniversals.drawingInfoThreeAndQuarterInches,
-    itemInfoFour: itemInfoUniversals.drawingInfoSignedOnBack,
-    itemPrice: itemInfoUniversals.drawingPrice,
-    itemId: 'ZPDMSTPEF8498'
-  },
-  'drawingHawkHeralds': {
-    itemClass: 'drawing-hawk-heralds',
-    itemCategory: 'drawing',
-    itemName: 'Hawk Heralds',
-    itemSubname: '',
-    itemImageFront: `${drawingsDirectory}drawing_hawk_heralds_gs_500px.png`,
-    itemInfoOne: itemInfoUniversals.drawingInfoOriginalDrawing,
-    itemInfoTwo: itemInfoUniversals.drawingInfoPenAndInk,
-    itemInfoThree: itemInfoUniversals.drawingInfoThreeAndQuarterInches,
-    itemInfoFour: itemInfoUniversals.drawingInfoSignedOnBack,
-    itemPrice: itemInfoUniversals.drawingPrice,
-    itemId: 'DS7X4RVHNZXJS'
-  },
-  'drawingPinkMoon2020': {
-    itemClass: 'drawing-pink-moon-2020',
-    itemCategory: 'drawing',
-    itemName: 'Pink Moon 2020',
-    itemSubname: '',
-    itemImageFront: `${drawingsDirectory}drawing_pink_moon_2020_gs_500px.png`,
-    itemInfoOne: itemInfoUniversals.drawingInfoOriginalDrawing,
-    itemInfoTwo: itemInfoUniversals.drawingInfoPenAndInk,
-    itemInfoThree: itemInfoUniversals.drawingInfoThreeAndQuarterInches,
-    itemInfoFour: itemInfoUniversals.drawingInfoSignedOnBack,
-    itemPrice: itemInfoUniversals.drawingPrice,
-    itemId: 'WXGKHV6QX86BU'
-  },
-  'drawingRobinReveals': {
-    itemClass: 'drawing-robin-reveals',
-    itemCategory: 'drawing',
-    itemName: 'Robin Reveals',
-    itemSubname: '',
-    itemImageFront: `${drawingsDirectory}drawing_robin_reveals_gs_500px.png`,
-    itemInfoOne: itemInfoUniversals.drawingInfoOriginalDrawing,
-    itemInfoTwo: itemInfoUniversals.drawingInfoPenAndInk,
-    itemInfoThree: itemInfoUniversals.drawingInfoThreeAndQuarterInches,
-    itemInfoFour: itemInfoUniversals.drawingInfoSignedOnBack,
-    itemPrice: itemInfoUniversals.drawingPrice,
-    itemId: '27MQ7DNEX9DC2'
-  },
-  'drawingWormMoon2020': {
-    itemClass: 'drawing-worm-moon-2020',
-    itemCategory: 'drawing',
-    itemName: 'Worm Moon 2020',
-    itemSubname: '',
-    itemImageFront: `${drawingsDirectory}drawing_worm_moon_2020_gs_500px.png`,
-    itemInfoOne: itemInfoUniversals.drawingInfoOriginalDrawing,
-    itemInfoTwo: itemInfoUniversals.drawingInfoPenAndInk,
-    itemInfoThree: itemInfoUniversals.drawingInfoThreeAndQuarterInches,
-    itemInfoFour: itemInfoUniversals.drawingInfoSignedOnBack,
-    itemPrice: itemInfoUniversals.drawingPrice,
-    itemId: 'CCQ8NV9K78FNQ'
-  },
   'lunarCalendarTwentyOnePreorder': {
     mainContent: item.itemPage,
-    itemCategory: lunarDashCalendar,
+    itemCategory: 'lunar-calendar',
     itemLunarCalendarTitle: 'Casting Levels',
     itemLunarCalendarYear: '2021',
-    itemLunarCalendarEdition: 500,
-    itemLunarCalendarPaperInfo: 'Mohawk Fine Papers\' acid-free 300gsm Keaykolour Kiwi 111# cover paper',
+    itemLunarCalendarEdition: '',
+    itemLunarCalendarPaperInfo: 'Arjowiggins Creative Papers\' (distributed by Mohawk) acid-free 300gsm Keaykolour Kiwi 111# cover paper',
     itemName: itemInfoUniversals.lunarCalendarItemName,
     itemSubname: '',
-    itemImageFront: `${itemsDirectory}1200_embed_only.jpg`,
+    itemImageFront: `${itemsDirectory}thibodeau_lunar_calendar_2021_preorder_image.jpg`,
     itemInfoOne: itemInfoUniversals.lunarCalendarInfoOne,
     itemInfoTwo: itemInfoUniversals.lunarCalendarInfoTwo,
     itemInfoThree: itemInfoUniversals.lunarCalendarInfoThree,
     itemInfoFour: itemInfoUniversals.lunarCalendarInfoFour,
     itemInfoMore: '',
     itemPrice: itemInfoUniversals.lunarCalendarPrice,
+    itemLunarCalendarLocation: lunarCalendarLocationProvidence,
     itemId: '3GFXE9GETBW98',
     // itemMorePhotoPairOne: `
     //   <img src="public/images/items/thibodeau_lunar_calendar_2021_photo_01_1000px.jpg" />
@@ -214,7 +151,7 @@ const itemsInfo = {
   },
   'lunarCalendarTwenty': {
     mainContent: item.itemPage,
-    itemCategory: lunarDashCalendar,
+    itemCategory: 'lunar-calendar',
     itemLunarCalendarTitle: 'The Instruments Agree',
     itemLunarCalendarYear: '2020',
     itemLunarCalendarEdition: 500,
@@ -228,6 +165,7 @@ const itemsInfo = {
     itemInfoFour: itemInfoUniversals.lunarCalendarInfoFour,
     itemInfoMore: '',
     itemPrice: itemInfoUniversals.lunarCalendarPrice,
+    itemLunarCalendarLocation: lunarCalendarLocationProvidence,
     itemId: 'TGVEUGQD58AX2',
     itemMorePhotoPairOne: `
       <img src="public/images/items/thibodeau_lunar_calendar_2020_photo_01_1000px.jpg" />
@@ -249,7 +187,7 @@ const itemsInfo = {
   },
   'lunarCalendarNineteen': {
     mainContent: item.itemPage,
-    itemCategory: lunarDashCalendar,
+    itemCategory: 'lunar-calendar',
     itemLunarCalendarTitle: 'Orchard Quest',
     itemLunarCalendarYear: '2019',
     itemLunarCalendarEdition: 500,
@@ -262,6 +200,7 @@ const itemsInfo = {
     itemInfoThree: itemInfoUniversals.lunarCalendarInfoThree,
     itemInfoFour: itemInfoUniversals.lunarCalendarInfoFour,
     itemPrice: itemInfoUniversals.lunarCalendarPrice,
+    itemLunarCalendarLocation: lunarCalendarLocationProvidence,
     itemId: 'T45GH9BL83VQ4',
     itemMorePhotoPairOne: `
       <img src="public/images/items/thibodeau_lunar_calendar_2019_photo_01.jpg" />
@@ -283,7 +222,7 @@ const itemsInfo = {
   },
   'lunarCalendarEighteen': {
     mainContent: item.itemPage,
-    itemCategory: lunarDashCalendar,
+    itemCategory: 'lunar-calendar',
     itemLunarCalendarTitle: 'Shimmery Circuit',
     itemLunarCalendarYear: '2018',
     itemLunarCalendarEdition: 1000,
@@ -296,6 +235,7 @@ const itemsInfo = {
     itemInfoThree: itemInfoUniversals.lunarCalendarInfoThree,
     itemInfoFour: itemInfoUniversals.lunarCalendarInfoFour,
     itemPrice: itemInfoUniversals.lunarCalendarPrice,
+    itemLunarCalendarLocation: lunarCalendarLocationNewYork,
     itemId: '4LN49ZLYQLY88',
     itemMorePhotoPairOne: `
       <img src="public/images/items/thibodeau_lunar_calendar_2018_photo_01.jpg" />
@@ -317,7 +257,7 @@ const itemsInfo = {
   },
   'lunarCalendarSeventeen': {
     mainContent: item.itemPage,
-    itemCategory: lunarDashCalendar,
+    itemCategory: 'lunar-calendar',
     itemLunarCalendarTitle: 'I Still See the X',
     itemLunarCalendarYear: '2017',
     itemLunarCalendarEdition: 1000,
@@ -330,6 +270,7 @@ const itemsInfo = {
     itemInfoThree: itemInfoUniversals.lunarCalendarInfoThree,
     itemInfoFour: itemInfoUniversals.lunarCalendarInfoFour,
     itemPrice: itemInfoUniversals.lunarCalendarPrice,
+    itemLunarCalendarLocation: lunarCalendarLocationProvidence,
     itemId: 'C4RW9LGDQ8NYL',
     itemMorePhotoPairOne: `
       <img src="public/images/items/thibodeau_lunar_calendar_2017_photo_01.jpg" />

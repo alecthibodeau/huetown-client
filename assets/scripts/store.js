@@ -22,6 +22,7 @@ const setContent = (customElement, content) => {
 let itemInfoText = `
   <div class="item-info-text" id="orderItem">
     <div>
+      <div id="itemPreorder" class="item-preorder" href="#itemDetails">PREORDER</div>
       <span class="item-name"></span>
       <span class="item-subname"></span>
     </div>
@@ -264,6 +265,11 @@ const getItemInfo = (item, pageValueOrConcern) => {
     contentToLoad: item.itemLunarCalendarPaperInfo
   };
 
+  const itemLunarCalendarLocation = { 
+    className: 'lunar-calendar-location',
+    contentToLoad: item.itemLunarCalendarLocation
+  };
+
   const lunarContainerOne = {
     className: 'container-1',
     contentToLoad: item.itemCategory
@@ -318,7 +324,7 @@ const getItemInfo = (item, pageValueOrConcern) => {
     itemInfoThree,
     itemInfoFour,
     itemPrice,
-    itemId 
+    itemId
   ];
 
   const extraItemInfo = [
@@ -330,7 +336,8 @@ const getItemInfo = (item, pageValueOrConcern) => {
     itemLunarCalendarTitle,
     itemLunarCalendarEdition,
     itemLunarCalendarYear,
-    itemLunarCalendarPaperInfo
+    itemLunarCalendarPaperInfo,
+    itemLunarCalendarLocation
   ];
 
   const lunarClasses = [

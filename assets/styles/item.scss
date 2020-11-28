@@ -17,6 +17,26 @@
   width: $page-width;
   margin-bottom: 20px;
 
+  .note {
+    font-weight: 700;
+  }
+
+  .orca-lumina {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px 0;
+
+    img {
+      width: 300px;
+      height: 300px;
+    }
+
+    span:first-of-type {
+      font-style: italic;
+    }
+  }
+
   .content-container {
     display: flex;
 
@@ -248,6 +268,16 @@
       @media only screen and (max-width: 600px) {
         width: 90vw;
       }
+    }
+  }
+
+  .item-preorder {
+    display: none;
+
+    &.visible {
+      display: block;
+      font-size: 2rem;
+      font-weight: 700;
     }
   }
 

@@ -9,7 +9,7 @@ let lunarCalendarsPage = `
           data-title="2020 Lunar Calendar"
           class="collection-link" href="/">
           <img class="collection-image"
-            src="/public/images/items/1200_embed_only.jpg" />
+            src="/public/images/items/thibodeau_lunar_calendar_2021_preorder_image.jpg" />
         </a>
         <div class="content-item-name">PREORDER: 2021 Lunar Calendar</div>
       </div>
