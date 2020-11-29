@@ -22,7 +22,7 @@ const setContent = (customElement, content) => {
 let itemInfoText = `
   <div class="item-info-text" id="orderItem">
     <div>
-      <div id="itemPreorder" class="item-preorder" href="#itemDetails">PREORDER</div>
+      <span id="itemPreorder" class="item-preorder">PREORDER</span>
       <span class="item-name"></span>
       <span class="item-subname"></span>
     </div>
@@ -295,10 +295,10 @@ const getItemInfo = (item, pageValueOrConcern) => {
     contentToLoad: 'shown'
   }
 
-  const lunarFeatureImage = {
-    className: 'feature-image-link',
-    contentToLoad: '#itemDetails'
-  };
+  // const lunarFeatureImage = {
+  //   className: 'feature-image-link',
+  //   contentToLoad: '#itemDetails'
+  // };
 
   const lunarContainerThreeContent = { 
     className: 'container-3',
@@ -349,7 +349,7 @@ const getItemInfo = (item, pageValueOrConcern) => {
   ];
 
   const lunarAdditionalInfo = [
-    lunarFeatureImage,
+    // lunarFeatureImage,
     lunarContainerThreeContent
   ];
 

@@ -83,7 +83,7 @@ const lunarCalendarBlocksPreorder = `
     <span class="note">Note: The above lunar calendar image is a digital-color simulation of what the final piece's inks and paper will look like.</span> There may be some slight variations between the colors here and in the print.
   </div>
   <div class="orca-lumina">
-    <img src="${itemsDirectory}orca_lumina.jpg" />
+    <img src="${itemsDirectory}orca_lumina_300px.jpg" />
     <div>
       <span>Orca Lumina</span> <span>mini-print</span>
     </div>

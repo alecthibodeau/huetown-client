@@ -861,9 +861,6 @@ PAGES
     height: auto;
   }
 }
-.item-page .content-container:not(.lunar-calendar) .feature-image-link {
-  pointer-events: none;
-}
 .item-page .content-container.print, .item-page .content-container.postcard {
   justify-content: center;
 }

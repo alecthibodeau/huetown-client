@@ -59,11 +59,11 @@
       }
     }
 
-    &:not(.lunar-calendar) {
-      .feature-image-link {
-        pointer-events: none;
-      }
-    }
+    // &:not(.lunar-calendar) {
+    //   .feature-image-link {
+    //     pointer-events: none;
+    //   }
+    // }
 
     &.print,
     &.postcard {
