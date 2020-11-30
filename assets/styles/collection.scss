@@ -3,6 +3,14 @@
   border: 1px solid $sixty-percent-gray;
 }
 
+@mixin crisp-scaled-down {
+  image-rendering: -moz-crisp-edges; /* Firefox */
+  image-rendering: -o-crisp-edges; /* Opera */
+  image-rendering: -webkit-optimize-contrast; /* Webkit (non-standard naming) */
+  image-rendering: crisp-edges;
+  -ms-interpolation-mode: nearest-neighbor; /* IE (non-standard property) */
+}
+
 // Selector for .collection-page
 @mixin collection-content {
 
@@ -44,7 +52,7 @@
     }
 
     .content-item-name {
-      margin: 5px 0 10px;
+      margin: 3px 0 16px;
     }
 
     a.postcards {
@@ -58,6 +66,10 @@
         @include collection-image-border
       }
     }
+  }
+
+  .collection-image {
+    @include crisp-scaled-down;
   }
 
   /**
@@ -74,8 +86,6 @@
     .content-block {
 
       a.lunar-calendars {
-        // width: 90vw;
-        // height: 56vw;
 
         img {
           max-width: 90vw;

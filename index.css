@@ -514,7 +514,7 @@ PAGES
   max-height: 320px;
 }
 .lunar-calendars-page .content-block .content-item-name {
-  margin: 5px 0 10px;
+  margin: 3px 0 16px;
 }
 .lunar-calendars-page .content-block a.postcards {
   width: 300px;
@@ -524,6 +524,17 @@ PAGES
   max-width: 300px;
   max-height: 200px;
   border: 1px solid #666;
+}
+.lunar-calendars-page .collection-image {
+  image-rendering: -moz-crisp-edges;
+  /* Firefox */
+  image-rendering: -o-crisp-edges;
+  /* Opera */
+  image-rendering: -webkit-optimize-contrast;
+  /* Webkit (non-standard naming) */
+  image-rendering: crisp-edges;
+  -ms-interpolation-mode: nearest-neighbor;
+  /* IE (non-standard property) */
 }
 @media only screen and (max-width: 810px) {
   .lunar-calendars-page .content-container.lunar-calendar {
@@ -614,7 +625,7 @@ PAGES
   max-height: 320px;
 }
 .prints-page .content-block .content-item-name {
-  margin: 5px 0 10px;
+  margin: 3px 0 16px;
 }
 .prints-page .content-block a.postcards {
   width: 300px;
@@ -624,6 +635,17 @@ PAGES
   max-width: 300px;
   max-height: 200px;
   border: 1px solid #666;
+}
+.prints-page .collection-image {
+  image-rendering: -moz-crisp-edges;
+  /* Firefox */
+  image-rendering: -o-crisp-edges;
+  /* Opera */
+  image-rendering: -webkit-optimize-contrast;
+  /* Webkit (non-standard naming) */
+  image-rendering: crisp-edges;
+  -ms-interpolation-mode: nearest-neighbor;
+  /* IE (non-standard property) */
 }
 @media only screen and (max-width: 810px) {
   .prints-page .content-container.lunar-calendar {
@@ -714,7 +736,7 @@ PAGES
   max-height: 320px;
 }
 .postcards-page .content-block .content-item-name {
-  margin: 5px 0 10px;
+  margin: 3px 0 16px;
 }
 .postcards-page .content-block a.postcards {
   width: 300px;
@@ -724,6 +746,17 @@ PAGES
   max-width: 300px;
   max-height: 200px;
   border: 1px solid #666;
+}
+.postcards-page .collection-image {
+  image-rendering: -moz-crisp-edges;
+  /* Firefox */
+  image-rendering: -o-crisp-edges;
+  /* Opera */
+  image-rendering: -webkit-optimize-contrast;
+  /* Webkit (non-standard naming) */
+  image-rendering: crisp-edges;
+  -ms-interpolation-mode: nearest-neighbor;
+  /* IE (non-standard property) */
 }
 @media only screen and (max-width: 810px) {
   .postcards-page .content-container.lunar-calendar {
@@ -854,15 +887,6 @@ PAGES
 .item-page .content-container.lunar-calendar .feature-image {
   width: 700px;
   height: auto;
-  image-rendering: -moz-crisp-edges;
-  /* Firefox */
-  image-rendering: -o-crisp-edges;
-  /* Opera */
-  image-rendering: -webkit-optimize-contrast;
-  /* Webkit (non-standard naming) */
-  image-rendering: crisp-edges;
-  -ms-interpolation-mode: nearest-neighbor;
-  /* IE (non-standard property) */
 }
 @media only screen and (max-width: 768px) {
   .item-page .content-container.lunar-calendar .feature-image {
@@ -1002,6 +1026,17 @@ PAGES
 .item-page .container-3 .available div[class^=lunar-calendar-links] div .text,
 .item-page .container-3 .previous div[class^=lunar-calendar-links] div .text {
   margin-bottom: 10px;
+}
+.item-page img.feature-image {
+  image-rendering: -moz-crisp-edges;
+  /* Firefox */
+  image-rendering: -o-crisp-edges;
+  /* Opera */
+  image-rendering: -webkit-optimize-contrast;
+  /* Webkit (non-standard naming) */
+  image-rendering: crisp-edges;
+  -ms-interpolation-mode: nearest-neighbor;
+  /* IE (non-standard property) */
 }
 .item-page img.feature-image.postcard {
   border: 1px solid #666;

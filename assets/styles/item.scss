@@ -20,7 +20,6 @@
   -ms-interpolation-mode: nearest-neighbor; /* IE (non-standard property) */
 }
 
-
 /* Selector for .item-page */
 @mixin item-page-content {
   width: $page-width;
@@ -58,17 +57,12 @@
       .feature-image {
         width: 700px;
         height: auto;
-        @include crisp-scaled-down;
-      }
 
-      @media only screen and (max-width: 768px) {
-        .feature-image {
+        @media only screen and (max-width: 768px) {
           width: 520px;
         }
-      }
 
-      @media only screen and (max-width: 576px) {
-        .feature-image {
+        @media only screen and (max-width: 576px) {
           width: 300px;
         }
       }
@@ -230,6 +224,7 @@
   }
 
   img.feature-image {
+    @include crisp-scaled-down;
 
     &.postcard {
 
