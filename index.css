@@ -854,11 +854,24 @@ PAGES
 .item-page .content-container.lunar-calendar .feature-image {
   width: 700px;
   height: auto;
+  image-rendering: -moz-crisp-edges;
+  /* Firefox */
+  image-rendering: -o-crisp-edges;
+  /* Opera */
+  image-rendering: -webkit-optimize-contrast;
+  /* Webkit (non-standard naming) */
+  image-rendering: crisp-edges;
+  -ms-interpolation-mode: nearest-neighbor;
+  /* IE (non-standard property) */
 }
-@media only screen and (max-width: 750px) {
+@media only screen and (max-width: 768px) {
   .item-page .content-container.lunar-calendar .feature-image {
-    width: 90vw;
-    height: auto;
+    width: 520px;
+  }
+}
+@media only screen and (max-width: 576px) {
+  .item-page .content-container.lunar-calendar .feature-image {
+    width: 300px;
   }
 }
 .item-page .content-container.print, .item-page .content-container.postcard {
