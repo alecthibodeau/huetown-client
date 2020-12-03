@@ -78,7 +78,7 @@ const lunarCalendarBlocksPreorder = `
   <div id="itemDetails">
     <span class="note">2021 Lunar Calendar Preorder:</span>
     Okay, my lunar calendar for 2021 is now in production at the print shop &mdash; with Dan making the letterpress magic happen for another limited edition.
-    Each lunar calendar preordered between now and December 4, 2020 will include a new <span class="ital">Orca Lumina</span> mini print (2.5 x 2.5 inches): drawn, screen printed and initialed by me.
+    Each lunar calendar preordered by December 4, 2020 will include a new <span class="ital">Orca Lumina</span> mini print (2.5 x 2.5 inches): drawn, screen printed and initialed by me.
     All preorders will ship the <span class="note">second week of December 2020</span> (domestic shipping in the USA is a flat $7 rate to any address, regardless of item quantity).
     <span class="note">Note: The above lunar calendar image is a digital-color simulation of what the final piece's inks and paper will look like.</span> There may be some slight variations between the colors here and in the print.
   </div>

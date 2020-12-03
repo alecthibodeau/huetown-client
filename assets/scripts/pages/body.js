@@ -4,8 +4,8 @@ let bodyContent = `
 <header>
   <div class="nav-top">
     <a data-title="Huetown Home" class="nav-element" href="/">
-      <img class="huetown-logo-gray" id="huetownHeaderLogo" src="public/images/huetown_script_logo_fifty_percent_gray.png" alt="Huetown Script Logo">
-      <img class="huetown-logo-white" src="public/images/huetown_script_logo_white.png" alt="Huetown Script Logo">
+      <img class="huetown-logo-gray" id="huetownHeaderLogo" src="public/images/huetown_script_logo_fifty_percent_gray.svg" alt="Huetown Script Logo">
+      <img class="huetown-logo-white" src="public/images/huetown_script_logo_white.svg" alt="Huetown Script Logo">
     </a>
     <button id="burgerButton" class="burger-button">
       <div class="burger-bars-container">
