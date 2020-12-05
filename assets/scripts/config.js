@@ -70,20 +70,27 @@ const itemInfoUniversals = {
   `,
   postcardInfoOne: '6 x 4 inches; mellow, satin finish<br>Full-color front / single-color back',
   postcardInfoTwo: '',
-  postcardPrice: 1,
-  printPrice: 15
+  postcardPrice: 1
 }
 
 const lunarCalendarBlocksPreorder = `
   <div id="itemDetails">
     <span class="note">2021 Lunar Calendar Preorder:</span>
-    Okay, my lunar calendar for 2021 is now in production at the print shop &mdash; with Dan making the letterpress magic happen for another limited edition.
-    Each lunar calendar preordered by December 4, 2020 will include a new <span class="ital">Orca Lumina</span> mini print (2.5 x 2.5 inches): drawn, screen printed and initialed by me.
-    All preorders will ship the <span class="note">second week of December 2020</span> (domestic shipping in the USA is a flat $7 rate to any address, regardless of item quantity).
-    <span class="note">Note: The above lunar calendar image is a digital-color simulation of what the final piece's inks and paper will look like.</span> There may be some slight variations between the colors here and in the print.
+    <p>
+      Okay, my lunar calendar for 2021 is now in production at the print shop &mdash; with Dan making the letterpress magic happen for another limited edition.
+      The preorders continue for a few more days, with all of them scheduled to ship the <span class="note">second week of December 2020</span>. Reminder: Huetown's domestic shipping price in the USA is a flat $7 rate to any address, regardless of item quantity.
+    </p>
+    <p>
+      <span class="note">Note: The above lunar calendar image is a digital-color simulation of what the final piece's inks and paper will look like.</span> There may be some slight variations between the colors here and in the print.
+      Follow <a class="text-link" href="https://www.instagram.com/huetown/" target="_blank">@huetown</a> on Instagram to see the letterpress magic in action.
+      And join the <a class="text-link" href="about.html">email list</a> to receive first word when the edition officially drops.
+      Each lunar calendar preordered by December 4, 2020 (thank you!) included a new <span class="ital"><a class="text-link" href="print-orca-lumina.html">Orca Lumina</a></span> mini-print: drawn, screen printed and initialed by me.
+    </p>
   </div>
   <div class="orca-lumina">
-    <img src="${itemsDirectory}orca_lumina_300px.jpg" />
+    <a href="print-orca-lumina.html">
+      <img src="${itemsDirectory}orca_lumina_300px.jpg" />
+    </a>
     <div>
       <span>Orca Lumina</span> <span>mini-print</span>
     </div>
@@ -380,8 +387,21 @@ const itemsInfo = {
     itemInfoTwo: 'Printed by the artist',
     itemInfoThree: 'From a limited edition of 50 prints<br>Hand numbered and signed by the artist',
     itemInfoFour: 'unframed',
-    itemPrice: itemInfoUniversals.printPrice,
+    itemPrice: 15,
     itemId: 'VARZ4F5RHAP9Y'
+  },
+  'printOrcaLumina': {
+    mainContent: item.itemPage,
+    itemCategory: 'print',
+    itemName: 'Orca Lumina<br><span class="normal">by Alec Thibodeau</span>',
+    itemSubname: '',
+    itemImageFront: 'public/images/items/orca_lumina_300px.jpg',
+    itemInfoOne: '2.5 x 2.5 inches<br>Screen print',
+    itemInfoTwo: 'Printed by the artist',
+    itemInfoThree: 'Initialed by the artist',
+    itemInfoFour: 'unframed',
+    itemPrice: 7,
+    itemId: '8BY2MK6Y89ZTA'
   },
   'printStentorian': {
     mainContent: item.itemPage,
@@ -393,7 +413,7 @@ const itemsInfo = {
     itemInfoTwo: 'Printed by DWRI Letterpress',
     itemInfoThree: 'From a limited edition of 250 prints<br>Hand numbered and signed by the artist',
     itemInfoFour: 'unframed',
-    itemPrice: itemInfoUniversals.printPrice,
+    itemPrice: 15,
     itemId: 'AUN3U4NQ52J2W'
   }
 };

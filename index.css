@@ -368,6 +368,7 @@ html body main {
 }
 html body main .text-link {
   text-decoration: none;
+  color: #e98d00;
 }
 html body main .text-link:link, html body main .text-link:visited, html body main .text-link:active {
   color: #e98d00;
@@ -376,6 +377,7 @@ html body main .text-link:link, html body main .text-link:visited, html body mai
 html body main .text-link:hover {
   color: #6abbb6;
   text-decoration: underline;
+  cursor: pointer;
 }
 html body main .ital {
   font-style: italic;
@@ -498,32 +500,29 @@ PAGES
   text-align: center;
   margin: 0 18px;
 }
-.lunar-calendars-page .content-block a {
+.lunar-calendars-page .content-block a.collection-link,
+.lunar-calendars-page .content-block a.collection-link img {
   display: block;
 }
 .lunar-calendars-page .content-block a.lunar-calendars img {
   max-width: 350px;
   max-height: 216px;
 }
-.lunar-calendars-page .content-block a.prints {
-  width: 320px;
-  height: 320px;
-}
 .lunar-calendars-page .content-block a.prints img {
   max-width: 320px;
   max-height: 320px;
-}
-.lunar-calendars-page .content-block .content-item-name {
-  margin: 3px 0 16px;
-}
-.lunar-calendars-page .content-block a.postcards {
-  width: 300px;
-  height: 200px;
 }
 .lunar-calendars-page .content-block a.postcards img {
   max-width: 300px;
   max-height: 200px;
   border: 1px solid #666;
+}
+.lunar-calendars-page .content-block .content-item-name {
+  margin: 3px 0 16px;
+}
+.lunar-calendars-page .content-block .content-item-name a {
+  text-decoration: none;
+  color: #000;
 }
 .lunar-calendars-page .collection-image {
   image-rendering: -moz-crisp-edges;
@@ -555,29 +554,17 @@ PAGES
     max-width: 80vw;
     max-height: 49vw;
   }
-  .lunar-calendars-page .content-block a.postcards {
-    width: 390px;
-    height: 230px;
-  }
   .lunar-calendars-page .content-block a.postcards img {
     max-width: 390px;
     max-height: 230px;
   }
 }
 @media only screen and (max-width: 400px) {
-  .lunar-calendars-page .content-block a.prints {
-    width: 85vw;
-    height: 85vw;
-  }
   .lunar-calendars-page .content-block a.prints img {
     max-width: auto;
     max-height: auto;
     width: 85vw;
     height: 85vw;
-  }
-  .lunar-calendars-page .content-block a.postcards {
-    width: 90vw;
-    height: 60vw;
   }
   .lunar-calendars-page .content-block a.postcards img {
     max-width: auto;
@@ -609,32 +596,29 @@ PAGES
   text-align: center;
   margin: 0 18px;
 }
-.prints-page .content-block a {
+.prints-page .content-block a.collection-link,
+.prints-page .content-block a.collection-link img {
   display: block;
 }
 .prints-page .content-block a.lunar-calendars img {
   max-width: 350px;
   max-height: 216px;
 }
-.prints-page .content-block a.prints {
-  width: 320px;
-  height: 320px;
-}
 .prints-page .content-block a.prints img {
   max-width: 320px;
   max-height: 320px;
-}
-.prints-page .content-block .content-item-name {
-  margin: 3px 0 16px;
-}
-.prints-page .content-block a.postcards {
-  width: 300px;
-  height: 200px;
 }
 .prints-page .content-block a.postcards img {
   max-width: 300px;
   max-height: 200px;
   border: 1px solid #666;
+}
+.prints-page .content-block .content-item-name {
+  margin: 3px 0 16px;
+}
+.prints-page .content-block .content-item-name a {
+  text-decoration: none;
+  color: #000;
 }
 .prints-page .collection-image {
   image-rendering: -moz-crisp-edges;
@@ -666,29 +650,17 @@ PAGES
     max-width: 80vw;
     max-height: 49vw;
   }
-  .prints-page .content-block a.postcards {
-    width: 390px;
-    height: 230px;
-  }
   .prints-page .content-block a.postcards img {
     max-width: 390px;
     max-height: 230px;
   }
 }
 @media only screen and (max-width: 400px) {
-  .prints-page .content-block a.prints {
-    width: 85vw;
-    height: 85vw;
-  }
   .prints-page .content-block a.prints img {
     max-width: auto;
     max-height: auto;
     width: 85vw;
     height: 85vw;
-  }
-  .prints-page .content-block a.postcards {
-    width: 90vw;
-    height: 60vw;
   }
   .prints-page .content-block a.postcards img {
     max-width: auto;
@@ -720,32 +692,29 @@ PAGES
   text-align: center;
   margin: 0 18px;
 }
-.postcards-page .content-block a {
+.postcards-page .content-block a.collection-link,
+.postcards-page .content-block a.collection-link img {
   display: block;
 }
 .postcards-page .content-block a.lunar-calendars img {
   max-width: 350px;
   max-height: 216px;
 }
-.postcards-page .content-block a.prints {
-  width: 320px;
-  height: 320px;
-}
 .postcards-page .content-block a.prints img {
   max-width: 320px;
   max-height: 320px;
-}
-.postcards-page .content-block .content-item-name {
-  margin: 3px 0 16px;
-}
-.postcards-page .content-block a.postcards {
-  width: 300px;
-  height: 200px;
 }
 .postcards-page .content-block a.postcards img {
   max-width: 300px;
   max-height: 200px;
   border: 1px solid #666;
+}
+.postcards-page .content-block .content-item-name {
+  margin: 3px 0 16px;
+}
+.postcards-page .content-block .content-item-name a {
+  text-decoration: none;
+  color: #000;
 }
 .postcards-page .collection-image {
   image-rendering: -moz-crisp-edges;
@@ -777,29 +746,17 @@ PAGES
     max-width: 80vw;
     max-height: 49vw;
   }
-  .postcards-page .content-block a.postcards {
-    width: 390px;
-    height: 230px;
-  }
   .postcards-page .content-block a.postcards img {
     max-width: 390px;
     max-height: 230px;
   }
 }
 @media only screen and (max-width: 400px) {
-  .postcards-page .content-block a.prints {
-    width: 85vw;
-    height: 85vw;
-  }
   .postcards-page .content-block a.prints img {
     max-width: auto;
     max-height: auto;
     width: 85vw;
     height: 85vw;
-  }
-  .postcards-page .content-block a.postcards {
-    width: 90vw;
-    height: 60vw;
   }
   .postcards-page .content-block a.postcards img {
     max-width: auto;
@@ -1172,12 +1129,16 @@ PAGES
   position: relative;
   left: 8px;
 }
+.item-page form {
+  display: flex;
+  align-items: flex-start;
+}
 .item-page form input[name=quantity] {
   width: 4rem;
   height: 3.8rem;
   padding: 0;
   border: 0.1rem solid #7f7f7f;
-  margin: 0 5px 5px 0;
+  margin: 0 8px 5px 0;
   font-size: 1.25rem;
   text-align: center;
 }

@@ -7,13 +7,23 @@ let postcardsPage = `
         <a data-title="Assets" class="collection-link" href="postcard-assets.html">
           <img class="collection-image" src="/public/images/items/postcard_assets.png" />
         </a>
-        <div class="content-item-name">Assets</div>
+        <div class="content-item-name">
+          <a href="postcard-assets.html">
+            <span class="ital">Assets</span>
+            <span>postcard</span>
+          </a>
+        </div>
       </div>
       <div class="content-block">
         <a data-title="Great White Shark" class="collection-link" href="postcard-great-white-shark.html">
           <img class="collection-image" src="public/images/items/postcard_great_white_shark.png" />
         </a>
-        <div class="content-item-name">Great White Shark</div>
+        <div class="content-item-name">
+          <a href="postcard-great-white-shark.html">
+            <span class="ital">Great White Shark</span>
+            <span>postcard</span>
+          </a>
+        </div>
       </div>
     </div>
     <div class="content-container">
@@ -21,13 +31,23 @@ let postcardsPage = `
         <a data-title="Hippopotamus" class="collection-link" href="postcard-hippopotamus.html">
           <img class="collection-image" src="public/images/items/postcard_hippopotamus.png" />
         </a>
-        <div class="content-item-name">Hippopotamus</div>
+        <div class="content-item-name">
+          <a href="postcard-hippopotamus.html">
+            <span class="ital">Hippopotamus</span>
+            <span>postcard</span>
+          </a>
+        </div>
       </div>
       <div class="content-block">
         <a data-title="Rhode Island Whale" class="collection-link" href="postcard-rhode-island-whale.html">
           <img class="collection-image" src="public/images/items/postcard_rhode_island_whale.png" />
         </a>
-        <div class="content-item-name">Rhode Island Whale</div>
+        <div class="content-item-name">
+          <a href="postcard-rhode-island-whale.html">
+            <span class="ital">Rhode Island Whale</span>
+            <span>postcard</span>
+          </a>
+        </div>
       </div>
     </div>
   </div>

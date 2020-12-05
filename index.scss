@@ -43,6 +43,7 @@ html {
 
       .text-link {
         text-decoration: none;
+        color: $text-link-orange;
 
         &:link,
         &:visited,
@@ -54,6 +55,7 @@ html {
         &:hover {
           color: $huetown-green;
           text-decoration: underline;
+          cursor: pointer;
         }
       }
 

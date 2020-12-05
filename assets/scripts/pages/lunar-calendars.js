@@ -11,7 +11,11 @@ let lunarCalendarsPage = `
           <img class="collection-image"
             src="/public/images/items/thibodeau_lunar_calendar_2021_preorder_image_700px.jpg" />
         </a>
-        <div class="content-item-name">PREORDER: 2021 Lunar Calendar</div>
+        <div class="content-item-name">
+          <a href="/">
+            PREORDER: 2021 Lunar Calendar
+          </a>
+        </div>
       </div>
     </div>
 
@@ -23,7 +27,11 @@ let lunarCalendarsPage = `
           <img class="collection-image"
             src="/public/images/items/thibodeau_lunar_calendar_2020_main.png" />
         </a>
-        <div class="content-item-name">2020 Lunar Calendar</div>
+        <div class="content-item-name">
+          <a href="lunar-calendar-2020.html">
+            2020 Lunar Calendar
+          </a>
+        </div>
       </div>
       <div class="content-block">
         <a
@@ -32,7 +40,11 @@ let lunarCalendarsPage = `
           <img class="collection-image"
             src="public/images/items/thibodeau_lunar_calendar_2019_main.jpg" />
         </a>
-        <div class="content-item-name">2019 Lunar Calendar</div>
+        <div class="content-item-name">
+          <a href="lunar-calendar-2019.html">
+            2019 Lunar Calendar
+          </a>
+        </div>
       </div>
     </div>
 
@@ -44,7 +56,11 @@ let lunarCalendarsPage = `
           <img class="collection-image"
             src="public/images/items/thibodeau_lunar_calendar_2018_main.jpg" />
         </a>
-        <div class="content-item-name">2018 Lunar Calendar</div>
+        <div class="content-item-name">
+          <a href="lunar-calendar-2018.html">
+            2018 Lunar Calendar
+          </a>
+        </div>
       </div>
       <div class="content-block">
         <a
@@ -53,7 +69,11 @@ let lunarCalendarsPage = `
           <img class="collection-image"
             src="public/images/items/thibodeau_lunar_calendar_2017_main.jpg" />
         </a>
-        <div class="content-item-name">2017 Lunar Calendar</div>
+        <div class="content-item-name">
+          <a href="lunar-calendar-2017.html">
+            2017 Lunar Calendar
+          </a>
+        </div>
       </div>
     </div>
 
