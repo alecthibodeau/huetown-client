@@ -75,10 +75,9 @@ const itemInfoUniversals = {
 
 const lunarCalendarBlocksPreorder = `
   <div id="itemDetails">
-    <span class="note">2021 Lunar Calendar Preorder:</span>
     <p>
-      Okay, my lunar calendar for 2021 is now in production at the print shop &mdash; with Dan making the letterpress magic happen for another limited edition.
-      The preorders continue for a few more days, with all of them scheduled to ship the <span class="note">second week of December 2020</span>. Reminder: Huetown's domestic shipping price in the USA is a flat $7 rate to any address, regardless of item quantity.
+    <span class="note">2021 Lunar Calendar Preorder&hellip;</span> Okay, my lunar calendar for 2021 is almost back from the print shop, with Dan putting the finishing touches on another limited edition.
+      The preorders continue for a few more days &mdash; with all of them scheduled to ship <span class="note">this week</span> (the second week of December 2020) &mdash; followed by the official launch with more photos. Reminder: Huetown's domestic shipping price in the USA is a flat $7 rate to any address, regardless of item quantity.
     </p>
     <p>
       <span class="note">Note: The above lunar calendar image is a digital-color simulation of what the final piece's inks and paper will look like.</span> There may be some slight variations between the colors here and in the print.
