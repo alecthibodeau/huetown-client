@@ -44,7 +44,7 @@ const itemInfoUniversals = {
       chronicling all phases of the moon for <span class="lunar-calendar-year"></span>.
       From a limited edition of <span class="lunar-calendar-edition"></span> prints <span class="lunar-calendar-title ital"></span> continues Alec's ongoing lunar calendar series,
       which features ornate illustrations framing an annual cycle of moon shapes.
-      As with each of Alec's previous lunar calendars, this piece measures 19" x 11.75" (a golden rectangle) and is expertly printed by Dan Wood
+      As with each of Alec's previous lunar calendars this piece measures 19" x 11.75" (a golden rectangle) and is expertly printed by Dan Wood
       and his team at <a class="text-link" href="http://www.dwriletterpress.net" target="_blank">DWRI&nbsp;Letterpress</a>.
     </div>
     <div class=info-block>
@@ -52,7 +52,7 @@ const itemInfoUniversals = {
       Each calendar is printed on <span class="lunar-calendar-paper-info"></span>, blind-debossed with Alec's name and the print shop's name &mdash; and hand numbered and signed by Alec. Each calendar ships in archival wrap with an accompanying information sheet inside an eco-friendly fiberboard protective tube (reusable, recycled, recyclable) with crimped ends.
     </div>
     <div class=info-block>
-      The calendar's lunar phase chart is calibrated for any location in the Eastern Time Zone and is accurate to within a day for anywhere in the Northern Hemisphere. The chart also matches lunar cycles in the Southern Hemisphere (but with inverted shapes). <span class="lunar-calendar-location"></span>
+      The calendar's lunar phase chart is calibrated for any location in the Eastern Time Zone and is accurate to within a day for anywhere in the Northern Hemisphere. The chart also matches lunar cycles in the Southern Hemisphere: but with inverted shapes. <span class="lunar-calendar-location"></span>
     </div>
     <div class=info-block>
       Custom moon illustrations portray all principal lunar phases (New Moon, First Quarter Moon, Full Moon and Third Quarter Moon) plus all intermediate crescent and gibbous phases. For months with less than 31 days, drawings of clouds occupy the extra spaces.
@@ -73,32 +73,32 @@ const itemInfoUniversals = {
   postcardPrice: 1
 }
 
-const lunarCalendarBlocksPreorder = `
-  <div id="itemDetails">
-    <p>
-    <span class="note">2021 Lunar Calendar Preorder&hellip;</span> Okay, my lunar calendar for 2021 is almost back from the print shop, with Dan putting the finishing touches on another limited edition.
-      The preorders continue for a few more days &mdash; with all of them scheduled to ship <span class="note">this week</span> (the second week of December 2020) &mdash; followed by the official launch with more photos. Reminder: Huetown's domestic shipping price in the USA is a flat $7 rate to any address, regardless of item quantity.
-    </p>
-    <p>
-      <span class="note">Note: The above lunar calendar image is a digital-color simulation of what the final piece's inks and paper will look like.</span> There may be some slight variations between the colors here and in the print.
-      Follow <a class="text-link" href="https://www.instagram.com/huetown/" target="_blank">@huetown</a> on Instagram to see the letterpress magic in action.
-      And join the <a class="text-link" href="about.html">email list</a> to receive first word when the edition officially drops.
-      Each lunar calendar preordered by December 4, 2020 (thank you!) included a new <span class="ital"><a class="text-link" href="print-orca-lumina.html">Orca Lumina</a></span> mini-print: drawn, screen printed and initialed by me.
-    </p>
-  </div>
-  <div class="orca-lumina">
-    <a href="print-orca-lumina.html">
-      <img src="${itemsDirectory}orca_lumina_300px.jpg" />
-    </a>
-    <div>
-      <span>Orca Lumina</span> <span>mini-print</span>
-    </div>
-  </div>
-  <div>
-    Here's more info on the ultimate piece&hellip;
-  </div>
-  ${itemInfoUniversals.lunarCalendarBlocks}
-`
+// const lunarCalendarBlocksPreorder = `
+//   <div id="itemDetails">
+//     <p>
+//     <span class="note">2021 Lunar Calendar Preorder&hellip;</span> Okay, my lunar calendar for 2021 is almost back from the print shop, with Dan putting the finishing touches on another limited edition.
+//       The preorders continue for a few more days &mdash; with all of them scheduled to ship <span class="note">this week</span> (the second week of December 2020) &mdash; followed by the official launch with more photos. Reminder: Huetown's domestic shipping price in the USA is a flat $7 rate to any address, regardless of item quantity.
+//     </p>
+//     <p>
+//       <span class="note">Note: The above lunar calendar image is a digital-color simulation of what the final piece's inks and paper will look like.</span> There may be some slight variations between the colors here and in the print.
+//       Follow <a class="text-link" href="https://www.instagram.com/huetown/" target="_blank">@huetown</a> on Instagram to see the letterpress magic in action.
+//       And join the <a class="text-link" href="about.html">email list</a> to receive first word when the edition officially drops.
+//       Each lunar calendar preordered by December 4, 2020 (thank you!) included a new <span class="ital"><a class="text-link" href="print-orca-lumina.html">Orca Lumina</a></span> mini-print: drawn, screen printed and initialed by me.
+//     </p>
+//   </div>
+//   <div class="orca-lumina">
+//     <a href="print-orca-lumina.html">
+//       <img src="${itemsDirectory}orca_lumina_300px.jpg" />
+//     </a>
+//     <div>
+//       <span>Orca Lumina</span> <span>mini-print</span>
+//     </div>
+//   </div>
+//   <div>
+//     Here's more info on the ultimate piece&hellip;
+//   </div>
+//   ${itemInfoUniversals.lunarCalendarBlocks}
+// `
 
 const itemsInfo = {
   'home': {
@@ -119,16 +119,16 @@ const itemsInfo = {
   'veganly': {
     mainContent: veganly.veganlyPage
   },
-  'lunarCalendarTwentyOnePreorder': {
+  'lunarCalendarTwentyOne': {
     mainContent: item.itemPage,
     itemCategory: 'lunar-calendar',
     itemLunarCalendarTitle: 'Casting Levels',
     itemLunarCalendarYear: '2021',
     itemLunarCalendarEdition: '',
-    itemLunarCalendarPaperInfo: 'Arjowiggins Creative Papers\' (distributed by Mohawk) acid-free 300gsm Keaykolour Kiwi 111# cover paper',
+    itemLunarCalendarPaperInfo: 'Arjowiggins Creative Papers (distributed by Mohawk) acid-free 300gsm Keaykolour Kiwi 111# cover paper',
     itemName: itemInfoUniversals.lunarCalendarItemName,
     itemSubname: '',
-    itemImageFront: `${itemsDirectory}thibodeau_lunar_calendar_2021_preorder_image_700px.jpg`,
+    itemImageFront: `${itemsDirectory}thibodeau_lunar_calendar_2021_photo_main_1000px.jpg`,
     itemInfoOne: itemInfoUniversals.lunarCalendarInfoOne,
     itemInfoTwo: itemInfoUniversals.lunarCalendarInfoTwo,
     itemInfoThree: itemInfoUniversals.lunarCalendarInfoThree,
@@ -136,24 +136,27 @@ const itemsInfo = {
     itemInfoMore: '',
     itemPrice: itemInfoUniversals.lunarCalendarPrice,
     itemLunarCalendarLocation: lunarCalendarLocationProvidence,
-    itemId: '3GFXE9GETBW98',
-    // itemMorePhotoPairOne: `
-    //   <img src="public/images/items/thibodeau_lunar_calendar_2021_photo_01_1000px.jpg" />
-    //   <img src="public/images/items/thibodeau_lunar_calendar_2021_photo_02_1000px.jpg" />
-    // `,
-    // itemMorePhotoPairTwo: `
-    //   <img src="public/images/items/thibodeau_lunar_calendar_2021_photo_03_1000px.jpg" />
-    //   <img src="public/images/items/thibodeau_lunar_calendar_2021_photo_04_1000px.jpg" />
-    // `,
-    // itemMorePhotoPairThree: `
-    //   <img src="public/images/items/thibodeau_lunar_calendar_2021_photo_07_1000px.jpg" />
-    //   <img src="public/images/items/thibodeau_lunar_calendar_2021_photo_08_1000px.jpg" />
-    // `,
-    // itemMorePhotoPairFour: `
-    // <img src="public/images/items/thibodeau_lunar_calendar_2021_photo_05_1000px.jpg" />
-    // <img id="itemDetails" src="public/images/items/thibodeau_lunar_calendar_2021_photo_06_1000px.jpg" />
-    // `,
-    itemMoreInfo: lunarCalendarBlocksPreorder
+    itemId: 'XA698W9J6TGEL',
+    itemMorePhotoPairOne: `
+      <img src="public/images/items/thibodeau_lunar_calendar_2021_photo_01_1000px.jpg" />
+      <img src="public/images/items/thibodeau_lunar_calendar_2021_photo_02_1000px.jpg" />
+    `,
+    itemMorePhotoPairTwo: `
+      <img src="public/images/items/thibodeau_lunar_calendar_2021_photo_03_1000px.jpg" />
+      <img src="public/images/items/thibodeau_lunar_calendar_2021_photo_04_1000px.jpg" />
+    `,
+    itemMorePhotoPairThree: `
+      <img src="public/images/items/thibodeau_lunar_calendar_2021_photo_05_1000px.jpg" />
+      <img src="public/images/items/thibodeau_lunar_calendar_2021_photo_09_1000px.jpg" />
+    `,
+    itemMoreInfo: `
+    ${itemInfoUniversals.lunarCalendarBlocks}
+    <p class="additional-info">
+      Follow <a class="text-link" href="https://www.instagram.com/huetown/" target="_blank">@huetown</a> on Instagram to see this print's magical letterpress production in action.
+      And join the <a class="text-link" href="about.html">email list</a> to receive first word when new prints are available.
+      Each 2021 lunar calendar preordered by December 4, 2020 (thank you!) included a new <span class="ital"><a class="text-link" href="print-orca-lumina.html">Orca Lumina</a></span> mini-print: drawn, screen printed and initialed by me.
+    </p>
+    `
   },
   'lunarCalendarTwenty': {
     mainContent: item.itemPage,
