@@ -147,7 +147,7 @@ const itemsInfo = {
     `,
     itemMorePhotoPairThree: `
       <img src="public/images/items/thibodeau_lunar_calendar_2021_photo_05_1000px.jpg" />
-      <img src="public/images/items/thibodeau_lunar_calendar_2021_photo_09_1000px.jpg" />
+      <img id="itemDetails" src="public/images/items/thibodeau_lunar_calendar_2021_photo_09_1000px.jpg" />
     `,
     itemMoreInfo: `
     ${itemInfoUniversals.lunarCalendarBlocks}
