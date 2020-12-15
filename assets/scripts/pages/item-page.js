@@ -9,7 +9,9 @@ let itemPage = `
   <div class="item-page">
     <div class="content-container container-1">
       <div class="content-block feature-image-block">
-        <img class="feature-image" id="featureImage" src="" />
+        <a class="feature-image-link" href="">
+          <img class="feature-image" id="featureImage" src="" />
+        </a>
       </div>
       <div class="content-block item-info-block">
         ${store.itemInfoText}
@@ -79,9 +81,9 @@ const itemLoad = function (currentPage) {
   loadInfoForClassInstances(store.getItemInfo(item, currentPage));
   void (currentPage.startsWith('lunarCalendar') && loadLunarCalendarMore(item));
 
-  if  (currentPage.startsWith('lunarCalendarTwentyOnePreorder')) {
-    document.getElementById('itemPreorder').classList.add('visible');
-  };
+  // if  (currentPage.startsWith('lunarCalendarTwentyOnePreorder')) {
+  //   document.getElementById('itemPreorder').classList.add('visible');
+  // };
   /* Add class to center content on any postcard or print page (in item.scss) */
   if (currentPage.startsWith('postcard') || currentPage.startsWith('print')) {
     augmentExistingClasses(store.getItemInfo(item, 'add-class-for-centering-item'));

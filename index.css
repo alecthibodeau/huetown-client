@@ -855,6 +855,9 @@ PAGES
     width: 300px;
   }
 }
+.item-page .content-container:not(.lunar-calendar) .feature-image-link {
+  pointer-events: none;
+}
 .item-page .content-container.print, .item-page .content-container.postcard {
   justify-content: center;
 }
@@ -1042,14 +1045,6 @@ PAGES
   .item-page .item-info-block.postcard {
     width: 90vw;
   }
-}
-.item-page .item-preorder {
-  display: none;
-}
-.item-page .item-preorder.visible {
-  display: block;
-  font-size: 2rem;
-  font-weight: 700;
 }
 .item-page .item-name {
   font-size: 2rem;

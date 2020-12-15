@@ -56,11 +56,11 @@
       }
     }
 
-    // &:not(.lunar-calendar) {
-    //   .feature-image-link {
-    //     pointer-events: none;
-    //   }
-    // }
+    &:not(.lunar-calendar) {
+      .feature-image-link {
+        pointer-events: none;
+      }
+    }
 
     &.print,
     &.postcard {
@@ -269,15 +269,15 @@
     }
   }
 
-  .item-preorder {
-    display: none;
+  // .item-preorder {
+  //   display: none;
 
-    &.visible {
-      display: block;
-      font-size: 2rem;
-      font-weight: 700;
-    }
-  }
+  //   &.visible {
+  //     display: block;
+  //     font-size: 2rem;
+  //     font-weight: 700;
+  //   }
+  // }
 
   .item-name {
     font-size: 2rem;

@@ -22,7 +22,6 @@ const setContent = (customElement, content) => {
 let itemInfoText = `
   <div class="item-info-text" id="orderItem">
     <div>
-      <span id="itemPreorder" class="item-preorder">PREORDER</span>
       <span class="item-name"></span>
       <span class="item-subname"></span>
     </div>
@@ -59,6 +58,15 @@ let containerThreeContent = `
       available alec thibodeau lunar&nbsp;calendars
     </div>
     <div class="lunar-calendar-links-available">
+
+      <div>
+        <div>
+          <a class="available-calendar" href="/">
+            <img src="public/images/items/thibodeau_lunar_calendar_2021_photo_main_1000px.jpg" />
+          </a>
+        </div>
+        <div class="text">2021 Lunar Calendar</div>
+      </div>
 
       <div>
         <div>
@@ -295,10 +303,10 @@ const getItemInfo = (item, pageValueOrConcern) => {
     contentToLoad: 'shown'
   }
 
-  // const lunarFeatureImage = {
-  //   className: 'feature-image-link',
-  //   contentToLoad: '#itemDetails'
-  // };
+  const lunarFeatureImage = {
+    className: 'feature-image-link',
+    contentToLoad: '#itemDetails'
+  };
 
   const lunarContainerThreeContent = { 
     className: 'container-3',
@@ -349,7 +357,7 @@ const getItemInfo = (item, pageValueOrConcern) => {
   ];
 
   const lunarAdditionalInfo = [
-    // lunarFeatureImage,
+    lunarFeatureImage,
     lunarContainerThreeContent
   ];
 
