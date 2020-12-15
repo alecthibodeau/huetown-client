@@ -65,7 +65,7 @@ let containerThreeContent = `
             <img src="public/images/items/thibodeau_lunar_calendar_2021_photo_main_1000px.jpg" />
           </a>
         </div>
-        <div class="text">2021 Lunar Calendar</div>
+        <div class="text">2021 lunar calendar</div>
       </div>
 
       <div>
@@ -74,7 +74,7 @@ let containerThreeContent = `
             <img src="public/images/items/thibodeau_lunar_calendar_2020_main.png" />
           </a>
         </div>
-        <div class="text">2020 Lunar Calendar</div>
+        <div class="text">2020 lunar calendar</div>
       </div>
 
       <div>
@@ -83,7 +83,7 @@ let containerThreeContent = `
             <img src="public/images/items/thibodeau_lunar_calendar_2019_main.jpg" />
           </a>
         </div>
-        <div class="text">2019 Lunar Calendar</div>
+        <div class="text">2019 lunar calendar</div>
       </div>
 
       <div>
@@ -92,7 +92,7 @@ let containerThreeContent = `
             <img src="public/images/items/thibodeau_lunar_calendar_2018_main.jpg" />
           </a>
         </div>
-        <div class="text">2018 Lunar Calendar</div>
+        <div class="text">2018 lunar calendar</div>
       </div>
 
       <div>
@@ -101,7 +101,7 @@ let containerThreeContent = `
             <img src="public/images/items/thibodeau_lunar_calendar_2017_main.jpg" />
           </a>
         </div>
-      <div class="text">2017 Lunar Calendar</div>
+      <div class="text">2017 lunar calendar</div>
     </div>
 
   </div>
@@ -118,7 +118,7 @@ let containerThreeContent = `
             <img src="public/images/items/thibodeau_lunar_calendar_2011.jpg" />
           </a>
         </div>
-        <div class="text">2011 Lunar Calendar</div>
+        <div class="text">2011 lunar calendar</div>
       </div>
 
       <div>
@@ -127,7 +127,7 @@ let containerThreeContent = `
             <img src="public/images/items/thibodeau_lunar_calendar_2010.jpg" />
           </a>
         </div>
-        <div class="text">2010 Lunar Calendar</div>
+        <div class="text">2010 lunar calendar</div>
       </div>
 
       <div>
@@ -136,7 +136,7 @@ let containerThreeContent = `
             <img src="public/images/items/thibodeau_lunar_calendar_2009.jpg" />
           </a>
         </div>
-        <div class="text">2009 Lunar Calendar</div>
+        <div class="text">2009 lunar calendar</div>
       </div>
 
       <div>
@@ -145,7 +145,7 @@ let containerThreeContent = `
             <img src="public/images/items/thibodeau_lunar_calendar_2008.jpg" />
           </a>
         </div>
-        <div class="text">2008 Lunar Calendar</div>
+        <div class="text">2008 lunar calendar</div>
       </div>
 
     </div>

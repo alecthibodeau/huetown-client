@@ -13,7 +13,7 @@ let lunarCalendarsPage = `
         </a>
         <div class="content-item-name">
           <a href="/">
-            2021 Lunar Calendar
+            2021 lunar calendar
           </a>
         </div>
       </div>
@@ -29,7 +29,7 @@ let lunarCalendarsPage = `
         </a>
         <div class="content-item-name">
           <a href="lunar-calendar-2020.html">
-            2020 Lunar Calendar
+            2020 lunar calendar
           </a>
         </div>
       </div>
@@ -42,7 +42,7 @@ let lunarCalendarsPage = `
         </a>
         <div class="content-item-name">
           <a href="lunar-calendar-2019.html">
-            2019 Lunar Calendar
+            2019 lunar calendar
           </a>
         </div>
       </div>
@@ -58,7 +58,7 @@ let lunarCalendarsPage = `
         </a>
         <div class="content-item-name">
           <a href="lunar-calendar-2018.html">
-            2018 Lunar Calendar
+            2018 lunar calendar
           </a>
         </div>
       </div>
@@ -71,7 +71,7 @@ let lunarCalendarsPage = `
         </a>
         <div class="content-item-name">
           <a href="lunar-calendar-2017.html">
-            2017 Lunar Calendar
+            2017 lunar calendar
           </a>
         </div>
       </div>
