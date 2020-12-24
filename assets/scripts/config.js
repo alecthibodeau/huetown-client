@@ -73,33 +73,6 @@ const itemInfoUniversals = {
   postcardPrice: 1
 }
 
-// const lunarCalendarBlocksPreorder = `
-//   <div id="itemDetails">
-//     <p>
-//     <span class="note">2021 Lunar Calendar Preorder&hellip;</span> Okay, my lunar calendar for 2021 is almost back from the print shop, with Dan putting the finishing touches on another limited edition.
-//       The preorders continue for a few more days &mdash; with all of them scheduled to ship <span class="note">this week</span> (the second week of December 2020) &mdash; followed by the official launch with more photos. Reminder: Huetown's domestic shipping price in the USA is a flat $7 rate to any address, regardless of item quantity.
-//     </p>
-//     <p>
-//       <span class="note">Note: The above lunar calendar image is a digital-color simulation of what the final piece's inks and paper will look like.</span> There may be some slight variations between the colors here and in the print.
-//       Follow <a class="text-link" href="https://www.instagram.com/huetown/" target="_blank">@huetown</a> on Instagram to see the letterpress magic in action.
-//       And join the <a class="text-link" href="about.html">email list</a> to receive first word when the edition officially drops.
-//       Each lunar calendar preordered by December 4, 2020 (thank you!) included a new <span class="ital"><a class="text-link" href="print-orca-lumina.html">Orca Lumina</a></span> mini-print: drawn, screen printed and initialed by me.
-//     </p>
-//   </div>
-//   <div class="orca-lumina">
-//     <a href="print-orca-lumina.html">
-//       <img src="${itemsDirectory}orca_lumina_300px.jpg" />
-//     </a>
-//     <div>
-//       <span>Orca Lumina</span> <span>mini-print</span>
-//     </div>
-//   </div>
-//   <div>
-//     Here's more info on the ultimate piece&hellip;
-//   </div>
-//   ${itemInfoUniversals.lunarCalendarBlocks}
-// `
-
 const itemsInfo = {
   'home': {
     mainContent: home.homePage
@@ -150,10 +123,15 @@ const itemsInfo = {
       <img id="itemDetails" src="public/images/items/thibodeau_lunar_calendar_2021_photo_09_1000px.jpg" />
     `,
     itemMoreInfo: `
+    <div>
+      <span class="note">Are you in Providence, Rhode Island? Pick up lunar calendars in person at these fine shops:
+      <a class="text-link" href="https://shop.craftlandshop.com" target="_blank">Craftland</a> (downtown)
+      and <a class="text-link" href="https://simplepleasuresprovidence.com/" target="_blank">Simple Pleasures</a> (east side).</span>
+    </div>
     ${itemInfoUniversals.lunarCalendarBlocks}
     <p class="additional-info">
       Follow <a class="text-link" href="https://www.instagram.com/huetown/" target="_blank">@huetown</a> on Instagram to see this print's magical letterpress production in action.
-      And join the <a class="text-link" href="about.html">email list</a> to receive first word when new prints are available.
+      And join the <a class="text-link" href="about.html">email list</a> to receive first word when new print editions are available.
       Each 2021 lunar calendar preordered by December 4, 2020 (thank you!) included a new <span class="ital"><a class="text-link" href="print-orca-lumina.html">Orca Lumina</a></span> mini-print: drawn, screen printed and initialed by me.
     </p>
     `

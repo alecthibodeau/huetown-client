@@ -817,20 +817,7 @@ PAGES
   margin-bottom: 20px;
 }
 .item-page .note {
-  font-weight: 700;
-}
-.item-page .orca-lumina {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  padding: 10px 0;
-}
-.item-page .orca-lumina img {
-  width: 300px;
-  height: 300px;
-}
-.item-page .orca-lumina span:first-of-type {
-  font-style: italic;
+  font-size: 2.25rem;
 }
 .item-page .content-container {
   display: flex;

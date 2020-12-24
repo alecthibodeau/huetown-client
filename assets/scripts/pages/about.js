@@ -38,13 +38,16 @@ let aboutPage = `
       </p>
       <p>
         <span class="section-title ">Places</span>:
-        Select Huetown items are
-        available at these spots in Rhode Island&hellip;
-        <a class="text-link" href="https://www.booksq.com" target="_blank">Books on the Square</a>,
-        <a class="text-link" href="https://shop.craftlandshop.com" target="_blank">Craftland</a>,
-        <a class="text-link" href="https://www.frogandtoadstore.com" target="_blank">Frog & Toad</a>,
-        <a class="text-link" href="http://like-no-udder.com" target="_blank">Like No Udder</a>,
-        <a class="text-link" href="http://www.papernautilusbooks.com" target="_blank">Paper Nautilus Books</a>.
+        Huetown items are
+        available at these spots in Providence, Rhode Island&hellip;
+        <ul>
+          <li><a class="text-link" href="https://shop.craftlandshop.com" target="_blank">Craftland</a> <span class="bold">(yes, they stock lunar calendars!)</span></li>
+          <li><a class="text-link" href="https://simplepleasuresprovidence.com/" target="_blank">Simple Pleasures</span></a> <span class="bold">(yes, they stock lunar calendars!)</span></li>
+          <li><a class="text-link" href="https://www.booksq.com" target="_blank">Books on the Square</a></li>
+          <li><a class="text-link" href="https://www.frogandtoadstore.com" target="_blank">Frog & Toad</a></li>
+          <li><a class="text-link" href="http://like-no-udder.com" target="_blank">Like No Udder</a></li>
+          <li><a class="text-link" href="http://www.papernautilusbooks.com" target="_blank">Paper Nautilus Books</a></li>
+        </ul>
       </p>
     </div>
 
