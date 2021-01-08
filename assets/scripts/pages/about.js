@@ -39,10 +39,15 @@ let aboutPage = `
       <p>
         <span class="section-title ">Places</span>:
         Huetown items are
-        available at these spots in Providence, Rhode Island&hellip;
+        available at these spots&hellip;
+        <div class="about-state">new hampshire</div>
         <ul>
-          <li><a class="text-link" href="https://shop.craftlandshop.com" target="_blank">Craftland</a> <span class="bold">(yes, they stock lunar calendars!)</span></li>
-          <li><a class="text-link" href="https://simplepleasuresprovidence.com/" target="_blank">Simple Pleasures</span></a> <span class="bold">(yes, they stock lunar calendars!)</span></li>
+          <li><a class="text-link" href="https://www.thisstopiswilloughby.com" target="_blank">This Stop Is Willoughby</a> <span class="bold">(lunar calendars here)</span></li>
+        </ul>
+        <div class="about-state">rhode island</div>
+        <ul>
+          <li><a class="text-link" href="https://shop.craftlandshop.com" target="_blank">Craftland</a> <span class="bold">(lunar calendars here)</span></li>
+          <li><a class="text-link" href="https://simplepleasuresprovidence.com/" target="_blank">Simple Pleasures</span></a> <span class="bold">(lunar calendars here)</span></li>
           <li><a class="text-link" href="https://www.booksq.com" target="_blank">Books on the Square</a></li>
           <li><a class="text-link" href="https://www.frogandtoadstore.com" target="_blank">Frog & Toad</a></li>
           <li><a class="text-link" href="http://like-no-udder.com" target="_blank">Like No Udder</a></li>

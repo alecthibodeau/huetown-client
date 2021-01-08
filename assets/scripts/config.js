@@ -131,8 +131,8 @@ const itemsInfo = {
     ${itemInfoUniversals.lunarCalendarBlocks}
     <p class="additional-info">
       Follow <a class="text-link" href="https://www.instagram.com/huetown/" target="_blank">@huetown</a> on Instagram to see this print's magical letterpress production in action.
-      And join the <a class="text-link" href="about.html">email list</a> to receive first word when new print editions are available.
-      Each 2021 lunar calendar preordered by December 4, 2020 (thank you!) included a new <span class="ital"><a class="text-link" href="print-orca-lumina.html">Orca Lumina</a></span> mini-print: drawn, screen printed and initialed by me.
+      And join the <a class="text-link" href="about.html">email list</a> to learn when new print editions are available.
+      (Each 2021 lunar calendar preordered by December 4, 2020 included a new <span class="ital"><a class="text-link" href="print-orca-lumina.html">Orca Lumina</a></span> mini-print: drawn, screen printed and initialed by me.)
     </p>
     `
   },
