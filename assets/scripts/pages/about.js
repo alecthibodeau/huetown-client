@@ -39,7 +39,7 @@ let aboutPage = `
       <p>
         <span class="section-title ">Places</span>:
         Huetown items are
-        available at these spots&hellip;
+        available at these retail spots&hellip;
         <div class="about-state">new hampshire</div>
         <ul>
           <li><a class="text-link" href="https://www.thisstopiswilloughby.com" target="_blank">This Stop Is Willoughby</a> <span class="bold">(lunar calendars here)</span></li>

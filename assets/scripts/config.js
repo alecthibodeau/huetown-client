@@ -124,9 +124,10 @@ const itemsInfo = {
     `,
     itemMoreInfo: `
     <div>
-      <span class="note">Are you in Providence, Rhode Island? Pick up lunar calendars in person at these fine shops:
-      <a class="text-link" href="https://shop.craftlandshop.com" target="_blank">Craftland</a> (downtown)
-      and <a class="text-link" href="https://simplepleasuresprovidence.com/" target="_blank">Simple Pleasures</a> (east side).</span>
+      <span class="note">Are you in the New England area? Pick up lunar calendars in person at these fine shops:
+      <a class="text-link" href="https://shop.craftlandshop.com" target="_blank">Craftland</a> (Providence, RI),
+      <a class="text-link" href="https://simplepleasuresprovidence.com/" target="_blank">Simple Pleasures</a> (Providence, RI)
+      and <a class="text-link" href="https://www.thisstopiswilloughby.com" target="_blank">This Stop Is Willoughby</a> (Dover, NH).</span>
     </div>
     ${itemInfoUniversals.lunarCalendarBlocks}
     <p class="additional-info">
