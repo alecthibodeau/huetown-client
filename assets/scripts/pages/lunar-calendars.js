@@ -6,13 +6,13 @@ let lunarCalendarsPage = `
     <div class="content-container lunar-calendar preorder">
       <div class="content-block">
         <a
-          data-title="2020 Lunar Calendar"
-          class="collection-link" href="/">
+          data-title="2021 Lunar Calendar"
+          class="collection-link" href="lunar-calendar-2021.html">
           <img class="collection-image"
             src="/public/images/items/thibodeau_lunar_calendar_2021_photo_main_1000px.jpg" />
         </a>
         <div class="content-item-name">
-          <a href="/">
+          <a href="lunar-calendar-2021.html">
             2021 lunar calendar
           </a>
         </div>
