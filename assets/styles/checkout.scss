@@ -1,0 +1,8 @@
+// Selector for .checkout-page
+@mixin checkout-content {
+  width: $page-width;
+
+  form {
+    display: inline;
+  }
+}

@@ -7,7 +7,10 @@ import home from './pages/home.js';
 import lunarCalendars from './pages/lunar-calendars.js';
 import prints from './pages/prints.js';
 import postcards from './pages/postcards.js';
+import downloads from './pages/downloads.js';
+import printed from './pages/printed.js';
 import about from './pages/about.js';
+import checkout from './pages/checkout.js';
 import veganly from './pages/veganly.js';
 
 /* item page */
@@ -86,8 +89,17 @@ const itemsInfo = {
   'prints': {
     mainContent: prints.printsPage
   },
+  'downloads': {
+    mainContent: downloads.downloadsPage
+  },
+  'printed': {
+    mainContent: printed.printedPage
+  },
   'about': {
     mainContent: about.aboutPage
+  },
+  'checkout': {
+    mainContent: checkout.checkoutPage
   },
   'veganly': {
     mainContent: veganly.veganlyPage

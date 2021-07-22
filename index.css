@@ -211,115 +211,21 @@ html body header nav a.nav-element {
   html body header nav a.nav-element {
     width: 100%;
     padding: 1.5rem 0;
+    border-bottom-width: 1px;
+    border-bottom-style: solid;
   }
-  html body header nav a.nav-element.nav-element-lunar-calendar {
+  html body header nav a.nav-element.nav-element-downloads {
     border-top: 1px solid #6abbb6;
-    border-bottom: 1px solid #edde95;
+    border-bottom-color: #edde95;
   }
-  html body header nav a.nav-element.nav-element-prints {
-    border-bottom: 1px solid #c651e5;
-  }
-  html body header nav a.nav-element.nav-element-postcards {
-    border-bottom: 1px solid #6ecde5;
+  html body header nav a.nav-element.nav-element-printed {
+    border-bottom-color: #6ecde5;
   }
   html body header nav a.nav-element.nav-element-about {
-    border-bottom: 1px solid #f64154;
+    border-bottom-color: #f64154;
   }
-  html body header nav a.nav-element.paypal-link {
-    border-bottom: 1px solid #ff9600;
-  }
-}
-html body header nav form {
-  padding: 0;
-  border: none;
-  font-family: "Raleway", sans-serif;
-  font-size: 1.75rem;
-  font-weight: 500;
-  letter-spacing: 0.25rem;
-  text-align: center;
-  text-decoration: none;
-  text-transform: uppercase;
-  transition: all 0.25s linear;
-  color: #191919;
-  cursor: pointer;
-}
-@media only screen and (max-width: 650px) {
-  html body header nav form {
-    color: #fff;
-    font-weight: 600;
-  }
-}
-@media only screen and (min-width: 651px) {
-  html body header nav form::after {
-    width: 100%;
-    display: block;
-    position: relative;
-    top: 0.5rem;
-    border-bottom: 3px solid transparent;
-    content: "";
-    transition: 0.25s;
-  }
-  html body header nav form:hover::after {
-    top: 0.25rem;
-    border-bottom: 3px solid #6abbb6;
-  }
-}
-html body header nav form input[value="view cart"] {
-  background-color: transparent;
-  padding: 0;
-  border: none;
-  font-family: "Raleway", sans-serif;
-  font-size: 1.75rem;
-  font-weight: 500;
-  letter-spacing: 0.25rem;
-  text-align: center;
-  text-decoration: none;
-  text-transform: uppercase;
-  transition: all 0.25s linear;
-  color: #191919;
-  cursor: pointer;
-}
-@media only screen and (max-width: 650px) {
-  html body header nav form input[value="view cart"] {
-    color: #fff;
-    font-weight: 600;
-  }
-}
-@media only screen and (min-width: 651px) {
-  html body header nav form input[value="view cart"]::after {
-    width: 100%;
-    display: block;
-    position: relative;
-    top: 0.5rem;
-    border-bottom: 3px solid transparent;
-    content: "";
-    transition: 0.25s;
-  }
-  html body header nav form input[value="view cart"]:hover::after {
-    top: 0.25rem;
-    border-bottom: 3px solid #6abbb6;
-  }
-}
-@media only screen and (max-width: 650px) {
-  html body header nav form input[value="view cart"] {
-    width: 100%;
-    padding: 1.5rem 0;
-  }
-  html body header nav form input[value="view cart"].nav-element-lunar-calendar {
-    border-top: 1px solid #6abbb6;
-    border-bottom: 1px solid #edde95;
-  }
-  html body header nav form input[value="view cart"].nav-element-prints {
-    border-bottom: 1px solid #c651e5;
-  }
-  html body header nav form input[value="view cart"].nav-element-postcards {
-    border-bottom: 1px solid #6ecde5;
-  }
-  html body header nav form input[value="view cart"].nav-element-about {
-    border-bottom: 1px solid #f64154;
-  }
-  html body header nav form input[value="view cart"].paypal-link {
-    border-bottom: 1px solid #ff9600;
+  html body header nav a.nav-element.nav-element-checkout {
+    border-bottom-color: #ff9600;
   }
 }
 @media only screen and (max-width: 650px) {
@@ -817,6 +723,13 @@ PAGES
 }
 .about-page .subscribe-button:hover {
   background: #ff9600 !important;
+}
+
+.checkout-page {
+  width: 90%;
+}
+.checkout-page form {
+  display: inline;
 }
 
 .item-page {

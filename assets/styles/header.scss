@@ -43,26 +43,24 @@
   @media only screen and (max-width: 650px) {
     width: 100%;
     padding: 1.5rem 0;
+    border-bottom-width: 1px;
+    border-bottom-style: solid;
 
-    &.nav-element-lunar-calendar {
+    &.nav-element-downloads {
       border-top: 1px solid $huetown-green;
-      border-bottom: 1px solid $huetown-yellow;
+      border-bottom-color: $huetown-yellow;
     }
 
-    &.nav-element-prints {
-      border-bottom: 1px solid $nav-accent-purple;
-    }
-
-    &.nav-element-postcards {
-      border-bottom: 1px solid $huetown-blue;
+    &.nav-element-printed {
+      border-bottom-color: $huetown-blue;
     }
 
     &.nav-element-about {
-      border-bottom: 1px solid $red-muted;
+      border-bottom-color: $red-muted;
     }
 
-    &.paypal-link {
-      border-bottom: 1px solid $orange-muted;
+    &.nav-element-checkout {
+      border-bottom-color: $orange-muted;
     }
   }
 }
@@ -191,17 +189,17 @@
     }
 
     // Both the form and the form's input are specified for the underline effect to work
-    form {
+    // form {
 
-      @include nav-text;
+    //   @include nav-text;
 
-      input[value="view cart"] {
-        background-color: transparent;
+    //   input[value="view cart"] {
+    //     background-color: transparent;
 
-        @include nav-text;
-        @include nav-responsive-text;
-      }
-    }
+    //     @include nav-text;
+    //     @include nav-responsive-text;
+    //   }
+    // }
 
     @media only screen and (max-width: 650px) {
       display: none; // By default the drawer is hidden: before any burger button clicks

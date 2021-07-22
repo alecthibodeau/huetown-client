@@ -4,7 +4,7 @@ import utils from './utils.js';
 import config from './config.js';
 import items from './pages/item-page.js';
 import body from './pages/body.js';
-import home from './pages/home.js';
+// import home from './pages/home.js';
 
 const collectionPages = [
   'lunarCalendars',
@@ -39,6 +39,9 @@ const loadBodyContent = () => {
   const bodyDiv = document.getElementById('body');
   const pageValue = bodyDiv.getAttribute('page-value');
   const page = config.itemsInfo[pageValue];
+  console.log('bodyDiv: ', bodyDiv);
+  console.log('pageValue: ', pageValue);
+  console.log('page: ', page);
 
   bodyDiv.innerHTML = body.bodyContent;
 
@@ -46,7 +49,9 @@ const loadBodyContent = () => {
     Load page content if it exists in config,
     otherwise the HTML is <main> in body.js
   */
-  void (page && loadMainContent(bodyDiv, pageValue, page));
+  if (page) {
+    loadMainContent(bodyDiv, pageValue, page);
+  }
 };
 
 document.addEventListener('DOMContentLoaded', function () {
