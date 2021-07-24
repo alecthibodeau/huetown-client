@@ -13,10 +13,6 @@
   width: $page-width;
   margin-bottom: 20px;
 
-  .note {
-    font-size: 1.75rem;
-  }
-
   .content-container {
     display: flex;
 
@@ -76,8 +72,11 @@
         height: 450px;
 
         @media only screen and (max-width: 1050px) {
-          width: 700px;
-          height: 700px;
+
+          &.large-detail-image {
+            width: 700px;
+            height: 700px;
+          }
         }
 
         @media only screen and (max-width: 760px) {
@@ -93,7 +92,13 @@
     }
 
     .item-more-info {
+      max-width: 1200px;
+      margin: 0 auto;
       padding-top: 15px;
+
+      .more-info-note {
+        font-size: 1.75rem;
+      }
 
       .info-block:not(:first-of-type) {
         margin: 15px auto 0;

@@ -823,9 +823,6 @@ PAGES
   width: 90%;
   margin-bottom: 20px;
 }
-.item-page .note {
-  font-size: 1.75rem;
-}
 .item-page .content-container {
   display: flex;
 }
@@ -879,7 +876,7 @@ PAGES
   height: 450px;
 }
 @media only screen and (max-width: 1050px) {
-  .item-page .container-2 .photo-pair img {
+  .item-page .container-2 .photo-pair img.large-detail-image {
     width: 700px;
     height: 700px;
   }
@@ -897,7 +894,12 @@ PAGES
   }
 }
 .item-page .container-2 .item-more-info {
+  max-width: 1200px;
+  margin: 0 auto;
   padding-top: 15px;
+}
+.item-page .container-2 .item-more-info .more-info-note {
+  font-size: 1.75rem;
 }
 .item-page .container-2 .item-more-info .info-block:not(:first-of-type) {
   margin: 15px auto 0;

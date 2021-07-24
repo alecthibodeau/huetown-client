@@ -45,7 +45,7 @@ const itemInfoUniversals = {
       From a limited edition of <span class="lunar-calendar-edition"></span> prints <span class="lunar-calendar-title ital"></span> continues Alec's ongoing lunar calendar series,
       which features ornate illustrations framing an annual cycle of moon shapes.
       As with each of Alec's previous lunar calendars this piece measures 19" x 11.75" (a golden rectangle) and is expertly printed by Dan Wood
-      and his team at <a class="text-link" href="http://www.dwriletterpress.net" target="_blank">DWRI&nbsp;Letterpress</a>.
+      and his team at <a class="text-link" href="https://www.dwriletterpress.net" target="_blank">DWRI&nbsp;Letterpress</a>.
     </div>
     <div class=info-block>
       The <span class="lunar-calendar-year"></span> lunar calendar comprises new drawings and year-specific lunar phase information.
@@ -111,20 +111,20 @@ const itemsInfo = {
     itemLunarCalendarLocation: lunarCalendarLocationProvidence,
     itemId: 'XA698W9J6TGEL',
     itemMorePhotoPairOne: `
-      <img src="public/images/items/thibodeau_lunar_calendar_2021_photo_01_1000px.jpg" />
-      <img src="public/images/items/thibodeau_lunar_calendar_2021_photo_02_1000px.jpg" />
+      <img class="large-detail-image" src="public/images/items/thibodeau_lunar_calendar_2021_photo_01_1000px.jpg" />
+      <img class="large-detail-image" src="public/images/items/thibodeau_lunar_calendar_2021_photo_02_1000px.jpg" />
     `,
     itemMorePhotoPairTwo: `
-      <img src="public/images/items/thibodeau_lunar_calendar_2021_photo_03_1000px.jpg" />
-      <img src="public/images/items/thibodeau_lunar_calendar_2021_photo_04_1000px.jpg" />
+      <img class="large-detail-image" src="public/images/items/thibodeau_lunar_calendar_2021_photo_03_1000px.jpg" />
+      <img class="large-detail-image" src="public/images/items/thibodeau_lunar_calendar_2021_photo_04_1000px.jpg" />
     `,
     itemMorePhotoPairThree: `
-      <img src="public/images/items/thibodeau_lunar_calendar_2021_photo_05_1000px.jpg" />
-      <img id="itemDetails" src="public/images/items/thibodeau_lunar_calendar_2021_photo_09_1000px.jpg" />
+      <img class="large-detail-image" src="public/images/items/thibodeau_lunar_calendar_2021_photo_05_1000px.jpg" />
+      <img id="itemDetails" class="large-detail-image" src="public/images/items/thibodeau_lunar_calendar_2021_photo_09_1000px.jpg" />
     `,
     itemMoreInfo: `
     <div>
-      <span class="note">Are you in the New England area? Pick up lunar calendars in person at these fine shops:
+      <span class="more-info-note">Are you in the New England area? Pick up lunar calendars in person at these fine shops:
       <a class="text-link" href="https://shop.craftlandshop.com" target="_blank">Craftland</a> (Providence, RI),
       <a class="text-link" href="https://simplepleasuresprovidence.com/" target="_blank">Simple Pleasures</a> (Providence, RI)
       and <a class="text-link" href="https://www.thisstopiswilloughby.com" target="_blank">This Stop Is Willoughby</a> (Dover, NH).</span>
@@ -395,7 +395,22 @@ const itemsInfo = {
     itemInfoThree: 'From a limited edition of 250 prints<br>Hand numbered and signed by the artist',
     itemInfoFour: 'unframed',
     itemPrice: 15,
-    itemId: 'AUN3U4NQ52J2W'
+    itemId: 'AUN3U4NQ52J2W',
+    itemMorePhotoPairOne: `
+    <img src="public/images/items/print_stentorian_02.jpg" />
+    <img src="public/images/items/print_stentorian_03.jpg" />
+  `,
+  itemMorePhotoPairTwo: `
+    <img src="public/images/items/print_stentorian_04.jpg" />
+    <img src="public/images/items/print_stentorian_05.jpg" />
+  `,
+  itemMoreInfo: `
+  <div>
+    <span class="ital">Stentorian</span> is a limited-edition letterpress print. It measures 5.5" x 5.5" overall, with an image dimension of 3.5" x 3.5".
+    The edition is exquisitely printed by Dan Wood and his team at <a class="text-link" href="https://www.dwriletterpress.net" target="_blank">DWRI&nbsp;Letterpress</a> on Legion Paper's acid-free 350gsm Colorplan Mist 130# cover stock.
+    Each print is hand numbered and signed in pencil by Alec just below the image area.
+  </div>
+  `
   }
 };
 
