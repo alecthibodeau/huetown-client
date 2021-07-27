@@ -5,8 +5,19 @@ let printsPage = `
 
     <div class="content-container">
       <div class="content-block">
+        <a data-title="Abundance" class="collection-link" href="print-abundance.html">
+          <img class="collection-image" src="/public/images/items/print_abundance_01.jpg" />
+        </a>
+        <div class="content-item-name">
+          <a href="print-abundance.html">
+            <span class="ital">Abundance</span>
+            <span>print</span>
+          </a>
+        </div>
+      </div>
+      <div class="content-block">
         <a data-title="Orca Lumina" class="collection-link" href="print-orca-lumina.html">
-          <img class="collection-image" src="public/images/items/orca_lumina_300px.jpg" />
+          <img class="collection-image" src="public/images/items/print_orca_lumina.jpg" />
         </a>
         <div class="content-item-name">
           <a href="print-orca-lumina.html">

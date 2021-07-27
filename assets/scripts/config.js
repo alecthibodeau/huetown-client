@@ -376,7 +376,7 @@ const itemsInfo = {
     itemCategory: 'print',
     itemName: 'Orca Lumina<br><span class="normal">by Alec Thibodeau</span>',
     itemSubname: '',
-    itemImageFront: 'public/images/items/orca_lumina_300px.jpg',
+    itemImageFront: 'public/images/items/print_orca_lumina.jpg',
     itemInfoOne: '2.5 x 2.5 inches<br>Screen print',
     itemInfoTwo: 'Printed by the artist',
     itemInfoThree: 'Initialed by the artist',
@@ -397,20 +397,53 @@ const itemsInfo = {
     itemPrice: 15,
     itemId: 'AUN3U4NQ52J2W',
     itemMorePhotoPairOne: `
-    <img src="public/images/items/print_stentorian_02.jpg" />
-    <img src="public/images/items/print_stentorian_03.jpg" />
-  `,
-  itemMorePhotoPairTwo: `
-    <img src="public/images/items/print_stentorian_04.jpg" />
-    <img src="public/images/items/print_stentorian_05.jpg" />
-  `,
-  itemMoreInfo: `
-  <div>
-    <span class="ital">Stentorian</span> is a limited-edition letterpress print. It measures 5.5" x 5.5" overall, with an image dimension of 3.5" x 3.5".
-    The edition is exquisitely printed by Dan Wood and his team at <a class="text-link" href="https://www.dwriletterpress.net" target="_blank">DWRI&nbsp;Letterpress</a> on Legion Paper's acid-free 350gsm Colorplan Mist 130# cover stock.
-    Each print is hand numbered and signed in pencil by Alec just below the image area.
-  </div>
-  `
+      <img src="public/images/items/print_stentorian_02.jpg" />
+      <img src="public/images/items/print_stentorian_03.jpg" />
+    `,
+    itemMorePhotoPairTwo: `
+      <img src="public/images/items/print_stentorian_04.jpg" />
+      <img src="public/images/items/print_stentorian_05.jpg" />
+    `,
+    itemMoreInfo: `
+      <div>
+        <span class="ital">Stentorian</span> is a limited-edition letterpress print. It measures 5.5" x 5.5" overall, with an image dimension of 3.5" x 3.5".
+        The edition is exquisitely printed by Dan Wood and his team at <a class="text-link" href="https://www.dwriletterpress.net" target="_blank">DWRI&nbsp;Letterpress</a> on Legion Paper's acid-free 350gsm Colorplan Mist 130# cover stock.
+        Each print is hand numbered and signed in pencil by Alec just below the image area.
+      </div>
+    `
+  },
+  'printAbundance': {
+    mainContent: item.itemPage,
+    itemTitle: 'abundance',
+    itemCategory: 'print',
+    itemName: 'Abundance<br><span class="normal">by Alec Thibodeau</span>',
+    itemSubname: '',
+    itemImageFront: 'public/images/items/print_abundance_01.jpg',
+    itemInfoOne: '5.5 x 5.5 inches<br>Letterpress print',
+    itemInfoTwo: 'Printed by DWRI Letterpress',
+    itemInfoThree: 'From a limited edition of 250 prints<br>Hand numbered and signed by the artist',
+    itemInfoFour: 'ink and foil stamp',
+    itemPrice: 25,
+    itemId: 'B6SBUBH8JRKV6',
+    itemMorePhotoPairOne: `
+      <img src="public/images/items/print_abundance_02.jpg" />
+      <img src="public/images/items/print_abundance_03.jpg" />
+    `,
+    itemMorePhotoPairTwo: `
+      <img src="public/images/items/print_abundance_04.jpg" />
+      <img src="public/images/items/print_abundance_05.jpg" />
+    `,
+    itemMoreInfo: `
+      <div>
+        <span class="ital">Abundance</span> is a limited-edition letterpress print.
+        It measures 5.5" x 5.5" overall, with an image dimension of 4" x 4".
+        The edition is exquisitely printed by Dan Wood and his team at
+        <a class="text-link" href="https://www.dwriletterpress.net" target="_blank">DWRI&nbsp;Letterpress</a>
+        on Legion Paper's acid-free 350gsm Colorplan Mist 130# cover stock.
+        The prints in the this edition feature three colors of letterpress ink, plus a final layer of stamped foil in blue.
+        Each print is hand numbered and signed in pencil by Alec.
+      </div>
+    `
   }
 };
 

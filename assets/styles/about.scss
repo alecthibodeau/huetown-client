@@ -4,7 +4,7 @@
   border-radius: 6px;
   color: $white;
   letter-spacing: 0.3125rem;
-  text-transform: uppercase;
+  text-transform: capitalize;
   cursor: pointer;
 }
 
@@ -29,7 +29,7 @@
 
   .section-title {
     font-weight: 600;
-    text-transform: uppercase;
+    text-transform: capitalize;
   }
 
   ul {
@@ -41,7 +41,7 @@
     font-size: 1.25rem;
     font-weight: 700;
     color: $huetown-green;
-    text-transform: uppercase;
+    text-transform: capitalize;
   }
 
   .subscribe-button {

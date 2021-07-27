@@ -13,6 +13,17 @@
   width: $page-width;
   margin-bottom: 20px;
 
+  &.item-title-abundance .container-1 {
+
+    .feature-image-block a img {
+      width: 600px;
+    }
+
+    .item-info-block {
+      justify-content: center;
+    }
+  }
+
   .content-container {
     display: flex;
 
@@ -180,7 +191,7 @@
 
         &.title {
           margin: 0 auto 10px;
-          text-transform: uppercase;
+          text-transform: capitalize;
           color: $fifty-percent-gray;
           font-weight: 700;
         }
@@ -345,15 +356,9 @@
     }
   }
 
-  .qty-label {
-    font-size: 1.2rem; 
+  .quantity-label {
+    font-size: 1rem;
     font-weight: 600;
-    color: $eighty-percent-gray;
-
-    span {
-      position: relative;
-      left: 8px;
-    }
   }
 
   .additional-info {
@@ -374,7 +379,7 @@
       text-align: center;
     }
 
-    input[value="add to cart"] {
+    input[value="Add to cart"] {
       width: 16rem;
       min-height: 4rem;
       border: none;
@@ -385,7 +390,6 @@
       font-size: 1.4rem;
       font-weight: 600;
       letter-spacing: 0.3125rem;
-      text-transform: uppercase;
       cursor: pointer;
 
       &:hover {

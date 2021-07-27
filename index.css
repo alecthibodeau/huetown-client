@@ -181,7 +181,7 @@ html body header nav a.nav-element {
   letter-spacing: 0.25rem;
   text-align: center;
   text-decoration: none;
-  text-transform: uppercase;
+  text-transform: capitalize;
   transition: all 0.25s linear;
   color: #191919;
   cursor: pointer;
@@ -238,7 +238,7 @@ html body header nav form {
   letter-spacing: 0.25rem;
   text-align: center;
   text-decoration: none;
-  text-transform: uppercase;
+  text-transform: capitalize;
   transition: all 0.25s linear;
   color: #191919;
   cursor: pointer;
@@ -274,7 +274,7 @@ html body header nav form input[value="view cart"] {
   letter-spacing: 0.25rem;
   text-align: center;
   text-decoration: none;
-  text-transform: uppercase;
+  text-transform: capitalize;
   transition: all 0.25s linear;
   color: #191919;
   cursor: pointer;
@@ -789,7 +789,7 @@ PAGES
 }
 .about-page .section-title {
   font-weight: 600;
-  text-transform: uppercase;
+  text-transform: capitalize;
 }
 .about-page ul {
   padding-left: 24px;
@@ -799,14 +799,14 @@ PAGES
   font-size: 1.25rem;
   font-weight: 700;
   color: #6abbb6;
-  text-transform: uppercase;
+  text-transform: capitalize;
 }
 .about-page .subscribe-button {
   border: none;
   border-radius: 6px;
   color: #fff;
   letter-spacing: 0.3125rem;
-  text-transform: uppercase;
+  text-transform: capitalize;
   cursor: pointer;
   width: 16rem;
   min-height: 4rem;
@@ -822,6 +822,12 @@ PAGES
 .item-page {
   width: 90%;
   margin-bottom: 20px;
+}
+.item-page.item-title-abundance .container-1 .feature-image-block a img {
+  width: 600px;
+}
+.item-page.item-title-abundance .container-1 .item-info-block {
+  justify-content: center;
 }
 .item-page .content-container {
   display: flex;
@@ -970,7 +976,7 @@ PAGES
 .item-page .container-3 .available div.title,
 .item-page .container-3 .previous div.title {
   margin: 0 auto 10px;
-  text-transform: uppercase;
+  text-transform: capitalize;
   color: #7f7f7f;
   font-weight: 700;
 }
@@ -1111,14 +1117,9 @@ PAGES
     top: 6px;
   }
 }
-.item-page .qty-label {
-  font-size: 1.2rem;
+.item-page .quantity-label {
+  font-size: 1rem;
   font-weight: 600;
-  color: #333;
-}
-.item-page .qty-label span {
-  position: relative;
-  left: 8px;
 }
 .item-page .additional-info {
   margin-bottom: 20px;
@@ -1136,7 +1137,7 @@ PAGES
   font-size: 1.25rem;
   text-align: center;
 }
-.item-page form input[value="add to cart"] {
+.item-page form input[value="Add to cart"] {
   width: 16rem;
   min-height: 4rem;
   border: none;
@@ -1147,10 +1148,9 @@ PAGES
   font-size: 1.4rem;
   font-weight: 600;
   letter-spacing: 0.3125rem;
-  text-transform: uppercase;
   cursor: pointer;
 }
-.item-page form input[value="add to cart"]:hover {
+.item-page form input[value="Add to cart"]:hover {
   background: #ff9600;
 }
 

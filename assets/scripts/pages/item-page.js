@@ -18,9 +18,9 @@ let itemPage = `
         <div class="payment-info">
           <div class="item-price-container">$<span class="item-price"></span></div>
           <div class="form-container">
-            <div class="qty-label">
+            <div class="quantity-label">
               <span>
-                QTY
+                Quantity
               </span>
             </div>
             ${store.itemForm}
@@ -79,14 +79,18 @@ const itemLoad = function (currentPage) {
   const item = config.itemsInfo[currentPage];
   void (item.itemMoreInfo && showAndLoadContainer('container-2'));
   loadInfoForClassInstances(store.getItemInfo(item, currentPage));
-  void (currentPage.startsWith('lunarCalendar') && loadLunarCalendarMore(item));
 
-  // if  (currentPage.startsWith('lunarCalendarTwentyOnePreorder')) {
+  /* Add classes to elements */
+  augmentExistingClasses([{ className: 'item-page', contentToLoad: item.itemTitle ? `item-title-${item.itemTitle}` : 'item-title'}]);
+
+  void (currentPage.startsWith('lunarCalendar') && loadLunarCalendarMore(item));
+  // if  (currentPage.startsWith('lunarCalendarTwentytwoPreorder')) {
   //   document.getElementById('itemPreorder').classList.add('visible');
   // };
+
   /* Add class to center content on any postcard or print page (in item.scss) */
   if (currentPage.startsWith('postcard') || currentPage.startsWith('print')) {
-    augmentExistingClasses(store.getItemInfo(item, 'add-class-for-centering-item'));
+    augmentExistingClasses(store.getItemInfo(item, `add-class-for-centering-item-${item.itemCategory}`));
   };
 };
 

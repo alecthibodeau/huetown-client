@@ -15,16 +15,16 @@ let aboutPage = `
     </div>
     <div>
       <p>
-        <span class="section-title ">Contact</span>:
+        <span class="section-title ">contact</span>:
         Huetown's contact email is <a class="text-link" href="mailto:info@huetown.com" target="_blank">info@huetown.com</a>.
       </p>
       <p>
-        <span class="section-title ">Ordering</span>:
+        <span class="section-title ">ordering</span>:
         Buy with confidence! I securely process all credit card payments made at Huetown
         through <a class="text-link" href="https://www.paypal.com" target="_blank">PayPal</a>.
       </p>
       <p>
-        <span class="section-title ">Shipping</span>:
+        <span class="section-title ">shipping</span>:
         Regardless of item quantity all orders ship for a flat rate in sturdy packaging via USPS Priority Mail from Providence, Rhode Island, USA.
         Flat rates are $7 for domestic shipments within the USA, $23 for delivery to Canada or Mexico or $29 for delivery to any other country.
         Packages generally ship within a couple business days of an order being placed, with domestic deliveries usually arriving a few days after that.
@@ -32,26 +32,40 @@ let aboutPage = `
         Please allow approximately one week for domestic delivery and 2-3 weeks for international delivery.
       </p>
       <p>
-        <span class="section-title ">Follow</span>:
+        <span class="section-title ">follow</span>:
         Check out Huetown on <a class="text-link" href="https://www.instagram.com/huetown" target="_blank">Instagram</a> or <a class="text-link" href="https://www.twitter.com/huetown" target="_blank">Twitter</a>. Or sign up below for Huetown's email list, with monthly-ish notices.
         Your information won't be shared with miscreants.
       </p>
       <p>
-        <span class="section-title ">Places</span>:
+        <span class="section-title ">places</span>:
         Huetown items are
         available at these retail spots&hellip;
         <div class="about-state">new hampshire</div>
         <ul>
-          <li><a class="text-link" href="https://www.thisstopiswilloughby.com" target="_blank">This Stop Is Willoughby</a> <span class="bold">(lunar calendars here)</span></li>
+          <li>
+            <a class="text-link" href="https://www.thisstopiswilloughby.com" target="_blank">This Stop Is Willoughby</a> <span class="bold"></span>
+          </li>
         </ul>
         <div class="about-state">rhode island</div>
         <ul>
-          <li><a class="text-link" href="https://shop.craftlandshop.com" target="_blank">Craftland</a> <span class="bold">(lunar calendars here)</span></li>
-          <li><a class="text-link" href="https://simplepleasuresprovidence.com/" target="_blank">Simple Pleasures</span></a> <span class="bold">(lunar calendars here)</span></li>
-          <li><a class="text-link" href="https://www.booksq.com" target="_blank">Books on the Square</a></li>
-          <li><a class="text-link" href="https://www.frogandtoadstore.com" target="_blank">Frog & Toad</a></li>
-          <li><a class="text-link" href="http://like-no-udder.com" target="_blank">Like No Udder</a></li>
-          <li><a class="text-link" href="http://www.papernautilusbooks.com" target="_blank">Paper Nautilus Books</a></li>
+          <li>
+            <a class="text-link" href="https://shop.craftlandshop.com" target="_blank">Craftland</a> <span class="bold"></span>
+          </li>
+          <li>
+            <a class="text-link" href="https://simplepleasuresprovidence.com/" target="_blank">Simple Pleasures</span></a> <span class="bold"></span>
+          </li>
+          <li>
+            <a class="text-link" href="https://www.booksq.com" target="_blank">Books on the Square</a>
+          </li>
+          <li>
+            <a class="text-link" href="https://www.frogandtoadstore.com" target="_blank">Frog & Toad</a>
+          </li>
+          <li>
+            <a class="text-link" href="http://like-no-udder.com" target="_blank">Like No Udder</a>
+          </li>
+          <li>
+            <a class="text-link" href="http://www.papernautilusbooks.com" target="_blank">Paper Nautilus Books</a>
+          </li>
         </ul>
       </p>
     </div>
