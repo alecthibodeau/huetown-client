@@ -371,8 +371,8 @@ const itemsInfo = {
     itemImageFront: 'public/images/items/print_funktionslust_01.jpg',
     itemInfoOne: '5.75 x 5.75 inches',
     itemInfoTwo: 'Screen print, printed by the artist',
-    itemInfoThree: `${limitedEdition}`,
-    itemInfoFour: `${shipsFlat}`,
+    itemInfoThree: limitedEdition,
+    itemInfoFour: shipsFlat,
     itemPrice: 15,
     itemId: 'VARZ4F5RHAP9Y'
   },
@@ -383,9 +383,9 @@ const itemsInfo = {
     itemSubname: 'by Alec Thibodeau',
     itemImageFront: 'public/images/items/print_orca_lumina.jpg',
     itemInfoOne: '2.5 x 2.5 inches',
-    itemInfoTwo: 'Screen print',
-    itemInfoThree: 'Printed by the artist',
-    itemInfoFour: 'Initialed by the artist',
+    itemInfoTwo: 'Screen print, printed by the artist',
+    itemInfoThree: 'Initialed by the artist',
+    itemInfoFour: shipsFlat,
     itemPrice: 7,
     itemId: '8BY2MK6Y89ZTA'
   },
@@ -398,8 +398,8 @@ const itemsInfo = {
     itemImageFront: 'public/images/items/print_stentorian_01.jpg',
     itemInfoOne: '5.5 x 5.5 inches',
     itemInfoTwo: 'Letterpress print, printed by DWRI Letterpress',
-    itemInfoThree: `${limitedEdition}`,
-    itemInfoFour: `${shipsFlat}`,
+    itemInfoThree: `${limitedEdition} ${moreInfo}`,
+    itemInfoFour: shipsFlat,
     itemPrice: 15,
     itemId: 'AUN3U4NQ52J2W',
     itemMorePhotoPairOne: `
@@ -408,17 +408,16 @@ const itemsInfo = {
     `,
     itemMorePhotoPairTwo: `
       <img src="public/images/items/print_stentorian_04.jpg" />
-      <img src="public/images/items/print_stentorian_05.jpg" />
+      <img id="itemDetails" src="public/images/items/print_stentorian_05.jpg" />
     `,
     itemMoreInfo: `
       <div>
-        <span class="ital">Stentorian</span> is a limited-edition letterpress print.
-        It measures 5.5" x 5.5" overall, with an image dimension of 3.5" x 3.5".
-        The edition is exquisitely printed by Dan Wood and his team at <a class="text-link"
-        href="https://www.dwriletterpress.net" target="_blank">DWRI&nbsp;Letterpress</a> on
-        Legion Paper's acid-free 350gsm Colorplan Mist 130# cover stock.
-        The prints in the this edition feature three colors of letterpress ink.
-        Each print is hand numbered and signed in pencil by Alec just below the image area.
+        <span class="ital">Abundance</span> is a limited-edition letterpress print.
+        It measures 5.5" x 5.5" overall, with an image dimension of 3.5" x 3.5" in two colors of ink.
+        The edition is exquisitely printed by Dan Wood and his team at
+        <a class="text-link" href="https://www.dwriletterpress.net" target="_blank">DWRI&nbsp;Letterpress</a>
+        on Legion Paper's acid-free 350gsm Colorplan Mist 130# cover stock.
+        Each print is hand numbered and signed in pencil by Alec. ${orderNow}
       </div>
     `
   },
@@ -433,7 +432,7 @@ const itemsInfo = {
     itemInfoOne: '5.5 x 5.5 inches',
     itemInfoTwo: 'Letterpress print, printed by DWRI Letterpress',
     itemInfoThree: `${limitedEdition} ${moreInfo}`,
-    itemInfoFour: `${shipsFlat}`,
+    itemInfoFour: shipsFlat,
     itemPrice: 25,
     itemId: 'B6SBUBH8JRKV6',
     itemMorePhotoPairOne: `
@@ -447,11 +446,10 @@ const itemsInfo = {
     itemMoreInfo: `
       <div>
         <span class="ital">Abundance</span> is a limited-edition letterpress print.
-        It measures 5.5" x 5.5" overall, with an image dimension of 4" x 4".
+        It measures 5.5" x 5.5" overall, with an image dimension of 4" x 4" in three colors of ink and a layer of stamped blue foil.
         The edition is exquisitely printed by Dan Wood and his team at
         <a class="text-link" href="https://www.dwriletterpress.net" target="_blank">DWRI&nbsp;Letterpress</a>
         on Legion Paper's acid-free 350gsm Colorplan Mist 130# cover stock.
-        The prints in the this edition feature three colors of letterpress ink, plus a layer of stamped foil in blue.
         Each print is hand numbered and signed in pencil by Alec. ${orderNow}
       </div>
     `
