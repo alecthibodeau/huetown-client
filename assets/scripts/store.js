@@ -12,6 +12,7 @@ const setContent = (customElement, content) => {
       break;
     case 'DIV':
     case 'SPAN':
+    case 'LI':
       customElement.innerHTML = content;
       break;
     case 'A':
@@ -22,13 +23,15 @@ const setContent = (customElement, content) => {
 let itemInfoText = `
   <div class="item-info-text" id="orderItem">
     <div>
-      <span class="item-name"></span>
-      <span class="item-subname"></span>
+      <div class="item-name"></div>
+      <div class="item-subname"></div>
     </div>
-    <div class="item-info-1"></div>
-    <div class="item-info-2"></div>
-    <div class="item-info-3"></div>
-    <div class="item-info-4"></div>
+    <ul class="item-info-container">
+      <li class="item-info-1"></li>
+      <li class="item-info-2"></li>
+      <li class="item-info-3"></li>
+      <li class="item-info-4"></li>
+    </ul>
   </div>
 `;
 
@@ -182,98 +185,98 @@ const lunarPhaseInfo = [
 
 const getItemInfo = (item, pageValueOrConcern) => {
 
-  const itemFeatureImage = { 
+  const itemFeatureImage = {
     className: 'feature-image',
     contentToLoad: item.itemImageFront,
     categoryName: item.itemCategory
   };
-  
-  const itemName = { 
+
+  const itemName = {
     className: 'item-name',
     contentToLoad: item.itemName
   };
-  
+
   const itemSubname = {
     className: 'item-subname',
     contentToLoad: item.itemSubname
   };
-  
-  const itemInfoOne = { 
+
+  const itemInfoOne = {
     className: 'item-info-1',
     contentToLoad: item.itemInfoOne
   };
-  
-  const itemInfoTwo = { 
+
+  const itemInfoTwo = {
     className: 'item-info-2',
     contentToLoad: item.itemInfoTwo
   };
-  
-  const itemInfoThree = { 
+
+  const itemInfoThree = {
     className: 'item-info-3',
     contentToLoad: item.itemInfoThree
   };
-  
-  const itemInfoFour = { 
+
+  const itemInfoFour = {
     className: 'item-info-4',
     contentToLoad: item.itemInfoFour
   };
 
-  const itemPrice = { 
+  const itemPrice = {
     className: 'item-price',
     contentToLoad: item.itemPrice
   };
-  
-  const itemId = { 
+
+  const itemId = {
     className: 'item-id',
     contentToLoad: item.itemId
   };
 
-  const itemMorePhotoPairOne = { 
+  const itemMorePhotoPairOne = {
     className: 'item-more-photo-pair-1',
     contentToLoad: item.itemMorePhotoPairOne
   };
 
-  const itemMorePhotoPairTwo = { 
+  const itemMorePhotoPairTwo = {
     className: 'item-more-photo-pair-2',
     contentToLoad: item.itemMorePhotoPairTwo
   };
 
-  const itemMorePhotoPairThree = { 
+  const itemMorePhotoPairThree = {
     className: 'item-more-photo-pair-3',
     contentToLoad: item.itemMorePhotoPairThree
   };
 
-  const itemMorePhotoPairFour = { 
+  const itemMorePhotoPairFour = {
     className: 'item-more-photo-pair-4',
     contentToLoad: item.itemMorePhotoPairFour
   };
 
-  const itemMoreInfo = { 
+  const itemMoreInfo = {
     className: 'item-more-info',
     contentToLoad: item.itemMoreInfo
   };
 
-  const itemLunarCalendarTitle = { 
+  const itemLimitedEdition = {
+    className: 'limited-edition',
+    contentToLoad: item.itemLimitedEdition
+  };
+
+  const itemLunarCalendarTitle = {
     className: 'lunar-calendar-title',
     contentToLoad: item.itemLunarCalendarTitle
   };
 
-  const itemLunarCalendarEdition = { 
-    className: 'lunar-calendar-edition',
-    contentToLoad: item.itemLunarCalendarEdition
-  };
-
-  const itemLunarCalendarYear = { 
+  const itemLunarCalendarYear = {
     className: 'lunar-calendar-year',
     contentToLoad: item.itemLunarCalendarYear
   };
 
-  const itemLunarCalendarPaperInfo = { 
+  const itemLunarCalendarPaperInfo = {
     className: 'lunar-calendar-paper-info',
     contentToLoad: item.itemLunarCalendarPaperInfo
   };
 
-  const itemLunarCalendarLocation = { 
+  const itemLunarCalendarLocation = {
     className: 'lunar-calendar-location',
     contentToLoad: item.itemLunarCalendarLocation
   };
@@ -283,7 +286,7 @@ const getItemInfo = (item, pageValueOrConcern) => {
     contentToLoad: item.itemCategory
   };
 
-  const lunarItemInfoBlock = { 
+  const lunarItemInfoBlock = {
     className: 'item-info-block',
     contentToLoad: item.itemCategory
   };
@@ -292,13 +295,13 @@ const getItemInfo = (item, pageValueOrConcern) => {
     className: 'payment-info',
     contentToLoad: item.itemCategory
   };
-  
-  const lunarPriceContainer = { 
+
+  const lunarPriceContainer = {
     className: 'item-price-container',
     contentToLoad: item.itemCategory
   };
 
-  const lunarContainerThree = { 
+  const lunarContainerThree = {
     className: 'container-3',
     contentToLoad: 'shown'
   }
@@ -308,17 +311,17 @@ const getItemInfo = (item, pageValueOrConcern) => {
     contentToLoad: '#itemDetails'
   };
 
-  const lunarContainerThreeContent = { 
+  const lunarContainerThreeContent = {
     className: 'container-3',
     contentToLoad: containerThreeContent
   };
 
-  const containerOnePostcard = { 
+  const containerOnePostcard = {
     className: 'container-1',
     contentToLoad: 'postcard'
   };
 
-  const containerOnePrint = { 
+  const containerOnePrint = {
     className: 'container-1',
     contentToLoad: 'print'
   };
@@ -342,7 +345,7 @@ const getItemInfo = (item, pageValueOrConcern) => {
     itemMorePhotoPairFour,
     itemMoreInfo,
     itemLunarCalendarTitle,
-    itemLunarCalendarEdition,
+    itemLimitedEdition,
     itemLunarCalendarYear,
     itemLunarCalendarPaperInfo,
     itemLunarCalendarLocation
@@ -369,9 +372,9 @@ const getItemInfo = (item, pageValueOrConcern) => {
     case 'lunar-page-additional-info':
       return lunarAdditionalInfo;
     case 'add-class-for-centering-item-postcard':
-      return [ containerOnePostcard ];
+      return [containerOnePostcard];
     case 'add-class-for-centering-item-print':
-      return [ containerOnePrint ];
+      return [containerOnePrint];
     default:
       return basicItemInfo.concat(extraItemInfo);
   }
@@ -386,4 +389,3 @@ export default {
   lunarPhases,
   lunarPhaseInfo
 };
-  

@@ -19,8 +19,12 @@ const imageDirectory = 'public/images/';
 const itemsDirectory = `${imageDirectory}items/`;
 
 /* constants */
+const limitedEdition = `Hand numbered and signed by the artist in a limited edition of <span class="limited-edition"></span> prints`;
 const lunarCalendarLocationProvidence = 'The calendar is designed, drawn and printed in Providence, Rhode Island, which is identified as a representative location within the artwork.';
 const lunarCalendarLocationNewYork = 'New York City is identified as a representative location within the artwork.';
+const moreInfo = `<a class="text-link" href="#itemDetails">(more info)</a>`;
+const shipsFlat = 'Ships flat';
+const orderNow = `<a class="text-link" href="#featureImage">ORDER</a>`;
 
 const itemInfoUniversals = {
   drawingInfoOriginalDrawing: `original drawing`,
@@ -30,19 +34,19 @@ const itemInfoUniversals = {
   drawingPrice: 55,
   lunarCalendarItemName: `
     <span class="lunar-calendar-title"></span><br>
-    <span class="lunar-calendar-year normal"></span> <span class="normal">lunar calendar<br>
-    by Alec Thibodeau</span>
+    <span class="lunar-calendar-year normal"></span> <span class="normal">lunar calendar</span>
   `,
+  lunarCalendarItemSubname: 'by Alec Thibodeau',
   lunarCalendarPrice: 40,
-  lunarCalendarInfoOne: '19 x 11.75 inches<br>Letterpress print<br>Printed by DWRI Letterpress',
-  lunarCalendarInfoTwo: '',
-  lunarCalendarInfoThree: `Hand numbered and signed by the artist in a limited edition of <span class="lunar-calendar-edition"></span> prints <a class="text-link" href="#itemDetails">(more info)</a>`,
+  lunarCalendarInfoOne: '19 x 11.75 inches',
+  lunarCalendarInfoTwo: 'Letterpress print, printed by DWRI Letterpress',
+  lunarCalendarInfoThree: `${limitedEdition} ${moreInfo}`,
   lunarCalendarInfoFour: 'Ships rolled and triple-packaged: archival wrap, eco-friendly protective tube and outer shipping container',
   lunarCalendarBlocks: `
     <div class=info-block>
       <span class="lunar-calendar-title ital"></span> is a letterpress-printed lunar calendar designed and drawn by Alec Thibodeau (me!),
       chronicling all phases of the moon for <span class="lunar-calendar-year"></span>.
-      From a limited edition of <span class="lunar-calendar-edition"></span> prints <span class="lunar-calendar-title ital"></span> continues Alec's ongoing lunar calendar series,
+      From a limited edition of <span class="limited-edition"></span> prints <span class="lunar-calendar-title ital"></span> continues Alec's ongoing lunar calendar series,
       which features ornate illustrations framing an annual cycle of moon shapes.
       As with each of Alec's previous lunar calendars this piece measures 19" x 11.75" (a golden rectangle) and is expertly printed by Dan Wood
       and his team at <a class="text-link" href="https://www.dwriletterpress.net" target="_blank">DWRI&nbsp;Letterpress</a>.
@@ -56,7 +60,7 @@ const itemInfoUniversals = {
     </div>
     <div class=info-block>
       Custom moon illustrations portray all principal lunar phases (New Moon, First Quarter Moon, Full Moon and Third Quarter Moon) plus all intermediate crescent and gibbous phases. For months with less than 31 days, drawings of clouds occupy the extra spaces.
-      <a class="text-link" href="#featureImage">ORDER</a>
+      ${orderNow}
     </div>
 
     <div class="lunar-phases" id="lunarPhases">
@@ -68,8 +72,9 @@ const itemInfoUniversals = {
       <img src="${itemsDirectory}protective_tube.png" />
     </div>
   `,
-  postcardInfoOne: '6 x 4 inches; mellow, satin finish<br>Full-color front / single-color back',
-  postcardInfoTwo: '',
+  postcardInfoOne: '6 x 4 inches',
+  postcardInfoTwo: 'Mellow, satin finish',
+  postcardInfoThree: 'Full-color front / single-color back',
   postcardPrice: 1
 }
 
@@ -97,16 +102,15 @@ const itemsInfo = {
     itemCategory: 'lunar-calendar',
     itemLunarCalendarTitle: 'Casting Levels',
     itemLunarCalendarYear: '2021',
-    itemLunarCalendarEdition: '',
+    itemLimitedEdition: 500,
     itemLunarCalendarPaperInfo: 'Arjowiggins Creative Papers (distributed by Mohawk) acid-free 300gsm Keaykolour Kiwi 111# cover paper',
     itemName: itemInfoUniversals.lunarCalendarItemName,
-    itemSubname: '',
+    itemSubname: itemInfoUniversals.lunarCalendarItemSubname,
     itemImageFront: `${itemsDirectory}thibodeau_lunar_calendar_2021_photo_main_1000px.jpg`,
     itemInfoOne: itemInfoUniversals.lunarCalendarInfoOne,
     itemInfoTwo: itemInfoUniversals.lunarCalendarInfoTwo,
     itemInfoThree: itemInfoUniversals.lunarCalendarInfoThree,
     itemInfoFour: itemInfoUniversals.lunarCalendarInfoFour,
-    itemInfoMore: '',
     itemPrice: itemInfoUniversals.lunarCalendarPrice,
     itemLunarCalendarLocation: lunarCalendarLocationProvidence,
     itemId: 'XA698W9J6TGEL',
@@ -123,12 +127,6 @@ const itemsInfo = {
       <img id="itemDetails" class="large-detail-image" src="public/images/items/thibodeau_lunar_calendar_2021_photo_09_1000px.jpg" />
     `,
     itemMoreInfo: `
-    <div>
-      <span class="more-info-note">Are you in the New England area? Pick up lunar calendars in person at these fine shops:
-      <a class="text-link" href="https://shop.craftlandshop.com" target="_blank">Craftland</a> (Providence, RI),
-      <a class="text-link" href="https://simplepleasuresprovidence.com/" target="_blank">Simple Pleasures</a> (Providence, RI)
-      and <a class="text-link" href="https://www.thisstopiswilloughby.com" target="_blank">This Stop Is Willoughby</a> (Dover, NH).</span>
-    </div>
     ${itemInfoUniversals.lunarCalendarBlocks}
     <p class="additional-info">
       Follow <a class="text-link" href="https://www.instagram.com/huetown/" target="_blank">@huetown</a> on Instagram to see this print's magical letterpress production in action.
@@ -142,16 +140,15 @@ const itemsInfo = {
     itemCategory: 'lunar-calendar',
     itemLunarCalendarTitle: 'The Instruments Agree',
     itemLunarCalendarYear: '2020',
-    itemLunarCalendarEdition: 500,
+    itemLimitedEdition: 500,
     itemLunarCalendarPaperInfo: 'Mohawk Fine Papers\' acid-free 300gsm Keaykolour Caribbean Blue 111# cover paper',
     itemName: itemInfoUniversals.lunarCalendarItemName,
-    itemSubname: '',
+    itemSubname: itemInfoUniversals.lunarCalendarItemSubname,
     itemImageFront: `${itemsDirectory}thibodeau_lunar_calendar_2020_photo_main_1000px.jpg`,
     itemInfoOne: itemInfoUniversals.lunarCalendarInfoOne,
     itemInfoTwo: itemInfoUniversals.lunarCalendarInfoTwo,
     itemInfoThree: itemInfoUniversals.lunarCalendarInfoThree,
     itemInfoFour: itemInfoUniversals.lunarCalendarInfoFour,
-    itemInfoMore: '',
     itemPrice: itemInfoUniversals.lunarCalendarPrice,
     itemLunarCalendarLocation: lunarCalendarLocationProvidence,
     itemId: 'TGVEUGQD58AX2',
@@ -178,10 +175,10 @@ const itemsInfo = {
     itemCategory: 'lunar-calendar',
     itemLunarCalendarTitle: 'Orchard Quest',
     itemLunarCalendarYear: '2019',
-    itemLunarCalendarEdition: 500,
+    itemLimitedEdition: 500,
     itemLunarCalendarPaperInfo: 'French Paper Company\'s acid-free 269gsm Pop-Tone Tangy Orange 100# cover paper',
     itemName: itemInfoUniversals.lunarCalendarItemName,
-    itemSubname: '',
+    itemSubname: itemInfoUniversals.lunarCalendarItemSubname,
     itemImageFront: `${itemsDirectory}thibodeau_lunar_calendar_2019_main.jpg`,
     itemInfoOne: itemInfoUniversals.lunarCalendarInfoOne,
     itemInfoTwo: itemInfoUniversals.lunarCalendarInfoTwo,
@@ -213,10 +210,10 @@ const itemsInfo = {
     itemCategory: 'lunar-calendar',
     itemLunarCalendarTitle: 'Shimmery Circuit',
     itemLunarCalendarYear: '2018',
-    itemLunarCalendarEdition: 1000,
+    itemLimitedEdition: 1000,
     itemLunarCalendarPaperInfo: 'French Paper Company\'s acid-free 269gsm Pop-Tone Grape Jelly 100# cover paper',
     itemName: itemInfoUniversals.lunarCalendarItemName,
-    itemSubname: '',
+    itemSubname: itemInfoUniversals.lunarCalendarItemSubname,
     itemImageFront: `${itemsDirectory}thibodeau_lunar_calendar_2018_main.jpg`,
     itemInfoOne: itemInfoUniversals.lunarCalendarInfoOne,
     itemInfoTwo: itemInfoUniversals.lunarCalendarInfoTwo,
@@ -248,10 +245,10 @@ const itemsInfo = {
     itemCategory: 'lunar-calendar',
     itemLunarCalendarTitle: 'I Still See the X',
     itemLunarCalendarYear: '2017',
-    itemLunarCalendarEdition: 1000,
+    itemLimitedEdition: 1000,
     itemLunarCalendarPaperInfo: 'French Paper Company\'s acid-free 269gsm Pop-Tone Razzle Berry 100# cover paper',
     itemName: itemInfoUniversals.lunarCalendarItemName,
-    itemSubname: '',
+    itemSubname: itemInfoUniversals.lunarCalendarItemSubname,
     itemImageFront: `${itemsDirectory}thibodeau_lunar_calendar_2017_main.jpg`,
     itemInfoOne: itemInfoUniversals.lunarCalendarInfoOne,
     itemInfoTwo: itemInfoUniversals.lunarCalendarInfoTwo,
@@ -282,7 +279,8 @@ const itemsInfo = {
     itemImageFront: 'public/images/items/postcard_assets.png',
     itemInfoOne: itemInfoUniversals.postcardInfoOne,
     itemInfoTwo: itemInfoUniversals.postcardInfoTwo,
-    itemInfoThree: `Caption on the back: "<span class="ital">Assets</span> (detail) by Alec Thibodeau, 2012, screen print on paper, 24 x 18 inches"`,
+    itemInfoThree: itemInfoUniversals.postcardInfoThree,
+    itemInfoFour: `Caption on the back: "<span class="ital">Assets</span> (detail) by Alec Thibodeau, 2012, screen print on paper, 24 x 18 inches"`,
     itemPrice: itemInfoUniversals.postcardPrice,
     itemId: '4CL74PH4FSSQ6'
   },
@@ -294,7 +292,8 @@ const itemsInfo = {
     itemImageFront: 'public/images/items/postcard_cachalot.png',
     itemInfoOne: itemInfoUniversals.postcardInfoOne,
     itemInfoTwo: itemInfoUniversals.postcardInfoTwo,
-    itemInfoThree: `Caption on the back: "The cachalot, or sperm whale, swims in the open ocean and has the largest brain of any animal."`,
+    itemInfoThree: itemInfoUniversals.postcardInfoThree,
+    itemInfoFour: `Caption on the back: "The cachalot, or sperm whale, swims in the open ocean and has the largest brain of any animal."`,
     itemPrice: itemInfoUniversals.postcardPrice,
     itemId: '7H7ZNZJMAM5S4'
   },
@@ -306,7 +305,8 @@ const itemsInfo = {
     itemImageFront: 'public/images/items/postcard_flannery_oconnor.png',
     itemInfoOne: itemInfoUniversals.postcardInfoOne,
     itemInfoTwo: itemInfoUniversals.postcardInfoTwo,
-    itemInfoThree: `Caption on the back: "Flannery O'Connor (1925–1964) wrote <span class="ital">Wise Blood</span> and was an accomplished cartoonist."`,
+    itemInfoThree: itemInfoUniversals.postcardInfoThree,
+    itemInfoFour: `Caption on the back: "Flannery O'Connor (1925–1964) wrote <span class="ital">Wise Blood</span> and was an accomplished cartoonist."`,
     itemPrice: itemInfoUniversals.postcardPrice,
     itemId: '25LJT9358P2PS'
   },
@@ -318,7 +318,8 @@ const itemsInfo = {
     itemImageFront: 'public/images/items/postcard_great_white_shark.png',
     itemInfoOne: itemInfoUniversals.postcardInfoOne,
     itemInfoTwo: itemInfoUniversals.postcardInfoTwo,
-    itemInfoThree: `Caption on the back: "The great white shark inhabits most of the world's oceans and wants to be your friend."`,
+    itemInfoThree: itemInfoUniversals.postcardInfoThree,
+    itemInfoFour: `Caption on the back: "The great white shark inhabits most of the world's oceans and wants to be your friend."`,
     itemPrice: itemInfoUniversals.postcardPrice,
     itemId: 'UP6L2CNKJLSL2'
   },
@@ -330,7 +331,8 @@ const itemsInfo = {
     itemImageFront: 'public/images/items/postcard_herman_melville.png',
     itemInfoOne: itemInfoUniversals.postcardInfoOne,
     itemInfoTwo: itemInfoUniversals.postcardInfoTwo,
-    itemInfoThree: `Caption on the back: "Herman Melville (1819–1891) wrote 'Bartleby, the Scrivener' and was a respected customs inspector."`,
+    itemInfoThree: itemInfoUniversals.postcardInfoThree,
+    itemInfoFour: `Caption on the back: "Herman Melville (1819–1891) wrote 'Bartleby, the Scrivener' and was a respected customs inspector."`,
     itemPrice: itemInfoUniversals.postcardPrice,
     itemId: 'JL4EHBW8MVKCC'
   },
@@ -342,7 +344,8 @@ const itemsInfo = {
     itemImageFront: 'public/images/items/postcard_hippopotamus.png',
     itemInfoOne: itemInfoUniversals.postcardInfoOne,
     itemInfoTwo: itemInfoUniversals.postcardInfoTwo,
-    itemInfoThree: `Caption on the back: "The hippopotamus has a name which means 'horse of the river' in Ancient Greek."`,
+    itemInfoThree: itemInfoUniversals.postcardInfoThree,
+    itemInfoFour: `Caption on the back: "The hippopotamus has a name which means 'horse of the river' in Ancient Greek."`,
     itemPrice: itemInfoUniversals.postcardPrice,
     itemId: 'T5XS8HXHARZG4'
   },
@@ -354,46 +357,49 @@ const itemsInfo = {
     itemImageFront: 'public/images/items/postcard_rhode_island_whale.png',
     itemInfoOne: itemInfoUniversals.postcardInfoOne,
     itemInfoTwo: itemInfoUniversals.postcardInfoTwo,
-    itemInfoThree: `Caption on the back: "The North Atlantic humpback whale swims in waters off Rhode Island and can grow to 50 feet in length."`,
+    itemInfoThree: itemInfoUniversals.postcardInfoThree,
+    itemInfoFour: `Caption on the back: "The North Atlantic humpback whale swims in waters off Rhode Island and can grow to 50 feet in length."`,
     itemPrice: itemInfoUniversals.postcardPrice,
     itemId: 'WZXP99EBYSU5A'
   },
   'printFunktionslust': {
     mainContent: item.itemPage,
     itemCategory: 'print',
-    itemName: 'Funktionslust for All of Us<br><span class="normal">by Alec Thibodeau</span>',
-    itemSubname: '',
+    itemName: 'Funktionslust for All of Us',
+    itemSubname: 'by Alec Thibodeau',
+    itemLimitedEdition: 50,
     itemImageFront: 'public/images/items/print_funktionslust_01.jpg',
-    itemInfoOne: '5.75 x 5.75 inches<br>Screen print',
-    itemInfoTwo: 'Printed by the artist',
-    itemInfoThree: 'From a limited edition of 50 prints<br>Hand numbered and signed by the artist',
-    itemInfoFour: 'unframed',
+    itemInfoOne: '5.75 x 5.75 inches',
+    itemInfoTwo: 'Screen print, printed by the artist',
+    itemInfoThree: `${limitedEdition}`,
+    itemInfoFour: `${shipsFlat}`,
     itemPrice: 15,
     itemId: 'VARZ4F5RHAP9Y'
   },
   'printOrcaLumina': {
     mainContent: item.itemPage,
     itemCategory: 'print',
-    itemName: 'Orca Lumina<br><span class="normal">by Alec Thibodeau</span>',
-    itemSubname: '',
+    itemName: 'Orca Lumina',
+    itemSubname: 'by Alec Thibodeau',
     itemImageFront: 'public/images/items/print_orca_lumina.jpg',
-    itemInfoOne: '2.5 x 2.5 inches<br>Screen print',
-    itemInfoTwo: 'Printed by the artist',
-    itemInfoThree: 'Initialed by the artist',
-    itemInfoFour: 'unframed',
+    itemInfoOne: '2.5 x 2.5 inches',
+    itemInfoTwo: 'Screen print',
+    itemInfoThree: 'Printed by the artist',
+    itemInfoFour: 'Initialed by the artist',
     itemPrice: 7,
     itemId: '8BY2MK6Y89ZTA'
   },
   'printStentorian': {
     mainContent: item.itemPage,
     itemCategory: 'print',
-    itemName: 'Stentorian<br><span class="normal">by Alec Thibodeau</span>',
-    itemSubname: '',
+    itemName: 'Stentorian',
+    itemSubname: 'by Alec Thibodeau',
+    itemLimitedEdition: 250,
     itemImageFront: 'public/images/items/print_stentorian_01.jpg',
-    itemInfoOne: '5.5 x 5.5 inches<br>Letterpress print',
-    itemInfoTwo: 'Printed by DWRI Letterpress',
-    itemInfoThree: 'From a limited edition of 250 prints<br>Hand numbered and signed by the artist',
-    itemInfoFour: 'unframed',
+    itemInfoOne: '5.5 x 5.5 inches',
+    itemInfoTwo: 'Letterpress print, printed by DWRI Letterpress',
+    itemInfoThree: `${limitedEdition}`,
+    itemInfoFour: `${shipsFlat}`,
     itemPrice: 15,
     itemId: 'AUN3U4NQ52J2W',
     itemMorePhotoPairOne: `
@@ -406,8 +412,12 @@ const itemsInfo = {
     `,
     itemMoreInfo: `
       <div>
-        <span class="ital">Stentorian</span> is a limited-edition letterpress print. It measures 5.5" x 5.5" overall, with an image dimension of 3.5" x 3.5".
-        The edition is exquisitely printed by Dan Wood and his team at <a class="text-link" href="https://www.dwriletterpress.net" target="_blank">DWRI&nbsp;Letterpress</a> on Legion Paper's acid-free 350gsm Colorplan Mist 130# cover stock.
+        <span class="ital">Stentorian</span> is a limited-edition letterpress print.
+        It measures 5.5" x 5.5" overall, with an image dimension of 3.5" x 3.5".
+        The edition is exquisitely printed by Dan Wood and his team at <a class="text-link"
+        href="https://www.dwriletterpress.net" target="_blank">DWRI&nbsp;Letterpress</a> on
+        Legion Paper's acid-free 350gsm Colorplan Mist 130# cover stock.
+        The prints in the this edition feature three colors of letterpress ink.
         Each print is hand numbered and signed in pencil by Alec just below the image area.
       </div>
     `
@@ -416,13 +426,14 @@ const itemsInfo = {
     mainContent: item.itemPage,
     itemTitle: 'abundance',
     itemCategory: 'print',
-    itemName: 'Abundance<br><span class="normal">by Alec Thibodeau</span>',
-    itemSubname: '',
+    itemName: 'Abundance',
+    itemSubname: 'by Alec Thibodeau',
+    itemLimitedEdition: 250,
     itemImageFront: 'public/images/items/print_abundance_01.jpg',
-    itemInfoOne: '5.5 x 5.5 inches<br>Letterpress print',
-    itemInfoTwo: 'Printed by DWRI Letterpress',
-    itemInfoThree: 'From a limited edition of 250 prints<br>Hand numbered and signed by the artist',
-    itemInfoFour: 'ink and foil stamp',
+    itemInfoOne: '5.5 x 5.5 inches',
+    itemInfoTwo: 'Letterpress print, printed by DWRI Letterpress',
+    itemInfoThree: `${limitedEdition} ${moreInfo}`,
+    itemInfoFour: `${shipsFlat}`,
     itemPrice: 25,
     itemId: 'B6SBUBH8JRKV6',
     itemMorePhotoPairOne: `
@@ -431,7 +442,7 @@ const itemsInfo = {
     `,
     itemMorePhotoPairTwo: `
       <img src="public/images/items/print_abundance_04.jpg" />
-      <img src="public/images/items/print_abundance_05.jpg" />
+      <img id="itemDetails" src="public/images/items/print_abundance_05.jpg" />
     `,
     itemMoreInfo: `
       <div>
@@ -440,8 +451,8 @@ const itemsInfo = {
         The edition is exquisitely printed by Dan Wood and his team at
         <a class="text-link" href="https://www.dwriletterpress.net" target="_blank">DWRI&nbsp;Letterpress</a>
         on Legion Paper's acid-free 350gsm Colorplan Mist 130# cover stock.
-        The prints in the this edition feature three colors of letterpress ink, plus a final layer of stamped foil in blue.
-        Each print is hand numbered and signed in pencil by Alec.
+        The prints in the this edition feature three colors of letterpress ink, plus a layer of stamped foil in blue.
+        Each print is hand numbered and signed in pencil by Alec. ${orderNow}
       </div>
     `
   }

@@ -17,6 +17,10 @@
 
     .feature-image-block a img {
       width: 600px;
+
+      @media only screen and (max-width: 650px) {
+        width: 80vw;
+      }
     }
 
     .item-info-block {
@@ -103,13 +107,9 @@
     }
 
     .item-more-info {
-      max-width: 1200px;
+      max-width: 80ch;
       margin: 0 auto;
       padding-top: 15px;
-
-      .more-info-note {
-        font-size: 1.75rem;
-      }
 
       .info-block:not(:first-of-type) {
         margin: 15px auto 0;
@@ -283,26 +283,15 @@
     font-size: 2rem;
     font-weight: 700;
     margin-right: 5px;
+    margin-bottom: 5px;
 
     span.normal {
       font-weight: 400;
     }
   }
 
-  .item-subname {
-    font-size: 2rem;
-  }
-
-  .item-info-1,
-  .item-info-2,
-  .item-info-3,
-  .item-info-4 {
-    margin: 10px 0 12px;
-    font-size: 1.3rem;
-
-    @media only screen and (max-width: 850px) {
-      margin: 5px 0;
-    }
+  .item-info-container {
+    padding-inline-start: 20px;
   }
 
   .item-info-text {
@@ -357,8 +346,8 @@
   }
 
   .quantity-label {
-    font-size: 1rem;
-    font-weight: 600;
+    margin-left: 0.75rem;
+    font-size: 1.4rem;
   }
 
   .additional-info {

@@ -20,7 +20,7 @@ let itemPage = `
           <div class="form-container">
             <div class="quantity-label">
               <span>
-                Quantity
+                Qty.
               </span>
             </div>
             ${store.itemForm}
