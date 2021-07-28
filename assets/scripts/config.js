@@ -417,7 +417,7 @@ const itemsInfo = {
         The edition is exquisitely printed by Dan Wood and his team at
         <a class="text-link" href="https://www.dwriletterpress.net" target="_blank">DWRI&nbsp;Letterpress</a>
         on Legion Paper's acid-free 350gsm Colorplan Mist 130# cover stock.
-        Each print is hand numbered and signed in pencil by Alec. ${orderNow}
+        Each print is hand numbered and signed on the front in pencil by Alec. ${orderNow}
       </div>
     `
   },
@@ -450,7 +450,7 @@ const itemsInfo = {
         The edition is exquisitely printed by Dan Wood and his team at
         <a class="text-link" href="https://www.dwriletterpress.net" target="_blank">DWRI&nbsp;Letterpress</a>
         on Legion Paper's acid-free 350gsm Colorplan Mist 130# cover stock.
-        Each print is hand numbered and signed in pencil by Alec. ${orderNow}
+        Each print is hand numbered and signed on the front in pencil by Alec. ${orderNow}
       </div>
     `
   }

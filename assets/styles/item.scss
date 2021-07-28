@@ -95,6 +95,14 @@
         }
 
         @media only screen and (max-width: 760px) {
+
+          &.large-detail-image {
+            width: 90vw;
+            height: 90vw;
+          }
+        }
+
+        @media only screen and (max-width: 500px) {
           width: 90vw;
           height: 90vw;
         }
