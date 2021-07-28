@@ -413,7 +413,7 @@ const itemsInfo = {
     itemMoreInfo: `
       <div>
         <span class="ital">Abundance</span> is a limited-edition letterpress print.
-        It measures 5.5" x 5.5" overall, with an image dimension of 3.5" x 3.5" in two colors of ink.
+        It measures 5.5" x 5.5" overall, with an image dimension of 3.5" x 3.5" in two ink colors.
         The edition is exquisitely printed by Dan Wood and his team at
         <a class="text-link" href="https://www.dwriletterpress.net" target="_blank">DWRI&nbsp;Letterpress</a>
         on Legion Paper's acid-free 350gsm Colorplan Mist 130# cover stock.
@@ -446,7 +446,7 @@ const itemsInfo = {
     itemMoreInfo: `
       <div>
         <span class="ital">Abundance</span> is a limited-edition letterpress print.
-        It measures 5.5" x 5.5" overall, with an image dimension of 4" x 4" in three colors of ink and a layer of stamped blue foil.
+        It measures 5.5" x 5.5" overall, with an image dimension of 4" x 4" in three ink colors and a layer of stamped blue foil.
         The edition is exquisitely printed by Dan Wood and his team at
         <a class="text-link" href="https://www.dwriletterpress.net" target="_blank">DWRI&nbsp;Letterpress</a>
         on Legion Paper's acid-free 350gsm Colorplan Mist 130# cover stock.
