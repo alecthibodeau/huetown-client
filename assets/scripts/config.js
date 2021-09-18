@@ -386,7 +386,7 @@ const itemsInfo = {
     itemInfoTwo: 'Screen print, printed by the artist',
     itemInfoThree: 'Initialed by the artist',
     itemInfoFour: shipsFlat,
-    itemPrice: 7,
+    itemPrice: 10,
     itemId: '8BY2MK6Y89ZTA'
   },
   'printStentorian': {
