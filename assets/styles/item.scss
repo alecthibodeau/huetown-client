@@ -70,7 +70,7 @@
 
   .container-2 {
     display: none;
-    border-top: 1px solid $eighty-percent-gray;
+    border-top: 1px solid $light-gray;
     margin-top: 20px;
 
     &.shown {
@@ -200,7 +200,7 @@
         &.title {
           margin: 0 auto 10px;
           text-transform: capitalize;
-          color: $fifty-percent-gray;
+          color: $sixty-percent-gray;
           font-weight: 700;
         }
 

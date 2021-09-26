@@ -44,17 +44,17 @@ html {
 
       .text-link {
         text-decoration: none;
-        color: $text-link-orange;
+        color: $violet;
 
         &:link,
         &:visited,
         &:active {
-          color: $text-link-orange;
-          font-weight: 500;
+          color: $violet;
+          font-weight: 600;
         }
 
         &:hover {
-          color: $huetown-green;
+          color: $dark-green;
           text-decoration: underline;
           cursor: pointer;
         }

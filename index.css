@@ -369,14 +369,14 @@ html body main {
 }
 html body main .text-link {
   text-decoration: none;
-  color: #e98d00;
+  color: #673ab7;
 }
 html body main .text-link:link, html body main .text-link:visited, html body main .text-link:active {
-  color: #e98d00;
-  font-weight: 500;
+  color: #673ab7;
+  font-weight: 600;
 }
 html body main .text-link:hover {
-  color: #6abbb6;
+  color: #2b792e;
   text-decoration: underline;
   cursor: pointer;
 }
@@ -406,7 +406,6 @@ html body footer {
   width: 90%;
   display: flex;
   justify-content: center;
-  border-top: 2px solid #7f7f7f;
   margin: 1rem auto;
   /**
    * Media Queries
@@ -872,7 +871,7 @@ PAGES
 }
 .item-page .container-2 {
   display: none;
-  border-top: 1px solid #333;
+  border-top: 1px solid #ccc;
   margin-top: 20px;
 }
 .item-page .container-2.shown {
@@ -986,7 +985,7 @@ PAGES
 .item-page .container-3 .previous div.title {
   margin: 0 auto 10px;
   text-transform: capitalize;
-  color: #7f7f7f;
+  color: #666;
   font-weight: 700;
 }
 .item-page .container-3 .available div[class^=lunar-calendar-links] div,
