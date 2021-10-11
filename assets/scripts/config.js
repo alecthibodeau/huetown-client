@@ -412,7 +412,7 @@ const itemsInfo = {
     `,
     itemMoreInfo: `
       <div>
-        <span class="ital">Abundance</span> is a limited-edition letterpress print.
+        <span class="ital">Stentorian</span> is a limited-edition letterpress print.
         It measures 5.5" x 5.5" overall, with an image dimension of 3.5" x 3.5" in two ink colors.
         The edition is exquisitely printed from Alec's original drawings by Dan Wood and his team at
         <a class="text-link" href="https://www.dwriletterpress.net" target="_blank">DWRI&nbsp;Letterpress</a>
@@ -445,8 +445,7 @@ const itemsInfo = {
     `,
     itemMoreInfo: `
       <div>
-        Originally released as part of the <a class="text-link" href="https://www.nevegfest.org" target="_blank">
-        2021 New England VegFest</a> <span class="ital">Abundance</span> is a limited-edition letterpress print.
+        <span class="ital">Abundance</span> is a limited-edition letterpress print.
         It measures 5.5" x 5.5" overall, with an image dimension of 4" x 4" in three ink colors and a layer of stamped blue foil.
         The edition is exquisitely printed from Alec's original drawings by Dan Wood and his team at
         <a class="text-link" href="https://www.dwriletterpress.net" target="_blank">DWRI&nbsp;Letterpress</a>
