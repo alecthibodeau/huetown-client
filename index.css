@@ -1137,7 +1137,7 @@ PAGES
   width: 16rem;
   border: none;
   border-radius: 6px;
-  background: #666;
+  background: #555;
   color: #fff;
   font-family: "Raleway", sans-serif;
   font-size: 1.4rem;
@@ -1146,7 +1146,9 @@ PAGES
   cursor: pointer;
 }
 .item-page form input[value="Add to cart"]:hover {
-  background: #ff9600;
+  border: 2px solid #555;
+  color: #000;
+  background: #edde95;
 }
 
 .veganly-page {

@@ -40,7 +40,7 @@ let itemForm = `
     <input type="hidden" name="cmd" value="_s-xclick">
     <input class="item-id" type="hidden" name="hosted_button_id" value="">
     <input type="text" name="quantity" value="1">
-    <input type="submit" value="Add to cart" alt="Add To Cart">
+    <input type="submit" value="Add to cart" alt="Add to cart">
     <img alt="" border="0" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1">
   </form>
 `;
