@@ -384,7 +384,7 @@ html body main .ital {
   font-style: italic;
 }
 html body main .bold {
-  font-weight: 600;
+  font-weight: 700;
 }
 html body main .not-found {
   text-align: center;
@@ -434,8 +434,7 @@ html body footer section a img {
   z-index: 10;
 }
 html body footer section a:hover div {
-  background: #edde95;
-  transition: all 0.3s linear;
+  background: #fbde84;
 }
 html body footer section a div {
   width: 93%;
@@ -834,6 +833,19 @@ PAGES
 .item-page.item-title-abundance .container-1 .item-info-block {
   justify-content: center;
 }
+.item-page .item-accompanying {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 10px 0;
+}
+.item-page .item-accompanying img {
+  width: 300px;
+  height: 300px;
+}
+.item-page .item-accompanying span:first-of-type {
+  font-style: italic;
+}
 .item-page .content-container {
   display: flex;
 }
@@ -1056,6 +1068,14 @@ PAGES
     width: 90vw;
   }
 }
+.item-page .item-preorder {
+  display: none;
+}
+.item-page .item-preorder.visible {
+  display: inline;
+  text-transform: uppercase;
+  color: #00cccc;
+}
 .item-page .item-name {
   font-size: 2rem;
   font-weight: 700;
@@ -1102,7 +1122,6 @@ PAGES
 @media only screen and (max-width: 1050px) {
   .item-page .item-price-container.lunar-calendar {
     margin: 0 10px 0 0;
-    top: 6px;
   }
 }
 @media only screen and (max-width: 850px) {
@@ -1148,7 +1167,7 @@ PAGES
 .item-page form input[value="Add to cart"]:hover {
   border: 2px solid #555;
   color: #000;
-  background: #edde95;
+  background: #fbde84;
 }
 
 .veganly-page {

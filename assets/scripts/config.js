@@ -34,7 +34,7 @@ const itemInfoUniversals = {
   drawingPrice: 55,
   lunarCalendarItemName: `
     <span class="lunar-calendar-title"></span><br>
-    <span class="lunar-calendar-year normal"></span> <span class="normal">lunar calendar</span>
+    <span  id="itemPreorder" class="item-preorder">preorder</span> <span class="lunar-calendar-year normal"></span> <span class="normal">lunar calendar</span>
   `,
   lunarCalendarItemSubname: 'by Alec Thibodeau',
   lunarCalendarPrice: 40,
@@ -78,6 +78,36 @@ const itemInfoUniversals = {
   postcardPrice: 1
 }
 
+const lunarCalendarBlocksPreorder = `
+  <div id="itemDetails">
+    <p>
+      <span class="bold">Preorder 2022 Lunar Calendar:</span>
+      Okay, my lunar calendar for 2022 is now in production at the print shop &mdash; with Dan making the letterpress magic happen for another limited edition.
+      Each lunar calendar preordered between now and November 26, 2021 will include a new <span class="ital">Proton Swan</span> print (2.5 x 2.5 inches).
+      <span class="bold">All preorders will ship by November 30th, 2021</span> (domestic shipping in the USA is a flat $7 rate to any address, regardless of item quantity).
+    </p>
+    <p>
+      <span class="bold">Important:</span> The above lunar calendar image is a digital-color simulation of what the final piece's inks and paper will look like. There may be some slight variations between the colors here and in the print.
+    </p>
+  </div>
+  <div class="item-accompanying">
+    <img src="${itemsDirectory}orca_lumina_300px.jpg" />
+    <div>
+      <span>Proton Swan</span> <span>print</span>
+    </div>
+  </div>
+  <div>
+    <p class="additional-info">
+      Follow <a class="text-link" href="https://www.instagram.com/huetown/" target="_blank">@huetown</a> on Instagram to see this print's magical letterpress production in action.
+      And join the <a class="text-link" href="about.html">email list</a> to learn when new print editions are available.
+    </p>
+  </div>
+  <div>
+    Here's more info on the ultimate piece&hellip;
+  </div>
+  ${itemInfoUniversals.lunarCalendarBlocks}
+`
+
 const itemsInfo = {
   'home': {
     mainContent: home.homePage
@@ -97,6 +127,50 @@ const itemsInfo = {
   'veganly': {
     mainContent: veganly.veganlyPage
   },
+
+  'lunarCalendarTwentyTwoPreorder': {
+    mainContent: item.itemPage,
+    itemCategory: 'lunar-calendar',
+    itemLunarCalendarTitle: 'Entrancer\'s Medallion',
+    itemLunarCalendarYear: '2022',
+    itemLunarCalendarEdition: '',
+    itemLunarCalendarPaperInfo: 'Arjowiggins Creative Papers\' (distributed by Mohawk) acid-free 300gsm Keaykolour Coral 111# cover paper',
+    itemName: itemInfoUniversals.lunarCalendarItemName,
+    itemSubname: itemInfoUniversals.lunarCalendarItemSubname,
+    itemImageFront: `${itemsDirectory}thibodeau_lunar_calendar_2021_preorder_image_700px.jpg`,
+    itemInfoOne: itemInfoUniversals.lunarCalendarInfoOne,
+    itemInfoTwo: itemInfoUniversals.lunarCalendarInfoTwo,
+    itemInfoThree: itemInfoUniversals.lunarCalendarInfoThree,
+    itemInfoFour: itemInfoUniversals.lunarCalendarInfoFour,
+    itemPrice: itemInfoUniversals.lunarCalendarPrice,
+    itemLunarCalendarLocation: lunarCalendarLocationProvidence,
+    itemId: '7XWKF7SGUGECU',
+    // itemMorePhotoPairOne: `
+    //   <img src="public/images/items/thibodeau_lunar_calendar_2021_photo_01_1000px.jpg" />
+    //   <img src="public/images/items/thibodeau_lunar_calendar_2021_photo_02_1000px.jpg" />
+    // `,
+    // itemMorePhotoPairTwo: `
+    //   <img src="public/images/items/thibodeau_lunar_calendar_2021_photo_03_1000px.jpg" />
+    //   <img src="public/images/items/thibodeau_lunar_calendar_2021_photo_04_1000px.jpg" />
+    // `,
+    // itemMorePhotoPairThree: `
+    //   <img src="public/images/items/thibodeau_lunar_calendar_2021_photo_07_1000px.jpg" />
+    //   <img src="public/images/items/thibodeau_lunar_calendar_2021_photo_08_1000px.jpg" />
+    // `,
+    // itemMorePhotoPairFour: `
+    // <img src="public/images/items/thibodeau_lunar_calendar_2021_photo_05_1000px.jpg" />
+    // <img id="itemDetails" src="public/images/items/thibodeau_lunar_calendar_2021_photo_06_1000px.jpg" />
+    // `,
+    itemMoreInfo: `
+    ${lunarCalendarBlocksPreorder}
+    <!-- <p class="additional-info">
+      Follow <a class="text-link" href="https://www.instagram.com/huetown/" target="_blank">@huetown</a> on Instagram to see this print's magical letterpress production in action.
+      And join the <a class="text-link" href="about.html">email list</a> to learn when new print editions are available.
+    </p> -->
+    `
+  },
+
+
   'lunarCalendarTwentyOne': {
     mainContent: item.itemPage,
     itemCategory: 'lunar-calendar',
@@ -128,11 +202,11 @@ const itemsInfo = {
     `,
     itemMoreInfo: `
     ${itemInfoUniversals.lunarCalendarBlocks}
-    <p class="additional-info">
+    <!-- <p class="additional-info">
       Follow <a class="text-link" href="https://www.instagram.com/huetown/" target="_blank">@huetown</a> on Instagram to see this print's magical letterpress production in action.
       And join the <a class="text-link" href="about.html">email list</a> to learn when new print editions are available.
       (Each 2021 lunar calendar preordered by December 4, 2020 included an <span class="ital"><a class="text-link" href="print-orca-lumina.html">Orca Lumina</a></span> mini-print: drawn, screen printed and initialed by me.)
-    </p>
+    </p> -->
     `
   },
   'lunarCalendarTwenty': {

@@ -84,9 +84,9 @@ const itemLoad = function (currentPage) {
   augmentExistingClasses([{ className: 'item-page', contentToLoad: item.itemTitle ? `item-title-${item.itemTitle}` : 'item-title'}]);
 
   void (currentPage.startsWith('lunarCalendar') && loadLunarCalendarMore(item));
-  // if  (currentPage.startsWith('lunarCalendarTwentytwoPreorder')) {
-  //   document.getElementById('itemPreorder').classList.add('visible');
-  // };
+  if  (currentPage.startsWith('lunarCalendarTwentyTwoPreorder')) {
+    document.getElementById('itemPreorder').classList.add('visible');
+  };
 
   /* Add class to center content on any postcard or print page (in item.scss) */
   if (currentPage.startsWith('postcard') || currentPage.startsWith('print')) {
