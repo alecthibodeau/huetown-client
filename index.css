@@ -1074,7 +1074,7 @@ PAGES
 .item-page .item-preorder.visible {
   display: inline;
   text-transform: uppercase;
-  color: #00cccc;
+  color: #fc5d58;
 }
 .item-page .item-name {
   font-size: 2rem;
@@ -1122,6 +1122,7 @@ PAGES
 @media only screen and (max-width: 1050px) {
   .item-page .item-price-container.lunar-calendar {
     margin: 0 10px 0 0;
+    top: 12px;
   }
 }
 @media only screen and (max-width: 850px) {

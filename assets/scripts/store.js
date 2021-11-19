@@ -256,9 +256,9 @@ const getItemInfo = (item, pageValueOrConcern) => {
     contentToLoad: item.itemMoreInfo
   };
 
-  const itemLimitedEdition = {
-    className: 'limited-edition',
-    contentToLoad: item.itemLimitedEdition
+  const itemPrintEdition = {
+    className: 'print-edition',
+    contentToLoad: item.itemPrintEdition
   };
 
   const itemLunarCalendarTitle = {
@@ -345,7 +345,7 @@ const getItemInfo = (item, pageValueOrConcern) => {
     itemMorePhotoPairFour,
     itemMoreInfo,
     itemLunarCalendarTitle,
-    itemLimitedEdition,
+    itemPrintEdition,
     itemLunarCalendarYear,
     itemLunarCalendarPaperInfo,
     itemLunarCalendarLocation

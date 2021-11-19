@@ -299,7 +299,7 @@
     &.visible {
       display: inline;
       text-transform: uppercase;
-      color: $huetown-green-intense;
+      color: $calendar-coral;
     }
   }
 
@@ -359,6 +359,7 @@
     &.lunar-calendar {
       @media only screen and (max-width: 1050px) {
         margin: 0 10px 0 0 ;
+        top: 12px;
       }
     }
 

@@ -19,7 +19,7 @@ const imageDirectory = 'public/images/';
 const itemsDirectory = `${imageDirectory}items/`;
 
 /* constants */
-const limitedEdition = `Hand numbered and signed by the artist in a limited edition of <span class="limited-edition"></span> prints`;
+const printEdition = `Hand numbered and signed by the artist in an edition of <span class="print-edition"></span> prints`;
 const lunarCalendarLocationProvidence = 'The calendar is designed, drawn and printed in Providence, Rhode Island, which is identified as a representative location within the artwork.';
 const lunarCalendarLocationNewYork = 'New York City is identified as a representative location within the artwork.';
 const moreInfo = `<a class="text-link" href="#itemDetails">(more info)</a>`;
@@ -34,19 +34,19 @@ const itemInfoUniversals = {
   drawingPrice: 55,
   lunarCalendarItemName: `
     <span class="lunar-calendar-title"></span><br>
-    <span  id="itemPreorder" class="item-preorder">preorder</span> <span class="lunar-calendar-year normal"></span> <span class="normal">lunar calendar</span>
+    <span id="itemPreorder" class="item-preorder">preorder</span> <span class="lunar-calendar-year normal"></span> <span class="normal">lunar calendar</span>
   `,
   lunarCalendarItemSubname: 'by Alec Thibodeau',
   lunarCalendarPrice: 40,
   lunarCalendarInfoOne: '19 x 11.75 inches',
   lunarCalendarInfoTwo: 'Letterpress print, printed by DWRI Letterpress',
-  lunarCalendarInfoThree: `${limitedEdition} ${moreInfo}`,
+  lunarCalendarInfoThree: `${printEdition} ${moreInfo}`,
   lunarCalendarInfoFour: 'Ships rolled and triple-packaged: archival wrap, eco-friendly protective tube and outer shipping container',
   lunarCalendarBlocks: `
     <div class=info-block>
       <span class="lunar-calendar-title ital"></span> is a letterpress-printed lunar calendar designed and drawn by Alec Thibodeau (me!),
       chronicling all phases of the moon for <span class="lunar-calendar-year"></span>.
-      From a limited edition of <span class="limited-edition"></span> prints <span class="lunar-calendar-title ital"></span> continues Alec's ongoing lunar calendar series,
+      From an edition of <span class="print-edition"></span> prints <span class="lunar-calendar-title ital"></span> continues Alec's ongoing lunar calendar series,
       which features ornate illustrations framing an annual cycle of moon shapes.
       As with each of Alec's previous lunar calendars this piece measures 19" x 11.75" (a golden rectangle) and is expertly printed by Dan Wood
       and his team at <a class="text-link" href="https://www.dwriletterpress.net" target="_blank">DWRI&nbsp;Letterpress</a>.
@@ -82,16 +82,16 @@ const lunarCalendarBlocksPreorder = `
   <div id="itemDetails">
     <p>
       <span class="bold">Preorder 2022 Lunar Calendar:</span>
-      Okay, my lunar calendar for 2022 is now in production at the print shop &mdash; with Dan making the letterpress magic happen for another limited edition.
-      Each lunar calendar preordered between now and November 26, 2021 will include a new <span class="ital">Proton Swan</span> print (2.5 x 2.5 inches).
-      <span class="bold">All preorders will ship by November 30th, 2021</span> (domestic shipping in the USA is a flat $7 rate to any address, regardless of item quantity).
+      Okay, my lunar calendar for 2022 is now in production at the print shop &mdash; with Dan making the letterpress magic happen for another edition.
+      Each lunar calendar preordered between now and <span class="bold">November 26, 2021</span> will include a new <span class="ital">Proton Swan</span> letterpress print (2.5 x 2.5 inches, also printed by DWRI).
+      All preorders will ship by <span class="bold">November 30th, 2021</span>. Huetown's domestic shipping charge in the USA is a flat $7 rate to any address, regardless of item quantity, via USPS Priority.
     </p>
     <p>
       <span class="bold">Important:</span> The above lunar calendar image is a digital-color simulation of what the final piece's inks and paper will look like. There may be some slight variations between the colors here and in the print.
     </p>
   </div>
   <div class="item-accompanying">
-    <img src="${itemsDirectory}orca_lumina_300px.jpg" />
+    <img src="${itemsDirectory}proton_swan_300px.jpg" />
     <div>
       <span>Proton Swan</span> <span>print</span>
     </div>
@@ -99,7 +99,7 @@ const lunarCalendarBlocksPreorder = `
   <div>
     <p class="additional-info">
       Follow <a class="text-link" href="https://www.instagram.com/huetown/" target="_blank">@huetown</a> on Instagram to see this print's magical letterpress production in action.
-      And join the <a class="text-link" href="about.html">email list</a> to learn when new print editions are available.
+      And join the <a class="text-link" href="about.html">email list</a> to learn when other print editions are available.
     </p>
   </div>
   <div>
@@ -133,11 +133,11 @@ const itemsInfo = {
     itemCategory: 'lunar-calendar',
     itemLunarCalendarTitle: 'Entrancer\'s Medallion',
     itemLunarCalendarYear: '2022',
-    itemLunarCalendarEdition: '',
-    itemLunarCalendarPaperInfo: 'Arjowiggins Creative Papers\' (distributed by Mohawk) acid-free 300gsm Keaykolour Coral 111# cover paper',
+    itemPrintEdition: 500,
+    itemLunarCalendarPaperInfo: 'Arjowiggins Creative Papers (distributed by Mohawk) acid-free 300gsm Keaykolour Coral 111# cover paper',
     itemName: itemInfoUniversals.lunarCalendarItemName,
     itemSubname: itemInfoUniversals.lunarCalendarItemSubname,
-    itemImageFront: `${itemsDirectory}thibodeau_lunar_calendar_2021_preorder_image_700px.jpg`,
+    itemImageFront: `${itemsDirectory}thibodeau_lunar_calendar_2022_preorder_image_700px.jpg`,
     itemInfoOne: itemInfoUniversals.lunarCalendarInfoOne,
     itemInfoTwo: itemInfoUniversals.lunarCalendarInfoTwo,
     itemInfoThree: itemInfoUniversals.lunarCalendarInfoThree,
@@ -145,38 +145,14 @@ const itemsInfo = {
     itemPrice: itemInfoUniversals.lunarCalendarPrice,
     itemLunarCalendarLocation: lunarCalendarLocationProvidence,
     itemId: '7XWKF7SGUGECU',
-    // itemMorePhotoPairOne: `
-    //   <img src="public/images/items/thibodeau_lunar_calendar_2021_photo_01_1000px.jpg" />
-    //   <img src="public/images/items/thibodeau_lunar_calendar_2021_photo_02_1000px.jpg" />
-    // `,
-    // itemMorePhotoPairTwo: `
-    //   <img src="public/images/items/thibodeau_lunar_calendar_2021_photo_03_1000px.jpg" />
-    //   <img src="public/images/items/thibodeau_lunar_calendar_2021_photo_04_1000px.jpg" />
-    // `,
-    // itemMorePhotoPairThree: `
-    //   <img src="public/images/items/thibodeau_lunar_calendar_2021_photo_07_1000px.jpg" />
-    //   <img src="public/images/items/thibodeau_lunar_calendar_2021_photo_08_1000px.jpg" />
-    // `,
-    // itemMorePhotoPairFour: `
-    // <img src="public/images/items/thibodeau_lunar_calendar_2021_photo_05_1000px.jpg" />
-    // <img id="itemDetails" src="public/images/items/thibodeau_lunar_calendar_2021_photo_06_1000px.jpg" />
-    // `,
-    itemMoreInfo: `
-    ${lunarCalendarBlocksPreorder}
-    <!-- <p class="additional-info">
-      Follow <a class="text-link" href="https://www.instagram.com/huetown/" target="_blank">@huetown</a> on Instagram to see this print's magical letterpress production in action.
-      And join the <a class="text-link" href="about.html">email list</a> to learn when new print editions are available.
-    </p> -->
-    `
+    itemMoreInfo: lunarCalendarBlocksPreorder
   },
-
-
   'lunarCalendarTwentyOne': {
     mainContent: item.itemPage,
     itemCategory: 'lunar-calendar',
     itemLunarCalendarTitle: 'Casting Levels',
     itemLunarCalendarYear: '2021',
-    itemLimitedEdition: 500,
+    itemPrintEdition: 500,
     itemLunarCalendarPaperInfo: 'Arjowiggins Creative Papers (distributed by Mohawk) acid-free 300gsm Keaykolour Kiwi 111# cover paper',
     itemName: itemInfoUniversals.lunarCalendarItemName,
     itemSubname: itemInfoUniversals.lunarCalendarItemSubname,
@@ -200,21 +176,14 @@ const itemsInfo = {
       <img class="large-detail-image" src="public/images/items/thibodeau_lunar_calendar_2021_photo_05_1000px.jpg" />
       <img id="itemDetails" class="large-detail-image" src="public/images/items/thibodeau_lunar_calendar_2021_photo_09_1000px.jpg" />
     `,
-    itemMoreInfo: `
-    ${itemInfoUniversals.lunarCalendarBlocks}
-    <!-- <p class="additional-info">
-      Follow <a class="text-link" href="https://www.instagram.com/huetown/" target="_blank">@huetown</a> on Instagram to see this print's magical letterpress production in action.
-      And join the <a class="text-link" href="about.html">email list</a> to learn when new print editions are available.
-      (Each 2021 lunar calendar preordered by December 4, 2020 included an <span class="ital"><a class="text-link" href="print-orca-lumina.html">Orca Lumina</a></span> mini-print: drawn, screen printed and initialed by me.)
-    </p> -->
-    `
+    itemMoreInfo: itemInfoUniversals.lunarCalendarBlocks
   },
   'lunarCalendarTwenty': {
     mainContent: item.itemPage,
     itemCategory: 'lunar-calendar',
     itemLunarCalendarTitle: 'The Instruments Agree',
     itemLunarCalendarYear: '2020',
-    itemLimitedEdition: 500,
+    itemPrintEdition: 500,
     itemLunarCalendarPaperInfo: 'Mohawk Fine Papers\' acid-free 300gsm Keaykolour Caribbean Blue 111# cover paper',
     itemName: itemInfoUniversals.lunarCalendarItemName,
     itemSubname: itemInfoUniversals.lunarCalendarItemSubname,
@@ -239,8 +208,8 @@ const itemsInfo = {
       <img src="public/images/items/thibodeau_lunar_calendar_2020_photo_08_1000px.jpg" />
     `,
     itemMorePhotoPairFour: `
-    <img src="public/images/items/thibodeau_lunar_calendar_2020_photo_05_1000px.jpg" />
-    <img id="itemDetails" src="public/images/items/thibodeau_lunar_calendar_2020_photo_06_1000px.jpg" />
+      <img src="public/images/items/thibodeau_lunar_calendar_2020_photo_05_1000px.jpg" />
+      <img id="itemDetails" src="public/images/items/thibodeau_lunar_calendar_2020_photo_06_1000px.jpg" />
     `,
     itemMoreInfo: itemInfoUniversals.lunarCalendarBlocks
   },
@@ -249,7 +218,7 @@ const itemsInfo = {
     itemCategory: 'lunar-calendar',
     itemLunarCalendarTitle: 'Orchard Quest',
     itemLunarCalendarYear: '2019',
-    itemLimitedEdition: 500,
+    itemPrintEdition: 500,
     itemLunarCalendarPaperInfo: 'French Paper Company\'s acid-free 269gsm Pop-Tone Tangy Orange 100# cover paper',
     itemName: itemInfoUniversals.lunarCalendarItemName,
     itemSubname: itemInfoUniversals.lunarCalendarItemSubname,
@@ -284,7 +253,7 @@ const itemsInfo = {
     itemCategory: 'lunar-calendar',
     itemLunarCalendarTitle: 'Shimmery Circuit',
     itemLunarCalendarYear: '2018',
-    itemLimitedEdition: 1000,
+    itemPrintEdition: 1000,
     itemLunarCalendarPaperInfo: 'French Paper Company\'s acid-free 269gsm Pop-Tone Grape Jelly 100# cover paper',
     itemName: itemInfoUniversals.lunarCalendarItemName,
     itemSubname: itemInfoUniversals.lunarCalendarItemSubname,
@@ -319,7 +288,7 @@ const itemsInfo = {
     itemCategory: 'lunar-calendar',
     itemLunarCalendarTitle: 'I Still See the X',
     itemLunarCalendarYear: '2017',
-    itemLimitedEdition: 1000,
+    itemPrintEdition: 1000,
     itemLunarCalendarPaperInfo: 'French Paper Company\'s acid-free 269gsm Pop-Tone Razzle Berry 100# cover paper',
     itemName: itemInfoUniversals.lunarCalendarItemName,
     itemSubname: itemInfoUniversals.lunarCalendarItemSubname,
@@ -441,11 +410,11 @@ const itemsInfo = {
     itemCategory: 'print',
     itemName: 'Funktionslust for All of Us',
     itemSubname: 'by Alec Thibodeau',
-    itemLimitedEdition: 50,
+    itemPrintEdition: 50,
     itemImageFront: 'public/images/items/print_funktionslust_01.jpg',
     itemInfoOne: '5.75 x 5.75 inches',
     itemInfoTwo: 'Screen print, printed by the artist',
-    itemInfoThree: limitedEdition,
+    itemInfoThree: printEdition,
     itemInfoFour: shipsFlat,
     itemPrice: 15,
     itemId: 'VARZ4F5RHAP9Y'
@@ -468,11 +437,11 @@ const itemsInfo = {
     itemCategory: 'print',
     itemName: 'Stentorian',
     itemSubname: 'by Alec Thibodeau',
-    itemLimitedEdition: 250,
+    itemPrintEdition: 250,
     itemImageFront: 'public/images/items/print_stentorian_01.jpg',
     itemInfoOne: '5.5 x 5.5 inches',
     itemInfoTwo: 'Letterpress print, printed by DWRI Letterpress',
-    itemInfoThree: `${limitedEdition} ${moreInfo}`,
+    itemInfoThree: `${printEdition} ${moreInfo}`,
     itemInfoFour: shipsFlat,
     itemPrice: 15,
     itemId: 'AUN3U4NQ52J2W',
@@ -486,7 +455,7 @@ const itemsInfo = {
     `,
     itemMoreInfo: `
       <div>
-        <span class="ital">Stentorian</span> is a limited-edition letterpress print.
+        <span class="ital">Stentorian</span> is a letterpress print.
         It measures 5.5" x 5.5" overall, with an image dimension of 3.5" x 3.5" in two ink colors.
         The edition is exquisitely printed from Alec's original drawings by Dan Wood and his team at
         <a class="text-link" href="https://www.dwriletterpress.net" target="_blank">DWRI&nbsp;Letterpress</a>
@@ -501,11 +470,11 @@ const itemsInfo = {
     itemCategory: 'print',
     itemName: 'Abundance',
     itemSubname: 'by Alec Thibodeau',
-    itemLimitedEdition: 250,
+    itemPrintEdition: 250,
     itemImageFront: 'public/images/items/print_abundance_01.jpg',
     itemInfoOne: '5.5 x 5.5 inches',
     itemInfoTwo: 'Letterpress print, printed by DWRI Letterpress',
-    itemInfoThree: `${limitedEdition} ${moreInfo}`,
+    itemInfoThree: `${printEdition} ${moreInfo}`,
     itemInfoFour: shipsFlat,
     itemPrice: 25,
     itemId: 'B6SBUBH8JRKV6',
@@ -519,7 +488,7 @@ const itemsInfo = {
     `,
     itemMoreInfo: `
       <div>
-        <span class="ital">Abundance</span> is a limited-edition letterpress print.
+        <span class="ital">Abundance</span> is a letterpress print.
         It measures 5.5" x 5.5" overall, with an image dimension of 4" x 4" in three ink colors and a layer of stamped blue foil.
         The edition is exquisitely printed from Alec's original drawings by Dan Wood and his team at
         <a class="text-link" href="https://www.dwriletterpress.net" target="_blank">DWRI&nbsp;Letterpress</a>
