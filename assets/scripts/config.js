@@ -90,7 +90,7 @@ const lunarCalendarBlocksPreorder = `
       <span class="bold">Preorder 2022 Lunar Calendar:</span>
       Okay, my lunar calendar for 2022 is now in production at the print shop &mdash; with Dan making the letterpress magic happen for another edition.
       Each lunar calendar preordered between now and <span class="bold">November 26, 2021</span> will include a new <span class="ital"><a class="text-link" href="#protonSwan">Proton Swan</a></span> letterpress print (2.5 x 2.5 inches, also printed by DWRI).
-      All preorders will ship by <span class="bold">November 30th, 2021</span>. Huetown's domestic shipping charge in the USA is a flat $7 rate to any address, regardless of item quantity, via USPS Priority.
+      All preorders will ship by <span class="bold">November 30, 2021</span>. Huetown's domestic shipping charge in the USA is a flat $7 rate to any address, regardless of item quantity, via USPS Priority.
     </p>
     <p>
       <span class="bold">Important:</span> The above lunar calendar image is a digital-color simulation of what the final piece's inks and paper will look like. There may be some slight variations between the colors here and in the print.
