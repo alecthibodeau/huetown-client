@@ -14,17 +14,23 @@ import veganly from './pages/veganly.js';
 import item from './pages/item-page.js';
 
 /* routes */
-const imageDirectory = 'public/images/';
-// const drawingsDirectory = `${imageDirectory}home/drawings/`;
-const itemsDirectory = `${imageDirectory}items/`;
+const imagesDirectory = 'public/images/';
+const itemsDirectory = `${imagesDirectory}items/`;
 
 /* constants */
-const printEdition = `Hand numbered and signed by the artist in an edition of <span class="print-edition"></span> prints`;
+const byAlecThibodeau = 'by Alec Thibodeau';
+const categoryLunarCalendar = 'lunar-calendar';
+const categoryPostcard = 'postcard';
+const categoryPrint = 'print';
+const creditLetterpressPrint = 'Letterpress print, printed by DWRI Letterpress';
+const creditScreenPrint = 'Screen print, printed by the artist';
+const dimensionsFiveAndAHalfInches = '5.5 x 5.5 inches';
 const lunarCalendarLocationProvidence = 'The calendar is designed, drawn and printed in Providence, Rhode Island, which is identified as a representative location within the artwork.';
 const lunarCalendarLocationNewYork = 'New York City is identified as a representative location within the artwork.';
 const moreInfo = `<a class="text-link" href="#itemDetails">(more info)</a>`;
-const shipsFlat = 'Ships flat';
 const orderNow = `<a class="text-link" href="#featureImage">Order now.</a>`;
+const printEdition = `Hand numbered and signed by the artist in an edition of <span class="print-edition"></span> prints`;
+const shipsFlat = 'Ships flat';
 
 const itemInfoUniversals = {
   drawingInfoOriginalDrawing: `original drawing`,
@@ -36,10 +42,10 @@ const itemInfoUniversals = {
     <span class="lunar-calendar-title"></span><br>
     <span id="itemPreorder" class="item-preorder">preorder</span> <span class="lunar-calendar-year normal"></span> <span class="normal">lunar calendar</span>
   `,
-  lunarCalendarItemSubname: 'by Alec Thibodeau',
+  lunarCalendarItemSubname: byAlecThibodeau,
   lunarCalendarPrice: 40,
   lunarCalendarInfoOne: '19 x 11.75 inches',
-  lunarCalendarInfoTwo: 'Letterpress print, printed by DWRI Letterpress',
+  lunarCalendarInfoTwo: creditLetterpressPrint,
   lunarCalendarInfoThree: `${printEdition} ${moreInfo}`,
   lunarCalendarInfoFour: 'Ships rolled and triple-packaged: archival wrap, eco-friendly protective tube and outer shipping container',
   lunarCalendarBlocks: `
@@ -83,14 +89,19 @@ const lunarCalendarBlocksPreorder = `
     <p>
       <span class="bold">Preorder 2022 Lunar Calendar:</span>
       Okay, my lunar calendar for 2022 is now in production at the print shop &mdash; with Dan making the letterpress magic happen for another edition.
-      Each lunar calendar preordered between now and <span class="bold">November 26, 2021</span> will include a new <span class="ital">Proton Swan</span> letterpress print (2.5 x 2.5 inches, also printed by DWRI).
+      Each lunar calendar preordered between now and <span class="bold">November 26, 2021</span> will include a new <span class="ital"><a class="text-link" href="#protonSwan">Proton Swan</a></span> letterpress print (2.5 x 2.5 inches, also printed by DWRI).
       All preorders will ship by <span class="bold">November 30th, 2021</span>. Huetown's domestic shipping charge in the USA is a flat $7 rate to any address, regardless of item quantity, via USPS Priority.
     </p>
     <p>
       <span class="bold">Important:</span> The above lunar calendar image is a digital-color simulation of what the final piece's inks and paper will look like. There may be some slight variations between the colors here and in the print.
     </p>
+    <p>
+      <span class="bold">Local pick-up:</span> If you'll be on the West Side of Providence,
+      Rhode Island in December 2021 then email <a class="text-link" href="mailto:info@huetown.com" target="_blank">info@huetown.com</a>
+      to arrange a local pick-up (with payment by <a class="text-link" href="https://venmo.com" target="_blank">Venmo<a> or credit card).
+    </p>
   </div>
-  <div class="item-accompanying">
+  <div id="protonSwan" class="item-accompanying">
     <img src="${itemsDirectory}proton_swan_300px.jpg" />
     <div>
       <span>Proton Swan</span> <span>print</span>
@@ -130,7 +141,7 @@ const itemsInfo = {
 
   'lunarCalendarTwentyTwoPreorder': {
     mainContent: item.itemPage,
-    itemCategory: 'lunar-calendar',
+    itemCategory: categoryLunarCalendar,
     itemLunarCalendarTitle: 'Entrancer\'s Medallion',
     itemLunarCalendarYear: '2022',
     itemPrintEdition: 500,
@@ -149,7 +160,7 @@ const itemsInfo = {
   },
   'lunarCalendarTwentyOne': {
     mainContent: item.itemPage,
-    itemCategory: 'lunar-calendar',
+    itemCategory: categoryLunarCalendar,
     itemLunarCalendarTitle: 'Casting Levels',
     itemLunarCalendarYear: '2021',
     itemPrintEdition: 500,
@@ -165,26 +176,26 @@ const itemsInfo = {
     itemLunarCalendarLocation: lunarCalendarLocationProvidence,
     itemId: 'XA698W9J6TGEL',
     itemMorePhotoPairOne: `
-      <img class="large-detail-image" src="public/images/items/thibodeau_lunar_calendar_2021_photo_01_1000px.jpg" />
-      <img class="large-detail-image" src="public/images/items/thibodeau_lunar_calendar_2021_photo_02_1000px.jpg" />
+      <img class="large-detail-image" src="${itemsDirectory}thibodeau_lunar_calendar_2021_photo_01_1000px.jpg" />
+      <img class="large-detail-image" src="${itemsDirectory}thibodeau_lunar_calendar_2021_photo_02_1000px.jpg" />
     `,
     itemMorePhotoPairTwo: `
-      <img class="large-detail-image" src="public/images/items/thibodeau_lunar_calendar_2021_photo_03_1000px.jpg" />
-      <img class="large-detail-image" src="public/images/items/thibodeau_lunar_calendar_2021_photo_04_1000px.jpg" />
+      <img class="large-detail-image" src="${itemsDirectory}thibodeau_lunar_calendar_2021_photo_03_1000px.jpg" />
+      <img class="large-detail-image" src="${itemsDirectory}thibodeau_lunar_calendar_2021_photo_04_1000px.jpg" />
     `,
     itemMorePhotoPairThree: `
-      <img class="large-detail-image" src="public/images/items/thibodeau_lunar_calendar_2021_photo_05_1000px.jpg" />
-      <img id="itemDetails" class="large-detail-image" src="public/images/items/thibodeau_lunar_calendar_2021_photo_09_1000px.jpg" />
+      <img class="large-detail-image" src="${itemsDirectory}thibodeau_lunar_calendar_2021_photo_05_1000px.jpg" />
+      <img id="itemDetails" class="large-detail-image" src="${itemsDirectory}thibodeau_lunar_calendar_2021_photo_09_1000px.jpg" />
     `,
     itemMoreInfo: itemInfoUniversals.lunarCalendarBlocks
   },
   'lunarCalendarTwenty': {
     mainContent: item.itemPage,
-    itemCategory: 'lunar-calendar',
+    itemCategory: categoryLunarCalendar,
     itemLunarCalendarTitle: 'The Instruments Agree',
     itemLunarCalendarYear: '2020',
     itemPrintEdition: 500,
-    itemLunarCalendarPaperInfo: 'Mohawk Fine Papers\' acid-free 300gsm Keaykolour Caribbean Blue 111# cover paper',
+    itemLunarCalendarPaperInfo: 'Mohawk Fine Papers acid-free 300gsm Keaykolour Caribbean Blue 111# cover paper',
     itemName: itemInfoUniversals.lunarCalendarItemName,
     itemSubname: itemInfoUniversals.lunarCalendarItemSubname,
     itemImageFront: `${itemsDirectory}thibodeau_lunar_calendar_2020_photo_main_1000px.jpg`,
@@ -196,30 +207,30 @@ const itemsInfo = {
     itemLunarCalendarLocation: lunarCalendarLocationProvidence,
     itemId: 'TGVEUGQD58AX2',
     itemMorePhotoPairOne: `
-      <img src="public/images/items/thibodeau_lunar_calendar_2020_photo_01_1000px.jpg" />
-      <img src="public/images/items/thibodeau_lunar_calendar_2020_photo_02_1000px.jpg" />
+      <img src="${itemsDirectory}thibodeau_lunar_calendar_2020_photo_01_1000px.jpg" />
+      <img src="${itemsDirectory}thibodeau_lunar_calendar_2020_photo_02_1000px.jpg" />
     `,
     itemMorePhotoPairTwo: `
-      <img src="public/images/items/thibodeau_lunar_calendar_2020_photo_03_1000px.jpg" />
-      <img src="public/images/items/thibodeau_lunar_calendar_2020_photo_04_1000px.jpg" />
+      <img src="${itemsDirectory}thibodeau_lunar_calendar_2020_photo_03_1000px.jpg" />
+      <img src="${itemsDirectory}thibodeau_lunar_calendar_2020_photo_04_1000px.jpg" />
     `,
     itemMorePhotoPairThree: `
-      <img src="public/images/items/thibodeau_lunar_calendar_2020_photo_07_1000px.jpg" />
-      <img src="public/images/items/thibodeau_lunar_calendar_2020_photo_08_1000px.jpg" />
+      <img src="${itemsDirectory}thibodeau_lunar_calendar_2020_photo_07_1000px.jpg" />
+      <img src="${itemsDirectory}thibodeau_lunar_calendar_2020_photo_08_1000px.jpg" />
     `,
     itemMorePhotoPairFour: `
-      <img src="public/images/items/thibodeau_lunar_calendar_2020_photo_05_1000px.jpg" />
-      <img id="itemDetails" src="public/images/items/thibodeau_lunar_calendar_2020_photo_06_1000px.jpg" />
+      <img src="${itemsDirectory}thibodeau_lunar_calendar_2020_photo_05_1000px.jpg" />
+      <img id="itemDetails" src="${itemsDirectory}thibodeau_lunar_calendar_2020_photo_06_1000px.jpg" />
     `,
     itemMoreInfo: itemInfoUniversals.lunarCalendarBlocks
   },
   'lunarCalendarNineteen': {
     mainContent: item.itemPage,
-    itemCategory: 'lunar-calendar',
+    itemCategory: categoryLunarCalendar,
     itemLunarCalendarTitle: 'Orchard Quest',
     itemLunarCalendarYear: '2019',
     itemPrintEdition: 500,
-    itemLunarCalendarPaperInfo: 'French Paper Company\'s acid-free 269gsm Pop-Tone Tangy Orange 100# cover paper',
+    itemLunarCalendarPaperInfo: 'French Paper Company acid-free 269gsm Pop-Tone Tangy Orange 100# cover paper',
     itemName: itemInfoUniversals.lunarCalendarItemName,
     itemSubname: itemInfoUniversals.lunarCalendarItemSubname,
     itemImageFront: `${itemsDirectory}thibodeau_lunar_calendar_2019_main.jpg`,
@@ -231,30 +242,30 @@ const itemsInfo = {
     itemLunarCalendarLocation: lunarCalendarLocationProvidence,
     itemId: 'T45GH9BL83VQ4',
     itemMorePhotoPairOne: `
-      <img src="public/images/items/thibodeau_lunar_calendar_2019_photo_01.jpg" />
-      <img src="public/images/items/thibodeau_lunar_calendar_2019_photo_02.jpg" />
+      <img src="${itemsDirectory}thibodeau_lunar_calendar_2019_photo_01.jpg" />
+      <img src="${itemsDirectory}thibodeau_lunar_calendar_2019_photo_02.jpg" />
     `,
     itemMorePhotoPairTwo: `
-      <img src="public/images/items/thibodeau_lunar_calendar_2019_photo_03.jpg" />
-      <img src="public/images/items/thibodeau_lunar_calendar_2019_photo_04.jpg" />
+      <img src="${itemsDirectory}thibodeau_lunar_calendar_2019_photo_03.jpg" />
+      <img src="${itemsDirectory}thibodeau_lunar_calendar_2019_photo_04.jpg" />
     `,
     itemMorePhotoPairThree: `
-      <img src="public/images/items/thibodeau_lunar_calendar_2019_photo_05.jpg" />
-      <img src="public/images/items/thibodeau_lunar_calendar_2019_photo_06.jpg" />
+      <img src="${itemsDirectory}thibodeau_lunar_calendar_2019_photo_05.jpg" />
+      <img src="${itemsDirectory}thibodeau_lunar_calendar_2019_photo_06.jpg" />
     `,
     itemMorePhotoPairFour: `
-      <img src="public/images/items/thibodeau_lunar_calendar_2019_photo_07.jpg" />
-      <img id="itemDetails" src="public/images/items/thibodeau_lunar_calendar_2019_photo_08.jpg" />
+      <img src="${itemsDirectory}thibodeau_lunar_calendar_2019_photo_07.jpg" />
+      <img id="itemDetails" src="${itemsDirectory}thibodeau_lunar_calendar_2019_photo_08.jpg" />
     `,
     itemMoreInfo: itemInfoUniversals.lunarCalendarBlocks
   },
   'lunarCalendarEighteen': {
     mainContent: item.itemPage,
-    itemCategory: 'lunar-calendar',
+    itemCategory: categoryLunarCalendar,
     itemLunarCalendarTitle: 'Shimmery Circuit',
     itemLunarCalendarYear: '2018',
     itemPrintEdition: 1000,
-    itemLunarCalendarPaperInfo: 'French Paper Company\'s acid-free 269gsm Pop-Tone Grape Jelly 100# cover paper',
+    itemLunarCalendarPaperInfo: 'French Paper Company acid-free 269gsm Pop-Tone Grape Jelly 100# cover paper',
     itemName: itemInfoUniversals.lunarCalendarItemName,
     itemSubname: itemInfoUniversals.lunarCalendarItemSubname,
     itemImageFront: `${itemsDirectory}thibodeau_lunar_calendar_2018_main.jpg`,
@@ -266,30 +277,30 @@ const itemsInfo = {
     itemLunarCalendarLocation: lunarCalendarLocationNewYork,
     itemId: '4LN49ZLYQLY88',
     itemMorePhotoPairOne: `
-      <img src="public/images/items/thibodeau_lunar_calendar_2018_photo_01.jpg" />
-      <img src="public/images/items/thibodeau_lunar_calendar_2018_photo_02.jpg" />
+      <img src="${itemsDirectory}thibodeau_lunar_calendar_2018_photo_01.jpg" />
+      <img src="${itemsDirectory}thibodeau_lunar_calendar_2018_photo_02.jpg" />
     `,
     itemMorePhotoPairTwo: `
-      <img src="public/images/items/thibodeau_lunar_calendar_2018_photo_03.jpg" />
-      <img src="public/images/items/thibodeau_lunar_calendar_2018_photo_04.jpg" />
+      <img src="${itemsDirectory}thibodeau_lunar_calendar_2018_photo_03.jpg" />
+      <img src="${itemsDirectory}thibodeau_lunar_calendar_2018_photo_04.jpg" />
     `,
     itemMorePhotoPairThree: `
-      <img src="public/images/items/thibodeau_lunar_calendar_2018_photo_05.jpg" />
-      <img src="public/images/items/thibodeau_lunar_calendar_2018_photo_06.jpg" />
+      <img src="${itemsDirectory}thibodeau_lunar_calendar_2018_photo_05.jpg" />
+      <img src="${itemsDirectory}thibodeau_lunar_calendar_2018_photo_06.jpg" />
     `,
     itemMorePhotoPairFour: `
-      <img src="public/images/items/thibodeau_lunar_calendar_2018_photo_07.jpg" />
-      <img id="itemDetails" src="public/images/items/thibodeau_lunar_calendar_2018_photo_08.jpg" />
+      <img src="${itemsDirectory}thibodeau_lunar_calendar_2018_photo_07.jpg" />
+      <img id="itemDetails" src="${itemsDirectory}thibodeau_lunar_calendar_2018_photo_08.jpg" />
     `,
     itemMoreInfo: itemInfoUniversals.lunarCalendarBlocks
   },
   'lunarCalendarSeventeen': {
     mainContent: item.itemPage,
-    itemCategory: 'lunar-calendar',
+    itemCategory: categoryLunarCalendar,
     itemLunarCalendarTitle: 'I Still See the X',
     itemLunarCalendarYear: '2017',
     itemPrintEdition: 1000,
-    itemLunarCalendarPaperInfo: 'French Paper Company\'s acid-free 269gsm Pop-Tone Razzle Berry 100# cover paper',
+    itemLunarCalendarPaperInfo: 'French Paper Company acid-free 269gsm Pop-Tone Razzle Berry 100# cover paper',
     itemName: itemInfoUniversals.lunarCalendarItemName,
     itemSubname: itemInfoUniversals.lunarCalendarItemSubname,
     itemImageFront: `${itemsDirectory}thibodeau_lunar_calendar_2017_main.jpg`,
@@ -301,25 +312,25 @@ const itemsInfo = {
     itemLunarCalendarLocation: lunarCalendarLocationProvidence,
     itemId: 'C4RW9LGDQ8NYL',
     itemMorePhotoPairOne: `
-      <img src="public/images/items/thibodeau_lunar_calendar_2017_photo_01.jpg" />
-      <img src="public/images/items/thibodeau_lunar_calendar_2017_photo_02.jpg" />
+      <img src="${itemsDirectory}thibodeau_lunar_calendar_2017_photo_01.jpg" />
+      <img src="${itemsDirectory}thibodeau_lunar_calendar_2017_photo_02.jpg" />
     `,
     itemMorePhotoPairTwo: `
-      <img src="public/images/items/thibodeau_lunar_calendar_2017_photo_03.jpg" />
-      <img src="public/images/items/thibodeau_lunar_calendar_2017_photo_04.jpg" />
+      <img src="${itemsDirectory}thibodeau_lunar_calendar_2017_photo_03.jpg" />
+      <img src="${itemsDirectory}thibodeau_lunar_calendar_2017_photo_04.jpg" />
     `,
     itemMorePhotoPairThree: `
-      <img src="public/images/items/thibodeau_lunar_calendar_2017_photo_05.jpg" />
-      <img id="itemDetails" src="public/images/items/thibodeau_lunar_calendar_2017_photo_06.jpg" />
+      <img src="${itemsDirectory}thibodeau_lunar_calendar_2017_photo_05.jpg" />
+      <img id="itemDetails" src="${itemsDirectory}thibodeau_lunar_calendar_2017_photo_06.jpg" />
     `,
     itemMoreInfo: itemInfoUniversals.lunarCalendarBlocks
   },
   'postcardAssets': {
     mainContent: item.itemPage,
-    itemCategory: 'postcard',
+    itemCategory: categoryPostcard,
     itemName: 'Assets',
-    itemSubname: 'postcard',
-    itemImageFront: 'public/images/items/postcard_assets.png',
+    itemSubname: categoryPostcard,
+    itemImageFront: `${itemsDirectory}postcard_assets.png`,
     itemInfoOne: itemInfoUniversals.postcardInfoOne,
     itemInfoTwo: itemInfoUniversals.postcardInfoTwo,
     itemInfoThree: itemInfoUniversals.postcardInfoThree,
@@ -329,10 +340,10 @@ const itemsInfo = {
   },
   'postcardCachalot': {
     mainContent: item.itemPage,
-    itemCategory: 'postcard',
+    itemCategory: categoryPostcard,
     itemName: 'Cachalot',
-    itemSubname: 'postcard',
-    itemImageFront: 'public/images/items/postcard_cachalot.png',
+    itemSubname: categoryPostcard,
+    itemImageFront: `${itemsDirectory}postcard_cachalot.png`,
     itemInfoOne: itemInfoUniversals.postcardInfoOne,
     itemInfoTwo: itemInfoUniversals.postcardInfoTwo,
     itemInfoThree: itemInfoUniversals.postcardInfoThree,
@@ -342,10 +353,10 @@ const itemsInfo = {
   },
   'postcardFlanneryOConnor': {
     mainContent: item.itemPage,
-    itemCategory: 'postcard',
+    itemCategory: categoryPostcard,
     itemName: `Flannery O'Connor`,
-    itemSubname: 'postcard',
-    itemImageFront: 'public/images/items/postcard_flannery_oconnor.png',
+    itemSubname: categoryPostcard,
+    itemImageFront: `${itemsDirectory}postcard_flannery_oconnor.png`,
     itemInfoOne: itemInfoUniversals.postcardInfoOne,
     itemInfoTwo: itemInfoUniversals.postcardInfoTwo,
     itemInfoThree: itemInfoUniversals.postcardInfoThree,
@@ -355,10 +366,10 @@ const itemsInfo = {
   },
   'postcardGreatWhiteShark': {
     mainContent: item.itemPage,
-    itemCategory: 'postcard',
+    itemCategory: categoryPostcard,
     itemName: 'Great White Shark',
-    itemSubname: 'postcard',
-    itemImageFront: 'public/images/items/postcard_great_white_shark.png',
+    itemSubname: categoryPostcard,
+    itemImageFront: `${itemsDirectory}postcard_great_white_shark.png`,
     itemInfoOne: itemInfoUniversals.postcardInfoOne,
     itemInfoTwo: itemInfoUniversals.postcardInfoTwo,
     itemInfoThree: itemInfoUniversals.postcardInfoThree,
@@ -368,10 +379,10 @@ const itemsInfo = {
   },
   'postcardHermanMelville': {
     mainContent: item.itemPage,
-    itemCategory: 'postcard',
+    itemCategory: categoryPostcard,
     itemName: 'Herman Melville',
-    itemSubname: 'postcard',
-    itemImageFront: 'public/images/items/postcard_herman_melville.png',
+    itemSubname: categoryPostcard,
+    itemImageFront: `${itemsDirectory}postcard_herman_melville.png`,
     itemInfoOne: itemInfoUniversals.postcardInfoOne,
     itemInfoTwo: itemInfoUniversals.postcardInfoTwo,
     itemInfoThree: itemInfoUniversals.postcardInfoThree,
@@ -381,10 +392,10 @@ const itemsInfo = {
   },
   'postcardHippopotamus': {
     mainContent: item.itemPage,
-    itemCategory: 'postcard',
+    itemCategory: categoryPostcard,
     itemName: 'Hippopotamus',
-    itemSubname: 'postcard',
-    itemImageFront: 'public/images/items/postcard_hippopotamus.png',
+    itemSubname: categoryPostcard,
+    itemImageFront: `${itemsDirectory}postcard_hippopotamus.png`,
     itemInfoOne: itemInfoUniversals.postcardInfoOne,
     itemInfoTwo: itemInfoUniversals.postcardInfoTwo,
     itemInfoThree: itemInfoUniversals.postcardInfoThree,
@@ -394,10 +405,10 @@ const itemsInfo = {
   },
   'postcardRhodeIslandWhale': {
     mainContent: item.itemPage,
-    itemCategory: 'postcard',
+    itemCategory: categoryPostcard,
     itemName: 'Rhode Island Whale',
-    itemSubname: 'postcard',
-    itemImageFront: 'public/images/items/postcard_rhode_island_whale.png',
+    itemSubname: categoryPostcard,
+    itemImageFront: `${itemsDirectory}postcard_rhode_island_whale.png`,
     itemInfoOne: itemInfoUniversals.postcardInfoOne,
     itemInfoTwo: itemInfoUniversals.postcardInfoTwo,
     itemInfoThree: itemInfoUniversals.postcardInfoThree,
@@ -405,86 +416,27 @@ const itemsInfo = {
     itemPrice: itemInfoUniversals.postcardPrice,
     itemId: 'WZXP99EBYSU5A'
   },
-  'printFunktionslust': {
-    mainContent: item.itemPage,
-    itemCategory: 'print',
-    itemName: 'Funktionslust for All of Us',
-    itemSubname: 'by Alec Thibodeau',
-    itemPrintEdition: 50,
-    itemImageFront: 'public/images/items/print_funktionslust_01.jpg',
-    itemInfoOne: '5.75 x 5.75 inches',
-    itemInfoTwo: 'Screen print, printed by the artist',
-    itemInfoThree: printEdition,
-    itemInfoFour: shipsFlat,
-    itemPrice: 15,
-    itemId: 'VARZ4F5RHAP9Y'
-  },
-  'printOrcaLumina': {
-    mainContent: item.itemPage,
-    itemCategory: 'print',
-    itemName: 'Orca Lumina',
-    itemSubname: 'by Alec Thibodeau',
-    itemImageFront: 'public/images/items/print_orca_lumina.jpg',
-    itemInfoOne: '2.5 x 2.5 inches',
-    itemInfoTwo: 'Screen print, printed by the artist',
-    itemInfoThree: 'Initialed by the artist',
-    itemInfoFour: shipsFlat,
-    itemPrice: 10,
-    itemId: '8BY2MK6Y89ZTA'
-  },
-  'printStentorian': {
-    mainContent: item.itemPage,
-    itemCategory: 'print',
-    itemName: 'Stentorian',
-    itemSubname: 'by Alec Thibodeau',
-    itemPrintEdition: 250,
-    itemImageFront: 'public/images/items/print_stentorian_01.jpg',
-    itemInfoOne: '5.5 x 5.5 inches',
-    itemInfoTwo: 'Letterpress print, printed by DWRI Letterpress',
-    itemInfoThree: `${printEdition} ${moreInfo}`,
-    itemInfoFour: shipsFlat,
-    itemPrice: 15,
-    itemId: 'AUN3U4NQ52J2W',
-    itemMorePhotoPairOne: `
-      <img src="public/images/items/print_stentorian_02.jpg" />
-      <img src="public/images/items/print_stentorian_03.jpg" />
-    `,
-    itemMorePhotoPairTwo: `
-      <img src="public/images/items/print_stentorian_04.jpg" />
-      <img id="itemDetails" src="public/images/items/print_stentorian_05.jpg" />
-    `,
-    itemMoreInfo: `
-      <div>
-        <span class="ital">Stentorian</span> is a letterpress print.
-        It measures 5.5" x 5.5" overall, with an image dimension of 3.5" x 3.5" in two ink colors.
-        The edition is exquisitely printed from Alec's original drawings by Dan Wood and his team at
-        <a class="text-link" href="https://www.dwriletterpress.net" target="_blank">DWRI&nbsp;Letterpress</a>
-        on Legion Paper's acid-free 350gsm Colorplan Mist 130# cover stock.
-        Each print is hand numbered and signed on the front in pencil by Alec. ${orderNow}
-      </div>
-    `
-  },
   'printAbundance': {
     mainContent: item.itemPage,
     itemTitle: 'abundance',
-    itemCategory: 'print',
+    itemCategory: categoryPrint,
     itemName: 'Abundance',
-    itemSubname: 'by Alec Thibodeau',
+    itemSubname: byAlecThibodeau,
     itemPrintEdition: 250,
-    itemImageFront: 'public/images/items/print_abundance_01.jpg',
-    itemInfoOne: '5.5 x 5.5 inches',
-    itemInfoTwo: 'Letterpress print, printed by DWRI Letterpress',
+    itemImageFront: `${itemsDirectory}print_abundance_01.jpg`,
+    itemInfoOne: dimensionsFiveAndAHalfInches,
+    itemInfoTwo: creditLetterpressPrint,
     itemInfoThree: `${printEdition} ${moreInfo}`,
     itemInfoFour: shipsFlat,
     itemPrice: 25,
     itemId: 'B6SBUBH8JRKV6',
     itemMorePhotoPairOne: `
-      <img src="public/images/items/print_abundance_02.jpg" />
-      <img src="public/images/items/print_abundance_03.jpg" />
+      <img src="${itemsDirectory}print_abundance_02.jpg" />
+      <img src="${itemsDirectory}print_abundance_03.jpg" />
     `,
     itemMorePhotoPairTwo: `
-      <img src="public/images/items/print_abundance_04.jpg" />
-      <img id="itemDetails" src="public/images/items/print_abundance_05.jpg" />
+      <img src="${itemsDirectory}print_abundance_04.jpg" />
+      <img id="itemDetails" src="${itemsDirectory}print_abundance_05.jpg" />
     `,
     itemMoreInfo: `
       <div>
@@ -492,7 +444,66 @@ const itemsInfo = {
         It measures 5.5" x 5.5" overall, with an image dimension of 4" x 4" in three ink colors and a layer of stamped blue foil.
         The edition is exquisitely printed from Alec's original drawings by Dan Wood and his team at
         <a class="text-link" href="https://www.dwriletterpress.net" target="_blank">DWRI&nbsp;Letterpress</a>
-        on Legion Paper's acid-free 350gsm Colorplan Mist 130# cover stock.
+        on Legion Paper acid-free 350gsm Colorplan Mist 130# cover stock.
+        Each print is hand numbered and signed on the front in pencil by Alec. ${orderNow}
+      </div>
+    `
+  },
+  'printFunktionslust': {
+    mainContent: item.itemPage,
+    itemCategory: categoryPrint,
+    itemName: 'Funktionslust for All of Us',
+    itemSubname: byAlecThibodeau,
+    itemPrintEdition: 50,
+    itemImageFront: `${itemsDirectory}print_funktionslust_01.jpg`,
+    itemInfoOne: '5.75 x 5.75 inches',
+    itemInfoTwo: creditScreenPrint,
+    itemInfoThree: printEdition,
+    itemInfoFour: shipsFlat,
+    itemPrice: 15,
+    itemId: 'VARZ4F5RHAP9Y'
+  },
+  'printOrcaLumina': {
+    mainContent: item.itemPage,
+    itemCategory: categoryPrint,
+    itemName: 'Orca Lumina',
+    itemSubname: byAlecThibodeau,
+    itemImageFront: `${itemsDirectory}print_orca_lumina.jpg`,
+    itemInfoOne: '2.5 x 2.5 inches',
+    itemInfoTwo: creditScreenPrint,
+    itemInfoThree: 'Initialed by the artist',
+    itemInfoFour: shipsFlat,
+    itemPrice: 10,
+    itemId: '8BY2MK6Y89ZTA'
+  },
+  'printStentorian': {
+    mainContent: item.itemPage,
+    itemCategory: categoryPrint,
+    itemName: 'Stentorian',
+    itemSubname: byAlecThibodeau,
+    itemPrintEdition: 250,
+    itemImageFront: `${itemsDirectory}print_stentorian_01.jpg`,
+    itemInfoOne: dimensionsFiveAndAHalfInches,
+    itemInfoTwo: creditLetterpressPrint,
+    itemInfoThree: `${printEdition} ${moreInfo}`,
+    itemInfoFour: shipsFlat,
+    itemPrice: 15,
+    itemId: 'AUN3U4NQ52J2W',
+    itemMorePhotoPairOne: `
+      <img src="${itemsDirectory}print_stentorian_02.jpg" />
+      <img src="${itemsDirectory}print_stentorian_03.jpg" />
+    `,
+    itemMorePhotoPairTwo: `
+      <img src="${itemsDirectory}print_stentorian_04.jpg" />
+      <img id="itemDetails" src="${itemsDirectory}print_stentorian_05.jpg" />
+    `,
+    itemMoreInfo: `
+      <div>
+        <span class="ital">Stentorian</span> is a letterpress print.
+        It measures 5.5" x 5.5" overall, with an image dimension of 3.5" x 3.5" in two ink colors.
+        The edition is exquisitely printed from Alec's original drawings by Dan Wood and his team at
+        <a class="text-link" href="https://www.dwriletterpress.net" target="_blank">DWRI&nbsp;Letterpress</a>
+        on Legion Paper acid-free 350gsm Colorplan Mist 130# cover stock.
         Each print is hand numbered and signed on the front in pencil by Alec. ${orderNow}
       </div>
     `
