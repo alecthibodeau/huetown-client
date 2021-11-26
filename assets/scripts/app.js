@@ -4,7 +4,6 @@ import utils from './utils.js';
 import config from './config.js';
 import items from './pages/item-page.js';
 import body from './pages/body.js';
-import home from './pages/home.js';
 
 const collectionPages = [
   'lunarCalendars',
