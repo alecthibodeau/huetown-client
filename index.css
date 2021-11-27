@@ -798,9 +798,8 @@ PAGES
   margin-top: 8px;
 }
 .about-page .about-state {
-  font-size: 1.25rem;
+  font-size: 1.2rem;
   font-weight: 700;
-  color: #6abbb6;
   text-transform: capitalize;
 }
 .about-page .subscribe-button {
@@ -810,15 +809,19 @@ PAGES
   letter-spacing: 0.3125rem;
   text-transform: capitalize;
   cursor: pointer;
-  width: 16rem;
-  min-height: 4rem;
-  background: #666 !important;
+  width: 160px;
+  min-height: 40px;
+  border: 2px solid transparent !important;
+  background: #555 !important;
   font-family: "Raleway", sans-serif !important;
   font-size: 1.4rem;
   font-weight: 600 !important;
+  color: #fff;
 }
 .about-page .subscribe-button:hover {
-  background: #ff9600 !important;
+  border: 2px solid #555 !important;
+  background: #fbde84 !important;
+  color: #000 !important;
 }
 
 .item-page {
@@ -1163,7 +1166,7 @@ PAGES
   text-align: center;
 }
 .item-page form input[value="Add to cart"] {
-  width: 16rem;
+  width: 160px;
   border: none;
   border-radius: 6px;
   background: #555;

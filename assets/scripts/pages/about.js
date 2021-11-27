@@ -15,31 +15,37 @@ let aboutPage = `
     </div>
     <div>
       <p>
-        <span class="section-title ">contact</span>:
+        <span class="section-title ">contact &mdash;</span>
         Huetown's contact email is <a class="text-link" href="mailto:info@huetown.com" target="_blank">info@huetown.com</a>.
       </p>
       <p>
-        <span class="section-title ">ordering</span>:
+         <span class="section-title ">ordering &mdash;</span>
         Buy with confidence! I securely process all credit card payments made at Huetown
         through <a class="text-link" href="https://www.paypal.com" target="_blank">PayPal</a>.
       </p>
       <p>
-        <span class="section-title ">shipping</span>:
+        <span class="section-title ">shipping &mdash;</span>
         Regardless of item quantity all orders ship for a flat rate in sturdy packaging via USPS Priority Mail from Providence, Rhode Island, USA.
         Flat rates are $7 for domestic shipments within the USA, $23 for delivery to Canada or Mexico or $29 for delivery to any other country.
-        Packages generally ship within a couple business days of an order being placed, with domestic deliveries usually arriving a few days after that.
+        Packages generally ship within three business days of an order being placed, with domestic deliveries usually arriving a few days after that.
         Once shipping is underway you'll receive a confirmation email directly from PayPal, which includes tracking information.
         Please allow approximately one week for domestic delivery and 2-3 weeks for international delivery.
       </p>
       <p>
-        <span class="section-title ">follow</span>:
+        <span class="section-title">local pick-up &mdash;</span>
+        <span>If you'll be on the West Side of Providence, Rhode Island in December 2021 then email
+        <a class="text-link" href="mailto:info@huetown.com" target="_blank">info@huetown.com</a>
+        to arrange a local pick-up &mdash; with payment by <a class="text-link" href="https://venmo.com" target="_blank">Venmo<a>, cash or credit card (via PayPal).</span>
+      </p>
+      <p>
+        <span class="section-title ">follow &mdash;</span>
         Check out Huetown on <a class="text-link" href="https://www.instagram.com/huetown" target="_blank">Instagram</a> or <a class="text-link" href="https://www.twitter.com/huetown" target="_blank">Twitter</a>. Or sign up below for Huetown's email list, with monthly-ish notices.
         Your information won't be shared with miscreants.
       </p>
       <p>
-        <span class="section-title ">places</span>:
+        <span class="section-title ">places &mdash;</span>
         Huetown items are
-        available at these retail spots&hellip;
+        available at these retail spots:
         <div class="about-state">new hampshire</div>
         <ul>
           <li>

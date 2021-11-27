@@ -159,7 +159,7 @@ const itemsInfo = {
       <p class="local-pick-up">
         <span class="bold">Local pick-up:</span> If you'll be on the West Side of Providence,
         Rhode Island in December 2021 then email <a class="text-link" href="mailto:info@huetown.com" target="_blank">info@huetown.com</a>
-        to arrange a local pick-up (with payment by <a class="text-link" href="https://venmo.com" target="_blank">Venmo<a>, PayPal or credit card).
+        to arrange a local pick-up &mdash; with payment by <a class="text-link" href="https://venmo.com" target="_blank">Venmo<a>, cash or credit card (via PayPal).
       </p>
     `,
     itemMorePhotoPairTwo: `
