@@ -147,7 +147,7 @@ const itemsInfo = {
     itemLunarCalendarPaperInfo: 'Arjowiggins Creative Papers (distributed by Mohawk) acid-free 300gsm Keaykolour Coral 111# cover paper',
     itemName: itemInfoUniversals.lunarCalendarItemName,
     itemSubname: itemInfoUniversals.lunarCalendarItemSubname,
-    itemImageFront: `${itemsDirectory}thibodeau_lunar_calendar_2021_photo_main_1000px.jpg`,
+    itemImageFront: `${itemsDirectory}thibodeau_lunar_calendar_2022_photo_main_1000px.jpg`,
     itemInfoOne: itemInfoUniversals.lunarCalendarInfoOne,
     itemInfoTwo: itemInfoUniversals.lunarCalendarInfoTwo,
     itemInfoThree: itemInfoUniversals.lunarCalendarInfoThree,
@@ -163,8 +163,7 @@ const itemsInfo = {
       </p>
     `,
     itemMorePhotoPairTwo: `
-      <img class="large-detail-image" src="${itemsDirectory}thibodeau_lunar_calendar_2021_photo_01_1000px.jpg" />
-      <img  id="itemDetails" class="large-detail-image" src="${itemsDirectory}thibodeau_lunar_calendar_2021_photo_02_1000px.jpg" />
+      <div id="itemDetails"></div>
     `,
     itemMoreInfo:  `
       ${itemInfoUniversals.lunarCalendarBlocks}
