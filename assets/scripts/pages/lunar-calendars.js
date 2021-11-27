@@ -3,7 +3,20 @@
 let lunarCalendarsPage = `
   <div class="collection-page lunar-calendars-page">
 
-    <div class="content-container lunar-calendar preorder">
+    <div class="content-container lunar-calendar">
+      <div class="content-block">
+        <a
+          data-title="2022 Lunar Calendar"
+          class="collection-link" href="/">
+          <img class="collection-image"
+            src="/public/images/items/thibodeau_lunar_calendar_2021_photo_main_1000px.jpg" />
+        </a>
+        <div class="content-item-name">
+          <a href="/">
+            2022 lunar calendar
+          </a>
+        </div>
+      </div>
       <div class="content-block">
         <a
           data-title="2021 Lunar Calendar"

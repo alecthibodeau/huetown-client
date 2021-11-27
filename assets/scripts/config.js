@@ -84,40 +84,40 @@ const itemInfoUniversals = {
   postcardPrice: 1
 }
 
-const lunarCalendarBlocksPreorder = `
-  <div id="itemDetails">
-    <p>
-      <span class="bold">Preorder 2022 Lunar Calendar:</span>
-      Okay, my lunar calendar for 2022 is now in production at the print shop &mdash; with Dan making the letterpress magic happen for another edition.
-      Each lunar calendar preordered between now and <span class="bold">November 26, 2021</span> will include a new <span class="ital"><a class="text-link" href="#protonSwan">Proton Swan</a></span> letterpress print (2.5 x 2.5 inches, also printed by DWRI).
-      All preorders will ship by <span class="bold">November 30, 2021</span>. Huetown's domestic shipping charge in the USA is a flat $7 rate to any address, regardless of item quantity, via USPS Priority.
-    </p>
-    <p>
-      <span class="bold">Important:</span> The above lunar calendar image is a digital-color simulation of what the final piece's inks and paper will look like. There may be some slight variations between the colors here and in the print.
-    </p>
-    <p>
-      <span class="bold">Local pick-up:</span> If you'll be on the West Side of Providence,
-      Rhode Island in December 2021 then email <a class="text-link" href="mailto:info@huetown.com" target="_blank">info@huetown.com</a>
-      to arrange a local pick-up (with payment by <a class="text-link" href="https://venmo.com" target="_blank">Venmo<a> or credit card).
-    </p>
-  </div>
-  <div id="protonSwan" class="item-accompanying">
-    <img src="${itemsDirectory}proton_swan_300px.jpg" />
-    <div>
-      <span>Proton Swan</span> <span>print</span>
-    </div>
-  </div>
-  <div>
-    <p class="additional-info">
-      Follow <a class="text-link" href="https://www.instagram.com/huetown/" target="_blank">@huetown</a> on Instagram to see this print's magical letterpress production in action.
-      And join the <a class="text-link" href="about.html">email list</a> to learn when other print editions are available.
-    </p>
-  </div>
-  <div>
-    Here's more info on the ultimate piece&hellip;
-  </div>
-  ${itemInfoUniversals.lunarCalendarBlocks}
-`
+// const lunarCalendarBlocksPreorder = `
+//   <div id="itemDetails">
+//     <p>
+//       <span class="bold">Preorder 2022 Lunar Calendar:</span>
+//       Okay, my lunar calendar for 2022 is now in production at the print shop &mdash; with Dan making the letterpress magic happen for another edition.
+//       Each lunar calendar preordered between now and <span class="bold">November 26, 2021</span> will include a new <span class="ital"><a class="text-link" href="#protonSwan">Proton Swan</a></span> letterpress print (2.5 x 2.5 inches, also printed by DWRI).
+//       All preorders will ship by <span class="bold">November 30, 2021</span>. Huetown's domestic shipping charge in the USA is a flat $7 rate to any address, regardless of item quantity, via USPS Priority.
+//     </p>
+//     <p>
+//       <span class="bold">Important:</span> The above lunar calendar image is a digital-color simulation of what the final piece's inks and paper will look like. There may be some slight variations between the colors here and in the print.
+//     </p>
+//     <p>
+//       <span class="bold">Local pick-up:</span> If you'll be on the West Side of Providence,
+//       Rhode Island in December 2021 then email <a class="text-link" href="mailto:info@huetown.com" target="_blank">info@huetown.com</a>
+//       to arrange a local pick-up (with payment by <a class="text-link" href="https://venmo.com" target="_blank">Venmo<a> or credit card).
+//     </p>
+//   </div>
+//   <div id="protonSwan" class="item-accompanying">
+//     <img src="${itemsDirectory}proton_swan_300px.jpg" />
+//     <div>
+//       <span>Proton Swan</span> <span>print</span>
+//     </div>
+//   </div>
+//   <div>
+//     <p class="additional-info">
+//       Follow <a class="text-link" href="https://www.instagram.com/huetown/" target="_blank">@huetown</a> on Instagram to see this print's magical letterpress production in action.
+//       And join the <a class="text-link" href="about.html">email list</a> to learn when other print editions are available.
+//     </p>
+//   </div>
+//   <div>
+//     Here's more info on the ultimate piece&hellip;
+//   </div>
+//   ${itemInfoUniversals.lunarCalendarBlocks}
+// `
 
 const itemsInfo = {
   'home': {
@@ -138,8 +138,7 @@ const itemsInfo = {
   'veganly': {
     mainContent: veganly.veganlyPage
   },
-
-  'lunarCalendarTwentyTwoPreorder': {
+  'lunarCalendarTwentyTwo': {
     mainContent: item.itemPage,
     itemCategory: categoryLunarCalendar,
     itemLunarCalendarTitle: 'Entrancer\'s Medallion',
@@ -148,15 +147,44 @@ const itemsInfo = {
     itemLunarCalendarPaperInfo: 'Arjowiggins Creative Papers (distributed by Mohawk) acid-free 300gsm Keaykolour Coral 111# cover paper',
     itemName: itemInfoUniversals.lunarCalendarItemName,
     itemSubname: itemInfoUniversals.lunarCalendarItemSubname,
-    itemImageFront: `${itemsDirectory}thibodeau_lunar_calendar_2022_preorder_image_700px.jpg`,
+    itemImageFront: `${itemsDirectory}thibodeau_lunar_calendar_2021_photo_main_1000px.jpg`,
     itemInfoOne: itemInfoUniversals.lunarCalendarInfoOne,
     itemInfoTwo: itemInfoUniversals.lunarCalendarInfoTwo,
     itemInfoThree: itemInfoUniversals.lunarCalendarInfoThree,
     itemInfoFour: itemInfoUniversals.lunarCalendarInfoFour,
     itemPrice: itemInfoUniversals.lunarCalendarPrice,
     itemLunarCalendarLocation: lunarCalendarLocationProvidence,
-    itemId: '7XWKF7SGUGECU',
-    itemMoreInfo: lunarCalendarBlocksPreorder
+    itemId: '5VWNHRMJQCE7A',
+    itemMorePhotoPairOne: `
+      <p class="local-pick-up">
+        <span class="bold">Local pick-up:</span> If you'll be on the West Side of Providence,
+        Rhode Island in December 2021 then email <a class="text-link" href="mailto:info@huetown.com" target="_blank">info@huetown.com</a>
+        to arrange a local pick-up (with payment by <a class="text-link" href="https://venmo.com" target="_blank">Venmo<a>, PayPal or credit card).
+      </p>
+    `,
+    itemMorePhotoPairTwo: `
+      <img class="large-detail-image" src="${itemsDirectory}thibodeau_lunar_calendar_2021_photo_01_1000px.jpg" />
+      <img  id="itemDetails" class="large-detail-image" src="${itemsDirectory}thibodeau_lunar_calendar_2021_photo_02_1000px.jpg" />
+    `,
+    itemMoreInfo:  `
+      ${itemInfoUniversals.lunarCalendarBlocks}
+      <div class="additional-info">
+        <div class="follow-text">
+          Follow <a class="text-link" href="https://www.instagram.com/huetown/" target="_blank">@huetown</a> on Instagram to see this print's magical letterpress production in action.
+          And join the <a class="text-link" href="about.html">email list</a> to learn when other print editions are available.
+        </div>
+        <div>
+          Each 2022 lunar calendar preordered by November 26, 2021 included a
+            <span class="ital">
+              Proton Swan
+            </span>
+          print:
+        </div>
+        <div class="item-accompanying">
+          <img src="${itemsDirectory}/_preorders/proton_swan_300px.jpg" />
+        </div>
+      </div>
+    `
   },
   'lunarCalendarTwentyOne': {
     mainContent: item.itemPage,
@@ -187,7 +215,23 @@ const itemsInfo = {
       <img class="large-detail-image" src="${itemsDirectory}thibodeau_lunar_calendar_2021_photo_05_1000px.jpg" />
       <img id="itemDetails" class="large-detail-image" src="${itemsDirectory}thibodeau_lunar_calendar_2021_photo_09_1000px.jpg" />
     `,
-    itemMoreInfo: itemInfoUniversals.lunarCalendarBlocks
+    itemMoreInfo: `
+      ${itemInfoUniversals.lunarCalendarBlocks}
+      <div class="additional-info">
+        <div>
+          Each 2021 lunar calendar preordered in 2020 before the official launch included an
+            <span class="ital">
+              <a class="text-link" href="print-orca-lumina.html">Orca Lumina</a>
+            </span>
+          print:
+        </div>
+        <div class="item-accompanying">
+          <a href="print-orca-lumina.html">
+            <img src="${itemsDirectory}/_preorders/orca_lumina_300px.jpg" />
+          </a>
+        </div>
+      </div>
+    `
   },
   'lunarCalendarTwenty': {
     mainContent: item.itemPage,

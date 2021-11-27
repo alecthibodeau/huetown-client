@@ -64,6 +64,14 @@ let containerThreeContent = `
 
       <div>
         <div>
+          <a class="available-calendar" href="/">
+            <img src="public/images/items/thibodeau_lunar_calendar_2021_photo_main_1000px.jpg" />
+          </a>
+        </div>
+        <div class="text">2022 lunar calendar</div>
+      </div>
+      <div>
+        <div>
           <a class="available-calendar" href="lunar-calendar-2021.html">
             <img src="public/images/items/thibodeau_lunar_calendar_2021_photo_main_1000px.jpg" />
           </a>

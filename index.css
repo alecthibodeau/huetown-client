@@ -495,7 +495,7 @@ PAGES
   display: flex;
   justify-content: space-around;
 }
-.lunar-calendars-page .content-container.lunar-calendar:not(.preorder) {
+.lunar-calendars-page .content-container.lunar-calendar:not(.single-item-row) {
   justify-content: space-between;
 }
 .lunar-calendars-page .content-block {
@@ -591,7 +591,7 @@ PAGES
   display: flex;
   justify-content: space-around;
 }
-.prints-page .content-container.lunar-calendar:not(.preorder) {
+.prints-page .content-container.lunar-calendar:not(.single-item-row) {
   justify-content: space-between;
 }
 .prints-page .content-block {
@@ -687,7 +687,7 @@ PAGES
   display: flex;
   justify-content: space-around;
 }
-.postcards-page .content-container.lunar-calendar:not(.preorder) {
+.postcards-page .content-container.lunar-calendar:not(.single-item-row) {
   justify-content: space-between;
 }
 .postcards-page .content-block {
@@ -836,19 +836,6 @@ PAGES
 .item-page.item-title-abundance .container-1 .item-info-block {
   justify-content: center;
 }
-.item-page .item-accompanying {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  padding: 10px 0;
-}
-.item-page .item-accompanying img {
-  width: 300px;
-  height: 300px;
-}
-.item-page .item-accompanying span:first-of-type {
-  font-style: italic;
-}
 .item-page .content-container {
   display: flex;
 }
@@ -895,6 +882,9 @@ PAGES
 .item-page .container-2 .photo-pair {
   display: flex;
   justify-content: center;
+}
+.item-page .container-2 .photo-pair .local-pick-up {
+  max-width: 80ch;
 }
 .item-page .container-2 .photo-pair img {
   margin: 10px 5px 0;
@@ -946,9 +936,11 @@ PAGES
   margin: 0 5px;
 }
 .item-page .container-2 .item-more-info [class^=phase-text] {
-  font-size: 1.2rem;
+  margin-top: 4px;
   text-align: center;
   text-transform: capitalize;
+  font-size: 1.4rem;
+  line-height: 1.8rem;
 }
 .item-page .container-2 .item-more-info .protective-tube {
   display: flex;
@@ -1139,7 +1131,21 @@ PAGES
   font-size: 1.4rem;
 }
 .item-page .additional-info {
-  margin-bottom: 20px;
+  margin-bottom: 24px;
+}
+.item-page .additional-info .follow-text {
+  margin-bottom: 8px;
+}
+.item-page .additional-info .item-accompanying {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0 auto;
+}
+.item-page .additional-info .item-accompanying img,
+.item-page .additional-info .item-accompanying a img {
+  width: 300px;
+  height: 300px;
 }
 .item-page form {
   display: flex;

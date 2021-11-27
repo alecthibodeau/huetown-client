@@ -14,7 +14,6 @@
   margin-bottom: 20px;
 
   &.item-title-abundance .container-1 {
-
     .feature-image-block a img {
       width: 600px;
 
@@ -25,22 +24,6 @@
 
     .item-info-block {
       justify-content: center;
-    }
-  }
-
-  .item-accompanying {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 10px 0;
-
-    img {
-      width: 300px;
-      height: 300px;
-    }
-
-    span:first-of-type {
-      font-style: italic;
     }
   }
 
@@ -97,13 +80,16 @@
       display: flex;
       justify-content: center;
 
+      .local-pick-up {
+        max-width: 80ch;
+      }
+
       img {
         margin: 10px 5px 0;
         width: 450px;
         height: 450px;
 
         @media only screen and (max-width: 1050px) {
-
           &.large-detail-image {
             width: 700px;
             height: 700px;
@@ -111,7 +97,6 @@
         }
 
         @media only screen and (max-width: 760px) {
-
           &.large-detail-image {
             width: 90vw;
             height: 90vw;
@@ -154,9 +139,11 @@
       }
 
       [class^="phase-text"] {
-        font-size: 1.2rem;
+        margin-top: 4px;
         text-align: center;
         text-transform: capitalize;
+        font-size: 1.4rem;
+        line-height: 1.8rem;
       }
 
       .protective-tube {
@@ -170,7 +157,6 @@
         }
 
         @media only screen and (max-width: 500px) {
-
           img {
             width: 220px;
             height: auto;
@@ -221,7 +207,6 @@
         }
 
         &[class^="lunar-calendar-links"] {
-
           div {
             flex-direction: column;
             margin: 0 5px;
@@ -239,7 +224,6 @@
     @include crisp-scaled-down;
 
     &.postcard {
-
       border: 1px solid $sixty-percent-gray;
 
       @media only screen and (max-width: 650px) {
@@ -265,7 +249,6 @@
     padding-left: 15px;
 
     &.lunar-calendar {
-
       @media only screen and (max-width: 1050px) {
         max-width: 600px;
         flex-direction: column-reverse;
@@ -282,7 +265,6 @@
     }
 
     &.postcard {
-
       @media only screen and (max-width: 650px) {
         width: 550px;
       }
@@ -329,7 +311,6 @@
     flex-direction: column;
 
     &.lunar-calendar {
-
       @media only screen and (max-width: 1050px) {
         flex-direction: row;
         align-items: center;
@@ -358,13 +339,13 @@
 
     &.lunar-calendar {
       @media only screen and (max-width: 1050px) {
-        margin: 0 10px 0 0 ;
+        margin: 0 10px 0 0;
         top: 12px;
       }
     }
 
     @media only screen and (max-width: 850px) {
-      margin: 0 10px 0 0 ;
+      margin: 0 10px 0 0;
       top: 12px;
     }
   }
@@ -375,7 +356,24 @@
   }
 
   .additional-info {
-    margin-bottom: 20px;
+    margin-bottom: 24px;
+
+    .follow-text {
+      margin-bottom: 8px;
+    }
+
+    .item-accompanying {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      margin: 0 auto;
+
+      img,
+      a img {
+        width: 300px;
+        height: 300px;
+      }
+    }
   }
 
   form {
@@ -388,7 +386,7 @@
       width: 4rem;
       height: 3.8rem;
       padding: 0;
-      border: .1rem solid $fifty-percent-gray;
+      border: 0.1rem solid $fifty-percent-gray;
       margin: 0 8px 5px 0;
       font-size: 1.25rem;
       text-align: center;
@@ -400,7 +398,7 @@
       border-radius: 6px;
       background: $sixty-seven-percent-gray;
       color: $white;
-      font-family: 'Raleway', sans-serif;
+      font-family: "Raleway", sans-serif;
       font-size: 1.4rem;
       font-weight: 600;
       letter-spacing: 0.3125rem;
@@ -409,7 +407,7 @@
       &:hover {
         border: 2px solid $sixty-seven-percent-gray;
         color: $black;
-        background: $rainbow-yellow
+        background: $rainbow-yellow;
       }
     }
   }
