@@ -13,6 +13,7 @@ COLOR VARIABLES
 /**
  * Selector for .home-page
  */
+/* Sub-mixins need to be outside the primary mixin */
 /**
  * Media Queries
  */
@@ -479,6 +480,27 @@ PAGES
 .home-page p.name-signature {
   text-align: right;
 }
+.home-page .sold-out {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.home-page .sold-out-text {
+  padding: 0 20px;
+}
+.home-page .lunar-home {
+  image-rendering: -moz-crisp-edges;
+  /* Firefox */
+  image-rendering: -o-crisp-edges;
+  /* Opera */
+  image-rendering: -webkit-optimize-contrast;
+  /* Webkit (non-standard naming) */
+  image-rendering: crisp-edges;
+  -ms-interpolation-mode: nearest-neighbor;
+  /* IE (non-standard property) */
+  max-width: 1000px;
+  width: 80vw;
+}
 @media only screen and (max-width: 650px) {
   .home-page .home-page-content {
     margin-top: 2rem;
@@ -798,7 +820,7 @@ PAGES
   margin-top: 8px;
 }
 .about-page .about-state {
-  font-size: 1.2rem;
+  font-size: 1.4rem;
   font-weight: 700;
   text-transform: capitalize;
 }
