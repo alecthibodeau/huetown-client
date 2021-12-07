@@ -5,6 +5,20 @@ let printsPage = `
 
     <div class="content-container">
       <div class="content-block">
+        <a data-title="Proton Swan" class="collection-link" href="print-proton-swan.html">
+          <img class="collection-image" src="public/images/items/print_proton_swan.jpg" />
+        </a>
+        <div class="content-item-name">
+          <a href="print-proton-swan.html">
+            <span class="ital">Proton Swan</span>
+            <span>print</span>
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <div class="content-container">
+      <div class="content-block">
         <a data-title="Abundance" class="collection-link" href="print-abundance.html">
           <img class="collection-image" src="/public/images/items/print_abundance_01.jpg" />
         </a>

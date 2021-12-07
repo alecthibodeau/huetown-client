@@ -156,16 +156,29 @@ const itemsInfo = {
     itemLunarCalendarLocation: lunarCalendarLocationProvidence,
     itemId: '5VWNHRMJQCE7A',
     itemMorePhotoPairOne: `
-      <p class="local-pick-up">
-        <span class="bold">Local pick-up:</span> If you'll be on the West Side of Providence,
-        Rhode Island in December 2021 then email <a class="text-link" href="mailto:info@huetown.com" target="_blank">info@huetown.com</a>
-        to arrange a local pick-up, with payment by <a class="text-link" href="https://venmo.com" target="_blank">Venmo<a>, cash or credit card (via PayPal).
-      </p>
+      <img class="large-detail-image" src="${itemsDirectory}thibodeau_lunar_calendar_2022_photo_01_700px.jpg" />
+      <img class="large-detail-image" src="${itemsDirectory}thibodeau_lunar_calendar_2022_photo_02_700px.jpg" />
     `,
     itemMorePhotoPairTwo: `
-      <div id="itemDetails"></div>
+      <img class="large-detail-image" src="${itemsDirectory}thibodeau_lunar_calendar_2022_photo_03_700px.jpg" />
+      <img class="large-detail-image" src="${itemsDirectory}thibodeau_lunar_calendar_2022_photo_04_700px.jpg" />
     `,
-    itemMoreInfo:  `
+    itemMorePhotoPairThree: `
+      <img class="large-detail-image" src="${itemsDirectory}thibodeau_lunar_calendar_2022_photo_05_700px.jpg" />
+      <img class="large-detail-image" src="${itemsDirectory}thibodeau_lunar_calendar_2022_photo_06_700px.jpg" />
+    `,
+    itemMorePhotoPairFour: `
+      <img class="large-detail-image" src="${itemsDirectory}thibodeau_lunar_calendar_2022_photo_07_700px.jpg" />
+      <img id="itemDetails" class="large-detail-image" src="${itemsDirectory}thibodeau_lunar_calendar_2022_photo_08_700px.jpg" />
+    `,
+    itemMoreInfo: `
+      <div>
+        <p class="local-pick-up">
+          <span class="bold">Local pick-up:</span> If you'll be on the West Side of Providence,
+          Rhode Island in December 2021 then email <a class="text-link" href="mailto:info@huetown.com" target="_blank">info@huetown.com</a>
+          to arrange a local pick-up, with payment by <a class="text-link" href="https://venmo.com" target="_blank">Venmo<a>, cash or credit card (via PayPal).
+        </p>
+      </div>
       ${itemInfoUniversals.lunarCalendarBlocks}
       <div class="additional-info">
         <div class="follow-text">
@@ -175,12 +188,14 @@ const itemsInfo = {
         <div>
           Each 2022 lunar calendar preordered by November 26, 2021 included a
             <span class="ital">
-              Proton Swan
+              <a class="text-link" href="print-proton-swan.html">Proton Swan</a>
             </span>
           print:
         </div>
         <div class="item-accompanying">
-          <img src="${itemsDirectory}/_preorders/proton_swan_300px.jpg" />
+          <a href="print-proton-swan.html">
+            <img src="${itemsDirectory}/_preorders/proton_swan_300px.jpg" />
+          </a>
         </div>
       </div>
     `
@@ -518,6 +533,19 @@ const itemsInfo = {
     itemInfoFour: shipsFlat,
     itemPrice: 10,
     itemId: '8BY2MK6Y89ZTA'
+  },
+  'printProtonSwan': {
+    mainContent: item.itemPage,
+    itemCategory: categoryPrint,
+    itemName: 'Proton Swan',
+    itemSubname: byAlecThibodeau,
+    itemImageFront: `${itemsDirectory}print_proton_swan.jpg`,
+    itemInfoOne: '2.5 x 2.5 inches',
+    itemInfoTwo: creditScreenPrint,
+    itemInfoThree: 'Initialed by the artist',
+    itemInfoFour: shipsFlat,
+    itemPrice: 10,
+    itemId: '4SFG8LHK26JZ4'
   },
   'printStentorian': {
     mainContent: item.itemPage,
