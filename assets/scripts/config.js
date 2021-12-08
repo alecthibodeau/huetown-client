@@ -541,7 +541,7 @@ const itemsInfo = {
     itemSubname: byAlecThibodeau,
     itemImageFront: `${itemsDirectory}print_proton_swan.jpg`,
     itemInfoOne: '2.5 x 2.5 inches',
-    itemInfoTwo: creditScreenPrint,
+    itemInfoTwo: creditLetterpressPrint,
     itemInfoThree: 'Initialed by the artist',
     itemInfoFour: shipsFlat,
     itemPrice: 10,
