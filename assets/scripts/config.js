@@ -27,6 +27,7 @@ const creditScreenPrint = 'Screen print, printed by the artist';
 const dimensionsFiveAndAHalfInches = '5.5 x 5.5 inches';
 const lunarCalendarLocationProvidence = 'The calendar is designed, drawn and printed in Providence, Rhode Island, which is identified as a representative location within the artwork.';
 const lunarCalendarLocationNewYork = 'New York City is identified as a representative location within the artwork.';
+const localPickUp = `<a class="text-link" href="#itemDetails">(local pick-up)</a>`;
 const moreInfo = `<a class="text-link" href="#itemDetails">(more info)</a>`;
 const orderNow = `<a class="text-link" href="#featureImage">Order now.</a>`;
 const printEdition = `Hand numbered and signed by the artist in an edition of <span class="print-edition"></span> prints`;
@@ -47,7 +48,7 @@ const itemInfoUniversals = {
   lunarCalendarInfoOne: '19 x 11.75 inches',
   lunarCalendarInfoTwo: creditLetterpressPrint,
   lunarCalendarInfoThree: `${printEdition} ${moreInfo}`,
-  lunarCalendarInfoFour: 'Ships rolled and triple-packaged: archival wrap, eco-friendly protective tube and outer shipping container',
+  lunarCalendarInfoFour: `Ships rolled and triple-packaged: archival wrap, eco-friendly protective tube and outer shipping container ${localPickUp}`,
   lunarCalendarBlocks: `
     <div class=info-block>
       <span class="lunar-calendar-title ital"></span> is a letterpress-printed lunar calendar designed and drawn by Alec Thibodeau (me!),
@@ -173,7 +174,7 @@ const itemsInfo = {
     `,
     itemMoreInfo: `
       <div>
-        <p class="local-pick-up">
+        <p id="localPickUp" class="local-pick-up">
           <span class="bold">Local pick-up:</span> If you'll be on the West Side of Providence,
           Rhode Island in December 2021 then email <a class="text-link" href="mailto:info@huetown.com" target="_blank">info@huetown.com</a>
           to arrange a local pick-up, with payment by <a class="text-link" href="https://venmo.com" target="_blank">Venmo<a>, cash or credit card (via PayPal).
