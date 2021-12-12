@@ -32,12 +32,6 @@ let aboutPage = `
         Please allow approximately one week for domestic delivery and 2-3 weeks for international delivery.
       </p>
       <p>
-        <span class="section-title">local pick-up &mdash;</span>
-        <span>If you'll be on the West Side of Providence, Rhode Island in December 2021 then email
-        <a class="text-link" href="mailto:info@huetown.com" target="_blank">info@huetown.com</a>
-        to arrange a local pick-up, with payment by <a class="text-link" href="https://venmo.com" target="_blank">Venmo<a>, cash or credit card (via PayPal).</span>
-      </p>
-      <p>
         <span class="section-title ">follow &mdash;</span>
         Check out Huetown on <a class="text-link" href="https://www.instagram.com/huetown" target="_blank">Instagram</a> or <a class="text-link" href="https://www.twitter.com/huetown" target="_blank">Twitter</a>. Or sign up below for Huetown's email list, with monthly-ish notices.
         Your information won't be shared with miscreants.
@@ -55,10 +49,13 @@ let aboutPage = `
         <div class="about-state">rhode island</div>
         <ul>
           <li>
-            <a class="text-link" href="https://shop.craftlandshop.com" target="_blank">Craftland</a> <span class="bold"></span>
+            <a class="text-link" href="https://shop.craftlandshop.com" target="_blank">Craftland</a>
           </li>
           <li>
-            <a class="text-link" href="https://simplepleasuresprovidence.com/" target="_blank">Simple Pleasures</span></a> <span class="bold"></span>
+            <a class="text-link" href="https://www.instagram.com/whitebuffalori" target="_blank">White Buffalo<a>
+          </li>
+          <li>
+            <a class="text-link" href="https://www.simplepleasuresprovidence.com" target="_blank">Simple Pleasures</span></a>
           </li>
           <li>
             <a class="text-link" href="https://www.booksq.com" target="_blank">Books on the Square</a>
@@ -67,7 +64,7 @@ let aboutPage = `
             <a class="text-link" href="https://www.frogandtoadstore.com" target="_blank">Frog & Toad</a>
           </li>
           <li>
-            <a class="text-link" href="http://like-no-udder.com" target="_blank">Like No Udder</a>
+            <a class="text-link" href="http://www.like-no-udder.com" target="_blank">Like No Udder</a>
           </li>
           <li>
             <a class="text-link" href="http://www.papernautilusbooks.com" target="_blank">Paper Nautilus Books</a>

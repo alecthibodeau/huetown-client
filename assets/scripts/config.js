@@ -27,7 +27,7 @@ const creditScreenPrint = 'Screen print, printed by the artist';
 const dimensionsFiveAndAHalfInches = '5.5 x 5.5 inches';
 const lunarCalendarLocationProvidence = 'The calendar is designed, drawn and printed in Providence, Rhode Island, which is identified as a representative location within the artwork.';
 const lunarCalendarLocationNewYork = 'New York City is identified as a representative location within the artwork.';
-const localPickUp = `<a class="text-link" href="#itemDetails">(local pick-up)</a>`;
+const localPickUp = `<a class="text-link" href="#localPickUp">(local pick-up)</a>`;
 const moreInfo = `<a class="text-link" href="#itemDetails">(more info)</a>`;
 const orderNow = `<a class="text-link" href="#featureImage">Order now.</a>`;
 const printEdition = `Hand numbered and signed by the artist in an edition of <span class="print-edition"></span> prints`;
@@ -173,18 +173,19 @@ const itemsInfo = {
       <img id="itemDetails" class="large-detail-image" src="${itemsDirectory}thibodeau_lunar_calendar_2022_photo_08_700px.jpg" />
     `,
     itemMoreInfo: `
-      <div>
-        <p id="localPickUp" class="local-pick-up">
-          <span class="bold">Local pick-up:</span> If you'll be on the West Side of Providence,
-          Rhode Island in December 2021 then email <a class="text-link" href="mailto:info@huetown.com" target="_blank">info@huetown.com</a>
-          to arrange a local pick-up, with payment by <a class="text-link" href="https://venmo.com" target="_blank">Venmo<a>, cash or credit card (via PayPal).
-        </p>
-      </div>
       ${itemInfoUniversals.lunarCalendarBlocks}
-      <div class="additional-info">
+      <div id="localPickUp" class="additional-info">
         <div class="follow-text">
           Follow <a class="text-link" href="https://www.instagram.com/huetown/" target="_blank">@huetown</a> on Instagram to see this print's magical letterpress production in action.
           And join the <a class="text-link" href="about.html">email list</a> to learn when other print editions are available.
+        </div>
+        <div>
+          <p class="local-pick-up">
+            <span class="bold">Local pick-up:</span> When in Providence,
+            Rhode Island pick up lunar calendar prints at
+            <a class="text-link" href="https://shop.craftlandshop.com"" target="_blank">Craftland<a> (Downtown)
+            and <a class="text-link" href="https://www.instagram.com/whitebuffalori" target="_blank">White Buffalo<a> (West Side).
+          </p>
         </div>
         <div>
           Each 2022 lunar calendar preordered by November 26, 2021 included a
