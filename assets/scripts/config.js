@@ -85,41 +85,6 @@ const itemInfoUniversals = {
   postcardPrice: 1
 }
 
-// const lunarCalendarBlocksPreorder = `
-//   <div id="itemDetails">
-//     <p>
-//       <span class="bold">Preorder 2022 Lunar Calendar:</span>
-//       Okay, my lunar calendar for 2022 is now in production at the print shop &mdash; with Dan making the letterpress magic happen for another edition.
-//       Each lunar calendar preordered between now and <span class="bold">November 26, 2021</span> will include a new <span class="ital"><a class="text-link" href="#protonSwan">Proton Swan</a></span> letterpress print (2.5 x 2.5 inches, also printed by DWRI).
-//       All preorders will ship by <span class="bold">November 30, 2021</span>. Huetown's domestic shipping charge in the USA is a flat $7 rate to any address, regardless of item quantity, via USPS Priority.
-//     </p>
-//     <p>
-//       <span class="bold">Important:</span> The above lunar calendar image is a digital-color simulation of what the final piece's inks and paper will look like. There may be some slight variations between the colors here and in the print.
-//     </p>
-//     <p>
-//       <span class="bold">Local pick-up:</span> If you'll be on the West Side of Providence,
-//       Rhode Island in December 2021 then email <a class="text-link" href="mailto:info@huetown.com" target="_blank">info@huetown.com</a>
-//       to arrange a local pick-up (with payment by <a class="text-link" href="https://venmo.com" target="_blank">Venmo<a> or credit card).
-//     </p>
-//   </div>
-//   <div id="protonSwan" class="item-accompanying">
-//     <img src="${itemsDirectory}proton_swan_300px.jpg" />
-//     <div>
-//       <span>Proton Swan</span> <span>print</span>
-//     </div>
-//   </div>
-//   <div>
-//     <p class="additional-info">
-//       Follow <a class="text-link" href="https://www.instagram.com/huetown/" target="_blank">@huetown</a> on Instagram to see this print's magical letterpress production in action.
-//       And join the <a class="text-link" href="about.html">email list</a> to learn when other print editions are available.
-//     </p>
-//   </div>
-//   <div>
-//     Here's more info on the ultimate piece&hellip;
-//   </div>
-//   ${itemInfoUniversals.lunarCalendarBlocks}
-// `
-
 const itemsInfo = {
   'home': {
     mainContent: home.homePage
@@ -182,9 +147,10 @@ const itemsInfo = {
         <div>
           <p class="local-pick-up">
             <span class="bold">Local pick-up:</span> When in Providence,
-            Rhode Island pick up lunar calendar prints at
-            <a class="text-link" href="https://shop.craftlandshop.com"" target="_blank">Craftland<a> (Downtown)
-            and <a class="text-link" href="https://www.instagram.com/whitebuffalori" target="_blank">White Buffalo<a> (West Side).
+            Rhode Island purchase lunar calendar prints at
+            <a class="text-link" href="https://shop.craftlandshop.com"" target="_blank">Craftland<a> (Downtown),
+            <a class="text-link" href="https://www.instagram.com/whitebuffalori" target="_blank">White Buffalo<a> (West Side)
+            and <a class="text-link" href="https://simplepleasuresprovidence.com" target="_blank">Simple Pleasures<a> (East Side).
           </p>
         </div>
         <div>
