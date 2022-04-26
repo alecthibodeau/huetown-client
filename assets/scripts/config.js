@@ -48,7 +48,7 @@ const itemInfoUniversals = {
   lunarCalendarInfoOne: '19 x 11.75 inches',
   lunarCalendarInfoTwo: creditLetterpressPrint,
   lunarCalendarInfoThree: `${printEdition} ${moreInfo}`,
-  lunarCalendarInfoFour: `Ships rolled and triple-packaged: archival wrap, eco-friendly protective tube and outer shipping container ${localPickUp}`,
+  lunarCalendarInfoFour: 'Ships rolled and triple-packaged: archival wrap, eco-friendly protective tube and outer shipping container',
   lunarCalendarBlocks: `
     <div class=info-block>
       <span class="lunar-calendar-title ital"></span> is a letterpress-printed lunar calendar designed and drawn by Alec Thibodeau (me!),
@@ -143,15 +143,6 @@ const itemsInfo = {
         <div class="follow-text">
           Follow <a class="text-link" href="https://www.instagram.com/huetown/" target="_blank">@huetown</a> on Instagram to see this print's magical letterpress production in action.
           And join the <a class="text-link" href="about.html">email list</a> to learn when other print editions are available.
-        </div>
-        <div>
-          <p class="local-pick-up">
-            <span class="bold">Local pick-up:</span> When in Providence,
-            Rhode Island purchase lunar calendar prints at
-            <a class="text-link" href="https://shop.craftlandshop.com"" target="_blank">Craftland<a> (Downtown),
-            <a class="text-link" href="https://www.instagram.com/whitebuffalori" target="_blank">White Buffalo<a> (West Side)
-            and <a class="text-link" href="https://simplepleasuresprovidence.com" target="_blank">Simple Pleasures<a> (East Side).
-          </p>
         </div>
         <div>
           Each 2022 lunar calendar preordered by November 26, 2021 included a
@@ -459,10 +450,6 @@ const itemsInfo = {
     itemMorePhotoPairOne: `
       <img src="${itemsDirectory}print_abundance_02.jpg" />
       <img src="${itemsDirectory}print_abundance_03.jpg" />
-    `,
-    itemMorePhotoPairTwo: `
-      <img src="${itemsDirectory}print_abundance_04.jpg" />
-      <img id="itemDetails" src="${itemsDirectory}print_abundance_05.jpg" />
     `,
     itemMoreInfo: `
       <div>

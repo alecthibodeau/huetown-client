@@ -39,14 +39,7 @@ let aboutPage = `
       <p>
         <span class="section-title ">places &mdash;</span>
         Huetown items are
-        available at these retail spots:
-        <div class="about-state">new hampshire</div>
-        <ul>
-          <li>
-            <a class="text-link" href="https://www.thisstopiswilloughby.com" target="_blank">This Stop Is Willoughby</a> <span class="bold"></span>
-          </li>
-        </ul>
-        <div class="about-state">rhode island</div>
+        available at these retail spots in Rhode Island:
         <ul>
           <li>
             <a class="text-link" href="https://shop.craftlandshop.com" target="_blank">Craftland</a>
@@ -58,16 +51,7 @@ let aboutPage = `
             <a class="text-link" href="https://www.simplepleasuresprovidence.com" target="_blank">Simple Pleasures</span></a>
           </li>
           <li>
-            <a class="text-link" href="https://www.booksq.com" target="_blank">Books on the Square</a>
-          </li>
-          <li>
-            <a class="text-link" href="https://www.frogandtoadstore.com" target="_blank">Frog & Toad</a>
-          </li>
-          <li>
             <a class="text-link" href="http://www.like-no-udder.com" target="_blank">Like No Udder</a>
-          </li>
-          <li>
-            <a class="text-link" href="http://www.papernautilusbooks.com" target="_blank">Paper Nautilus Books</a>
           </li>
         </ul>
       </p>
