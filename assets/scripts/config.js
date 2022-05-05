@@ -102,7 +102,11 @@ const itemsInfo = {
     mainContent: about.aboutPage
   },
   'veganly': {
-    mainContent: veganly.veganlyPage
+    mainContent: `
+    <div class="veganly-page">
+      Veganly is a new line of items at Huetown. More details soon!
+    </div>
+  `
   },
   'lunarCalendarTwentyTwo': {
     mainContent: item.itemPage,
