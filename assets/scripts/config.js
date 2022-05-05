@@ -76,7 +76,7 @@ const itemInfoUniversals = {
 
     <div class="protective-tube" id="tube">
       <div class="tube-text">eco-friendly protective tube:</div>
-      <img src="${itemsDirectory}protective_tube.png" />
+      <img src="${itemsDirectory}protective_tube.png" alt="Protective tube for storing lunar calendar"/>
     </div>
   `,
   postcardInfoOne: '6 x 4 inches',
@@ -122,20 +122,20 @@ const itemsInfo = {
     itemLunarCalendarLocation: lunarCalendarLocationProvidence,
     itemId: '5VWNHRMJQCE7A',
     itemMorePhotoPairOne: `
-      <img class="large-detail-image" src="${itemsDirectory}thibodeau_lunar_calendar_2022_photo_01_700px.jpg" />
-      <img class="large-detail-image" src="${itemsDirectory}thibodeau_lunar_calendar_2022_photo_02_700px.jpg" />
+      <img class="large-detail-image" src="${itemsDirectory}thibodeau_lunar_calendar_2022_photo_01_700px.jpg" alt="Lunar Calendar 2022 detail #1" />
+      <img class="large-detail-image" src="${itemsDirectory}thibodeau_lunar_calendar_2022_photo_02_700px.jpg" alt="Lunar Calendar 2022 detail #2" />
     `,
     itemMorePhotoPairTwo: `
-      <img class="large-detail-image" src="${itemsDirectory}thibodeau_lunar_calendar_2022_photo_03_700px.jpg" />
-      <img class="large-detail-image" src="${itemsDirectory}thibodeau_lunar_calendar_2022_photo_04_700px.jpg" />
+      <img class="large-detail-image" src="${itemsDirectory}thibodeau_lunar_calendar_2022_photo_03_700px.jpg" alt="Lunar Calendar 2022 detail #3" />
+      <img class="large-detail-image" src="${itemsDirectory}thibodeau_lunar_calendar_2022_photo_04_700px.jpg" alt="Lunar Calendar 2022 detail #4" />
     `,
     itemMorePhotoPairThree: `
-      <img class="large-detail-image" src="${itemsDirectory}thibodeau_lunar_calendar_2022_photo_05_700px.jpg" />
-      <img class="large-detail-image" src="${itemsDirectory}thibodeau_lunar_calendar_2022_photo_06_700px.jpg" />
+      <img class="large-detail-image" src="${itemsDirectory}thibodeau_lunar_calendar_2022_photo_05_700px.jpg" alt="Lunar Calendar 2022 detail #5" />
+      <img class="large-detail-image" src="${itemsDirectory}thibodeau_lunar_calendar_2022_photo_06_700px.jpg" alt="Lunar Calendar 2022 detail #6" />
     `,
     itemMorePhotoPairFour: `
-      <img class="large-detail-image" src="${itemsDirectory}thibodeau_lunar_calendar_2022_photo_07_700px.jpg" />
-      <img id="itemDetails" class="large-detail-image" src="${itemsDirectory}thibodeau_lunar_calendar_2022_photo_08_700px.jpg" />
+      <img class="large-detail-image" src="${itemsDirectory}thibodeau_lunar_calendar_2022_photo_07_700px.jpg" alt="Lunar Calendar 2022 detail #7" />
+      <img id="itemDetails" class="large-detail-image" src="${itemsDirectory}thibodeau_lunar_calendar_2022_photo_08_700px.jpg" alt="Lunar Calendar 2022 detail #8" />
     `,
     itemMoreInfo: `
       ${itemInfoUniversals.lunarCalendarBlocks}
@@ -177,16 +177,16 @@ const itemsInfo = {
     itemLunarCalendarLocation: lunarCalendarLocationProvidence,
     itemId: 'XA698W9J6TGEL',
     itemMorePhotoPairOne: `
-      <img class="large-detail-image" src="${itemsDirectory}thibodeau_lunar_calendar_2021_photo_01_1000px.jpg" />
-      <img class="large-detail-image" src="${itemsDirectory}thibodeau_lunar_calendar_2021_photo_02_1000px.jpg" />
+      <img class="large-detail-image" src="${itemsDirectory}thibodeau_lunar_calendar_2021_photo_01_1000px.jpg" alt="Lunar Calendar 2021 detail #1" />
+      <img class="large-detail-image" src="${itemsDirectory}thibodeau_lunar_calendar_2021_photo_02_1000px.jpg" alt="Lunar Calendar 2021 detail #2" />
     `,
     itemMorePhotoPairTwo: `
-      <img class="large-detail-image" src="${itemsDirectory}thibodeau_lunar_calendar_2021_photo_03_1000px.jpg" />
-      <img class="large-detail-image" src="${itemsDirectory}thibodeau_lunar_calendar_2021_photo_04_1000px.jpg" />
+      <img class="large-detail-image" src="${itemsDirectory}thibodeau_lunar_calendar_2021_photo_03_1000px.jpg" alt="Lunar Calendar 2021 detail #3" />
+      <img class="large-detail-image" src="${itemsDirectory}thibodeau_lunar_calendar_2021_photo_04_1000px.jpg" alt="Lunar Calendar 2021 detail #4" />
     `,
     itemMorePhotoPairThree: `
-      <img class="large-detail-image" src="${itemsDirectory}thibodeau_lunar_calendar_2021_photo_05_1000px.jpg" />
-      <img id="itemDetails" class="large-detail-image" src="${itemsDirectory}thibodeau_lunar_calendar_2021_photo_09_1000px.jpg" />
+      <img class="large-detail-image" src="${itemsDirectory}thibodeau_lunar_calendar_2021_photo_05_1000px.jpg" alt="Lunar Calendar 2021 detail #5" />
+      <img id="itemDetails" class="large-detail-image" src="${itemsDirectory}thibodeau_lunar_calendar_2021_photo_09_1000px.jpg" alt="Lunar Calendar 2021 detail #6" />
     `,
     itemMoreInfo: `
       ${itemInfoUniversals.lunarCalendarBlocks}
@@ -200,7 +200,7 @@ const itemsInfo = {
         </div>
         <div class="item-accompanying">
           <a href="print-orca-lumina.html">
-            <img src="${itemsDirectory}/_preorders/orca_lumina_300px.jpg" />
+            <img src="${itemsDirectory}/_preorders/orca_lumina_300px.jpg" alt=Orca Lumina print" />
           </a>
         </div>
       </div>
@@ -224,20 +224,20 @@ const itemsInfo = {
     itemLunarCalendarLocation: lunarCalendarLocationProvidence,
     itemId: 'TGVEUGQD58AX2',
     itemMorePhotoPairOne: `
-      <img src="${itemsDirectory}thibodeau_lunar_calendar_2020_photo_01_1000px.jpg" />
-      <img src="${itemsDirectory}thibodeau_lunar_calendar_2020_photo_02_1000px.jpg" />
+      <img src="${itemsDirectory}thibodeau_lunar_calendar_2020_photo_01_1000px.jpg" alt="Lunar Calendar 2020 detail #1" />
+      <img src="${itemsDirectory}thibodeau_lunar_calendar_2020_photo_02_1000px.jpg" alt="Lunar Calendar 2020 detail #2" />
     `,
     itemMorePhotoPairTwo: `
-      <img src="${itemsDirectory}thibodeau_lunar_calendar_2020_photo_03_1000px.jpg" />
-      <img src="${itemsDirectory}thibodeau_lunar_calendar_2020_photo_04_1000px.jpg" />
+      <img src="${itemsDirectory}thibodeau_lunar_calendar_2020_photo_03_1000px.jpg" alt="Lunar Calendar 2020 detail #3" />
+      <img src="${itemsDirectory}thibodeau_lunar_calendar_2020_photo_04_1000px.jpg" alt="Lunar Calendar 2020 detail #4" />
     `,
     itemMorePhotoPairThree: `
-      <img src="${itemsDirectory}thibodeau_lunar_calendar_2020_photo_07_1000px.jpg" />
-      <img src="${itemsDirectory}thibodeau_lunar_calendar_2020_photo_08_1000px.jpg" />
+      <img src="${itemsDirectory}thibodeau_lunar_calendar_2020_photo_07_1000px.jpg" alt="Lunar Calendar 2020 detail #5" />
+      <img src="${itemsDirectory}thibodeau_lunar_calendar_2020_photo_08_1000px.jpg" alt="Lunar Calendar 2020 detail #6" />
     `,
     itemMorePhotoPairFour: `
-      <img src="${itemsDirectory}thibodeau_lunar_calendar_2020_photo_05_1000px.jpg" />
-      <img id="itemDetails" src="${itemsDirectory}thibodeau_lunar_calendar_2020_photo_06_1000px.jpg" />
+      <img src="${itemsDirectory}thibodeau_lunar_calendar_2020_photo_05_1000px.jpg" alt="Lunar Calendar 2020 detail #7" />
+      <img id="itemDetails" src="${itemsDirectory}thibodeau_lunar_calendar_2020_photo_06_1000px.jpg" alt="Lunar Calendar 2020 detail #8" />
     `,
     itemMoreInfo: itemInfoUniversals.lunarCalendarBlocks
   },
@@ -259,20 +259,20 @@ const itemsInfo = {
     itemLunarCalendarLocation: lunarCalendarLocationProvidence,
     itemId: 'T45GH9BL83VQ4',
     itemMorePhotoPairOne: `
-      <img src="${itemsDirectory}thibodeau_lunar_calendar_2019_photo_01.jpg" />
-      <img src="${itemsDirectory}thibodeau_lunar_calendar_2019_photo_02.jpg" />
+      <img src="${itemsDirectory}thibodeau_lunar_calendar_2019_photo_01.jpg" alt="Lunar Calendar 2019 detail #1" />
+      <img src="${itemsDirectory}thibodeau_lunar_calendar_2019_photo_02.jpg" alt="Lunar Calendar 2019 detail #2" />
     `,
     itemMorePhotoPairTwo: `
-      <img src="${itemsDirectory}thibodeau_lunar_calendar_2019_photo_03.jpg" />
-      <img src="${itemsDirectory}thibodeau_lunar_calendar_2019_photo_04.jpg" />
+      <img src="${itemsDirectory}thibodeau_lunar_calendar_2019_photo_03.jpg" alt="Lunar Calendar 2019 detail #3" />
+      <img src="${itemsDirectory}thibodeau_lunar_calendar_2019_photo_04.jpg" alt="Lunar Calendar 2019 detail #4" />
     `,
     itemMorePhotoPairThree: `
-      <img src="${itemsDirectory}thibodeau_lunar_calendar_2019_photo_05.jpg" />
-      <img src="${itemsDirectory}thibodeau_lunar_calendar_2019_photo_06.jpg" />
+      <img src="${itemsDirectory}thibodeau_lunar_calendar_2019_photo_05.jpg" alt="Lunar Calendar 2019 detail #5" />
+      <img src="${itemsDirectory}thibodeau_lunar_calendar_2019_photo_06.jpg" alt="Lunar Calendar 2019 detail #6" />
     `,
     itemMorePhotoPairFour: `
-      <img src="${itemsDirectory}thibodeau_lunar_calendar_2019_photo_07.jpg" />
-      <img id="itemDetails" src="${itemsDirectory}thibodeau_lunar_calendar_2019_photo_08.jpg" />
+      <img src="${itemsDirectory}thibodeau_lunar_calendar_2019_photo_07.jpg" alt="Lunar Calendar 2019 detail #7" />
+      <img id="itemDetails" src="${itemsDirectory}thibodeau_lunar_calendar_2019_photo_08.jpg" alt="Lunar Calendar 2019 detail #8" />
     `,
     itemMoreInfo: itemInfoUniversals.lunarCalendarBlocks
   },
@@ -294,20 +294,20 @@ const itemsInfo = {
     itemLunarCalendarLocation: lunarCalendarLocationNewYork,
     itemId: '4LN49ZLYQLY88',
     itemMorePhotoPairOne: `
-      <img src="${itemsDirectory}thibodeau_lunar_calendar_2018_photo_01.jpg" />
-      <img src="${itemsDirectory}thibodeau_lunar_calendar_2018_photo_02.jpg" />
+      <img src="${itemsDirectory}thibodeau_lunar_calendar_2018_photo_01.jpg" alt="Lunar Calendar 2018 detail #1" />
+      <img src="${itemsDirectory}thibodeau_lunar_calendar_2018_photo_02.jpg" alt="Lunar Calendar 2018 detail #2" />
     `,
     itemMorePhotoPairTwo: `
-      <img src="${itemsDirectory}thibodeau_lunar_calendar_2018_photo_03.jpg" />
-      <img src="${itemsDirectory}thibodeau_lunar_calendar_2018_photo_04.jpg" />
+      <img src="${itemsDirectory}thibodeau_lunar_calendar_2018_photo_03.jpg" alt="Lunar Calendar 2018 detail #3" />
+      <img src="${itemsDirectory}thibodeau_lunar_calendar_2018_photo_04.jpg" alt="Lunar Calendar 2018 detail #4" />
     `,
     itemMorePhotoPairThree: `
-      <img src="${itemsDirectory}thibodeau_lunar_calendar_2018_photo_05.jpg" />
-      <img src="${itemsDirectory}thibodeau_lunar_calendar_2018_photo_06.jpg" />
+      <img src="${itemsDirectory}thibodeau_lunar_calendar_2018_photo_05.jpg" alt="Lunar Calendar 2018 detail #5" />
+      <img src="${itemsDirectory}thibodeau_lunar_calendar_2018_photo_06.jpg" alt="Lunar Calendar 2018 detail #6" />
     `,
     itemMorePhotoPairFour: `
-      <img src="${itemsDirectory}thibodeau_lunar_calendar_2018_photo_07.jpg" />
-      <img id="itemDetails" src="${itemsDirectory}thibodeau_lunar_calendar_2018_photo_08.jpg" />
+      <img src="${itemsDirectory}thibodeau_lunar_calendar_2018_photo_07.jpg" alt="Lunar Calendar 2018 detail #7" />
+      <img id="itemDetails" src="${itemsDirectory}thibodeau_lunar_calendar_2018_photo_08.jpg" alt="Lunar Calendar 2018 detail #8" />
     `,
     itemMoreInfo: itemInfoUniversals.lunarCalendarBlocks
   },
@@ -329,16 +329,16 @@ const itemsInfo = {
     itemLunarCalendarLocation: lunarCalendarLocationProvidence,
     itemId: 'C4RW9LGDQ8NYL',
     itemMorePhotoPairOne: `
-      <img src="${itemsDirectory}thibodeau_lunar_calendar_2017_photo_01.jpg" />
-      <img src="${itemsDirectory}thibodeau_lunar_calendar_2017_photo_02.jpg" />
+      <img src="${itemsDirectory}thibodeau_lunar_calendar_2017_photo_01.jpg" alt="Lunar Calendar 2017 detail #1" />
+      <img src="${itemsDirectory}thibodeau_lunar_calendar_2017_photo_02.jpg" alt="Lunar Calendar 2017 detail #2" />
     `,
     itemMorePhotoPairTwo: `
-      <img src="${itemsDirectory}thibodeau_lunar_calendar_2017_photo_03.jpg" />
-      <img src="${itemsDirectory}thibodeau_lunar_calendar_2017_photo_04.jpg" />
+      <img src="${itemsDirectory}thibodeau_lunar_calendar_2017_photo_03.jpg" alt="Lunar Calendar 2017 detail #3" />
+      <img src="${itemsDirectory}thibodeau_lunar_calendar_2017_photo_04.jpg" alt="Lunar Calendar 2017 detail #4" />
     `,
     itemMorePhotoPairThree: `
-      <img src="${itemsDirectory}thibodeau_lunar_calendar_2017_photo_05.jpg" />
-      <img id="itemDetails" src="${itemsDirectory}thibodeau_lunar_calendar_2017_photo_06.jpg" />
+      <img src="${itemsDirectory}thibodeau_lunar_calendar_2017_photo_05.jpg" alt="Lunar Calendar 2017 detail #5" />
+      <img id="itemDetails" src="${itemsDirectory}thibodeau_lunar_calendar_2017_photo_06.jpg" alt="Lunar Calendar 2017 detail #6" />
     `,
     itemMoreInfo: itemInfoUniversals.lunarCalendarBlocks
   },
@@ -448,8 +448,8 @@ const itemsInfo = {
     itemPrice: 25,
     itemId: 'B6SBUBH8JRKV6',
     itemMorePhotoPairOne: `
-      <img src="${itemsDirectory}print_abundance_02.jpg" />
-      <img src="${itemsDirectory}print_abundance_03.jpg" />
+      <img src="${itemsDirectory}print_abundance_02.jpg" alt="Abundance print detail #1" />
+      <img src="${itemsDirectory}print_abundance_03.jpg" alt="Abundance print detail #2" />
     `,
     itemMoreInfo: `
       <div>
@@ -516,12 +516,12 @@ const itemsInfo = {
     itemPrice: 15,
     itemId: 'AUN3U4NQ52J2W',
     itemMorePhotoPairOne: `
-      <img src="${itemsDirectory}print_stentorian_02.jpg" />
-      <img src="${itemsDirectory}print_stentorian_03.jpg" />
+      <img src="${itemsDirectory}print_stentorian_02.jpg" alt="Stentorian print detail #1" />
+      <img src="${itemsDirectory}print_stentorian_03.jpg" alt="Stentorian print detail #2" />
     `,
     itemMorePhotoPairTwo: `
-      <img src="${itemsDirectory}print_stentorian_04.jpg" />
-      <img id="itemDetails" src="${itemsDirectory}print_stentorian_05.jpg" />
+      <img src="${itemsDirectory}print_stentorian_04.jpg" alt="Stentorian print detail #3" />
+      <img id="itemDetails" src="${itemsDirectory}print_stentorian_05.jpg" alt="Stentorian print detail #4" />
     `,
     itemMoreInfo: `
       <div>

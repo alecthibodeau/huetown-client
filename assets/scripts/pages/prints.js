@@ -6,7 +6,11 @@ let printsPage = `
     <div class="content-container">
       <div class="content-block">
         <a data-title="Proton Swan" class="collection-link" href="print-proton-swan.html">
-          <img class="collection-image" src="public/images/items/print_proton_swan.jpg" />
+          <img
+            class="collection-image"
+            src="public/images/items/print_proton_swan.jpg"
+            alt="Proton Swan print"
+          />
         </a>
         <div class="content-item-name">
           <a href="print-proton-swan.html">
@@ -20,7 +24,11 @@ let printsPage = `
     <div class="content-container">
       <div class="content-block">
         <a data-title="Abundance" class="collection-link" href="print-abundance.html">
-          <img class="collection-image" src="/public/images/items/print_abundance_01.jpg" />
+          <img
+            class="collection-image"
+            src="/public/images/items/print_abundance_01.jpg"
+            alt="Abundance print"
+          />
         </a>
         <div class="content-item-name">
           <a href="print-abundance.html">
@@ -31,7 +39,11 @@ let printsPage = `
       </div>
       <div class="content-block">
         <a data-title="Orca Lumina" class="collection-link" href="print-orca-lumina.html">
-          <img class="collection-image" src="public/images/items/print_orca_lumina.jpg" />
+          <img
+            class="collection-image"
+            src="public/images/items/print_orca_lumina.jpg"
+            alt="Orca Lumina print"
+          />
         </a>
         <div class="content-item-name">
           <a href="print-orca-lumina.html">
@@ -45,7 +57,11 @@ let printsPage = `
     <div class="content-container">
       <div class="content-block">
         <a data-title="Stentorian" class="collection-link" href="print-stentorian.html">
-          <img class="collection-image" src="/public/images/items/print_stentorian_01.jpg" />
+          <img
+            class="collection-image"
+            src="/public/images/items/print_stentorian_01.jpg"
+            alt="Stentorian print"
+          />
         </a>
         <div class="content-item-name">
           <a href="print-stentorian.html">
@@ -56,7 +72,11 @@ let printsPage = `
       </div>
       <div class="content-block">
         <a data-title="Funktionslust for All of Us" class="collection-link" href="print-funktionslust.html">
-          <img class="collection-image" src="public/images/items/print_funktionslust_01.jpg" />
+          <img
+            class="collection-image"
+            src="public/images/items/print_funktionslust_01.jpg"
+            alt="Funktionslust for All of Us print"
+          />
         </a>
         <div class="content-item-name">
           <a href="print-funktionslust.html">

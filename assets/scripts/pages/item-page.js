@@ -10,7 +10,7 @@ let itemPage = `
     <div class="content-container container-1">
       <div class="content-block feature-image-block">
         <a class="feature-image-link" href="">
-          <img class="feature-image" id="featureImage" src="" />
+          <img class="feature-image" id="featureImage" src="" alt="" />
         </a>
       </div>
       <div class="content-block item-info-block">

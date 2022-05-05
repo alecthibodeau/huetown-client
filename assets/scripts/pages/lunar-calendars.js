@@ -8,8 +8,11 @@ let lunarCalendarsPage = `
         <a
           data-title="2022 Lunar Calendar"
           class="collection-link" href="/">
-          <img class="collection-image"
-            src="/public/images/items/thibodeau_lunar_calendar_2022_photo_main_1000px.jpg" />
+          <img
+            class="collection-image"
+            src="/public/images/items/thibodeau_lunar_calendar_2022_photo_main_1000px.jpg"
+            alt="2022 Lunar Calendar"
+          />
         </a>
         <div class="content-item-name">
           <a href="/">
@@ -21,8 +24,11 @@ let lunarCalendarsPage = `
         <a
           data-title="2021 Lunar Calendar"
           class="collection-link" href="lunar-calendar-2021.html">
-          <img class="collection-image"
-            src="/public/images/items/thibodeau_lunar_calendar_2021_photo_main_1000px.jpg" />
+          <img
+            class="collection-image"
+            src="/public/images/items/thibodeau_lunar_calendar_2021_photo_main_1000px.jpg"
+            alt="2021 Lunar Calendar"
+          />
         </a>
         <div class="content-item-name">
           <a href="lunar-calendar-2021.html">
@@ -37,8 +43,11 @@ let lunarCalendarsPage = `
         <a
           data-title="2020 Lunar Calendar"
           class="collection-link" href="lunar-calendar-2020.html">
-          <img class="collection-image"
-            src="/public/images/items/thibodeau_lunar_calendar_2020_main.png" />
+          <img
+            class="collection-image"
+            src="/public/images/items/thibodeau_lunar_calendar_2020_main.png"
+            alt="2020 Lunar Calendar"
+          />
         </a>
         <div class="content-item-name">
           <a href="lunar-calendar-2020.html">
@@ -50,8 +59,11 @@ let lunarCalendarsPage = `
         <a
           data-title="2019 Lunar Calendar"
           class="collection-link" href="lunar-calendar-2019.html">
-          <img class="collection-image"
-            src="public/images/items/thibodeau_lunar_calendar_2019_main.jpg" />
+          <img
+            class="collection-image"
+            src="public/images/items/thibodeau_lunar_calendar_2019_main.jpg"
+            alt="2019 Lunar Calendar"
+          />
         </a>
         <div class="content-item-name">
           <a href="lunar-calendar-2019.html">
@@ -66,8 +78,11 @@ let lunarCalendarsPage = `
         <a
           data-title="2018 Lunar Calendar"
           class="collection-link" href="lunar-calendar-2018.html">
-          <img class="collection-image"
-            src="public/images/items/thibodeau_lunar_calendar_2018_main.jpg" />
+          <img
+            class="collection-image"
+            src="public/images/items/thibodeau_lunar_calendar_2018_main.jpg"
+            alt="2018 Lunar Calendar"
+          />
         </a>
         <div class="content-item-name">
           <a href="lunar-calendar-2018.html">
@@ -79,8 +94,11 @@ let lunarCalendarsPage = `
         <a
           data-title="2017 Lunar Calendar"
           class="collection-link" href="lunar-calendar-2017.html">
-          <img class="collection-image"
-            src="public/images/items/thibodeau_lunar_calendar_2017_main.jpg" />
+          <img
+            class="collection-image"
+            src="public/images/items/thibodeau_lunar_calendar_2017_main.jpg"
+            alt="2017 Lunar Calendar"
+          />
         </a>
         <div class="content-item-name">
           <a href="lunar-calendar-2017.html">

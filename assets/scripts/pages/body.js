@@ -29,17 +29,17 @@ let bodyContent = `
     <div class="nav-menu-icons">
       <section>
       <a class="icon" data-title="Instagram" href="https://www.instagram.com/huetown" target="_blank">
-        <img src="public/images/icons/icon_instagram_white.svg" alt="Huetown at Instagram">
+        <img src="public/images/icons/icon_instagram_white.svg" alt="Huetown at Instagram icon">
       </a>
       </section>
       <section>
         <a class="icon" data-title="Twitter" href="https://www.twitter.com/huetown" target="_blank">
-          <img src="public/images/icons/icon_twitter_white.svg" alt="Huetown at Twitter">
+          <img src="public/images/icons/icon_twitter_white.svg" alt="Huetown at Twitter icon">
         </a>
       </section>
       <section>
         <a class="icon" data-title="Email" href="mailto:info@huetown.com" target="_blank">
-          <img src="public/images/icons/icon_email_white.svg" alt="Email Huetown">
+          <img src="public/images/icons/icon_email_white.svg" alt="Email Huetown icon">
         </a>
       </section>
     </div>
@@ -49,19 +49,19 @@ let bodyContent = `
 <footer id="footer">
   <section>
     <a data-title="Instagram" href="https://www.instagram.com/huetown" target="_blank">
-      <img src="public/images/icons/icon_instagram_fifty_percent_gray.svg" alt="Huetown at Instagram">
+      <img src="public/images/icons/icon_instagram_fifty_percent_gray.svg" alt="Huetown at Instagram icon">
       <div></div>
     </a>
   </section>
   <section>
     <a data-title="Twitter" href="https://www.twitter.com/huetown" target="_blank">
-      <img src="public/images/icons/icon_twitter_fifty_percent_gray.svg" alt="Huetown at Twitter">
+      <img src="public/images/icons/icon_twitter_fifty_percent_gray.svg" alt="Huetown at Twitter icon">
       <div></div>
     </a>
   </section>
   <section>
     <a data-title="Email" href="mailto:info@huetown.com" target="_blank">
-      <img src="public/images/icons/icon_email_fifty_percent_gray.svg" alt="Email Huetown">
+      <img src="public/images/icons/icon_email_fifty_percent_gray.svg" alt="Email Huetown icon">
       <div></div>
     </a>
   </section>

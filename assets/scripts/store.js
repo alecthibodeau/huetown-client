@@ -6,6 +6,7 @@ const setContent = (customElement, content) => {
   switch (customElement.nodeName) {
     case 'IMG':
       customElement.src = content;
+      customElement.alt = content.slice(20, -4).replaceAll('_', ' ');
       break;
     case 'INPUT':
       customElement.value = content;
@@ -41,7 +42,6 @@ let itemForm = `
     <input class="item-id" type="hidden" name="hosted_button_id" value="">
     <input type="text" name="quantity" value="1">
     <input type="submit" value="Add to cart" alt="Add to cart">
-    <img alt="" border="0" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1">
   </form>
 `;
 
