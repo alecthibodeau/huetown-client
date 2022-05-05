@@ -8,7 +8,6 @@ import lunarCalendars from './pages/lunar-calendars.js';
 import prints from './pages/prints.js';
 import postcards from './pages/postcards.js';
 import about from './pages/about.js';
-import veganly from './pages/veganly.js';
 
 /* item page */
 import item from './pages/item-page.js';
