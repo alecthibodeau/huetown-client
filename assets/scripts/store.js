@@ -125,7 +125,7 @@ let containerThreeContent = `
 
       <div>
         <div>
-          <a href="http://alecthibodeau.com/print_lunar-calendar-pineal_grigio.html" target="_blank">
+          <a href="http://alecthibodeau.com/prints/pineal-grigio" target="_blank">
             <img src="public/images/items/thibodeau_lunar_calendar_2011.jpg" />
           </a>
         </div>
@@ -134,7 +134,7 @@ let containerThreeContent = `
 
       <div>
         <div>
-          <a href="http://alecthibodeau.com/print_lunar-calendar-probably_the_earths_core.html" target="_blank">
+          <a href="http://alecthibodeau.com/prints/probably-the-earths-core-really-is-the-sky" target="_blank">
             <img src="public/images/items/thibodeau_lunar_calendar_2010.jpg" />
           </a>
         </div>
@@ -143,7 +143,7 @@ let containerThreeContent = `
 
       <div>
         <div>
-          <a href="http://alecthibodeau.com/print_lunar-calendar-goes_to_show_you.html" target="_blank">
+          <a href="http://alecthibodeau.com/prints/goes-to-show-you-what-a-moon-can-do" target="_blank">
             <img src="public/images/items/thibodeau_lunar_calendar_2009.jpg" />
           </a>
         </div>
@@ -152,7 +152,7 @@ let containerThreeContent = `
 
       <div>
         <div>
-          <a href="http://alecthibodeau.com/print_lunar-calendar-good_librations.html" target="_blank">
+          <a href="http://alecthibodeau.com/prints/good-librations" target="_blank">
             <img src="public/images/items/thibodeau_lunar_calendar_2008.jpg" />
           </a>
         </div>
