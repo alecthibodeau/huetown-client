@@ -6,7 +6,7 @@ let aboutPage = `
       <img class="self-portrait" src="public/images/thibodeau_self-portrait_square.jpg" alt="Self portrait drawing" />
       <div>
         <span class="bold">Huetown</span> is the web shop for artist Alec Thibodeau (me!).
-        I make lunar calendars, prints, postcards and more. An artist's bio
+        I make drawings, prints and more. An artist's bio
         and images of my past work can be found at my portfolio site:
         <a class="text-link" href="https://alecthibodeau.com" target="_blank">alecthibodeau.com</a>.
         All items here are printed in the USA.
@@ -26,32 +26,31 @@ let aboutPage = `
       <p>
         <span class="section-title">shipping &mdash;</span>
         Regardless of item quantity all orders ship for a flat rate in sturdy packaging via USPS Priority Mail from Providence, Rhode Island, USA.
-        Flat rates are $7 for domestic shipments within the USA, $23 for delivery to Canada or Mexico or $29 for delivery to any other country.
+        Flat rates are $8 for domestic shipments within the USA or $29 for international delivery to any other country.
         Packages generally ship within a couple business days of an order being placed, with domestic deliveries usually arriving a few days after that.
         Once shipping is underway you'll receive a confirmation email directly from PayPal, which includes tracking information.
         Please allow approximately one week for domestic delivery and 2-3 weeks for international delivery.
       </p>
       <p>
         <span class="section-title">follow &mdash;</span>
-        Check out Huetown on <a class="text-link" href="https://www.instagram.com/huetown" target="_blank">Instagram</a> or <a class="text-link" href="https://www.twitter.com/huetown" target="_blank">Twitter</a>. Or sign up below for Huetown's email list, with monthly-ish notices.
+        Check out Huetown on <a class="text-link" href="https://www.instagram.com/huetown">Instagram</a>. Or sign up below for Huetown's email list, with monthly-ish notices.
         Your information won't be shared with miscreants.
       </p>
       <p>
         <span class="section-title ">places &mdash;</span>
-        Huetown items are
-        available at these retail spots in Rhode Island:
+        Huetown items are available at these retail spots:
         <ul>
           <li>
-            <a class="text-link" href="https://shop.craftlandshop.com" target="_blank">Craftland</a>
+            <a class="text-link" href="https://shop.craftlandshop.com">Craftland</a>
           </li>
           <li>
-            <a class="text-link" href="https://www.instagram.com/whitebuffalori" target="_blank">White Buffalo<a>
+            <a class="text-link" href="https://www.instagram.com/whitebuffalori">White Buffalo<a>
           </li>
           <li>
-            <a class="text-link" href="https://www.simplepleasuresprovidence.com" target="_blank">Simple Pleasures</span></a>
+            <a class="text-link" href="https://www.simplepleasuresprovidence.com">Simple Pleasures</span></a>
           </li>
           <li>
-            <a class="text-link" href="http://www.like-no-udder.com" target="_blank">Like No Udder</a>
+            <a class="text-link" href="http://www.like-no-udder.com">Like No Udder</a>
           </li>
         </ul>
       </p>

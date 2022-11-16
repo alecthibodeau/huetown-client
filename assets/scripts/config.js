@@ -43,7 +43,7 @@ const itemInfoUniversals = {
     <span id="itemPreorder" class="item-preorder">preorder</span> <span class="lunar-calendar-year normal"></span> <span class="normal">lunar calendar</span>
   `,
   lunarCalendarItemSubname: byAlecThibodeau,
-  lunarCalendarPrice: 40,
+  lunarCalendarPrice: 45,
   lunarCalendarInfoOne: '19 x 11.75 inches',
   lunarCalendarInfoTwo: creditLetterpressPrint,
   lunarCalendarInfoThree: `${printEdition} ${moreInfo}`,
