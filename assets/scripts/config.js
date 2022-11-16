@@ -24,7 +24,7 @@ const categoryPrint = 'print';
 const creditLetterpressPrint = 'Letterpress print, printed by DWRI Letterpress';
 const creditScreenPrint = 'Screen print, printed by the artist';
 const dimensionsFiveAndAHalfInches = '5.5 x 5.5 inches';
-const lunarCalendarLocationProvidence = 'The calendar is designed, drawn and printed in Providence, Rhode Island, which is identified as a representative location within the artwork.';
+const lunarCalendarLocationProvidence = 'The calendar is designed and printed in Providence, Rhode Island, which is identified as a representative location within the artwork.';
 const lunarCalendarLocationNewYork = 'New York City is identified as a representative location within the artwork.';
 const localPickUp = `<a class="text-link" href="#localPickUp">(local pick-up)</a>`;
 const moreInfo = `<a class="text-link" href="#itemDetails">(more info)</a>`;

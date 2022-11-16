@@ -7,7 +7,7 @@ let lunarCalendarsPage = `
       <div class="content-block">
         <a
           data-title="2022 Lunar Calendar"
-          class="collection-link" href="/">
+          class="collection-link" href="lunar-calendar-2022.html">
           <img
             class="collection-image"
             src="/public/images/items/thibodeau_lunar_calendar_2022_photo_main_1000px.jpg"
@@ -15,7 +15,7 @@ let lunarCalendarsPage = `
           />
         </a>
         <div class="content-item-name">
-          <a href="/">
+          <a href="lunar-calendar-2022.html">
             2022 lunar calendar
           </a>
         </div>

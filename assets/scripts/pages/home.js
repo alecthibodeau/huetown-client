@@ -23,13 +23,26 @@
 //   </div>
 // `;
 
+// let homePage = `
+//   <div class="home-page">
+//     <div class="sold-out">
+//       <p class="sold-out-text">
+//         The 2023 lunar calendar is sold out! Much thanks to everybody who bought one.
+//       </p>
+//       <img class="lunar-home" src="../public/images/items/thibodeau_lunar_calendar_2023_photo_main_1000px.jpg" />
+//     </div>
+//   </div>
+// `;
+
 let homePage = `
   <div class="home-page">
-    <div class="sold-out">
-      <p class="sold-out-text">
-        The 2022 lunar calendar is sold out! Much thanks to everybody who bought one.
+    <div class="home-page-content">
+      <p>
+        Huetown's 2023 lunar calendar is now in the works. Check back here soon.
       </p>
-      <img class="lunar-home" src="../public/images/items/thibodeau_lunar_calendar_2022_photo_main_1000px.jpg" />
+      <p>
+        Catch Huetown at the <a className="text-link" href="https://goodtrademakersmarket.com/">2022 Good Trade Makers Market</a> on November 19 and 20 in Providence, Rhode Island.
+      </p>
     </div>
   </div>
 `;
