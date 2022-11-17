@@ -205,7 +205,7 @@ html body header nav a.nav-element {
   }
   html body header nav a.nav-element:hover::after {
     top: 0.25rem;
-    border-bottom: 3px solid #6abbb6;
+    border-bottom: 3px solid #008ecb;
   }
 }
 @media only screen and (max-width: 650px) {
@@ -213,17 +213,17 @@ html body header nav a.nav-element {
     width: 100%;
     padding: 1.5rem 0;
   }
-  html body header nav a.nav-element.nav-element-lunar-calendar {
+  html body header nav a.nav-element.nav-element:nth-child(1) {
     border-top: 1px solid #6abbb6;
     border-bottom: 1px solid #edde95;
   }
-  html body header nav a.nav-element.nav-element-prints {
+  html body header nav a.nav-element.nav-element:nth-child(2) {
     border-bottom: 1px solid #c651e5;
   }
-  html body header nav a.nav-element.nav-element-postcards {
+  html body header nav a.nav-element.nav-element:nth-child(3) {
     border-bottom: 1px solid #6ecde5;
   }
-  html body header nav a.nav-element.nav-element-about {
+  html body header nav a.nav-element.nav-element:nth-child(4) {
     border-bottom: 1px solid #f64154;
   }
   html body header nav a.nav-element.paypal-link {
@@ -262,7 +262,7 @@ html body header nav form {
   }
   html body header nav form:hover::after {
     top: 0.25rem;
-    border-bottom: 3px solid #6abbb6;
+    border-bottom: 3px solid #008ecb;
   }
 }
 html body header nav form input[value="view cart"] {
@@ -298,7 +298,7 @@ html body header nav form input[value="view cart"] {
   }
   html body header nav form input[value="view cart"]:hover::after {
     top: 0.25rem;
-    border-bottom: 3px solid #6abbb6;
+    border-bottom: 3px solid #008ecb;
   }
 }
 @media only screen and (max-width: 650px) {
@@ -306,17 +306,17 @@ html body header nav form input[value="view cart"] {
     width: 100%;
     padding: 1.5rem 0;
   }
-  html body header nav form input[value="view cart"].nav-element-lunar-calendar {
+  html body header nav form input[value="view cart"].nav-element:nth-child(1) {
     border-top: 1px solid #6abbb6;
     border-bottom: 1px solid #edde95;
   }
-  html body header nav form input[value="view cart"].nav-element-prints {
+  html body header nav form input[value="view cart"].nav-element:nth-child(2) {
     border-bottom: 1px solid #c651e5;
   }
-  html body header nav form input[value="view cart"].nav-element-postcards {
+  html body header nav form input[value="view cart"].nav-element:nth-child(3) {
     border-bottom: 1px solid #6ecde5;
   }
-  html body header nav form input[value="view cart"].nav-element-about {
+  html body header nav form input[value="view cart"].nav-element:nth-child(4) {
     border-bottom: 1px solid #f64154;
   }
   html body header nav form input[value="view cart"].paypal-link {
@@ -370,10 +370,10 @@ html body main {
 }
 html body main .text-link {
   text-decoration: none;
-  color: #673ab7;
+  color: #005f88;
 }
 html body main .text-link:link, html body main .text-link:visited, html body main .text-link:active {
-  color: #673ab7;
+  color: #005f88;
   font-weight: 600;
 }
 html body main .text-link:hover {
@@ -489,15 +489,11 @@ PAGES
   padding: 0 20px;
 }
 .home-page .lunar-home {
-  image-rendering: -moz-crisp-edges;
-  /* Firefox */
-  image-rendering: -o-crisp-edges;
-  /* Opera */
-  image-rendering: -webkit-optimize-contrast;
-  /* Webkit (non-standard naming) */
+  image-rendering: -moz-crisp-edges; /* Firefox */
+  image-rendering: -o-crisp-edges; /* Opera */
+  image-rendering: -webkit-optimize-contrast; /* Webkit (non-standard naming) */
   image-rendering: crisp-edges;
-  -ms-interpolation-mode: nearest-neighbor;
-  /* IE (non-standard property) */
+  -ms-interpolation-mode: nearest-neighbor; /* IE (non-standard property) */
   max-width: 1000px;
   width: 80vw;
 }
@@ -549,15 +545,11 @@ PAGES
   color: #000;
 }
 .lunar-calendars-page .collection-image {
-  image-rendering: -moz-crisp-edges;
-  /* Firefox */
-  image-rendering: -o-crisp-edges;
-  /* Opera */
-  image-rendering: -webkit-optimize-contrast;
-  /* Webkit (non-standard naming) */
+  image-rendering: -moz-crisp-edges; /* Firefox */
+  image-rendering: -o-crisp-edges; /* Opera */
+  image-rendering: -webkit-optimize-contrast; /* Webkit (non-standard naming) */
   image-rendering: crisp-edges;
-  -ms-interpolation-mode: nearest-neighbor;
-  /* IE (non-standard property) */
+  -ms-interpolation-mode: nearest-neighbor; /* IE (non-standard property) */
 }
 @media only screen and (max-width: 810px) {
   .lunar-calendars-page .content-container.lunar-calendar {
@@ -645,15 +637,11 @@ PAGES
   color: #000;
 }
 .prints-page .collection-image {
-  image-rendering: -moz-crisp-edges;
-  /* Firefox */
-  image-rendering: -o-crisp-edges;
-  /* Opera */
-  image-rendering: -webkit-optimize-contrast;
-  /* Webkit (non-standard naming) */
+  image-rendering: -moz-crisp-edges; /* Firefox */
+  image-rendering: -o-crisp-edges; /* Opera */
+  image-rendering: -webkit-optimize-contrast; /* Webkit (non-standard naming) */
   image-rendering: crisp-edges;
-  -ms-interpolation-mode: nearest-neighbor;
-  /* IE (non-standard property) */
+  -ms-interpolation-mode: nearest-neighbor; /* IE (non-standard property) */
 }
 @media only screen and (max-width: 810px) {
   .prints-page .content-container.lunar-calendar {
@@ -741,15 +729,11 @@ PAGES
   color: #000;
 }
 .postcards-page .collection-image {
-  image-rendering: -moz-crisp-edges;
-  /* Firefox */
-  image-rendering: -o-crisp-edges;
-  /* Opera */
-  image-rendering: -webkit-optimize-contrast;
-  /* Webkit (non-standard naming) */
+  image-rendering: -moz-crisp-edges; /* Firefox */
+  image-rendering: -o-crisp-edges; /* Opera */
+  image-rendering: -webkit-optimize-contrast; /* Webkit (non-standard naming) */
   image-rendering: crisp-edges;
-  -ms-interpolation-mode: nearest-neighbor;
-  /* IE (non-standard property) */
+  -ms-interpolation-mode: nearest-neighbor; /* IE (non-standard property) */
 }
 @media only screen and (max-width: 810px) {
   .postcards-page .content-container.lunar-calendar {
@@ -1030,15 +1014,11 @@ PAGES
   margin-bottom: 10px;
 }
 .item-page img.feature-image {
-  image-rendering: -moz-crisp-edges;
-  /* Firefox */
-  image-rendering: -o-crisp-edges;
-  /* Opera */
-  image-rendering: -webkit-optimize-contrast;
-  /* Webkit (non-standard naming) */
+  image-rendering: -moz-crisp-edges; /* Firefox */
+  image-rendering: -o-crisp-edges; /* Opera */
+  image-rendering: -webkit-optimize-contrast; /* Webkit (non-standard naming) */
   image-rendering: crisp-edges;
-  -ms-interpolation-mode: nearest-neighbor;
-  /* IE (non-standard property) */
+  -ms-interpolation-mode: nearest-neighbor; /* IE (non-standard property) */
 }
 .item-page img.feature-image.postcard {
   border: 1px solid #666;

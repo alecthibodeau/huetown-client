@@ -84,6 +84,32 @@ const itemInfoUniversals = {
   postcardPrice: 1
 }
 
+// const lunarCalendarBlocksPreorder = `
+//   <div id="itemDetails">
+//     <p>
+//       <span class="bold">Preorder 2023 Lunar Calendar:</span>
+//       Okay, my lunar calendar for 2023 is now in production at the print shop &mdash; with Dan making the letterpress magic happen for another edition.
+//       Each lunar calendar preordered between now and <span class="bold">November 25, 2022</span> will include a new <span class="ital"><a class="text-link" href="#spacePony">Space Pony</a></span> letterpress print (2.5 x 2.5 inches, also printed by DWRI).
+//       All preorders placed by November 25, 2022 will ship by <span class="bold">November 30, 2022</span>. Huetown's domestic shipping charge in the USA is a flat $8 rate to any address, regardless of item quantity, via USPS Priority.
+//     </p>
+//     <p>
+//       <span class="bold">Important:</span> The above lunar calendar image is a digital-color simulation of what the final piece's inks and paper will look like. There may be some slight variations between the colors here and in the print.
+//     </p>
+//   </div>
+//   <div class="additional-info">
+//     <div id="spacePony" class="item-accompanying">
+//       <img src="${itemsDirectory}/_preorders/space_pony_300px.jpg" />
+//       <div>
+//         <span class="ital">Space Pony</span> <span>print</span>
+//       </div>
+//     </div>
+//   </div>
+//   <div>
+//     Here's more info on the ultimate piece&hellip;
+//   </div>
+//   ${itemInfoUniversals.lunarCalendarBlocks}
+// `
+
 const itemsInfo = {
   'home': {
     mainContent: home.homePage
@@ -105,6 +131,49 @@ const itemsInfo = {
     <div class="veganly-page">
       Veganly is a new line of items at Huetown. More details soon!
     </div>
+  `
+  },
+  'lunarCalendarTwentyThreePreorder': {
+    mainContent: item.itemPage,
+    itemCategory: categoryLunarCalendar,
+    itemLunarCalendarTitle: 'Void Operator',
+    itemLunarCalendarYear: '2023',
+    itemPrintEdition: 500,
+    itemLunarCalendarPaperInfo: 'Gmund Papers acid-free 300gsm Cyan 111# cover paper',
+    itemName: itemInfoUniversals.lunarCalendarItemName,
+    itemSubname: itemInfoUniversals.lunarCalendarItemSubname,
+    itemImageFront: `${itemsDirectory}/_preorders/thibodeau_lunar_calendar_2023_preorder_image_700px.jpg`,
+    itemInfoOne: itemInfoUniversals.lunarCalendarInfoOne,
+    itemInfoTwo: itemInfoUniversals.lunarCalendarInfoTwo,
+    itemInfoThree: itemInfoUniversals.lunarCalendarInfoThree,
+    itemInfoFour: itemInfoUniversals.lunarCalendarInfoFour,
+    itemPrice: itemInfoUniversals.lunarCalendarPrice,
+    itemLunarCalendarLocation: lunarCalendarLocationProvidence,
+    itemId: 'T7N3SSMG5E3ZY',
+    itemMoreInfo: `
+    <div id="itemDetails">
+      <p>
+        <span class="bold">Preorder 2023 Lunar Calendar:</span>
+        Okay, my lunar calendar for 2023 is now in production at the print shop &mdash; with Dan making the letterpress magic happen for another edition.
+        Each lunar calendar preordered between now and <span class="bold">November 25, 2022</span> will include a new <span class="ital"><a class="text-link" href="#spacePony">Space Pony</a></span> letterpress print (2.5 x 2.5 inches, also printed by DWRI).
+        All preorders placed by November 25, 2022 will ship by <span class="bold">November 30, 2022</span>. Huetown's domestic shipping charge in the USA is a flat $8 rate to any address, regardless of item quantity, via USPS Priority.
+      </p>
+      <p>
+        <span class="bold">Important:</span> The above lunar calendar image is a digital-color simulation of what the final piece's inks and paper will look like. There may be some slight variations between the colors here and in the print.
+      </p>
+    </div>
+    <div class="additional-info">
+      <div id="spacePony" class="item-accompanying">
+        <img src="${itemsDirectory}/_preorders/space_pony_300px.jpg" />
+        <div>
+          <span class="ital">Space Pony</span> <span>print</span>
+        </div>
+      </div>
+    </div>
+    <div>
+      Here's more info on the ultimate piece&hellip;
+    </div>
+    ${itemInfoUniversals.lunarCalendarBlocks}
   `
   },
   'lunarCalendarTwentyTwo': {

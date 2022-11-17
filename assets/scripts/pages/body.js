@@ -16,10 +16,10 @@ let bodyContent = `
     </button>
   </div>
   <nav id="nav">
-    <a data-title="Lunar Calendars" class="nav-element nav-element-lunar-calendar" href="lunar-calendars.html">lunar calendars</a>
-    <a data-title="Prints" class="nav-element nav-element-prints" href="prints.html">prints</a>
-    <a data-title="Postcards" class="nav-element nav-element-postcards" href="postcards.html">postcards</a>
-    <a data-title="About" class="nav-element nav-element-about" href="about.html">about</a>
+    <a data-title="Lunar Calendars" class="nav-element" href="lunar-calendars.html">lunar calendars</a>
+    <a data-title="Prints" class="nav-element" href="prints.html">prints</a>
+    <a data-title="Postcards" class="nav-element" href="postcards.html">postcards</a>
+    <a data-title="About" class="nav-element" href="about.html">about</a>
     <!-- Option: Use target="_self" to open in same tab instead -->
     <form target="paypal" action="https://www.paypal.com/cgi-bin/webscr" method="post">
       <input type="hidden" name="cmd" value="_s-xclick">
