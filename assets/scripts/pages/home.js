@@ -41,7 +41,7 @@ let homePage = `
         Huetown's 2023 lunar calendar is now in the works. Check back here soon.
       </p>
       <p>
-        Catch Huetown at the <a className="text-link" href="https://goodtrademakersmarket.com/">2022 Good Trade Makers Market</a> on November 19 and 20 in Providence, Rhode Island.
+        Catch Huetown at the <a className="text-link" href="https://goodtrademakersmarket.com/pvd2022">2022 Good Trade Makers Market</a> on November 19 and 20 in Providence, Rhode Island.
       </p>
     </div>
   </div>
