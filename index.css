@@ -1074,7 +1074,7 @@ PAGES
 .item-page .item-preorder.visible {
   display: inline;
   text-transform: uppercase;
-  color: #fc5d58;
+  color: #008ecb;
 }
 .item-page .item-name {
   font-size: 2rem;

@@ -84,7 +84,7 @@ const itemLoad = function (currentPage) {
   augmentExistingClasses([{ className: 'item-page', contentToLoad: item.itemTitle ? `item-title-${item.itemTitle}` : 'item-title'}]);
 
   void (currentPage.startsWith('lunarCalendar') && loadLunarCalendarMore(item));
-  if  (currentPage.startsWith('lunarCalendarTwentyTwoPreorder')) {
+  if (currentPage.endsWith('Preorder')) {
     document.getElementById('itemPreorder').classList.add('visible');
   };
 
