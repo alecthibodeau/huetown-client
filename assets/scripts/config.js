@@ -161,6 +161,9 @@ const itemsInfo = {
       <p>
         <span class="bold">Important:</span> The above lunar calendar image is a digital-color simulation of what the final piece's inks and paper will look like. There may be some slight variations between the colors here and in the print.
       </p>
+      <p>
+        <span class="bold">Event:</span> Catch Huetown at the <a class="text-link" href="https://goodtrademakersmarket.com/pvd2022">2022 Good Trade Makers Market</a> on November 19 and 20 in Providence, Rhode Island.
+      </p>
     </div>
     <div class="additional-info">
       <div id="spacePony" class="item-accompanying">
