@@ -136,7 +136,7 @@ const itemsInfo = {
   'lunarCalendarTwentyThreePreorder': {
     mainContent: item.itemPage,
     itemCategory: categoryLunarCalendar,
-    itemLunarCalendarTitle: 'Void Operator',
+    itemLunarCalendarTitle: 'Thoughts Operator',
     itemLunarCalendarYear: '2023',
     itemPrintEdition: 500,
     itemLunarCalendarPaperInfo: 'Gmund Papers acid-free 300gsm Cyan 111# cover paper',
