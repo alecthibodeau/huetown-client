@@ -1138,9 +1138,6 @@ PAGES
 .item-page .additional-info {
   margin-bottom: 24px;
 }
-.item-page .additional-info .follow-text {
-  margin-bottom: 8px;
-}
 .item-page .additional-info .item-accompanying {
   display: flex;
   flex-direction: column;

@@ -84,32 +84,6 @@ const itemInfoUniversals = {
   postcardPrice: 1
 }
 
-// const lunarCalendarBlocksPreorder = `
-//   <div id="itemDetails">
-//     <p>
-//       <span class="bold">Preorder 2023 Lunar Calendar:</span>
-//       Okay, my lunar calendar for 2023 is now in production at the print shop &mdash; with Dan making the letterpress magic happen for another edition.
-//       Each lunar calendar preordered between now and <span class="bold">November 25, 2022</span> will include a new <span class="ital"><a class="text-link" href="#spacePony">Space Pony</a></span> letterpress print (2.5 x 2.5 inches, also printed by DWRI).
-//       All preorders placed by November 25, 2022 will ship by <span class="bold">November 30, 2022</span>. Huetown's domestic shipping charge in the USA is a flat $8 rate to any address, regardless of item quantity, via USPS Priority.
-//     </p>
-//     <p>
-//       <span class="bold">Important:</span> The above lunar calendar image is a digital-color simulation of what the final piece's inks and paper will look like. There may be some slight variations between the colors here and in the print.
-//     </p>
-//   </div>
-//   <div class="additional-info">
-//     <div id="spacePony" class="item-accompanying">
-//       <img src="${itemsDirectory}/_preorders/space_pony_300px.jpg" />
-//       <div>
-//         <span class="ital">Space Pony</span> <span>print</span>
-//       </div>
-//     </div>
-//   </div>
-//   <div>
-//     Here's more info on the ultimate piece&hellip;
-//   </div>
-//   ${itemInfoUniversals.lunarCalendarBlocks}
-// `
-
 const itemsInfo = {
   'home': {
     mainContent: home.homePage
@@ -154,15 +128,19 @@ const itemsInfo = {
     <div id="itemDetails">
       <p>
         <span class="bold">Preorder 2023 Lunar Calendar:</span>
-        Okay, my lunar calendar for 2023 is now in production at the print shop &mdash; with Dan making the letterpress magic happen for another edition.
-        Each lunar calendar preordered between now and <span class="bold">November 25, 2022</span> will include a new <span class="ital"><a class="text-link" href="#spacePony">Space Pony</a></span> letterpress print (2.5 x 2.5 inches, also printed by DWRI).
-        All preorders placed by November 25, 2022 will ship by <span class="bold">November 30, 2022</span>. Huetown's domestic shipping charge in the USA is a flat $8 rate to any address, regardless of item quantity, via USPS Priority.
+        Okay, my lunar calendar for 2023 is currently in production at the print shop &mdash; with Dan making the letterpress magic happen for another edition.
+        Preorders placed now will ship by November 30th, 2022.
+        Huetown's domestic shipping charge in the USA is a flat $8 rate to any address, regardless of item quantity, via USPS Priority.
       </p>
       <p>
         <span class="bold">Important:</span> The above lunar calendar image is a digital-color simulation of what the final piece's inks and paper will look like. There may be some slight variations between the colors here and in the print.
       </p>
       <p>
-        <span class="bold">Event:</span> Catch Huetown at the <a class="text-link" href="https://goodtrademakersmarket.com/pvd2022">2022 Good Trade Makers Market</a> on November 19 and 20 in Providence, Rhode Island.
+        Follow <a class="text-link" href="https://www.instagram.com/huetown/" target="_blank">@huetown</a> on Instagram to see this print's letterpress production in action.
+        And join the <a class="text-link" href="about.html">email list</a> to learn when other works are available.
+      </p>
+      <p>
+        Each lunar calendar preordered by November 25th, 2022 included a <span class="ital">Space Pony</span> letterpress print:
       </p>
     </div>
     <div class="additional-info">
@@ -172,6 +150,11 @@ const itemsInfo = {
           <span class="ital">Space Pony</span> <span>print</span>
         </div>
       </div>
+    </div>
+    <div>
+      <p>
+        <span class="bold">Event:</span> Catch Huetown at the <a class="text-link" href="https://www.rivegfest.com">2023 Rhode Island VegFest</a> on February 4th and 5th in Providence, Rhode Island.
+      </p>
     </div>
     <div>
       Here's more info on the ultimate piece&hellip;
@@ -215,10 +198,6 @@ const itemsInfo = {
     itemMoreInfo: `
       ${itemInfoUniversals.lunarCalendarBlocks}
       <div id="localPickUp" class="additional-info">
-        <div class="follow-text">
-          Follow <a class="text-link" href="https://www.instagram.com/huetown/" target="_blank">@huetown</a> on Instagram to see this print's magical letterpress production in action.
-          And join the <a class="text-link" href="about.html">email list</a> to learn when other print editions are available.
-        </div>
         <div>
           Each 2022 lunar calendar preordered by November 26, 2021 included a
             <span class="ital">
