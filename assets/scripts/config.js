@@ -129,7 +129,7 @@ const itemsInfo = {
       <p>
         <span class="bold">Preorder 2023 Lunar Calendar:</span>
         Okay, my lunar calendar for 2023 is currently in production at the print shop &mdash; with Dan making the letterpress magic happen for another edition.
-        Preorders placed now will ship by November 30th, 2022.
+        Preorders placed now will ship by early December 2022.
         Huetown's domestic shipping charge in the USA is a flat $8 rate to any address, regardless of item quantity, via USPS Priority.
       </p>
       <p>
