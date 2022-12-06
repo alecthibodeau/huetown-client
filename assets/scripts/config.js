@@ -181,10 +181,14 @@ const itemsInfo = {
     itemId: 'T7N3SSMG5E3ZY',
     itemMorePhotoPairOne: `
       <img class="large-detail-image" src="${itemsDirectory}thibodeau_lunar_calendar_2023_photo_01_700px.jpg" alt="Lunar Calendar 2022 detail #1" />
-      <img class="large-detail-image" src="${itemsDirectory}thibodeau_lunar_calendar_2023_photo_02_700px.jpg" alt="Lunar Calendar 2022 detail #2" />
+      <img class="large-detail-image" src="${itemsDirectory}thibodeau_lunar_calendar_2023_photo_03_700px.jpg" alt="Lunar Calendar 2022 detail #3" />
+    `,
+    itemMorePhotoPairTwo: `
+      <img class="large-detail-image" src="${itemsDirectory}thibodeau_lunar_calendar_2023_photo_05_700px.jpg" alt="Lunar Calendar 2023 detail #5" />
+      <img class="large-detail-image" src="${itemsDirectory}thibodeau_lunar_calendar_2023_photo_07_700px.jpg" alt="Lunar Calendar 2023 detail #7" />
     `,
     itemMorePhotoPairFour: `
-      <img class="large-detail-image" src="${itemsDirectory}thibodeau_lunar_calendar_2023_photo_03_700px.jpg" alt="Lunar Calendar 2022 detail #3" />
+      <img class="large-detail-image" src="${itemsDirectory}thibodeau_lunar_calendar_2023_photo_02_700px.jpg" alt="Lunar Calendar 2022 detail #2" />
       <img id="itemDetails" class="large-detail-image" src="${itemsDirectory}thibodeau_lunar_calendar_2023_photo_08_700px.jpg" alt="Lunar Calendar 2022 detail #8" />
     `,
     itemMoreInfo: `
