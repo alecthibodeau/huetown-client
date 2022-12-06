@@ -178,7 +178,7 @@ const itemsInfo = {
     itemInfoFour: itemInfoUniversals.lunarCalendarInfoFour,
     itemPrice: itemInfoUniversals.lunarCalendarPrice,
     itemLunarCalendarLocation: lunarCalendarLocationProvidence,
-    itemId: 'T7N3SSMG5E3ZY',
+    itemId: '5QXP4DDGN7P2J',
     itemMorePhotoPairOne: `
       <img class="large-detail-image" src="${itemsDirectory}thibodeau_lunar_calendar_2023_photo_01_700px.jpg" alt="Lunar Calendar 2022 detail #1" />
       <img class="large-detail-image" src="${itemsDirectory}thibodeau_lunar_calendar_2023_photo_03_700px.jpg" alt="Lunar Calendar 2022 detail #3" />
