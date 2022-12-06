@@ -187,6 +187,10 @@ const itemsInfo = {
       <img class="large-detail-image" src="${itemsDirectory}thibodeau_lunar_calendar_2023_photo_05_700px.jpg" alt="Lunar Calendar 2023 detail #5" />
       <img class="large-detail-image" src="${itemsDirectory}thibodeau_lunar_calendar_2023_photo_07_700px.jpg" alt="Lunar Calendar 2023 detail #7" />
     `,
+    itemMorePhotoPairThree: `
+      <img class="large-detail-image" src="${itemsDirectory}thibodeau_lunar_calendar_2023_photo_04_700px.jpg" alt="Lunar Calendar 2023 detail #4" />
+      <img class="large-detail-image" src="${itemsDirectory}thibodeau_lunar_calendar_2023_photo_06_700px.jpg" alt="Lunar Calendar 2023 detail #6" />
+    `,
     itemMorePhotoPairFour: `
       <img class="large-detail-image" src="${itemsDirectory}thibodeau_lunar_calendar_2023_photo_02_700px.jpg" alt="Lunar Calendar 2022 detail #2" />
       <img id="itemDetails" class="large-detail-image" src="${itemsDirectory}thibodeau_lunar_calendar_2023_photo_08_700px.jpg" alt="Lunar Calendar 2022 detail #8" />

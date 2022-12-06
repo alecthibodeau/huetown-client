@@ -205,7 +205,7 @@ html body header nav a.nav-element {
   }
   html body header nav a.nav-element:hover::after {
     top: 0.25rem;
-    border-bottom: 3px solid #008ecb;
+    border-bottom: 3px solid #008eb2;
   }
 }
 @media only screen and (max-width: 650px) {
@@ -262,7 +262,7 @@ html body header nav form {
   }
   html body header nav form:hover::after {
     top: 0.25rem;
-    border-bottom: 3px solid #008ecb;
+    border-bottom: 3px solid #008eb2;
   }
 }
 html body header nav form input[value="view cart"] {
@@ -298,7 +298,7 @@ html body header nav form input[value="view cart"] {
   }
   html body header nav form input[value="view cart"]:hover::after {
     top: 0.25rem;
-    border-bottom: 3px solid #008ecb;
+    border-bottom: 3px solid #008eb2;
   }
 }
 @media only screen and (max-width: 650px) {
@@ -1074,7 +1074,7 @@ PAGES
 .item-page .item-preorder.visible {
   display: inline;
   text-transform: uppercase;
-  color: #008ecb;
+  color: #008eb2;
 }
 .item-page .item-name {
   font-size: 2rem;
