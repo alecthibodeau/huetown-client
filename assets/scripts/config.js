@@ -162,6 +162,52 @@ const itemsInfo = {
     ${itemInfoUniversals.lunarCalendarBlocks}
   `
   },
+  'lunarCalendarTwentyThree': {
+    mainContent: item.itemPage,
+    itemCategory: categoryLunarCalendar,
+    itemLunarCalendarTitle: 'Thoughts Operator',
+    itemLunarCalendarYear: '2023',
+    itemPrintEdition: 500,
+    itemLunarCalendarPaperInfo: 'Gmund Papers acid-free 300gsm Cyan 111# cover paper',
+    itemName: itemInfoUniversals.lunarCalendarItemName,
+    itemSubname: itemInfoUniversals.lunarCalendarItemSubname,
+    itemImageFront: `${itemsDirectory}thibodeau_lunar_calendar_2023_photo_main_1000px.jpg`,
+    itemInfoOne: itemInfoUniversals.lunarCalendarInfoOne,
+    itemInfoTwo: itemInfoUniversals.lunarCalendarInfoTwo,
+    itemInfoThree: itemInfoUniversals.lunarCalendarInfoThree,
+    itemInfoFour: itemInfoUniversals.lunarCalendarInfoFour,
+    itemPrice: itemInfoUniversals.lunarCalendarPrice,
+    itemLunarCalendarLocation: lunarCalendarLocationProvidence,
+    itemId: 'T7N3SSMG5E3ZY',
+    itemMorePhotoPairOne: `
+      <img class="large-detail-image" src="${itemsDirectory}thibodeau_lunar_calendar_2023_photo_01_700px.jpg" alt="Lunar Calendar 2022 detail #1" />
+      <img class="large-detail-image" src="${itemsDirectory}thibodeau_lunar_calendar_2023_photo_02_700px.jpg" alt="Lunar Calendar 2022 detail #2" />
+    `,
+    itemMorePhotoPairFour: `
+      <img class="large-detail-image" src="${itemsDirectory}thibodeau_lunar_calendar_2023_photo_03_700px.jpg" alt="Lunar Calendar 2022 detail #3" />
+      <img id="itemDetails" class="large-detail-image" src="${itemsDirectory}thibodeau_lunar_calendar_2023_photo_08_700px.jpg" alt="Lunar Calendar 2022 detail #8" />
+    `,
+    itemMoreInfo: `
+    ${itemInfoUniversals.lunarCalendarBlocks}
+    <div>
+      <p>
+        Follow <a class="text-link" href="https://www.instagram.com/huetown/" target="_blank">@huetown</a> on Instagram to see this print's letterpress production in action.
+        And join the <a class="text-link" href="about.html">email list</a> to learn when other works are available.
+      </p>
+      <p>
+        <span class="bold">Event:</span> Catch Huetown at the <a class="text-link" href="https://www.rivegfest.com">2023 Rhode Island VegFest</a> on February 4th and 5th in Providence, Rhode Island.
+      </p>
+      <p>
+        Each lunar calendar preordered by November 25th, 2022 included a <span class="ital">Space Pony</span> letterpress print:
+      </p>
+    </div>
+    <div class="additional-info">
+      <div id="spacePony" class="item-accompanying">
+        <img src="${itemsDirectory}/_preorders/space_pony_300px.jpg" />
+      </div>
+    </div>
+  `
+  },
   'lunarCalendarTwentyTwo': {
     mainContent: item.itemPage,
     itemCategory: categoryLunarCalendar,
