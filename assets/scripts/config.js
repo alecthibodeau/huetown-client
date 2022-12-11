@@ -179,6 +179,16 @@ const itemsInfo = {
     itemPrice: itemInfoUniversals.lunarCalendarPrice,
     itemLunarCalendarLocation: lunarCalendarLocationProvidence,
     itemId: '5QXP4DDGN7P2J',
+    itemPress: `
+        <span class="ital">
+          Ornate renderings of natural life frame the elegant letterpress print, which expertly melds artful illustration with timely information.
+        </span>
+        <span>&mdash;
+          <a class="text-link" href="https://www.thisiscolossal.com/2022/12/calendars-2023">
+            <img src="${imagesDirectory}/colossal-logo-small.jpg" alt="Colossal logo" />
+          </a>
+        </span>
+    `,
     itemMorePhotoPairOne: `
       <img class="large-detail-image" src="${itemsDirectory}thibodeau_lunar_calendar_2023_photo_01_700px.jpg" alt="Lunar Calendar 2022 detail #1" />
       <img class="large-detail-image" src="${itemsDirectory}thibodeau_lunar_calendar_2023_photo_03_700px.jpg" alt="Lunar Calendar 2022 detail #3" />

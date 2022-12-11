@@ -7,6 +7,7 @@ import utils from '../utils.js';
 /* Primary item content */
 let itemPage = `
   <div class="item-page">
+    <div class="item-press"></div>
     <div class="content-container container-1">
       <div class="content-block feature-image-block">
         <a class="feature-image-link" href="">
@@ -84,6 +85,7 @@ const itemLoad = function (currentPage) {
   augmentExistingClasses([{ className: 'item-page', contentToLoad: item.itemTitle ? `item-title-${item.itemTitle}` : 'item-title'}]);
 
   void (currentPage.startsWith('lunarCalendar') && loadLunarCalendarMore(item));
+
   if (currentPage.endsWith('Preorder')) {
     document.getElementById('itemPreorder').classList.add('visible');
   };

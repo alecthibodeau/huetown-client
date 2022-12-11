@@ -249,6 +249,11 @@ const getItemInfo = (item, pageValueOrConcern) => {
     contentToLoad: item.itemId
   };
 
+  const itemPress= {
+    className: 'item-press',
+    contentToLoad: item.itemPress
+  };
+
   const itemMorePhotoPairOne = {
     className: 'item-more-photo-pair-1',
     contentToLoad: item.itemMorePhotoPairOne
@@ -357,6 +362,7 @@ const getItemInfo = (item, pageValueOrConcern) => {
   ];
 
   const extraItemInfo = [
+    itemPress,
     itemMorePhotoPairOne,
     itemMorePhotoPairTwo,
     itemMorePhotoPairThree,

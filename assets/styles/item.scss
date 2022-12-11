@@ -27,6 +27,21 @@
     }
   }
 
+  .item-press {
+    max-width: 650px;
+    margin: 0 auto 1rem;
+
+    span:last-of-type {
+      white-space: nowrap;
+
+      a img {
+        max-height: 2.25rem;
+        position: relative;
+        top: .5rem;
+      }
+    }
+  }
+
   .content-container {
     display: flex;
 
@@ -79,10 +94,6 @@
     .photo-pair {
       display: flex;
       justify-content: center;
-
-      .local-pick-up {
-        max-width: 80ch;
-      }
 
       img {
         margin: 10px 5px 0;

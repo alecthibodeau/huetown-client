@@ -845,6 +845,18 @@ PAGES
 .item-page.item-title-abundance .container-1 .item-info-block {
   justify-content: center;
 }
+.item-page .item-press {
+  max-width: 650px;
+  margin: 0 auto 1rem;
+}
+.item-page .item-press span:last-of-type {
+  white-space: nowrap;
+}
+.item-page .item-press span:last-of-type a img {
+  max-height: 2.25rem;
+  position: relative;
+  top: 0.5rem;
+}
 .item-page .content-container {
   display: flex;
 }
@@ -891,9 +903,6 @@ PAGES
 .item-page .container-2 .photo-pair {
   display: flex;
   justify-content: center;
-}
-.item-page .container-2 .photo-pair .local-pick-up {
-  max-width: 80ch;
 }
 .item-page .container-2 .photo-pair img {
   margin: 10px 5px 0;
