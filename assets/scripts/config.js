@@ -21,15 +21,14 @@ const byAlecThibodeau = 'by Alec Thibodeau';
 const categoryLunarCalendar = 'lunar-calendar';
 const categoryPostcard = 'postcard';
 const categoryPrint = 'print';
-const creditLetterpressPrint = 'Letterpress print, printed by DWRI Letterpress';
+const creditLetterpressPrint = 'Letterpress print';
 const creditScreenPrint = 'Screen print, printed by the artist';
 const dimensionsFiveAndAHalfInches = '5.5 x 5.5 inches';
 const lunarCalendarLocationProvidence = 'The calendar is designed and printed in Providence, Rhode Island, which is identified as a representative location within the artwork.';
 const lunarCalendarLocationNewYork = 'New York City is identified as a representative location within the artwork.';
-const localPickUp = `<a class="text-link" href="#localPickUp">(local pick-up)</a>`;
 const moreInfo = `<a class="text-link" href="#itemDetails">(more info)</a>`;
 const orderNow = `<a class="text-link" href="#featureImage">Order now.</a>`;
-const printEdition = `Hand numbered and signed by the artist in an edition of <span class="print-edition"></span> prints`;
+const printEdition = 'Numbered and signed';
 const shipsFlat = 'Ships flat';
 
 const itemInfoUniversals = {
@@ -47,7 +46,7 @@ const itemInfoUniversals = {
   lunarCalendarInfoOne: '19 x 11.75 inches',
   lunarCalendarInfoTwo: creditLetterpressPrint,
   lunarCalendarInfoThree: `${printEdition} ${moreInfo}`,
-  lunarCalendarInfoFour: 'Ships rolled and triple-packaged: archival wrap, eco-friendly protective tube and outer shipping container',
+  lunarCalendarInfoFour: '<span class="bold">Ships flat</span>: unrolled in a clear sleeve inside a flat, sturdy box',
   lunarCalendarBlocks: `
     <div class=info-block>
       <span class="lunar-calendar-title ital"></span> is a letterpress-printed lunar calendar designed and drawn by Alec Thibodeau (me!),
@@ -59,7 +58,7 @@ const itemInfoUniversals = {
     </div>
     <div class=info-block>
       The <span class="lunar-calendar-year"></span> lunar calendar comprises new drawings and year-specific lunar phase information.
-      Each calendar is printed on <span class="lunar-calendar-paper-info"></span>, blind-debossed with Alec's name and the print shop's name &mdash; and hand numbered and signed by Alec. Each calendar ships in archival wrap with an accompanying information sheet inside an eco-friendly fiberboard protective tube (reusable, recycled, recyclable) with crimped ends.
+      Each calendar is printed on <span class="lunar-calendar-paper-info"></span>, blind-debossed with Alec's name and the print shop's name &mdash; and hand numbered and signed by Alec. Each calendar ships unrolled with an accompanying information sheet in a clear sleeve sheet inside a flat, sturdy box.
     </div>
     <div class=info-block>
       The calendar's lunar phase chart is calibrated for any location in the Eastern Time Zone and is accurate to within a day for anywhere in the Northern Hemisphere. The chart also matches lunar cycles in the Southern Hemisphere: but with inverted shapes. <span class="lunar-calendar-location"></span>
@@ -71,11 +70,6 @@ const itemInfoUniversals = {
 
     <div class="lunar-phases" id="lunarPhases">
       <!-- phases here -->
-    </div>
-
-    <div class="protective-tube" id="tube">
-      <div class="tube-text">eco-friendly protective tube:</div>
-      <img src="${itemsDirectory}protective_tube.png" alt="Protective tube for storing lunar calendar"/>
     </div>
   `,
   postcardInfoOne: '6 x 4 inches',
