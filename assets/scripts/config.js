@@ -58,7 +58,7 @@ const itemInfoUniversals = {
     </div>
     <div class=info-block>
       The <span class="lunar-calendar-year"></span> lunar calendar comprises new drawings and year-specific lunar phase information.
-      Each calendar is printed on <span class="lunar-calendar-paper-info"></span>, blind-debossed with Alec's name and the print shop's name &mdash; and hand numbered and signed by Alec. Each calendar ships unrolled with an accompanying information sheet inside a flat, sturdy box.
+      Each calendar is printed on <span class="lunar-calendar-paper-info"></span>, blind-debossed with Alec's name and the print shop's name &mdash; and hand numbered and signed by Alec. Each calendar includes an accompanying information sheet and ships unrolled in a flat, sturdy box: if multiple calendars are part of a single order all calendars will ship in the same box.
     </div>
     <div class=info-block>
       The calendar's lunar phase chart is calibrated for any location in the Eastern Time Zone and is accurate to within a day for anywhere in the Northern Hemisphere. The chart also matches lunar cycles in the Southern Hemisphere: but with inverted shapes. <span class="lunar-calendar-location"></span>
