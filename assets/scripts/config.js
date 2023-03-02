@@ -207,9 +207,6 @@ const itemsInfo = {
         And join the <a class="text-link" href="about.html">email list</a> to learn when other works are available.
       </p>
       <p>
-        <span class="bold">Event:</span> Catch Huetown at the <a class="text-link" href="https://www.rivegfest.com">2023 Rhode Island VegFest</a> on February 4th and 5th in Providence, Rhode Island.
-      </p>
-      <p>
         Each lunar calendar preordered by November 25th, 2022 included a <span class="ital">Space Pony</span> letterpress print:
       </p>
     </div>
